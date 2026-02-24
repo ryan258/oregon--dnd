@@ -17,13 +17,13 @@ During a Rest Day, every character can take **one major Camp Action**. You canno
 
 | Action                  | Relevant Stat      | Effect                                                                                                                                                                                |
 | :---------------------- | :----------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Deep Repair**         | STR (DC 11)        | Spend a day under the wagon reinforcing the chassis. Restores 1d6+2 Wagon HP. No parts required.                                                                                      |
+| **Deep Repair**         | STR (DC 11)        | Spend a day under the wagon reinforcing the chassis. Restores 1d4 Wagon HP (no parts required, but cannot restore the wagon above half its maximum HP — use spare parts for full repairs). |
 | **Preventative Maint.** | STR (DC 10)        | The Teamster greases axles and reinforces yokes. Success means the next "Wagon Breakdown" or rough terrain event is automatically nullified or its damage halved.                     |
 | **Foraging/Fishing**    | WIS or DEX (DC 10) | Search the immediate vicinity. Success yields 2d10 lbs of food (berries, roots, fish).                                                                                                |
 | **Intensive Care**      | INT (DC 12)        | The Doctor spends all day tending to the sick/wounded. Target character gains Advantage on their next disease saving throw, recovers an additional 1d6 HP, or removes 1 level of Exhaustion. |
 | **Brew Tonics**         | INT (DC 11)        | The Doctor gathers herbs to distill preventative tonics. Success yields 1d4 tonics. Anyone drinking one gains Advantage on their next CON save against disease.                       |
 | **Scouting Ahead**      | WIS (DC 11)        | Take a horse and ride a few miles forward. Success reveals tomorrow’s terrain or hazards, granting Advantage on the next day’s Travel or Navigation check.                            |
-| **Mend & Wash**         | DEX (DC 9)         | Fix torn clothes, boil lice, clean weapons. Small comforts matter. Target character gains +1 to their AC (if using combat rules) or automatically succeeds their next minor CON save. |
+| **Mend & Wash**         | DEX (DC 9)         | Fix torn clothes, boil lice, clean weapons. Small comforts matter. Target character automatically succeeds their next minor CON save (cold exposure, mild illness, insect bites). |
 
 ### The Morale Engine: Evening Activities
 

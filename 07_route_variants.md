@@ -40,9 +40,9 @@ The final test before reaching the Willamette Valley. The trail splits at The Da
 - **Description:** Break down the wagon, build a massive raft, and float down the treacherous river rapids to Fort Vancouver.
 - **The Danger:** Smashing against the rocks.
 - **Mechanics:**
-  - Takes 1 week. The Teamster must first make a **STR check (DC 12)** to construct the raft from the wagon frame. Failure means a poorly built raft: all subsequent Watercraft checks have Disadvantage.
-  - Requires three consecutive **Watercraft/DEX checks (DC 12, 14, and 13)**.
-  - _Failure:_ The raft flips off course. Lose 50% of all remaining supplies and money. A critical failure results in a character drowning.
+  - Takes 1 week. The Teamster must first make a **STR check (DC 12)** to construct the raft from the wagon frame. Failure means a poorly built raft: all subsequent DEX checks to navigate the rapids have Disadvantage.
+  - Requires three consecutive **DEX checks (DC 12, 14, and 13)** to navigate the rapids.
+  - _Failure on any check:_ The raft flips off course. Lose 50% of all remaining supplies and money. Failing by 5 or more results in a character drowning.
 
 **Option B: The Barlow Road (Overland)**
 

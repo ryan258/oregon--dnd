@@ -23,7 +23,7 @@ _The line between life and a shallow grave. Often formally trained, sometimes ju
 
 **Background Hooks (Choose 1):**
 
-- **Trained in the East:** You attended an actual medical college. When treating Cholera or Typhoid, you add double your Proficiency/Intelligence modifier (treat as +2 bonus on top of your normal INT modifier).
+- **Trained in the East:** You attended an actual medical college. When treating Cholera or Typhoid, you add an additional +2 bonus on top of your normal INT modifier.
 - **Frontier Herbalist:** You know the green pharmacy. Whenever the party rests in a forested or river-adjacent area, you can automatically gather 1 dose of 'Medicine' for free.
 - **Battle Surgeon:** You operated in the Mexican-American War. You have Advantage on checks to treat traumatic injuries (broken bones, gunshot wounds, animal attacks). Once per segment, you may grant Advantage on a single Wound Track recovery roll.
 - **Quarantine Master:** You are ruthless about sanitation. If disease breaks out in camp, you can mandate preventative measures: everyone else in the party gets Advantage on their initial CON save to resist catching it.

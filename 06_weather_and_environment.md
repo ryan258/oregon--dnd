@@ -35,7 +35,7 @@ _Segments 3, 4 & 5 (Rockies, South Pass, Desert)_
 |  3  | **Clear / High Altitude** | Cold nights, burning sun. Need to carry 2x firewood.                                                               |
 |  4  | **Dust / High Winds**     | Grit gets in everything. Disadvantage on Perception and Hunting checks. Morale drops over time.                    |
 |  5  | **Summer Hail**           | Sudden violent ice storms. Wagon covers take 1d4 damage without shelter.                                           |
-|  6  | **Oppressive Heatwave**   | Temperatures over 100°F (38°C). CON DC 12 daily. Failure: Gain Exhaustion. Oxen take double HP damage from travel. |
+|  6  | **Oppressive Heatwave**   | Temperatures over 100°F (38°C). CON DC 12 daily. Failure: Gain Exhaustion. Oxen take double HP damage from Hard Travel (2 HP instead of 1). |
 
 ---
 

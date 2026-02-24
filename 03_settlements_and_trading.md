@@ -29,6 +29,7 @@ _Base Prices (Independence):_
 - Spare Parts: $6 / set
 - Ammunition: $2 / 20 rounds
 - Ox Team: $32
+- Extra Water Barrel (10 gal capacity): $3
 
 _Example: At Fort Hall (3x multiplier), a dose of Medicine costs $12._
 

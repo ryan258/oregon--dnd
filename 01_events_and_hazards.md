@@ -88,7 +88,7 @@ _The arid wastes beyond the pass. Heat, dehydration, and alkaline dust._
 | :-: | :--------------------- | :--------------------------------------------------------------------------------------------------------- |
 |  1  | **Dried Up Well**      | The marked spring is dust. No water. The Doctor may attempt an INT check (DC 11) to identify signs of subsurface moisture and direct digging; success yields enough water to avoid penalties. Otherwise, everyone takes 1 level of Exhaustion and 1d4 damage. |
 |  2  | **Dust Storm**         | Choking, burning grit. CON DC 12 or suffer eye/lung irritation (Disadvantage on WIS/DEX for 2 days).       |
-|  3  | **Rattlesnake Strike** | A snake in the camp gear. DEX save (DC 11) to avoid. Failure: 1d6 damage and Poisoned condition.           |
+|  3  | **Rattlesnake Strike** | A snake in the camp gear. DEX check (DC 11) to avoid. Failure: **Snakebite** — take 1d6 damage immediately and suffer the Snakebite disease effects (see Disease rules in `seed.md`). |
 |  4  | **Sun Madness**        | The heat breaks morale. CHA DC 12 to stop a physical fight over water rations. Failure: Morale drops by 1. |
 |  5  | **Warped Wood**        | The extreme dryness shrinks wagon wheels. They loosen dangerously. 1 day lost to soak/repair them.         |
 |  6  | **Spoiled Meat**       | Heat ruins stored game. Lose half of all current food reserves.                                            |
