@@ -25,8 +25,8 @@ _The line between life and a shallow grave. Often formally trained, sometimes ju
 
 - **Trained in the East:** You attended an actual medical college. When treating Cholera or Typhoid, you add an additional +2 bonus on top of your normal INT modifier.
 - **Frontier Herbalist:** You know the green pharmacy. Whenever the party rests in a forested or river-adjacent area, you can automatically gather 1 dose of 'Medicine' for free.
-- **Battle Surgeon:** You operated in the Mexican-American War. You have Advantage on checks to treat traumatic injuries (broken bones, gunshot wounds, animal attacks). Once per segment, you may grant Advantage on a single Wound Track recovery roll.
-- **Quarantine Master:** You are ruthless about sanitation. If disease breaks out in camp, you can mandate preventative measures: everyone else in the party gets Advantage on their initial CON save to resist catching it.
+- **Battle Surgeon:** You operated in the Mexican-American War. You have Advantage on checks to treat traumatic injuries (broken bones, gunshot wounds, animal attacks). Once per segment, you may grant Advantage on a single Wound Track recovery check (made at the end of a Rest Day).
+- **Quarantine Master:** You are ruthless about sanitation. If disease breaks out in camp, you can mandate preventative measures: everyone else in the party gets Advantage on their initial CON check to resist catching it.
 
 ### 3. The Hunter
 
@@ -46,6 +46,6 @@ _The mechanic, the beast-master, the person who keeps the wheels literally turni
 **Background Hooks (Choose 1):**
 
 - **Blacksmith's Apprentice:** You know iron and wood. You have Advantage on all STR checks made to repair the wagon, and repairs restore +2 extra HP.
-- **Ox Whisperer:** You have a bond with the draft animals. Once per segment, you can push the oxen for a "Hard Push" travel day without them taking the automatic 1 HP penalty. Additionally, oxen under your care recover 2 HP per rest day instead of 1.
+- **Ox Whisperer:** You have a bond with the draft animals. Once per segment, when the party engages in **Hard Travel**, the oxen do not take the usual 1 HP strain. Additionally, oxen under your care recover 2 HP per rest day instead of 1.
 - **Bullwhacker:** You are fiercely protective of your cargo. You have Advantage on STR checks made to stop the wagon from sliding or overturning on steep grades or river crossings.
 - **Pack-Master:** You know how to balance a load perfectly. Your wagon starts the journey with a free $50 worth of hidden, preserved rations (approx. 100 lbs) that doesn't count against your wagon's weight limit or starting budget.

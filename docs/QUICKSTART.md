@@ -45,9 +45,11 @@ Each character chooses **one** hook for their role from [`02_character_backgroun
 
 - **Max HP:** `8 + CON modifier` (set once at creation)
 - At **0 HP**, you don’t immediately die; you move onto the **Wound Track**:
-  - **Wounded** (limping): disadvantage on physical checks
+  - **Wounded:** disadvantage on STR and DEX checks (no travel-speed penalty)
   - **Gravely Ill / Injured** (bedridden): cannot act; the party must make camp to care for you
   - **Dead**: no resurrection
+
+Wound Track rules: 1st time at 0 HP → Wounded; hitting 0 again while Wounded → Gravely; hitting 0 while Gravely → Dead. Healing HP doesn’t automatically clear Wound Track states. At the end of a Rest Day: **CON DC 10** to move 1 step up the track (medical help can grant Advantage).
 
 ### 5) Party Starting State
 
@@ -65,16 +67,18 @@ This is intentionally conservative to help groups learn the system:
 - Food: **900 lbs**
 - Ox teams: **3**
 - Medicine: **7 doses**
-- Spare parts: **3 sets**
+- Spare parts: **3 parts**
 - Ammunition: **160 rounds**
 - Extra water barrels: **2** (10 gal capacity each; optional but useful insurance)
+- Warm Bedding: **1** (party bundle; strongly recommended)
 
-**Budget note:** At Independence base prices, this loadout costs **$614**, leaving **$186** for resupply. As a quick gut-check, that remaining cash buys roughly this much food:
+**Budget note:** At Independence base prices, this loadout costs **$644**, leaving **$156** for resupply. As a quick gut-check, that remaining cash buys roughly this much food:
 
-- Fort Kearny (1.5×): ~248 lbs
-- Fort Laramie (2×): ~186 lbs
-- Fort Hall (3×): ~124 lbs
-- Fort Boise (4×): ~93 lbs
+- Fort Kearny (1.5×): ~208 lbs
+- Fort Laramie (2×): ~156 lbs
+- Fort Bridger (2.5×): ~125 lbs
+- Fort Hall (3×): ~104 lbs
+- Fort Boise (4×): ~78 lbs
 
 ---
 
@@ -82,7 +86,7 @@ This is intentionally conservative to help groups learn the system:
 
 Each in-game day follows this structure:
 
-1. **Weather** (every 3 days, or when entering a new segment): roll 1d6 on the seasonal table in [`06_weather_and_environment.md`](../06_weather_and_environment.md)
+1. **Weather** (every 3 days, or when entering a new segment): roll 1d6 on the seasonal table in [`06_weather_and_environment.md`](../06_weather_and_environment.md) (use the current **month**; segment notes are typical, not strict)
 2. **Choose stance + action**
 3. **Event**: GM rolls **1d20** on the Universal Event Table (see [`seed.md`](../seed.md))
    - On **1–9**, the GM may swap in the segment’s **1d10** event for local flavor (see [`01_events_and_hazards.md`](../01_events_and_hazards.md))
@@ -94,11 +98,17 @@ Use the `trail_log.md` sheet if you want tight pacing and clear consequences.
 
 ### Montage (Pushing Forward)
 
-If the weather roll for the current 3-day span produces any **non-hazardous** condition (anything other than Blizzard, Heatwave, Heavy Thunderstorms, or Freezing Winds), the party may elect to _Push Forward_:
+If the weather roll for the current 3-day span produces any **non-hazardous** condition (anything other than Hot & Dry, Clear / High Altitude, Heavy Thunderstorms, Late Frost, Summer Hail, Oppressive Heatwave, Cold Rains, Freezing Winds, or Early Blizzard), the party may elect to _Push Forward_:
 
 - Instead of playing 3 individual Trail Days, make **3 days of Standard travel progress**
 - Deduct **3 days** of standard food consumption (and water, if tracked)
 - Roll for **one** Daily Event total
+
+If the prevailing weather has a 3-day-span effect (like Dust / High Winds lowering Morale), apply that effect **once** at the end of the montage.
+
+_Montage events:_ If the single Daily Event is hazardous, resolve it normally (it happens on one day of the 3-day span). If it costs a travel day, the Montage yields 2 days of progress instead of 3.
+
+**Time Loss (Lost Days):** When an effect says you lose/wait **X days**, advance the calendar by X days and gain no net miles. Deduct resources for each day based on what happened (backtracking travel vs. waiting/repairs vs. rest). Don’t roll extra Daily Events for lost days. Weather still shifts every 3 days.
 
 ---
 
@@ -130,6 +140,8 @@ Basic travel does **not** require a roll. A **Travel check** happens only when a
   - **Failure:** half distance + the hazard’s consequence (damage, exhaustion, lost time, etc.)
   - If an entry says “Travel DC +X,” apply it to that day’s Travel check.
 
+- **Navigation check:** a **WIS** check (usually the Guide) to stay on the right trail / find the safest route. DC and consequences are set by the event/hazard.
+
 ### Forced March (+50% miles)
 
 After setting your stance miles, you may push for +50% distance.
@@ -138,10 +150,12 @@ After setting your stance miles, you may push for +50% distance.
 - Each character who fails gains **1 Exhaustion**
 - Cannot combine with **Reckless** stance
 
+**Multipliers & rounding:** If an effect says “double time” / “1.5× miles,” apply it after stance miles (and Forced March, if attempted), then round up to the nearest mile. If an effect halves/doubles food or water consumption, round up to the nearest 0.5. Speed modifiers stack multiplicatively (ox teams, weather, events, then any “half distance” result).
+
 ### Ox teams and speed
 
 - Each ox team has **10 HP**
-- **–25% travel speed per lost team**
+- Multiply miles traveled by **0.75 per lost team**
 - **Hard Travel ox strain:** on any day the party travels Recklessly or attempts a Forced March, one ox team loses **1 HP** (GM chooses or roll randomly)
 - River crossings are punishing: crossing costs **2 HP** to one ox team (DEX check DC 11 reduces to 1)
 - Rest day recovery: each ox team recovers **1 HP**
@@ -157,6 +171,7 @@ After setting your stance miles, you may push for +50% distance.
 - **Yield on success:**
   - Good conditions: `3d10 × 5 lbs`
   - Poor conditions: `2d6 × 5 lbs`
+  - _Good vs. poor conditions:_ If the final Hunting DC is **12 or lower**, treat it as good conditions. If it is **13+**, treat it as poor conditions.
 
 **Hunt while traveling:** One character may break off to hunt while the rest travel at **half speed**, if the Guide makes a **WIS check (DC 9)** to keep the party on track.
 
@@ -164,7 +179,7 @@ After setting your stance miles, you may push for +50% distance.
 
 ### Repairing the wagon (STR)
 
-- Standard repair: **STR check (DC 12)** + spend spare parts (typically 1 set) to restore `1d6+2` wagon HP
+- Standard repair (stop for the day): **STR check (DC 12)** + spend **1 spare part** to restore `1d6+2` wagon HP
 - Rest day actions are in [`05_camp_life.md`](../05_camp_life.md) (including Deep Repair and Preventative Maintenance)
 
 ### Rest day (Layover)
@@ -183,7 +198,7 @@ Rest days are the “reset lever” that keeps the party alive:
 | Deep Repair | STR (DC 11) | Restore `1d4` Wagon HP (no parts). Cannot restore above half max Wagon HP. |
 | Preventative Maint. | STR (DC 10) | Next “Wagon Breakdown” or rough terrain event is nullified or damage halved. |
 | Foraging/Fishing | WIS or DEX (DC 10) | Gain `2d10` lbs of food (berries, roots, fish). |
-| Intensive Care | INT (DC 12) | Choose one: advantage on next disease resistance check, +`1d6` HP, or remove 1 Exhaustion. |
+| Intensive Care | INT (DC 12) | Choose one: advantage on next disease recovery check (end of day), advantage on Wound Track recovery check (end of this Rest Day), +`1d6` HP, or remove 1 Exhaustion. |
 | Brew Tonics | INT (DC 11) | Create `1d4` tonics; drinking one gives advantage on next CON check vs. disease. |
 | Scouting Ahead | WIS (DC 11) | Advantage on next day’s Travel or Navigation check. |
 | Mend & Wash | DEX (DC 9) | Auto-succeed next minor CON check (cold exposure, mild illness, insect bites). |
@@ -191,7 +206,7 @@ Rest days are the “reset lever” that keeps the party alive:
 #### Evening activity (once per layover)
 
 - Campfire stories/music: CHA (DC 10) → Morale +1
-- Diaries/scripture: WIS (DC 9) → remove 1 condition or gain “Inspiration” (Advantage on one roll next day)
+- Diaries/scripture: WIS (DC 9) → one character gains Inspiration (Advantage on one check next day)
 - Proper hot meal: spend **2×** normal rations → everyone removes **1 extra Exhaustion** and Morale +1
 
 #### Watch duty
@@ -206,12 +221,13 @@ Use the fort multipliers + bargaining rules in [`03_settlements_and_trading.md`]
 
 Quick reference:
 
-| Fort | Multiplier | Negotiation DC |
-| :-- | :-- | :-- |
-| Fort Kearny | 1.5× | 12 |
-| Fort Laramie | 2× | 14 |
-| Fort Hall | 3× | 16 |
-| Fort Boise | 4× | 18 |
+| Fort | Mile | Multiplier | Negotiation DC |
+| :-- | :-: | :-- | :-- |
+| Fort Kearny | 300 | 1.5× | 12 |
+| Fort Laramie | 500 | 2× | 14 |
+| Fort Bridger | 850 | 2.5× | 15 |
+| Fort Hall | 1,100 | 3× | 16 |
+| Fort Boise | 1,600 | 4× | 18 |
 
 - Negotiation roll: CHA (Persuasion) or INT (Appraisal)
 - If the party can meet the Sutler’s **demand**, DC drops by **5**

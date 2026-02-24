@@ -27,7 +27,10 @@ Historically, this is the cutoff that doomed the Donner Party in 1846. Though th
 - **The Reality:** It involves crossing the Great Salt Lake Desert and hacking a road through the Wasatch Mountains.
 - **The Mechanic:** If the party takes this route, they enter a "Lost" state.
   - Add +14 days to the journey automatically.
-  - Roll on the **Desert** Event Table for 5 continuous days, then the **Mountain** Event Table for 5 continuous days.
+  - For the next 10 days, roll **one event per day** (do not use the Universal table):
+    - 5 days: use **Segment 5 (Desert Crossing)** events from `01_events_and_hazards.md`
+    - 5 days: use **Segment 4 (South Pass)** events from `01_events_and_hazards.md`
+  - The remaining 4 days are treated as Time Loss (consume resources, weather still shifts) with no additional Daily Event rolls.
   - All travel and survival checks act as if the party's Morale is at 2 (Disadvantage on almost everything).
 - _GM Advice: Heavily telegraph through NPCs that anyone taking this route is courting death._
 
@@ -43,6 +46,7 @@ The final test before reaching the Willamette Valley. The trail splits at The Da
   - Takes 1 week. The Teamster must first make a **STR check (DC 12)** to construct the raft from the wagon frame. Failure means a poorly built raft: all subsequent DEX checks to navigate the rapids have Disadvantage.
   - Requires three consecutive **DEX checks (DC 12, 14, and 13)** to navigate the rapids.
   - _Failure on any check:_ The raft flips off course. Lose 50% of all remaining supplies and money. Failing by 5 or more results in a character drowning.
+  - _On success:_ You reach Fort Vancouver (this counts as reaching the Willamette Valley for victory). The wagon is not recoverable — it was dismantled for the raft, and any remaining ox teams are left behind at The Dalles.
 
 **Option B: The Barlow Road (Overland)**
 
@@ -52,4 +56,4 @@ The final test before reaching the Willamette Valley. The trail splits at The Da
   - Costs **$50 per wagon** and **$25 per ox team**. If the party cannot pay, they cannot take this route.
   - Takes 2 weeks.
   - Requires a **Group STR Check (DC 15)** to lower wagons down the "Laurel Hill" sheer drop using ropes wrapped around trees.
-  - _Failure:_ The ropes snap. The wagon crashes and takes 2d10 damage, likely destroying it completely just miles from the finish line.
+  - _Failure:_ The ropes snap. The wagon crashes and takes 2d10 damage, likely destroying it completely just miles from the finish line. If the wagon reaches 0 HP here, the party caches what they can carry and proceeds on foot — the Willamette Valley is roughly 2–3 days' walk away. They arrive alive but with only what they can shoulder.

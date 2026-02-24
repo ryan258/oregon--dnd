@@ -8,6 +8,7 @@
 - Mile marker:
 - Next landmark / fort:
 - Current weather (prevailing):
+- Warm bedding (blankets/robes)? [ ] Yes  [ ] No (helps vs. cold nights)
 - Today’s stance: (Cautious / Standard / Reckless)
 
 ## Morale (0–10)
@@ -30,7 +31,7 @@
 | Water (gal) | | Track only in arid/waterless stretches |
 | Medicine (doses) | | |
 | Ammunition (rounds) | | |
-| Spare parts (sets) | | |
+| Spare parts (count) | | |
 | Money ($) | | |
 
 ## Ox Teams
@@ -55,4 +56,3 @@
 - Current cargo estimate:
 - Bedridden passengers (≈150 lbs each):
 - Notes (forced drops, overburden, etc.):
-

@@ -20,6 +20,7 @@
 - Only when a hazard demands it: group WIS/CON vs hazard DC
 - Failure: half distance + hazard consequence
 - Forced March: +50% miles, group CON DC 11; each failing character gains 1 Exhaustion; cannot combine with Reckless
+- Shelter (weather/events): WIS (Survival) DC 10 to find cover (DC 12 Plains/Desert). Warm bedding counts as shelter for character cold damage only.
 
 ## Food
 
@@ -33,7 +34,7 @@ Desperate Forage (last resort): when food is depleted and hunting is impossible,
 ## Water (track only in arid/waterless stretches)
 
 - Start: 20 gal
-- Consume: 2 gal/day (4 gal/day in Hot & Dry / Heatwave)
+- Consume: 2 gal/day (4 gal/day in Hot & Dry / Oppressive Heatwave)
 - At 0: each character + ox team takes 1d4 damage/day and gains 1 Exhaustion
 - Extra barrel: $3 (adds 10 gal capacity)
 
@@ -71,6 +72,7 @@ Treatment: spend 1 medicine + Doctor INT DC 11; success doubles recovery and hal
 ## Forts
 
 - Prices multiply by location (see `03_settlements_and_trading.md`)
+- Mile markers: 300 (Kearny), 500 (Laramie), 850 (Bridger), 1,100 (Hall), 1,600 (Boise)
 - Negotiation: CHA (Persuasion) or INT (Appraisal) vs DC by fort; meeting demand reduces DC by 5
 
 ## Native Encounters (recommended)

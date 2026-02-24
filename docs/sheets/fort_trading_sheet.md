@@ -29,7 +29,7 @@
 | Water (gal) | |
 | Medicine (doses) | |
 | Ammo (rounds) | |
-| Spare parts (sets) | |
+| Spare parts (count) | |
 | Money ($) | |
 | Ox teams (HP each) | |
 | Wagon HP | |
@@ -53,7 +53,7 @@
 | Water (gal) | |
 | Medicine (doses) | |
 | Ammo (rounds) | |
-| Spare parts (sets) | |
+| Spare parts (count) | |
 | Money ($) | |
 | Ox teams (HP each) | |
 | Wagon HP | |
@@ -62,4 +62,3 @@
 
 - Labor performed? (Y/N) Outcome:
 - Rumors gained:
-

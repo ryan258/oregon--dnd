@@ -27,9 +27,11 @@
 
 ### Wound Track
 
-- [ ] Wounded (disadvantage on physical checks)
+- [ ] Wounded (disadvantage on STR/DEX checks)
 - [ ] Gravely Ill / Injured (bedridden; cannot act)
 - [ ] Dead
+
+Recovery (end of Rest Day): CON DC 10 to move 1 step up the track (medical help can grant Advantage).
 
 ## Exhaustion (0–6)
 

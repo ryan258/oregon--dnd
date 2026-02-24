@@ -2,6 +2,8 @@
 
 Use one block per in-game day.
 
+Fort mile markers (approx.): 300 (Kearny), 500 (Laramie), 850 (Bridger), 1,100 (Hall), 1,600 (Boise).
+
 ---
 
 ## Day #
@@ -30,7 +32,7 @@ Use one block per in-game day.
 - Water (gal, if tracked): ____ → ____
 - Medicine (doses): ____ → ____
 - Ammo (rounds): ____ → ____
-- Spare parts (sets): ____ → ____
+- Spare parts (count): ____ → ____
 - Money ($): ____ → ____
 
 ### Party State
@@ -45,4 +47,3 @@ Use one block per in-game day.
 
 
 ---
-

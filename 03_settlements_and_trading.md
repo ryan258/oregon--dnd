@@ -19,6 +19,7 @@ Prices skyrocket the further West you go.
 | Independence, MO | 1x (Base)                          |
 | Fort Kearny      | 1.5x                               |
 | Fort Laramie     | 2x                                 |
+| Fort Bridger     | 2.5x                               |
 | Fort Hall        | 3x                                 |
 | Fort Boise       | 4x                                 |
 
@@ -26,10 +27,11 @@ _Base Prices (Independence):_
 
 - Food: $0.50 / lb
 - Medicine: $4 / dose
-- Spare Parts: $6 / set
+- Spare Parts: $6 / part
 - Ammunition: $2 / 20 rounds
 - Ox Team: $32
 - Extra Water Barrel (10 gal capacity): $3
+- Warm Bedding (blankets/robes): $30 (party bundle)
 
 _Example: At Fort Hall (3x multiplier), a dose of Medicine costs $12._
 
@@ -48,6 +50,7 @@ Before any rolls are made, the GM determines what the Sutler specifically wants 
 - The Base Difficulty Class (DC) depends on the Fort:
   - Fort Kearny: DC 12
   - Fort Laramie: DC 14
+  - Fort Bridger: DC 15
   - Fort Hall: DC 16
   - Fort Boise: DC 18
 - **Meeting the Demand:** If the party can roleplay offering the requested information, or physically trade the exact requested item from their inventory, the DC of the negotiation check drops automatically by **-5**.
@@ -64,5 +67,5 @@ Before any rolls are made, the GM determines what the Sutler specifically wants 
 Cash is king, but goods hold value. If the party is out of dollars, they can trade physical items.
 
 - **Ammunition & Medicine** hold their value perfectly and can be traded directly for food at 1:1 monetary value.
-- **Spare Parts** are extremely valuable out West. At Fort Hall or Boise, trading a spare Wagon Wheel can net $30-$50 worth of food.
+- **Spare Parts** are extremely valuable out West. At Fort Hall or Boise, trading 1 spare part (wheel/axle/tongue) can net $30-$50 worth of food.
 - **Labor:** Stranded? A character can work at the fort for a week. Roll a STR or INT check (DC 11). Labor is paid according to the local gold-rush economy scale. Multiply the base wage ($15 success / $5 failure) by the **Fort's Price Multiplier**. _(e.g. Fort Boise is a 4x multiplier, meaning a successful week of labor earns $60)_. This costs the party 7 days of travel time but provides a vital lifeline to desperate parties.

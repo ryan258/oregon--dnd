@@ -18,7 +18,7 @@ The threat of conflict only rose significantly in the late 1850s and 60s as emig
 | :-: | :---------------------- | :-------------- | :---------------------------------------------------------------------------------------- |
 |  1  | **The River Guides**    | Pragmatic       | Pay for expert assistance crossing a treacherous river.                                   |
 |  2  | **The Toll Takers**     | Firm            | Pay a requested tribute (food, goods) to cross a bridge or pass.                          |
-|  3  | **The Traders**         | Welcoming       | Barter clothing, tools, or ammo for fresh horses, fish, or pemmican.                      |
+|  3  | **The Traders**         | Welcoming       | Barter clothing, tools, or ammo for fish, pemmican, and other hard-to-find trail goods.  |
 |  4  | **The Curious Camp**    | Observational   | Peaceful meeting; exchange of gifts; shared camp.                                         |
 |  5  | **The Aggrieved Party** | Tense           | Emigrants destroyed an area or stole stock. Demand for restitution.                       |
 |  6  | **The Warning**         | Grave           | Native riders warn the party of a massive storm, hostile band, or washed-out trail ahead. |
@@ -43,9 +43,9 @@ To successfully navigate the encounter (negotiate a toll, trade, secure assistan
 
 Different party members must contribute using their unique skills. Players describe their action, and the GM determines the relevant stat:
 
-- _The Hunter_ rolls **DEX (Survival)** to offer freshly caught game as a sign of mutual respect.
-- _The Doctor_ rolls **INT (Medicine)** to offer a physical assessment of an injured horse or person.
-- _The Guide_ rolls **WIS (Insight)** to observe camp dynamics and recognize who holds actual speaking authority. _(Cultural Broker: The Guide can choose to automatically negate one failed check during this encounter, framing it as correcting a cultural faux pas before offense is taken.)_
+- _The Hunter_ rolls **DEX (Hunting)** to offer freshly caught game as a sign of mutual respect.
+- _The Doctor_ rolls **INT (Medicine)** to offer a physical assessment of an injured animal or person.
+- _The Guide_ rolls **WIS (Insight)** to observe camp dynamics and recognize who holds actual speaking authority. _(Cultural Broker: Once per encounter, the Guide can choose to automatically negate one failed check, framing it as correcting a cultural faux pas before offense is taken.)_
 - _The Teamster_ rolls **STR (Athletics)** to show respectful strength during an impromptu camp contest.
 - _Any Face Character_ rolls **CHA (Persuasion)** for direct translation and bartering terms.
 

@@ -20,17 +20,17 @@ During a Rest Day, every character can take **one major Camp Action**. You canno
 | **Deep Repair**         | STR (DC 11)        | Spend a day under the wagon reinforcing the chassis. Restores 1d4 Wagon HP (no parts required, but cannot restore the wagon above half its maximum HP — use spare parts for full repairs). |
 | **Preventative Maint.** | STR (DC 10)        | The Teamster greases axles and reinforces yokes. Success means the next "Wagon Breakdown" or rough terrain event is automatically nullified or its damage halved.                     |
 | **Foraging/Fishing**    | WIS or DEX (DC 10) | Search the immediate vicinity. Success yields 2d10 lbs of food (berries, roots, fish).                                                                                                |
-| **Intensive Care**      | INT (DC 12)        | The Doctor spends all day tending to the sick/wounded. Target character gains Advantage on their next disease saving throw, recovers an additional 1d6 HP, or removes 1 level of Exhaustion. |
-| **Brew Tonics**         | INT (DC 11)        | The Doctor gathers herbs to distill preventative tonics. Success yields 1d4 tonics. Anyone drinking one gains Advantage on their next CON save against disease.                       |
-| **Scouting Ahead**      | WIS (DC 11)        | Take a horse and ride a few miles forward. Success reveals tomorrow’s terrain or hazards, granting Advantage on the next day’s Travel or Navigation check.                            |
-| **Mend & Wash**         | DEX (DC 9)         | Fix torn clothes, boil lice, clean weapons. Small comforts matter. Target character automatically succeeds their next minor CON save (cold exposure, mild illness, insect bites). |
+| **Intensive Care**      | INT (DC 12)        | The Doctor spends all day tending to the sick/wounded. Target character gains Advantage on their next disease recovery check (end of day), gains Advantage on their Wound Track recovery check (end of this Rest Day), recovers an additional 1d6 HP, or removes 1 level of Exhaustion. |
+| **Brew Tonics**         | INT (DC 11)        | The Doctor gathers herbs to distill preventative tonics. Success yields 1d4 tonics. Anyone drinking one gains Advantage on their next CON check to resist or recover from disease.     |
+| **Scouting Ahead**      | WIS (DC 11)        | Scout a few miles forward. Success reveals tomorrow’s terrain or hazards, granting Advantage on the next day’s Travel or Navigation check.                                          |
+| **Mend & Wash**         | DEX (DC 9)         | Fix torn clothes, boil lice, clean weapons. Small comforts matter. Target character automatically succeeds their next minor CON check (cold exposure, mild illness, insect bites). |
 
 ### The Morale Engine: Evening Activities
 
 Evenings in camp are crucial for party Morale. Once per layover, the party can engage in an **Evening Activity**. The GM should ask the players to briefly roleplay or describe their activity.
 
 - **Campfire Stories / Music:** A character plays a fiddle, jaw harp, or tells a story from back East. **CHA check (DC 10).** _Success:_ The party's Morale increases by 1.
-- **Writing in Diaries / Reading Scripture:** Quiet, solitary processing of trauma. **WIS check (DC 9).** _Success:_ The individual character removes 1 condition (fear, despair) or gains Inspiration (Advantage on one roll of their choice the next day).
+- **Writing in Diaries / Reading Scripture:** Quiet, solitary processing of trauma. **WIS check (DC 9).** _Success:_ One character gains Inspiration (Advantage on one check of their choice the next day).
 - **A Proper Hot Meal:** Using 2x the normal food ration and real effort to cook it well. No check required. _Success:_ Everyone removes 1 additional Exhaustion level instantly, and the party's Morale increases by 1.
 
 ### Watch Duty
