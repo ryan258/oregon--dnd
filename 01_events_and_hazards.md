@@ -11,7 +11,7 @@ _The great flat expanse. The primary threats are weather, initial inexperience, 
 | d10 | Event                      | Mechanical Effect                                                                                          |
 | :-: | :------------------------- | :--------------------------------------------------------------------------------------------------------- |
 |  1  | **Sudden Thunderstorm**    | Lightning spooks the oxen. DEX check (DC 13) or 1 ox team takes 2 HP damage. Travel speed halved this day. |
-|  2  | **Heavy Spring Mud**       | The wagon bogs down down to the axles. STR check (DC 15, group) to dig it out, or lose a travel day.       |
+|  2  | **Heavy Spring Mud**       | The wagon bogs down to the axles. STR check (DC 15, group) to dig it out, or lose a travel day.            |
 |  3  | **First Signs of Illness** | A random character makes a CON save (DC 12). Failure: Gain 1 Exhaustion level.                             |
 |  4  | **Prairie Fire (Distant)** | The smoke chokes the air. Visibility drops. Disadvantage on Navigation/Hunting for 2 days.                 |
 |  5  | **Misjudged Rations**      | Party realizes food was packed poorly. Lose 1d4 x 10 lbs of food to spoilage.                              |
@@ -29,7 +29,7 @@ _The Kansas and Platte rivers. The primary threats are drowning, losing the wago
 
 | d10 | Event                   | Mechanical Effect                                                                                                           |
 | :-: | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
-|  1  | **Treachorous Ford**    | The riverbed gives way. Wagon takes 1d6 damage. Drowning risk for anyone walking (STR DC 13).                               |
+|  1  | **Treacherous Ford**    | The riverbed gives way. Wagon takes 1d6 damage. Drowning risk for anyone walking (STR DC 13).                               |
 |  2  | **Ferry Bottleneck**    | A 3-day wait for the ferry, or the party can risk fording a dangerous section immediately (DC 16).                          |
 |  3  | **Cholera Scare**       | Passing a fresh grave farm. Roll 1d6 for disease (Cholera on a 3-4, Dysentery otherwise).                                   |
 |  4  | **Saturating Rains**    | Everything gets wet. Wood is useless. No fire tonight. Sleep in the cold (CON DC 11 or 1 Exhaustion).                       |

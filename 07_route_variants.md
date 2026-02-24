@@ -46,10 +46,10 @@ The final test before reaching the Willamette Valley. The trail splits at The Da
 
 **Option B: The Barlow Road (Overland)**
 
-- **Description:** A brutal, steep toll road carved directly over the flanks of Mount Hood.
-- **The Danger:** Extremely steep grades, fallen timber, early snows. The toll is expensive.
+- **Description:** A brutal, steep toll road carved directly over the flanks of Mount Hood. By 1848, the operators know you are desperate.
+- **The Danger:** Extremely steep grades, fallen timber, early snows. The toll is financially devastating to a broke party.
 - **Mechanics:**
-  - Costs $5 per wagon (a high toll).
+  - Costs **$50 per wagon** and **$10 per ox team**. If the party cannot pay, they cannot take this route.
   - Takes 2 weeks.
   - Requires a **Group STR Check (DC 17)** to lower wagons down the "Laurel Hill" sheer drop using ropes wrapped around trees.
   - _Failure:_ The ropes snap. The wagon crashes and takes 2d10 damage, likely destroying it completely just miles from the finish line.

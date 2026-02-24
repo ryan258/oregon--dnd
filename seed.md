@@ -97,7 +97,7 @@ The journey is divided into **7 segments**, each representing a major geographic
 
 Each Trail Day follows this structure, unless the party engages a **Montage**.
 
-**The Montage (Pushing Forward):** If the weather roll for the current 3-day span is "Clear & Mild", the party may elect to _Push Forward_. Instead of rolling for 3 individual days, they automatically make 3 days of Standard travel progress, deduct 3 days of standard food/ox health, and roll for a single Daily Event. This allows the table to fast-forward through quiet stretches of the plains and focus on the dangerous segments.
+**The Montage (Pushing Forward):** If the weather roll for the current 3-day span is any form of clear weather ("Clear & Mild", "Hot & Dry", "Clear / High Altitude", or "Crisp & Clear"), the party may elect to _Push Forward_. Instead of rolling for 3 individual days, they automatically make 3 days of Standard travel progress, deduct 3 days of standard food/ox health, and roll for a single Daily Event. This allows the table to fast-forward through quiet stretches of the plains and focus on the dangerous segments.
 
 **1. Morning Check-In**
 
@@ -110,8 +110,9 @@ Each Trail Day follows this structure, unless the party engages a **Montage**.
 
 **2. The Day's Action**
 
-- Resolve the chosen action via skill check (see Skill Checks)
-- GM rolls on the **Event Table** (see Events)
+- First, the GM rolls on the **Event Table** (see Events) and resolves it.
+- Then, the party resolves their chosen action via skill check (see Skill Checks).
+  - _Note on Action Economy:_ The wagon moves as a single unit. During a travel day, the party cannot split actions (e.g., the Hunter cannot roll for a hunt while the Teamster rolls to repair). If you hunt or repair, you are not traveling.
 
 **3. Resource Consumption**
 
@@ -413,13 +414,13 @@ If the group wants a softer experience, add +2 to all Constitution checks and gi
 
 This document serves as the core rulebook. The full game system is expanded across detailed modules:
 
-- [01. Events & Hazards](file:///Users/ryanjohnson/Projects/oregon%20%20dnd/01_events_and_hazards.md) (Segment-specific 1d10 tables)
-- [02. Character Backgrounds](file:///Users/ryanjohnson/Projects/oregon%20%20dnd/02_character_backgrounds.md) (Mechanical backgrounds by role)
-- [03. Settlements & Trading](file:///Users/ryanjohnson/Projects/oregon%20%20dnd/03_settlements_and_trading.md) (Fort prices, bargaining)
-- [04. Native Encounters](file:///Users/ryanjohnson/Projects/oregon%20%20dnd/04_native_encounters.md) (Diplomacy, tolls, assistance)
-- [05. Camp Life & Rest Days](file:///Users/ryanjohnson/Projects/oregon%20%20dnd/05_camp_life.md) (Activities, morale, repair)
-- [06. Weather & Environment](file:///Users/ryanjohnson/Projects/oregon%20%20dnd/06_weather_and_environment.md) (Seasonal weather tables)
-- [07. Route Variants & Cutoffs](file:///Users/ryanjohnson/Projects/oregon%20%20dnd/07_route_variants.md) (High-risk shortcuts)
+- [01. Events & Hazards](./01_events_and_hazards.md) (Segment-specific 1d10 tables)
+- [02. Character Backgrounds](./02_character_backgrounds.md) (Mechanical backgrounds by role)
+- [03. Settlements & Trading](./03_settlements_and_trading.md) (Fort prices, bargaining)
+- [04. Native Encounters](./04_native_encounters.md) (Diplomacy, tolls, assistance)
+- [05. Camp Life & Rest Days](./05_camp_life.md) (Activities, morale, repair)
+- [06. Weather & Environment](./06_weather_and_environment.md) (Seasonal weather tables)
+- [07. Route Variants & Cutoffs](./07_route_variants.md) (High-risk shortcuts)
 
 ---
 

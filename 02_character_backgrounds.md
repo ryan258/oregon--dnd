@@ -48,4 +48,4 @@ _The mechanic, the beast-master, the person who keeps the wheels literally turni
 - **Blacksmith's Apprentice:** You know iron and wood. You have Advantage on all STR checks made to repair the wagon, and repairs restore +2 extra HP.
 - **Ox Whisperer:** You have a bond with the draft animals. Once per segment, you can push the oxen for a "Hard Push" travel day without them taking the automatic 1 HP penalty.
 - **Bullwhacker:** You are fiercely protective of your cargo. You have Advantage on STR checks made to stop the wagon from sliding or overturning on steep grades or river crossings.
-- **Pack-Master:** You know how to balance a load perfectly. Your wagon starts the journey with a free $+50$ worth of hidden, preserved rations (approx. 100 lbs) that doesn't count against your wagon's weight limit or starting budget.
+- **Pack-Master:** You know how to balance a load perfectly. Your wagon starts the journey with a free $50 worth of hidden, preserved rations (approx. 100 lbs) that doesn't count against your wagon's weight limit or starting budget.
