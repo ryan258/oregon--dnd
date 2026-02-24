@@ -12,7 +12,7 @@ The threat of conflict only rose significantly in the late 1850s and 60s as emig
 
 ### The Native Encounter Table
 
-When checking for an Encounter, or instructed by the GM, roll **1d6** for the nature of the interaction.
+**Encounter Frequency:** The GM should trigger **1 Native Encounter per segment**, replacing that day's Universal Event Table roll. When a Native Encounter occurs, roll **1d6** for the nature of the interaction.
 
 | d6  | Encounter Type          | Primary Emotion | Resolution Goal                                                                           |
 | :-: | :---------------------- | :-------------- | :---------------------------------------------------------------------------------------- |
@@ -36,7 +36,7 @@ Diplomacy with native bands is complex and involves translation issues, cultural
 
 To successfully navigate the encounter (negotiate a toll, trade, secure assistance), the party must amass **3 Successes before 2 Failures**.
 
-- **Base DC for all checks is 12.**
+- **Base DC for all checks is 10.**
 - Modifiers: +2 to DC if the party looks desperate/armed to the teeth; -2 to DC if the party has traded fairly with tribes before.
 
 **Group Participation:**
@@ -55,7 +55,7 @@ Different party members must contribute using their unique skills. Players descr
   - _If Trading:_ Gain access to goods you cannot find at forts (e.g., Pemmican, which lasts forever and counts as 1.5x food value).
   - _If Guides:_ River crossing DC drops to 8, and no wagons are lost.
   - _If Toll:_ A fair toll is negotiated ($5 or 10 lbs of food).
-- **Failure (2 Fails):** Communication breaks down, or an insult is unknowingly given. The encounter enters a **Standoff State**. The wagon train is halted and tensions rise. The party must make a final, high-stakes group CHA or WIS check (DC 14) to de-escalate.
+- **Failure (2 Fails):** Communication breaks down, or an insult is unknowingly given. The encounter enters a **Standoff State**. The wagon train is halted and tensions rise. The party must make a final, high-stakes group CHA or WIS check (DC 12) to de-escalate.
   - _Standoff Success:_ The band demands a steeper price (half an ox's value, $15) and departs peacefully once paid.
   - _Standoff Failure:_ The situation descends into a **Crisis**.
 - **Crisis (Hostility/Refusal to Pay Toll):** Native riders block the path or prepare to defend their demands. The party must either surrender double the asked goods, or risk combat. _Note: Starting a firefight usually results in severe party injuries, lost stock, and a permanent increase in hostility DC for the rest of the segment._

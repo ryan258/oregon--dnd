@@ -21,7 +21,7 @@ _Segments 1 & 2 (The Plains, River Crossings)_
 | 1-3 | **Clear & Mild**        | Baseline conditions. No modifiers. Grass is abundant.                                            |
 |  4  | **Spring Showers**      | Steady rain. River crossing DCs increase by +1. Mud makes Travel checks slightly harder (DC +1). |
 |  5  | **Heavy Thunderstorms** | Violent storms. Travel speed reduced by 25%. Lighting risks to stock. No campfires tonight.      |
-|  6  | **Late Frost**          | Surprise temperature drop. CON DC 11 overnight or take 1 level of Exhaustion.                    |
+|  6  | **Late Frost**          | Surprise temperature drop. CON DC 9 overnight or take 1 level of Exhaustion.                     |
 
 ---
 
@@ -35,7 +35,7 @@ _Segments 3, 4 & 5 (Rockies, South Pass, Desert)_
 |  3  | **Clear / High Altitude** | Cold nights, burning sun. Need to carry 2x firewood.                                                               |
 |  4  | **Dust / High Winds**     | Grit gets in everything. Disadvantage on Perception and Hunting checks. Morale drops over time.                    |
 |  5  | **Summer Hail**           | Sudden violent ice storms. Wagon covers take 1d4 damage without shelter.                                           |
-|  6  | **Oppressive Heatwave**   | Temperatures over 100°F (38°C). CON DC 14 daily. Failure: Gain Exhaustion. Oxen take double HP damage from travel. |
+|  6  | **Oppressive Heatwave**   | Temperatures over 100°F (38°C). CON DC 12 daily. Failure: Gain Exhaustion. Oxen take double HP damage from travel. |
 
 ---
 
@@ -58,5 +58,5 @@ _If the party is still on the trail in late October, panic should set in._
 
 The land itself wears you down.
 
-- **Lack of Wood:** In the Plains and Desert (Segments 1 & 5), wood is rare. Players must gather buffalo chips (dried dung) to burn. If they fail to gather fuel (WIS DC 10 daily), they cannot cook food or boil water, increasing disease risk by +2 DC.
+- **Lack of Wood:** In the Plains and Desert (Segments 1 & 5), wood is rare. Players must gather buffalo chips (dried dung) to burn. If they fail to gather fuel (WIS DC 8 daily), they cannot cook food or boil water, increasing disease risk by +2 DC.
 - **Poisonous Forage:** Specifically near the Rockies approach (Segment 3), alkali pools look like drinking water. Emigrants and cattle drinking from them become violently ill. (See Event Tables).

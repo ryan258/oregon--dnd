@@ -15,7 +15,7 @@ This cutoff bypasses Fort Bridger entirely, driving straight across a harsh, wat
 - **The Danger: The Fifty-Mile Desert.**
   - The wagon must cross 50 miles without water. This takes about 48 hours of non-stop pushing.
   - **Requirement:** Must carry extra water, or the oxen will begin to die.
-  - **Mechanic:** The party must make a **Group CON check (DC 15)**.
+  - **Mechanic:** The party must make a **Group CON check (DC 13)**.
     - _Success:_ You cross exhausted but alive. Lose 1 ox team HP.
     - _Failure:_ You are broken by the crossing. Everyone gains 1 level of Exhaustion, and 1 ox team collapses entirely (0 HP).
 
@@ -40,8 +40,8 @@ The final test before reaching the Willamette Valley. The trail splits at The Da
 - **Description:** Break down the wagon, build a massive raft, and float down the treacherous river rapids to Fort Vancouver.
 - **The Danger:** Smashing against the rocks.
 - **Mechanics:**
-  - Takes 1 week.
-  - Requires three consecutive **Watercraft/DEX checks (DC 14, 16, and 15)**.
+  - Takes 1 week. The Teamster must first make a **STR check (DC 12)** to construct the raft from the wagon frame. Failure means a poorly built raft: all subsequent Watercraft checks have Disadvantage.
+  - Requires three consecutive **Watercraft/DEX checks (DC 12, 14, and 13)**.
   - _Failure:_ The raft flips off course. Lose 50% of all remaining supplies and money. A critical failure results in a character drowning.
 
 **Option B: The Barlow Road (Overland)**
@@ -49,7 +49,7 @@ The final test before reaching the Willamette Valley. The trail splits at The Da
 - **Description:** A brutal, steep toll road carved directly over the flanks of Mount Hood. By 1848, the operators know you are desperate.
 - **The Danger:** Extremely steep grades, fallen timber, early snows. The toll is financially devastating to a broke party.
 - **Mechanics:**
-  - Costs **$50 per wagon** and **$10 per ox team**. If the party cannot pay, they cannot take this route.
+  - Costs **$50 per wagon** and **$25 per ox team**. If the party cannot pay, they cannot take this route.
   - Takes 2 weeks.
-  - Requires a **Group STR Check (DC 17)** to lower wagons down the "Laurel Hill" sheer drop using ropes wrapped around trees.
+  - Requires a **Group STR Check (DC 15)** to lower wagons down the "Laurel Hill" sheer drop using ropes wrapped around trees.
   - _Failure:_ The ropes snap. The wagon crashes and takes 2d10 damage, likely destroying it completely just miles from the finish line.
