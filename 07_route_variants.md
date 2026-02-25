@@ -13,11 +13,12 @@ This cutoff bypasses Fort Bridger entirely, driving straight across a harsh, wat
 - **The Promise:** Saves 70 miles (roughly 5-7 days of travel).
 - **The Cost:** You skip a major resupply point (Fort Bridger).
 - **The Danger: The Fifty-Mile Desert.**
-  - The wagon must cross 50 miles without water. This takes about 48 hours of non-stop pushing.
-  - **Requirement:** Must carry extra water, or the oxen will begin to die.
-  - **Mechanic:** The party must make a **Group CON check (DC 13)**.
-    - _Success:_ You cross exhausted but alive. Lose 1 ox team HP.
-    - _Failure:_ You are broken by the crossing. Everyone gains 1 level of Exhaustion, and 1 ox team collapses entirely (0 HP).
+  - The wagon must cross 50 miles without water. This takes **3 days** of hard pushing (≈17 miles/day).
+- **Requirement:** Start the crossing with **full water (20 gal)**. Water is actively tracked during this stretch (see Water rules in `seed.md`). At normal consumption (2 gal/day), the party needs 6 gallons for 3 days; in Hot & Dry weather (4 gal/day), they need 12. Extra barrels are recommended as insurance against lost days or heat.
+  - **Mechanic:** Each day of the crossing, deduct water normally. Additionally, the party makes a **Group CON check (DC 13)** at the end of each day.
+    - _Success:_ The party endures. One ox team loses **1 HP** from strain.
+    - _Failure:_ Each character who failed gains **1 level of Exhaustion**, and one ox team loses **2 HP**.
+  - If the party runs out of water during the crossing, apply the standard 0-water penalties (1d4 damage/day + 1 Exhaustion to all characters and ox teams) in addition to the daily CON check.
 
 ### 2. Hastings Cutoff (Fatal Decision Point)
 
@@ -31,7 +32,7 @@ Historically, this is the cutoff that doomed the Donner Party in 1846. Though th
     - 5 days: use **Segment 5 (Desert Crossing)** events from `01_events_and_hazards.md`
     - 5 days: use **Segment 4 (South Pass)** events from `01_events_and_hazards.md`
   - The remaining 4 days are treated as Time Loss (consume resources, weather still shifts) with no additional Daily Event rolls.
-  - All travel and survival checks act as if the party's Morale is at 2 (Disadvantage on almost everything).
+  - All travel and survival checks act as if the party's Morale is at 2 (Disadvantage on all checks).
 - _GM Advice: Heavily telegraph through NPCs that anyone taking this route is courting death._
 
 ### 3. The Barlow Road vs. The Columbia River (Segment 7 Finale)

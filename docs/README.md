@@ -1,6 +1,7 @@
 # Docs
 
 - `QUICKSTART.md`: The fastest way to get the game to the table (setup + core loop + key numbers).
+- `glossary.md`: Definitions of all abbreviations, TTRPG jargon, and game-specific terms.
 - `sheets/`: Printable templates for play.
 
 ## Sheets

@@ -14,7 +14,7 @@ _The great flat expanse. The primary threats are weather, initial inexperience, 
 |  2  | **Heavy Spring Mud**       | The wagon bogs down to the axles. STR check (DC 13, group) to dig it out, or lose a travel day.            |
 |  3  | **First Signs of Illness** | A random character makes a CON check (DC 10). Failure: Gain 1 Exhaustion level.                            |
 |  4  | **Prairie Fire (Distant)** | The smoke chokes the air. Visibility drops. Disadvantage on Navigation/Hunting for 2 days.                 |
-|  5  | **Misjudged Rations**      | Party realizes food was packed poorly. Lose 1d4 x 10 lbs of food to spoilage.                              |
+|  5  | **Misjudged Rations**      | Party realizes food was packed poorly. Lose 1d4 × 10 lbs of food to spoilage.                              |
 |  6  | **Swarm of Mosquitoes**    | Miserable conditions. WIS (Survival) DC 9 to keep smoke up and cover skin. Failure: Morale drops by 1.    |
 |  7  | **Friendly Emigrant Pass** | Meet another wagon heading back. They trade 1 Medicine for 20 lbs of food, or vice versa.                  |
 |  8  | **Buffalo Sign**           | The Hunter finds fresh tracks. Next Hunting check has Advantage.                                           |
@@ -105,10 +105,10 @@ _Following the canyons. Difficult terrain, rushing rapids, and the final stretch
 
 | d10 | Event                    | Mechanical Effect                                                                                                  |
 | :-: | :----------------------- | :----------------------------------------------------------------------------------------------------------------- |
-|  1  | **Overturned Wagon**     | The trail hugs a cliff. A slip costs the wagon 1d10 HP and dumps 1d4x50 lbs of supplies into the river.            |
+|  1  | **Overturned Wagon**     | The trail hugs a cliff. A slip costs the wagon 1d10 HP and dumps 1d4 × 50 lbs of supplies into the river.            |
 |  2  | **Rapids Ford**          | Forced to cross deep, fast water. High drowning risk. The Guide must make a WIS check (DC 13) to find the safest crossing point; success grants Advantage on the group check. Group DEX check (DC 13). Failure means sweeping downstream. |
 |  3  | **Dysentery Outbreak**   | The water is foul. The Doctor may attempt an INT check (DC 11) to identify contaminated water sources before anyone drinks; success means the party avoids the outbreak entirely. Otherwise, roll 1d4 party members: they immediately contract Dysentery (CON DC 12 to resist). |
-|  4  | **Steep Ravine Descent** | Must lower the wagon by ropes. STR DC 14 (Extended: 3 successes before 2 fails). Failure: Wagon takes huge damage. |
+|  4  | **Steep Ravine Descent** | Must lower the wagon by ropes. STR DC 14 (Extended: 3 successes before 2 fails). Failure: Wagon takes **2d10 damage**. |
 |  5  | **Broken Yoke**          | The strain breaks the ox tackle. Stop for 1 day to carve a new one: STR check (DC 11). Failure: lose 1 additional day, or spend 1 spare part to finish the job. |
 |  6  | **Stolen Stock**         | Stock thieves in the night. WIS (Perception) DC 13 to spot them. Failure: Lose $50 worth of goods (valued at Independence base prices) or 1 ox team. |
 |  7  | **Salmon Run**           | The river is thick with fish. A single DEX DC 8 check yields 100 lbs of food.                                      |
@@ -125,7 +125,7 @@ _The final hurdle before the valley. Starvation, winter snows, and the brink of 
 | d10 | Event                          | Mechanical Effect                                                                                       |
 | :-: | :----------------------------- | :------------------------------------------------------------------------------------------------------ |
 |  1  | **The Bitter Cold**            | Winter is here. CON DC 13 every day. Failure means 1d4 cold damage and 1 Exhaustion level.              |
-|  2  | **Starvation Sets In**         | Food is gone. Everyone takes 1d6 damage daily. Morale drops 1 point every 2 days.                       |
+|  2  | **Starvation Sets In**         | Food is gone. Each day without a successful hunt, everyone makes a **CON check (DC 11)** or gains 1 Exhaustion. If already at Exhaustion 3+, also take **1d4 damage**. Morale drops 1 point every 2 days. |
 |  3  | **Fallen Trees**               | A storm dropped pines across the trail. Stop for 2 days to chop through them.                           |
 |  4  | **The Axle Snaps**             | The final straw. The wagon is dead. Do you repair it (needs parts/str) or abandon it and walk the rest? |
 |  5  | **Lost in the Pines**          | The trail vanishes under snow. Guide must make WIS DC 14 or wander aimlessly for 3 days.                |

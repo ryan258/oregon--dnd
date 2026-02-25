@@ -59,6 +59,8 @@ Six stats, same names as D&D, same modifier calculation (score of 10–11 = +0, 
 - **Wisdom** — Trail sense, weather reading, people reading, knowing when to rest
 - **Charisma** — Negotiating at forts, managing party morale, trading with Native peoples
 
+_Note on Charisma:_ No role has Charisma as a primary or secondary stat. This is intentional — social skill on the frontier was not a specialization but a shared necessity. Any party member can attempt Charisma checks; players who invest in CHA through lucky rolls (or who roleplay well) naturally become the party's "face" without a dedicated role.
+
 ### Stat Generation
 
 Use the **historical method**: Roll 3d6 in order for each stat. No rerolling. No point buy. The trail doesn't care about your preferences.
@@ -201,6 +203,7 @@ Some rules include a parenthetical tag (e.g., **WIS (Survival)**, **CHA (Persuas
 | --- | --------------- | ----------------------------------------------- |
 | 6   | Easy            | Walking a flat trail in good weather            |
 | 9   | Moderate        | Fording a shallow river                         |
+| 10  | Challenging     | Finding shelter on the open plains              |
 | 12  | Hard            | Hunting in poor conditions                      |
 | 15  | Very Hard       | Crossing a flooded river with the wagon         |
 | 18  | Brutal          | Surviving a blizzard without shelter            |
@@ -310,7 +313,7 @@ Oxen are the party's engine. Without them, the wagon doesn't move.
 - Hard Travel strains the oxen: on any day the party travels Recklessly or attempts a Forced March, one ox team loses 1 HP (GM chooses or roll randomly)
 - Lose 2 HP crossing rivers (Dexterity check DC 11 to reduce to 1)
 - Recover 1 HP per full Rest Day (grazing/feeding is abstracted — no extra tracked food cost)
-- At 0 HP, an ox team collapses. Multiply miles traveled by 0.75 per lost team. At 0 teams: **stranded** — the wagon cannot move. The party may cache supplies and proceed on foot at half Standard speed (7–10 mi/day), attempt to purchase a replacement team at the nearest fort, or work for wages at a fort to fund new oxen. If no fort is reachable on foot, the party's journey is over.
+- At 0 HP, an ox team **collapses and dies** — it is permanently lost and cannot be recovered through rest or healing. Multiply miles traveled by 0.75 per lost team. At 0 teams: **stranded** — the wagon cannot move. The party may cache supplies and proceed on foot at half Standard speed (7–10 mi/day), attempt to purchase a replacement team at the nearest fort, or work for wages at a fort to fund new oxen. If no fort is reachable on foot, the party's journey is over.
 
 ### Wagon HP
 
@@ -441,7 +444,7 @@ Dead characters stay dead. There is no magic on the Oregon Trail.
 
 ### Morale
 
-The party has a collective **Morale score** from 1–10 (starts at 7).
+The party has a collective **Morale score** from 0–10 (starts at 7).
 
 **Morale drops by 1 when:**
 

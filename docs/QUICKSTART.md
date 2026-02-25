@@ -12,6 +12,8 @@ This quickstart is a condensed, table-ready version of the rules in [`seed.md`](
 
 Printable templates live in [`docs/sheets/`](./sheets/).
 
+New to tabletop RPGs? Start with the [`glossary.md`](./glossary.md).
+
 ---
 
 ## What You Need
@@ -94,7 +96,7 @@ Each in-game day follows this structure:
 5. **Resource consumption** (food, water if tracked, oxen strain, illness effects)
 6. **Camp** (care, morale, watch)
 
-Use the `trail_log.md` sheet if you want tight pacing and clear consequences.
+Use the [`trail_log.md`](./sheets/trail_log.md) sheet if you want tight pacing and clear consequences.
 
 ### Montage (Pushing Forward)
 
@@ -179,7 +181,7 @@ After setting your stance miles, you may push for +50% distance.
 
 ### Repairing the wagon (STR)
 
-- Standard repair (stop for the day): **STR check (DC 12)** + spend **1 spare part** to restore `1d6+2` wagon HP
+- Standard repair (stop for the day): requires **1 spare part** available. **STR check (DC 12)**. Success: spend the spare part and restore `1d6+2` Wagon HP. Failure: no HP restored; the spare part is **not** consumed.
 - Rest day actions are in [`05_camp_life.md`](../05_camp_life.md) (including Deep Repair and Preventative Maintenance)
 
 ### Rest day (Layover)
@@ -216,6 +218,8 @@ Rest days are the “reset lever” that keeps the party alive:
 - Double shift: CON (DC 11) or gain 1 Exhaustion
 
 ### Trading at forts
+
+A day spent trading at a fort is a **non-travel day** (1 lb food/person). The party may also take a separate **Rest Day** at the fort for full healing/recovery benefits (0.5 lbs food/person). Trading and rest are separate days.
 
 Use the fort multipliers + bargaining rules in [`03_settlements_and_trading.md`](../03_settlements_and_trading.md).
 
@@ -325,7 +329,7 @@ Then follow this daily cadence (see the full rules in [`seed.md`](../seed.md)):
 
 ---
 
-## Morale (1–10)
+## Morale (0–10)
 
 Morale is party-wide and affects how often “bad days” spiral.
 

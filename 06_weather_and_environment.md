@@ -68,6 +68,20 @@ _If the party is still on the trail in late October, panic should set in._
 
 ---
 
+### Winter (November – December)
+
+_Segment 7 (Blue Mountains) for slow parties. If your party is still on the trail in November, they are in serious danger._
+
+| d6  | Condition                | Effect                                                                                                     |
+| :-: | :----------------------- | :--------------------------------------------------------------------------------------------------------- |
+| 1-2 | **Heavy Snowfall**       | Deep snow halves travel speed (multiply miles by 0.5, round up). Hunting checks have Disadvantage.          |
+|  3  | **Bitter Cold**          | Each character takes **1d6 cold damage** daily unless **Sheltered** with **Warm Bedding**. Shelter alone or Warm Bedding alone reduces damage to 1d4. Oxen lose 1 HP per day. |
+|  4  | **Ice Storm**            | Freezing rain coats everything. Travel is impossible for 1 day. The wagon takes 1d4 damage. All DEX checks have Disadvantage for the next 2 days. |
+|  5  | **Whiteout Blizzard**    | Travel is impossible. The party must shelter in place for 1d4 days. Each day, characters without shelter make **CON DC 14** or take 1d6 cold damage and gain 1 Exhaustion. |
+|  6  | **Dead of Winter**       | Everything compounds. Whiteout conditions (no travel). 1d6 cold damage/day to all unsheltered characters. Oxen lose 2 HP/day. On a d6 roll of 1-2 each day, an ox team freezes to death outright. |
+
+---
+
 ### Environmental Fatigue
 
 The land itself wears you down.

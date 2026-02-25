@@ -6,7 +6,7 @@ The Oregon Trail is punctuated by military forts and civilian trading posts. The
 
 When the party arrives at a Fort (e.g., Fort Kearny, Fort Laramie, Fort Hall, Fort Boise):
 
-1. **Safe Harbor:** Morale immediately increases by 1. For as long as the party stays, they do not roll on the daily Event Tables. Full HP/Exhaustion recovery rules apply.
+1. **Safe Harbor:** Morale immediately increases by 1. For as long as the party stays, they do not roll on the daily Event Tables. A day spent trading or gathering information at a fort is a **non-travel day** (1 lb food/person). The party may also choose to take a **Rest Day** at the fort (0.5 lbs food/person), which grants full Rest Day benefits (healing, Exhaustion removal, Camp Actions) as described in `seed.md`. Trading and rest are separate days — the party cannot do both on the same day.
 2. **Information Gathering:** Characters can mingle. A successful CHA (Persuasion) or WIS (Insight) check against DC 10 reveals rumors about the trail ahead (granting Advantage on navigation or hazard prep for the next segment).
 3. **The Trading Post:** The main event. The party reviews their inventory and talks to the Sutler.
 

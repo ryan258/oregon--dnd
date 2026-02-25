@@ -1,5 +1,11 @@
 # 4. Native Encounters
 
+> **Historical Sensitivity & Safety Tools**
+>
+> This module depicts interactions between 1848 emigrants and Indigenous nations. It is designed with respect for Indigenous peoples and informed by the historical record, but it is necessarily simplified and written from an emigrant-perspective game frame. It is not a substitute for Indigenous history or perspectives.
+>
+> **At the table:** We recommend using safety tools (such as the [X-Card](https://docs.google.com/document/d/1SB0jsx34bWHZWbnNIVVuMjhDkrdFGo1_hSC2BWPlI3A), Lines & Veils, or Script Change) so that any player can pause or redirect play if a scene becomes uncomfortable. The GM should check in with the group before the first Native encounter to establish tone and boundaries.
+
 The history of the Oregon Trail is inextricably linked to the Indigenous nations whose lands the trail cut directly through. The popular myth of constant, violent "Indian attacks" is historically inaccurate. In the 1840s and early 1850s, interactions were predominantly peaceful, economic, and often life-saving for stranded emigrants.
 
 The threat of conflict only rose significantly in the late 1850s and 60s as emigrant numbers swelled, resources were decimated, and treaties were broken. _This game is set in 1848, a period characterized more by negotiation and toll-taking than warfare._
@@ -56,7 +62,7 @@ Different party members must contribute using their unique skills. Players descr
   - _If Guides:_ River crossing DC drops to 8, and no wagons are lost.
   - _If Toll:_ A fair toll is negotiated ($5 or 10 lbs of food).
 - **Failure (2 Fails):** Communication breaks down, or an insult is unknowingly given. The encounter enters a **Standoff State**. The wagon train is halted and tensions rise. The party must make a final, high-stakes group CHA or WIS check (DC 12) to de-escalate.
-  - _Standoff Success:_ The band demands a steeper price (half an ox's value, $15) and departs peacefully once paid.
+  - _Standoff Success:_ The band demands a steeper price (half an ox team's value, $16) and departs peacefully once paid.
   - _Standoff Failure:_ The situation descends into a **Crisis**.
 - **Crisis (Hostility/Refusal to Pay Toll):** Native riders block the path or prepare to defend their demands. The party must either surrender double the asked goods, or risk combat. _Note: Starting a firefight usually results in severe party injuries, lost stock, and a permanent increase in hostility DC for the rest of the segment._
 
