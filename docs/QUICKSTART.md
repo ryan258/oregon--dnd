@@ -106,7 +106,7 @@ For a first table, use this fixed Segment 1 event sequence before returning to r
 
 ### Montage (Pushing Forward)
 
-If the weather roll for the current 3-day span produces any **non-hazardous** condition (anything other than Hot & Dry, Clear / High Altitude, Heavy Thunderstorms, Late Frost, Summer Hail, Oppressive Heatwave, Cold Rains, Freezing Winds, Early Blizzard, Heavy Snowfall, Bitter Cold, Ice Storm, Whiteout Blizzard, or Dead of Winter), the party may elect to _Push Forward_:
+If the current 3-day weather condition imposes no mandatory checks, travel modifiers, or direct damage, the party may elect to _Push Forward_:
 
 - Instead of playing 3 individual Trail Days, make **45 miles** of Standard travel progress before ox-team losses or other active speed modifiers
 - Deduct **3 days** of standard food consumption (and water, if tracked)
@@ -126,7 +126,7 @@ _Montage events:_ If the single Daily Event is hazardous, resolve it normally (i
 
 You pick a stance, then choose a mileage value in that range (terrain/weather usually pushes you to the low end):
 
-- **Cautious:** 8–10 miles/day. If the party's first travel day in a 3-day weather span is Cautious, they may take Advantage on one Event roll during a Cautious day in that span. Switching away before spending it loses the use; switching to Cautious mid-span does not create one.
+- **Cautious:** 8–10 miles/day. On any Cautious day, the GM rolls twice on the Event Table and applies the milder result.
 - **Standard:** 15–20 miles/day
 - **Reckless:** 22–30 miles/day (dangerous; Disadvantage on the Event roll)
 
@@ -145,7 +145,7 @@ Basic travel does **not** require a roll. A **Travel check** happens only when a
 
 - **Travel check:** group **WIS or CON** check (GM chooses based on obstacle) vs. the hazard’s DC
   - **Success:** full distance
-  - **Partial success** (at least 1 success, AND exactly half for even-sized parties or one short of majority for odd-sized parties — e.g. 1 of 3): goal achieved at a cost; halve numeric damage (round down); non-numeric consequences (Wound Track steps, lost time) apply as written. A one-character party always succeeds or fails normally — no partial success.
+  - **Partial success** (at least 1 success, but not a majority): goal achieved at a cost; halve numeric damage (round down); non-numeric consequences (Wound Track steps, lost time) apply as written.
   - **Failure:** half distance + the hazard’s consequence (damage, exhaustion, lost time, etc.)
   - If an entry says “Travel DC +X,” apply it to that day’s Travel check.
 
@@ -190,8 +190,11 @@ Declare before travel distance is finalized. After setting your stance miles, yo
 
 ### Repairing the wagon (STR)
 
-- Standard repair (stop for the day): requires **1 spare part** available. **STR check (DC 12)**. Success: spend the spare part and restore `1d6+2` Wagon HP. Failure: no HP restored; the spare part is **not** consumed.
-- Rest day actions are in [`05_camp_life.md`](../05_camp_life.md) (including Teamster's Upkeep, Deep Repair, and Preventative Maintenance)
+- **Field Repair** (stop for the day): **STR check**; outcome depends on whether spare parts are available:
+  - Without spare parts (**DC 11**): restore `1d4` Wagon HP, but cannot raise the wagon above half max HP (15)
+  - With a spare part (**DC 12**): spend the part and restore `1d6+2` Wagon HP with no HP cap
+  - Failure on either: no HP restored; parts are not consumed
+- Rest day actions are in [`05_camp_life.md`](../05_camp_life.md) (including Teamster's Upkeep, Field Repair, and Preventative Maintenance)
 
 ### Rest day (Layover)
 
@@ -207,7 +210,7 @@ Rest days are the “reset lever” that keeps the party alive:
 | Action | Stat | Effect |
 | :-- | :-- | :-- |
 | Teamster's Upkeep | Automatic | If the party has a Teamster, restore 1 Wagon HP (no check, no parts). Does not consume a Camp Action. |
-| Deep Repair | STR (DC 11) | If below half max HP, restore `1d4` Wagon HP (no parts), capped at half max HP (15). If starting at or above half max HP, restore only 1 HP instead. Cannot restore above max Wagon HP. |
+| Field Repair | STR | Stop for the day to repair the wagon. Without spare parts (DC 11): restore `1d4` Wagon HP, capped at half max HP (15). With a spare part (DC 12): spend the part and restore `1d6+2` Wagon HP with no HP cap. Failure on either: no HP restored; parts not consumed. |
 | Preventative Maint. | STR (DC 10) | Next “Wagon Breakdown” or rough terrain event is nullified or damage halved. |
 | Foraging/Fishing | WIS or DEX (DC 10) | Gain `2d10` lbs of food (berries, roots, fish). |
 | Intensive Care | INT (DC 12) | Choose one: advantage on next disease recovery check (end of day), advantage on Wound Track recovery check (end of this Rest Day), additional +`1d6` HP on top of Rest Day healing, or remove 1 Exhaustion. |
@@ -293,21 +296,13 @@ Quick rules:
 - Teamster’s Upkeep (rest day): +1 Wagon HP automatically, no action required
 - At **0 HP**, the wagon is unusable; the party must cache supplies and proceed on foot at half Standard speed (7–10 mi/day)
 
-### Wagon capacity
-
-- Max cargo: **2,500 lbs**
-- Bedridden characters (Gravely Ill/Injured) count as ~**150 lbs** each
-- You usually only need this when an event forces you to drop weight or you’re hauling huge food reserves
-
----
-
 ## Exhaustion (0–6)
 
 Exhaustion is the main “slow death” clock. Effects:
 
 - 1: Disadvantage on all checks
 - 2: Travel speed halved
-- 3: You always roll with Disadvantage (Advantage can’t cancel it)
+- 3: Disadvantage on all checks; Advantage cannot cancel it
 - 4: HP maximum halved
 - 5: Cannot travel; bedridden
 - 6: Death

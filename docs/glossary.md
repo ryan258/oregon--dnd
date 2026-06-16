@@ -52,7 +52,7 @@ Roll **2d20 and take the lower result.** A significant penalty from exhaustion, 
 One character rolls once. Succeed or fail, move on.
 
 **Group Check**
-Everyone in the party rolls. If more than half succeed, the group succeeds. **Partial success** applies when at least one character succeeds AND the successes land at exactly half (for even-sized parties) or one fewer than a majority (for odd-sized parties — e.g., 1 of 3, 2 of 5): the goal is achieved with a cost. A one-character party always succeeds or fails normally. Numeric damage is halved (round down); non-numeric consequences such as Wound Track steps or lost time apply as written. Used for river crossings, mountain passes, blizzards.
+Everyone in the party rolls. If more than half succeed, the group succeeds. **Partial success** applies when at least one character succeeds but not a majority: the goal is achieved with a cost. Numeric damage is halved (round down); non-numeric consequences such as Wound Track steps or lost time apply as written. Used for river crossings, mountain passes, blizzards.
 
 **Extended Check**
 A multi-round challenge requiring several successes before accumulating too many failures (e.g., "3 successes before 2 failures"). Used for complex tasks like lowering a wagon down a cliff or negotiating with a Native band.
@@ -221,9 +221,6 @@ Consumed by hunting: 10 rounds per attempt, even on failure.
 **Oxen / Ox Teams**
 Draft animals (10 HP per team). Lost-team speed penalties are multiplicative: multiply miles by 0.75 once for each lost team. At 0 teams: stranded.
 
-**Wagon Capacity**
-Maximum cargo: 2,500 lbs. Rarely relevant except when events force supply drops or bedridden passengers add weight.
-
 **Warm Bedding**
 Buffalo robes / heavy blankets. Characters count as Sheltered for nighttime cold damage. Does not protect oxen or the wagon. Lost if the wagon is destroyed or supplies are dumped.
 
@@ -242,7 +239,7 @@ Created by the Doctor's Brew Tonics camp action. Drinking one grants Advantage o
 A full day with no travel. The party heals 1d4+1 HP, fed characters remove 1 Exhaustion, oxen recover 1 HP, and each character takes one Camp Action. Food consumption is halved (0.5 lbs/person).
 
 **Camp Action**
-One of seven major activities a character can perform during a Rest Day: Deep Repair, Preventative Maintenance, Foraging/Fishing, Intensive Care, Brew Tonics, Scouting Ahead, or Mend & Wash.
+One of seven major activities a character can perform during a Rest Day: Field Repair, Preventative Maintenance, Foraging/Fishing, Intensive Care, Brew Tonics, Scouting Ahead, or Mend & Wash.
 
 **Teamster's Upkeep**
 An automatic Rest Day benefit for the Teamster: restore 1 Wagon HP with no check or parts. It does not consume a Camp Action.

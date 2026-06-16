@@ -51,8 +51,8 @@
 - Max HP reductions from Jury-Rig (if any):
 - Notes (critical damage, cached supplies, etc.):
 
-## Wagon Capacity (max 2,500 lbs)
+## Load / Cached Supplies
 
-- Current cargo estimate:
-- Bedridden passengers (≈150 lbs each):
-- Notes (forced drops, overburden, etc.):
+- Supplies cached or abandoned:
+- Forced drops:
+- Bedridden passengers / cargo notes:

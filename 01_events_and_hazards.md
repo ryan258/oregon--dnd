@@ -48,7 +48,7 @@ _The land rises, the air thins, and the oxen begin to suffer. Wood and grass bec
 
 | d10 | Event                     | Mechanical Effect                                                                                               |
 | :-: | :------------------------ | :-------------------------------------------------------------------------------------------------------------- |
-|  1  | **Broken Axle on Stone**  | A hidden rock snaps the axle. Lose 1 day and attempt a standard repair (STR DC 12; requires 1 spare part).       |
+|  1  | **Broken Axle on Stone**  | A hidden rock snaps the axle. Lose 1 day and attempt Field Repair.       |
 |  2  | **Lame Ox**               | The rocky ground batters hooves. 1 ox team loses 3 HP and is **Lame**. Until the party takes a Rest Day, multiply miles traveled by 0.75 (round up). |
 |  3  | **Alkali Water**          | Toxic pools. The Doctor may attempt an INT check (DC 11) to identify dangerous water before anyone drinks. Otherwise, anyone drinking makes CON DC 13 or suffers severe vomiting (lose 1d4 HP, Disadvantage on STR/DEX). |
 |  4  | **False Trail**           | A braided path confuses the Guide. WIS DC 12 to realize the error, otherwise lose 2 days.                       |
@@ -73,7 +73,7 @@ _The Continental Divide. Biting winds, altitude sickness, and the psychological 
 |  4  | **Night Freeze**          | Temperatures plummet. Each character makes a CON check (DC 12). Failure: take 1d6 cold damage. If the party is **Sheltered**, has **Warm Bedding**, or spends +0.5 lbs food per person tonight, the check is made with Advantage. |
 |  5  | **Wolf Pack Signs**       | Stalking the oxen. Someone must stay awake on watch all night (gain 1 Exhaustion level) or lose an ox.                            |
 |  6  | **Supply Drop**           | To make the ascent, the party MUST leave behind 200 lbs of weight (food, parts, or gear).                                         |
-|  7  | **Sturdy Pine Patch**     | Excellent timber for repairs. If the party stops to repair today, the standard repair restores **1d6+7** Wagon HP (instead of 1d6+2). |
+|  7  | **Sturdy Pine Patch**     | Excellent timber for repairs. If the party stops to repair today, Field Repair with a spare part restores **1d6+7** Wagon HP (instead of 1d6+2). |
 |  8  | **Mountain Goat Sighted** | Difficult hunt (DEX DC 14). Success: gain **100 lbs** of food and mark **Warm Bedding**.                                          |
 |  9  | **The Divide Crossed**    | Water now flows west. A monumental milestone. Morale increases by 2.                                                              |
 | 10  | **Clear Vistas**          | A rare break in the clouds reveals the path ahead. Next 3 Navigation checks have Advantage.                                       |

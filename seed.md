@@ -138,7 +138,7 @@ These are modified by terrain (mountain segments tend toward the low end), weath
 
 Each Trail Day follows this structure, unless the party engages a **Montage**.
 
-**The Montage (Pushing Forward):** If the weather roll for the current 3-day span produces any **non-hazardous** weather condition (anything other than Hot & Dry, Clear / High Altitude, Heavy Thunderstorms, Late Frost, Summer Hail, Oppressive Heatwave, Cold Rains, Freezing Winds, Early Blizzard, Heavy Snowfall, Bitter Cold, Ice Storm, Whiteout Blizzard, or Dead of Winter), the party may elect to _Push Forward_. Instead of rolling for 3 individual days, they automatically make 3 days of Standard travel progress (**45 miles total before ox-team losses or other active speed modifiers**), deduct 3 days of standard food consumption (and water, if tracked), and roll for a single Daily Event. This allows the table to fast-forward through quiet stretches and relieve pacing pressure during the mid-to-late game.
+**The Montage (Pushing Forward):** If the current 3-day weather condition imposes no mandatory checks, travel modifiers, or direct damage, the party may elect to _Push Forward_. Instead of rolling for 3 individual days, they automatically make 3 days of Standard travel progress (**45 miles total before ox-team losses or other active speed modifiers**), deduct 3 days of standard food consumption (and water, if tracked), and roll for a single Daily Event. This allows the table to fast-forward through quiet stretches and relieve pacing pressure during the mid-to-late game.
 
 If the prevailing weather has a 3-day-span effect (like Dust / High Winds lowering Morale), apply that effect **once** at the end of the montage.
 
@@ -156,7 +156,7 @@ _Montage events:_ If the single Daily Event rolled during a Montage is hazardous
 
 - GM describes conditions (weather, terrain, visible landmarks)
 - Party decides on their **Travel Stance** for the day (see Travel Resolution above for speeds):
-  - **Cautious:** At the start of each 3-day weather span, if the party's first travel day in that span is Cautious, they gain one Cautious safety use. Spend it before one daily Event Table roll on a Cautious day in that same span (GM rolls twice, party takes the milder event). If the party switches away from Cautious before spending it, the use is lost; switching to Cautious mid-span does not create a use until the next 3-day weather span. Represents trading food/time for safety.
+  - **Cautious:** On any Cautious day, the GM rolls twice on the Event Table and applies the milder result. Represents trading speed for safety.
   - **Standard:** Normal Event Table roll.
   - **Reckless:** Disadvantage on the Event Table roll (take the worst of two events). Represents trading health/wagon HP for pure speed.
 - Party decides: _travel, rest, hunt, repair, or trade_
@@ -199,7 +199,7 @@ Some rules include a parenthetical tag (e.g., **WIS (Survival)**, **CHA (Persuas
 
 **Group Check:** All party members roll. If more than half succeed, the group succeeds. Used for river crossings, mountain passes, navigating in a blizzard.
 
-**Partial Success on Group Checks:** If at least one character succeeds AND the number of successes is exactly half the party (for even-numbered parties) or exactly one fewer than a majority (for odd-numbered parties — e.g., 1 of 3, 2 of 5), the group achieves the immediate goal but pays a cost. A one-character party never gets partial success — they succeed or fail normally. For numeric damage, halve it (round down). For non-numeric consequences such as Wound Track steps or lost time, apply them as written — they cannot be halved. Otherwise lose 1 day, spend a resource, or apply the event's milder consequence. If a specific event says there is no partial success, use that event's text instead.
+**Partial Success on Group Checks:** If at least one character succeeds but not a majority, the group achieves the immediate goal but pays a cost. For numeric damage, halve it (round down). For non-numeric consequences such as Wound Track steps or lost time, apply them as written — they cannot be halved. Otherwise lose 1 day, spend a resource, or apply the event's milder consequence. If a specific event says there is no partial success, use that event's text instead.
 
 **Contested Check:** Character rolls vs. GM roll. Used for trading (INT vs. INT), being ambushed (Perception vs. Stealth).
 
@@ -330,7 +330,9 @@ The wagon absorbs punishment from terrain, river crossings, and accidents.
 
 - Starts at 30 HP
 - Loses HP from events (see Event Table)
-- **Standard repair (field):** Stop for a day (no travel). Requires **1 spare part** available. STR check (DC 12). Success: spend 1 spare part and restore 1d6+2 Wagon HP. Failure: no HP restored; the spare part is **not** consumed.
+- **Field Repair:** Stop for a day (no travel). STR check; outcome depends on whether spare parts are available:
+  - *Without spare parts (DC 11):* Success: restore **1d4 Wagon HP**, but cannot raise the wagon above half its maximum HP (15). Failure: no HP restored.
+  - *With a spare part (DC 12):* Success: spend 1 spare part and restore **1d6+2 Wagon HP**. Failure: no HP restored; the part is not consumed.
 - **Teamster's Upkeep:** During any rest day, the Teamster automatically restores 1 Wagon HP (no check, no parts) by tightening bolts, re-greasing axles, and patching minor wear.
 - At 0 HP: wagon is unusable. Party must cache supplies and proceed on foot at half Standard speed (7–10 mi/day).
 
@@ -347,16 +349,6 @@ Water is only tracked as a resource in **arid or waterless stretches** (Segment 
 
 _Experienced table option:_ Track water for the full journey. Outside arid/waterless stretches, the party still refills for free whenever the day clearly passes a river, spring, fort, or settled creek; on dry camp days, deduct water normally. Use this only if the group wants water pressure before Segment 5.
 
-### Wagon Capacity
-
-The wagon can carry a maximum of **2,500 lbs** of total cargo (food, water barrels, spare parts, personal effects, and passengers who are bedridden). Under normal conditions, the party won't approach this limit. It matters when:
-
-- Events demand the party **drop weight** (e.g., "Supply Drop" in Segment 4 requires leaving behind 200 lbs).
-- The party accumulates large amounts of food through successful hunts or trading.
-- Bedridden characters (Gravely Ill/Injured on the Wound Track) count as ~150 lbs of cargo each.
-
-The Pack-Master background's hidden rations "don't count against wagon capacity" — this is the exception that proves the rule.
-
 ### Exhaustion
 
 Adapted from D&D 5e:
@@ -365,7 +357,7 @@ Adapted from D&D 5e:
 | ----- | ---------------------------------------------- |
 | 1     | Disadvantage on all checks                     |
 | 2     | Travel speed halved                            |
-| 3     | Exhaustion disadvantage cannot be canceled by Advantage (you always roll with Disadvantage) |
+| 3     | Disadvantage on all checks; Advantage cannot cancel it                                      |
 | 4     | HP maximum halved                              |
 | 5     | Cannot travel; bedridden                       |
 | 6     | Death                                          |
@@ -387,7 +379,7 @@ At the start of each Trail Day, the GM rolls **1d20** and consults the Event Tab
 | Roll | Event                                                                                                          |
 | ---- | -------------------------------------------------------------------------------------------------------------- |
 | 1    | **Disease exposure.** Random party member is exposed. Roll on the Disease table, then make a disease resistance check (CON DC 13). Failure: apply the disease result. |
-| 2    | **Wagon breakdown.** Wagon loses 1d6 HP. Lose a travel day dealing with it; attempt a standard repair if able. |
+| 2    | **Wagon breakdown.** Wagon loses 1d6 HP. Lose a travel day dealing with it; attempt Field Repair if able. |
 | 3    | **Ox injury.** One ox team loses 2 HP.                                                                         |
 | 4    | **Bad weather.** Travel DC increases by 2 for next 2 days.                                                     |
 | 5    | **River crossing.** Group check (CON/STR DC varies by segment).                                                |

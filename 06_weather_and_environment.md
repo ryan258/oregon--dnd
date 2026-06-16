@@ -81,10 +81,3 @@ _Segment 7 (Blue Mountains) for slow parties. If your party is still on the trai
 |  6  | **Dead of Winter**       | Everything compounds. Whiteout conditions (no travel). 1d6 cold damage/day to all unsheltered characters. Oxen lose 2 HP/day. On a d6 roll of 1-2 each day, an ox team freezes to death outright. |
 
 ---
-
-### Environmental Fatigue
-
-The land itself wears you down.
-
-- **Lack of Wood:** In the Plains and Desert (Segments 1 & 5), wood is rare. Players must gather buffalo chips (dried dung) to burn. If they fail to gather fuel (WIS DC 8 daily), they cannot cook food or boil water; until they successfully gather fuel again, all CON checks made to resist contracting disease have their DC increased by +2.
-- **Poisonous Forage:** Specifically near the Rockies approach (Segment 3), alkali pools look like drinking water. Emigrants and cattle drinking from them become violently ill. (See Event Tables).

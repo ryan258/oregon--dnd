@@ -11,14 +11,14 @@
 
 ## Travel Stances (miles/day)
 
-- Cautious: 8–10 (1 Event-roll advantage only if first travel day in the 3-day weather span is Cautious)
+- Cautious: 8–10 (GM rolls twice on the Event Table and applies the milder result)
 - Standard: 15–20
 - Reckless: 22–30 (disadvantage on event roll)
 
 ## Travel Checks
 
 - Only when a hazard demands it: group WIS/CON vs hazard DC
-- Partial success (≥1 success AND exactly half for even parties or one short of majority for odd — e.g. 1 of 3; not available for 1-character parties): goal achieved at a cost; halve numeric damage (round down); non-numeric consequences apply as written
+- Partial success (at least 1 success but not a majority): goal achieved at a cost; halve numeric damage (round down); non-numeric consequences apply as written
 - Failure: half distance + hazard consequence
 - Forced March: declare before distance; group CON DC 11. Success = +50% miles. Failure = no extra miles; each failing character gains 1 Exhaustion. Attempt counts as Hard Travel either way; cannot combine with Reckless.
 - Shelter (weather/events): WIS (Survival) DC 10 to find cover (DC 12 Plains/Desert). Warm bedding counts as shelter for character cold damage only.
@@ -45,6 +45,7 @@ Starvation at 0 food: replaces the foraging check. Each day without a successful
 ## Wagon + Oxen
 
 - Wagon HP: 30 (0 = unusable)
+- Field Repair: stop for day. No parts: STR DC 11 restores 1d4 HP, capped at half max HP (15). With part: STR DC 12 spends 1 part and restores 1d6+2 HP, no cap. Failure: no HP restored; parts not consumed.
 - Ox teams: 10 HP each; lost-team penalties are multiplicative (×0.75 once per lost team)
 - Hard Travel ox strain: one ox team loses 1 HP (2 HP instead of 1 in an oppressive heatwave)
 
@@ -60,7 +61,7 @@ Starvation at 0 food: replaces the foraging check. Each day without a successful
 
 - 1: Disadvantage on all checks
 - 2: Travel speed halved
-- 3: Always roll with Disadvantage (Advantage can’t cancel it)
+- 3: Disadvantage on all checks; Advantage cannot cancel it
 - 4: HP maximum halved
 - 5: Cannot travel; bedridden
 - 6: Death

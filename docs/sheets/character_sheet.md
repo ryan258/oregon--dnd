@@ -40,7 +40,7 @@ Recovery (end of Rest Day): CON DC 10 to move 1 step up the track (medical help 
 - [ ] 0
 - [ ] 1 — Disadvantage on all checks
 - [ ] 2 — Travel speed halved
-- [ ] 3 — Always roll with Disadvantage (Advantage can’t cancel it)
+- [ ] 3 — Disadvantage on all checks; Advantage cannot cancel it
 - [ ] 4 — HP maximum halved
 - [ ] 5 — Cannot travel; bedridden
 - [ ] 6 — Death
