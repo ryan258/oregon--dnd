@@ -134,7 +134,7 @@ One of seven major geographic phases of the journey (e.g., Segment 1: The Plains
 The party's current position on the trail, measured in miles from Independence (0) to the Willamette Valley (~2,000).
 
 **Montage (Pushing Forward)**
-A fast-forward option: instead of playing 3 individual Trail Days, the party banks 3 days of Standard travel progress and rolls only one Daily Event. Available when weather is non-hazardous.
+A fast-forward option: instead of playing 3 individual Trail Days, the party banks 45 miles of Standard travel progress and rolls only one Daily Event. Available when weather is non-hazardous.
 
 **Time Loss (Lost Days)**
 When events cost the party calendar days with no miles gained. Resources are still consumed; weather still shifts.
@@ -145,13 +145,13 @@ The d20 table the GM rolls each Trail Day. Results 1–9 can be swapped for segm
 ### Travel
 
 **Travel Stance**
-The party's daily pace choice: **Cautious** (8–10 mi/day, safer), **Standard** (15–20 mi/day), or **Reckless** (22–30 mi/day, dangerous).
+The party's daily pace choice: **Cautious** (8–10 mi/day, safer), **Standard** (15–20 mi/day), or **Reckless** (22–30 mi/day, dangerous). Cautious grants one Event-roll safety use only if it is the party's first travel stance in the current 3-day weather span.
 
 **Hard Travel**
-Any day the party travels Recklessly or attempts a Forced March. Doubles food consumption and strains oxen.
+Any day the party travels Recklessly or attempts a Forced March, whether the Forced March succeeds or fails. Doubles food consumption and strains oxen.
 
 **Forced March**
-Pushing 50% beyond normal stance distance. Requires a group CON check (DC 11); failures gain Exhaustion. Cannot combine with Reckless stance.
+Pushing 50% beyond normal stance distance. Requires a group CON check (DC 11); success grants the extra miles, failure grants no extra miles and failed characters gain Exhaustion. Cannot combine with Reckless stance.
 
 **Travel Check**
 A group WIS or CON check triggered only when a specific hazard demands it. Failure = half distance + the hazard's consequence.
@@ -184,7 +184,7 @@ The death-avoidance system. At 0 HP you don't die immediately — you move throu
 A character who is Gravely Ill/Injured or at Exhaustion level 5. Cannot take actions; counts as ~150 lbs of cargo.
 
 **Exhaustion**
-A tiered condition (levels 1–6) that progressively degrades a character. Level 1 = Disadvantage on all checks. Level 6 = death. Removed by Rest Days and food.
+A tiered condition (levels 1–6) that progressively degrades a character. Level 1 = Disadvantage on all checks. Level 6 = death. Removed by Rest Days, Doctor care, and explicit recovery effects only if the character ate their full required ration that day.
 
 **Exhaustion Cap**
 At most 1 involuntary Exhaustion level per day (from failed checks or hazards). Voluntary sources (double watch shifts) can exceed this.
@@ -216,7 +216,7 @@ Consumable resource required for the Doctor to treat serious illness. Spent whet
 Consumed by hunting: 10 rounds per attempt, even on failure.
 
 **Oxen / Ox Teams**
-Draft animals (10 HP per team). Each lost team reduces travel speed by 25%. At 0 teams: stranded.
+Draft animals (10 HP per team). Lost-team speed penalties are multiplicative: multiply miles by 0.75 once for each lost team. At 0 teams: stranded.
 
 **Wagon Capacity**
 Maximum cargo: 2,500 lbs. Rarely relevant except when events force supply drops or bedridden passengers add weight.
@@ -236,13 +236,13 @@ Created by the Doctor's Brew Tonics camp action. Drinking one grants Advantage o
 ### Rest & Camp
 
 **Rest Day (Layover)**
-A full day with no travel. The party heals 1d4+1 HP, removes 1 Exhaustion, oxen recover 1 HP, and each character takes one Camp Action. Food consumption is halved (0.5 lbs/person).
+A full day with no travel. The party heals 1d4+1 HP, fed characters remove 1 Exhaustion, oxen recover 1 HP, and each character takes one Camp Action. Food consumption is halved (0.5 lbs/person).
 
 **Camp Action**
-One of seven activities a character can perform during a Rest Day: Deep Repair, Preventative Maintenance, Foraging/Fishing, Intensive Care, Brew Tonics, Scouting Ahead, or Mend & Wash.
+One of seven major activities a character can perform during a Rest Day: Deep Repair, Preventative Maintenance, Foraging/Fishing, Intensive Care, Brew Tonics, Scouting Ahead, or Mend & Wash.
 
 **Teamster's Upkeep**
-An automatic Rest Day benefit for the Teamster: restore 1 Wagon HP with no check or parts.
+An automatic Rest Day benefit for the Teamster: restore 1 Wagon HP with no check or parts. It does not consume a Camp Action.
 
 **Evening Activity**
 An optional once-per-layover group activity (campfire stories, journaling, or a proper hot meal) that can boost Morale or grant Inspiration.
@@ -292,7 +292,7 @@ A special game state entered during the Hastings Cutoff where the party is mecha
 | ---- | :-: | -------- | ---------- |
 | **Dysentery** | 11 | 5 days | 1d4 HP/day, Disadvantage on STR/DEX |
 | **Typhoid** | 13 | 7 days | Immediately Gravely Ill / Bedridden |
-| **Cholera** | 15 | 3 days | 2d4 HP day 1; 50% death on day 3 if untreated |
+| **Cholera** | 15 | 3 days | 2d4 HP day 1; untreated day 3 CON DC 11 or death |
 | **Measles** | 10 | 7 days | Disadvantage on all checks |
 | **Exhaustion Illness** | 9 | Immediate | Gain 1 Exhaustion level |
 | **Snakebite** | 12 | 3 days | 1d6 HP immediately, Disadvantage on STR/DEX |

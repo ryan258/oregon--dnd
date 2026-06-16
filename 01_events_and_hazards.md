@@ -12,7 +12,7 @@ _The great flat expanse. The primary threats are weather, initial inexperience, 
 | :-: | :------------------------- | :--------------------------------------------------------------------------------------------------------- |
 |  1  | **Sudden Thunderstorm**    | Lightning spooks the oxen. DEX check (DC 11) or 1 ox team takes 2 HP damage. If the party travels, multiply miles traveled today by 0.5 (round up). |
 |  2  | **Heavy Spring Mud**       | The wagon bogs down to the axles. STR check (DC 13, group) to dig it out, or lose a travel day.            |
-|  3  | **First Signs of Illness** | A random character makes a CON check (DC 10). Failure: Gain 1 Exhaustion level.                            |
+|  3  | **First Signs of Illness** | A random character is exposed to Exhaustion Illness (see Disease rules in `seed.md`) and makes a CON check (DC 10) to resist. Failure: gain 1 Exhaustion level. |
 |  4  | **Prairie Fire (Distant)** | The smoke chokes the air. Visibility drops. Disadvantage on Navigation/Hunting for 2 days.                 |
 |  5  | **Misjudged Rations**      | Party realizes food was packed poorly. Lose 1d4 × 10 lbs of food to spoilage.                              |
 |  6  | **Swarm of Mosquitoes**    | Miserable conditions. WIS (Survival) DC 9 to keep smoke up and cover skin. Failure: Morale drops by 1.    |
@@ -31,7 +31,7 @@ _The Kansas and Platte rivers. The primary threats are drowning, losing the wago
 | :-: | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
 |  1  | **Treacherous Ford**    | The riverbed gives way. Wagon takes 1d6 damage. Drowning risk for anyone walking (STR DC 11).                               |
 |  2  | **Ferry Bottleneck**    | A 3-day wait for the ferry (costs $10, valued at Independence base prices), or the party can risk fording a dangerous section immediately (Group DEX check DC 14). |
-|  3  | **Cholera Scare**       | Passing a fresh grave farm. Roll 1d6 for disease (Cholera on a 3-4, Dysentery otherwise).                                   |
+|  3  | **Cholera Scare**       | Passing a fresh grave farm. One random character is exposed. Roll 1d6 for the disease (Cholera on a 3-4, Dysentery otherwise), then make the normal disease resistance check for that disease. |
 |  4  | **Saturating Rains**    | Everything gets wet. Wood is useless. No fire tonight. Sleep in the cold (CON DC 9 or 1 Exhaustion).                        |
 |  5  | **Lost Footing**        | An ox slips in the current. Requires immediate DEX check (DC 12) by the Teamster to save the beast from taking 4 HP damage. |
 |  6  | **Washed Up Supplies**  | Find a barrel from a wrecked wagon upstream. Contains 50 lbs of unspoiled flour.                                            |
@@ -88,7 +88,7 @@ _The arid wastes beyond the pass. Heat, dehydration, and alkaline dust._
 | :-: | :--------------------- | :--------------------------------------------------------------------------------------------------------- |
 |  1  | **Dried Up Well**      | The marked spring is dust. No water. The Doctor may attempt an INT check (DC 11) to identify signs of subsurface moisture and direct digging; success yields enough water to avoid penalties. Otherwise, everyone takes 1 level of Exhaustion and 1d4 damage. |
 |  2  | **Dust Storm**         | Choking, burning grit. CON DC 12 or suffer eye/lung irritation (Disadvantage on WIS/DEX for 2 days).       |
-|  3  | **Rattlesnake Strike** | A snake in the camp gear. DEX check (DC 11) to avoid. Failure: **Snakebite** — take 1d6 damage immediately and suffer the Snakebite disease effects (see Disease rules in `seed.md`). |
+|  3  | **Rattlesnake Strike** | A snake in the camp gear. This is a Snakebite exposure using DEX DC 11 as the avoidance check instead of CON resistance. Failure: contract **Snakebite**, take 1d6 damage immediately, and suffer the Snakebite disease effects (see Disease rules in `seed.md`). |
 |  4  | **Sun Madness**        | The heat breaks morale. CHA DC 12 to stop a physical fight over water rations. Failure: Morale drops by 1. |
 |  5  | **Warped Wood**        | The extreme dryness shrinks wagon wheels. They loosen dangerously. 1 day lost to soak/repair them.         |
 |  6  | **Spoiled Meat**       | Heat ruins stored game. Lose half of all current food reserves.                                            |
@@ -107,7 +107,7 @@ _Following the canyons. Difficult terrain, rushing rapids, and the final stretch
 | :-: | :----------------------- | :----------------------------------------------------------------------------------------------------------------- |
 |  1  | **Overturned Wagon**     | The trail hugs a cliff. A slip costs the wagon 1d10 HP and dumps 1d4 × 50 lbs of supplies into the river.            |
 |  2  | **Rapids Ford**          | Forced to cross deep, fast water. High drowning risk. The Guide must make a WIS check (DC 13) to find the safest crossing point; success grants Advantage on the group check. Group DEX check (DC 13). Failure means sweeping downstream. |
-|  3  | **Dysentery Outbreak**   | The water is foul. The Doctor may attempt an INT check (DC 11) to identify contaminated water sources before anyone drinks; success means the party avoids the outbreak entirely. Otherwise, roll 1d4 party members: they immediately contract Dysentery (CON DC 12 to resist). |
+|  3  | **Dysentery Outbreak**   | The water is foul. The Doctor may attempt an INT check (DC 11) to identify contaminated water sources before anyone drinks; success means the party avoids the outbreak entirely. Otherwise, roll 1d4 party members exposed to Dysentery; each makes a CON check (DC 12) to resist or contracts Dysentery. |
 |  4  | **Steep Ravine Descent** | Must lower the wagon by ropes. STR DC 14 (Extended: 3 successes before 2 fails). Failure: Wagon takes **2d10 damage**. |
 |  5  | **Broken Yoke**          | The strain breaks the ox tackle. Stop for 1 day to carve a new one: STR check (DC 11). Failure: lose 1 additional day, or spend 1 spare part to finish the job. |
 |  6  | **Stolen Stock**         | Stock thieves in the night. WIS (Perception) DC 13 to spot them. Failure: Lose $50 worth of goods (valued at Independence base prices) or 1 ox team. |
@@ -125,7 +125,7 @@ _The final hurdle before the valley. Starvation, winter snows, and the brink of 
 | d10 | Event                          | Mechanical Effect                                                                                       |
 | :-: | :----------------------------- | :------------------------------------------------------------------------------------------------------ |
 |  1  | **The Bitter Cold**            | Winter is here. CON DC 13 every day. Failure means 1d4 cold damage and 1 Exhaustion level.              |
-|  2  | **Starvation Sets In**         | Food is gone. Each day without a successful hunt, everyone makes a **CON check (DC 11)** or gains 1 Exhaustion. If already at Exhaustion 3+, also take **1d4 damage**. Morale drops 1 point every 2 days. |
+|  2  | **Starvation Sets In**         | The final stores are gone or spoiled; set Food to 0. Use the standard Starvation rule in `seed.md` immediately and each day until food is secured. This does not stack with starvation checks already in progress. |
 |  3  | **Fallen Trees**               | A storm dropped pines across the trail. Stop for 2 days to chop through them.                           |
 |  4  | **The Axle Snaps**             | The final straw. The wagon is dead. Do you repair it (needs parts/str) or abandon it and walk the rest? |
 |  5  | **Lost in the Pines**          | The trail vanishes under snow. Guide must make WIS DC 14 or wander aimlessly for 3 days.                |

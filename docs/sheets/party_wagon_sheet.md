@@ -36,7 +36,7 @@
 
 ## Ox Teams
 
-- Each team: 10 HP. –25% travel speed per lost team.
+- Each team: 10 HP. Lost-team penalties are multiplicative: x0.75 miles once per lost team.
 
 | Team | HP | Status / notes |
 | ---- | -- | -------------- |

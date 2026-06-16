@@ -11,7 +11,7 @@
 
 ## Travel Stances (miles/day)
 
-- Cautious: 8–10 (advantage on 1 event roll per 3-day stretch)
+- Cautious: 8–10 (1 Event-roll advantage only if first travel day in the 3-day weather span is Cautious)
 - Standard: 15–20
 - Reckless: 22–30 (disadvantage on event roll)
 
@@ -19,7 +19,7 @@
 
 - Only when a hazard demands it: group WIS/CON vs hazard DC
 - Failure: half distance + hazard consequence
-- Forced March: +50% miles, group CON DC 11; each failing character gains 1 Exhaustion; cannot combine with Reckless
+- Forced March: declare before distance; group CON DC 11. Success = +50% miles. Failure = no extra miles; each failing character gains 1 Exhaustion. Attempt counts as Hard Travel either way; cannot combine with Reckless.
 - Shelter (weather/events): WIS (Survival) DC 10 to find cover (DC 12 Plains/Desert). Warm bedding counts as shelter for character cold damage only.
 
 ## Food
@@ -31,6 +31,8 @@
 
 Desperate Forage (last resort): when food is depleted and hunting is impossible, any character may attempt WIS or CON DC 9 to scavenge 1d6 lbs of barely-edible food (no ammo).
 
+Starvation at 0 food: replaces the foraging check. Each day without a successful hunt or successful forage, everyone makes CON DC 11 or gains 1 Exhaustion. Failed checks at Exhaustion 3+ also deal 1d4 damage. Morale -1 every 2 consecutive starving days.
+
 ## Water (track only in arid/waterless stretches)
 
 - Start: 20 gal
@@ -41,7 +43,7 @@ Desperate Forage (last resort): when food is depleted and hunting is impossible,
 ## Wagon + Oxen
 
 - Wagon HP: 30 (0 = unusable)
-- Ox teams: 10 HP each; –25% speed per lost team
+- Ox teams: 10 HP each; lost-team penalties are multiplicative (×0.75 once per lost team)
 - Hard Travel ox strain: one ox team loses 1 HP (2 HP instead of 1 in an oppressive heatwave)
 
 ## Morale (0–10)
@@ -61,11 +63,11 @@ Desperate Forage (last resort): when food is depleted and hunting is impossible,
 - 5: Cannot travel; bedridden
 - 6: Death
 
-Removal: Rest Day removes 1; food required; Doctor’s Intensive Care can remove 1 (see `05_camp_life.md`). Cap: max 1 involuntary Exhaustion gain per day (failed checks/hazards); voluntary sources can exceed.
+Removal: Rest Day removes 1; Doctor’s Intensive Care can remove 1 (see `05_camp_life.md`). A character must eat their full required ration that day to remove Exhaustion (0.5 lbs on a Rest Day). Cap: max 1 involuntary Exhaustion gain per day (failed checks/hazards); voluntary sources can exceed.
 
 ## Disease
 
-Disease strikes: roll 1d6 (see `seed.md`), apply daily effects, then end-of-day CON check vs disease DC to reduce duration.
+Disease exposure: use the named disease if the event gives one; otherwise roll 1d6 (see `seed.md`). Exposed character resists with CON vs event DC or disease DC; event avoidance checks replace CON. Failure contracts the disease. Then apply daily effects and end-of-day CON checks vs disease DC to reduce duration.
 
 Treatment: spend 1 medicine + Doctor INT DC 11; success doubles recovery and halves daily effects.
 

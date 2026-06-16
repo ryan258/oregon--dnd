@@ -102,13 +102,13 @@ Use the [`trail_log.md`](./sheets/trail_log.md) sheet if you want tight pacing a
 
 If the weather roll for the current 3-day span produces any **non-hazardous** condition (anything other than Hot & Dry, Clear / High Altitude, Heavy Thunderstorms, Late Frost, Summer Hail, Oppressive Heatwave, Cold Rains, Freezing Winds, or Early Blizzard), the party may elect to _Push Forward_:
 
-- Instead of playing 3 individual Trail Days, make **3 days of Standard travel progress**
+- Instead of playing 3 individual Trail Days, make **45 miles** of Standard travel progress before ox-team losses or other active speed modifiers
 - Deduct **3 days** of standard food consumption (and water, if tracked)
 - Roll for **one** Daily Event total
 
 If the prevailing weather has a 3-day-span effect (like Dust / High Winds lowering Morale), apply that effect **once** at the end of the montage.
 
-_Montage events:_ If the single Daily Event is hazardous, resolve it normally (it happens on one day of the 3-day span). If it costs a travel day, the Montage yields 2 days of progress instead of 3.
+_Montage events:_ If the single Daily Event is hazardous, resolve it normally (it happens on one day of the 3-day span). If it costs a travel day, the Montage yields 2 days of progress instead of 3 (**30 miles** before active speed modifiers).
 
 **Time Loss (Lost Days):** When an effect says you lose/wait **X days**, advance the calendar by X days and gain no net miles. Deduct resources for each day based on what happened (backtracking travel vs. waiting/repairs vs. rest). Don’t roll extra Daily Events for lost days. Weather still shifts every 3 days.
 
@@ -120,7 +120,7 @@ _Montage events:_ If the single Daily Event is hazardous, resolve it normally (i
 
 You pick a stance, then choose a mileage value in that range (terrain/weather usually pushes you to the low end):
 
-- **Cautious:** 8–10 miles/day (once per 3-day stretch, the party gains Advantage on one Event roll)
+- **Cautious:** 8–10 miles/day. If the party's first travel day in a 3-day weather span is Cautious, they may take Advantage on one Event roll during a Cautious day in that span. Switching away before spending it loses the use; switching to Cautious mid-span does not create one.
 - **Standard:** 15–20 miles/day
 - **Reckless:** 22–30 miles/day (dangerous; Disadvantage on the Event roll)
 
@@ -146,18 +146,20 @@ Basic travel does **not** require a roll. A **Travel check** happens only when a
 
 ### Forced March (+50% miles)
 
-After setting your stance miles, you may push for +50% distance.
+Declare before travel distance is finalized. After setting your stance miles, you may push for +50% distance.
 
 - **Group CON check (DC 11)**
-- Each character who fails gains **1 Exhaustion**
+- Success: apply the +50% distance bonus
+- Failure: no extra miles; each character who fails gains **1 Exhaustion**
+- The attempt counts as **Hard Travel** whether it succeeds or fails
 - Cannot combine with **Reckless** stance
 
-**Multipliers & rounding:** If an effect says “double time” / “1.5× miles,” apply it after stance miles (and Forced March, if attempted), then round up to the nearest mile. If an effect halves/doubles food or water consumption, round up to the nearest 0.5. Speed modifiers stack multiplicatively (ox teams, weather, events, then any “half distance” result).
+**Multipliers & rounding:** If an effect says “double time” / “1.5× miles,” apply it after stance miles (and Forced March, if the check succeeds), then round up to the nearest mile. If an effect halves/doubles food or water consumption, round up to the nearest 0.5. Speed modifiers stack multiplicatively (ox teams, weather, events, then any “half distance” result).
 
 ### Ox teams and speed
 
 - Each ox team has **10 HP**
-- Multiply miles traveled by **0.75 per lost team**
+- Lost-team speed penalties are multiplicative: multiply miles traveled by **0.75 once for each lost team**
 - **Hard Travel ox strain:** on any day the party travels Recklessly or attempts a Forced March, one ox team loses **1 HP** (GM chooses or roll randomly)
 - River crossings are punishing: crossing costs **2 HP** to one ox team (DEX check DC 11 reduces to 1)
 - Rest day recovery: each ox team recovers **1 HP**
@@ -182,14 +184,14 @@ After setting your stance miles, you may push for +50% distance.
 ### Repairing the wagon (STR)
 
 - Standard repair (stop for the day): requires **1 spare part** available. **STR check (DC 12)**. Success: spend the spare part and restore `1d6+2` Wagon HP. Failure: no HP restored; the spare part is **not** consumed.
-- Rest day actions are in [`05_camp_life.md`](../05_camp_life.md) (including Deep Repair and Preventative Maintenance)
+- Rest day actions are in [`05_camp_life.md`](../05_camp_life.md) (including Teamster's Upkeep, Deep Repair, and Preventative Maintenance)
 
 ### Rest day (Layover)
 
 Rest days are the “reset lever” that keeps the party alive:
 
 - Food: **0.5 lbs per person**
-- End of day: each character heals **1d4+1 HP** and removes **1 Exhaustion**
+- End of day: each character heals **1d4+1 HP** and removes **1 Exhaustion** if they ate their full Rest Day ration (0.5 lbs)
 - Ox teams recover **1 HP**
 - Each character takes **one** Camp Action (below)
 
@@ -197,10 +199,11 @@ Rest days are the “reset lever” that keeps the party alive:
 
 | Action | Stat | Effect |
 | :-- | :-- | :-- |
-| Deep Repair | STR (DC 11) | Restore `1d4` Wagon HP (no parts). Cannot restore above half max Wagon HP. |
+| Teamster's Upkeep | Automatic | If the party has a Teamster, restore 1 Wagon HP (no check, no parts). Does not consume a Camp Action. |
+| Deep Repair | STR (DC 11) | If below half max HP, restore `1d4` Wagon HP (no parts), capped at half max HP (15). If starting at or above half max HP, restore only 1 HP instead. Cannot restore above max Wagon HP. |
 | Preventative Maint. | STR (DC 10) | Next “Wagon Breakdown” or rough terrain event is nullified or damage halved. |
 | Foraging/Fishing | WIS or DEX (DC 10) | Gain `2d10` lbs of food (berries, roots, fish). |
-| Intensive Care | INT (DC 12) | Choose one: advantage on next disease recovery check (end of day), advantage on Wound Track recovery check (end of this Rest Day), +`1d6` HP, or remove 1 Exhaustion. |
+| Intensive Care | INT (DC 12) | Choose one: advantage on next disease recovery check (end of day), advantage on Wound Track recovery check (end of this Rest Day), additional +`1d6` HP on top of Rest Day healing, or remove 1 Exhaustion. |
 | Brew Tonics | INT (DC 11) | Create `1d4` tonics; drinking one gives advantage on next CON check vs. disease. |
 | Scouting Ahead | WIS (DC 11) | Advantage on next day’s Travel or Navigation check. |
 | Mend & Wash | DEX (DC 9) | Auto-succeed next minor CON check (cold exposure, mild illness, insect bites). |
@@ -254,6 +257,8 @@ Quick reference:
 
 When food drops below **50 lbs**, the party is **foraging**: each day without a successful hunt, everyone makes a **CON check (DC 11)** or gains 1 Exhaustion.
 
+At **0 lbs**, replace the foraging check with **Starvation**: each day without a successful hunt or successful forage attempt, everyone makes a **CON check (DC 11)** or gains 1 Exhaustion. On a failed starvation check, a character already at Exhaustion 3+ also takes `1d4` damage. Morale drops by 1 for every 2 consecutive starving days.
+
 **Desperate Forage (last resort):** When food is depleted and hunting is impossible, any character may attempt a **WIS or CON check (DC 9)** to scavenge `1d6` lbs of edible plants/insects/bark (no ammo required).
 
 ### Water (gallons) — only tracked in arid/waterless stretches
@@ -276,7 +281,7 @@ Quick rules:
 
 - Starts at **30 HP**
 - Repairs restore wagon HP; events and terrain reduce it
-- Teamster’s Upkeep (rest day): +1 Wagon HP automatically
+- Teamster’s Upkeep (rest day): +1 Wagon HP automatically, no action required
 - At **0 HP**, the wagon is unusable; the party must cache supplies and proceed on foot at half speed
 
 ### Wagon capacity
@@ -303,14 +308,14 @@ Exhaustion is the main “slow death” clock. Effects:
 Removal:
 
 - A full **Rest Day** removes 1 level
-- Food is required to remove any level
+- To remove any Exhaustion level, the character must have eaten their full required ration that day (0.5 lbs on a Rest Day)
 - Doctor’s **Intensive Care** can remove 1 level (see [`05_camp_life.md`](../05_camp_life.md))
 
 ---
 
 ## Disease (How It Works at the Table)
 
-When disease strikes (usually via events), roll **1d6**:
+When disease exposure occurs, the event tells you who is exposed. If it does not, choose one random party member. If the event names a disease, use that disease; otherwise roll **1d6**:
 
 1. Dysentery (DC 11)
 2. Typhoid (DC 13)
@@ -319,6 +324,8 @@ When disease strikes (usually via events), roll **1d6**:
 5. Exhaustion illness (DC 9)
 6. Snakebite (DC 12)
 
+The exposed character makes a resistance check: normally **CON** vs. the event's DC, or vs. the disease DC if the event gives no DC. If the event gives an avoidance check (like DEX to dodge a snake), use that check instead. On failure, apply the disease's immediate effect.
+
 Then follow this daily cadence (see the full rules in [`seed.md`](../seed.md)):
 
 1. Apply the disease’s daily effect
@@ -326,6 +333,8 @@ Then follow this daily cadence (see the full rules in [`seed.md`](../seed.md)):
    - Success reduces remaining duration
 3. Treatment (if available): spend **1 medicine** + Doctor makes **INT (DC 11)**
    - Success doubles recovery speed and halves daily effects
+
+Untreated Cholera on day 3 requires a final **CON check (DC 11)** after daily damage. Failure means death.
 
 ---
 
