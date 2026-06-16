@@ -45,7 +45,7 @@ To ensure experts aren't undone entirely by a single bad d20 roll, each role has
 
 - **The Guide (Take 10):** When rolling a Wisdom check to navigate or read the trail with a DC of 13 or lower, the Guide can choose to "Take 10" instead of rolling the d20. They add their modifier to 10. If this meets the DC, they succeed automatically, preventing a wandering-in-circles failure.
 - **The Teamster (Jury-Rig):** When failing a Strength check to repair the wagon, the Teamster can choose to permanently spend 1 maximum Wagon HP to automatically reroll the check. They must accept the new result.
-- **The Hunter (Take Aim):** Instead of rolling Dexterity to hunt and risking starvation, the Hunter can spend a full day hunting (zero travel progress) to automatically yield 50 lbs of food with no ammo cost. This is distinct from a normal hunt-while-traveling (which allows half-speed travel but requires a roll and ammo).
+- **The Hunter (Take Aim):** Instead of rolling Dexterity to hunt and risking starvation, the Hunter can spend a full day hunting (zero travel progress) to automatically yield 50 lbs of food with no ammo cost. This is distinct from a normal hunt-while-traveling (which allows half-speed travel but requires a roll and ammo). This requires a dedicated Hunt Day (consuming 1 lb food/person and making zero travel progress) and cannot be taken as a Camp Action during a Rest Day (the party does not receive Rest Day recovery benefits on a Hunt Day).
 - **The Doctor (Triage):** When forced to roll an Intelligence check to diagnose or treat a severe illness, the Doctor can spend an additional dose of Medicine to gain Advantage on the roll.
 
 ### Stats
@@ -315,7 +315,8 @@ Oxen are the party's engine. Without them, the wagon doesn't move.
 - Hard Travel strains the oxen: on any day the party travels Recklessly or attempts a Forced March, one ox team loses 1 HP (GM chooses or roll randomly)
 - Lose 2 HP crossing rivers (Dexterity check DC 11 to reduce to 1)
 - Recover 1 HP per full Rest Day (grazing/feeding is abstracted — no extra tracked food cost)
-- At 0 HP, an ox team **collapses and dies** — it is permanently lost and cannot be recovered through rest or healing. Lost-team speed penalties are multiplicative: multiply miles traveled by 0.75 once for each lost team. At 0 teams: **stranded** — the wagon cannot move. The party may cache supplies and proceed on foot at half Standard speed (7–10 mi/day), attempt to purchase a replacement team at the nearest fort, or work for wages at a fort to fund new oxen. If no fort is reachable on foot, the party's journey is over.
+- At 0 HP, an ox team **collapses and dies** — it is permanently lost and cannot be recovered through rest or healing. Lost-team speed penalties are multiplicative: multiply miles traveled by 0.75 once for each lost team. At 0 teams: **stranded** — the wagon cannot move. The party may cache supplies and proceed on foot at half Standard speed (7–10 mi/day), attempt to purchase a replacement team at the nearest fort, or work for wages at a fort to fund new oxen. If no fort is reachable on foot, the party's journey is over. _GM Note: While proceeding on foot at 7–10 mi/day is mathematically faster than travel with only 1 remaining ox team (which reduces Standard speed to 6–8 mi/day), foot travel requires caching all wagon supplies. The comparison only makes logical sense if the wagon is already effectively useless due to low HP or empty cargo._
+
 
 ### Wagon HP
 
@@ -423,8 +424,8 @@ Roll **1d6** to determine an unnamed disease:
 **Disease Progression:** Each disease has a **duration** and a **daily effect** while active:
 
 - **Dysentery:** Lasts 5 days. Lose 1d4 HP each morning; disadvantage on STR/DEX checks. Untreated: duration extends by 1d4 days.
-- **Typhoid:** Lasts 7 days. Character is bedridden (Gravely Ill on Wound Track) for the full duration.
-- **Cholera:** Lasts 3 days. Lose 2d4 HP on day 1; each subsequent day, CON check at the disease's DC or lose another 1d4 HP. Untreated: on day 3, after daily damage, make a final **CON check (DC 11)**. Failure means death; success means the character survives and the disease duration can end normally.
+- **Typhoid:** Lasts 7 days. Character is bedridden (Gravely Ill on Wound Track) for the full duration. While Typhoid is active, the character cannot attempt Wound Track recovery checks — the disease holds them Gravely Ill regardless. When cured, the Typhoid ends, but the character remains Gravely Ill on the Wound Track and must recover from that state normally through Rest Days.
+- **Cholera:** Lasts 3 days. Lose 2d4 HP on day 1; each subsequent day, CON check at the disease's DC or lose another 1d4 HP. Untreated: on day 3, after daily damage, make a final **CON check at the disease's DC (DC 15)** (a character is considered treated, bypassing this check entirely, if they received at least one successful Doctor's treatment during the disease's duration). Failure means death; success means the character survives and the disease duration can end normally.
 - **Measles:** Lasts 7 days. Disadvantage on all checks for the duration.
 - **Exhaustion Illness:** Immediate. Gain 1 Exhaustion level; no ongoing duration.
 - **Snakebite:** Lasts 3 days. Lose 1d6 HP immediately; disadvantage on STR/DEX for the duration.
@@ -445,7 +446,7 @@ If the party must recruit a complete stranger at a fort or on the trail, that st
 
 To ensure death remains a severe mechanical penalty and to prevent "farming" fresh characters, the following **Ghost Tax** applies to any new character joining mid-journey:
 
-- **Integration Cost:** The new character is either untrained (as a secondary survivor) or demands proof of stability (as a stranger). The party must immediately expend **one** of the following: 50 lbs of food, 2 doses of medicine, or $20. If the party cannot afford any of these, they operate down a character until they can.
+- **Integration Cost:** The new character is either untrained (as a secondary survivor) or demands proof of stability (as a stranger). The party must immediately expend **one** of the following: 50 lbs of food, 2 doses of medicine, or $20. If the party cannot afford any of these, they operate down a character until they can (the replacement character joins the wagon but is bedridden, acting as cargo, and cannot make checks, participate in group checks, or take watch shifts).
 - **Shared Burden:** The new character immediately gains 1 level of Exhaustion (representing the disruption and stress of transition — not the full accumulated toll of the journey).
 - **Loss of Institutional Knowledge (Role Lockout):** The new character cannot immediately use the deceased character's **Competence Floor ability** (e.g., if the Guide dies, the new character cannot use Take 10). This lockout lasts **3 trail days** (not a full segment) as the newcomer learns the ropes. The new character can still fill the Role and make normal checks during the lockout — they just lack the safety net.
 

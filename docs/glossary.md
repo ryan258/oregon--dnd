@@ -292,7 +292,7 @@ A special game state entered during the Hastings Cutoff where the party is mecha
 | ---- | :-: | -------- | ---------- |
 | **Dysentery** | 11 | 5 days | 1d4 HP/day, Disadvantage on STR/DEX |
 | **Typhoid** | 13 | 7 days | Immediately Gravely Ill / Bedridden |
-| **Cholera** | 15 | 3 days | 2d4 HP day 1; untreated day 3 CON DC 11 or death |
+| **Cholera** | 15 | 3 days | 2d4 HP day 1; untreated day 3 CON DC 15 or death |
 | **Measles** | 10 | 7 days | Disadvantage on all checks |
 | **Exhaustion Illness** | 9 | Immediate | Gain 1 Exhaustion level |
 | **Snakebite** | 12 | 3 days | 1d6 HP immediately, Disadvantage on STR/DEX |

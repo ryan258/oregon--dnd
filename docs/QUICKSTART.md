@@ -159,7 +159,7 @@ Declare before travel distance is finalized. After setting your stance miles, yo
 ### Ox teams and speed
 
 - Each ox team has **10 HP**
-- Lost-team speed penalties are multiplicative: multiply miles traveled by **0.75 once for each lost team**
+- Lost-team speed penalties are multiplicative: multiply miles traveled by **0.75 once for each lost team** (Note: While walking on foot at 7–10 mi/day is faster than travel with only 1 remaining ox team (which yields 6–8 mi/day), foot travel requires caching all wagon supplies; the comparison only makes logical sense if the wagon is already effectively useless due to low HP or empty cargo.)
 - **Hard Travel ox strain:** on any day the party travels Recklessly or attempts a Forced March, one ox team loses **1 HP** (GM chooses or roll randomly)
 - River crossings are punishing: crossing costs **2 HP** to one ox team (DEX check DC 11 reduces to 1)
 - Rest day recovery: each ox team recovers **1 HP**
@@ -179,7 +179,7 @@ Declare before travel distance is finalized. After setting your stance miles, yo
 
 **Hunt while traveling:** One character may break off to hunt while the rest travel at **half speed**, if the Guide makes a **WIS check (DC 9)** to keep the party on track.
 
-**Hunter safety valve (Take Aim):** The Hunter can spend a full day hunting (no travel) to gain **50 lbs food** with **no ammo cost**.
+**Hunter safety valve (Take Aim):** The Hunter can spend a full day hunting (no travel) to gain **50 lbs food** with **no ammo cost**. This requires a dedicated Hunt Day and cannot be taken as a Camp Action on a Rest Day (no Rest Day recovery is gained on a Hunt Day).
 
 ### Repairing the wagon (STR)
 
@@ -206,7 +206,7 @@ Rest days are the “reset lever” that keeps the party alive:
 | Intensive Care | INT (DC 12) | Choose one: advantage on next disease recovery check (end of day), advantage on Wound Track recovery check (end of this Rest Day), additional +`1d6` HP on top of Rest Day healing, or remove 1 Exhaustion. |
 | Brew Tonics | INT (DC 11) | Create `1d4` tonics; drinking one gives advantage on next CON check vs. disease. |
 | Scouting Ahead | WIS (DC 11) | Advantage on next day’s Travel or Navigation check. |
-| Mend & Wash | DEX (DC 9) | Auto-succeed next minor CON check (cold exposure, mild illness, insect bites). |
+| Mend & Wash | DEX (DC 9) | Auto-succeed next minor CON check (DC 10 or lower, such as cold exposure, mild illness, or insect bites). |
 
 #### Evening activity (once per layover)
 
@@ -328,13 +328,13 @@ The exposed character makes a resistance check: normally **CON** vs. the event's
 
 Then follow this daily cadence (see the full rules in [`seed.md`](../seed.md)):
 
-1. Apply the disease’s daily effect
+1. Apply the disease’s daily effect (Note: Typhoid makes the character Gravely Ill/Bedridden for its full 7-day duration. While active, the character cannot attempt Wound Track recovery checks. Once cured, they remain Gravely Ill on the Wound Track and must recover normally.)
 2. End of day: the patient makes a **CON check** vs. the disease DC
    - Success reduces remaining duration
 3. Treatment (if available): spend **1 medicine** + Doctor makes **INT (DC 11)**
    - Success doubles recovery speed and halves daily effects
 
-Untreated Cholera on day 3 requires a final **CON check (DC 11)** after daily damage. Failure means death.
+Untreated Cholera on day 3 requires a final **CON check at the disease's DC (DC 15)** after daily damage (a character is considered treated, bypassing this check entirely, if they received at least one successful Doctor's treatment during the disease's duration). Failure means death.
 
 ---
 
@@ -363,7 +363,7 @@ When someone dies, mark their grave with the current date and mile marker.
 
 Replacement characters use the “Ghost Tax” (see [`seed.md`](../seed.md)):
 
-- Pay **one**: 50 lbs food *or* 2 medicine *or* $20
+- Pay **one**: 50 lbs food *or* 2 medicine *or* $20. If unpaid, the replacement character is bedridden (cargo) and cannot make checks, participate in group checks, or take watch shifts until paid.
 - New character gains **1 Exhaustion**
 - New character can’t use the deceased role’s **Competence Floor** ability for **3 trail days**
 

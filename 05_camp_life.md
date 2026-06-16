@@ -26,7 +26,7 @@ If the party has a Teamster, **Teamster's Upkeep** also triggers automatically d
 | **Intensive Care**      | INT (DC 12)        | The Doctor spends all day tending to the sick/wounded. Target character gains Advantage on their next disease recovery check (end of day), gains Advantage on their Wound Track recovery check (end of this Rest Day), recovers an additional 1d6 HP on top of Rest Day healing, or removes 1 level of Exhaustion. |
 | **Brew Tonics**         | INT (DC 11)        | The Doctor gathers herbs to distill preventative tonics. Success yields 1d4 tonics. Anyone drinking one gains Advantage on their next CON check to resist or recover from disease.     |
 | **Scouting Ahead**      | WIS (DC 11)        | Scout a few miles forward. Success reveals tomorrow’s terrain or hazards, granting Advantage on the next day’s Travel or Navigation check.                                          |
-| **Mend & Wash**         | DEX (DC 9)         | Fix torn clothes, boil lice, clean weapons. Small comforts matter. Target character automatically succeeds their next minor CON check (cold exposure, mild illness, insect bites). |
+| **Mend & Wash**         | DEX (DC 9)         | Fix torn clothes, boil lice, clean weapons. Small comforts matter. Target character automatically succeeds their next minor CON check (DC 10 or lower, such as cold exposure, mild illness, or insect bites). |
 
 ### The Morale Engine: Evening Activities
 
