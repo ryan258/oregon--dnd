@@ -12,6 +12,10 @@
 
 **Players:** 1 GM + 1–4 players (each player controls one wagon party member), or solo with all 4 party members.
 
+### Solo Play Guidelines
+
+Solo play works best when the player treats the four roles as a council, not four fully separate protagonists. Roll all four characters normally, keep their sheets separate, and let each role make decisions in their specialty: the Guide chooses routes, the Doctor triages illness, the Hunter manages food risk, and the Teamster protects the wagon. For group checks, roll once for each living character as usual. For roleplay, use quick prompts instead of full scenes: who argues for caution, who wants to press on, and who is hiding how badly they are hurt?
+
 ---
 
 ## Core Philosophy
@@ -195,6 +199,8 @@ Some rules include a parenthetical tag (e.g., **WIS (Survival)**, **CHA (Persuas
 
 **Group Check:** All party members roll. If more than half succeed, the group succeeds. Used for river crossings, mountain passes, navigating in a blizzard.
 
+**Partial Success on Group Checks:** If at least one character succeeds AND the number of successes is exactly half the party (for even-numbered parties) or exactly one fewer than a majority (for odd-numbered parties — e.g., 1 of 3, 2 of 5), the group achieves the immediate goal but pays a cost. A one-character party never gets partial success — they succeed or fail normally. For numeric damage, halve it (round down). For non-numeric consequences such as Wound Track steps or lost time, apply them as written — they cannot be halved. Otherwise lose 1 day, spend a resource, or apply the event's milder consequence. If a specific event says there is no partial success, use that event's text instead.
+
 **Contested Check:** Character rolls vs. GM roll. Used for trading (INT vs. INT), being ambushed (Perception vs. Stealth).
 
 ### Difficulty Classes
@@ -339,6 +345,8 @@ Water is only tracked as a resource in **arid or waterless stretches** (Segment 
 - Refill: Automatic at any river, spring, or fort. Some events (Oasis, Clear Mountain Spring) also refill.
 - Additional barrels can be purchased at forts for $3 each (Independence price), adding 10 gallons of capacity per barrel.
 
+_Experienced table option:_ Track water for the full journey. Outside arid/waterless stretches, the party still refills for free whenever the day clearly passes a river, spring, fort, or settled creek; on dry camp days, deduct water normally. Use this only if the group wants water pressure before Segment 5.
+
 ### Wagon Capacity
 
 The wagon can carry a maximum of **2,500 lbs** of total cargo (food, water barrels, spare parts, personal effects, and passengers who are bedridden). Under normal conditions, the party won't approach this limit. It matters when:
@@ -399,7 +407,7 @@ At the start of each Trail Day, the GM rolls **1d20** and consults the Event Tab
 | 19   | **Helpful locals.** Guidance on the trail ahead; advantage on next Navigation check.                           |
 | 20   | **Exceptional day.** Multiply miles traveled today by 2 (round up). Additionally, the party may make one hunting attempt today with no ammo cost and no travel-speed penalty. |
 
-**Using the Segment Tables:** Roll 1d20 on the Universal table above. On results **1–9**, the GM may roll a **separate d10** on the segment-specific table (see [01. Events & Hazards](./01_events_and_hazards.md)) for local flavor instead of using the Universal result. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
+**Using the Segment Tables:** Before play, decide whether to use Universal-only events or the segment event module. If using the segment module, roll 1d20 on the Universal table above; on results **1–9**, roll a **separate d10** on the segment-specific table (see [01. Events & Hazards](./01_events_and_hazards.md)) instead of using the Universal result. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
 
 ### Disease
 
@@ -424,7 +432,7 @@ Roll **1d6** to determine an unnamed disease:
 **Disease Progression:** Each disease has a **duration** and a **daily effect** while active:
 
 - **Dysentery:** Lasts 5 days. Lose 1d4 HP each morning; disadvantage on STR/DEX checks. Untreated: duration extends by 1d4 days.
-- **Typhoid:** Lasts 7 days. Character is bedridden (Gravely Ill on Wound Track) for the full duration. While Typhoid is active, the character cannot attempt Wound Track recovery checks — the disease holds them Gravely Ill regardless. When cured, the Typhoid ends, but the character remains Gravely Ill on the Wound Track and must recover from that state normally through Rest Days.
+- **Typhoid:** Lasts 7 days. Character is bedridden (Gravely Ill on Wound Track) for the full duration. While Typhoid is active, the character cannot attempt Wound Track recovery checks — the disease holds them Gravely Ill regardless. Because Typhoid already holds the character at Gravely Ill, any later drop to 0 HP during the disease is immediately fatal under the normal Wound Track rules. When cured, the Typhoid ends, but the character remains Gravely Ill on the Wound Track and must recover from that state normally through Rest Days.
 - **Cholera:** Lasts 3 days. Lose 2d4 HP on day 1; each subsequent day, CON check at the disease's DC or lose another 1d4 HP. Untreated: on day 3, after daily damage, make a final **CON check at the disease's DC (DC 15)** (a character is considered treated, bypassing this check entirely, if they received at least one successful Doctor's treatment during the disease's duration). Failure means death; success means the character survives and the disease duration can end normally.
 - **Measles:** Lasts 7 days. Disadvantage on all checks for the duration.
 - **Exhaustion Illness:** Immediate. Gain 1 Exhaustion level; no ongoing duration.
@@ -465,10 +473,20 @@ The party has a collective **Morale score** from 0–10 (starts at 7).
 
 **Morale rises by 1 when:**
 
-- A major landmark is reached (Fort Kearny, South Pass, etc.)
+- A major landmark is reached (South Pass, Independence Rock, etc.) or a fort is reached — these are the same +1 awarded in [03. Settlements & Trading](./03_settlements_and_trading.md) on arrival; do not award it again at the end-of-segment beat
 - A successful hunt produces 100+ lbs
 - A party member is saved from death (Doctor's dramatic save)
 - The party finds unexpected provisions
+- A successful Evening Activity lifts the camp during a Rest Day (see [05. Camp Life](./05_camp_life.md))
+
+### End-of-Segment Beat
+
+When the party completes a segment, pause before the next hazard profile begins:
+
+1. Audit food, water, medicine, ammunition, wagon HP, ox HP, Morale, Exhaustion, and disease timers.
+2. Note any landmark or fort Morale gain already awarded on arrival this segment (do not award it a second time here).
+3. Ask one quick relationship prompt: who is carrying the party, who is cracking, and who has changed their mind about Oregon?
+4. Let the party choose one visible priority for the next segment: speed, safety, food, repairs, or morale.
 
 **Morale effects:**
 

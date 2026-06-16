@@ -1,6 +1,6 @@
 # 1. Events & Hazards
 
-At the start of each Trail Day, the GM rolls 1d20 on the Universal Event Table (see `seed.md`). On results **1–9**, the GM may roll a **separate d10** on the segment-specific table below for local flavor instead of using the Universal result. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
+At the start of each Trail Day, the GM rolls 1d20 on the Universal Event Table (see `seed.md`). If the table is using this segment event module, results **1–9** trigger a **separate d10** roll on the segment-specific table below instead of using the Universal result. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
 
 ---
 

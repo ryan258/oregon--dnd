@@ -15,7 +15,7 @@ _The compass, the pathfinder, the one who looks at the sky and knows what tomorr
 - **Former Mountain Man:** You lived in the Rockies for years. You have Advantage on all WIS (Survival) checks made to navigate or find shelter in mountainous terrain (Segments 3, 4, and 7).
 - **Military Scout:** You rode with the dragoons out of Fort Leavenworth. You have Advantage on all WIS (Perception) checks to spot ambushes or hostile elements before they strike. Additionally, your scouting experience grants Advantage on Navigation checks made to find safe river crossings (Segments 2 and 6).
 - **Driven by a Vision:** You are certain Oregon is promised to you. Once per segment, when party Morale drops mechanically, you can deliver a speech (no check required) to instantly restore 1 point of Morale.
-- **Cartographer:** You don't just walk trails, you map them. When faced with a "False Trail" event, you automatically succeed the check to find the correct path.
+- **Cartographer:** You don't just walk trails, you map them. You have Advantage on Navigation checks involving forks, alternate routes, landmarks, or backtracking. When faced with a "False Trail" event (Segment 3 d10) or a "Trail fork" result (Universal d20 result 7), you may automatically succeed once per segment.
 
 ### 2. The Doctor
 
@@ -26,7 +26,7 @@ _The line between life and a shallow grave. Often formally trained, sometimes ju
 - **Trained in the East:** You attended an actual medical college. When treating Cholera or Typhoid, you add an additional +2 bonus on top of your normal INT modifier.
 - **Frontier Herbalist:** You know the green pharmacy. Whenever the party rests in a forested or river-adjacent area, you can automatically gather 1 dose of 'Medicine' for free.
 - **Battle Surgeon:** You operated in the Mexican-American War. You have Advantage on checks to treat traumatic injuries (broken bones, gunshot wounds, animal attacks). Once per segment, you may grant Advantage on a single Wound Track recovery check (made at the end of a Rest Day).
-- **Quarantine Master:** You are ruthless about sanitation. If disease breaks out in camp, you can mandate preventative measures: everyone else in the party gets Advantage on their initial CON check to resist catching it.
+- **Quarantine Master:** You are ruthless about sanitation. Once per segment, when any disease exposure event occurs, you can mandate preventative measures: all exposed characters get Advantage on their initial CON check to resist contracting the disease.
 
 ### 3. The Hunter
 

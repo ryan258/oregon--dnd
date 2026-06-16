@@ -4,7 +4,7 @@
 
 1. Weather (every 3 days / segment change)
 2. Choose stance + action
-3. Event: d20 universal (on 1–9, optionally roll a separate segment d10 instead)
+3. Event: d20 universal (if using segment events, on 1–9 roll a separate segment d10 instead)
 4. Resolve action + checks
 5. Consume resources
 6. Camp + watch
@@ -18,6 +18,7 @@
 ## Travel Checks
 
 - Only when a hazard demands it: group WIS/CON vs hazard DC
+- Partial success (≥1 success AND exactly half for even parties or one short of majority for odd — e.g. 1 of 3; not available for 1-character parties): goal achieved at a cost; halve numeric damage (round down); non-numeric consequences apply as written
 - Failure: half distance + hazard consequence
 - Forced March: declare before distance; group CON DC 11. Success = +50% miles. Failure = no extra miles; each failing character gains 1 Exhaustion. Attempt counts as Hard Travel either way; cannot combine with Reckless.
 - Shelter (weather/events): WIS (Survival) DC 10 to find cover (DC 12 Plains/Desert). Warm bedding counts as shelter for character cold damage only.
@@ -39,6 +40,7 @@ Starvation at 0 food: replaces the foraging check. Each day without a successful
 - Consume: 2 gal/day (4 gal/day in Hot & Dry / Oppressive Heatwave)
 - At 0: each character takes 1d4 damage/day and gains 1 Exhaustion; ox teams also take 1d4 damage/day (no Exhaustion track)
 - Extra barrel: $3 (adds 10 gal capacity)
+- Experienced option: track all journey; refill for free at rivers, springs, forts, or settled creeks
 
 ## Wagon + Oxen
 

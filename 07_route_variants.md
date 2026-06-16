@@ -20,12 +20,13 @@ This cutoff bypasses Fort Bridger entirely, driving straight across a harsh, wat
     - _Failure:_ Each character who failed gains **1 level of Exhaustion**, and one ox team loses **2 HP**.
   - If the party runs out of water during the crossing, apply the standard 0-water penalties (1d4 damage/day and 1 Exhaustion to all characters; ox teams also take 1d4 damage/day but have no Exhaustion track) in addition to the daily CON check. The 0-water Exhaustion and the daily CON check Exhaustion share the daily Exhaustion cap — a character gains at most 1 involuntary Exhaustion per day from these two sources combined.
 
-### 2. Hastings Cutoff (Fatal Decision Point)
+### 2. Hastings Cutoff (Trap Route / Challenge Scenario)
 
 Historically, this is the cutoff that doomed the Donner Party in 1846. Though the game is set in 1848, the temptation of this cursed route remains in the folklore of the trail.
 
 - **The Promise:** Billed by lying guidebooks to save 300 miles.
 - **The Reality:** It involves crossing the Great Salt Lake Desert and hacking a road through the Wasatch Mountains.
+- **How to present it:** Do not frame this as a balanced route choice. For a standard campaign, telegraph it as a disastrous rumor and let cautious parties reject it. For a grim challenge scenario, present the false promise first and reveal the true costs only after the party commits.
 - **The Mechanic:** If the party takes this route, they enter a "Lost" state.
   - Add +14 days to the journey automatically.
   - For the next 10 days, roll **one event per day** (do not use the Universal table):
@@ -33,7 +34,7 @@ Historically, this is the cutoff that doomed the Donner Party in 1846. Though th
     - 5 days: use **Segment 4 (South Pass)** events from `01_events_and_hazards.md`
   - The remaining 4 days are treated as Time Loss (consume resources, weather still shifts) with no additional Daily Event rolls.
   - All travel and survival checks act as if the party's Morale is at 2 (Disadvantage on all checks).
-- _GM Advice: Heavily telegraph through NPCs that anyone taking this route is courting death._
+- _GM Advice: In a normal campaign, the correct play is usually to avoid this route. Use it when the group explicitly wants a historical disaster scenario or when they knowingly ignore repeated warnings._
 
 ### 3. The Barlow Road vs. The Columbia River (Segment 7 Finale)
 

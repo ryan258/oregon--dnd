@@ -52,7 +52,7 @@ Roll **2d20 and take the lower result.** A significant penalty from exhaustion, 
 One character rolls once. Succeed or fail, move on.
 
 **Group Check**
-Everyone in the party rolls. If more than half succeed, the group succeeds. Used for river crossings, mountain passes, blizzards.
+Everyone in the party rolls. If more than half succeed, the group succeeds. **Partial success** applies when at least one character succeeds AND the successes land at exactly half (for even-sized parties) or one fewer than a majority (for odd-sized parties — e.g., 1 of 3, 2 of 5): the goal is achieved with a cost. A one-character party always succeeds or fails normally. Numeric damage is halved (round down); non-numeric consequences such as Wound Track steps or lost time apply as written. Used for river crossings, mountain passes, blizzards.
 
 **Extended Check**
 A multi-round challenge requiring several successes before accumulating too many failures (e.g., "3 successes before 2 failures"). Used for complex tasks like lowering a wagon down a cliff or negotiating with a Native band.
@@ -140,7 +140,10 @@ A fast-forward option: instead of playing 3 individual Trail Days, the party ban
 When events cost the party calendar days with no miles gained. Resources are still consumed; weather still shifts.
 
 **Event Table / Universal Event Table**
-The d20 table the GM rolls each Trail Day. Results 1–9 can trigger a **separate d10 roll** on the segment-specific table instead of using the Universal result. Results 10–20 are universal (mix of neutral and positive).
+The d20 table the GM rolls each Trail Day. If the segment event module is in use, results 1–9 trigger a **separate d10 roll** on the segment-specific table instead of using the Universal result. Results 10–20 are universal (mix of neutral and positive).
+
+**Segment Event Module**
+The optional system in [`01_events_and_hazards.md`](../01_events_and_hazards.md) that adds segment-specific d10 event tables. When the group decides to use it (recommended), Universal Event Table results 1–9 trigger a separate d10 roll on the table for the current segment instead of using the Universal result. The module covers only the d10 event tables in `01_events_and_hazards.md`; the Native Encounter frequency (one per segment, from [`04_native_encounters.md`](../04_native_encounters.md)) applies regardless of whether this module is in use.
 
 ### Travel
 
@@ -228,7 +231,7 @@ Buffalo robes / heavy blankets. Characters count as Sheltered for nighttime cold
 A condition meaning the party has physical protection from weather (at a fort, in dense trees, canyon, etc.). Can be achieved via a WIS (Survival) check if no natural cover exists.
 
 **Pemmican**
-A special food item available only through successful Native Encounter trading. Lasts forever and counts as 1.5x food value.
+A special food item available only through successful Native Encounter trading. Lasts forever and counts as 1.5x food value; the Native Encounter module gives trade quantities.
 
 **Tonics**
 Created by the Doctor's Brew Tonics camp action. Drinking one grants Advantage on the next CON check vs. disease.
@@ -262,7 +265,7 @@ A specific item or piece of information the Sutler wants. Meeting it reduces the
 An escalated state during a Native Encounter (reached after 2 failed checks). The party makes a final group CHA or WIS check (DC 12) to de-escalate.
 
 **Crisis**
-The most dangerous outcome in a Native Encounter — triggered by hostility or failing a Standoff. The party must surrender double goods or risk combat.
+The most dangerous outcome in a Native Encounter — triggered by hostility or failing a Standoff. The party must surrender double goods or resolve the Crisis Firefight check in the Native Encounter module.
 
 **Cultural Broker**
 The Guide's special ability in Native Encounters: once per encounter, automatically negate one failed check.
@@ -273,7 +276,7 @@ The Guide's special ability in Native Encounters: once per encounter, automatica
 A shortcut bypassing Fort Bridger. Saves 70 miles but crosses a waterless desert requiring active water tracking.
 
 **Hastings Cutoff**
-A historically fatal route (the Donner Party took it in 1846). Adds 14 days, forces 10 days of worst-case events, imposes Disadvantage on all checks.
+A historically fatal trap route (the Donner Party took it in 1846). Use as a clearly telegraphed disaster rumor in normal campaigns or as a deliberate challenge scenario. Adds 14 days, forces 10 days of worst-case events, and imposes Disadvantage on all checks.
 
 **Barlow Road**
 A steep toll road over Mount Hood. The "safe" finale option — if you can pay and your wagon survives the descent.

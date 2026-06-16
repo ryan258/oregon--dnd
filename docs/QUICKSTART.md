@@ -22,6 +22,8 @@ New to tabletop RPGs? Start with the [`glossary.md`](./glossary.md).
 - Paper/pencils (or print the sheets in [`docs/sheets/`](./sheets/))
 - 1 GM + 1–4 players (or solo controlling all 4 roles)
 
+Solo note: if one person controls all four roles, keep four separate sheets and let each role lead decisions in their specialty. Roll all four characters on group checks as usual.
+
 ---
 
 ## 10-Minute Setup (Character + Wagon)
@@ -66,7 +68,7 @@ Base prices (Independence) are in [`03_settlements_and_trading.md`](../03_settle
 
 This is intentionally conservative to help groups learn the system:
 
-- Food: **900 lbs**
+- Food: **700 lbs**
 - Ox teams: **3**
 - Medicine: **7 doses**
 - Spare parts: **3 parts**
@@ -74,13 +76,13 @@ This is intentionally conservative to help groups learn the system:
 - Extra water barrels: **2** (10 gal capacity each; optional but useful insurance)
 - Warm Bedding: **1** (party bundle; strongly recommended)
 
-**Budget note:** At Independence base prices, this loadout costs **$644**, leaving **$156** for resupply. As a quick gut-check, that remaining cash buys roughly this much food:
+**Budget note:** At Independence base prices, this loadout costs **$544**, leaving **$256** for resupply. It is comfortable enough for teaching the game but still forces the party to hunt, bargain, or resupply. As a quick gut-check, that remaining cash buys roughly this much food:
 
-- Fort Kearny (1.5×): ~208 lbs
-- Fort Laramie (2×): ~156 lbs
-- Fort Bridger (2.5×): ~125 lbs
-- Fort Hall (3×): ~104 lbs
-- Fort Boise (4×): ~78 lbs
+- Fort Kearny (1.5×): ~341 lbs
+- Fort Laramie (2×): ~256 lbs
+- Fort Bridger (2.5×): ~205 lbs
+- Fort Hall (3×): ~171 lbs
+- Fort Boise (4×): ~128 lbs
 
 ---
 
@@ -91,12 +93,16 @@ Each in-game day follows this structure:
 1. **Weather** (every 3 days, or when entering a new segment): roll 1d6 on the seasonal table in [`06_weather_and_environment.md`](../06_weather_and_environment.md) (use the current **month**; segment notes are typical, not strict)
 2. **Choose stance + action**
 3. **Event**: GM rolls **1d20** on the Universal Event Table (see [`seed.md`](../seed.md))
-   - On **1–9**, the GM may roll a **separate d10** on the segment table for local flavor (see [`01_events_and_hazards.md`](../01_events_and_hazards.md))
+   - If using segment events, on **1–9** roll a **separate d10** on the segment table for local flavor (see [`01_events_and_hazards.md`](../01_events_and_hazards.md))
 4. **Resolve action** (travel/hunt/repair/trade/rest)
 5. **Resource consumption** (food, water if tracked, oxen strain, illness effects)
 6. **Camp** (care, morale, watch)
 
 Use the [`trail_log.md`](./sheets/trail_log.md) sheet if you want tight pacing and clear consequences.
+
+### First Session Teaching Run
+
+For a first table, use this fixed Segment 1 event sequence before returning to random rolls: Friendly Emigrant Pass, Heavy Spring Mud, Buffalo Sign, First Signs of Illness, then Sudden Thunderstorm. This teaches trade, travel loss, hunting, disease, and weather/ox strain without front-loading the deadliest events.
 
 ### Montage (Pushing Forward)
 
@@ -139,6 +145,7 @@ Basic travel does **not** require a roll. A **Travel check** happens only when a
 
 - **Travel check:** group **WIS or CON** check (GM chooses based on obstacle) vs. the hazard’s DC
   - **Success:** full distance
+  - **Partial success** (at least 1 success, AND exactly half for even-sized parties or one short of majority for odd-sized parties — e.g. 1 of 3): goal achieved at a cost; halve numeric damage (round down); non-numeric consequences (Wound Track steps, lost time) apply as written. A one-character party always succeeds or fails normally — no partial success.
   - **Failure:** half distance + the hazard’s consequence (damage, exhaustion, lost time, etc.)
   - If an entry says “Travel DC +X,” apply it to that day’s Travel check.
 
@@ -269,6 +276,8 @@ Track water in:
 - Sublette Cutoff (if taken)
 - Any event that specifies a dried-up water source
 
+Experienced option: track water for the full journey. Outside arid/waterless stretches, refill for free at rivers, springs, forts, or settled creeks; on dry camp days, deduct water normally.
+
 Quick rules:
 
 - Starting water: **20 gallons** (included)
@@ -328,7 +337,7 @@ The exposed character makes a resistance check: normally **CON** vs. the event's
 
 Then follow this daily cadence (see the full rules in [`seed.md`](../seed.md)):
 
-1. Apply the disease’s daily effect (Note: Typhoid makes the character Gravely Ill/Bedridden for its full 7-day duration. While active, the character cannot attempt Wound Track recovery checks. Once cured, they remain Gravely Ill on the Wound Track and must recover normally.)
+1. Apply the disease’s daily effect (Note: Typhoid makes the character Gravely Ill/Bedridden for its full 7-day duration. While active, the character cannot attempt Wound Track recovery checks. If they drop to 0 HP during active Typhoid, they die under the normal Wound Track rules. Once cured, they remain Gravely Ill on the Wound Track and must recover normally.)
 2. End of day: the patient makes a **CON check** vs. the disease DC
    - Success reduces remaining duration
 3. Treatment (if available): spend **1 medicine** + Doctor makes **INT (DC 11)**
@@ -353,7 +362,9 @@ See [`seed.md`](../seed.md) for triggers that raise/lower Morale.
 Common triggers:
 
 - Morale –1: party member dies; food drops below 100 lbs; wagon below 5 HP; failed conflict management
-- Morale +1: major landmark reached; hunt yields 100+ lbs; dramatic save; unexpected provisions
+- Morale +1: major landmark or fort reached (awarded once on arrival; not re-awarded at segment end); hunt yields 100+ lbs; dramatic save; unexpected provisions; successful Evening Activity on a Rest Day
+
+At the end of each segment, pause for a quick audit: resources, HP, disease timers, Morale, Exhaustion, and one relationship prompt before the next terrain profile begins.
 
 ---
 

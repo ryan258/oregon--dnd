@@ -58,13 +58,32 @@ Different party members must contribute using their unique skills. Players descr
 **Outcomes:**
 
 - **Success (3 Passes):** The interaction is peaceful and productive.
-  - _If Trading:_ Gain access to goods you cannot find at forts (e.g., Pemmican, which lasts forever and counts as 1.5x food value).
+  - _If Trading:_ Gain access to goods you cannot find at forts. For pemmican, roll or choose from the table below; pemmican lasts indefinitely and counts as 1.5x food value when consumed.
   - _If Guides:_ River crossing DC drops to 8, and no wagons are lost.
   - _If Toll:_ A fair toll is negotiated ($5 or 10 lbs of food).
 - **Failure (2 Fails):** Communication breaks down, or an insult is unknowingly given. The encounter enters a **Standoff State**. The wagon train is halted and tensions rise. The party must make a final, high-stakes group CHA or WIS check (DC 12) to de-escalate.
   - _Standoff Success:_ The band demands a steeper price (half an ox team's value, $16) and departs peacefully once paid.
   - _Standoff Failure:_ The situation descends into a **Crisis**.
-- **Crisis (Hostility/Refusal to Pay Toll):** Native riders block the path or prepare to defend their demands. The party must either surrender double the asked goods, or risk combat. _Note: Starting a firefight usually results in severe party injuries, lost stock, and a permanent increase in hostility DC for the rest of the segment._
+- **Crisis (Hostility/Refusal to Pay Toll):** Native riders block the path or prepare to defend their demands. The party must either surrender double the asked goods or resolve a firefight as a single crisis check. This is not tactical combat.
+
+**Pemmican Trade Quantity**
+
+| d6 | Result |
+| :-: | :----- |
+| 1-2 | 30 lbs pemmican (counts as 45 lbs food) |
+| 3-4 | 50 lbs pemmican (counts as 75 lbs food) |
+| 5 | 70 lbs pemmican (counts as 105 lbs food) |
+| 6 | 40 lbs pemmican (counts as 60 lbs food) plus a warning about the next segment |
+
+**Crisis Firefight**
+
+If the party refuses to pay or draws weapons, make a **Group STR or DEX check (DC 14)**; each character chooses how they are trying to survive the moment. Apply the group-check partial success rule from `seed.md`.
+
+- **Success:** The party escapes but pays for it: every character takes 1d4 damage, lose 1d4 x 10 lbs food or $20 in goods, and hostility DCs in this segment increase by +2.
+- **Partial Success:** The party breaks contact at heavy cost: every character takes 1d6 damage (halved per the partial success rule — round down), one random character moves one step down the Wound Track (this is a non-numeric consequence; it applies as written and is not halved), lose 1 ox team or $50 in goods, and hostility DCs in this segment increase by +3.
+- **Failure:** The party is routed: every character takes 1d6 damage, one random character moves two steps down the Wound Track, lose 1 ox team and $50 in goods, and hostility DCs in this segment increase by +4.
+
+The GM should keep this consequence severe enough that violence remains a last resort, but it should still resolve through the same check language as the rest of the game.
 
 ### Historical Notes for the GM
 
