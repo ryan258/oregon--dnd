@@ -140,7 +140,7 @@ A fast-forward option: instead of playing 3 individual Trail Days, the party ban
 When events cost the party calendar days with no miles gained. Resources are still consumed; weather still shifts.
 
 **Event Table / Universal Event Table**
-The d20 table the GM rolls each Trail Day. Results 1–9 can be swapped for segment-specific 1d10 events. Results 10–20 are universal (mix of neutral and positive).
+The d20 table the GM rolls each Trail Day. Results 1–9 can trigger a **separate d10 roll** on the segment-specific table instead of using the Universal result. Results 10–20 are universal (mix of neutral and positive).
 
 ### Travel
 
@@ -187,7 +187,7 @@ A character who is Gravely Ill/Injured or at Exhaustion level 5. Cannot take act
 A tiered condition (levels 1–6) that progressively degrades a character. Level 1 = Disadvantage on all checks. Level 6 = death. Removed by Rest Days, Doctor care, and explicit recovery effects only if the character ate their full required ration that day.
 
 **Exhaustion Cap**
-At most 1 involuntary Exhaustion level per day (from failed checks or hazards). Voluntary sources (double watch shifts) can exceed this.
+At most 1 involuntary Exhaustion level per day (from failed checks or hazards). Voluntary sources (double watch shifts) can exceed this. Named events that explicitly state a multi-Exhaustion consequence (e.g., Altitude Sickness) are exceptions.
 
 **Ghost Tax**
 The mechanical penalties when a replacement character joins after a death: **Integration Cost** (50 lbs food, 2 medicine, or $20), **Shared Burden** (1 Exhaustion), and **Role Lockout** (can't use the dead character's Competence Floor for 3 trail days).

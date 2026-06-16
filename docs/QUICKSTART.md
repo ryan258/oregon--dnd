@@ -91,7 +91,7 @@ Each in-game day follows this structure:
 1. **Weather** (every 3 days, or when entering a new segment): roll 1d6 on the seasonal table in [`06_weather_and_environment.md`](../06_weather_and_environment.md) (use the current **month**; segment notes are typical, not strict)
 2. **Choose stance + action**
 3. **Event**: GM rolls **1d20** on the Universal Event Table (see [`seed.md`](../seed.md))
-   - On **1–9**, the GM may swap in the segment’s **1d10** event for local flavor (see [`01_events_and_hazards.md`](../01_events_and_hazards.md))
+   - On **1–9**, the GM may roll a **separate d10** on the segment table for local flavor (see [`01_events_and_hazards.md`](../01_events_and_hazards.md))
 4. **Resolve action** (travel/hunt/repair/trade/rest)
 5. **Resource consumption** (food, water if tracked, oxen strain, illness effects)
 6. **Camp** (care, morale, watch)
@@ -100,7 +100,7 @@ Use the [`trail_log.md`](./sheets/trail_log.md) sheet if you want tight pacing a
 
 ### Montage (Pushing Forward)
 
-If the weather roll for the current 3-day span produces any **non-hazardous** condition (anything other than Hot & Dry, Clear / High Altitude, Heavy Thunderstorms, Late Frost, Summer Hail, Oppressive Heatwave, Cold Rains, Freezing Winds, or Early Blizzard), the party may elect to _Push Forward_:
+If the weather roll for the current 3-day span produces any **non-hazardous** condition (anything other than Hot & Dry, Clear / High Altitude, Heavy Thunderstorms, Late Frost, Summer Hail, Oppressive Heatwave, Cold Rains, Freezing Winds, Early Blizzard, Heavy Snowfall, Bitter Cold, Ice Storm, Whiteout Blizzard, or Dead of Winter), the party may elect to _Push Forward_:
 
 - Instead of playing 3 individual Trail Days, make **45 miles** of Standard travel progress before ox-team losses or other active speed modifiers
 - Deduct **3 days** of standard food consumption (and water, if tracked)
@@ -274,7 +274,7 @@ Quick rules:
 - Starting water: **20 gallons** (included)
 - Normal consumption: **2 gal/day** (party + oxen)
 - “Hot & Dry” or “Oppressive Heatwave”: consumption **doubles** to **4 gal/day**
-- At **0 gallons**: each character and ox team takes **1d4 damage/day** and gains **1 Exhaustion**
+- At **0 gallons**: each character takes **1d4 damage/day** and gains **1 Exhaustion**; ox teams also take **1d4 damage/day** (no Exhaustion track)
 - Additional water barrels: **$3 each** (10 gal capacity each; Independence price)
 
 ### Wagon HP
@@ -282,7 +282,7 @@ Quick rules:
 - Starts at **30 HP**
 - Repairs restore wagon HP; events and terrain reduce it
 - Teamster’s Upkeep (rest day): +1 Wagon HP automatically, no action required
-- At **0 HP**, the wagon is unusable; the party must cache supplies and proceed on foot at half speed
+- At **0 HP**, the wagon is unusable; the party must cache supplies and proceed on foot at half Standard speed (7–10 mi/day)
 
 ### Wagon capacity
 
@@ -303,7 +303,7 @@ Exhaustion is the main “slow death” clock. Effects:
 - 5: Cannot travel; bedridden
 - 6: Death
 
-**Exhaustion cap:** A character can gain at most **1** level of Exhaustion per day from involuntary sources (failed checks, environmental hazards). Voluntary sources (like taking a double watch shift) can still add beyond this cap.
+**Exhaustion cap:** A character can gain at most **1** level of Exhaustion per day from involuntary sources (failed checks, environmental hazards). Voluntary sources (like taking a double watch shift) can still add beyond this cap. Named events that explicitly state a multi-Exhaustion consequence (e.g., Altitude Sickness: 2 Exhaustion on failure) are exceptions to this cap.
 
 Removal:
 

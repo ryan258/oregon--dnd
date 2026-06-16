@@ -134,7 +134,7 @@ These are modified by terrain (mountain segments tend toward the low end), weath
 
 Each Trail Day follows this structure, unless the party engages a **Montage**.
 
-**The Montage (Pushing Forward):** If the weather roll for the current 3-day span produces any **non-hazardous** weather condition (anything other than Hot & Dry, Clear / High Altitude, Heavy Thunderstorms, Late Frost, Summer Hail, Oppressive Heatwave, Cold Rains, Freezing Winds, or Early Blizzard), the party may elect to _Push Forward_. Instead of rolling for 3 individual days, they automatically make 3 days of Standard travel progress (**45 miles total before ox-team losses or other active speed modifiers**), deduct 3 days of standard food consumption (and water, if tracked), and roll for a single Daily Event. This allows the table to fast-forward through quiet stretches and relieve pacing pressure during the mid-to-late game.
+**The Montage (Pushing Forward):** If the weather roll for the current 3-day span produces any **non-hazardous** weather condition (anything other than Hot & Dry, Clear / High Altitude, Heavy Thunderstorms, Late Frost, Summer Hail, Oppressive Heatwave, Cold Rains, Freezing Winds, Early Blizzard, Heavy Snowfall, Bitter Cold, Ice Storm, Whiteout Blizzard, or Dead of Winter), the party may elect to _Push Forward_. Instead of rolling for 3 individual days, they automatically make 3 days of Standard travel progress (**45 miles total before ox-team losses or other active speed modifiers**), deduct 3 days of standard food consumption (and water, if tracked), and roll for a single Daily Event. This allows the table to fast-forward through quiet stretches and relieve pacing pressure during the mid-to-late game.
 
 If the prevailing weather has a 3-day-span effect (like Dust / High Winds lowering Morale), apply that effect **once** at the end of the montage.
 
@@ -326,7 +326,7 @@ The wagon absorbs punishment from terrain, river crossings, and accidents.
 - Loses HP from events (see Event Table)
 - **Standard repair (field):** Stop for a day (no travel). Requires **1 spare part** available. STR check (DC 12). Success: spend 1 spare part and restore 1d6+2 Wagon HP. Failure: no HP restored; the spare part is **not** consumed.
 - **Teamster's Upkeep:** During any rest day, the Teamster automatically restores 1 Wagon HP (no check, no parts) by tightening bolts, re-greasing axles, and patching minor wear.
-- At 0 HP: wagon is unusable. Party must cache supplies and proceed on foot at half speed.
+- At 0 HP: wagon is unusable. Party must cache supplies and proceed on foot at half Standard speed (7–10 mi/day).
 
 ### Water
 
@@ -335,7 +335,7 @@ Water is only tracked as a resource in **arid or waterless stretches** (Segment 
 - The wagon carries **20 gallons** of water in barrels (included at no extra cost; every wagon has them).
 - Normal consumption: **2 gallons per day** (people + oxen).
 - "Hot & Dry" or "Oppressive Heatwave" weather: consumption **doubles** to 4 gallons/day.
-- At 0 gallons: every character and ox team takes **1d4 damage per day** and gains 1 level of Exhaustion.
+- At 0 gallons: every character takes **1d4 damage per day** and gains 1 level of Exhaustion. Ox teams also take **1d4 damage per day** (ox teams have no Exhaustion track).
 - Refill: Automatic at any river, spring, or fort. Some events (Oasis, Clear Mountain Spring) also refill.
 - Additional barrels can be purchased at forts for $3 each (Independence price), adding 10 gallons of capacity per barrel.
 
@@ -364,7 +364,7 @@ Adapted from D&D 5e:
 
 Exhaustion is removed by: full rest days (removes 1 level), Intensive Care from the Doctor (removes 1 level, see [05. Camp Life](./05_camp_life.md)), and other effects that explicitly remove Exhaustion. A character must have eaten their full required ration that day to remove any Exhaustion level (0.5 lbs on a Rest Day). If food is short, decide who was fed before applying Exhaustion recovery.
 
-**Exhaustion Cap:** A character can gain at most 1 level of Exhaustion per day from involuntary sources (failed checks, environmental hazards). Voluntary sources (choosing a double watch shift) can still add beyond this cap.
+**Exhaustion Cap:** A character can gain at most 1 level of Exhaustion per day from involuntary sources (failed checks, environmental hazards). Voluntary sources (choosing a double watch shift) can still add beyond this cap. Named events that explicitly state a multi-Exhaustion consequence (such as Altitude Sickness: 2 Exhaustion on failure) are explicit exceptions to this cap.
 
 **Desperate Forage:** When food is depleted and hunting is impossible, any character may attempt a **WIS or CON check (DC 9)** to scavenge 1d6 lbs of edible plants, insects, or bark. This yields barely enough to stave off starvation but not enough to thrive. No ammunition is required.
 
@@ -399,7 +399,7 @@ At the start of each Trail Day, the GM rolls **1d20** and consults the Event Tab
 | 19   | **Helpful locals.** Guidance on the trail ahead; advantage on next Navigation check.                           |
 | 20   | **Exceptional day.** Multiply miles traveled today by 2 (round up). Additionally, the party may make one hunting attempt today with no ammo cost and no travel-speed penalty. |
 
-**Using the Segment Tables:** Roll 1d20 on the Universal table above. On results **1–9**, the GM may substitute the corresponding segment-specific 1d10 event (see [01. Events & Hazards](./01_events_and_hazards.md)) for local flavor. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
+**Using the Segment Tables:** Roll 1d20 on the Universal table above. On results **1–9**, the GM may roll a **separate d10** on the segment-specific table (see [01. Events & Hazards](./01_events_and_hazards.md)) for local flavor instead of using the Universal result. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
 
 ### Disease
 

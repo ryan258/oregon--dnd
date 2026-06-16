@@ -6,9 +6,9 @@ When the party reaches a junction point, the GM presents the options. The party 
 
 ---
 
-### 1. Sublette Cutoff (Segment 4, After South Pass)
+### 1. Sublette Cutoff (Segment 4, After the South Pass Summit, ~Mile 790)
 
-This cutoff bypasses Fort Bridger entirely, driving straight across a harsh, waterless desert to rejoin the main trail near Fort Hall.
+This cutoff bypasses Fort Bridger entirely, driving straight across a harsh, waterless desert to rejoin the main trail near Fort Hall. The junction appears roughly 10–20 miles past the Continental Divide crossing, **before** Fort Bridger (mile 850); parties taking this route never reach Fort Bridger.
 
 - **The Promise:** Saves 70 miles (roughly 5-7 days of travel).
 - **The Cost:** You skip a major resupply point (Fort Bridger).
@@ -18,7 +18,7 @@ This cutoff bypasses Fort Bridger entirely, driving straight across a harsh, wat
   - **Mechanic:** Each day of the crossing, deduct water normally. Additionally, the party makes a **Group CON check (DC 13)** at the end of each day.
     - _Success:_ The party endures. One ox team loses **1 HP** from strain.
     - _Failure:_ Each character who failed gains **1 level of Exhaustion**, and one ox team loses **2 HP**.
-  - If the party runs out of water during the crossing, apply the standard 0-water penalties (1d4 damage/day + 1 Exhaustion to all characters and ox teams) in addition to the daily CON check.
+  - If the party runs out of water during the crossing, apply the standard 0-water penalties (1d4 damage/day and 1 Exhaustion to all characters; ox teams also take 1d4 damage/day but have no Exhaustion track) in addition to the daily CON check. The 0-water Exhaustion and the daily CON check Exhaustion share the daily Exhaustion cap — a character gains at most 1 involuntary Exhaustion per day from these two sources combined.
 
 ### 2. Hastings Cutoff (Fatal Decision Point)
 

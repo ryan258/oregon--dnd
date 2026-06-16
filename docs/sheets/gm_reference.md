@@ -4,7 +4,7 @@
 
 1. Weather (every 3 days / segment change)
 2. Choose stance + action
-3. Event: d20 universal (swap to segment d10 on 1–9 if desired)
+3. Event: d20 universal (on 1–9, optionally roll a separate segment d10 instead)
 4. Resolve action + checks
 5. Consume resources
 6. Camp + watch
@@ -37,7 +37,7 @@ Starvation at 0 food: replaces the foraging check. Each day without a successful
 
 - Start: 20 gal
 - Consume: 2 gal/day (4 gal/day in Hot & Dry / Oppressive Heatwave)
-- At 0: each character + ox team takes 1d4 damage/day and gains 1 Exhaustion
+- At 0: each character takes 1d4 damage/day and gains 1 Exhaustion; ox teams also take 1d4 damage/day (no Exhaustion track)
 - Extra barrel: $3 (adds 10 gal capacity)
 
 ## Wagon + Oxen
@@ -63,7 +63,7 @@ Starvation at 0 food: replaces the foraging check. Each day without a successful
 - 5: Cannot travel; bedridden
 - 6: Death
 
-Removal: Rest Day removes 1; Doctor’s Intensive Care can remove 1 (see `05_camp_life.md`). A character must eat their full required ration that day to remove Exhaustion (0.5 lbs on a Rest Day). Cap: max 1 involuntary Exhaustion gain per day (failed checks/hazards); voluntary sources can exceed.
+Removal: Rest Day removes 1; Doctor’s Intensive Care can remove 1 (see `05_camp_life.md`). A character must eat their full required ration that day to remove Exhaustion (0.5 lbs on a Rest Day). Cap: max 1 involuntary Exhaustion gain per day (failed checks/hazards); voluntary sources can exceed. Exception: named events that explicitly state a multi-Exhaustion consequence (e.g., Altitude Sickness: 2 on failure) override this cap.
 
 ## Disease
 

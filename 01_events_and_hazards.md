@@ -1,6 +1,6 @@
 # 1. Events & Hazards
 
-At the start of each Trail Day, the GM rolls 1d20 on the Universal Event Table (see `seed.md`). On results **1–9**, the GM may substitute the segment-specific 1d10 event below for local flavor. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
+At the start of each Trail Day, the GM rolls 1d20 on the Universal Event Table (see `seed.md`). On results **1–9**, the GM may roll a **separate d10** on the segment-specific table below for local flavor instead of using the Universal result. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
 
 ---
 
@@ -29,8 +29,8 @@ _The Kansas and Platte rivers. The primary threats are drowning, losing the wago
 
 | d10 | Event                   | Mechanical Effect                                                                                                           |
 | :-: | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
-|  1  | **Treacherous Ford**    | The riverbed gives way. Wagon takes 1d6 damage. Drowning risk for anyone walking (STR DC 11).                               |
-|  2  | **Ferry Bottleneck**    | A 3-day wait for the ferry (costs $10, valued at Independence base prices), or the party can risk fording a dangerous section immediately (Group DEX check DC 14). |
+|  1  | **Treacherous Ford**    | The riverbed gives way. Wagon takes 1d6 damage. Anyone walking must make a **STR check (DC 11)** or be swept under: take **1d6 damage** and go immediately to **Gravely Ill/Injured** on the Wound Track. Another character may make a **STR check (DC 11)** to pull them out; success downgrades the result to Wounded. |
+|  2  | **Ferry Bottleneck**    | A 3-day wait for the ferry (costs $10, valued at Independence base prices), or the party can risk fording a dangerous section immediately (**Group DEX check DC 14**; failure: the wagon takes **2d6 damage** and 1 ox team loses **2 HP**). |
 |  3  | **Cholera Scare**       | Passing a fresh grave farm. One random character is exposed. Roll 1d6 for the disease (Cholera on a 3-4, Dysentery otherwise), then make the normal disease resistance check for that disease. |
 |  4  | **Saturating Rains**    | Everything gets wet. Wood is useless. No fire tonight. Sleep in the cold (CON DC 9 or 1 Exhaustion).                        |
 |  5  | **Lost Footing**        | An ox slips in the current. Requires immediate DEX check (DC 12) by the Teamster to save the beast from taking 4 HP damage. |
@@ -68,7 +68,7 @@ _The Continental Divide. Biting winds, altitude sickness, and the psychological 
 | d10 | Event                     | Mechanical Effect                                                                                                                 |
 | :-: | :------------------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
 |  1  | **Unexpected Blizzard**   | Whiteout conditions. Must make camp immediately. Lose 2 days. Cold checks (CON DC 12) each day.                                   |
-|  2  | **Altitude Sickness**     | The thin air breaks the weak. The Doctor may attempt an INT check (DC 11) to recognize early symptoms and prescribe rest, granting the afflicted Advantage on their check. CON check (DC 11). Failure: 2 Exhaustion levels and bedridden. |
+|  2  | **Altitude Sickness**     | The thin air breaks the weak. The Doctor may attempt an INT check (DC 11) to recognize early symptoms and prescribe rest, granting the afflicted Advantage on their check. CON check (DC 11). Failure: **2 Exhaustion levels and bedridden** (exception to the daily Exhaustion cap). |
 |  3  | **Steep Grade Ascent**    | The oxen refuse to pull. STR DC 13 (Group) to manually push the wagon over the crest, or retreat and try another route (+3 days). |
 |  4  | **Night Freeze**          | Temperatures plummet. Each character makes a CON check (DC 12). Failure: take 1d6 cold damage. If the party is **Sheltered**, has **Warm Bedding**, or spends +0.5 lbs food per person tonight, the check is made with Advantage. |
 |  5  | **Wolf Pack Signs**       | Stalking the oxen. Someone must stay awake on watch all night (gain 1 Exhaustion level) or lose an ox.                            |
@@ -106,7 +106,7 @@ _Following the canyons. Difficult terrain, rushing rapids, and the final stretch
 | d10 | Event                    | Mechanical Effect                                                                                                  |
 | :-: | :----------------------- | :----------------------------------------------------------------------------------------------------------------- |
 |  1  | **Overturned Wagon**     | The trail hugs a cliff. A slip costs the wagon 1d10 HP and dumps 1d4 × 50 lbs of supplies into the river.            |
-|  2  | **Rapids Ford**          | Forced to cross deep, fast water. High drowning risk. The Guide must make a WIS check (DC 13) to find the safest crossing point; success grants Advantage on the group check. Group DEX check (DC 13). Failure means sweeping downstream. |
+|  2  | **Rapids Ford**          | Forced to cross deep, fast water. High drowning risk. The Guide must make a WIS check (DC 13) to find the safest crossing point; success grants Advantage on the group check. **Group DEX check (DC 13).** Failure: the party is swept downstream — lose 1 travel day, every character takes **1d4 damage**, and 1 ox team takes **2 HP damage**. |
 |  3  | **Dysentery Outbreak**   | The water is foul. The Doctor may attempt an INT check (DC 11) to identify contaminated water sources before anyone drinks; success means the party avoids the outbreak entirely. Otherwise, roll 1d4 party members exposed to Dysentery; each makes a CON check (DC 12) to resist or contracts Dysentery. |
 |  4  | **Steep Ravine Descent** | Must lower the wagon by ropes. STR DC 14 (Extended: 3 successes before 2 fails). Failure: Wagon takes **2d10 damage**. |
 |  5  | **Broken Yoke**          | The strain breaks the ox tackle. Stop for 1 day to carve a new one: STR check (DC 11). Failure: lose 1 additional day, or spend 1 spare part to finish the job. |
