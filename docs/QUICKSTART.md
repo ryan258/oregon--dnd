@@ -12,6 +12,8 @@ This quickstart is a condensed, table-ready version of the rules in [`seed.md`](
 
 Printable templates live in [`docs/sheets/`](./sheets/).
 
+Want to see a full day in motion before you start? Read the [`SAMPLE_DAY.md`](./SAMPLE_DAY.md) — a complete annotated walkthrough of one mid-game trail day.
+
 New to tabletop RPGs? Start with the [`glossary.md`](./glossary.md).
 
 ---
