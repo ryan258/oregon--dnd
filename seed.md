@@ -1,562 +1,253 @@
-# Oregon Trail RPG — Game Design Document
+# Oregon Trail RPG — Core Rules
 
-### A D&D Skeleton with an Oregon Trail Skin
+**Version 0.9 — September 2026 playtest edition.** A complete campaign for one GM and 1–4 players controlling four travelers. Seven chapters, usually 6–8 sessions of 2–3 hours; that duration is a design target, not measured playtest evidence. For a single session use [The River Between](docs/RIVER_CHAPTER.md).
 
----
+> **What are we willing to spend, and what do we refuse to lose, to get these people to Oregon?**
 
-## Overview
+Everything you own is in one wagon. It weighs too much. It has always weighed too much, and the road will eventually make you say out loud which part of it you were lying to yourself about.
 
-**Premise:** A turn-based survival RPG set on the 1848 Oregon Trail. Players manage a wagon party of 4 characters from Independence, Missouri to Willamette Valley, Oregon — roughly 2,000 miles across plains, mountains, and desert. The D&D engine runs underneath: every meaningful action resolves with a skill check, inventory is tracked as a resource system, and character death is permanent.
+You are ordinary people taking one wagon west in 1848. The destination is shared; your reasons are not. Time, supplies, weather, obligations, and the people you meet shape what arrival means. Nothing here is free: a day spent helping a stranger is a day of food, a day of weather, a day closer to the snow. That is the game. Not whether you survive — what you are still carrying when you do.
 
-**Session length:** Designed for a single extended session or a short campaign of 5–7 sessions (one per trail segment). _Note: Segments 2 and 3 are shorter (~200 miles each, ~10 trail days) and combine naturally into a single session._
+Death is permanent. Preparation matters. Every player keeps playing.
 
-**Players:** 1 GM + 1–4 players (each player controls one wagon party member), or solo with all 4 party members.
+This is historical fiction, not a historical or medical simulation. Mile markers, prices, water quantities, disease effects, and named scenarios are game abstractions. The story takes place on inhabited Indigenous lands; arrival does not establish a moral or legal entitlement to land. See [historical framing and sources](docs/HISTORY.md).
 
-### Solo Play Guidelines
+## Start and authority
 
-Solo play works best when the player treats the four roles as a council, not four fully separate protagonists. Roll all four characters normally, keep their sheets separate, and let each role make decisions in their specialty: the Guide chooses routes, the Doctor triages illness, the Hunter manages food risk, and the Teamster protects the wagon. For group checks, roll once for each living character as usual. For roleplay, use quick prompts instead of full scenes: who argues for caution, who wants to press on, and who is hiding how badly they are hurt?
+Read the [quickstart](docs/QUICKSTART.md), use the [pregenerated party](docs/PREGENS.md), and put the [route map](docs/TRAIL_MAP.md) and [wagon sheet](docs/sheets/party_wagon_sheet.md) on the table. Agree on [tone and boundaries](docs/SESSION_ZERO.md). The [campaign](docs/CAMPAIGN.md) supplies seven playable chapter frames.
 
----
+This file is authoritative for shared mechanics. Numbered modules supply procedures and content; an explicitly stated local exception overrides the core for that scene only. Quickstart, glossary, examples, and sheets summarize rather than create rules. No external D&D rulebook is required. This game uses six ability scores and d20 checks, but no classes, levels, armor class, proficiency, or tactical combat rounds.
 
-## Core Philosophy
+## 1. People before purchases
 
-The Oregon Trail was fundamentally about **resource attrition and probabilistic death.** D&D is fundamentally about **skill checks and character identity.** The crossover: your character's stats determine how likely they are to survive the river crossing, find game while hunting, or resist the fever. You're not a hero in a dungeon — you're a person trying not to die of dysentery.
+*Before anyone asks how much flour to buy, ask what they would not sell it for.*
 
-Three design commitments:
+The party always has four active travelers. With 2–3 players, share the extra sheets and rotate their decisions; with one player use [solo rules](docs/SOLO.md). The four roles are Guide, Doctor, Hunter, and Teamster. One player can delegate bookkeeping without delegating their character's decisions. Supporting people encountered along the way are separate parties with their own supplies unless explicitly taken aboard; the default game never silently adds dependents or their consumption.
 
-1. **Failure is expected, not exceptional.** The trail killed roughly 1 in 10 emigrants. Bad rolls have real consequences.
-2. **Choices matter before the check.** Buying fewer oxen to save money is a decision that shapes every check that follows.
-3. **Characters are people, not builds.** Stats reflect occupation and background, not combat optimization.
+Assign scores **15, 13, 12, 10, 10, 8** freely. Put 15 in your role's primary ability if you want dependable starting expertise. Modifiers: 8–9 = −1; 10–11 = +0; 12–13 = +1; 14–15 = +2; 16–17 = +3; 18 = +4. STR is labor; DEX precision; CON endurance; INT analysis; WIS observation; CHA negotiation. No scores grow automatically.
 
----
+Optional harsh creation: roll 3d6 in order, then swap any two scores. Only use this with everyone's agreement; the fixed array is the default. Do not add the former Background Bump to either method.
 
-## Characters
+Choose one [background](02_character_backgrounds.md). Start with **8 + CON modifier HP**, no wounds, Exhaustion 0, and **one Inspiration**. Record:
 
-### The Four Roles
+- **Dream:** I am going to Oregon because… Give it a concrete person, place, or undertaking.
+- **Promise:** I promised [person] that I would… Another PC or recurring NPC should be involved.
+- **Boundary:** I will not sacrifice… Choose something that can enter a decision, not a command controlling another player.
+- **Bond:** I rely on [PC] for…, and they know this about me… Ask that player's agreement.
+- **Keepsake:** one small object connected to the above. No weight or monetary value unless agreed.
 
-Every wagon party has four roles. In multiplayer, each player takes one. In solo play, the GM controls all four.
+Each player names one possible reserve traveler in another wagon party. They are fictional characters, not extra free labor or supplies. Use one if that player's main character becomes incapacitated or dies.
 
-| Role             | Real-World Equivalent                     | Primary Stat | Secondary Stat |
-| ---------------- | ----------------------------------------- | ------------ | -------------- |
-| **The Guide**    | Wagon train leader / frontiersman         | Wisdom       | Constitution   |
-| **The Doctor**   | Camp physician or experienced homesteader | Intelligence | Wisdom         |
-| **The Hunter**   | Family member responsible for food        | Dexterity    | Strength       |
-| **The Teamster** | Ox driver, wagon mechanic                 | Strength     | Constitution   |
+### Expertise
 
-### Competence Floor (Role Mastery)
+Routine professional work with time, tools, and suitable conditions succeeds without rolling. Roll only for a threatened outcome. Each role has the following reliable service and crisis intervention; these are available immediately, including to replacements.
 
-To ensure experts aren't undone entirely by a single bad d20 roll, each role has a specific resource-spend or mitigation mechanic:
+| Role | Reliable service | Crisis intervention |
+| --- | --- | --- |
+| Guide (WIS) | On marked routes, navigation DC 12 or lower succeeds without rolling unless a stated hazard obscures the route. | **Read the ground:** spend 1 travel day scouting at a junction. GM reveals both routes' actual immediate costs and known hazards, including whether a rumor is false. Choose afterward; no navigation check for that junction. |
+| Doctor (INT) | Once daily, identify a patient's game condition and its current risks without a roll. Ordinary wound dressing stabilizes someone at 0 HP. | **Stabilize:** on a Rest Day, spend 1 medicine and your Camp Action on one patient. No treatment roll; prevent that patient's condition damage and worsening that day, and remove 2 remaining recovery successes from one condition at day's end. No recovery roll for that condition that day. Cannot undo death. |
+| Hunter (DEX) | **Take Aim:** one full Hunt Day in terrain with available game yields 30 lbs fresh food, no roll, 5 ammunition. Check availability before committing; scarcity events can make it unavailable. | **Stretch the stores:** once per chapter, make the party's next three days of food last on half the normal amount, rounding daily totals up to 0.5 lb. Applies to four travelers’ daily rations, not gifts, trade, or the additional Proper Meal cost; cannot create food at zero. |
+| Teamster (STR) | On every Rest Day, restore 1 Wagon HP automatically, without using a Camp Action. | **Jury-rig:** spend 1 spare part and your action on a Repair or Rest Day. Restore 6 Wagon HP without rolling, up to max. At 0 Wagon HP this makes it usable again. No permanent max-HP cost. |
 
-- **The Guide (Take 10):** When rolling a Wisdom check to navigate or read the trail with a DC of 13 or lower, the Guide can choose to "Take 10" instead of rolling the d20. They add their modifier to 10. If this meets the DC, they succeed automatically, preventing a wandering-in-circles failure.
-- **The Teamster (Jury-Rig):** When failing a Strength check to repair the wagon, the Teamster can choose to permanently spend 1 maximum Wagon HP to automatically reroll the check. They must accept the new result.
-- **The Hunter (Take Aim):** Instead of rolling Dexterity to hunt and risking starvation, the Hunter can spend a full day hunting (zero travel progress) to automatically yield 50 lbs of food with no ammo cost. This is distinct from a normal hunt-while-traveling (which allows half-speed travel but requires a roll and ammo). This requires a dedicated Hunt Day (consuming 1 lb food/person and making zero travel progress) and cannot be taken as a Camp Action during a Rest Day (the party does not receive Rest Day recovery benefits on a Hunt Day).
-- **The Doctor (Triage):** When forced to roll an Intelligence check to diagnose or treat a severe illness, the Doctor can spend an additional dose of Medicine to gain Advantage on the roll.
+Lost tools impose a stated obstacle, not an unannounced removal of expertise. The starter wagon includes ordinary tools, cooking gear, rope, and shelter canvas. A specific event can threaten them only after naming them and offering a response.
 
-### Stats
+### Inspiration and change
 
-Six stats, same names as D&D, same modifier calculation (score of 10–11 = +0, 12–13 = +1, etc.), but recontextualized for the frontier:
+Hold at most one Inspiration. Spend it before a check for Advantage. Once per character **per session**, when pursuing a Dream, Promise, Bond, or Boundary creates a meaningful cost or complication, award Inspiration immediately and name why. Players may nominate each other. Do not award it for repetitive trivial sacrifices or demand theatrical acting. A quiet description counts. Existing Inspiration cannot be stockpiled.
 
-- **Strength** — Lifting, repairing wagon wheels, crossing rivers on foot, physical labor
-- **Dexterity** — Hunting accuracy, navigating treacherous terrain on foot, quick reactions
-- **Constitution** — Resisting illness, enduring cold, surviving injuries, pushing through exhaustion
-- **Intelligence** — Reading conditions, navigation, disease diagnosis, bartering
-- **Wisdom** — Trail sense, weather reading, people reading, knowing when to rest
-- **Charisma** — Negotiating at forts, managing party morale, trading with Native peoples
+At each chapter's end, answer: **What did you believe at the beginning that you no longer believe?** Keep, fulfill, replace, or openly abandon one personal statement. An abandoned promise has a specific human consequence, never automatic control of the PC. A dead character's promise can be inherited voluntarily.
 
-_Note on Charisma:_ No role has Charisma as a primary or secondary stat. This is intentional — social skill on the frontier was not a specialization but a shared necessity. Any party member can attempt Charisma checks; players who invest in CHA through lucky rolls (or who roleplay well) naturally become the party's "face" without a dedicated role.
+After chapters **2 and 5**, choose one new technique from your role's [advancement options](02_character_backgrounds.md); choose a different option each time. Replacements inherit the party's number of earned techniques. This is broader competence, not rising HP or difficulty inflation.
 
-### Stat Generation
+## 2. Checks, risks, and permission to choose
 
-Use the **historical method**: Roll 3d6 in order for each stat. No rerolling. No point buy. The trail doesn't care about your preferences.
+*The dice are not the danger. The danger was disclosed before anyone picked them up.*
 
-_Optional "Background Bump":_ Each role gets +2 to their Primary Stat and +1 to their Secondary Stat after rolling.
+Roll **d20 + ability modifier**, meeting or exceeding the DC to succeed. Advantage rolls two d20 and keeps the higher; Disadvantage keeps the lower. Multiple sources never stack. Both together cancel, except Exhaustion 3+. A natural 1 or 20 has no automatic effect unless an entry explicitly says so.
 
-### Health
+| DC | Meaning |
+| --- | --- |
+| 8 | Favorable but consequential |
+| 10 | Uncertain ordinary task |
+| 12 | Difficult under pressure |
+| 14 | Dangerous expert work |
+| 16 | Exceptional danger; preparation strongly advised |
 
-Characters have **Hit Points** equal to 8 + CON modifier, set once at character creation. No leveling up — this is not that kind of story.
+Do not roll when failure changes nothing. Do not call an impossible task a high DC: name the equipment, time, help, or changed plan that would make it possible.
 
-**Wound Track:** When a character reaches 0 HP, they don't die immediately. They go on the Wound Track:
+**Before a roll**, state the stakes, ability, DC, and failure cost. For major danger offer at least two approaches, including a dependable costly option where plausible. Players can propose another approach. Fix its stakes before rolling. Information plainly visible is free; scouting reveals hidden facts rather than permission to know the rules.
 
-- **Wounded** — Disadvantage on STR and DEX checks (no travel-speed penalty)
-- **Gravely Ill / Injured** — Bedridden, cannot act, party must make camp to care for them
-- **Dead** — No resurrection. Mark their grave on the trail map.
+- **Simple:** one character rolls. One helper with a relevant action can grant Advantage, but shares the named risk. No repeated rolls for the same approach without changing conditions or paying its stated retry cost.
+- **Group:** each able participant rolls; incapacitated travelers are passengers and do not roll. More than half succeeding is full success. At least one success without a majority is a partial success. No successes is failure. With four rollers, 3–4 / 1–2 / 0 are the three outcomes. Use the scene's printed results. If unspecified: partial means complete the immediate goal and take half listed numeric damage/loss, rounded up; apply listed delays in full. Failure means no immediate progress plus the listed consequence. No invented extra death or injury.
+- **Extended:** 3 successes before 2 failures. Different approaches or contributors must be used where plausible; no character rolls twice consecutively if another can act. State all outcomes before starting. On success achieve the task. On failure use the printed setback; no automatic escalation to violence. Ordinary buying, conversation, or fair agreements do not require an extended check.
 
-**Wound Track rules:** The first time you hit 0 HP, mark **Wounded**. If you hit 0 HP again while Wounded, you become **Gravely Ill / Injured**. If you hit 0 HP while Gravely Ill / Injured, you die. Healing HP does not automatically clear a Wound Track state — it's a lingering condition.
+**Conflicts between travelers:** roleplay or summarize, then players decide their own characters' responses. CHA never compels another PC to obey. Violence among PCs requires prior player agreement and can always be excluded.
 
-**Recovering from the Wound Track:** At the end of a **Rest Day**, a character on the Wound Track may attempt a **CON check (DC 10)** to move one step up the track (Gravely → Wounded, Wounded → Healthy). Medical care can grant Advantage.
+## 3. Campaign and calendar
 
----
+*The calendar is the real antagonist. It never rolls, never misses, and does not care what you promised anyone.*
 
-## The Trail
+Start **April 20, 1848**, mile 0, Morale 7, at Independence. Choose another date only as a deliberate difficulty change. The [map](docs/TRAIL_MAP.md) uses simplified progress markers, not survey distances.
 
-### Trail Segments
+| Chapter | Markers | Principal decision | Arrival / service |
+| --- | --- | --- | --- |
+| 1. The Plains | 0–300 | What do we carry for others? | Fort Kearny 300 |
+| 2. The River Crossings | 300–500 | Whose crossing do we help pay for? | Fort Laramie 500 |
+| 3. The Rockies Approach | 500–700 | What does preparedness cost us? | Independence Rock 700 |
+| 4. South Pass | 700–900 | Keep the promise or take the shortcut? | Fort Bridger 850, unless bypassed |
+| 5. Desert Crossing | 900–1,100 | Which water information do we trust? | Fort Hall 1,100 |
+| 6. The Snake River | 1,100–1,600 | Who receives our remaining margin? | Fort Boise 1,600 |
+| 7. The Last Mountains | 1,600–2,000 | What must arrive with us? | The Dalles decision 1,900; Valley 2,000 |
 
-The journey is divided into **7 segments**, each representing a major geographic or logistical phase. Each segment takes approximately 2–3 in-game weeks and consists of a series of **Trail Days**.
+Arriving at a marker ends travel there that day; do not carry surplus miles across a prepared scene or fort. A fort's services can be used next day. Each chapter has one mandatory major decision and one relationship scene from the campaign guide. Random events supplement them, not replace them. Resolve a chapter's major decision before its end marker; the GM sets its exact location before that chapter begins.
 
-| Segment                 | Miles       | Key Hazard                | Landmark          |
-| ----------------------- | ----------- | ------------------------- | ----------------- |
-| 1. The Plains           | 0–300       | Weather, exhaustion       | Fort Kearny       |
-| 2. The River Crossings  | 300–500     | Drowning, wagon loss      | Fort Laramie      |
-| 3. The Rockies Approach | 500–700     | Terrain, supply depletion | Independence Rock |
-| 4. South Pass           | 700–900     | Altitude, cold            | South Pass summit / Fort Bridger |
-| 5. Desert Crossing      | 900–1,100   | Heat, dehydration         | Fort Hall         |
-| 6. The Snake River      | 1,100–1,600 | River hazards, theft      | Fort Boise        |
-| 7. The Blue Mountains   | 1,600–2,000 | Cold, final attrition     | Willamette Valley |
+### Daily procedure
 
-**Fort mile markers (approx.):** Fort Kearny (300), Fort Laramie (500), Fort Bridger (850), Fort Hall (1,100), Fort Boise (1,600). When the party reaches or passes a fort’s mile marker, they arrive at that fort at the start of the next Trail Day.
+1. Reveal prevailing weather, visible danger, and any time limit. Weather changes every three calendar days and at a chapter boundary; reroll there and restart the three-day count.
+2. Choose Travel, Hunt, Repair, Trade, or Rest. For Travel choose a stance. A known threat can be met by changing the action before rolling.
+3. Generate an event if due (see travel legs). Present the warning and choices, resolve it, then the chosen action if compatible. A scene replacing that day's event never adds a second event.
+4. Pay that day's food and water; apply travel strain, weather, and ongoing condition effects. Treat before condition damage when a treatment is declared that day.
+5. Make condition recovery checks; on Rest Days apply healing, Exhaustion recovery, and Wound recovery. Set three watch shifts and play or summarize a camp conversation. Advance the date once.
 
-### Travel Resolution
+Days lost to waiting, detours, weather, or failed repairs still consume supplies, progress conditions, and advance weather. They do **not** generate additional random events. Say whether the delay permits Rest; waiting for a ferry does, physical labor or backtracking does not. Count an event's stated delay as replacing that day's action unless it explicitly says **additional** days. Never charge the event day twice.
 
-On a standard Travel day, the party covers miles based on their chosen **Travel Stance** (see below). No roll is required for basic travel — the party simply advances the indicated distance and deducts resources.
+### Travel legs: skip repeated decisions
 
-**When a roll is required:** Certain weather conditions, terrain events, or hazards impose a **Travel check** — a group WIS or CON check (the GM chooses based on the obstacle) at a DC set by the specific hazard. Success means the party covers full distance; failure means half distance and the GM applies the hazard's consequence (lost time, damage, exhaustion). Weather and event entries that reference "Travel DC +X" increase the DC of any Travel check triggered that day.
+The default between scenes is a **three-day travel leg**, at one chosen stance. A planned leg ending at a scene or marker can last one or two days; it still gets one event unless the prepared scene replaces it. Roll one event for the whole leg, occurring on its first day, instead of three daily events. Apply each day's mileage, consumption, weather, fresh-food expiry, and condition checks; batch identical arithmetic. Weather can change inside a leg; use the remaining days of the old weather, then roll the new weather. Harmful weather does not prohibit a leg.
 
-**Navigation checks:** Some rules call for a **Navigation check**. This is a WIS check (usually made by the Guide) to stay on the correct trail, pick the right fork, or find the safest route/crossing. The DC and consequences are set by the specific event/hazard.
+Use a single Focus Day for a known obstacle, a condition likely to incapacitate someone that day, a fort, a route choice, or a player-requested scene. Finish the current day when a leg reveals such an obstacle, then pause before advancing more time. The unused days are unspent: do not charge them or award their miles. Resume with a new leg after the scene. Do not reroll the same day's event.
 
-**Hard Travel:** Reckless stance and any Forced March attempt count as **Hard Travel**. Hard Travel increases food consumption (see Food Consumption) and strains the oxen (see Oxen).
+A Focus Day chosen solely to magnify conversation during an otherwise ordinary leg does not add an event. A standalone day outside a leg gets one event, unless at a fort or part of a delay. The reduced event frequency of legs is intentional pacing and balance, not mathematically identical to daily play. Harsh mode does not secretly change that frequency. Keep a leg's event even if the party changes its plan; no event rerolling by switching time scales.
 
-**Forced March:** Declare a Forced March before travel distance is finalized. The party attempts to push beyond their stance's normal distance by 50%, requiring a **group CON check (DC 11)**. Success: apply the +50% distance bonus. Failure: the party gains no extra miles, and every character who failed gains 1 level of Exhaustion. The attempt counts as Hard Travel whether it succeeds or fails. A Forced March cannot be combined with Reckless stance.
+### Travel and oxen
 
-**Miles per day by stance:**
-- **Cautious:** 8–10 miles/day
-- **Standard:** 15–20 miles/day
-- **Reckless:** 22–30 miles/day
+| Stance | Miles/day | Event handling | Food/person/day |
+| --- | ---: | --- | ---: |
+| Cautious | 10 | Roll two complete events; players choose after hearing the warnings. | 1 lb |
+| Standard | 18 | One event. | 1 lb |
+| Reckless | 26 | Roll two complete events; GM chooses the more dangerous given current state, explaining why. | 2 lbs |
 
-These are modified by terrain (mountain segments tend toward the low end), weather, and ox team losses (multiply by 0.75 once for each lost team).
+Use fixed distances, then modifiers. Event choice affects only that event, not prevailing weather or a chapter's prepared obstacle. Rest/Hunt/Repair/Trade use one event when due, no stance benefit. On river or terrain scenes, apply listed costs instead of also charging a generic crossing fee.
 
-**Multipliers & rounding:** Some events modify the day with multipliers (e.g., "double time", "1.5× travel", "half rations"). Apply mileage multipliers after choosing stance miles (and after Forced March, if the check succeeds), then **round up to the nearest mile**. If a rule halves/doubles food or water consumption, apply it to the day's total and **round up to the nearest 0.5**.
+**Forced March:** before a Standard or Cautious day's travel, try a group CON DC 12 check. Full success gives +50% stance miles. Partial gives +25% miles and each failed roller gains 1 Exhaustion. Failure gives no bonus and each roller gains 1 Exhaustion. Every attempt uses hard-travel food and strain. Cannot combine with Reckless. Declare separately for each day; never assume it for an entire leg.
 
-**Stacking speed modifiers:** If multiple rules modify travel speed, multiply them together. Recommended order:
+Two healthy ox teams are sufficient for full wagon speed. With **one surviving team**, multiply speed by 0.75. With **zero**, the wagon cannot move. Extra teams provide reserves, not extra speed. A lame team is unavailable for pulling until one Rest Day; alive but unavailable teams do not count toward the two needed. A replacement team immediately counts once purchased. Team HP does not otherwise reduce speed.
 
-1. Choose stance miles.
-2. Apply Forced March (+50%), if the Forced March check succeeds.
-3. Apply all speed modifiers (weather/events and ox team losses). Ox team losses are multiplicative: multiply miles by 0.75 once for each lost team (one lost team = 75% speed; two lost teams = 56% speed).
-4. If a Travel check fails and the consequence is “half distance,” apply ×0.5.
-5. Round up.
+Each team has 10 HP. Each hard-travel day (Reckless or any Forced March) costs **one team 1 HP**, chosen by Teamster before travel; weather may increase it. At 0 a team dies. Each Rest Day restores 1 HP to every living team. No resurrection. Ox fodder is abstracted except where a scene names a shortage.
 
-### Trail Days
+Apply stance and march, then ox modifier, weather/scene modifiers, then Exhaustion party modifier. Round **once**, upward to whole miles. On foot travel is 9 miles/day before weather and Exhaustion, no Forced March or Reckless; each able traveler can carry 25 lbs of supplies plus personal clothes and keepsake. Choose what is cached. Warm Bedding weighs 20 lbs for the party. A usable wagon and at least one team are required to move wagon cargo.
 
-Each Trail Day follows this structure, unless the party engages a **Montage**.
+### Event selection
 
-**The Montage (Pushing Forward):** If the current 3-day weather condition imposes no mandatory checks, travel modifiers, or direct damage, the party may elect to _Push Forward_. Instead of rolling for 3 individual days, they automatically make 3 days of Standard travel progress (**45 miles total before ox-team losses or other active speed modifiers**), deduct 3 days of standard food consumption (and water, if tracked), and roll for a single Daily Event. This allows the table to fast-forward through quiet stretches and relieve pacing pressure during the mid-to-late game.
+Once per leg or eligible Focus Day, roll d6: **1–3** use the current chapter's d6 event table in [Events](01_events_and_hazards.md); **4** meet a recurring traveler from [People](docs/PEOPLE.md); **5** discover a useful opportunity (choose 20 lbs cured food, a sheltered rest site, or a reliable report about the next hazard); **6** uneventful progress with one camp prompt. No extra morale for finding supplies. The GM can substitute a prepared chapter scene for an event, announced before rolling. Do not roll the old Universal d20 table.
 
-If the prevailing weather has a 3-day-span effect (like Dust / High Winds lowering Morale), apply that effect **once** at the end of the montage.
+A recurring event never gives the same unique reward twice. If a named NPC is elsewhere, use their message or another traveler carrying news. Mark expended opportunities; rereads are information, not an infinite resource source.
 
-_Montage events:_ If the single Daily Event rolled during a Montage is hazardous (disease, wagon breakdown, etc.), resolve it normally — it happens on one day of the 3-day span. The remaining 2 days of travel still count. If the event costs a full travel day (e.g., wagon breakdown), the Montage yields 2 days of progress instead of 3 (**30 miles total before active speed modifiers**).
+## 4. Supplies and the wagon
 
-**Time Loss (Lost Days):** Some events or hazards cause the party to lose time (e.g., "wrong fork costs 3 days", "a 3-day wait"). When this happens:
+*Everything below is a number until the day it is the last of something. Then it is a conversation.*
 
-- Advance the calendar by the indicated number of days; gain **no net miles** during those days.
-- Deduct food and water for each lost day based on what the delay represents (e.g., wrong forks/backtracking are travel days; repairs and waits are non-travel days; a deliberate layover is a Rest Day).
-- Apply disease progression normally for each lost day (daily effects + end-of-day recovery checks).
-- Do **not** roll additional Daily Events for lost days — the time loss is already the consequence.
-- Weather still shifts every 3 days; if a lost-time span crosses a weather boundary, reroll weather as normal and apply its effects.
+The party pool is **$800**. Starter purchases below total **$550**, leaving **$250**. Wagon, ordinary tools, rope, cooking gear, canvas, and base 20-gallon water capacity are included; this budget is a scenario allowance, not a historical household ledger.
 
-**1. Morning Check-In**
+| Purchase | Quantity | Base unit price | Total |
+| --- | ---: | ---: | ---: |
+| Cured food | 700 lbs | $0.50/lb | $350 |
+| Ox teams | 3 | $32 | $96 |
+| Medicine | 7 doses | $4 | $28 |
+| Spare parts | 3 | $6 | $18 |
+| Ammunition | 160 rounds | $0.10 | $16 |
+| Extra water barrels | 4 | $3 | $12 |
+| Warm Bedding | 1 party bundle | $30 | $30 |
 
-- GM describes conditions (weather, terrain, visible landmarks)
-- Party decides on their **Travel Stance** for the day (see Travel Resolution above for speeds):
-  - **Cautious:** On any Cautious day, the GM rolls twice on the Event Table and applies the milder result. Represents trading speed for safety.
-  - **Standard:** Normal Event Table roll.
-  - **Reckless:** Disadvantage on the Event Table roll (take the worst of two events). Represents trading health/wagon HP for pure speed.
-- Party decides: _travel, rest, hunt, repair, or trade_
+Extra barrels add 10 gallons capacity each, giving **60 gallons total**, filled free at known clean sources. At 4 gallons/day this is 15 days: enough for twelve uninterrupted 18-mile travel days over 200 miles, with three days' reserve. Delays can exhaust it. Forecast the actual route before leaving a source; no loadout guarantees survival.
 
-**2. The Day's Action**
+**Food:** four travelers consume 4 lbs on ordinary Travel/Hunt/Repair/Trade days, 8 on hard travel, 2 on Rest Days. Mixed personal feeding is allowed: identify who ate their required ration. Fresh food is eaten first unless players specify otherwise. Purchases are cured. Fresh meat has a 100-lb party cap and expires at the end of the third day after acquisition (caught May 1: edible through May 4, discard after that evening). Record each batch date. Preserve with Smoke & Salt. Cured stores do not spoil without a warned, avoidable threat.
 
-- First, the GM rolls on the **Event Table** (see Events) and resolves it.
-- Then, the party resolves their chosen action via skill check (see Skill Checks).
-  - _Note on Action Economy:_ The wagon moves as a single unit. During a travel day, if the party chooses to hunt or repair, they are not traveling. However, one character may break off to hunt (at half travel speed for the party) while the rest continue, if the Guide makes a WIS check (DC 9) to keep the party on track without the full group. Repairs always require stopping.
+**Short rations:** a traveler who does not receive their day's full ration gains 1 Exhaustion at day's end. Half rations are a deliberate cost, not a second roll. Having fewer than 50 lbs is a warning, not damage while people are still fed. No extra starvation check. Someone already at Exhaustion 3+ who goes an entire day with no food also takes 1 HP damage. Forage and hunt before consumption; feed people with the yield that day.
 
-**3. Resource Consumption**
+**Water:** track only waterless stretches and events that threaten a source. Consumption is 2 gallons/day for the whole wagon, doubled to 4 in heat; these quantities abstract people and animals rather than simulate real hydration. If less than the day's amount is available, consume it all: each traveler gains 1 Exhaustion and loses 1 HP, and one team chosen by Teamster loses 2 HP. No water penalty merely for reaching zero after paying the full requirement. Refill only at an established safe source; the GM names the next known source and distance. Capacity costs money; carrying more water has no separate weight calculation except in explicit cargo-loss scenes.
 
-- Deduct food: 1 lb per person per day (2 lbs if the party engaged in Hard Travel, 0.5 lbs if resting)
-- Apply any oxen HP loss from travel (see Oxen)
-- Apply any illness effects
+**Hunting:** hunting on consecutive days at the same campsite is unavailable after two successful yields there until the party moves at least 18 actual miles. This applies to Take Aim and ordinary hunting; disclose it before commitment. Available game must be established before paying. Ordinary hunt takes a day, costs 5 ammunition, DEX DC 10 in good terrain or DC 14 in poor terrain; success yields 60 or 30 lbs fresh food respectively; failure yields none. Hunt while traveling halves that day's mileage and uses the same cost/check. No additional navigation roll. Take Aim is a dedicated Hunt Day only. A full hunting day gives no Rest recovery.
 
-**4. Camp**
+**Desperate forage:** as the day's action, any two able travelers may each try WIS DC 10, yielding 1d6 lbs each on success, no ammo. Others may assist for Advantage instead of making their own forage roll. No travel or Rest benefits. GM must establish edible forage; if none exists, disclose that before committing.
 
-- Party can treat wounds (Doctor's action)
-- Party can discuss plans, roleplay, trade watch duties
-- GM notes any incoming hazards for next day
+**Wagon:** max/current HP 30. At 0 unusable; it remains repairable unless the players knowingly chose a scene risking its complete loss. Routine **Field Repair** is STR DC 10, takes a Repair Day or Camp Action, restores 1d4+2 HP, capped at 15 without parts. Spend 1 part on success to instead restore 1d6+3 up to max; failed rolls never consume parts. Teamster may use guaranteed Jury-rig instead. Only one repair action may target the wagon per day, in addition to Teamster's automatic upkeep.
 
----
+Ordinary wagon capacity is **800 lbs of food (cured plus fresh), 10 medicine, 200 ammunition, 5 spare parts, 80 gallons water capacity, two named personal cargo bundles, and one entrusted cargo bundle**, in addition to bedding and standard tools. This deliberately simple category limit is a game abstraction. Refuse or cache purchases/yields beyond a category’s limit; the 100-lb fresh cap still applies within the food limit. Extra ox teams do not increase cargo capacity. No general cargo-weight spreadsheet. A scene requiring a cargo sacrifice offers **one cargo bundle**: 50 lbs food, one spare part, 40 rounds ammunition, one filled extra barrel (lose its water and capacity), or an explicitly listed personal cargo item. These are dramatic exchange units, not equal physical weights. Never demand undefined pounds of equipment.
 
-## Skill Checks
+## 5. Health and continuing to play
 
-### Rules Foundation
+*People break on this road. The rule that matters is that a broken character never means a benched player.*
 
-This game borrows its core resolution mechanic from the d20/5e SRD: d20 + modifier vs. DC, Advantage/Disadvantage, Exhaustion levels, and the six ability scores. It does **not** use classes, levels, proficiency bonus, AC, or combat rounds. Any 5e-adjacent term used in this document (like "saving throw") simply means "a check made to resist or avoid something" — there is no mechanical distinction between a "check" and a "save" in this system.
+### HP and wounds
 
-All checks use **d20 + relevant modifier vs. Difficulty Class (DC).**
+Damage reduces HP, minimum 0. When damage first takes a Healthy character to 0, they become **Wounded**. Wounded characters have Disadvantage on STR/DEX and at 0 cannot perform physical tasks until healed; they can speak and decide. When a later separate damage instance hits them at 0, or returns them to 0 after healing, advance to **Gravely Injured**. A further separate instance at 0 or return to 0 while Gravely Injured causes death. One damage instance advances at most one step; overflow damage is ignored. Healing HP does not clear a wound state.
 
-Some rules include a parenthetical tag (e.g., **WIS (Survival)**, **CHA (Persuasion)**). These tags are descriptive and may be referenced by background hooks, but they are not a separate skill system.
+Gravely Injured characters cannot take actions/checks; they may speak if the player wishes. They can ride and do not automatically force everyone to stop. An able Doctor or another able traveler can use their daily action (or Camp Action) to **stabilize** a 0-HP patient without a roll; ordinary stabilization restores 1 HP but does not prevent later damage or change wound state. The Doctor's medicine intervention is stronger and distinct.
 
-### The Check Types
-
-**Simple Check:** One character rolls. Success or fail, move on. Used for routine actions.
-
-**Extended Check:** Requires multiple successes before a set number of failures. Used for complex tasks like lowering the wagon down a ravine (3 successes before 2 failures, DC 14 Strength each).
-
-**Group Check:** All party members roll. If more than half succeed, the group succeeds. Used for river crossings, mountain passes, navigating in a blizzard.
-
-**Partial Success on Group Checks:** If at least one character succeeds but not a majority, the group achieves the immediate goal but pays a cost. For numeric damage, halve it (round down). For non-numeric consequences such as Wound Track steps or lost time, apply them as written — they cannot be halved. Otherwise lose 1 day, spend a resource, or apply the event's milder consequence. If a specific event says there is no partial success, use that event's text instead.
-
-**Contested Check:** Character rolls vs. GM roll. Used for trading (INT vs. INT), being ambushed (Perception vs. Stealth).
-
-### Difficulty Classes
-
-| DC  | Difficulty      | Example                                         |
-| --- | --------------- | ----------------------------------------------- |
-| 6   | Easy            | Walking a flat trail in good weather            |
-| 9   | Moderate        | Fording a shallow river                         |
-| 10  | Challenging     | Finding shelter on the open plains              |
-| 12  | Hard            | Hunting in poor conditions                      |
-| 15  | Very Hard       | Crossing a flooded river with the wagon         |
-| 18  | Brutal          | Surviving a blizzard without shelter            |
-| 23  | Near Impossible | Saving a gravely ill character without medicine |
-
-### Advantage and Disadvantage
-
-Same as D&D: roll 2d20, take higher (advantage) or lower (disadvantage). If a roll has both Advantage and Disadvantage, they cancel and you roll normally.
-
-**Advantage sources:** Resting an extra day before a hard check, having proper tools, another character assisting.
-
-**Disadvantage sources:** Exhaustion level 1+, missing equipment, illness, low morale.
-
-**Inspiration:** A character with Inspiration may spend it to gain Advantage on one check (declare before rolling). You can only hold 1 Inspiration at a time.
-
-### Key Skill Uses by Stat
-
-**Strength**
-
-- Repairing a broken wagon wheel (DC 12, extended)
-- Helping push the wagon up a steep grade (DC 10, group)
-- Carrying an injured party member (DC 11)
-
-**Dexterity**
-
-- Hunting: base DC 10, modified by terrain and season
-- Navigating narrow mountain trails without slipping (DC 13)
-- Catching a runaway ox (DC 12)
-
-**Constitution**
-
-- Resisting illness after exposure (DC varies by disease)
-- Enduring forced march (DC 11, or gain a level of exhaustion)
-- Surviving cold without adequate clothing (DC 13)
-
-**Intelligence**
-
-- Diagnosing illness (DC 11 — success means treatment is possible)
-- Navigating by landmarks (DC 10, failure means wrong fork taken)
-- Bartering at a fort (DC 9 — success gets fair price, failure gets gouged)
-
-**Wisdom**
-
-- Reading weather before it hits (DC 11 — success gives one day warning)
-- Sensing an ambush before it happens (DC 13)
-- Knowing when the oxen are about to give out (DC 9)
-
-**Charisma**
-
-- Convincing a fort trader to extend credit (DC 14)
-- Keeping party morale from breaking during hardship (DC 11)
-- Peaceful encounter resolution with hostile party (DC 16)
-
----
-
-## Inventory & Resources
-
-Resources are tracked as abstract units, not individual items. This keeps play moving without turning every session into a spreadsheet audit.
-
-### Resource Categories
-
-| Resource             | Starting Amount | Notes                                            |
-| -------------------- | --------------- | ------------------------------------------------ |
-| **Food** (lbs)       | 400–1,200 lbs   | Based on starting budget                         |
-| **Water** (gallons)  | 20 gal          | Carried in barrels; refills at rivers and springs |
-| **Oxen**             | 2–4 teams       | Each team has 10 HP                              |
-| **Wagon HP**         | 30              | Repairs possible at forts or with parts          |
-| **Medicine** (doses) | 0–10            | Purchased; required for serious illness          |
-| **Ammunition**       | 50–200 rounds   | Expended by hunting                              |
-| **Spare Parts**      | 0–3 parts       | Major wagon components (wheels, axles, tongues)  |
-| **Money** (dollars)  | Remainder       | Whatever is left after purchases at Independence |
-
-### Starting Budget
-
-The party collectively has **$800** to spend before leaving Independence. This is the first major decision of the game and shapes every subsequent resource check.
-
-_GM Guidance: A minimum viable loadout (600 lbs food, 2 ox teams, 5 medicine, 2 spare parts, 100 rounds ammo) costs **$406**, leaving **$394** as the party's buffer for fort resupply, where prices are 1.5x–4x higher. First-time players should be warned that under-buying food or oxen at Independence is the single most common cause of party wipes._
-
-**Fort prices** escalate the further West you go (1.5x at Fort Kearny up to 4x at Fort Boise). See [03. Settlements & Trading](./03_settlements_and_trading.md) for the full pricing table. The trail does not have a return policy.
-
-### Food Consumption
-
-- Normal travel day (Cautious/Standard): 1 lb per person per day
-- Hard travel day (Reckless or Forced March): 2 lbs per person per day
-- Non-travel day (hunt/repair/trade): 1 lb per person per day
-- Rest day (layover): 0.5 lbs per person per day
-- Each hunting attempt expends **10 rounds of ammunition** (reduced by applicable background abilities). Failed hunts still expend ammunition. A successful hunt yields: **3d10 × 5 lbs** (good conditions) or **2d6 × 5 lbs** (poor conditions).
-  - _Good vs. poor conditions:_ If the final Hunting DC is **12 or lower**, treat it as good conditions. If it is **13+**, treat it as poor conditions.
-
-When food drops below **50 lbs**, the party is **foraging** — each day without a successful hunt, everyone makes a DC 11 Constitution check or gains one level of exhaustion.
-
-When food is **0 lbs**, replace the foraging check with **Starvation**. Each day without a successful hunt or successful forage attempt, every character makes a **CON check (DC 11)** or gains 1 level of Exhaustion. On a failed starvation check, a character already at Exhaustion 3+ also takes **1d4 damage**. Morale drops by 1 for every 2 consecutive starving days. This is the standard Starvation rule in every segment; events that say starvation sets in invoke this rule and do not add a second, stacking starvation check.
-
-### Rest Days (Layovers)
-
-A **Rest Day** consumes 24 hours. The party makes zero miles of progress.
-
-- **Consumption:** 0.5 lbs food per person
-- **Recovery (end of day):** Each character heals **1d4+1 HP** and removes **1 level of Exhaustion** if they ate their full Rest Day ration (0.5 lbs) during the day. If food is short, choose which characters are fed before recovery; unfed characters still heal HP but do not remove Exhaustion from rest.
-- **Wound Track:** Characters on the Wound Track may attempt their Wound Track recovery check (see Health)
-- **Oxen:** Each ox team recovers **1 HP**
-- **Camp actions:** Each character may take **one** Camp Action (see [05. Camp Life](./05_camp_life.md))
-
-### Oxen
-
-Oxen are the party's engine. Without them, the wagon doesn't move.
-
-- Each ox team has **10 HP**
-- Hard Travel strains the oxen: on any day the party travels Recklessly or attempts a Forced March, one ox team loses 1 HP (GM chooses or roll randomly)
-- Lose 2 HP crossing rivers (Dexterity check DC 11 to reduce to 1)
-- Recover 1 HP per full Rest Day (grazing/feeding is abstracted — no extra tracked food cost)
-- At 0 HP, an ox team **collapses and dies** — it is permanently lost and cannot be recovered through rest or healing. Lost-team speed penalties are multiplicative: multiply miles traveled by 0.75 once for each lost team. At 0 teams: **stranded** — the wagon cannot move. The party may cache supplies and proceed on foot at half Standard speed (7–10 mi/day), attempt to purchase a replacement team at the nearest fort, or work for wages at a fort to fund new oxen. If no fort is reachable on foot, the party's journey is over. _GM Note: While proceeding on foot at 7–10 mi/day is mathematically faster than travel with only 1 remaining ox team (which reduces Standard speed to 6–8 mi/day), foot travel requires caching all wagon supplies. The comparison only makes logical sense if the wagon is already effectively useless due to low HP or empty cargo._
-
-
-### Wagon HP
-
-The wagon absorbs punishment from terrain, river crossings, and accidents.
-
-- Starts at 30 HP
-- Loses HP from events (see Event Table)
-- **Field Repair:** Stop for a day (no travel). STR check; outcome depends on whether spare parts are available:
-  - *Without spare parts (DC 11):* Success: restore **1d4 Wagon HP**, but cannot raise the wagon above half its maximum HP (15). Failure: no HP restored.
-  - *With a spare part (DC 12):* Success: spend 1 spare part and restore **1d6+2 Wagon HP**. Failure: no HP restored; the part is not consumed.
-- **Teamster's Upkeep:** During any rest day, the Teamster automatically restores 1 Wagon HP (no check, no parts) by tightening bolts, re-greasing axles, and patching minor wear.
-- At 0 HP: wagon is unusable. Party must cache supplies and proceed on foot at half Standard speed (7–10 mi/day).
-
-### Water
-
-Water is only tracked as a resource in **arid or waterless stretches** (Segment 5: Desert Crossing, the Sublette Cutoff, and any event that specifies a dried-up water source). In river and plains segments, the party refills automatically at the end of each day.
-
-- The wagon carries **20 gallons** of water in barrels (included at no extra cost; every wagon has them).
-- Normal consumption: **2 gallons per day** (people + oxen).
-- "Hot & Dry" or "Oppressive Heatwave" weather: consumption **doubles** to 4 gallons/day.
-- At 0 gallons: every character takes **1d4 damage per day** and gains 1 level of Exhaustion. Ox teams also take **1d4 damage per day** (ox teams have no Exhaustion track).
-- Refill: Automatic at any river, spring, or fort. Some events (Oasis, Clear Mountain Spring) also refill.
-- Additional barrels can be purchased at forts for $3 each (Independence price), adding 10 gallons of capacity per barrel.
-
-_Experienced table option:_ Track water for the full journey. Outside arid/waterless stretches, the party still refills for free whenever the day clearly passes a river, spring, fort, or settled creek; on dry camp days, deduct water normally. Use this only if the group wants water pressure before Segment 5.
+At the end of a fed Rest Day, regain **1d4+1 HP**, remove 1 Exhaustion, then try CON DC 10 to improve Wound state by one step. On success Gravely → Wounded or Wounded → Healthy. Condition-specific restrictions must be printed. Dead cannot recover. Unfed characters regain 1 HP from rest but remove no Exhaustion and make no Wound recovery check.
 
 ### Exhaustion
 
-Adapted from D&D 5e:
+Effects are cumulative. A traveler gains at most **1 Exhaustion per calendar day**, from all sources including voluntary risks; no exceptions. Recovery can happen later that day. All removal requires that traveler's full daily ration. Track gains and removals separately.
 
-| Level | Effect                                         |
-| ----- | ---------------------------------------------- |
-| 1     | Disadvantage on all checks                     |
-| 2     | Travel speed halved                            |
-| 3     | Disadvantage on all checks; Advantage cannot cancel it                                      |
-| 4     | HP maximum halved                              |
-| 5     | Cannot travel; bedridden                       |
-| 6     | Death                                          |
+| Level | Effect |
+| --- | --- |
+| 0 | No penalty |
+| 1 | −1 on checks |
+| 2 | Disadvantage on physical checks (STR/DEX/CON), replacing the −1 rather than stacking it |
+| 3 | Disadvantage on all checks; Advantage cannot cancel it |
+| 4 | Maximum HP halved, round up; clamp current HP to new max without causing a wound |
+| 5 | Incapacitated; passenger, no actions or checks |
+| 6 | Death |
 
-Exhaustion is removed by: full rest days (removes 1 level), Intensive Care from the Doctor (removes 1 level, see [05. Camp Life](./05_camp_life.md)), and other effects that explicitly remove Exhaustion. A character must have eaten their full required ration that day to remove any Exhaustion level (0.5 lbs on a Rest Day). If food is short, decide who was fed before applying Exhaustion recovery.
+Party travel is halved once when **at least two of the four travelers** have Exhaustion 2+. If fewer than two travelers are able to act, wagon travel stops. Wounds alone do not halve speed; unavailable ox teams have their own modifier. Removing Exhaustion 4 restores normal max HP but not lost current HP.
 
-**Exhaustion Cap:** A character can gain at most 1 level of Exhaustion per day from involuntary sources (failed checks, environmental hazards). Voluntary sources (choosing a double watch shift) can still add beyond this cap. Named events that explicitly state a multi-Exhaustion consequence (such as Altitude Sickness: 2 Exhaustion on failure) are explicit exceptions to this cap.
+### Conditions
 
-**Desperate Forage:** When food is depleted and hunting is impossible, any character may attempt a **WIS or CON check (DC 9)** to scavenge 1d6 lbs of edible plants, insects, or bark. This yields barely enough to stave off starvation but not enough to thrive. No ammunition is required.
+Exposure names a target and resistance check; if unspecified choose one traveler randomly and use CON against the listed DC. Failure contracts the condition. Do not apply immediate damage twice. New daily damage starts on the following day. Duplicate exposure to the same active condition has no additional effect.
 
----
+At each day's end make one CON recovery check per active condition. **Ignore all condition, Exhaustion, and Morale penalties on recovery checks**; innate CON and treatment still apply. Success removes one recovery mark. At zero marks the condition ends. Conditions do not automatically advance Wound state; damage does so normally. The party’s Doctor may attempt ordinary treatment once per day, targeting one condition on one patient. It costs 1 medicine for disease (none for injury) and requires INT DC 10. On success halve that condition's damage today (round up) and give Advantage on its recovery check today; on failure medicine is spent but no extra harm. Treatment expires at day's end. Doctor Stabilize replaces ordinary treatment on that patient that day; neither doubles recovery rolls.
 
-## Events
+| d6 | Condition | DC / marks | Immediate and ongoing effect |
+| --- | --- | --- | --- |
+| 1 | Dysentery | 10 / 3 | No immediate damage; 1 HP/day afterward. |
+| 2 | Typhoid | 12 / 4 | Exhaustion +1; Disadvantage on physical checks until cured. At Exhaustion 5 the patient is incapacitated normally, not automatically on diagnosis. |
+| 3 | Cholera | 12 / 3 | 1d4 immediate damage; 2 HP/day afterward. No unannounced third-day death roll. |
+| 4 | Measles | 10 / 3 | Disadvantage on physical checks; no daily damage. |
+| 5 | Exhaustion illness | 10 / none | Gain 1 Exhaustion; no ongoing condition. |
+| 6 | Snakebite | 12 / 2 | 1d4 immediate damage; Disadvantage on DEX until cured. Treated as an injury, no medicine required. |
 
-At the start of each Trail Day, the GM rolls **1d20** and consults the Event Table for the current segment. Events are not all bad — some are neutral or positive.
+A scene can specify **deep wound** (DC 10, 3 marks, 1 HP/day starting tomorrow), **broken bone** (DC 12, 4 marks, no physical labor until cured), **snow blindness** (DC 10, 2 marks, no navigation/hunting), or **frostbite** (DC 12, 3 marks, Disadvantage on STR/DEX). No permanent disability is assigned by an unannounced roll. Discuss any lasting change with the player. These are fictional game effects, not treatment advice.
 
-### Universal Event Table (d20)
+### Death, incapacity, and replacements
 
-| Roll | Event                                                                                                          |
-| ---- | -------------------------------------------------------------------------------------------------------------- |
-| 1    | **Disease exposure.** Random party member is exposed. Roll on the Disease table, then make a disease resistance check (CON DC 13). Failure: apply the disease result. |
-| 2    | **Wagon breakdown.** Wagon loses 1d6 HP. Lose a travel day dealing with it; attempt Field Repair if able. |
-| 3    | **Ox injury.** One ox team loses 2 HP.                                                                         |
-| 4    | **Bad weather.** Travel DC increases by 2 for next 2 days.                                                     |
-| 5    | **River crossing.** Group check (CON/STR DC varies by segment).                                                |
-| 6    | **Thief in camp.** Lose 1d6 × 10 lbs food or 1d4 medicine unless Wisdom check DC 12.                           |
-| 7    | **Trail fork.** Wisdom check DC 11 (Guide) — wrong fork costs 3 days.                                          |
-| 8    | **Rough terrain.** Wagon loses 1d4 HP. No check.                                                               |
-| 9    | **Party conflict.** Morale event — Charisma check DC 10 or all checks next day at disadvantage.                |
-| 10   | **Nothing notable.** Uneventful travel day.                                                                    |
-| 11   | **Nothing notable.** Uneventful travel day.                                                                    |
-| 12   | **Good hunting sign.** Next hunt check has advantage.                                                          |
-| 13   | **Travelers met.** Trade opportunity or information about trail ahead.                                         |
-| 14   | **Fair weather.** Travel DC decreases by 2 for next day.                                                       |
-| 15   | **Found provisions.** 1d4 × 20 lbs food, or 1d3 medicine doses.                                                |
-| 16   | **Abandoned wagon.** Possibly spare parts — Investigation DC 10.                                               |
-| 17   | **Rest opportunity.** The party may take a half-rest: halve miles traveled today (round up) and set food consumption to 0.5 lbs/person. Cannot be combined with Hard Travel. (This does not grant Rest Day healing/Exhaustion removal.) |
-| 18   | **Scenic landmark.** Morale boost — advantage on next Charisma check.                                          |
-| 19   | **Helpful locals.** Guidance on the trail ahead; advantage on next Navigation check.                           |
-| 20   | **Exceptional day.** Multiply miles traveled today by 2 (round up). Additionally, the party may make one hunting attempt today with no ammo cost and no travel-speed penalty. |
+The player always keeps playing. On incapacity, immediately offer control of their previously named reserve traveler, another willing NPC, or a co-controlled active traveler until recovery. Only **four active traveler slots** take actions or contribute expertise; a temporary substitute occupies the incapacitated character's slot. Both physical bodies consume rations if aboard, but only the active substitute acts; explicitly update food needs. A substitute's own wagon can instead care for the patient, so the active party remains four bodies; agree this in fiction. Never hide an extra food cost.
 
-**Using the Segment Tables:** Before play, decide whether to use Universal-only events or the segment event module. If using the segment module, roll 1d20 on the Universal table above; on results **1–9**, roll a **separate d10** on the segment-specific table (see [01. Events & Hazards](./01_events_and_hazards.md)) instead of using the Universal result. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
+On death, mark date and mile, name one thing the survivors carry forward, lose 1 Morale, and introduce a replacement **in the same scene or immediately afterward**. Use the fixed array, full normal HP, Exhaustion 1, the party's earned techniques, and immediate role abilities. No new money, goods, or wagon supplies appear. The player chooses a link to the dead or another traveler. Death has consequences without a participation fee or role lockout. No additional Ghost Tax. Retiring a character voluntarily uses this same no-new-supplies rule and requires a plausible meeting; it cannot erase the party's debts or threats.
 
-### Disease
+## 6. Morale, rest, and people
 
-When disease exposure occurs:
+*Morale is not a mood. It is the answer to “do we still believe this was worth leaving for?”, asked around a fire, out loud.*
 
-1. Determine the exposed character(s). If the event does not say, choose one random party member.
-2. Determine the disease. If the event names a disease, use that disease and do not roll. Otherwise, roll **1d6** on the Disease table.
-3. Make the resistance check. Use the event's listed DC if it provides one; otherwise use the disease's DC. This is normally a CON check. If an event gives an avoidance check instead (such as DEX to dodge a snake), that check replaces the CON resistance check.
-4. On failure, the character contracts the disease and immediately suffers the listed "Effect if Failed." Ongoing duration and recovery use the disease's normal DC unless the event says otherwise.
+Morale is shared, clamped 0–10, starts 7. At 8–10, one group check per session gains Advantage for every participant (players choose before rolling). At 3–4, start the next camp conversation with a disagreement; no automatic check penalty. At 1–2, hold a breaking-point scene. At 0, the party must stop at the next safe camp and renegotiate why it continues; players may spend one Rest Day to reset Morale to 3, or agree to end the expedition. Hostile conditions still need resolving before safe rest. No roll controls a PC or makes them leave.
 
-Roll **1d6** to determine an unnamed disease:
+Lose 1 for a death, breaking an explicit promise to an NPC who learns of it, crossing below 50 lbs food, or crossing below 5 Wagon HP. Each threshold can trigger only **once per chapter**. Gain 1 for first arrival at a chapter endpoint, fulfilling a significant promise, or a successful Rest Day evening activity. Each named promise rewards once; each evening at most once. No repeated landmark rolls or repeated retelling of a promise for gains.
 
-| Roll | Disease            | DC  | Effect if Failed                                  |
-| ---- | ------------------ | --- | ------------------------------------------------- |
-| 1    | Dysentery          | 11  | Lose 1d4 HP/day, disadvantage on STR/DEX checks   |
-| 2    | Typhoid            | 13  | Bedridden, gravely ill immediately                |
-| 3    | Cholera            | 15  | Lose 2d4 HP immediately; CON check daily or worsen |
-| 4    | Measles            | 10  | Disadvantage on all checks for 1 week             |
-| 5    | Exhaustion illness | 9   | Gain 1 exhaustion level                           |
-| 6    | Snakebite          | 12  | Lose 1d6 HP; disadvantage on STR/DEX for 3 days   |
+On any night's camp, invite one short scene: ask for help, admit a fear, challenge a plan, or share something worth carrying. **Talking is always available.** Rest-only mechanical recovery does not prohibit roleplay on travel nights. No CHA roll is required for an honest conversation.
 
-**Disease Progression:** Each disease has a **duration** and a **daily effect** while active:
+Rest Days give healing and ox recovery, Teamster upkeep, and one Camp Action per able traveler. Full procedure and actions: [Camp Life](05_camp_life.md). Assign three watch shifts; with three able watchers no fatigue. A double shift prompts CON DC 10 or 1 Exhaustion next morning, subject to that day's cap. No watch means a night threat cannot be spotted early; it still gets its printed response, never automatic death.
 
-- **Dysentery:** Lasts 5 days. Lose 1d4 HP each morning; disadvantage on STR/DEX checks. Untreated: duration extends by 1d4 days.
-- **Typhoid:** Lasts 7 days. Character is bedridden (Gravely Ill on Wound Track) for the full duration. While Typhoid is active, the character cannot attempt Wound Track recovery checks — the disease holds them Gravely Ill regardless. Because Typhoid already holds the character at Gravely Ill, any later drop to 0 HP during the disease is immediately fatal under the normal Wound Track rules. When cured, the Typhoid ends, but the character remains Gravely Ill on the Wound Track and must recover from that state normally through Rest Days.
-- **Cholera:** Lasts 3 days. Lose 2d4 HP on day 1; each subsequent day, CON check at the disease's DC or lose another 1d4 HP. Untreated: on day 3, after daily damage, make a final **CON check at the disease's DC (DC 15)** (a character is considered treated, bypassing this check entirely, if they received at least one successful Doctor's treatment during the disease's duration). Failure means death; success means the character survives and the disease duration can end normally.
-- **Measles:** Lasts 7 days. Disadvantage on all checks for the duration.
-- **Exhaustion Illness:** Immediate. Gain 1 Exhaustion level; no ongoing duration.
-- **Snakebite:** Lasts 3 days. Lose 1d6 HP immediately; disadvantage on STR/DEX for the duration.
+At forts, the party has safety from random trail events. Weather prevents travel when stated but fort shelter protects people and animals; disease, food, and recovery still apply. Trade uses one day; Rest is separate. Prices and human demands: [Trading](03_settlements_and_trading.md).
 
-**Recovery:** At the end of each day, a diseased character makes a **CON check** at the disease's original DC. Success removes 1 day from the remaining duration. A character who reaches 0 remaining days is cured.
+## 7. Endings and difficulty
 
-**Treatment:** The Doctor may attempt treatment **once per day** (during any phase of the Trail Day). Requires medicine (1 dose) + Doctor making INT check (DC 11). Success: the patient's recovery rate **doubles** (each successful CON check removes 2 days instead of 1, and the daily damage/effects are halved). Failure: condition stable — medicine is consumed, but no benefit. No medicine available: the disease cannot be treated, and any daily "worsen" effects apply at full force.
+*Arrival is not a score. It is a date, a list of who is standing, and a set of promises in one of three states: kept, renegotiated, or broken on purpose.*
 
----
+Reach marker 1,900, resolve the [final routes](07_route_variants.md), then arrive at 2,000. The finale's stated travel days **replace** those final 100 miles; never charge both. Failure at the finale offers a defined recovery or walking route, not an unexplained dead end.
 
-## Death & Morale
+Arrival ends the expedition, not all the characters' problems. Resolve Dream, Promise, Bond, and what remains to build with. A character's player authors their intention; circumstances supply one benefit and one complication. Use [Arrival](docs/ARRIVAL.md). Remember the dead and the people who helped. A rescue, a changed destination, or an agreed retreat can be a complete story, not a score of zero. If the party chooses to winter at a refuge instead of continuing, end this expedition there with the Arrival procedure; a later spring departure is a new campaign, not an unlimited rest-and-wages loop inside this one.
 
-### Death
+**Standard:** rules as written. **Gentler:** $1,000 starting budget; start each chapter with one Inspiration per character; first Wound recovery check each Rest Day has Advantage. **Harsh:** $650 budget, start May 10, otherwise same rules. Use only after agreement; do not increase DCs and event frequency secretly. Pregens/loadout remain affordable in all modes. All modes protect player participation and telegraph catastrophic stakes.
 
-When a character dies, mark their grave with the current date and mile marker. To maintain narrative continuity and emotional weight, the replacement character should ideally be a **Secondary Survivor**—a spouse, older child, or cousin who was previously a background NPC in the wagon, now forced to step up into a primary role.
-
-If the party must recruit a complete stranger at a fort or on the trail, that stranger comes with an **Inherited Burden**. The dying character extracts a promise (e.g., "Deliver this letter to my sister in the Valley"). The new character's morale is tethered to fulfilling this goal; abandoning the deceased's wagon drops the stranger's Morale to 0.
-
-To ensure death remains a severe mechanical penalty and to prevent "farming" fresh characters, the following **Ghost Tax** applies to any new character joining mid-journey:
-
-- **Integration Cost:** The new character is either untrained (as a secondary survivor) or demands proof of stability (as a stranger). The party must immediately expend **one** of the following: 50 lbs of food, 2 doses of medicine, or $20. If the party cannot afford any of these, they operate down a character until they can (the replacement character joins the wagon but is bedridden, acting as cargo, and cannot make checks, participate in group checks, or take watch shifts).
-- **Shared Burden:** The new character immediately gains 1 level of Exhaustion (representing the disruption and stress of transition — not the full accumulated toll of the journey).
-- **Loss of Institutional Knowledge (Role Lockout):** The new character cannot immediately use the deceased character's **Competence Floor ability** (e.g., if the Guide dies, the new character cannot use Take 10). This lockout lasts **3 trail days** (not a full segment) as the newcomer learns the ropes. The new character can still fill the Role and make normal checks during the lockout — they just lack the safety net.
-
-Dead characters stay dead. There is no magic on the Oregon Trail.
-
-### Morale
-
-The party has a collective **Morale score** from 0–10 (starts at 7).
-
-**Morale drops by 1 when:**
-
-- A party member dies
-- Food drops below 100 lbs
-- The wagon takes critical damage (below 5 HP)
-- A Charisma check to manage conflict fails
-
-**Morale rises by 1 when:**
-
-- A major landmark is reached (South Pass, Independence Rock, etc.) or a fort is reached — these are the same +1 awarded in [03. Settlements & Trading](./03_settlements_and_trading.md) on arrival; do not award it again at the end-of-segment beat
-- A successful hunt produces 100+ lbs
-- A party member is saved from death (Doctor's dramatic save)
-- The party finds unexpected provisions
-- A successful Evening Activity lifts the camp during a Rest Day (see [05. Camp Life](./05_camp_life.md))
-
-### End-of-Segment Beat
-
-When the party completes a segment, pause before the next hazard profile begins:
-
-1. Audit food, water, medicine, ammunition, wagon HP, ox HP, Morale, Exhaustion, and disease timers.
-2. Note any landmark or fort Morale gain already awarded on arrival this segment (do not award it a second time here).
-3. Ask one quick relationship prompt: who is carrying the party, who is cracking, and who has changed their mind about Oregon?
-4. Let the party choose one visible priority for the next segment: speed, safety, food, repairs, or morale.
-
-**Morale effects:**
-
-| Morale | Effect                                        |
-| ------ | --------------------------------------------- |
-| 8–10   | Advantage on group checks                     |
-| 5–7    | No modifier                                   |
-| 3–4    | Disadvantage on Charisma and Wisdom checks    |
-| 1–2    | Disadvantage on all checks; risk of desertion |
-| 0      | Party disbands. The trail wins.               |
-
----
-
-## Forts & Trading Posts
-
-Forts represent the only reliable resupply points. They are expensive and their stock is limited.
-
-**Fort stops follow this sequence:**
-
-1. GM describes what's available and at what prices
-2. Party deliberates — this is a roleplaying moment
-3. The party may attempt to negotiate using the full bargaining system in [03. Settlements & Trading](./03_settlements_and_trading.md) (CHA or INT check vs. escalating DC by fort, with bonuses for meeting the Sutler's specific demand)
-4. Purchases are made at the negotiated price
-
-**Independence base prices:**
-
-- Food: $0.50/lb
-- Medicine: $4/dose
-- Spare parts: $6/part
-- Ammunition: $2/20 rounds
-- Ox team: $32
-- Extra water barrel (10 gal capacity): $3
-- Warm Bedding (blankets/robes): $30 (party bundle)
-
-_Fort prices use the escalating multiplier (1.5x–4x). For example, at Fort Hall (3x): Food = $1.50/lb, Medicine = $12/dose._
-
----
-
-## Winning & Losing
-
-### Victory Conditions
-
-**Full Victory:** Reach Willamette Valley with all four party members alive. Rare. Worth celebrating.
-
-**Partial Victory:** Reach Willamette Valley with at least one party member alive. This is what most real emigrants experienced — success at a cost.
-
-**Failure:** All party members die, or the party is stranded (no oxen, no wagon, no food) more than 200 miles from a fort.
-
-### Epilogues
-
-At the end of each surviving character's story, the GM reads a brief epilogue — what they did in Oregon, how many years they lived, whether they found what they were looking for. This is adapted from the original game's tradition of telling you what happened after you arrived.
-
----
-
-## Designer Notes
-
-### What This Isn't
-
-This framework isn't trying to simulate the Oregon Trail with historical accuracy. It's using the D&D skeleton — skill checks, stats, HP, resource tracking — as a mechanical language to tell stories about ordinary people in extraordinary circumstances. The numbers are tuned for drama, not simulation.
-
-### Difficulty Tuning
-
-As written, this is hard. Characters will die. Oxen will collapse. Wagons will break. This is intentional — the Oregon Trail was hard. GMs should communicate this upfront. Players who understand the stakes make better decisions and feel the losses more meaningfully.
-
-If the group wants a softer experience, add +2 to all Constitution checks and give the party 200 extra starting dollars. That's the "banker from Boston" difficulty mode.
-
-### Expanded Modules
-
-This document serves as the core rulebook. The full game system is expanded across detailed modules:
-
-- [01. Events & Hazards](./01_events_and_hazards.md) (Segment-specific 1d10 tables)
-- [02. Character Backgrounds](./02_character_backgrounds.md) (Mechanical backgrounds by role)
-- [03. Settlements & Trading](./03_settlements_and_trading.md) (Fort prices, bargaining)
-- [04. Native Encounters](./04_native_encounters.md) (Diplomacy, tolls, assistance)
-- [05. Camp Life & Rest Days](./05_camp_life.md) (Activities, morale, repair)
-- [06. Weather & Environment](./06_weather_and_environment.md) (Seasonal weather tables)
-- [07. Route Variants & Cutoffs](./07_route_variants.md) (High-risk shortcuts)
-
----
-
-_"You have died of dysentery." — The Trail, indifferently._
+A 9/10 experience is the design aim, not a certification. See the bounded [playtest protocol](docs/PLAYTEST.md). The packet has not established campaign balance, session duration, historical completeness, or external-table acceptance merely by being written.

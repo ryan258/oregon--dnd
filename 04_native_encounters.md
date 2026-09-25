@@ -1,93 +1,48 @@
-# 4. Native Encounters
+# 4. Indigenous communities and encounters
 
-> **Historical Sensitivity & Safety Tools**
->
-> This module depicts interactions between 1848 emigrants and Indigenous nations. It is designed with respect for Indigenous peoples and informed by the historical record, but it is necessarily simplified and written from an emigrant-perspective game frame. It is not a substitute for Indigenous history or perspectives.
->
-> **At the table:** We recommend using safety tools (such as the [X-Card](https://docs.google.com/document/d/1SB0jsx34bWHZWbnNIVVuMjhDkrdFGo1_hSC2BWPlI3A), Lines & Veils, or Script Change) so that any player can pause or redirect play if a scene becomes uncomfortable. The GM should check in with the group before the first Native encounter to establish tone and boundaries.
+*The land the party is crossing is somebody's Tuesday.*
 
-The history of the Oregon Trail is inextricably linked to the Indigenous nations whose lands the trail cut directly through. The popular myth of constant, violent "Indian attacks" is historically inaccurate. In the 1840s and early 1850s, interactions were predominantly peaceful, economic, and often life-saving for stranded emigrants.
+Every mile of this route runs through places where people already live and work — where the fishing site is maintained, the crossing is operated, the stock is counted, and the road is one more thing that happened this year. The travelers are the newcomers here, and usually the ones who need something. Play these scenes the way you would play any scene with a competent adult who has their own day to get through: they have work in progress, terms they will state plainly, and no obligation to explain themselves to four strangers with a wagon.
 
-The threat of conflict only rose significantly in the late 1850s and 60s as emigrant numbers swelled, resources were decimated, and treaties were broken. _This game is set in 1848, a period characterized more by negotiation and toll-taking than warfare._
+The design consequence is simple. There is no hostility score, no reaction roll, and no mechanism by which a bad die makes someone dangerous. What is uncertain in these scenes is never *what kind of person is this* — it is *what are the travelers willing to offer, and can they live with the answer.*
 
-### Encounter Philosophy
+Version 0.9. Use alongside [historical framing](docs/HISTORY.md) and the agreed [session boundaries](docs/SESSION_ZERO.md). The route passes through inhabited lands. Indigenous people have their own livelihoods, priorities, relationships, and authority; their presence is not an obstacle category.
 
-1. **Agency and Dignity:** Native peoples are sophisticated actors with their own economies, diplomacy, and boundaries. They are not mindless hazards.
-2. **Economic Opportunism:** Recognizing that emigrant wagons are destroying grazing lands and scaring off buffalo, many nations correctly demanded compensation (tolls) for safe passage or river assistance.
-3. **Player Choices Dictate Outcomes:** Violence is almost always the result of emigrant panic, arrogance, or refusal to respect local sovereignty.
+Do not infer a nation's behavior from a die roll, invent a purported traditional ceremony, or make one person's goodwill apply to unrelated communities. A generic successful exchange cannot buy a universal “tribal reputation” bonus. The scenarios below are **fictional encounter frameworks**, not descriptions of a specific nation's customs or documented 1848 events. Before assigning a real community, consult sources from that community and establish the actual location. Until then use the individual's occupation and a mutually understood name rather than inventing Indigenous-language names or claiming cultural authenticity.
 
-### The Native Encounter Table
+## Prepare an individual, not a hostility score
 
-**Encounter Frequency:** The GM should trigger **1 Native Encounter per segment**, replacing that day's Universal Event Table roll. When a Native Encounter occurs, roll **1d6** for the nature of the interaction.
+Half an index card is enough, and it is the same card you would write for a ferryman or a fort clerk.
 
-| d6  | Encounter Type          | Primary Emotion | Resolution Goal                                                                           |
-| :-: | :---------------------- | :-------------- | :---------------------------------------------------------------------------------------- |
-|  1  | **The River Guides**    | Pragmatic       | Pay for expert assistance crossing a treacherous river.                                   |
-|  2  | **The Toll Takers**     | Firm            | Pay a requested tribute (food, goods) to cross a bridge or pass.                          |
-|  3  | **The Traders**         | Welcoming       | Barter clothing, tools, or ammo for fish, pemmican, and other hard-to-find trail goods.  |
-|  4  | **The Curious Camp**    | Observational   | Peaceful meeting; exchange of gifts; shared camp.                                         |
-|  5  | **The Aggrieved Party** | Tense           | Emigrants destroyed an area or stole stock. Demand for restitution.                       |
-|  6  | **The Warning**         | Grave           | Native riders warn the party of a massive storm, hostile band, or washed-out trail ahead. |
+Write their name or how they ask to be addressed, their current work, what they want today, what they will not agree to, what they can actually offer, and whether/how the party could meet again. They can disagree with other members of their community. They need not justify boundaries to the travelers or be persuaded to abandon them.
 
-### Resolving Encounters
+Ordinary greetings, paying a stated fee, accepting a warning, and agreeing a fair trade succeed without rolls. If translation is difficult, allow gestures, an available interpreter, time, or a simpler agreement. Never roll for whether somebody accidentally commits an unspecified cultural offense.
 
-Diplomacy with native bands is complex and involves translation issues, cultural boundaries, and fluctuating tensions. These are not single-roll encounters managed by one player; they are **Extended Checks**.
+## Six encounter frames
 
-**The Approach:**
+Each is a person mid-task who has something the party may want, and a limit they have already decided on. Read the offer and the boundary as stated facts, not as an opening bid to be worn down.
 
-- Provide gifts immediately (coffee, sugar, cloth) grants **Advantage** on the first check of the encounter.
-- Drawing weapons or acting aggressive immediately triggers a **Crisis** (see below).
+Choose one appropriate to place and current circumstances. These can replace a random event; no requirement to have exactly one “Native encounter” per chapter.
 
-**The Encounter Extension:**
+| d6 | Person and purpose | Offer / boundary | Meaningful choice |
+| --- | --- | --- | --- |
+| 1 | A river worker finishing paid passage for another group | Next day's guided crossing for $10 or one part; current customers go first. | Wait and pay for safe passage, or choose a separately described crossing with known risks. Paying requires no social roll. |
+| 2 | A household protecting a damaged fishing site | Travelers must move camp; repair damage only with their permission. | Move, spending half a travel day, or devote a day to agreed repair and move afterward. Neither buys continued access. |
+| 3 | A trader with cured food and limited time | Offers 40 lbs cured food for 2 medicine or 80 rounds. Will not sell more today. | Trade scarce supplies, offer a clearly useful alternative, or decline peacefully. No special food multipliers. |
+| 4 | A messenger concerned about a washed-out approach | Gives the warning freely; requests delivery of a response to a named person at the next trading stop. | Accept a specific obligation or thank them and decline. The warning remains true either way. |
+| 5 | A stock keeper looking for a missing animal | Wants reliable information, not accusations. | Spend half a travel day investigating tracks (WIS DC 10); success provides a location, failure loses the time only. No duty to pursue into danger. |
+| 6 | A craft worker who needs dry storage while traveling | Offers one future wagon repair (restore 4 HP, once) in return for protecting a cargo bundle to the next fort. | Accept and record a delivery, or keep the space and responsibility free. Their own travel and food are independent. |
 
-To successfully navigate the encounter (negotiate a toll, trade, secure assistance), the party must amass **3 Successes before 2 Failures**.
+A proposal outside the printed terms can need one CHA or INT DC 10 check **only if the other person is genuinely open to it**. Success secures the alternative; failure leaves original terms available. No check makes forbidden access acceptable. Failing to reach agreement means no deal, departure, a detour, or another disclosed cost; it does not create a firefight.
 
-- **Base DC for all checks is 10.**
-- Modifiers: +2 to DC if the party looks desperate/armed to the teeth; -2 to DC if the party has traded fairly with tribes before.
+Record promises and consent on the [people ledger](docs/sheets/people_ledger.md). When an agreement is fulfilled, the specific person may offer a specific future favor if they can. Name it and its limits. Broken trust follows information: people cannot know what they have not learned.
 
-**Group Participation:**
+## Coercion or violence
 
-Different party members must contribute using their unique skills. Players describe their action, and the GM determines the relevant stat:
+Violence is never a random social-check outcome. If someone deliberately initiates force, pause, confirm the table's boundaries, and state the danger. Offer withdrawal with restitution or another credible exit. Use the same rules for any armed confrontation, regardless of who is involved.
 
-- _The Hunter_ rolls **DEX (Hunting)** to offer freshly caught game as a sign of mutual respect.
-- _The Doctor_ rolls **INT (Medicine)** to offer a physical assessment of an injured animal or person.
-- _The Guide_ rolls **WIS (Insight)** to observe camp dynamics and recognize who holds actual speaking authority. _(Cultural Broker: Once per encounter, the Guide can choose to automatically negate one failed check, framing it as correcting a cultural faux pas before offense is taken.)_
-- _The Teamster_ rolls **STR (Athletics)** to show respectful strength during an impromptu camp contest.
-- _Any Face Character_ rolls **CHA (Persuasion)** for direct translation and bartering terms.
+If the group proceeds: group DEX or WIS DC 14 to escape, not to conquer. Full success: escape, leave one cargo bundle. Partial: escape, leave one bundle and each participant takes 1d4 HP damage. Failure: escape after two lost travel days, leave two bundles, each participant takes 1d4 damage. Apply normal wounds; no automatic execution, conquest reward, or universal hostility increase. If escape is impossible in the established fiction, agree a different scene and stakes before rolling; do not improvise captivity that removes a player from the game.
 
-**Outcomes:**
+## Review boundary
 
-- **Success (3 Passes):** The interaction is peaceful and productive.
-  - _If Trading:_ Gain access to goods you cannot find at forts. For pemmican, roll or choose from the table below; pemmican lasts indefinitely and counts as 1.5x food value when consumed.
-  - _If Guides:_ River crossing DC drops to 8, and no wagons are lost.
-  - _If Toll:_ A fair toll is negotiated ($5 or 10 lbs of food).
-- **Failure (2 Fails):** Communication breaks down, or an insult is unknowingly given. The encounter enters a **Standoff State**. The wagon train is halted and tensions rise. The party must make a final, high-stakes group CHA or WIS check (DC 12) to de-escalate.
-  - _Standoff Success:_ The band demands a steeper price (half an ox team's value, $16) and departs peacefully once paid.
-  - _Standoff Failure:_ The situation descends into a **Crisis**.
-- **Crisis (Hostility/Refusal to Pay Toll):** Native riders block the path or prepare to defend their demands. The party must either surrender double the asked goods or resolve a firefight as a single crisis check. This is not tactical combat.
-
-**Pemmican Trade Quantity**
-
-| d6 | Result |
-| :-: | :----- |
-| 1-2 | 30 lbs pemmican (counts as 45 lbs food) |
-| 3-4 | 50 lbs pemmican (counts as 75 lbs food) |
-| 5 | 70 lbs pemmican (counts as 105 lbs food) |
-| 6 | 40 lbs pemmican (counts as 60 lbs food) plus a warning about the next segment |
-
-**Crisis Firefight**
-
-If the party refuses to pay or draws weapons, make a **Group STR or DEX check (DC 14)**; each character chooses how they are trying to survive the moment. Apply the group-check partial success rule from `seed.md`.
-
-- **Success:** The party escapes but pays for it: every character takes 1d4 damage, lose 1d4 x 10 lbs food or $20 in goods, and hostility DCs in this segment increase by +2.
-- **Partial Success:** The party breaks contact at heavy cost: every character takes 1d6 damage (halved per the partial success rule — round down), one random character moves one step down the Wound Track (this is a non-numeric consequence; it applies as written and is not halved), lose 1 ox team or $50 in goods, and hostility DCs in this segment increase by +3.
-- **Failure:** The party is routed: every character takes 1d6 damage, one random character moves two steps down the Wound Track, lose 1 ox team and $50 in goods, and hostility DCs in this segment increase by +4.
-
-The GM should keep this consequence severe enough that violence remains a last resort, but it should still resolve through the same check language as the rest of the game.
-
-### Historical Notes for the GM
-
-- **Pawnee (Segment 1):** Often demanded tribute for crossing their lands, as wagons drove off game.
-- **Lakota/Sioux (Segment 2 & 3):** Commanded the plains. Extremely powerful. Often traded buffalo robes and meat for coffee and sugar.
-- **Shoshone (Segment 5 & 6):** Lived in the harsher desert and Snake River areas. Often acted as expert river guides and traded salmon.
-- **Cayuse/Walla Walla (Segment 7):** Powerful horsemen in the Blue Mountains. Tensions were higher here historically (the Whitman incident occurred in late 1847), making diplomacy fragile.
+These revisions remove the automatic failed-diplomacy-to-violence structure. They do not establish historical accuracy or Indigenous review. Before commercial publication, commission review of the actual named communities, geography, framing, and illustrations; compensate and credit reviewers with permission. Current sources and unanswered questions are recorded in HISTORY.md.

@@ -1,136 +1,106 @@
-# 1. Events & Hazards
+# 1. Events: warning, choice, consequence
 
-At the start of each Trail Day, the GM rolls 1d20 on the Universal Event Table (see `seed.md`). If the table is using this segment event module, results **1–9** trigger a **separate d10** roll on the segment-specific table below instead of using the Universal result. On results **10–20**, use the Universal result as written. This ensures each segment feels distinct while maintaining a baseline of neutral and positive events.
+*The trail never ambushes anyone. It clears its throat, shows you the bill, and waits.*
 
----
+Version 0.9. The core event selector sends results 1–3 here; roll d6 on the current chapter. Read the warning and **both approaches before any roll**. Costs replace the day's action when they take a day. Unspecified damage targets the wagon only when labeled Wagon HP; otherwise name the affected traveler before commitment. These events never erase all food, destroy a healthy wagon outright, or kill a healthy team without a response.
 
-### Segment 1: The Plains (Miles 0–300)
+Every entry has the same shape, and it is the shape of the whole game: something goes wrong where the party can see it coming, there is a safe way through that costs time or goods, and there is a fast way through that costs the dice. Neither is the correct answer. The correct answer is whichever one the party can live with saying out loud.
 
-_The great flat expanse. The primary threats are weather, initial inexperience, and the sheer shock of the undertaking._
+A cargo bundle means 50 lbs food, one part, 40 ammunition, one filled extra barrel, or a named personal cargo item. Loss is chosen by players unless the warning identifies the threatened item. If a printed payment is unavailable, use the other option or propose another approach. No repeatable unique reward: an already-resolved landmark becomes ordinary progress.
 
-| d10 | Event                      | Mechanical Effect                                                                                          |
-| :-: | :------------------------- | :--------------------------------------------------------------------------------------------------------- |
-|  1  | **Sudden Thunderstorm**    | Lightning spooks the oxen. DEX check (DC 11) or 1 ox team takes 2 HP damage. If the party travels, multiply miles traveled today by 0.5 (round up). |
-|  2  | **Heavy Spring Mud**       | The wagon bogs down to the axles. STR check (DC 13, group) to dig it out, or lose a travel day.            |
-|  3  | **First Signs of Illness** | A random character is exposed to Exhaustion Illness (see Disease rules in `seed.md`) and makes a CON check (DC 10) to resist. Failure: gain 1 Exhaustion level. |
-|  4  | **Prairie Fire (Distant)** | The smoke chokes the air. Visibility drops. Disadvantage on Navigation/Hunting for 2 days.                 |
-|  5  | **Misjudged Rations**      | Party realizes food was packed poorly. Lose 1d4 × 10 lbs of food to spoilage.                              |
-|  6  | **Swarm of Mosquitoes**    | Miserable conditions. WIS (Survival) DC 9 to keep smoke up and cover skin. Failure: Morale drops by 1.    |
-|  7  | **Friendly Emigrant Pass** | Meet another wagon heading back. They trade 1 Medicine for 20 lbs of food, or vice versa.                  |
-|  8  | **Buffalo Sign**           | The Hunter finds fresh tracks. Next Hunting check has Advantage.                                           |
-|  9  | **Clear, Cool Day**        | Perfect marching weather. Multiply miles traveled today by 1.5 (round up).                                 |
-| 10  | **Stunning Sunset**        | The vastness of the prairie inspires hope. Party Morale increases by 1.                                    |
+## 1 — The Plains
 
----
+*Grass to the horizon in every direction, and a hundred other wagons close enough to hear arguing. This is the easy part, and it is already hard.*
 
-### Segment 2: The River Crossings (Miles 300–500)
+| d6 | Warning | Dependable approach | Risky approach and result |
+| --- | --- | --- | --- |
+| 1 | The western sky has gone the color of a bruise, and the teams lean into their yokes before anyone touches them. | Travel half today's miles, no stock harm. | DEX DC 10 by Teamster: success full miles; failure full miles and one team loses 2 HP. |
+| 2 | The ruts ahead are axle-deep and shining. Somebody's abandoned trunk is sunk in them to the lid. | Detour: one lost travel day, no roll. | Group STR DC 12: full success full miles; partial half miles; failure no miles and 2 Wagon HP lost. |
+| 3 | A flour barrel smells damp and sweet, the way flour is not supposed to smell. | Stop to dry it: half miles, save the food. | INT DC 10: success no loss; failure lose 20 lbs cured food, capped at current stores. |
+| 4 | A wagon on the rise ahead has been trying the same slope for an hour. Its driver walks back to ask about your rope. | Lend help: half miles; record a favor from this named party. | Offer instructions, WIS DC 10: success same favor with full miles; failure no favor, no penalty. Refusal is also allowed. |
+| 5 | Fresh tracks cross the ruts and go off toward the creek line — several animals, unhurried, this morning. | Hunter may Take Aim today if willing to stop. | Hunt while moving using core costs and half miles. Declining means ordinary progress. |
+| 6 | A wheelwright has set up under a cottonwood with a proper stand and a fire going. He waves you toward the shade. | Spend a Rest Day here; repair rolls have Advantage. | Keep traveling; learn where the next shelter is. No free restoration merely from discovering the camp. |
 
-_The Kansas and Platte rivers. The primary threats are drowning, losing the wagon, and waterborne disease._
+## 2 — The River Crossings
 
-| d10 | Event                   | Mechanical Effect                                                                                                           |
-| :-: | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
-|  1  | **Treacherous Ford**    | The riverbed gives way. Wagon takes 1d6 damage. Anyone walking must make a **STR check (DC 11)** or be swept under: take **1d6 damage** and go immediately to **Gravely Ill/Injured** on the Wound Track. Another character may make a **STR check (DC 11)** to pull them out; success downgrades the result to Wounded. |
-|  2  | **Ferry Bottleneck**    | A 3-day wait for the ferry (costs $10, valued at Independence base prices), or the party can risk fording a dangerous section immediately (**Group DEX check DC 14**; failure: the wagon takes **2d6 damage** and 1 ox team loses **2 HP**). |
-|  3  | **Cholera Scare**       | Passing a fresh grave farm. One random character is exposed. Roll 1d6 for the disease (Cholera on a 3-4, Dysentery otherwise), then make the normal disease resistance check for that disease. |
-|  4  | **Saturating Rains**    | Everything gets wet. Wood is useless. No fire tonight. Sleep in the cold (CON DC 9 or 1 Exhaustion).                        |
-|  5  | **Lost Footing**        | An ox slips in the current. Requires immediate DEX check (DC 12) by the Teamster to save the beast from taking 4 HP damage. |
-|  6  | **Washed Up Supplies**  | Find a barrel from a wrecked wagon upstream. Contains 50 lbs of unspoiled flour.                                            |
-|  7  | **Shallow Crossing**    | The river is unseasonably low here. Crossing is an Easy (DC 6) check.                                                       |
-|  8  | **Ferry Operator Deal** | The operator offers passage for **1 spare part** instead of the normal $10 fare (valued at Independence base prices).      |
-|  9  | **Abundant Fish**       | Camp by an eddy. Free 2d10 lbs of fish without expending ammunition.                                                        |
-| 10  | **Safe Calm Night**     | A rare dry, quiet evening by the river. That night, each character heals 1 HP (this is not Rest Day healing).               |
+*Everything is a negotiation at a crossing: with the ferryman, with the current, with the people ahead of you in line who have been waiting longer.*
 
----
+| d6 | Warning | Dependable approach | Risky approach and result |
+| --- | --- | --- | --- |
+| 1 | Upstream, the water is climbing the willow trunks. The ford will be worse tomorrow than it is right now, and worse again after that. | Pay $10 for guided passage tomorrow: today may be Rest, next day crossing uses the day's travel with no damage. | Group DEX DC 12: full success cross; partial cross, 2 Wagon HP lost; failure stay this bank, 4 Wagon HP and one team loses 2 HP. Retry next day or buy passage. |
+| 2 | The ferry queue has not moved since dawn. A wagon at the front has thrown a wheel across the loading ramp and nobody can get around it. | Help repair for one day: safe passage tomorrow for one part instead of cash. | INT DC 12 to organize a quicker loading order: success pay $10 and cross today; failure spend today and remain in queue. |
+| 3 | One of the casks is weeping at the seam, and it was filled at the green pool the others were warned away from. | Discard suspect water and fill at a known spring: half miles. | Doctor INT DC 10 to sort safe stores: success no delay; failure reveals uncertainty before drinking. Choose detour or one named traveler risks dysentery CON DC 10. |
+| 4 | The near ox plants all four feet at the lip of the landing and will not look at the water. | Unload and lead it across: half miles. | Teamster STR DC 10: success full miles; failure one team loses 2 HP, half miles. |
+| 5 | A supply box has drifted down and wedged under the cutbank, still tied shut. Somebody upstream is short of it. | Leave it; ordinary progress. | One traveler DEX DC 12: success gain 20 lbs cured food; failure 1d4 HP damage, no supplies. Helper shares the damage risk if assisting. |
+| 6 | A family camped on the gravel bar crossed here four days ago and know exactly where the bottom drops away. They also have nothing left to eat. | Give 10 lbs food: get accurate information and their name; next river group check has Advantage. | Spend half a day carrying their gear instead, same information. Or decline without penalty. |
 
-### Segment 3: The Rockies Approach (Miles 500–700)
+## 3 — The Rockies Approach
 
-_The land rises, the air thins, and the oxen begin to suffer. Wood and grass become scarce._
+*The ground turns to stone and the wagon starts telling you things. Every sound it makes carries now.*
 
-| d10 | Event                     | Mechanical Effect                                                                                               |
-| :-: | :------------------------ | :-------------------------------------------------------------------------------------------------------------- |
-|  1  | **Broken Axle on Stone**  | A hidden rock snaps the axle. Lose 1 day and attempt Field Repair.       |
-|  2  | **Lame Ox**               | The rocky ground batters hooves. 1 ox team loses 3 HP and is **Lame**. Until the party takes a Rest Day, multiply miles traveled by 0.75 (round up). |
-|  3  | **Alkali Water**          | Toxic pools. The Doctor may attempt an INT check (DC 11) to identify dangerous water before anyone drinks. Otherwise, anyone drinking makes CON DC 13 or suffers severe vomiting (lose 1d4 HP, Disadvantage on STR/DEX). |
-|  4  | **False Trail**           | A braided path confuses the Guide. WIS DC 12 to realize the error, otherwise lose 2 days.                       |
-|  5  | **Hailstorm**             | Marbles of ice batter the party. If not **Sheltered**, 1d4 damage to everyone and 1d6 damage to the wagon (Wagon HP). |
-|  6  | **Scare Wildlife**        | Hunting DC increases to 16 for the next 3 days. Game is hiding in the crags.                                    |
-|  7  | **Buffalo Robe Trade**    | Encounter trappers willing to trade 3 thick robes for 50 rounds of ammunition. If you accept, mark that the party has **Warm Bedding**. |
-|  8  | **Edible Roots**          | The Doctor recognizes distinct local flora. Forage 3d10 lbs of edible roots, no ammo needed.                    |
-|  9  | **Clear Mountain Spring** | Pure, icy water restores 1 Exhaustion level to anyone who rests here for an hour.                               |
-| 10  | **Independence Rock**     | You've made it in good time. Carve your names in the stone. Morale increases by 1.                              |
+| d6 | Warning | Dependable approach | Risky approach and result |
+| --- | --- | --- | --- |
+| 1 | There is a knock in the front axle that wasn't there yesterday. It comes once per turn of the wheel. | Spend a part and a Repair Day: prevent damage and use normal Jury-rig/repair restoration. | Teamster STR DC 12 to brace it while traveling: success no loss; failure lose 4 Wagon HP, no miles today. |
+| 2 | One team is leaving color on the rock. Its hooves have worn down to the quick. | Rest today; the team heals normally. | Continue: that team loses 2 HP and is lame until a Rest Day. Disclose next day's resulting team count and speed. |
+| 3 | The pool is rimmed with a pale crust, and nothing has been drinking at it. | Use stored water, or detour half a day to a known spring. | Doctor INT DC 10 to identify a usable nearby seep: success refill; failure no refill, choose the dependable approach. No one drinks unknowingly. |
+| 4 | Two cairns stand where one should be, built by different hands in different years, pointing different ways. | Guide Read the ground: spend a day and learn the route. | WIS DC 12: success right path; failure one lost travel day. Both routes eventually reconnect. |
+| 5 | The clouds coming over the exposed slope are the flat dark color that means ice, not rain. | Shelter for the day; no travel, may Rest if already sheltered. | Continue: 2 Wagon HP damage and one traveler volunteers to take 1 HP protecting the canvas. No roll, known price. |
+| 6 | A trader has more heavy blankets than he can carry and almost no powder. He knows what the passes do in October. | Trade 40 rounds for Warm Bedding. | Keep supplies, ordinary progress; trader gives a truthful cold-weather warning freely. Unique trade once this chapter. |
 
----
+## 4 — South Pass
 
-### Segment 4: South Pass (Miles 700–900)
+*The continent's hinge. It is gentler than anyone expects, and afterward every river runs the other way.*
 
-_The Continental Divide. Biting winds, altitude sickness, and the psychological weight of the mountains._
+| d6 | Warning | Dependable approach | Risky approach and result |
+| --- | --- | --- | --- |
+| 1 | The ridge ahead is going white. You can no longer see the wagon that was in front of you an hour ago. | Wait one day in shelter, Rest permitted. | Group WIS DC 12: full success travel half miles; partial no miles; failure no miles and each participant loses 1 HP. |
+| 2 | Someone has been quiet all morning. Asked directly, they admit to a headache and to putting a hand on the wagon box twice to stay upright. | Rest today; Doctor identifies Exhaustion risk, no new condition. | Continue; that traveler makes CON DC 10 or gains 1 Exhaustion. No automatic bedridden result. |
+| 3 | The grade above is steeper than anything the wagon has taken loaded, and the teams are already blowing. | Cache one cargo bundle and pass safely today. | Group STR DC 12: full success pass; partial half miles and one team loses 1 HP; failure no miles and one team loses 2 HP. Can unload next day. |
+| 4 | Frost is forming on the canvas and the sun has not gone down yet. | Find/build shelter using weather rules, or use Warm Bedding for travelers. | Each unprotected traveler makes CON DC 10 or loses 1d4 HP. This replaces this night's ordinary cold effect, not an extra cold roll. |
+| 5 | Something is working the edge of the stock in the dark. The oxen have stopped eating and turned to face it. | Two able people spend the evening moving stock inside a rope enclosure; no special fatigue, ordinary watch still required. | WIS DC 12 to drive them off: success no loss; failure one team loses 2 HP. |
+| 6 | Good seasoned timber at a repair stand — and a sky that says you have until about dark to use it. | Stop for a Repair Day: a successful repair restores +2 HP. | Continue and carry one free replacement brace; spend it once later to reduce wagon damage by 2 HP. Cannot obtain both benefits. |
 
-| d10 | Event                     | Mechanical Effect                                                                                                                 |
-| :-: | :------------------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
-|  1  | **Unexpected Blizzard**   | Whiteout conditions. Must make camp immediately. Lose 2 days. Cold checks (CON DC 12) each day.                                   |
-|  2  | **Altitude Sickness**     | The thin air breaks the weak. The Doctor may attempt an INT check (DC 11) to recognize early symptoms and prescribe rest, granting the afflicted Advantage on their check. CON check (DC 11). Failure: **2 Exhaustion levels and bedridden** (exception to the daily Exhaustion cap). |
-|  3  | **Steep Grade Ascent**    | The oxen refuse to pull. STR DC 13 (Group) to manually push the wagon over the crest, or retreat and try another route (+3 days). |
-|  4  | **Night Freeze**          | Temperatures plummet. Each character makes a CON check (DC 12). Failure: take 1d6 cold damage. If the party is **Sheltered**, has **Warm Bedding**, or spends +0.5 lbs food per person tonight, the check is made with Advantage. |
-|  5  | **Wolf Pack Signs**       | Stalking the oxen. Someone must stay awake on watch all night (gain 1 Exhaustion level) or lose an ox.                            |
-|  6  | **Supply Drop**           | To make the ascent, the party MUST leave behind 200 lbs of weight (food, parts, or gear).                                         |
-|  7  | **Sturdy Pine Patch**     | Excellent timber for repairs. If the party stops to repair today, Field Repair with a spare part restores **1d6+7** Wagon HP (instead of 1d6+2). |
-|  8  | **Mountain Goat Sighted** | Difficult hunt (DEX DC 14). Success: gain **100 lbs** of food and mark **Warm Bedding**.                                          |
-|  9  | **The Divide Crossed**    | Water now flows west. A monumental milestone. Morale increases by 2.                                                              |
-| 10  | **Clear Vistas**          | A rare break in the clouds reveals the path ahead. Next 3 Navigation checks have Advantage.                                       |
+## 5 — Desert Crossing
 
----
+*Here the game stops being about danger and starts being about arithmetic. Gallons, days, miles. Do the sum in front of the players.*
 
-### Segment 5: Desert Crossing (Miles 900–1,100)
+| d6 | Warning | Dependable approach | Risky approach and result |
+| --- | --- | --- | --- |
+| 1 | The well on the map is a dry hole with a broken bucket beside it. Somebody has scratched an arrow and a number on the stones. | Add two travel days, refill at the detour spring at the end of the second; show remaining water first. | Doctor or Guide WIS DC 12 to find a seep: success refill now; failure consumes today, then take detour. No damage while carried water suffices. |
+| 2 | A brown wall is crossing the flats toward the road, and it is moving faster than the wagon can. | Wait sheltered for a day; Rest permitted. | Continue at half miles; each traveler DEX DC 10 to cover eyes, failure Disadvantage on their next physical check only. |
+| 3 | There is a dry rattle inside the rolled bedding. It stops when anyone moves, and starts again when they don't. | Spend half a travel day unloading carefully; no bite. | One traveler DEX DC 12: success full progress; failure snakebite exposure uses this failed check, apply condition once. |
+| 4 | The bung on the big barrel has worked loose and there is a dark stain spreading down the sideboard. | Stop half a day and secure it; no water lost. | Teamster STR DC 10 on the move: success no loss; failure lose 4 gallons, capped at carried water. |
+| 5 | The heat has shrunk the wood out of the iron. The rims are turning loose on the wheels. | Use one part and Repair Day; normal repair benefit. | Use 4 gallons water and half travel miles to reseat them, no roll. If neither is available, stop and try ordinary Field Repair; success restores usability, failure costs the day only. |
+| 6 | Yesterday's meat has gone slick and the flies found it before you did. | Cook it now, travel half miles; that fresh batch lasts through tomorrow evening. | Keep moving and discard only the expired/threatened fresh batch; cured food unaffected. If no fresh food, ordinary progress. |
 
-_The arid wastes beyond the pass. Heat, dehydration, and alkaline dust._
+## 6 — The Snake River
 
-| d10 | Event                  | Mechanical Effect                                                                                          |
-| :-: | :--------------------- | :--------------------------------------------------------------------------------------------------------- |
-|  1  | **Dried Up Well**      | The marked spring is dust. No water. The Doctor may attempt an INT check (DC 11) to identify signs of subsurface moisture and direct digging; success yields enough water to avoid penalties. Otherwise, everyone takes 1 level of Exhaustion and 1d4 damage. |
-|  2  | **Dust Storm**         | Choking, burning grit. CON DC 12 or suffer eye/lung irritation (Disadvantage on WIS/DEX for 2 days).       |
-|  3  | **Rattlesnake Strike** | A snake in the camp gear. This is a Snakebite exposure using DEX DC 11 as the avoidance check instead of CON resistance. Failure: contract **Snakebite**, take 1d6 damage immediately, and suffer the Snakebite disease effects (see Disease rules in `seed.md`). |
-|  4  | **Sun Madness**        | The heat breaks morale. CHA DC 12 to stop a physical fight over water rations. Failure: Morale drops by 1. |
-|  5  | **Warped Wood**        | The extreme dryness shrinks wagon wheels. They loosen dangerously. 1 day lost to soak/repair them.         |
-|  6  | **Spoiled Meat**       | Heat ruins stored game. Lose half of all current food reserves.                                            |
-|  7  | **Desert Hare**        | Scrawny but catchable. Easy hunt (DC 8) yields 10 lbs of stringy meat.                                     |
-|  8  | **Oasis**              | A miraculous seep of water and shade. Refill water to full. If the party takes a Rest Day here, each character heals 2d4+2 HP (instead of 1d4+1) and each ox team recovers 2 HP. |
-|  9  | **Cool Cloudy Day**    | The sun hides. If the party travels today, halve food consumption and (if tracked) water consumption (round up to the nearest 0.5). |
-| 10  | **Finding the River**  | You strike the Snake River a day early. Huge relief. Morale +1, Exhaustion reduced by 1.                   |
+*Water you can hear for miles and cannot get down to. The river is the whole chapter's joke: everywhere, and no help at all.*
 
----
+| d6 | Warning | Dependable approach | Risky approach and result |
+| --- | --- | --- | --- |
+| 1 | The shelf road narrows above the fast water. Two wheels' width, and a long way down on the outside. | Unload one cargo bundle, carry it separately: lose one travel day but keep it. | Group DEX DC 12: full success pass; partial lose 2 Wagon HP; failure lose 4 Wagon HP and one cargo bundle, pass. |
+| 2 | The direct ford is standing white water. You can see the line of it from a quarter mile back. | Hire a guide for $10, cross safely with today's travel. | Scout half a day then group WIS DC 12: full success cross; partial cross with 2 Wagon HP damage; failure stay this bank, one team loses 2 HP. |
+| 3 | There is a camp upstream of this one, and whatever they have been doing has reached the water here. | Move to a marked spring: half miles. | Doctor INT DC 10 to organize safe collection: success no delay; failure choose move or two travelers each resist dysentery CON DC 10. |
+| 4 | Someone has left a rope down into the ravine. The anchors it is tied to are older than the rope. | Spend a part and a day rebuilding anchors, guaranteed passage; no repair HP reward. | Extended STR/DEX DC 12: success pass; failure 1d6 Wagon HP damage and no progress today. Safer option remains tomorrow. |
+| 5 | A yoke has opened a split along the grain. It will hold today. Probably. | Spend a part, half miles, no damage. | Teamster STR DC 10 to carve a replacement: consumes day; success repaired, failure try again tomorrow or spend part. |
+| 6 | The shallows below the bend are dark with fish, thick enough to see from the road. | Hunter Take Aim available with a full day's effort. | Fish DEX DC 10 with half travel miles, no ammo: success 30 lbs fresh food; failure none. This opportunity lasts today. |
 
-### Segment 6: The Snake River (Miles 1,100–1,600)
+## 7 — The Last Mountains
 
-_Following the canyons. Difficult terrain, rushing rapids, and the final stretch of hostile geography._
+*You are close enough now that turning back is not a plan. Winter knows this too.*
 
-| d10 | Event                    | Mechanical Effect                                                                                                  |
-| :-: | :----------------------- | :----------------------------------------------------------------------------------------------------------------- |
-|  1  | **Overturned Wagon**     | The trail hugs a cliff. A slip costs the wagon 1d10 HP and dumps 1d4 × 50 lbs of supplies into the river.            |
-|  2  | **Rapids Ford**          | Forced to cross deep, fast water. High drowning risk. The Guide must make a WIS check (DC 13) to find the safest crossing point; success grants Advantage on the group check. **Group DEX check (DC 13).** Failure: the party is swept downstream — lose 1 travel day, every character takes **1d4 damage**, and 1 ox team takes **2 HP damage**. |
-|  3  | **Dysentery Outbreak**   | The water is foul. The Doctor may attempt an INT check (DC 11) to identify contaminated water sources before anyone drinks; success means the party avoids the outbreak entirely. Otherwise, roll 1d4 party members exposed to Dysentery; each makes a CON check (DC 12) to resist or contracts Dysentery. |
-|  4  | **Steep Ravine Descent** | Must lower the wagon by ropes. STR DC 14 (Extended: 3 successes before 2 fails). Failure: Wagon takes **2d10 damage**. |
-|  5  | **Broken Yoke**          | The strain breaks the ox tackle. Stop for 1 day to carve a new one: STR check (DC 11). Failure: lose 1 additional day, or spend 1 spare part to finish the job. |
-|  6  | **Stolen Stock**         | Stock thieves in the night. WIS (Perception) DC 13 to spot them. Failure: Lose $50 worth of goods (valued at Independence base prices) or 1 ox team. |
-|  7  | **Salmon Run**           | The river is thick with fish. A single DEX DC 8 check yields 100 lbs of food.                                      |
-|  8  | **Ford Operator**        | A local offers to guide you across the treacherous ford for $10. Ensures safe crossing.                            |
-|  9  | **Abandoned Cache**      | Find an intact barrel of salted pork buried by a previous party. (150 lbs food).                                   |
-| 10  | **Smooth Sailing**       | The river banks widen, the trail flattens. A rare easy stretch. Multiply miles traveled today by 2 (round up).      |
+| d6 | Warning | Dependable approach | Risky approach and result |
+| --- | --- | --- | --- |
+| 1 | The wind over the saddle has changed direction and gone knife-thin. Whatever is behind it arrives tonight. | Use sheltered alternate trail, add one travel day. | Cross now; each unprotected traveler CON DC 12 or loses 1d4 HP. Bedding/shelter protects normally. |
+| 2 | A store barrel has taken water somewhere back along the road, and nobody noticed until now. | Half miles to salvage it; lose 10 lbs food, capped at stores. | Keep full pace; lose one food bundle (50 lbs maximum). Never set all food to zero irrespective of quantity. |
+| 3 | Three trunks are down across the road, and they are green — they came down recently, and they came down together. | Spend one labor day clearing them, no roll. | Cache one cargo bundle and take a narrow bypass, full progress. |
+| 4 | The axle lets go with a crack at the top of the descent, with the whole grade still below you. | Spend a part and Repair Day to replace it; restore normal Jury-rig/repair HP too. | Cache a bundle and Teamster STR DC 12 to brace it: success half miles; failure no miles and 1d6 Wagon HP damage. Repair remains possible. |
+| 5 | The blazes on the trees end where the snow starts. Past that the road is a guess. | Guide Read the ground: spend one day, find the route. | WIS DC 14: success progress; failure one lost travel day. A learned Weather Eye can inform the choice before committing. |
+| 6 | One of the teams is standing with its legs braced and shaking, and it has not eaten. | Rest today; heal it normally. | Keep moving: that team loses 3 HP, and becomes lame until Rest. Death occurs only if HP reaches 0. |
 
----
+## Making a new event
 
-### Segment 7: The Blue Mountains (Miles 1,600–2,000)
+The craft is in the first sentence. Give the players something they can see, hear, or smell before they have to decide anything — a sound the wagon has started making, a color the sky has turned, a person walking back down the line toward you. If they cannot picture it, they are not making a choice; they are guessing at a rule.
 
-_The final hurdle before the valley. Starvation, winter snows, and the brink of physical collapse._
-
-| d10 | Event                          | Mechanical Effect                                                                                       |
-| :-: | :----------------------------- | :------------------------------------------------------------------------------------------------------ |
-|  1  | **The Bitter Cold**            | Winter is here. CON DC 13 every day. Failure means 1d4 cold damage and 1 Exhaustion level.              |
-|  2  | **Starvation Sets In**         | The final stores are gone or spoiled; set Food to 0. Use the standard Starvation rule in `seed.md` immediately and each day until food is secured. This does not stack with starvation checks already in progress. |
-|  3  | **Fallen Trees**               | A storm dropped pines across the trail. Stop for 2 days to chop through them.                           |
-|  4  | **The Axle Snaps**             | The final straw. The wagon is dead. Do you repair it (needs parts/str) or abandon it and walk the rest? |
-|  5  | **Lost in the Pines**          | The trail vanishes under snow. Guide must make WIS DC 14 or wander aimlessly for 3 days.                |
-|  6  | **Oxen Collapse**              | The beasts can't go further. 1 team dies immediately.                                                   |
-|  7  | **Hunter's Luck**              | You track an elk in the deep snow. DEX DC 12. Success means 200 lbs of life-saving meat.                |
-|  8  | **Descend below the Snowline** | You break through the clouds. The air warms. Remove 1 level of Exhaustion from all.                     |
-|  9  | **Rescue Party**               | Columbia River locals come up the trail with fresh teams and guides. For the remainder of Segment 7, multiply miles traveled by 1.5 (round up). |
-| 10  | **Sight of the Valley**        | You see the Willamette Valley spread out green and gold below you. Morale +3. You're going to make it.  |
+Write a visible warning, one dependable cost, one uncertain approach, full/partial/failure if a group roll, and a way to continue after failure. Name any time, damage, supplies, or obligations precisely. Avoid a hidden later penalty that would have changed the decision. Use an NPC's return or a quiet benefit after two consecutive costly events; replace the next event rather than adding more rolls.

@@ -1,71 +1,43 @@
-# 3. Settlements & Trading
+# 3. Forts, bargaining, and work
 
-The Oregon Trail is punctuated by military forts and civilian trading posts. These are safe havens, but they are also monopolies. The Sutlers (store owners) know you have nowhere else to go, and their prices reflect the brutal cost of fraught logistics.
+*Walls, a posted price list, and someone who wants something from you. A fort is not safety — it is a day when your problems have prices.*
 
-### The Dynamics of a Fort
+The forts are where the journey briefly becomes a world with rules again. Mail moves. Strangers have names and jobs. You can buy your way out of a problem, if you brought enough, and you can find out exactly how much of your margin is left. Everyone at a fort wants something; the useful question is whether what they want is something you were carrying anyway.
 
-When the party arrives at a Fort (e.g., Fort Kearny, Fort Laramie, Fort Hall, Fort Boise):
+Version 0.9. These are fictional game markets. All amounts are design values, not historical quotations.
 
-1. **Safe Harbor:** Morale immediately increases by 1. For as long as the party stays, they do not roll on the daily Event Tables. A day spent trading or gathering information at a fort is a **non-travel day** (1 lb food/person). The party may also choose to take a **Rest Day** at the fort (0.5 lbs food/person), which grants full Rest Day benefits (healing, Exhaustion removal, Camp Actions) as described in `seed.md`. Trading and rest are separate days — the party cannot do both on the same day.
-2. **Information Gathering:** Characters can mingle. A successful CHA (Persuasion) or WIS (Insight) check against DC 10 reveals rumors about the trail ahead (granting Advantage on navigation or hazard prep for the next segment).
-3. **The Trading Post:** The main event. The party reviews their inventory and talks to the Sutler.
+At arrival, reveal stock, prices, a named trader's demand, and the next known resupply/water point. No roll to learn posted prices or buy offered goods. First arrival at a chapter endpoint grants its one Morale; intermediate Fort Bridger does not give an extra endpoint award. At forts no random trail events occur, shelter is available, and conditions still progress. Trade takes a day at 1 lb food/person; Rest is a separate day at 0.5 lb/person.
 
-### The Pricing Multipliers
+| Fort | Marker | Multiplier | Bargain DC | Concrete demand |
+| --- | ---: | ---: | ---: | --- |
+| Kearny | 300 | 1.5× | 10 | Trader Ada Vale wants a damaged delivery cart repaired: one labor day, guaranteed with a Teamster. |
+| Laramie | 500 | 2× | 12 | Clerk Owen Bell wants an accurate crossing report naming where the queue stands; information earned in chapter 2 suffices. |
+| Bridger | 850 | 2.5× | 12 | Trader Ruth Cole wants a letter carried to Nessa at Fort Hall; accepting the specific promise meets the demand. |
+| Hall | 1,100 | 3× | 14 | Nessa wants a missing shipment traced: bring a report from chapter 5 or spend one investigation day locally. |
+| Boise | 1,600 | 4× | 14 | Wheelwright Eli Ward needs one labor day helping repair a shelter roof; safe work, no roll. |
 
-Prices skyrocket the further West you go.
+NPCs and demands are invented. Unavailable information always has a printed alternative; no player must guess the GM's preferred line of dialogue.
 
-| Location         | Price Multiplier (vs Independence) |
-| :--------------- | :--------------------------------- |
-| Independence, MO | 1x (Base)                          |
-| Fort Kearny      | 1.5x                               |
-| Fort Laramie     | 2x                                 |
-| Fort Bridger     | 2.5x                               |
-| Fort Hall        | 3x                                 |
-| Fort Boise       | 4x                                 |
+## Stock and buying
 
-_Base Prices (Independence):_
+A fort is not a warehouse. It has what it has, the next wagon behind you wants it too, and leaving and coming back does not refill the shelves.
 
-- Food: $0.50 / lb
-- Medicine: $4 / dose
-- Spare Parts: $6 / part
-- Ammunition: $2 / 20 rounds
-- Ox Team: $32
-- Extra Water Barrel (10 gal capacity): $3
-- Warm Bedding (blankets/robes): $30 (party bundle)
+Each fort has 300 lbs cured food, 8 medicine, 4 parts, 100 ammunition, 2 healthy ox teams, 4 empty extra barrels, and 1 Warm Bedding bundle available **once per visit**. Record purchases; leaving and returning does not reset stock within the chapter. Greater quantities require a stated one-week delivery and prepayment, announced before ordering. Water refill is free, no separate Trade Day if only refilling.
 
-_Example: At Fort Hall (3x multiplier), a dose of Medicine costs $12._
+Base prices: food $0.50/lb; medicine $4/dose; parts $6; ammo $0.10/round; ox team $32; extra 10-gallon barrel $3; bedding $30. Multiply by the fort rate, then the discount, round the final bill to cents. Included starting tools can be replaced as a set for $10 base if lost in a named event.
 
-### The Negotiation Mini-System & Scarcity Demands
+One bargain roll per visit: choose CHA or INT against the listed DC. Meeting the demand gives **−4 DC**. Success: 15% off purchases today. Beat DC by 5: 25% off instead. Failure: posted prices, no insult or morale damage. Do not roll to find out if an accepted price is honored. An unfulfilled accepted delivery creates an obligation, not a secret price change.
 
-Prices are not strictly fixed, but Sutlers are hard bargainers. Rather than a single pass/fail check, haggling is a puzzle based on local supply and demand.
+Barter surplus at **half local posted value**, no discount on what the trader buys. Use the credit against the discounted purchase bill. Fractions of supplies are allowed for food; parts, medicine, teams, and barrels are whole units. Fresh food accepted only if still edible, at half cured food's base value before the usual resale calculation. NPCs are not obligated to buy limitless game: maximum food buyback 50 lbs per visit. No self-financing buy/sell loop.
 
-**The Demand:**
-Before any rolls are made, the GM determines what the Sutler specifically wants or lacks.
+## Work and rescue
 
-- _Example Demands:_ Whiskey, fresh newspapers from the East, a complete set of blacksmith tools, or news of a specific emigrant party ahead of them.
+Money runs out before the road does. When it happens, the answer is a week of somebody else's labor — and everyone at the table should hear which week, and whose.
 
-**The Negotiation Check:**
+One able traveler can earn **$3 × fort multiplier per labor day**, guaranteed. At most two travelers may work on a given day. Those working consume ordinary non-travel food and get no Rest recovery/actions; others may individually rest. Party travel is zero. Deduct each person's own day's ration; do not grant whole-party healing because one person rests.
 
-- The negotiator makes a **CHA (Persuasion)** or **INT (Appraisal)** check.
-- The Base Difficulty Class (DC) depends on the Fort:
-  - Fort Kearny: DC 12
-  - Fort Laramie: DC 14
-  - Fort Bridger: DC 15
-  - Fort Hall: DC 16
-  - Fort Boise: DC 18
-- **Meeting the Demand:** If the party can roleplay offering the requested information, or physically trade the exact requested item from their inventory, the DC of the negotiation check drops automatically by **-5**.
+A stranded party can accept **one rescue contract per campaign**: a local carrier provides passage to the next fort for the travelers and up to 100 lbs supplies, in exchange for a clearly named future seven-day labor obligation. No wagon or teams are conjured. Advance seven days, paying no food from the party pool (included passage); apply condition recovery but no random events or Rest healing. An incapacitated traveler receives ordinary care (1 HP/day, no Wound recovery); substitute players keep acting in conversation. This escape route preserves the story while sacrificing equipment and time.
 
-**Outcomes:**
+## Worked purchase
 
-- **Critical Success (Exceed DC by 5+):** Unheard of generosity. The Sutler takes a liking to you. **Receive a 25% discount** on all purchases, or he buys your surplus goods at 1.5x value.
-- **Success (Meet or exceed DC):** A fair haggle. **Receive a 15% discount** on your total bill.
-- **Failure (Miss DC by 1 to 4):** The Sutler is unimpressed but polite. "Price is the price, friend." **Pay full multiplier price.**
-- **Critical Failure (Miss DC by 5+ or roll a natural 1):** You offended the trader to the point of dismissal. **Success at a Cost:** The party can still secure the base goods they need to survive, but they must beg, plead, or endure public humiliation from the Sutler. The trade happens at full price, but the party's **Morale drops by 1**.
-
-### Bartering Goods
-
-Cash is king, but goods hold value. If the party is out of dollars, they can trade physical items.
-
-- **Ammunition & Medicine** hold their value perfectly and can be traded directly for food at 1:1 monetary value.
-- **Spare Parts** are extremely valuable out West. At Fort Hall or Boise, trading 1 spare part (wheel/axle/tongue) can net $30-$50 worth of food.
-- **Labor:** Stranded? A character can work at the fort for a week. Roll a STR or INT check (DC 11). Labor is paid according to the local gold-rush economy scale. Multiply the base wage ($15 success / $5 failure) by the **Fort's Price Multiplier**. _(e.g. Fort Boise is a 4x multiplier, meaning a successful week of labor earns $60)_. This costs the party 7 days of travel time but provides a vital lifeline to desperate parties.
+At Laramie, Owen accepts the crossing report, reducing DC 12 to 8. Mae rolls INT total 10: 15% discount. Buying 40 lbs food ($20 base), 2 medicine ($8), and 1 part ($6) costs $34 × 2 × 0.85 = **$57.80**. Selling 20 rounds first provides $2 × 2 × 0.5 = **$2 credit**, so cash due is **$55.80**. Deduct the sold ammo, mark the fort's reduced stock, and pay the Trade Day's four-person food ration separately.
