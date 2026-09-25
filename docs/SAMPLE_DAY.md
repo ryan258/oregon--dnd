@@ -1,166 +1,51 @@
-# Worked Example: One Trail Day
+# Worked procedures — v0.9
 
-### Segment 3, The Rockies Approach — Day 42 (~Mile 580)
+Six moments played out in full, so the arithmetic is never the thing slowing a table down. Read them when a rule feels ambiguous, not before your first session.
 
-This walkthrough traces a single trail day from morning stance declaration to end-of-camp audit. Every mechanical interaction is annotated. Use this as a reference when a rule question comes up mid-session, or read it before a first session to see how the systems actually flow together.
+These are constructed examples, not observed playtest results. Use the [core](../seed.md) when resolving a new interaction.
 
----
+## 1. A river decision that costs something
 
-## The Party Entering This Day
+Use The River Between's standalone snapshot: June 2, marker 340, food 140 cured, wagon 22, three teams 8 HP each, money$25, medicine 4, parts 2. Weather Clear and Mild. All four travelers are healthy, full 9 HP, Exhaustion 0.
 
-| Character | Role | HP | State | Key Modifier |
-|---|---|---|---|---|
-| Eliza Marsh | Guide | 9/9 | Healthy | WIS +2, CON +0 |
-| Thomas Pruitt | Doctor | 7/9 | Exhaustion 1 | INT +1, WIS +1 |
-| Cal Marsh | Hunter | 4/8 | Wounded | DEX +2, STR +1 |
-| Mae Sorensen | Teamster | 10/10 | Healthy | STR +3, CON +1 |
+The group chooses the upper ford immediately. Before dice the GM reads DC 12 and all three outcomes. Players make DEX/WIS checks: Eliza total 15, Thomas 8, Cal 13, Mae 9. **Two successes among four is partial**, not full success. They cross; wagon loses 2 HP. They choose losing Mae's tool chest instead of a volunteer taking 1d4 damage. Mae decides her dream survives but she must borrow tools to begin it. Ordinary wagon tools remain; personal cargo and included tools are distinct.
 
-**Resources:**
+The crossing uses one ordinary Travel Day: **4 lbs food**, no extra generic river strain, no second event. End state: marker 358, food 136, wagon 20, teams 8/8/8, $25, medicine 4, parts 2. June 3 is next morning. Cal's Boundary influenced the decision; if it created a meaningful personal complication, award his available Inspiration award, but he cannot hold more than one. Mae may also qualify through her Promise's cost; no automatic morale penalty for an internal promise's change. If it was a specific NPC promise and that person learns it was broken, apply the core rule then.
 
-| | |
-|---|---|
-| Food | 180 lbs |
-| Medicine | 2 doses |
-| Ammunition | 60 rounds |
-| Wagon HP | 18 / 30 |
-| Ox Team A | 6 / 10 HP |
-| Ox Team B | 9 / 10 HP |
-| Morale | 6 (no modifier) |
-| Money | $45 |
-| Mile marker | ~580 of 2,000 |
+Everyone participates in the far-bank conversation. The group can continue or Rest tomorrow; a failure would instead have left them on the near bank with the ferry still available.
 
-**Context:** It's mid-July. Cal took a hit in the rapids two days ago and hasn't had a Rest Day to recover. Thomas has been pushing through illness and is one bad check away from Exhaustion 2. Wagon HP is below half — Mae has been watching it nervously. Fort Bridger is roughly 270 miles out.
+## 2. A Rest Day with treatment and preservation
 
----
+Separate state: July 20, marker 950, hot/dry desert, water 20/60, food 136 cured +40 fresh (caught July 18, expires after July 21 evening), wagon 20/30, teams 8/8/8, medicine 4, parts 2. Cal has HP 4/9, Exhaustion 1, dysentery with 3 marks and damage due today. Others are full HP, no wounds. A sheltered spring is not present; they are resting under canvas with adequate carried water. No random event is due because this is the second day of an already generated delay that permits Rest.
 
-## 1. Morning Check-In
+- Thomas uses **Stabilize** on Cal: medicine 4→3; consumes Thomas's Camp Action and daily treatment. Dysentery's 1 HP damage today is prevented. At day's end remove 2 marks, leaving 1; no dysentery recovery roll tonight.
+- Mae uses **Jury-rig**: parts 2→1, wagon 20→26. Her free upkeep adds 1, ending 27. No second repair check is allowed today.
+- Cal uses **Smoke & Salt**, WIS roll 11: all 40 fresh food becomes cured. Eliza Scouts, WIS total 12, earning the stated next-navigation benefit.
+- Pay 2 lbs food, leaving **174 cured, 0 fresh**; hot weather uses 4 gallons, leaving 16. Nobody gains Exhaustion from mere low stores.
+- Cal's healing die is 3: heals 4 HP, ending 8/9; fed rest removes Exhaustion 1→0. Other healing clamps at max. No one has a Wound state to check.
+- All teams heal 1 to 9; Mae's Ox Whisperer adds 1 to team A, so **10/9/9**.
+- Evening: Write or remember grants Inspiration to a character currently lacking it. No Morale increase from that activity, and no extra food cost.
 
-The GM rolls 1d6 on the **High Summer weather table** (July, Segment 3): **result: 3 — Clear / High Altitude.**
+Final changes: food 174 cured, water 16, wagon 27, medicine 3, parts 1, teams 10/9/9, Cal 8 HP/Exhaustion 0/dysentery 1 mark. July 21 begins. The stabilization benefit expired; Cal needs the remaining mark cleared and may take disease damage tomorrow unless treated again.
 
-> _Cold nights, burning sun. Each night, every character makes a CON check (DC 9). Failure: 1d4 cold damage. Sheltered characters or those with Warm Bedding roll with Advantage._
+## 3. A three-day leg, without three narrated scenes
 
-This condition imposes a nightly check — it's hazardous. **Montage is not available.** The party will roll the day individually.
+Separate healthy state: July 10, marker 910, hot/dry weather newly rolled (three days remaining), two usable teams, food 100 cured, water 60, no wounds or conditions. Standard stance. Event selector 6 gives quiet progress.
 
-**Stance decision:** The players talk it over. Cal is Wounded (disadvantage on STR and DEX checks). Team A is at 6 HP — one bad river or Hard Travel day could drop it to 4 or lower. They don't want to risk Reckless, but they're also 270 miles from resupply and watching their food.
+Three days: 18 +18 +18 = **54 miles**, food 4 ×3 = **12 lbs**, water 4 ×3 = **12 gallons**. End marker 964, food 88, water 48; next morning July 13, new weather due. No hard-travel strain, no hidden Travel check. A conversation can happen once during the montage; no extra event for talking.
 
-They choose **Cautious** (8–10 miles). Under the current rules, on any Cautious day the GM rolls the Event Table twice and applies the milder result.
+If a prepared obstacle were at 950, day 3 would end there after 14 miles, not 964; remaining miles are not banked. If day 1's event revealed a major choice, stop after resolving day 1 and leave the other two days unspent. A leg does not prepay healing, time, or progress.
 
----
+## 4. Damage at zero and immediate participation
 
-## 2. The Day's Action
+A traveler with 2 HP takes 4 damage: HP becomes 0 and Healthy→Wounded, no extra step for overflow. Before healing, a separate 1-HP injury advances Wounded→Gravely. Another distinct damage instance while still 0 would be fatal. An able companion instead uses their action to stabilize: HP 1, still Gravely, still unable to act.
 
-**Event roll — Cautious (GM rolls twice):**
+The player immediately takes the reserve traveler for the next scene. The patient may be cared for in an allied wagon (agreed, so four people remain in the active wagon) or ride with the group (explicitly count five bodies for food). Only the four active slots provide actions and role benefits. The patient can still have dialogue and a future. No one pays for permission to play.
 
-- First roll: **3** → Ox injury (one team loses 2 HP)
-- Second roll: **6** → Thief in camp (lose 1d6 × 10 lbs food or 1d4 medicine, unless WIS DC 12)
+## 5. Late travel and water warning
 
-The GM compares the two. Team A is already at 6 HP — a 2-HP loss pushes it to 4, one bad event away from collapse. The thief event at least has an avoidable check. **The GM applies the thief result as the milder outcome.**
+One usable team, two travelers at Exhaustion 2, Standard stance, clear weather: 18 ×0.75 ×0.5 =6.75, rounded once → **7 miles/day**. With 40 gallons in heat, water covers 10 days but only 70 miles at this pace. A 200-mile stretch is not safe simply because someone bought two barrels. Show the estimate before departure, then discuss rest, more water, another team, or the guaranteed-source detour.
 
-**Resolving the thief:**
+## 6. A peaceful disagreement
 
-Eliza (the Guide, WIS +2) rolls to catch the figure before they take anything. Simple WIS check, DC 12.
-
-- d20 → **11** + WIS (+2) = **13** ✓ — Success.
-
-Eliza spots a gaunt man lifting the flour barrel lid and shouts. He runs. Nothing is taken. The party shaken but intact.
-
-**Travel:** The party moves **9 miles** at Cautious pace. No ox team losses (both alive), no speed modifiers active. Mile marker advances to **~589**.
-
----
-
-## 3. Resource Consumption
-
-- **Food:** 4 people × 1 lb/day (Cautious is standard consumption) = **−4 lbs** → **176 lbs remaining**
-- **Oxen HP:** No Hard Travel today — no strain damage.
-- **Disease:** No active diseases; no daily effects to apply.
-
----
-
-## 4. Camp
-
-### Teamster's Upkeep (automatic)
-
-Mae doesn't need to spend her Camp Action on this. She spends an hour tightening joints and re-greasing axles. **Wagon HP: 18 → 19.** No check, no parts consumed.
-
-### Thomas's Camp Action — Foraging
-
-Food is at 176 lbs. At 4 lbs/day, that's 44 days of standard consumption. It's not a crisis yet, but Thomas wants to cushion the supply before they hit the high passes. He tries to forage roots and edible plants from the rocky slope nearby.
-
-**Foraging: WIS check, DC 10.**
-
-Thomas has **Exhaustion 1 — he rolls at Disadvantage** (rolls two d20s, takes the lower result).
-
-- d20 rolls: **12** and **4**. Takes the lower: **4** + WIS (+1) = **5** ✗ — Failure.
-
-Thomas comes back empty-handed, breathing hard. The exhaustion shows. The rocky terrain doesn't help.
-
-> _This is the cascade effect of Exhaustion. It doesn't just hurt the character — it costs the party resources they were counting on._
-
-### Mae's Camp Action — Preventative Maintenance
-
-Mae is worried about tomorrow. The wagon at 19 HP is still fragile. She spends her action on **Preventative Maintenance** (STR DC 10).
-
-- d20 → **14** + STR (+3) = **17** ✓ — Success.
-
-The next "Wagon Breakdown" event or rough terrain result is automatically nullified or its damage halved. Mae marks this on the party sheet.
-
-### Night CON Checks (Clear / High Altitude, DC 9)
-
-Everyone rolls. The party has no Warm Bedding (they passed on the trapper trade in Segment 2). They're in the open — no canyon or fort nearby. Eliza attempts a Shelter check first.
-
-**Shelter — WIS DC 12** (open/rocky terrain):
-- d20 → **7** + WIS (+2) = **9** ✗ — Failure. The rocky slope offers no useful cover tonight.
-
-The party sleeps exposed. Each character rolls CON DC 9.
-
-| Character | Roll | Modifier | Total | Result |
-|---|---|---|---|---|
-| Eliza | 12 | +0 | 12 | ✓ No damage |
-| Thomas | 6 *(lower of 6, 14 — Disadvantage from Exhaustion 1)* | +0 | 6 | ✗ Takes 1d4 cold damage → **3 damage** |
-| Cal | 11 | +0 | 11 | ✓ No damage |
-| Mae | 15 | +1 | 16 | ✓ No damage |
-
-Thomas takes 3 cold damage. **HP: 7 → 4.**
-
-> _Thomas is now at 4 HP. If he drops to 0, he goes Wounded. He's also still at Exhaustion 1. One more bad day without rest could leave him and Cal both impaired — the Doctor and the Hunter, the party's food and medicine systems._
-
----
-
-## End-of-Day Audit
-
-| Tracker | Start of Day | End of Day | Change |
-|---|---|---|---|
-| Mile marker | ~580 | ~589 | +9 |
-| Food | 180 lbs | 176 lbs | −4 |
-| Wagon HP | 18 / 30 | 19 / 30 | +1 (upkeep) |
-| Ox Team A | 6 / 10 | 6 / 10 | — |
-| Ox Team B | 9 / 10 | 9 / 10 | — |
-| Thomas HP | 7 | 4 | −3 (cold) |
-| Cal (Wound Track) | Wounded | Wounded | — (no Rest Day) |
-| Morale | 6 | 6 | — |
-
----
-
-## The Decision Hanging Over Tomorrow
-
-The party averted the thief, kept both ox teams intact, and made cautious progress. Mae's Preventative Maintenance gives them insurance on the next breakdown roll. But:
-
-- **Thomas** is at 4 HP, still Exhaustion 1, with another cold night coming.
-- **Cal** is still Wounded and can't attempt Wound Track recovery until they take a Rest Day.
-- They are **270 miles from Fort Bridger** with 176 lbs of food — enough, but not comfortable if they start losing travel days to forced stops.
-
-**The question:** Take a Rest Day tomorrow to let Thomas and Cal recover — costing only 2 lbs of food (0.5 lbs/person) but losing a full day of progress — or push Standard and hope Thomas holds together until Fort Bridger?
-
-This is what the trail actually costs. Not the dramatic thief or the cold check, but the compounding arithmetic of two people getting worse at the same time, 270 miles from anywhere.
-
----
-
-## Notes for the GM Running This Scene
-
-**On the thief resolution:** The GM picked the thief over the ox injury because it was avoidable, not because it was automatically safer. If the party had been at 10/10 on both teams, the ox injury might have been the milder call. "Milder" is a judgment, not a formula.
-
-**On Thomas's Foraging failure:** Don't soften it. The Exhaustion disadvantage is doing real work — it's the mechanical expression of a man who has been asking too much of himself. Let the failure land.
-
-**On the Shelter check:** The failed Shelter check is a quiet pressure point. If Eliza had succeeded, everyone would roll the night CON checks with Advantage. It's easy to forget to call for it. Get in the habit.
-
-**On Morale:** Nothing moved Morale today. No death, no critical wagon damage, food didn't drop below 100 lbs. A quiet day on Morale is its own kind of win.
+A trader offers 40 lbs cured food for 2 medicine. The party proposes 40 rounds instead of 80. The trader is open to a smaller sale but will not lower the full quantity's price. State terms: 20 lbs for 40 rounds, no roll. If they instead make a plausible new offer the trader is open to, CHA DC 10 can settle that offer. Failure leaves the original terms; the party can decline. No insult roll, standoff, or automatic violence follows.

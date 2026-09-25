@@ -1,18 +1,42 @@
-# Docs
+# Oregon Trail RPG packet — v0.9
 
-- `QUICKSTART.md`: The fastest way to get the game to the table (setup + core loop + key numbers).
-- `glossary.md`: Definitions of all abbreviations, TTRPG jargon, and game-specific terms.
-- `sheets/`: Printable templates for play.
+> **What are we willing to spend, and what do we refuse to lose, to get these people to Oregon?**
 
-## Sheets
+Everything needed to run the journey: one night of it, or all seven chapters.
 
-- `sheets/character_sheet.md`: One per character.
-- `sheets/party_wagon_sheet.md`: One per group (resources, wagon, oxen, morale).
-- `sheets/trail_log.md`: Daily log pages.
-- `sheets/fort_trading_sheet.md`: Use each time the party reaches a fort/trading post.
-- `sheets/gm_reference.md`: A compact rules reference for the GM.
+[Single-file reading and printing edition](handbook.html).
 
-## Printing
+## Play tonight
 
-These are plain Markdown so you can print from your editor, or render to PDF and print.
+- [Quickstart](QUICKSTART.md) — rules enough to start arguing about a river
+- [The River Between — introductory adventure](RIVER_CHAPTER.md) — a posted price, a stranger short of it, and three ways across
+- [Four pregenerated travelers](PREGENS.md) — filled in, ready, already carrying something
+- [Session zero and boundaries](SESSION_ZERO.md) — the five minutes before the wagon leaves
+- [GM reference](sheets/gm_reference.md) — the whole game on one page
 
+## Continue the journey
+
+- [Core rules](../seed.md) — how the road charges you, and what it cannot take
+- [Seven-chapter campaign](CAMPAIGN.md) — plains, rivers, stone, sand, and the last decision
+- [Route map](TRAIL_MAP.md) — the line from Independence, and four clocks nobody hides
+- [Recurring people](PEOPLE.md) — three travelers who remember what you did
+- [Arrival and endings](ARRIVAL.md) — the date, the graves, and what each person does next morning
+- [Solo procedure](SOLO.md) — four voices, one expedition
+
+## At the table
+
+- [Character sheet](sheets/character_sheet.md)
+- [Party and wagon sheet](sheets/party_wagon_sheet.md)
+- [People and promises ledger](sheets/people_ledger.md)
+- [Trail log / pause-resume record](sheets/trail_log.md)
+- [Fort trading sheet](sheets/fort_trading_sheet.md)
+- [Worked procedures](SAMPLE_DAY.md)
+- [Glossary](glossary.md)
+
+## Review and development
+
+- [Playtest protocol](PLAYTEST.md)
+- [Historical framing and sources](HISTORY.md)
+- [Project roadmap](../roadmap.md)
+- [Revision status](UPDATE-IDEAS.md)
+- [Change record](../CHANGELOG.md)
