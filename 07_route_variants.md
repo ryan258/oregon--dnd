@@ -4,7 +4,7 @@
 
 This is where the campaign collects its debts. Every promise still open, every favor earned and unspent, every bundle somebody insisted on keeping since Independence — it all comes to the same table at The Dalles, and the party divides what arrives from what does not. Show both routes in full before anyone pays for either. The last stretch of this journey should be decided by people who understood the offer, not by people who guessed.
 
-Version 0.9. Use the fictionalized [map](docs/TRAIL_MAP.md). Costs are game values. The GM states them before commitment. Route promises may be incomplete, but the Guide can investigate, and a false claim must have discoverable evidence.
+Version 0.10. Use the fictionalized [map](docs/TRAIL_MAP.md). Costs are game values. The GM states them before commitment. Route promises may be incomplete, but the Guide can investigate, and a false claim must have discoverable evidence.
 
 ## Sublette decision, marker 790
 
@@ -30,7 +30,7 @@ One hundred miles left, and the wagon that carried everything this far is now it
 
 Reveal both routes before anyone pays. These fixed-duration journeys replace the last 100 miles. Use weather/food/conditions on their days but **no random trail events**: the three prepared obstacles below are the finale's events. Weather can extend the road's duration if it prevents travel; weather speed multipliers do not otherwise multiply these already abstract fixed durations. River passage waits out a blizzard before launching. At arrival set marker 2,000.
 
-Before choosing, review the People Ledger. A specifically earned favor provides its listed help, once. If a helpful person cannot plausibly be present, their named contact or message can be, established before payment. Do not resurrect dead allies or conjure unknown favors.
+Before choosing, resolve one actual relationship return from [People](docs/PEOPLE.md). This changes whom the party intends to meet or help after arrival, not the published route fees. Then review the People Ledger. A specifically earned favor provides its listed help, once. If a helpful person cannot plausibly be present, their named contact or message can be, established before payment. Do not resurrect dead allies or conjure unknown favors.
 
 ### Columbia passage — 7 travel days
 
@@ -40,7 +40,7 @@ At The Dalles, use Boise’s stock, posted prices, resale rules, and labor rates
 
 Without sufficient cash, build a raft from the dismantled wagon (which cannot be sold or recovered), or spend one additional labor day gathering timber if no wagon is available. Building then takes one preparation day (additional, no travel), then seven river days. Teamster spends 1 part for a sound raft, guaranteed, or STR DC 12; failure requires one more preparation day and then succeeds. Raft has four cargo-bundle spaces plus personal items and bedding; food rounds up into 50-lb bundles, ammo into 40-round bundles, parts one each, medicine up to 10 doses one bundle, money one free pouch. No water barrels required on this route; daily safe refill is available.
 
-On river days 2, 4, and 6, describe a narrowing channel. Choose **portage**, adding one labor day with no check, or **run it**, a group DEX/WIS DC 12 check. Full success pass; partial pass and lose one chosen cargo bundle (if none remains, each participant loses 1 HP instead); failure reach the bank, each participant takes 1d4 damage, and add one recovery/portage day. No unannounced drowning. Portage days can receive ordinary treatment but no Rest recovery. Earned river intelligence lowers one run's DC to 10; an earned experienced pilot grants Advantage on one run. Carrier passage resolves these professionally without checks or portage delays.
+On river days 2, 4, and 6, describe a narrowing channel. Choose **portage**, adding one labor day with no check, or **run it**, a group DEX/WIS DC 12 check. Full success pass; partial pass and lose one chosen cargo bundle (if none remains, each participant loses 1 HP instead); failure reach the bank, each participant takes 1d4 damage, and add one recovery/portage day. No unannounced drowning. Portage days can receive ordinary treatment but no Rest recovery. Earned river intelligence lowers one run's DC to 10; an earned experienced pilot grants Advantage on one run. Carrier passage resolves these professionally without checks or portage delays. On those days invite a different player to describe what they are preparing for arrival, including any recorded agreement. No surprise hazard is added to punish a safely purchased journey.
 
 ### Barlow Road — 14 travel days
 

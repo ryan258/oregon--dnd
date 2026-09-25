@@ -4,7 +4,7 @@
 
 The forts are where the journey briefly becomes a world with rules again. Mail moves. Strangers have names and jobs. You can buy your way out of a problem, if you brought enough, and you can find out exactly how much of your margin is left. Everyone at a fort wants something; the useful question is whether what they want is something you were carrying anyway.
 
-Version 0.9. These are fictional game markets. All amounts are design values, not historical quotations.
+Version 0.10. These are fictional game markets. All amounts are design values, not historical quotations.
 
 At arrival, reveal stock, prices, a named trader's demand, and the next known resupply/water point. No roll to learn posted prices or buy offered goods. First arrival at a chapter endpoint grants its one Morale; intermediate Fort Bridger does not give an extra endpoint award. At forts no random trail events occur, shelter is available, and conditions still progress. Trade takes a day at 1 lb food/person; Rest is a separate day at 0.5 lb/person.
 

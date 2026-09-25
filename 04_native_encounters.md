@@ -6,7 +6,7 @@ Every mile of this route runs through places where people already live and work 
 
 The design consequence is simple. There is no hostility score, no reaction roll, and no mechanism by which a bad die makes someone dangerous. What is uncertain in these scenes is never *what kind of person is this* — it is *what are the travelers willing to offer, and can they live with the answer.*
 
-Version 0.9. Use alongside [historical framing](docs/HISTORY.md) and the agreed [session boundaries](docs/SESSION_ZERO.md). The route passes through inhabited lands. Indigenous people have their own livelihoods, priorities, relationships, and authority; their presence is not an obstacle category.
+Version 0.10. Use alongside [historical framing](docs/HISTORY.md) and the agreed [session boundaries](docs/SESSION_ZERO.md). The route passes through inhabited lands. Indigenous people have their own livelihoods, priorities, relationships, and authority; their presence is not an obstacle category.
 
 Do not infer a nation's behavior from a die roll, invent a purported traditional ceremony, or make one person's goodwill apply to unrelated communities. A generic successful exchange cannot buy a universal “tribal reputation” bonus. The scenarios below are **fictional encounter frameworks**, not descriptions of a specific nation's customs or documented 1848 events. Before assigning a real community, consult sources from that community and establish the actual location. Until then use the individual's occupation and a mutually understood name rather than inventing Indigenous-language names or claiming cultural authenticity.
 
@@ -17,6 +17,12 @@ Half an index card is enough, and it is the same card you would write for a ferr
 Write their name or how they ask to be addressed, their current work, what they want today, what they will not agree to, what they can actually offer, and whether/how the party could meet again. They can disagree with other members of their community. They need not justify boundaries to the travelers or be persuaded to abandon them.
 
 Ordinary greetings, paying a stated fee, accepting a warning, and agreeing a fair trade succeed without rolls. If translation is difficult, allow gestures, an available interpreter, time, or a simpler agreement. Never roll for whether somebody accidentally commits an unspecified cultural offense.
+
+## A continuing relationship in the campaign
+
+The [Hall stock keeper](docs/PEOPLE.md) appears in chapter 5's spring and work-area scenes, then through a plausible carried message in chapter 6 or at arrival. Her household's needs continue whether the PCs help or not. She has a say in the shared work, a disagreement with Nessa's priority-freight plan, and an opinion about Tomas's sign. Use her stated individual terms; she is neither a universal guide nor a spokesperson for all Shoshone people.
+
+The character is fictional and her regional placement is a limited researched design choice, not an authenticated 1848 biography. See [source and portrayal limits](docs/HISTORY.md). These scenes replace existing campaign interactions rather than add a separate encounter quota.
 
 ## Six encounter frames
 

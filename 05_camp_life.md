@@ -4,7 +4,7 @@
 
 Camp is where the game gives back. Wounds close, oxen recover, the wagon gets another day of life out of a Teamster with a part and an hour. But the reason to slow down here is not the healing — it is that a person who has spent all day being a Hunter finally gets to be whoever they are when nobody needs feeding. Talking is always available, on any night, at no cost. Not every evening needs to become a confession.
 
-Version 0.9. At every night's camp, invite one conversation. At a **Rest Day**, also apply recovery and Camp Actions. Conversation never needs a day's mechanical rest to become available.
+Version 0.10. At every night's camp, invite one conversation. At a **Rest Day**, also apply recovery and Camp Actions. Conversation never needs a day's mechanical rest to become available.
 
 ## Rest Day procedure
 
@@ -38,6 +38,17 @@ Choose one. These cannot stack on the same evening.
 Somebody stays awake. The watch does not prevent the night from happening — it buys the party the chance to answer it.
 
 Assign three shifts to able travelers. One shift has no penalty. Taking two shifts requires CON DC 10 next morning or 1 Exhaustion, counted against the new day's cap. An incapacitated traveler cannot watch. If nobody watches, the party misses a night event's early warning; present its immediate response choices anyway. Watch protects the chance to respond, not a hidden automatic success.
+
+## Evenings worth remembering
+
+These fit an existing evening and replace a prompt. No added day, supplies, roll, or automatic Morale/Inspiration; a separately chosen Rest activity still uses its own cost and once-only reward. Do not reward these twice as promises merely for participating.
+
+- **The terrible sign:** everyone who wants to adds one impractical feature to the future workshop's sign. Keep its description for Arrival.
+- **The last ordinary meal:** name what each traveler would cook if ingredients were plentiful. The actual meal uses today's paid ration; imagined ingredients do not become supplies.
+- **A useless lesson:** one person teaches whistling, a paper fold, or an animal impression. Nobody has to perform it at the real table.
+- **The letter:** read a line from someone whose circumstances changed because of a recorded choice, only once a carrier could bring it.
+- **The view:** ask what is beautiful here that they did not expect. Let the answer stand without turning it into danger.
+- **A small victory:** invite someone to notice a task another traveler now finds easier. It can mark a learned technique without granting an extra one.
 
 ## Camp prompts
 

@@ -4,7 +4,7 @@
 
 Weather is the game's honest antagonist: impersonal, announced in advance, and identical for the prepared and the unprepared except in what it costs them. It turns every three days on the calendar, not because the story wants a blizzard. Read it out loud at dawn, before anyone chooses a stance — the point is never the surprise, it is watching a party decide what a hard sky is worth going out into.
 
-Version 0.9. Roll d6 every three calendar days and on entry to a new chapter (restart the three-day count). Use the current month. Apply the condition on **each** day of its span unless the entry states otherwise. A weather table entry is not an additional random event. Roll recovery/exposure in batches during travel legs, but stop when someone becomes incapacitated or players need a decision.
+Version 0.10. Roll d6 every three calendar days and on entry to a new chapter (restart the three-day count). Use the current month. Apply the condition on **each** day of its span unless the entry states otherwise. A weather table entry is not an additional random event. Roll recovery/exposure in batches during travel legs, but stop when someone becomes incapacitated or players need a decision.
 
 ## Shelter
 

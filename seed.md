@@ -1,6 +1,6 @@
 # Oregon Trail RPG — Core Rules
 
-**Version 0.9 — September 2026 playtest edition.** A complete campaign for one GM and 1–4 players controlling four travelers. Seven chapters, usually 6–8 sessions of 2–3 hours; that duration is a design target, not measured playtest evidence. For a single session use [The River Between](docs/RIVER_CHAPTER.md).
+**Version 0.10 — September 2026 playtest edition.** A complete campaign for one GM and 1–4 players controlling four travelers. Seven chapters, usually 6–8 sessions of 2–3 hours; that duration is a design target, not measured playtest evidence. For a single session use [The River Between](docs/RIVER_CHAPTER.md).
 
 > **What are we willing to spend, and what do we refuse to lose, to get these people to Oregon?**
 
@@ -37,6 +37,12 @@ Choose one [background](02_character_backgrounds.md). Start with **8 + CON modif
 - **Keepsake:** one small object connected to the above. No weight or monetary value unless agreed.
 
 Each player names one possible reserve traveler in another wagon party. They are fictional characters, not extra free labor or supplies. Use one if that player's main character becomes incapacitated or dies.
+
+### Put a personal stake into play
+
+Before each chapter, the GM and players identify the traveler least served by recent scenes. Connect one existing chapter situation to that traveler's current Dream, Promise, Bond, or Boundary. Offer a concrete opportunity and a conflict with something else they value; disclose costs and what changes afterward. Use the campaign's prepared hooks as examples, not mandatory character feelings. Each traveler should encounter both an opportunity and a conflict before the finale. This is a spotlight target, not an obligation to sacrifice or perform.
+
+On the People Ledger, record **choice → immediate change → next appearance or destination**. An honestly renegotiated promise updates its terms with the other person's agreement; it is not automatically a broken promise. A PC can change their own aim without a roll, but cannot dictate an NPC's agreement. Use existing Inspiration/Morale rules only; there is no new promise currency. A declined hook earns no punishment. Replacements choose their own stakes or voluntarily inherit an unfinished one.
 
 ### Expertise
 
@@ -118,6 +124,12 @@ The default between scenes is a **three-day travel leg**, at one chosen stance. 
 Use a single Focus Day for a known obstacle, a condition likely to incapacitate someone that day, a fort, a route choice, or a player-requested scene. Finish the current day when a leg reveals such an obstacle, then pause before advancing more time. The unused days are unspent: do not charge them or award their miles. Resume with a new leg after the scene. Do not reroll the same day's event.
 
 A Focus Day chosen solely to magnify conversation during an otherwise ordinary leg does not add an event. A standalone day outside a leg gets one event, unless at a fort or part of a delay. The reduced event frequency of legs is intentional pacing and balance, not mathematically identical to daily play. Harsh mode does not secretly change that frequency. Keep a leg's event even if the party changes its plan; no event rerolling by switching time scales.
+
+### Fast accounting at the table
+
+Keep totals on the wagon sheet and use the trail log only for the leg's change and decisions; do not recopy every inventory each day. Before a leg, mark the earliest checkpoint: prepared scene/refuge, weather change, food expiry, ration/water shortage, condition damage/recovery, or another changing effect. Resolve daily effects in order through that checkpoint, stopping for any choice or crisis before advancing further. Batch identical arithmetic only when nothing between the dates changes its result. Never multiply a final speed backward over earlier days, prepay unused days, or skip a recovery/exposure check.
+
+An uninterrupted healthy Standard leg in unchanged weather can be one dated row with miles and food/water totals. A leg with illness can still have one log row, but its daily damage, treatment, recovery, and possible interruption must be resolved separately. Splitting an accounting row or pausing for a conversation does not generate an extra event; one event remains attached to the original leg. After an obstacle interrupts that leg, resume with a new leg under the ordinary event rule. Use the wagon sheet's **Next decision** panel and update only fields that changed.
 
 ### Travel and oxen
 
@@ -250,4 +262,4 @@ Arrival ends the expedition, not all the characters' problems. Resolve Dream, Pr
 
 **Standard:** rules as written. **Gentler:** $1,000 starting budget; start each chapter with one Inspiration per character; first Wound recovery check each Rest Day has Advantage. **Harsh:** $650 budget, start May 10, otherwise same rules. Use only after agreement; do not increase DCs and event frequency secretly. Pregens/loadout remain affordable in all modes. All modes protect player participation and telegraph catastrophic stakes.
 
-A 9/10 experience is the design aim, not a certification. See the bounded [playtest protocol](docs/PLAYTEST.md). The packet has not established campaign balance, session duration, historical completeness, or external-table acceptance merely by being written.
+An exceptional table experience is the design aim, not a certification. See the bounded [playtest protocol](docs/PLAYTEST.md). The packet has not established campaign balance, session duration, historical completeness, or external-table acceptance merely by being written.

@@ -2,9 +2,9 @@
 
 *The trail never ambushes anyone. It clears its throat, shows you the bill, and waits.*
 
-Version 0.9. The core event selector sends results 1–3 here; roll d6 on the current chapter. Read the warning and **both approaches before any roll**. Costs replace the day's action when they take a day. Unspecified damage targets the wagon only when labeled Wagon HP; otherwise name the affected traveler before commitment. These events never erase all food, destroy a healthy wagon outright, or kill a healthy team without a response.
+Version 0.10. The core event selector sends results 1–3 here; roll d6 on the current chapter. Read the warning and **both approaches before any roll**. Costs replace the day's action when they take a day. Unspecified damage targets the wagon only when labeled Wagon HP; otherwise name the affected traveler before commitment. These events never erase all food, destroy a healthy wagon outright, or kill a healthy team without a response.
 
-Every entry has the same shape, and it is the shape of the whole game: something goes wrong where the party can see it coming, there is a safe way through that costs time or goods, and there is a fast way through that costs the dice. Neither is the correct answer. The correct answer is whichever one the party can live with saying out loud.
+These hazard entries share a readable shape: visible warning, dependable cost, uncertain approach. The campaign deliberately varies its major scenes with rescues, investigations, negotiations, opportunities, and reckonings. Do not turn every meeting or celebration into another hazard purchase.
 
 A cargo bundle means 50 lbs food, one part, 40 ammunition, one filled extra barrel, or a named personal cargo item. Loss is chosen by players unless the warning identifies the threatened item. If a printed payment is unavailable, use the other option or propose another approach. No repeatable unique reward: an already-resolved landmark becomes ordinary progress.
 
@@ -98,6 +98,21 @@ A cargo bundle means 50 lbs food, one part, 40 ammunition, one filled extra barr
 | 4 | The axle lets go with a crack at the top of the descent, with the whole grade still below you. | Spend a part and Repair Day to replace it; restore normal Jury-rig/repair HP too. | Cache a bundle and Teamster STR DC 12 to brace it: success half miles; failure no miles and 1d6 Wagon HP damage. Repair remains possible. |
 | 5 | The blazes on the trees end where the snow starts. Past that the road is a guess. | Guide Read the ground: spend one day, find the route. | WIS DC 14: success progress; failure one lost travel day. A learned Weather Eye can inform the choice before committing. |
 | 6 | One of the teams is standing with its legs braced and shaking, and it has not eaten. | Rest today; heal it normally. | Keep moving: that team loses 3 HP, and becomes lame until Rest. Death occurs only if HP reaches 0. |
+
+## Change the kind of scene, not the number of rolls
+
+When the core selector gives a recurring person, opportunity, or quiet day, use the matching entry below if helpful. This replaces that selector result, never adds an encounter or grants an extra resource reward. A selector-5 opportunity may use this scene instead of its usual 20 lbs/site/report; disclose which benefit is offered. Honor exhausted unique rewards and plausible travel.
+
+| Scene | Ready situation | Resolution / consequence |
+| --- | --- | --- |
+| Investigation | Two travelers give conflicting estimates: one traveled with a lame team, the other with two sound teams. | Asking about their actual conditions establishes why both reports differ, no roll. Recalculate the party's own route; no free source or speed bonus. |
+| Negotiation | A neighbor has the same departure time but wants the party's scarce repair part. | Offer the posted local value only if at a fort, or a specific future labor exchange agreed now; refusal leaves both parties independent. No new unlimited market. |
+| Opportunity | A traveler asks to copy the wagon's sign for a letter home. | Owner chooses what name appears and what undertaking it represents; no day, reward, or promise unless explicitly agreed. |
+| Celebration | Two people have each been calling the same ox by a different name. | Let the table settle it, or keep both names. No check, loss, or bonus. |
+| Reckoning | A plausible carrier brings news of an actual earlier decision. | Read the ledger, describe one concrete change, and ask whether a reply or action follows. Quote any time or material cost first. Never invent a broken promise. |
+| Quiet discovery | A sheltered overlook offers a view of road already traveled. | Ordinary progress; each willing player names a place they would recognize again. If used as a selector-5 shelter opportunity, mark this actual site; it cannot be carried forward as universal shelter. |
+
+The full rescue in chapter 3 is a prepared scene with explicit coordinated approaches and outcomes. Do not add its costs to an unrelated random event. During celebrations the GM keeps the promised space free of surprise threats.
 
 ## Making a new event
 
