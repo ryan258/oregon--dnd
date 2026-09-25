@@ -4,11 +4,11 @@
 
 Playing alone works because the interesting part was never the GM's secrets — it was the argument at the fork. Give each traveler their sentence, let the relevant expert state the facts, and then choose as the party. The oracle exists only for questions the prepared material genuinely does not answer.
 
-Version 0.9. Use the four pregens and core procedures. Prepared scene facts, prices, and consequences stay fixed; the oracle never overwrites them. Read only the current chapter ahead if you prefer discovery, but reveal risk before commitment just as a GM would.
+Version 0.10. Use the four pregens and core procedures. Prepared scene facts, prices, and consequences stay fixed; the oracle never overwrites them. Read only the current chapter ahead if you prefer discovery, but reveal risk before commitment just as a GM would.
 
 ## Council
 
-At a major decision write one sentence per traveler based on Dream/Promise/Boundary. Let the relevant expert explain the facts. Choose the party plan yourself; majority voting is optional and cannot force a character's beliefs. Resolve all four eligible rolls normally. A scene at camp can be four short diary lines.
+At a major decision write one sentence per traveler based on Dream/Promise/Boundary. Let the relevant expert explain the facts. Choose the party plan yourself; majority voting is optional and cannot force a character's beliefs. Resolve all four eligible rolls normally. A scene at camp can be four short diary lines. Use the campaign's opportunity/conflict hooks with each traveler, record choice → change → return, and follow announced NPC schedules. You may know a route's outcome while still deciding what the characters value. Use the wagon decision panel and one log row per uninterrupted leg; daily health and supplies remain in order.
 
 ## Unknown facts
 

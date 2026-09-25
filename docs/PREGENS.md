@@ -4,7 +4,7 @@
 
 They have already agreed to share the wagon. They have not yet found out what that will cost. Hand these out as they are and play — everything is filled in, and the only question at the top of the first session is the one printed under each name.
 
-Version 0.9. Use these directly. Each uses scores 15, 13, 12, 10, 10, 8 exactly once; all modifiers and HP are filled. No techniques at campaign start. Each has one Inspiration, no wounds, Exhaustion 0. Rename or revise any identity/personal statement before play. The other player must agree to a Bond. All are fictional adults.
+Version 0.10. Use these directly. Each uses scores 15, 13, 12, 10, 10, 8 exactly once; all modifiers and HP are filled. No techniques at campaign start. Each has one Inspiration, no wounds, Exhaustion 0. Rename or revise any identity/personal statement before play. The other player must agree to a Bond. All are fictional adults.
 
 Campaign supplies: core starter loadout, **$250 remaining**. Standalone river supplies: use that adventure's separate starting snapshot instead. Personal cargo has no sale price; it becomes a named bundle for choices. Each keepsake is small and carried personally.
 
@@ -22,6 +22,8 @@ Campaign supplies: core starter loadout, **$250 remaining**. Standalone river su
 
 **Opening question:** Do you want people to trust your judgment, or to share your dream?
 
+**On the road:** Mercy will ask to put a book to use before Oregon. Decide whether lending it changes your promise. No gift is presumed.
+
 **Reserve:** Jonah Reed, willing to help after traveling with Mercy; takes the Guide role if needed, no free gear.
 
 ## Thomas Pruitt — Doctor
@@ -37,6 +39,8 @@ Campaign supplies: core starter loadout, **$250 remaining**. Standalone river su
 **Dream:** begin a practice where people can ask for care without being ashamed of debt. **Promise:** keep enough medicine to help Cal reach the Valley. **Boundary:** I will not promise a cure I cannot provide. **Bond:** Cal knows the patient I could not save back home. **Keepsake:** an unpaid bill kept as a reminder. **Voice:** asks permission before touching.
 
 **Opening question:** When does saving supplies become refusing care?
+
+**On the road:** Ada asks for care at the river; a freight caretaker later asks to learn from you. Decide what you can offer while keeping Cal in mind.
 
 **Reserve:** Ellis Bell, a carrier with practical nursing experience; takes Doctor role if needed.
 
@@ -54,6 +58,8 @@ Campaign supplies: core starter loadout, **$250 remaining**. Standalone river su
 
 **Opening question:** Who gets the last portion when you are the one who found it?
 
+**On the road:** Mercy may need food; Nessa later offers paid provisioning work. Decide what a fair reserve and independent livelihood mean to you.
+
 **Reserve:** Rowan Hale, another wagon's hunter; player defines the existing connection.
 
 ## Mae Sorensen — Teamster
@@ -69,6 +75,8 @@ Campaign supplies: core starter loadout, **$250 remaining**. Standalone river su
 **Dream:** own a workshop whose sign carries my name. **Promise:** get these people and my father's tool chest to Oregon. **Boundary:** I will not conceal a dangerous fault to keep everyone happy. **Bond:** Eliza can persuade me there is more to a decision than the safest road. **Cargo:** tool chest, one named bundle. **Keepsake:** father's measuring rule. **Voice:** quietly describes exactly what will break.
 
 **Opening question:** If the chest must go, does the dream go with it?
+
+**On the road:** If you want this connection, former coworker Mara offers a shared workshop discussion across the river before she leaves with Nessa. Tomas later proposes a shared service at Hall. Neither opportunity obliges you to accept.
 
 **Reserve:** Ruth Ames, Tomas's fellow mechanic; takes Teamster role if needed.
 

@@ -4,13 +4,13 @@
 
 Arrival is not a win condition and there is no last roll. It is a date, a list of who is standing, a ledger of promises in one of three states, and a room full of people finding out what all of it was for. Every ending here is authored by a player — the record supplies the circumstances, and they supply the intention.
 
-Version 0.9. Allow about 20 minutes, longer if the table wants it. Use after reaching the Valley, being rescued, choosing retreat, or agreeing another destination. No final roll invalidates arrival.
+Version 0.10. Allow about 20 minutes, longer if the table wants it. Use after reaching the Valley, being rescued, choosing retreat, or agreeing another destination. No final roll invalidates arrival.
 
 ## 1. Put the record on the table
 
 Say the numbers out loud before anyone says what they mean. The ledger is the evidence; the meaning belongs to the table.
 
-Read the date, destination, surviving travelers, graves, named allies, unfulfilled promises, remaining money/supplies, and whether wagon, teams, and personal cargo arrived. These are facts, not a numerical ranking. Say whose help mattered. Count replacements as people with their own futures, not disguised original survivors.
+Read the choice → change → return entries and NPC plans as well as the date, destination, surviving travelers, graves, named allies, unfulfilled promises, remaining money/supplies, and whether wagon, teams, and personal cargo arrived. These are facts, not a numerical ranking. Say whose help mattered. Count replacements as people with their own futures, not disguised original survivors.
 
 ## 2. Give each player the future
 
@@ -33,6 +33,12 @@ The player states their intention. Together choose one earned benefit and one un
 | Wounded or chronically affected | Adapt the work and accept support the player chooses. | Recovery takes time; do not assign a humiliating or predetermined life. |
 
 Dates inform circumstances, not automatic death. Buying a house, finding employment, or partnering on a project can be an ending. Do not automatically grant land or treat Indigenous dispossession as a victory prize. Specific historical land-law claims require research outside this fictional resolution.
+
+## Bring the earlier scenes into tomorrow
+
+Use actual agreements rather than an automatic happy ending. A book lent and returned may leave a correspondence with a learner. A tool loan may have helped a service begin at Hall while its owner continues west. A missed meeting may leave a conversation to seek rather than a partnership reserved. Nessa's completed purchase is a completed transaction, not ownership of Cal's future. The stock keeper's household remains in its own region; an exchange of letters can continue without bringing her to Oregon.
+
+An accepted partnership has the terms the participants agreed, plus the ordinary unresolved work of beginning it. A declined offer does not mean the dream failed. Custom characters and replacements use their own recorded opportunities. If a message has not had time to arrive, leave that news unknown or describe receiving it later with the player's agreement.
 
 ## 3. Remember the dead
 

@@ -4,13 +4,13 @@
 
 Nothing in this chapter is hidden. Every route is quoted openly in the first ten minutes: the safe one, the slow one, and the fast one. What the party is actually deciding is whether a stranger's problem is theirs — and what they are willing to stake on the answer. There is no wrong crossing here. There is only the one they choose and then have to live beside on the far bank.
 
-**A complete introductory chapter for Oregon Trail RPG v0.9.** One GM, 1–4 players controlling four travelers, target 2–3 hours. This duration is untested. Use the [pregens](PREGENS.md), [reference](sheets/gm_reference.md), [wagon sheet](sheets/party_wagon_sheet.md), and [people ledger](sheets/people_ledger.md). All people and local scene sites are fictional.
+**A complete introductory chapter for Oregon Trail RPG v0.10.** One GM, 1–4 players controlling four travelers, target 2–3 hours. This duration is untested. Use the [pregens](PREGENS.md), [reference](sheets/gm_reference.md), [wagon sheet](sheets/party_wagon_sheet.md), and [people ledger](sheets/people_ledger.md). All people and local scene sites are fictional.
 
 ## Five-minute start
 
 Put the three options on paper before you teach a single rule. The party should be arguing about the river inside ten minutes.
 
-Give everyone a character. Read their Dreams and Promises aloud, ask agreement on Bonds, and allow changes. State the game promise: consequences are real; risks are disclosed; everyone keeps playing. Confirm boundaries using [session zero](SESSION_ZERO.md). Put three options on paper: **ferry, upper ford, wait/help**.
+Give everyone a character. Read their Dreams and Promises aloud, ask agreement on Bonds, and allow changes. State the game promise: consequences are real; risks are disclosed; everyone keeps playing. Confirm boundaries using [session zero](SESSION_ZERO.md). Put three options on paper: **ferry tomorrow, ford today, two labor days then cross**.
 
 Standalone start: **June 2, marker 340**, Morale 6; 140 lbs cured food, no fresh food, 60 gallons capacity/full (water not tracked here), 4 medicine, 40 ammunition, 2 parts, **$25**, Warm Bedding, tools, wagon 22/30, three teams at 8/10 each. Use pregens' full HP, Exhaustion 0, one Inspiration. A crate of Eliza's books and Mae's tools are named personal cargo bundles; no other cargo inventory is needed. These replace the campaign's starting purchases, not additional goods.
 
@@ -36,13 +36,37 @@ These are alternative crossing approaches in the same local area. A completed cr
 
 Read or paraphrase: “The crossing rope hums in the current. On a board beside the landing, somebody has written TEN DOLLARS. Mercy Reed is counting coins beside an open crate of books. The operator points to the same price for everyone.”
 
-**Operator Ellis Ward:** wants to clear the queue safely; refuses overloaded runs; no secret hostility. **Mercy:** $10 short, owns books she can sell, refuses to leave her brother behind. **Tomas:** can help build a loading ramp but needs another able worker. **Nessa:** leaving for Laramie after her freight crosses, can carry a message for $1.
+**Operator Ellis Ward:** wants to clear the queue safely; refuses overloaded runs; no secret hostility. **Mercy:** $10 short, owns books she can sell, refuses to leave her brother behind. **Tomas:** can help build a loading ramp but needs another able worker. **Nessa:** her freight is already across. She visits this bank by passenger boat and returns tonight; passenger travel cannot carry the party wagon or shortcut its crossing. She leaves the far-bank camp at dawn on the third scene day (June 4 standalone), taking a faster contract to Laramie. She can carry a message for $1.
 
 The party hears all three routes for free:
 
 - **Ferry:** $10 party total; next departure tomorrow. Today can be a Rest Day. Guaranteed safe crossing, tools/cargo/teams included. Another $10 pays Mercy's passage. No social roll to pay.
-- **Work:** spend today repairing the loading ramp. Two able PCs commit their actions; the other two may Rest individually. Tomorrow both the party and Mercy cross for no cash. Workers eat 1 lb each and receive no Rest recovery; resting travelers eat 0.5 lb each and get their own normal recovery/actions. Wagon upkeep applies if the Teamster rests; oxen rest because the wagon does not move. This is the scene's explicit mixed-day exception.
+- **Work:** spend two labor days repairing the loading ramp; both the party and Mercy cross on day 3 for no cash. Two able PCs commit their actions on each labor day (workers may rotate); the other two may Rest individually. Workers eat 1 lb each and receive no Rest recovery; resting travelers eat 0.5 lb each and get their own normal recovery/actions. Wagon upkeep applies if the Teamster rests; oxen rest because the wagon does not move. This is the scene's explicit mixed-day exception. No random events on either labor day. After one completed labor day, the party can abandon the job and pay the normal ferry fee on a later day; work earns passage only when both days are complete.
 - **Upper ford:** can cross today, dangerous; exact outcomes below. Scouting first costs one day and gives Advantage to the crossing group check. It cannot be combined with ramp labor by the same person. Guide Read the ground guarantees the information already given plus Advantage here; do not charge twice for discovering visible stakes.
+
+### The departure that makes tomorrow matter
+
+Before choosing, show Nessa's departure date beside the crossing prices. Mae's former coworker **Mara Vale** travels with Nessa's freight and is offering to share a workshop in the Valley. Mae can discuss ownership and working terms face to face at the far-bank camp on either of the first two evenings. Mara wants to divide responsibility now because she will seek another partner on the road. The meeting grants no cash, technique, or guaranteed business success; Mae can accept, negotiate, or decline. Record the actual terms for arrival.
+
+Ramp work misses that meeting. Mae may instead send a written proposal with Nessa today for $1. Nessa delivers it; Mara's default response is a written invitation to find her at the Valley and discuss whatever work is then available, with no partnership reserved. No hidden persuasion check or permanently ruined dream. Mae can propose another arrangement now; Ellis can relay a message after departure, but cannot recall the carrier. In an ongoing campaign offer this connection to the player whose Dream fits, with their agreement; if no one wants it, use Nessa's openly stated departure as an optional opportunity and record that the deadline did not matter to this table.
+
+| Approach from scene day 1 | Earliest crossing | Party cash / parts | If all nonworkers Rest, food through crossing | Nessa/Mara meeting |
+| --- | --- | --- | --- | --- |
+| Ferry | Day 2 | $10; +$10 to pay Mercy | 6 lbs | Yes, evening day 2 |
+| Ramp labor | Day 3 | $0; includes Mercy | 10 lbs | Missed; $1 letter available day 1 |
+| Ford without preparation | Day 1 if full/partial | $0; risk printed below | 4 lbs | Yes if across before departure |
+| Prepared rope line | Day 2 | 1 part | 8 lbs | Yes, evening day 2 |
+
+Rope preparation is one full party labor day without Rest, then one crossing day. Ford scouting is one non-Rest scouting day followed by the risky crossing on day 2; it uses 8 lbs through crossing and no part. Only the Guide needs to perform the scouting, but this option uses ordinary party daily rations and grants no Rest benefits. Table amounts assume four travelers, no extras, no food-saving ability, and the standalone's clear weather. Mercy supplies her own party. Weather delays advance the departure clock too; Nessa waits only when weather prevents her own travel, under the same weather rules, not automatically because the party is delayed. Announce a changed departure before a new day's commitment.
+
+### Four reasons to speak
+
+Use these within the decision, not as four compulsory side quests. Players may reject the hook or substitute their own stake.
+
+- **Guide:** Mercy asks whether Eliza would let one of her mother's lesson books be used at the queue tonight. It stays with Eliza unless she explicitly lends or gifts it. Eliza can begin teaching now, keep it packed, or ask someone else to lead. No day cost, no automatic reward.
+- **Doctor:** adult traveler **Ada Pike** asks for ordinary treatment of dysentery (3 marks, 1 HP damage due today). She has her own provisions, caretaker, and 6/9 HP; no payment to offer. Thomas may use his once-daily treatment, spending 1 medicine and making INT DC 10 under core rules, alongside today's Rest or labor; Stabilize instead requires his Rest Day and Camp Action. Ada's own party handles subsequent care. Refusal creates no scripted death or penalty; record treatment and her response.
+- **Hunter:** Mercy offers to trade one of her remaining books for 10 lbs cured food, with no cash value assigned to the book. Cal can give the food instead, trade, or keep the reserve. This neither pays her crossing nor earns river intelligence; it changes who keeps that book. Nearby game is available in the standalone if Cal chooses to hunt instead of labor or Rest.
+- **Teamster:** Mae owns the response to Mara's offer and can explain what the prepared rope line would buy. The rest of the table decides the shared wagon's approach together; her role never grants a veto over other PCs.
 
 No one forces a charitable choice. If refused, Mercy sells books to cross later. The consequences are her changed prospects and the absence of a favor, not a moral penalty imposed by the GM.
 
@@ -68,9 +92,9 @@ Scouting gives Advantage; a helper cannot add more. A personal-stakes Inspiratio
 
 The far bank is quieter than anyone expects. Wet rope, a fire, and the first real chance to count what came over with them.
 
-At the first far-bank camp, each player answers or passes: “What did you hand to somebody else because you trusted them more than the river?” A fulfilled significant promise grants its one Morale. If helping Mercy cost time or goods, award the involved character's Inspiration if eligible.
+At the first far-bank camp, first resolve the Mara meeting, or record any letter actually sent and let a reply arrive later through a plausible carrier. Then let someone attempt to teach the others a useless skill: whistling, folding a paper boat, or imitating an ox. No check, bonus, or surprise threat; a player may simply describe enjoying it. Each player answers or passes: “What did you hand to somebody else because you trusted them more than the river?” A fulfilled significant promise grants its one Morale. If helping Mercy cost time or goods, award the involved character's Inspiration if eligible.
 
-Mercy gives her accurate river report if helped. Record **river intelligence**: lower one finale raft-run DC to 10. This same report meets Laramie's demand; using it there does not destroy the knowledge. Tomas does not also grant a repair favor merely for being present; that requires his chapter 3 help.
+Mercy gives her accurate river report if her crossing was paid or the passage labor completed. Record **river intelligence**: lower one finale raft-run DC to 10. This same report meets Laramie's demand; using it there does not destroy the knowledge. Tomas does not also grant a repair favor merely for being present; that requires his chapter 3 help.
 
 If a personal bundle was lost, its owner decides what the loss means for their dream. A tool chest can be replaced by a new promise to work for tools; a lost book crate does not erase the character's reason to continue.
 
@@ -92,7 +116,7 @@ Use the six chapter 2 events in [Events](../01_events_and_hazards.md) for the on
 
 Every failure state here has a printed way onward. Nobody gets stranded at 340 because the dice were unkind or the purse was empty.
 
-- **No cash or parts?** Ramp labor still buys safe passage; willing labor is sufficient, no roll. If fewer than two PCs can work, Tomas supplies the second worker and adds one extra labor day. If none can work, Mercy sells books to fund passage, asking an explicit future favor; no inactive player is left waiting for a solvency check.
+- **No cash or parts?** Ramp labor still buys safe passage; willing labor is sufficient, no roll. If exactly one PC can work, Tomas supplies the second worker: three labor days, then crossing on day 4. Explain the missed meeting and letter option before accepting. If none can work, Mercy sells books to fund the next available ferry crossing, asking an explicit future favor; no inactive player is left waiting for a solvency check. Substitution remains available immediately. A missed meeting does not block passage or the adventure ending.
 - **Two injured PCs?** Use reserve travelers immediately. Count active slots and food explicitly. Tomas can care for a patient with his party while the reserve occupies the active slot, if agreed.
 - **Failed ford?** The party stays at 340 and pays that failed day once. No endless downstream rescue maze. The other approaches remain.
 - **Party splits over payment?** Give each player one statement of priorities, then agree the shared wagon's plan. No CHA roll overrides a player.
@@ -100,4 +124,4 @@ Every failure state here has a printed way onward. Nobody gets stranded at 340 b
 
 ## Debrief
 
-Use [Playtest](PLAYTEST.md). Ask which choice felt real, whether every role mattered, and which person they want to meet again. Record actual elapsed time and rules lookups; do not rate the game for the players.
+Use [Playtest](PLAYTEST.md). Record when the choice stopped being obvious, whether the departure mattered, any third approach, each role's actual decision, and minutes spent on accounting. Ask which choice felt real, whether every role mattered, and which person they want to meet again. Record actual elapsed time and rules lookups; do not rate the game for the players.

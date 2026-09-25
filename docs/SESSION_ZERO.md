@@ -4,7 +4,7 @@
 
 This game puts real losses in front of people — hunger, illness, graves, promises broken on purpose. That works only when everyone agreed in advance to the kind of story it is, and when anyone can stop it without explaining themselves. Settle that first. It takes less time than assigning ability scores.
 
-Version 0.9. Read this aloud or summarize in five minutes; invite changes before play.
+Version 0.10. Read this aloud or summarize in five minutes; invite changes before play.
 
 “We are playing ordinary adults sharing a wagon in a fictionalized 1848 journey. Supplies and time matter. Characters can die, but players always keep a meaningful role. We will hear catastrophic stakes before choosing them. The story includes other people's homes and livelihoods; the land is not empty.”
 

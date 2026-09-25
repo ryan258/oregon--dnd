@@ -1,129 +1,126 @@
 # Seven chapters to Oregon
 
-*Grass, then water, then stone, then sand, then stone again. Two thousand miles, seven decisions that actually matter, and one wagon that will not carry everything all the way.*
+*Grass, water, stone, sand. The landscape changes; so should the decisions.*
 
-Each chapter is a place with a question in it. The plains ask what you will carry for somebody else. The desert asks whose information you trust. The last mountains ask what has to arrive with you — and by then the party has spent five chapters finding out the answer is not everything. Run them as situations with real alternatives, not as a plot with detours.
-
-Version 0.9. Each chapter has an opening situation, a compulsory decision, a person, a private stake, and an exit. These are situations with alternatives, not a prescribed plot. The party may invent another viable solution; state its costs before dice. Use the [map](TRAIL_MAP.md), [people](PEOPLE.md), and chapter [events](../01_events_and_hazards.md).
+Version 0.10. Seven chapter situations for four travelers. Keep the actual date, resources, and relationships. The [map](TRAIL_MAP.md) supplies progress, the [people](PEOPLE.md) supply independent plans, and the [events](../01_events_and_hazards.md) fill the road between scenes. The party may invent another viable approach; quote its costs before commitment.
 
 ## Running a chapter
 
-At its start, put the endpoint, next water, current season, and one player's personal statement in view. Place its major scene at the stated marker before travel begins. Play at least one major decision and one relationship scene. Between them, use three-day travel legs and batch daily arithmetic. Give each player a decision in their expertise; ask quiet players directly but let them pass.
+Before travel, place its major scene at the printed marker and show the next refuge, water source, and any deadline. Prepared scenes replace random events on their days. Between them, use three-day legs and the wagon sheet's Next decision panel. Two or three substantial scenes per session is a target, not measured duration.
 
-A normal session target is two or three substantial scenes with travel in between. If bookkeeping takes over, stop narrating routine days and use the reference sheet. Do not erase food/weather costs to fit a schedule. End a session at a genuine decision and write the exact state for resumption. Chapters may take more than one session; 6–8 sessions is provisional.
+Each chapter below changes what players do: distribute, negotiate, rescue, investigate, reconcile, organize, or reckon. A personal hook belongs inside one of those scenes, not in an extra mandatory quest. Give every traveler an opportunity and a conflict before the finale. Record choice → immediate change → next appearance on the People Ledger. Ask the least-heard player for the first response; they may pass. Custom characters use a matching undertaking/person/object chosen with the player. Do not force a pregen's motives onto a replacement.
 
-After two consecutive costly random events, replace the next random event with a quiet opportunity or a recurring person's message. This is a transparent pacing rule, not retroactive rescue. Prepared major decisions remain.
+After two consecutive costly random events, replace the next random event with a quiet opportunity or message. Let celebrations remain safe. NPCs announce their own plans; record and resolve those even if the party declines to help. No hidden countdown or retroactive punishment for generosity.
 
 ## 1. The Plains — 0–300
 
-*Two hundred wagons on the same grass, all of them leaving at once, all of them certain. The road is easy here and the company is thick. Nobody has learned anything yet.*
+**The question:** when does carrying something become putting it to use?
 
-**The question:** what do we carry for other people?
+**Open:** departure morning. Each traveler names something packed that cannot simply be bought again.
 
-**Open:** departure morning; each traveler says what they packed that cannot be purchased again. Use starter loadout or buy deliberately.
+**At 120 — The other wagon.** Mercy's axle needs repair. Carry one crate to Kearny in the entrusted slot, or spend one labor day helping repair her axle so she carries it. Carrying the crate adds no speed penalty; it creates a real delivery obligation and occupies the slot. Refuse and she sells selected books for help. Completing either agreement earns Mercy's introduction once. Show all terms before deciding.
 
-**At 120: The other wagon.** Mercy's axle is damaged. Her books can travel in the party's wagon as one named cargo bundle until Kearny. Accepting gives no mechanical weight penalty but makes that bundle eligible for later cargo choices and creates the obligation. Alternatively spend one labor day helping repair her axle; her wagon carries the books. Refusing costs nothing mechanical; describe Mercy choosing which books to sell for help. Either form of help earns her introduction once, upon completing it.
+**Opportunity at the same camp:** Mercy is starting lessons for adults traveling with her. Eliza can lend one volume of her mother's books until Kearny, give it permanently, or keep the collection intact and teach from it herself this evening. A loan is returned at Kearny by Mercy or the clerk she names; gifting revises what “deliver the books intact” means only if Eliza chooses. One removed volume does not free an entire cargo slot. No extra day or automatic reward for teaching; lending/gifting establishes a specific shared undertaking, not a favor coupon. An unknown letter copied by someone learning to write becomes a later message from Mercy.
 
-**Expertise:** Guide chooses a sheltered camp, Hunter chooses whether the food margin needs a hunt, Teamster evaluates the repair, Doctor checks a limping traveler without inventing a disease.
+**Everyone has work:** Guide names the camp, Teamster states repair needs, Hunter decides whether to offer food without taking somebody's last book, Doctor offers a practical lesson if wanted. These are opportunities for decisions, not compulsory checks.
 
-**Camp:** Who is relieved by the decision, and who thinks it was a mistake?
+**Joy:** Jonah cannot pronounce a word from the lesson. Invite someone to choose the word and someone else to admit a word they also cannot pronounce. They may pass; nobody is mocked for literacy.
 
-**Exit at Kearny:** settle the crate promise, trade/rest if desired; gain endpoint Morale once. Record Mercy's future and the group's first disagreement. No advancement technique yet.
+**At Kearny:** return the loan/crate if accepted; Mercy says whether her lessons will keep traveling or need a settled stop. Trade/rest, endpoint Morale once, and update a statement. No technique yet.
 
 ## 2. The River Crossings — 300–500
 
-*A queue on a muddy bank, a rope humming in the current, and a price on a board that does not change for anyone. The first chapter where waiting costs as much as moving.*
+**The question:** whose opportunity do we spend a day to preserve?
 
-**The question:** whose crossing do we help pay for?
+At 340 run [The River Between](RIVER_CHAPTER.md) with actual campaign state. Nessa leaves the far bank at dawn on scene day 3; paid ferry crosses on day 2, two days' ramp work on day 3. Mara's workshop discussion gives the delay a personal meaning if the player accepts that connection. The letter alternative preserves a future conversation without reserving the partnership. No second generic crossing event during these scenes.
 
-Run [The River Between](RIVER_CHAPTER.md), replacing its standalone starting state with actual campaign state. Its queue, upper ford, and ferry are the major scene. Do not also roll generic river events during its named days. Resolve help for Mercy only if it has not already occurred; recurring history changes her greeting.
+**Personal conflict:** Thomas can spend medicine treating Ada while intending to reserve it for Cal. Cal decides whether feeding Mercy should require her to sell a book. Mae decides what working with Mara would mean for a workshop carrying her own name. Give each owner the first response; promises never force their decisions.
 
-**Camp:** Who trusted someone else with their keepsake?
+**Joy:** use the far-bank useless-skill lesson. If the crossing went badly, ask whether the table wants quiet instead.
 
-**Exit at Laramie:** turn the crossing report into bargaining leverage. Gain one technique per traveler, endpoint Morale once, and update a personal statement.
+**At Laramie:** deliver report and letters, redeem only earned benefits, trade/rest. Endpoint Morale once; one technique per traveler. Record who accepted, deferred, or declined the business offer. Mara's future is defined in People; missing her does not end Mae's dream.
 
 ## 3. The Rockies Approach — 500–700
 
-*The grass thins, the ground turns to rock, and the wagon starts talking. Every knock and creak carries now, and there is nobody out here to fix it but the people who are already tired.*
+**The question:** what can we build together that we cannot keep entirely for ourselves?
 
-**The question:** what does being prepared actually cost us?
+**At 580 — The slipping load.** Tomas has stopped a sliding wagon with a rope around a sound anchor. Everyone is out and safe. His heavy tools remain aboard. The anchor will hold through today if left alone; tomorrow he will dismantle the load and leave part of his equipment cached, then seek other work. His present tools can still support later favors; no person dies if the party declines.
 
-**Open:** every sound from the wagon seems louder on stone. Introduce Tomas and show his worn tools.
+Show these options before anyone touches the rope:
 
-**At 580: Two repairs, one clear day.** Tomas asks a labor day helping his wagon before the next weather change. Help: no travel, ordinary food, no Rest recovery; earn his repair favor. Rest yourselves instead: use normal Rest benefits, Tomas seeks other help, no penalty. Push on: ordinary progress, no favor. Do not fabricate an immediate death for refusing.
+- Two able PCs spend one labor day moving the tools while Tomas secures the wagon. Other PCs may Rest individually; workers eat ordinary rations, resting PCs Rest rations. No travel. All tools saved, guaranteed.
+- Spend one part and half today's travel mileage to rig a winch with Tomas; guaranteed, ordinary travel food, no Rest recovery. The party moves its half mileage after resolving the scene.
+- Attempt a quick recovery: extended STR/DEX/INT DC 12, three successes before two failures, varied contributors under core rules. Success saves the tools and permits half today's travel. Failure consumes today, loses 2 HP from the party's wagon used as an anchor, and Tomas caches the heavy equipment; ordinary food, no Rest. No injury or surprise cargo loss. Stop immediately if players prefer to pay the labor cost before rolling; once rolls start, use their stated outcome.
+- Decline: normal travel, no reward; Tomas follows tomorrow's announced plan.
 
-**Second decision:** Tomas offers to sell a spare part for 30 lbs food, once; the party can accept regardless of helping. Their Teamster should explain which risk they would rather carry.
+A successful rescue by either dependable method or the extended check earns Tomas's single repair favor. A failed attempt earns his acknowledgment, not the mechanical favor. He still offers one part for 30 lbs food, once, regardless of help. No duplicate favor from a second repair of this same incident.
 
-**Camp:** What does your hoped-for life require you to carry through the mountains?
+**Mae's opportunity/conflict:** Tomas proposes a shared repair service at Hall using both tool sets. Agreeing is a promise to discuss it there, not to transfer ownership now. A service could earn a good name; Mae's desired sign would share space with other names. She can agree to talks, offer a limited loan, or decline. Copy exact terms. The Hall scene tests them; do not award a second repair favor.
 
-**Exit at 700:** read the names at the landmark; add yours if desired. Gain endpoint Morale once. Weather turns by calendar, not because the chapter demands a snowstorm.
+**Joy:** at the evening camp Tomas challenges someone to sketch the sign for their future business. Each person may add one impractical detail. Keep the sketch as a described object, no cargo charge.
+
+**At 700:** names at the landmark, one endpoint Morale, updated personal statement. Do not force cold weather for atmosphere.
 
 ## 4. South Pass — 700–900
 
-*The crossing of the continent is a long gentle saddle, easier than anything in the last month. On the far side the water runs west. So does the argument about the shortcut.*
+**The question:** what would actually change our minds?
 
-**The question:** do we keep the promise or take the shortcut?
+**At 790 — Two reports.** Run the Sublette choice in [Routes](../07_route_variants.md). Put two accurate but incomplete reports on the table: an eastbound traveler says the shortcut saves 70 miles; a Bridger-bound carrier says the established road provides the fort's stock and a way to deliver any accepted letter there. Both are true. The first traveler has not checked current water, the second has not assessed the party's condition. No roll is needed to identify what each report does and does not establish.
 
-**Open:** the Guide can see the fork before the party reaches it. A traveler promises a shortcut but does not know today's water conditions.
+Quote actual speed, water, weather, and obligations. Guide Read the ground reveals the immediate hidden facts; free visible information stays free. A learned Find a Third Way can apply only within its limits: show its added day and known-source itinerary, not a magic new spring. Delegating a letter needs a named carrier's agreement; quote any payment first. If no promise involves Bridger, do not invent one.
 
-**At 790:** run the Sublette choice from [Routes](../07_route_variants.md). Disclose distance, missed fort, forecast, and promises. If Tomas's chest is aboard, it is a named cargo bundle; if Mercy entrusted a letter to Bridger, skipping the fort requires negotiating a new plan. Do not force either obligation on a table that never accepted it.
+**Independent plans:** if Tomas's tools are aboard by agreement, the delivery remains Hall; choosing the shortcut does not automatically break it. At Bridger, Nessa's written dispatch says she intends to build a faster carrier service and will discuss its shared costs at Hall. Accept the printed delivery demand or decline. The shortcut party receives the same news at Hall without the missed fort discount.
 
-**People:** Nessa's delivery can be accepted at Bridger for the listed demand benefit. If shortcut chosen, receive her later request through a message at Hall; the fort's missed discount is sufficient consequence.
+**Joy:** ask each traveler to name the most useless thing they now know about the person beside them. Answering or passing has no mechanical effect.
 
-**Camp:** Who changed their mind after hearing the water estimate?
-
-**Exit at 900:** refill at the established departure spring and state the chapter 5 water plan. Gain endpoint Morale once, not an additional point for intermediate Bridger.
+**At 900:** established departure spring, refill, show chapter 5 water choices, endpoint Morale once. Bridger adds no extra endpoint reward.
 
 ## 5. Desert Crossing — 900–1,100
 
-*Heat, distance, and a number written on the side of a barrel. Nothing here is hiding. The danger is that the sum is done wrong, or done too late, or done by somebody hoping.*
+**The question:** whose work are we relying on, and on what terms?
 
-**The question:** which water information do we trust?
+**At 900 — Make the water plan.** Direct route: 200 miles, usable spring at 990. Its condition is unknown to PCs until checked; it never secretly changes after their choice. Read the ground costs one scouting day at the full departure source and confirms it; Mercy's earned report confirms it free. Detour: 36 extra actual miles, guaranteed source after 72 actual miles, at marker 936. Count the first 36 extra miles without progress, then continue normally. Show gallons, daily consumption, modified speed, and delay reserve. Uninvestigated direct spring remains usable.
 
-**Open:** calculate consumption before leaving the last confirmed spring. Show capacity and current gallons. The default has 60 gallons; at heat consumption it covers 15 days. This is information the characters can know.
+**At either spring — A person with work already underway.** Nessa's freight partner has a damaged wagon; the [Hall stock keeper](PEOPLE.md) is there arranging her own stock's return home. She has reserved safe access to the spring with the travelers; water remains freely available and the repair site does not erase it. She asks that the damaged wagon be moved away from where her animals need to pass. One labor day by two able PCs moves and repairs it safely; others can Rest individually. Alternatively carry the partner's truthful written report to Hall with no extra delay and continue; the partner then moves the wagon in pieces and reaches Hall later. Either gives the report meeting Hall's demand. Neither creates a new generic favor. The keeper's household and the partner remain independently provisioned.
 
-**At 900, choose a water plan:** direct route is 200 miles with an **uncertain spring at 990**; longer route adds 36 actual travel miles and has a guaranteed source after 72 actual miles. Read the ground costs one scouting day at the full departure source and confirms the 990 spring is usable; Mercy's earned report gives that confirmation free. The direct route never depends on a secretly rolled spring failure. If they decline to investigate, the 990 spring is still usable; uncertainty is about information, not the GM moving it.
+**At Hall — The shared working space.** During the normal Trade Day, the keeper has arranged a work area for her household's equipment and offers Tomas room for a temporary repair bench on agreed terms: shared use, no exclusive claim. Tomas wants to start a service there; Nessa wants priority repairs for paid freight. Mae can lend her personal tool chest until the end of one additional day, work that labor day alongside them, negotiate a limited arrangement, or decline. A one-day loan lets Mae Rest or Trade while the others work; she must remain to collect it. Labor provides the normal fort wage if she chooses that paid work, not an extra reward. The keeper refuses any proposal displacing her household's work; this boundary cannot be rolled away. Tools are returned as agreed, with no hidden loss. No additional demand discount, part, or favor is granted for the same contribution.
 
-For the detour, count the first 36 actual miles as extra distance without advancing the route marker. The spring reached after 72 actual miles is therefore at progress marker 936. Track both on the log; afterward continue toward 1,100 normally. The guaranteed source restores water to capacity. Ordinary events can threaten carried water, not retroactively erase established springs without another warning and option.
+**Thomas's opportunity:** the freight partner asks him to teach their caretaker while everyone is at the work area. One agreed labor day teaches how to recognize the game's warning signs and seek help; no automatic cures or historical medical claims. Record a named caretaker who can later correspond about care. He may instead provide ordinary treatment if there is an actual condition, or decline. This is his choice about the practice he hopes to build, not a prerequisite for party recovery.
 
-**At 990 or detour spring:** Nessa's missing freight partner is there with a damaged wagon. Spend one labor day helping, or carry their written status report to Hall with no extra delay. Either gives truthful information for Hall's demand; do not award an extra favor for the same help unless stated.
+**Joy:** over the ordinary meal, the keeper tells Tomas his proposed repair sign cannot be read from the road. Invite someone to design one that can. This is one fictional person's practical opinion, not a cultural custom or ceremony.
 
-**Camp:** Who now understands why another traveler insisted on carrying something seemingly excessive?
-
-**Exit at Hall:** fulfill messages, refill, gain endpoint Morale, choose the second technique, update a personal statement.
+**Departure:** keeper stays in this region; Tomas chooses his plan from People. Nessa announces her next carrier schedule. Refill, endpoint Morale once, second technique, update personal statements. Record who owns and holds every loaned item.
 
 ## 6. The Snake River — 1,100–1,600
 
-*Five hundred miles beside water you can hear and mostly cannot reach. The longest chapter, the thinnest margin, and the first time other people start asking the party for help instead of the other way round.*
+**The question:** how much of our remaining margin will we commit to other people's futures?
 
-**The question:** who receives what we have left over?
+**Open:** show the 500-mile leg's next known sources and food plan. Ask the Hunter what reserve they recommend and what conditions would make them change it. Use actual reserves, not a scripted shortage.
 
-**Open:** the next leg is long enough that the group must state its rest and food plan. Do not portray the entire chapter as one river crossing.
+**At 1,350 — The shelter and the contract.** Nessa or her previously named freight partner has two days before a contracted departure. The roof at a waystation needs either one part or one labor day from the party. Give either: earn the existing shelter credit once. Decline: the carrier hires help later and the party earns no credit; no surprise casualties. The structure supplies shelter, not fort stock. Nessa follows her contract, whether present or represented by her partner; she does not wait indefinitely for PCs.
 
-**At 1,350: The shelter roof.** Nessa or her named freight partner is repairing a waystation before autumn traffic. Give one labor day: earn shelter credit for the finale. Donate one part instead: same favor; repair work continues without you. Decline: keep your time and part; the shelter may be ready later, but you have no credit. The structure is not a new resupply fort.
+**Cal's opportunity/conflict:** Nessa also offers him a recurring paid provisioning role after arrival. For this first delivery she will buy 20 lbs cured food for $10, once, from his party's existing stores. The sale is optional and does not require accepting future work; accepting future talks costs nothing and guarantees no income. Cal decides whether selling food is compatible with his independence and what reserve he wants for Eliza's first winter. Give food instead, sell, keep it, or propose a different contribution. Use ordinary hunting/preservation and travel days if he chooses to obtain more; the two-day delivery window stays visible. No extra fort buyback or infinite sale loop.
 
-**At 1,450: The narrow descent.** One cargo bundle must be carried separately for a day's delay, or use the chapter event's warned group DEX DC 12 ledge crossing. Choose a meaningful named cargo item among those aboard before the risk is accepted. If the party has already resolved that exact event here, do not repeat it.
+**At 1,450 — The narrow descent.** Carry one named bundle separately for one lost travel day, keeping it, or use chapter 6's disclosed group DEX DC 12 ledge crossing. A learned Build a Sledge is a third option for up to two bundles under its actual time/material costs. If this exact event was already resolved at this marker, do not repeat it. The cargo owner speaks first.
 
-**Camp:** Which favor would you ask for now, and what would asking admit?
+**Joy:** a letter arrives through a plausible carrier from the Hall stock keeper, or a report reaches Boise's clerk. It says whether the shared work happened and what she and Tomas did next. The party can send an answer; no person travels impossibly fast and no favor appears merely because a letter did.
 
-**Exit at Boise:** trade, look ahead at both finale routes, and disclose their costs early enough to prepare. Endpoint Morale once. No new technique; let existing learning matter.
+**At Boise:** trade, announce both finale routes and their full costs. Endpoint Morale once. Ask which earlier commitment still deserves time now.
 
 ## 7. The Last Mountains — 1,600–2,000
 
-*Timber, cold, and the end in sight through the gaps. Everything still in the wagon has survived six chapters of arguments about whether it should be. One more argument remains.*
+**The question:** what do we still want to arrive with?
 
-**The question:** what must arrive with us?
+**Open:** put the People Ledger beside the route map. Each player identifies an unresolved undertaking, or says their old one no longer fits. Resolve NPC availability from the recorded Hall and carrier decisions.
 
-**Open:** review the People Ledger and all remaining promises before the first cold-weather leg. Show The Dalles at 1,900.
+**At 1,750 — The cache.** A narrow bypass requires leaving one named bundle; safely cache it and travel today's ordinary modified miles. Keeping everything requires one extra labor day clearing the main road, then ordinary travel resumes the following day. Both options avoid damage and rolling. This replaces the earlier ambiguous half-day saving. State whether a later return to the cache is plausible; nobody promises free delivery. No personal cargo? Food, a part, or another core bundle is valid. Build a Sledge may provide its limited alternative if the terrain permits; quote its material cost and half-speed day.
 
-**At 1,750: What the wagon carries.** A steep bypass offers half a day's saved travel if one named cargo bundle is left behind; the longer road adds one travel day with no roll and keeps it. This is a choice, not a mandatory sacrifice. Ask the bundle's owner to speak first. If no personal cargo is aboard, food or a part is equally valid.
+**Reckoning at The Dalles, 1,900:** before buying passage, deliver a message or meeting from someone actually affected by a recorded choice. Use the finale return table in People. Ask what the traveler now intends to do about it. A message can be answered without an extra day; labor, delivery, or an itinerary change costs the actual time. No new arbitrary toll or invented betrayal. Established favors remain valid through their named contacts even when their original giver stayed behind.
 
-**At 1,900:** run the complete river/road finale from Routes. Redeem only earned favors. Resolve its printed events instead of random events. End the journey with [Arrival](ARRIVAL.md), not another hazard table.
+Run [Routes](../07_route_variants.md). Carrier passage safely solves the hazards it promises to solve. On each of its three narrowing-channel days, invite a different player to describe something being packed for the future; do not add an obstacle to punish buying safety. Raft and road retain their printed decisions and recovery paths.
 
-**Final conversation:** Who helped you reach this place who will not get to see what you build?
+**Arrival:** use [Arrival](ARRIVAL.md). Every player's future includes a concrete benefit and complication from the record. A shared school, independent workshop, temporary job, or decision to return for someone is theirs to choose. Close on what they do the following morning.
 
 ## If plans fail
 
-There is always a next move. Losing the wagon, the teams, or the will to continue changes what the ending is about — it does not end the session in a shrug.
-
-Zero teams/wagon: disclose walking loads, distance to next refuge, ordinary repairs, and the fort rescue contract. Morale 0: renegotiate at safe camp; never disband PCs by fiat. Incapacity: hand the player an active role immediately. If the group chooses retreat or rescue, play one closing scene and use the arrival questions for the destination they actually reach. A complete ending does not require overriding their choice to stop.
+Zero teams/wagon: disclose walking loads, refuge distance, ordinary repair, and the fort rescue contract. Morale 0: renegotiate at safe camp; never disband PCs by fiat. Incapacity: offer an active role immediately. Rescue, retreat, or a different destination receives a closing scene and Arrival. A declined personal hook is not a failed chapter; offer that player another kind of opportunity later.
