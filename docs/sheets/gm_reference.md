@@ -1,4 +1,4 @@
-# GM reference — v0.9
+# GM reference — v0.10
 
 *Warn them. Offer a choice. Name the price. Then carry it forward.*
 
@@ -8,13 +8,17 @@
 
 Warn → offer choices → state DC/cost → roll if uncertain → carry the consequence forward. Reliable costly plans work. No roll controls a PC. Every player keeps an active role through incapacity/death. Two consecutive costly random events → next random event is quiet opportunity/message.
 
+## Keep the scene moving
+
+Use the wagon sheet's Next decision panel. Name costs, deadline, person affected, and a player-proposed alternative. Connect one existing scene to a personal opportunity/conflict; record choice → change → return. Rotate first response; players may pass. NPCs follow their announced plans. Give joy and quiet their own space; no obligatory roll or bonus.
+
 ## Checks
 
 D20 + modifier vs DC 10 ordinary / 12 difficult / 14 dangerous. Advantage/Disadvantage cancel, never stack; Exhaustion 3+ Disadvantage cannot cancel. Group: more than half full; 1+ but no majority partial; none failure. Incapacitated people excluded. Printed outcomes first; fallback partial completes goal, halves numeric damage/loss upward, full delays. Extended: 3 successes before 2 failures, varied contributors, stated outcomes.
 
 ## Time and travel
 
-Default leg: 3 days, one event on first day. Short leg to marker allowed, still one event. Daily weather/health/costs remain. Interrupt before spending unused days. Prepared scene replaces event; fort/delay days no extra events. Daily: reveal → choose → event → action → costs/effects → condition recovery → Rest recovery → watch/camp → date.
+Default leg: 3 days, one event on first day. One log row per uninterrupted leg; inventory stays on wagon sheet. Resolve daily effects through the next weather/expiry/health/shortage/scene checkpoint; row splits add no events. Short leg to marker allowed, still one event. Daily weather/health/costs remain. Interrupt before spending unused days. Prepared scene replaces event; fort/delay days no extra events. Daily: reveal → choose → event → action → costs/effects → condition recovery → Rest recovery → watch/camp → date.
 
 Cautious 10 miles (players choose milder of two events); Standard 18; Reckless 26 (GM chooses riskier of two). Two usable teams full; one ×0.75; zero stopped. Two travelers at Exhaustion 2+ multiply ×0.5 once; fewer than two able travelers stops wagon. Apply weather, round once upward. Forced March Cautious/Standard: group CON DC 12, full +50%, partial +25%/failed rollers +1 Exhaustion, failure no bonus/all rollers +1. All attempts hard travel. Hard travel: 1 team loses 1 HP (2 in heatwave).
 

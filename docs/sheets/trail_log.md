@@ -1,30 +1,31 @@
-# Trail log — v0.9
+# Trail log — v0.10
 
-*One line per day. By Fort Hall it stops being bookkeeping and starts being the story.*
+*Keep the decision. Do the sum once.*
 
-Use one row per day even when resolving three together; narration is optional. Record a leg's event on its first row, “same leg” on later rows. Weather and health still apply daily. Unspent days of an interrupted leg remain unspent.
+Use one row per uninterrupted leg, or per day when useful. Keep inventory totals on the wagon sheet. Resolve daily effects in order; split at a decision or a checkpoint that changes the arithmetic. Daily conditions, recovery, weather, expiry, and ration limits still apply. Record the event once, then “same leg” if another row is needed. Splitting a row never adds an event. Unspent days stay unspent.
 
-| Date | Marker start → end / extra detour miles | Action / stance | Weather / days left | Event or prepared scene | Food / water paid | HP / Exhaustion / condition changes | Decision / promise |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | |
-| | | | | | | | |
-| | | | | | | | |
-| | | | | | | | |
-| | | | | | | | |
-| | | | | | | | |
+| Date(s) / days actually spent | Marker start → end / extra miles | Action / weather / event | Food / water totals paid | Other changes / next checkpoint |
+| --- | --- | --- | --- | --- |
+| | | | | |
+| | | | | |
+| | | | | |
 
-Daily order: reveal → choose → event if due → action → supplies/effects → condition recovery → Rest recovery → watch/conversation → advance date. Treat before condition damage if declared today. At most 1 new Exhaustion/person/day. Fresh batch expiry: acquisition date +3, after that evening.
+Decision → immediate change → next appearance: ____________________
+
+Daily order: reveal → choose → event if due → action → supplies/effects → condition recovery → Rest recovery → watch/conversation → advance date. Treat before condition damage if declared. At most 1 new Exhaustion/person/day. Fresh batch expires after acquisition date +3 evening.
 
 ## Pause / resume
 
-Current date/marker: ____ Weather/days left: ____ Already rolled today's event? ____
+Current date/marker: ____ Weather/days left: ____ Today's event already rolled? ____
 
-Current decision and visible options: ____________________
+Leg days already resolved / still unspent: ____ Next scene/refuge: ____
 
-Unpaid costs / remaining delay days: ____________________
+Current decision / visible options / person yet to speak: ____________________
+
+Unpaid costs / remaining delay days / can Rest?: ____________________
 
 Next condition damage and recovery marks: ____________________
 
-Wagon/food/water state recorded on wagon sheet? [ ] People promises updated? [ ]
+Next expiry / shortage / deadline: ____________________
 
-Who has not had a meaningful choice this session? ____________________
+Wagon state current? [ ] People promises current? [ ] Next session's first question: ____

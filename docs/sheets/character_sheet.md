@@ -1,4 +1,4 @@
-# Character sheet — v0.9
+# Character sheet — v0.10
 
 *Who you are, what you promised, and what it is costing you today.*
 
@@ -46,6 +46,10 @@ Intervention and cost (copy): ____________________ Uses marked: __________
 Technique after chapter 2: __________ After chapter 5: __________
 
 Reserve traveler and existing connection: ____________________
+
+Opportunity I want to pursue / what it changes: ____________________
+
+Promise terms / other person's agreement / next appearance: ____________________
 
 What changed at chapter end? ____________________
 

@@ -1,4 +1,4 @@
-# Fort visit — v0.9
+# Fort visit — v0.10
 
 *A day behind walls: what it stocks, what it costs, and what the trader wants from you.*
 

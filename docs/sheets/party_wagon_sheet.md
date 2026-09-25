@@ -1,6 +1,24 @@
-# Party and wagon — v0.9
+# Party and wagon — v0.10
 
 *Everything the four of you own, and how much of it is left.*
+
+## Next decision — keep this visible
+
+Problem / person who owns the first response: ____________________
+
+| Approach | Days / cash / supplies | Risk or guaranteed result | Person / opportunity changed |
+| --- | --- | --- | --- |
+| | | | |
+| | | | |
+| Player proposal | | | |
+
+Next deadline / what happens then: ____ Next water source / actual miles: ____
+
+Daily food ____ / water ____ / modified miles ____ . Reserves cover ____ ordinary days / ____ water days at this pace (not a guarantee).
+
+Next checkpoint before advancing: [ ] scene/refuge [ ] weather [ ] food expiry [ ] shortage [ ] health [ ] other ____
+
+## Running state — change only what changed
 
 Date: ____ Marker: ____ Chapter: ____ Next fort/refuge: ____ Distance: ____
 
