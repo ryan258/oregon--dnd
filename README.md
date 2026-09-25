@@ -2,26 +2,34 @@
 
 > **What are we willing to spend, and what do we refuse to lose, to get these people to Oregon?**
 
-Four ordinary people put everything they own into one wagon and point it west. Nobody in that wagon is a hero. One of them is going because of a promise made to a dying woman. One is going because there is nothing left behind them worth the return trip. They will not all agree about what to do at the river, and they will not all arrive.
+Four ordinary people put everything they own into one wagon and point it west. Nobody in that wagon is a hero. One of them is going because of a promise made to a dying woman. One is going because there is nothing left behind them worth the return trip. They will not all agree about what to do at the river, and some may never arrive.
 
 This is a survival tabletop RPG about the 2,000 miles between wanting a life and having one — a fictionalized 1848 journey where the calendar is a countdown, the food barrel is an argument waiting to happen, and every mile is paid for in something. You choose what to risk, whom to help, and which promises survive contact with the road. Death is permanent. Every player keeps playing.
 
-**Version 0.9 — playtest edition.** One GM and 1–4 players controlling four travelers, or solo. Seven chapters, targeting 6–8 sessions; duration and balance await real-table evidence. Familiar d20 checks, no D&D books required.
+**Version 0.10 — playtest edition.** One GM and 1–4 players controlling four travelers, or solo. Seven chapters, targeting 6–8 sessions; duration and balance await real-table evidence. Familiar d20 checks, no D&D books required.
 
 [Open the single-file handbook](docs/handbook.html) for the complete packet with navigation and print styling. Rebuild with `python3 tools/build_handbook.py` (dependency: `tools/requirements.txt`).
+
+## What changed in v0.10
+
+The river now weighs a two-day labor agreement against a departing carrier and a personal meeting. Seven chapters carry individual opportunities into later consequences, vary their major scenes, and leave room for humor and pleasure. NPCs keep their own plans. Each role has a new technique option, while the table sheets reduce repeated transcription. Starter resources and basic danger values remain the baseline for testing. See [revision status](docs/UPDATE-IDEAS.md) for the full change-to-evidence map.
 
 ## Play tonight
 
 A wagon queue, a ferryman's posted price, and a schoolteacher counting coins she doesn't have enough of. Start with the [quickstart](docs/QUICKSTART.md), hand out the [four pregens](docs/PREGENS.md), and run [The River Between](docs/RIVER_CHAPTER.md) — a complete first chapter with starting supplies, three real ways across, honest consequences, and a way back from failure. The [GM reference](docs/sheets/gm_reference.md) and [map](docs/TRAIL_MAP.md) keep the table oriented.
 
+## Player companion for iPad
+
+The [player app](docs/PLAYER_APP.md) provides local character saves, pregens, health and condition tracking, personal notes, and backup/import. It can be installed from an HTTPS host for offline Home Screen use. Each device keeps its own sheets; shared wagon state stays with the table. Hosting and real-iPad acceptance remain separate steps. Rebuild the player rules from the manuscript with `python3 tools/build_player_rules.py` and package the static offline distribution with `python3 tools/package_player.py`.
+
 ## The full journey
 
 - [Core rules](seed.md) — how the road charges you, and what it cannot take
 - [Seven-chapter campaign](docs/CAMPAIGN.md) — plains, rivers, mountains, desert, and the last decision at The Dalles
-- [Recurring people](docs/PEOPLE.md) — three travelers who remember what you did
+- [Recurring people](docs/PEOPLE.md) — people with their own plans who remember what you did
 - [Complete packet index](docs/README.md) — sheets, examples, solo play, and table agreements
-- [Playtest protocol](docs/PLAYTEST.md) — the evidence still needed before claiming a 9/10 experience
-- [Project roadmap](roadmap.md) — trajectory from v0.9 playtest through v1.0 release
+- [Playtest protocol](docs/PLAYTEST.md) — measure choices, participation, accounting, and what players remember
+- [Project roadmap](roadmap.md) — trajectory from v0.10 playtest through v1.0 release
 - [Change record](CHANGELOG.md) — history of design changes and migrations
 
 ## Modules

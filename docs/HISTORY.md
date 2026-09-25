@@ -1,6 +1,6 @@
 # Historical framing and sources
 
-Version 0.9. Source check: September 25, 2026. This is a fictional survival game situated in 1848. It is not a reenactment, curriculum, medical guide, or claim of Indigenous consultation.
+Version 0.10. Source check: September 25, 2026. This is a fictional survival game situated in 1848. It is not a reenactment, curriculum, medical guide, or claim of Indigenous consultation.
 
 ## What is researched, and what is invented
 
@@ -13,6 +13,12 @@ The NPS overview explicitly places the emigrant journey in lands long traversed 
 The historical Barlow Road supplied an overland alternative to the Columbia route. The game's tolls and seven/fourteen-day finale durations are invented for choices at the table; they are not quotations of documented rates or travel times. [The Barlow Road](https://www.nps.gov/articles/000/the-barlow-road.htm).
 
 For regional perspectives, begin with the Confederated Tribes of the Umatilla Indian Reservation's own account of Cayuse, Umatilla, and Walla Walla history, rather than assigning a generic “tribal” attitude. [CTUIR: Brief History](https://ctuir.org/about/brief-history-of-ctuir/). For the Fort Hall region, use the Shoshone-Bannock Tribes' own government resources and distinguish the later reservation/treaty history from the game's 1848 setting. [Shoshone-Bannock Tribes](https://www.sbtribes.com/).
+
+## v0.10: regional basis for a continuing fictional character
+
+Checked September 25, 2026: the Shoshone-Bannock Tribes' [own history](https://www.sbtribes.com/about/) identifies Northern Shoshone and Bannock peoples, describes ancestral lands including present-day Idaho, and describes regional travel, hunting, and fishing. This supports a Shoshone character in the broadly abstracted Hall/Snake River setting; it does not authenticate her particular occupation, work area, English address, biography, or any scene. Those are declared fiction. The packet's mile markers cannot locate a historical household.
+
+The [Tribes' current site](https://www.sbtribes.com/) places reservation establishment and the Fort Bridger Treaty in 1867–1868, after the game's 1848 setting. Do not portray the current reservation government or boundaries as already established in these scenes. This narrow source check is not specialist review or permission to invent cultural practices. No outside reviewer was contacted. The stock keeper stays in her own region; her later appearances use ordinary correspondence through established carriers.
 
 ## Questions still requiring specialist review
 

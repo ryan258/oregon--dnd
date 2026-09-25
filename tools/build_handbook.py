@@ -14,7 +14,7 @@ ORDER = ['docs/QUICKSTART.md', 'docs/RIVER_CHAPTER.md', 'docs/PREGENS.md',
          '03_settlements_and_trading.md', '04_native_encounters.md',
          '05_camp_life.md', '06_weather_and_environment.md', '07_route_variants.md',
          'docs/ARRIVAL.md', 'docs/SAMPLE_DAY.md', 'docs/SESSION_ZERO.md',
-         'docs/SOLO.md', 'docs/sheets/character_sheet.md',
+         'docs/SOLO.md', 'docs/PLAYER_APP.md', 'docs/sheets/character_sheet.md',
          'docs/sheets/party_wagon_sheet.md', 'docs/sheets/people_ledger.md',
          'docs/sheets/trail_log.md', 'docs/sheets/fort_trading_sheet.md',
          'docs/glossary.md', 'docs/PLAYTEST.md', 'docs/HISTORY.md',
@@ -64,8 +64,8 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 @media(max-width:850px){.layout{display:block}nav{position:relative;max-height:270px;border-bottom:1px solid var(--line);border-right:0}main{padding:0 20px 40px}header{padding:30px 20px}table{font-size:12px}td,th{padding:6px}article h1{font-size:1.8rem}}
 @media print{@page{size:A4;margin:16mm}body{background:#fff;color:#000;font-size:10pt;line-height:1.45}header{background:#fff;color:#000;padding:0 0 16pt}.layout{display:block}nav,.actions,.skip,footer{display:none}main{padding:0}article{break-before:page;border:0;padding:0}article h1{font-size:23pt}h2{font-size:16pt}h3{font-size:12pt}h1,h2,h3{break-after:avoid}p,li{orphans:3;widows:3}table{font-size:8pt}tr{break-inside:avoid}thead{display:table-header-group}td,th{padding:5pt}a{color:#000}pre{white-space:pre-wrap;font-size:8pt}.source{font-size:8pt}}
 '''
-out = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Oregon Trail RPG — Playtest Handbook v0.9</title><style>'+css+'</style></head><body>'
-out += '<a class="skip" href="#reading">Skip to handbook</a><header><p class="kicker">Oregon Trail RPG · v0.9 · Playtest edition</p><h1>Four people. One wagon.<br>Promises worth carrying.</h1><p>A complete local play packet. Start at the river, then follow the journey west. The design aims for memorable decisions; human playtesting is still pending.</p><div class="actions"><a href="#docs-RIVER_CHAPTER-md">Play the river chapter</a><a href="#docs-PREGENS-md">Meet the four travelers</a><button type="button" onclick="window.print()">Print / save PDF</button></div></header>'
+out = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Oregon Trail RPG — Playtest Handbook v0.10</title><style>'+css+'</style></head><body>'
+out += '<a class="skip" href="#reading">Skip to handbook</a><header><p class="kicker">Oregon Trail RPG · v0.10 · Playtest edition</p><h1>Four people. One wagon.<br>Promises worth carrying.</h1><p>A complete local play packet. Start at the river, then follow the journey west. The design aims for memorable decisions; human playtesting is still pending.</p><div class="actions"><a href="#docs-RIVER_CHAPTER-md">Play the river chapter</a><a href="#docs-PREGENS-md">Meet the four travelers</a><button type="button" onclick="window.print()">Print / save PDF</button></div></header>'
 out += '<div class="layout"><nav aria-label="Handbook sections">'+''.join(nav)+'</nav><main id="reading">'+''.join(sections)+'</main></div><footer>Generated from the Markdown packet. No network requests, accounts, or data collection. Rebuild with python3 tools/build_handbook.py.</footer></body></html>'
 destination = ROOT / 'docs/handbook.html'
 destination.write_text(out)

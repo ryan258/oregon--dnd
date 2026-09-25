@@ -1,5 +1,27 @@
 # Change record
 
+## Player companion 1 — September 25, 2026
+
+Added a static single-page player app for the unchanged v0.10 game: generated pregens and role references, local character saves, custom/reserve sheets, health/wounds/Exhaustion/rest, condition and use reminders, story/journal, portable backup/import, previous-save undo, stale-window protection, and install-time offline caching. Includes bounded model/storage/offline tests, packaging, and iPad setup/recovery instructions. No accounts, cloud sync, shared-wagon automation, publication, or device installation. Actual verification is recorded separately.
+
+## 0.10 — September 25, 2026 — choices and consequences
+
+Implemented the accepted manuscript critique as a new playtest edition. No human session or score is claimed.
+
+- River work now takes two labor days before crossing, with an announced carrier departure, personal workshop opportunity, letter alternative, role-specific choices, quoted route costs, and explicit recovery for incomplete work or unavailable workers.
+- Campaign scenes now include a coordinated rescue, comparison of route reports, a negotiated shared work area, a provisioning opportunity, and a relationship reckoning before arrival. Prepared joy and quiet occupy existing evenings.
+- Personal opportunities/conflicts are linked to later concrete changes through the existing ledger, with custom-character and replacement guidance; no new reward currency.
+- Mercy, Tomas, and Nessa have differing ambitions and announced plans. Added Mara's optional connection and a fictional Hall stock keeper with regional source notes, autonomous household work, and later correspondence.
+- One additional technique option per role enables a different plan; characters still choose only two techniques across the campaign.
+- Wagon decision panel, checkpoint-based accounting, and compact trail log remove duplicate transcription while preserving daily costs, checks, and interruption.
+- Kept starter resources, basic checks, and damage values as a baseline. Added exact river timing/food and weather-change examples, economy observations, and a desert stress snapshot.
+- Updated the handbook, reading index, roadmap, and verification boundaries; removed unsupported “optimal” and internal-consistency claims from the roadmap.
+
+**Migration:** adopt between sessions with the table's agreement. Keep actual supplies, conditions, role abilities, and earned techniques. Existing characters may exchange one learned technique for a new option if the table wants; do not award extra technique slots. Keep already completed crossings and negotiated prices as played. Apply new river timing only to an unstarted scene. Adopt NPC plans prospectively after announcing them; never turn an earlier refusal into a newly invented broken promise. An already established NPC identity or goal takes precedence over revised defaults. Preserve earned favors through named contacts. Compact logs may begin with current state; do not reconstruct old days.
+
+**Evidence:** see [local verification](docs/VERIFICATION.md). Human tests, specialist review, and release remain separate. No staging, commit, push, publication, or contact with outside reviewers was performed for this revision.
+
+
 ## 0.9 — September 25, 2026 — local playtest redesign
 
 Reworked the existing manuscript with authorization to apply the full design review. Preserved the Oregon journey, shared wagon, four professions, permanent death, resource pressure, seasons, backgrounds, trading, rest, and route finale. Replaced procedures that undermined preparation or excluded players.

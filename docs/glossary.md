@@ -1,4 +1,4 @@
-# Plain-language glossary — v0.9
+# Plain-language glossary — v0.10
 
 The road's vocabulary, in plain words. The [core rules](../seed.md) are authoritative. This glossary defines terms without a second set of numerical tables.
 
@@ -31,7 +31,7 @@ The road's vocabulary, in plain words. The [core rules](../seed.md) are authorit
 | Jury-rig | Teamster's guaranteed repair using a part and time, no permanent wagon-capacity penalty. |
 | Lame team | A living team unavailable for pulling until a Rest Day. |
 | Layover | Another name for a Rest Day. |
-| Leg / montage | Normally three travel days resolved together, one random event, all daily costs and conditions still accounted for. |
+| Leg / montage | Normally three travel days resolved together, one random event, all daily costs and conditions still accounted for. One log row is enough unless a checkpoint changes the calculation. |
 | Marker | Simplified progress along the campaign map. Detour actual miles can differ. |
 | Morale | Shared confidence. Low values provoke conversation and renegotiation, not involuntary PC desertion. |
 | NPC / PC | Non-player character / player character. NPCs have goals and limits, not unlimited aid. |

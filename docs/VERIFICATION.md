@@ -1,33 +1,42 @@
-# Local verification — v0.9
+# Local verification — v0.10
 
-September 25, 2026. This records the scope of agent-run local checks. It is not a playtest report or a claim of a measured 9/10 rating.
+September 25, 2026. This edition implements a manuscript critique. Human play, specialist review, campaign balance, and player rating remain unmeasured.
 
-## Completed checks
+## Current revision checks
 
-- The packet checker validates relative Markdown links, parsed table row structure, final newlines/whitespace, handbook section anchors, four pregens' actual printed arrays/modifiers/HP, all seven six-result event tables, and the actual printed starting-purchase arithmetic.
-- Starter purchases total **$550**, leaving **$250** from $800. Four extra barrels plus the included capacity give 60 gallons.
-- Eight focused arithmetic probes checked shortcut progress (790 + 40 + 70 = 900), detour source marker (900 + 72 − 36 = 936), direct-desert travel and water allowance, remaining river-chapter days, stacked slow travel, trading/credit, the Rest example, and the three-day leg example.
-- A manual rules pass traced full/partial/failed crossings, unaffordable passage, damage at zero HP, condition treatment duration, immediate player substitution, extra-body rations, short/interrupted travel legs, lost stock, cargo capacity, and finale days replacing final mileage.
-- The generated handbook contains the complete packet with local section navigation, responsive CSS, and print CSS. It contains no remote assets or network-dependent behavior.
-- Git whitespace checks were run on tracked edits. The packet checker also checks new Markdown files that Git's unstaged diff does not cover.
+- Rebuilt the offline handbook from all 34 source sections, including the player-app guide. The bounded packet check passed for 34 Markdown files, 126 local links, 162 handbook anchor references, four printed pregen arrays/modifiers/HP, all 42 chapter event entries, and the $550 purchases / $250 remainder. These are file-level checks, not a claim of complete rules consistency.
+- Ten focused arithmetic/printed-table checks passed: four river approach food/timing cells; their combined food comparison; the ramp example's food, wagon, teams, and cash endpoint; the weather-change example; the desert forecast; ford no-success probabilities; and sledge progress. The calculations are reproducible from the operands in Sample Day and Playtest; no campaign simulator was run.
+- Manually traced river labor completion/abandonment, one/no-worker passage recovery, the missed meeting and letter, per-person mixed-day rest, daily weather checkpoints, independent NPC departures and carried news, retained favor redemption, technique action/capacity limits, and safe carrier arrival. Corrected conflicting extra-treatment wording and the initial sledge tradeoff during that review.
+- Git whitespace checks passed. All revision edits remain unstaged; no commit, push, deployment, publication, or outside messages were performed.
+- The request to open the handbook as a Codex file panel was queued. The separate handbook browser visual-inspection attempt was blocked by the browser's local-file URL security policy. No workaround was attempted. The handbook's browser rendering and printed-page appearance are therefore not visually verified in this revision. The separate player-app preview was inspected as described below.
 
-## Reproduce the bounded checks
+## Player companion checks
 
-From the repository root, with the dependency in `tools/requirements.txt` available:
+- Generated rules match the three current manuscript sources: four pregens, four roles, 16 backgrounds, 16 techniques, and nine conditions. JavaScript syntax checks passed.
+- All 20 targeted Node tests passed. They cover wound transitions, daily Exhaustion limits, maximum HP, rest ordering, date/reset behavior, complete backup round trips, rejected imports, independent imported copies, previous-save undo after reopening, stale writers, denied storage reads, quota/archive failures, corrupt-save recovery, and the service worker's offline cache and scope-limited cleanup. Storage failures and Cache API behavior in these tests are injected, not measurements of Safari storage limits.
+- In the Codex desktop browser, confirmed damage, notes, Exhaustion, and condition marks persisted after reload; Undo restored a previous save after reload; a pasted backup imported as a separate copy; learned techniques and use reminders saved; and a second window paused editing when another window changed the save.
+- With the local preview server stopped, reloaded the cached app, changed a note, and reloaded again. The app and reference remained available and the note persisted. The checked browser error log was empty. This verifies an unavailable-origin scenario in that desktop browser, not a physical iPad Airplane Mode session.
+- Visually checked the app at tablet and narrow-screen viewport sizes. At 375 pixels wide, the document width also measured 375 pixels. This is a responsive layout check, not a full accessibility audit.
+- The deployment ZIP contains static assets and setup instructions only; browser saves are not part of the package. Hosting, publication, and installation on players' devices have not been performed.
+
+Physical iPad Safari and Home Screen installation, Files download/import, and the device's offline reopening behavior remain unverified. Complete the six preload steps in [the player-app guide](PLAYER_APP.md) on each iPad before game-night reliance. Local storage and a previous-save slot are not independent backups.
+
+## Reproduce the bounded document checks
 
 ```sh
 python3 tools/build_handbook.py
 python3 tools/check_packet.py
+python3 tools/build_player_rules.py --check
+node --test tests/player.test.cjs tests/player-offline.test.cjs
 git diff --check
 ```
 
-These are small document checks, not a game simulation or broad test suite. The eight arithmetic probes were one-off calculations; their operands and expected results are recorded above and in the worked procedures.
+These commands check files and printed starting arithmetic, not player experience. Constructed examples in Sample Day and Playtest identify their assumptions; none is an observed human session.
 
-## Not established
+## Earlier evidence
 
-- No human table or independent GM has run this edition in this task. Actual fun, spotlight distribution, campaign balance, and session duration remain unmeasured.
-- Visual browser and printed-page inspection were not completed: the local server bind was denied by the sandbox, and the browser's URL policy blocked opening the local HTML file. No alternate route around that browser restriction was used. HTML structure and navigation were checked from the generated file only.
-- Historical source checks inform framing; specialist historical/Indigenous review and publishing provenance review remain pending. No outside reviewer was contacted.
-- Prior to the authorized commit bundling, no push, release, external deployment, or publication was performed.
+The v0.9 verification recorded local structure, starting purchases, four pregens, 42 events, and selected arithmetic/manual procedure checks. Those historical checks do not validate v0.10's new choices or techniques. Earlier browser/print inspection was not completed; no later visual acceptance should be inferred from that record.
 
-Use the Playtest protocol for the next kind of evidence. If a live rule problem appears, record the exact scene and smallest correction rather than treating a passing file check as proof the rule works at the table.
+## Still required
+
+Use the Playtest protocol for the first river table, independent GM, desert stress session, and earned finale. The Hall stock keeper's regional basis was checked against the Shoshone-Bannock Tribes' own pages; the character and work scenes are fiction, with no specialist endorsement. Publication provenance and accessibility/print acceptance remain separate work.

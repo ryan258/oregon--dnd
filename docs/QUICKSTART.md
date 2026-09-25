@@ -1,6 +1,6 @@
 # Oregon Trail RPG — Start playing
 
-**Version 0.9 playtest edition.** Four ordinary people, one wagon, and two thousand miles of decisions nobody gets to take back. This page gets you playing in five minutes; [core rules](../seed.md) settle shared mechanics.
+**Version 0.10 playtest edition.** Four ordinary people, one wagon, and two thousand miles of decisions nobody gets to take back. This page gets you playing in five minutes; [core rules](../seed.md) settle shared mechanics.
 
 > **What are we willing to spend, and what do we refuse to lose, to get these people to Oregon?**
 
@@ -8,7 +8,7 @@ Everything in this game is an answer to that question. The food barrel is an ans
 
 ## Start in five minutes
 
-1. Pick a GM and distribute the [four pregens](PREGENS.md). With fewer than four players, share the extra travelers. No D&D book needed.
+1. Pick a GM and distribute the [four pregens](PREGENS.md) (or open them in the [player companion](PLAYER_APP.md)). With fewer than four players, share the extra travelers. No D&D book needed.
 2. Agree [tone and boundaries](SESSION_ZERO.md); read Dream, Promise, Boundary, and Bond aloud. Revise with the other players' agreement.
 3. For tonight, open [The River Between](RIVER_CHAPTER.md) and use its exact starting state. For the full journey use the starter loadout below and [Seven Chapters](CAMPAIGN.md).
 4. Put the [route map](TRAIL_MAP.md), [wagon sheet](sheets/party_wagon_sheet.md), [GM reference](sheets/gm_reference.md), and [people ledger](sheets/people_ledger.md) within reach.
@@ -43,13 +43,13 @@ The wagon is shared. The reasons for being in it are not — and the game pays y
 
 Once per character per session, a meaningful cost/complication arising from Dream, Promise, Bond, or Boundary earns Inspiration. Hold one, spend before a check for Advantage. Acting out dialogue is optional; explain your intent plainly.
 
-At chapter end, affirm or revise a personal statement. After chapters 2 and 5 choose one new technique. Record specific NPC promises/favors, including what they can actually provide. They matter at the finish.
+Connect one existing chapter scene to a traveler's concrete opportunity or conflict. Record choice → immediate change → next appearance on the people ledger; no new promise points. At chapter end, affirm or revise a personal statement. After chapters 2 and 5 choose one new technique. Record specific NPC promises/favors, including what they can actually provide. They matter at the finish.
 
 ## Travel
 
 Most days are not stories. Batch them, spend the food, and slow down when the road puts a real question in front of somebody.
 
-Use three-day legs between major scenes: choose stance, roll one event for the leg, apply each day's travel/supplies/weather/conditions in batches. Weather can be hazardous; it does not prohibit batching. Stop before advancing unused days if a decision or medical crisis appears. A prepared scene replaces that day's random event. Fort days and days lost to an existing event do not add random events. Do not charge a failed event day twice.
+Keep running totals on the wagon sheet; use one log row per uninterrupted leg, splitting at weather, food expiry, shortages, health changes, or a decision. Resolve daily effects in order even when only one row is written. Use three-day legs between major scenes: choose stance, roll one event for the leg, apply each day's travel/supplies/weather/conditions in batches. Weather can be hazardous; it does not prohibit batching. Stop before advancing unused days if a decision or medical crisis appears. A prepared scene replaces that day's random event. Fort days and days lost to an existing event do not add random events. Do not charge a failed event day twice.
 
 | Stance | Miles/day before modifiers | Food/person | Event |
 | --- | ---: | ---: | --- |

@@ -1,28 +1,16 @@
-# Revision status and next evidence — v0.9
+# Revision status and next evidence — v0.10
 
-This replaces the previous feature backlog after the authorized September 2026 redesign. The earlier “P1 closed / internally consistent” claim is withdrawn: additional contradictions were found. Completion here means the content exists and has been locally checked, not that a table has accepted the design. For strategic phases through v1.0, see the [Project roadmap](../roadmap.md) and [Playtest protocol](PLAYTEST.md).
+This edition implements the accepted design critique. It is a revised playtest manuscript, not a measured improvement in player rating. See [verification](VERIFICATION.md) for local checks and [playtesting](PLAYTEST.md) for the remaining human work.
 
-## Applied design changes
+| Accepted recommendation | Current implementation | What remains unproved |
+| --- | --- | --- |
+| Sharper river tradeoffs | Ferry day 2, two labor days then crossing day 3, carrier departure and workshop discussion, explicit letter alternative, route cost table | Whether multiple approaches appeal at a real table |
+| Measure survival pressure | Same starter budget, food, damage, and base DCs; economy observations and exact desert test snapshot | Campaign balance, role demand, and difficulty |
+| Personal stakes change later play | One opportunity and conflict per traveler across existing scenes; choice → change → return ledger | Whether players care about and recall the consequences |
+| Growth enables plans | One additional bounded technique option per role; two total earned choices remain | Relative usefulness and interactions in play |
+| Independent recurring people | Announced NPC decisions, differing work ambitions, Mara's meeting, regionally grounded fictional Hall stock keeper | Specialist portrayal review and player response |
+| Dramatic and emotional variety | Coordinated rescue, competing reports, shared-work negotiation, provisioning opportunity, celebrations, finale reckonings | Pacing across actual sessions |
+| Faster table procedure | Next decision panel, checkpoint-based arithmetic, one log row per uninterrupted leg, updated examples | Actual time saved and readability at the table |
+| Earned ending | Specific relationship returns before route choice; safe carrier remains safe; recorded agreements shape Arrival | Finale satisfaction with carried-forward state |
 
-| Recommendation | Implementation |
-| --- | --- |
-| Warn before catastrophic events | All seven d6 event tables have visible alternatives; no automatic full food/wagon wipe or healthy-team death. |
-| Preserve participation | Immediate reserve/replacement procedure, four active slots, explicit extra-body food, no fee/role lockout. |
-| Give characters motives and growth | Dream/Promise/Boundary/Bond; once/session stakes reward; techniques after chapters 2/5. |
-| Improve pacing | Three-day legs usable in bad weather, daily costs retained, interrupted legs stop before unused days, seven prepared chapter situations. |
-| Reliable role expertise | Four reliable services and resource/time-priced interventions; fixed ability array default. |
-| Remember people | Mercy, Tomas, Nessa and a promise/favor ledger; no universal reputation bonus. |
-| Resolve social disagreement without compulsory violence | Different encounter purposes, ordinary agreement without rolls, failed offers retain terms, violence only from deliberate fictional action. |
-| Pay off the journey | Two runnable finale routes, earned favors, player-authored futures, graves and changed promises. |
-| Fix foundational contradictions | Explicit zero-HP transitions, two-traveler Exhaustion threshold, absolute usable-team speed, water forecast, abstract cargo units. |
-| Deliver a playable test slice | Four pregens, route map, river adventure, rules reference, sheets, examples, session-zero page, solo procedure, test protocol. |
-
-## Next decisions belong to evidence
-
-1. Run the river packet; correct actual confusion and uneven spotlight.
-2. Have an independent GM run it; refine the packet's self-sufficiency.
-3. Test desert pressure and the finale with carried-forward state.
-4. Complete a campaign before claiming duration, balance, or a 9/10 player rating.
-5. Before commercial release: specialist historical/Indigenous review, licensing/provenance review, accessible typesetting, and measured print/readability checks.
-
-A tracker, VTT exports, data-generation system, large simulation harness, and commercial publishing pipeline are deferred. They are not needed to answer whether this version produces good decisions at the table. Add one only for an observed need.
+Next: one river table, revision from its observations, independent GM, desert stress test, finale, then full campaign. Specialist historical/Indigenous review remains pending; limited regional sourcing is documented in History. The separately requested [player companion](PLAYER_APP.md) is implemented locally; its hosting and device acceptance remain pending. Shared-party synchronization, an expanded campaign, and numerical rebalance are not required before those observations.
