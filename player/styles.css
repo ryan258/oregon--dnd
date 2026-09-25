@@ -1,6 +1,1058 @@
-:root{color-scheme:light;--paper:#f6f2e9;--card:#fffdf7;--ink:#253b33;--muted:#62695d;--line:#d7d8c8;--accent:#ab6039;--sage:#e7ecde;--red:#a63c31;--shadow:0 8px 28px #233b3209;font:17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink)}button,input,select,textarea{font:inherit}button,select,input[type=checkbox]{cursor:pointer}button{min-height:48px;padding:10px 17px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font-weight:650;touch-action:manipulation}button:hover{border-color:var(--ink);background:var(--sage)}button:disabled{opacity:.5;cursor:not-allowed}.primary{background:var(--ink);color:white;border-color:var(--ink)}.primary:hover{background:#365849;color:white}.danger{color:var(--red)}:focus-visible{outline:3px solid #ab6039;outline-offset:3px}input,select,textarea{width:100%;min-height:48px;padding:10px 12px;border:1px solid #aab2a1;border-radius:8px;background:#fffefb;color:var(--ink)}textarea{min-height:120px;resize:vertical}input[type=checkbox]{width:24px;min-height:24px;height:24px;flex-shrink:0;accent-color:var(--ink)}label{display:block;font-weight:600;margin-bottom:6px}.check{display:flex;gap:12px;align-items:center;min-height:48px;font-weight:500}.field{margin-bottom:18px}.muted,small{color:var(--muted)}small{font-size:.82rem}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.69rem;font-weight:750}h1,h2,h3,p{margin-top:0}h1,h2{font-family:Georgia,serif;font-weight:500}h1{font-size:clamp(2.3rem,4.5vw,3.6rem);line-height:1.1;margin-bottom:12px}h2{font-size:1.55rem;margin-bottom:16px}h3{font-size:1.05rem}p{margin-bottom:16px}a{color:inherit;text-underline-offset:3px}[hidden]{display:none!important}.skip{position:absolute;left:12px;top:-100px;z-index:10;background:white;padding:12px}.skip:focus{top:12px}.masthead{background:var(--ink);color:#f6f2e9;padding:24px max(24px,calc((100vw - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:16px}.brand p{font-family:Georgia,serif;font-size:1.65rem;margin:0}.tag{font-size:.83rem;color:#dce4d4}.status-strip{display:flex;justify-content:space-between;gap:10px;padding:11px max(24px,calc((100vw - 1180px)/2));background:#e6ebdf;font-size:.79rem}.utilities{max-width:1180px;margin:16px auto 0;display:flex;gap:10px;padding:0 24px;flex-wrap:wrap}.utilities button{min-height:44px;font-size:.82rem}main{max-width:1180px;margin:auto;padding:28px 24px 48px}footer{max-width:1180px;margin:auto;padding:12px 24px 40px;font-size:.8rem;color:var(--muted)}.notice{padding:16px;border:1px solid var(--line);border-radius:8px;margin:18px auto;max-width:1132px;background:var(--sage)}.error{background:#fff0e8;border-color:#c88466;color:#803524}.hero{display:flex;justify-content:space-between;align-items:start;gap:28px;margin:12px 0 22px}.hero-select{min-width:230px;max-width:300px}.hero .eyebrow{color:var(--accent);margin-bottom:10px}.hero p{max-width:62ch}.pills{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:12px}.pill{padding:5px 11px;border-radius:999px;background:var(--sage);font-size:.8rem}.tabs{display:flex;gap:8px;padding-bottom:20px;overflow-x:auto}.tabs button{background:transparent;border-color:transparent;white-space:nowrap}.tabs button[aria-pressed=true]{background:var(--ink);color:white}.grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px;align-items:start}.stack{display:grid;gap:20px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--shadow);min-width:0}.card-head{display:flex;justify-content:space-between;align-items:start;gap:15px}.card-head .eyebrow{color:var(--muted)}.big-number{font-family:Georgia,serif;font-size:3.7rem;line-height:1.05}.big-number small{font:1.15rem -apple-system,BlinkMacSystemFont,sans-serif}.health-number{display:flex;align-items:baseline;gap:16px;margin:12px 0}.health-number .pill{align-self:center}meter{width:100%;height:14px;margin:5px 0 18px;accent-color:var(--ink)}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.row>input[type=number]{width:85px}.row-spread{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.exhaust{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.exhaust span{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;font-size:.85rem}.exhaust .filled{background:var(--accent);border-color:var(--accent);color:white}.abilities{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin:18px 0}.ability{text-align:center;border:1px solid var(--line);border-radius:10px;padding:12px 4px}.ability strong{display:block;font-family:Georgia,serif;font-size:1.6rem}.ability span{font-size:.74rem}.ability small{display:block}.rule{font-size:.86rem;line-height:1.6}.rule strong{font-weight:700}details{border-top:1px solid var(--line);padding-top:14px;margin-top:14px}summary{cursor:pointer;font-weight:650;min-height:44px;padding:8px 0}.condition{padding:16px 0;border-top:1px solid var(--line)}.condition:first-of-type{border:0}.condition select{max-width:85px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.choice{display:flex;text-align:left;flex-direction:column;gap:8px;padding:24px;min-height:170px}.choice strong{font:1.7rem Georgia,serif}.choice span{font-size:.9rem}.welcome{padding:30px 0;max-width:960px;margin:auto}.welcome>p{max-width:65ch}.welcome .cards{margin:30px 0}.quote{border-left:3px solid var(--accent);padding-left:18px;font-family:Georgia,serif;font-size:1.2rem}.two-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.full{grid-column:1/-1}.source-note{font-size:.78rem;color:var(--muted)}dialog{border:1px solid var(--line);border-radius:18px;padding:28px;background:var(--paper);color:var(--ink);width:min(650px,calc(100% - 24px));max-height:90dvh;overflow-y:auto;box-shadow:0 20px 100px #0004}dialog::backdrop{background:#142b25a6}.dialog-actions{display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap;margin-top:24px}.dialog-error{color:var(--red);font-weight:650}.backup-text{font:12px/1.5 ui-monospace,monospace;min-height:190px;overflow-wrap:anywhere}.compact{font-size:.85rem}.divider{border:0;border-top:1px solid var(--line);margin:24px 0}
-@media(max-width:750px){.tag{display:none}.grid{grid-template-columns:1fr}.hero{flex-direction:column;gap:12px}.hero-select{width:100%;max-width:none}.status-strip{flex-direction:column;gap:3px}.abilities{grid-template-columns:repeat(3,1fr)}.card{padding:20px}main{padding:22px 16px}.masthead{padding:20px 16px}.utilities{padding:0 16px}.two-fields{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.choice{padding:18px}.choice strong{font-size:1.4rem}}
-@media(max-width:390px){.cards{grid-template-columns:1fr}.row button{flex-grow:1}.card{padding:16px}.masthead{gap:10px}.brand p{font-size:1.4rem}}
-@media(prefers-reduced-motion:no-preference){button{transition:background .15s,border-color .15s}}
-@media print{.masthead{background:none;color:#000}.utilities,.tabs,button,.status-strip,footer{display:none}body{background:white;color:black}.grid{display:block}.card{break-inside:avoid;margin-bottom:15px;box-shadow:none}input,textarea{border-color:#aaa}main{padding:0}dialog{display:none}}
+/* Oregon Trail RPG · Trail Companion
+   Production Design System · Version 0.10
+   Character-bespoke styling for Eliza Marsh (Guide), Thomas Pruitt (Doctor),
+   Cal Stewart (Hunter), Mae Sorensen (Teamster), and custom travelers.
+   100% offline-ready, zero external dependencies, CSP-compliant. */
+
+:root {
+  color-scheme: light;
+  --paper: #f6f2e9;
+  --card: #fffdf7;
+  --card-alt: #f1ebe0;
+  --ink: #23382f;
+  --ink-light: #3a5246;
+  --muted: #5e6659;
+  --line: #d5d6c5;
+  --line-strong: #abb39f;
+  --accent: #ab6039;
+  --accent-hover: #8f4a25;
+  --accent-subtle: #faeee6;
+  --sage: #e5ece0;
+  --red: #a2382e;
+  --shadow: 0 10px 30px rgba(35, 56, 47, 0.07), 0 2px 6px rgba(35, 56, 47, 0.04);
+  --hero-bg: linear-gradient(135deg, rgba(229, 236, 224, 0.6) 0%, rgba(255, 253, 247, 0.95) 100%);
+  --meter-fill: linear-gradient(90deg, #ab6039 0%, #23382f 100%);
+  --crest-color: #ab6039;
+  --card-top-accent: transparent;
+  font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* ==========================================================================
+   CHARACTER & ROLE BESPOKE THEMES
+   ========================================================================== */
+
+/* --- 1. GUIDE (Eliza Marsh) · Cartographer & Expedition Surveyor --- */
+body[data-role="guide"],
+.choice-guide {
+  --paper: #f5f3ec;
+  --card: #fffefc;
+  --card-alt: #eaf0f5;
+  --ink: #142539;
+  --ink-light: #284362;
+  --muted: #526377;
+  --line: #c8d3df;
+  --line-strong: #9cb1c6;
+  --accent: #b67724;
+  --accent-hover: #986118;
+  --accent-subtle: #fbf3e5;
+  --sage: #dbe6eb;
+  --red: #a5362e;
+  --shadow: 0 12px 34px rgba(20, 37, 57, 0.09), 0 2px 8px rgba(20, 37, 57, 0.04);
+  --hero-bg: radial-gradient(circle at 90% 15%, rgba(182, 119, 36, 0.16) 0%, transparent 50%), linear-gradient(135deg, #ebf3f9 0%, #fcfbf7 100%);
+  --meter-fill: linear-gradient(90deg, #b67724 0%, #142539 100%);
+  --crest-color: #b67724;
+  --card-top-accent: #b67724;
+}
+
+/* --- 2. DOCTOR (Thomas Pruitt) · Apothecary & Sanitation Keeper --- */
+body[data-role="doctor"],
+.choice-doctor {
+  --paper: #f1f6f2;
+  --card: #fafdfb;
+  --card-alt: #e4ece6;
+  --ink: #143525;
+  --ink-light: #25523b;
+  --muted: #506b5b;
+  --line: #c4d6cb;
+  --line-strong: #9ab8a4;
+  --accent: #993429;
+  --accent-hover: #7d251b;
+  --accent-subtle: #faeeee;
+  --sage: #d6e6db;
+  --red: #993429;
+  --shadow: 0 12px 34px rgba(20, 53, 37, 0.09), 0 2px 8px rgba(20, 53, 37, 0.04);
+  --hero-bg: radial-gradient(circle at 90% 15%, rgba(153, 52, 41, 0.12) 0%, transparent 50%), linear-gradient(135deg, #e6f3eb 0%, #fafffc 100%);
+  --meter-fill: linear-gradient(90deg, #993429 0%, #25523b 100%);
+  --crest-color: #25523b;
+  --card-top-accent: #993429;
+}
+
+/* --- 3. HUNTER (Cal Stewart) · Mountain Scout & Sharpshooter --- */
+body[data-role="hunter"],
+.choice-hunter {
+  --paper: #f4eee3;
+  --card: #fcf9f2;
+  --card-alt: #e8dfce;
+  --ink: #1a2f20;
+  --ink-light: #314d3a;
+  --muted: #5e6553;
+  --line: #d3c6b2;
+  --line-strong: #b4a287;
+  --accent: #b55c20;
+  --accent-hover: #944613;
+  --accent-subtle: #faeee3;
+  --sage: #d8e2d2;
+  --red: #a2382c;
+  --shadow: 0 12px 34px rgba(26, 47, 32, 0.09), 0 2px 8px rgba(26, 47, 32, 0.04);
+  --hero-bg: radial-gradient(circle at 90% 15%, rgba(181, 92, 32, 0.15) 0%, transparent 50%), linear-gradient(135deg, #eae1ce 0%, #fbf8f2 100%);
+  --meter-fill: linear-gradient(90deg, #b55c20 0%, #314d3a 100%);
+  --crest-color: #b55c20;
+  --card-top-accent: #b55c20;
+}
+
+/* --- 4. TEAMSTER (Mae Sorensen) · Wheelwright & Draft Engineer --- */
+body[data-role="teamster"],
+.choice-teamster {
+  --paper: #f3efe7;
+  --card: #fcfaf5;
+  --card-alt: #e8e1d5;
+  --ink: #212226;
+  --ink-light: #383a42;
+  --muted: #62636b;
+  --line: #cfc9be;
+  --line-strong: #aaa394;
+  --accent: #bc5824;
+  --accent-hover: #9c4316;
+  --accent-subtle: #fbeee6;
+  --sage: #ddd8ce;
+  --red: #9c3127;
+  --shadow: 0 12px 34px rgba(33, 34, 38, 0.10), 0 2px 8px rgba(33, 34, 38, 0.04);
+  --hero-bg: radial-gradient(circle at 90% 15%, rgba(188, 88, 36, 0.15) 0%, transparent 50%), linear-gradient(135deg, #e6dfd2 0%, #faf8f4 100%);
+  --meter-fill: linear-gradient(90deg, #bc5824 0%, #383a42 100%);
+  --crest-color: #bc5824;
+  --card-top-accent: #bc5824;
+}
+
+/* ==========================================================================
+   BASE & RESET
+   ========================================================================== */
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea { font: inherit; }
+button, select, input[type=checkbox] { cursor: pointer; }
+
+button {
+  min-height: 48px;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--ink);
+  font-weight: 650;
+  touch-action: manipulation;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  border-color: var(--ink-light);
+  background: var(--card-alt);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.primary {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.primary:hover {
+  background: var(--ink-light);
+  color: #fff;
+  border-color: var(--ink-light);
+}
+
+.danger {
+  color: var(--red);
+  border-color: var(--line);
+}
+
+.danger:hover {
+  background: var(--accent-subtle);
+  border-color: var(--red);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+input, select, textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--ink);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-subtle);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.55;
+}
+
+input[type=checkbox] {
+  width: 24px;
+  min-height: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.92rem;
+}
+
+.check {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  min-height: 48px;
+  font-weight: 500;
+}
+
+.field { margin-bottom: 20px; }
+.muted, small { color: var(--muted); }
+small { font-size: 0.82rem; }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.70rem;
+  font-weight: 750;
+  color: var(--accent);
+}
+
+h1, h2, h3, p { margin-top: 0; }
+h1, h2 {
+  font-family: "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+  line-height: 1.08;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+
+h2 {
+  font-size: 1.55rem;
+  margin-bottom: 14px;
+  color: var(--ink);
+}
+
+h3 {
+  font-size: 1.08rem;
+  color: var(--ink);
+}
+
+p { margin-bottom: 16px; }
+a { color: inherit; text-underline-offset: 3px; }
+[hidden] { display: none !important; }
+
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -100px;
+  z-index: 100;
+  background: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+.skip:focus { top: 12px; }
+
+/* ==========================================================================
+   MASTHEAD & STATUS
+   ========================================================================== */
+
+.masthead {
+  background: var(--ink);
+  color: #f7f4ec;
+  padding: 22px max(24px, calc((100vw - 1180px)/2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.25s ease;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand p {
+  font-family: "Iowan Old Style", "Apple Garamond", Baskerville, Georgia, serif;
+  font-size: 1.65rem;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.brand .eyebrow {
+  color: #dbe4d5;
+}
+
+.tag {
+  font-size: 0.84rem;
+  color: #dce4d4;
+  letter-spacing: 0.04em;
+}
+
+.status-strip {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px max(24px, calc((100vw - 1180px)/2));
+  background: var(--card-alt);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.80rem;
+  color: var(--muted);
+}
+
+.utilities {
+  max-width: 1180px;
+  margin: 16px auto 0;
+  display: flex;
+  gap: 10px;
+  padding: 0 24px;
+  flex-wrap: wrap;
+}
+
+.utilities button {
+  min-height: 42px;
+  font-size: 0.82rem;
+  padding: 8px 15px;
+}
+
+main {
+  max-width: 1180px;
+  margin: auto;
+  padding: 24px 24px 48px;
+}
+
+footer {
+  max-width: 1180px;
+  margin: auto;
+  padding: 16px 24px 40px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.notice {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin: 18px auto;
+  max-width: 1132px;
+  background: var(--sage);
+  line-height: 1.5;
+}
+
+.error {
+  background: var(--accent-subtle);
+  border-color: var(--red);
+  color: var(--red);
+  font-weight: 550;
+}
+
+/* ==========================================================================
+   HERO & CHARACTER CREST
+   ========================================================================== */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 8px 0 24px;
+  padding: 28px;
+  background: var(--hero-bg);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-crest-container {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--card);
+  border: 2px solid var(--line);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  color: var(--crest-color);
+  padding: 6px;
+}
+
+.character-crest {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.hero-dream {
+  max-width: 64ch;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-light);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.hero-select {
+  min-width: 250px;
+  max-width: 320px;
+  background: var(--card);
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.hero-select label {
+  font-size: 0.84rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-select select {
+  margin-bottom: 12px;
+}
+
+.pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--card-alt);
+  border: 1px solid var(--line);
+  font-size: 0.80rem;
+  font-weight: 550;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
+.pill-keepsake {
+  background: var(--accent-subtle);
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.pill-cargo {
+  background: var(--sage);
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+.pill-voice {
+  font-style: italic;
+  background: var(--card);
+  border-color: var(--line);
+}
+
+/* ==========================================================================
+   TABS & SECTIONS
+   ========================================================================== */
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 22px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 24px;
+}
+
+.tabs button {
+  background: transparent;
+  border-color: transparent;
+  white-space: nowrap;
+  font-size: 0.95rem;
+  padding: 9px 18px;
+  border-radius: 8px;
+  color: var(--muted);
+}
+
+.tabs button:hover {
+  background: var(--card-alt);
+  color: var(--ink);
+}
+
+.tabs button[aria-pressed=true] {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ==========================================================================
+   CARDS & GRID
+   ========================================================================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.stack {
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--card-top-accent, var(--line));
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  min-width: 0;
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Teamster measuring rule decorative top tick-marks */
+body[data-role="teamster"] .card {
+  background-image: repeating-linear-gradient(to right,
+    var(--line) 0px, var(--line) 1px, transparent 1px, transparent 12px),
+    repeating-linear-gradient(to right,
+    var(--line-strong) 0px, var(--line-strong) 1.5px, transparent 1.5px, transparent 48px);
+  background-size: 100% 6px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* Guide surveyor latitude ticks */
+body[data-role="guide"] .card {
+  border-top-style: dashed;
+}
+
+/* Doctor clean ledger styling */
+body[data-role="doctor"] .card-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+/* Hunter saddle-stitch border */
+body[data-role="hunter"] .card {
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.card-head h2 { margin-bottom: 0; }
+.card-head .eyebrow { color: var(--muted); }
+
+/* ==========================================================================
+   HEALTH & EXHAUSTION CONTROLS
+   ========================================================================== */
+
+.big-number {
+  font-family: "Iowan Old Style", "Apple Garamond", Baskerville, Georgia, serif;
+  font-size: 3.8rem;
+  line-height: 1.0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.big-number small {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.health-number {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin: 12px 0 6px;
+}
+
+.health-number .pill {
+  align-self: center;
+  font-size: 0.88rem;
+  padding: 6px 14px;
+}
+
+.pill-wound {
+  background: var(--card-alt);
+  border-color: var(--line-strong);
+}
+
+meter {
+  width: 100%;
+  height: 16px;
+  margin: 6px 0 20px;
+  border-radius: 999px;
+  background: var(--card-alt);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+meter::-webkit-meter-bar {
+  background: var(--card-alt);
+  border-radius: 999px;
+  border: none;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: var(--meter-fill);
+  border-radius: 999px;
+}
+
+meter::-moz-meter-bar {
+  background: var(--meter-fill);
+  border-radius: 999px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.row > input[type=number] {
+  width: 90px;
+}
+
+.row-spread {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Exhaustion track tokens */
+.exhaust {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.exhaust span {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--line);
+  border-radius: 50%;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--card-alt);
+  transition: all 0.2s ease;
+}
+
+.exhaust .filled {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   ABILITIES SCOREBOARD
+   ========================================================================== */
+
+.abilities {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.ability {
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 4px;
+  background: var(--card-alt);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.ability strong {
+  display: block;
+  font-family: "Iowan Old Style", "Apple Garamond", Baskerville, Georgia, serif;
+  font-size: 1.7rem;
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 3px 0;
+}
+
+.ability span {
+  font-size: 0.76rem;
+  font-weight: 750;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.ability small {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.ability-primary {
+  border: 2px solid var(--accent);
+  background: var(--card);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.ability-primary span {
+  color: var(--accent);
+}
+
+.ability-primary strong {
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   DETAILS, CONDITIONS, TEXTAREAS
+   ========================================================================== */
+
+.rule {
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.rule strong { font-weight: 700; }
+
+details {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  margin-top: 14px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 650;
+  min-height: 44px;
+  padding: 8px 0;
+  color: var(--ink);
+}
+
+.condition {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.condition:first-of-type { border: 0; }
+.condition select { max-width: 90px; }
+
+/* ==========================================================================
+   WELCOME PREGEN CHOOSER CARDS
+   ========================================================================== */
+
+.welcome {
+  padding: 24px 0 40px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.welcome > p { max-width: 65ch; }
+.welcome .cards { margin: 28px 0 24px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.choice {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  min-height: 200px;
+  border-radius: 16px;
+  border: 1.5px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.choice:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 16px 38px rgba(0,0,0,0.1);
+}
+
+.choice-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.choice-crest {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  padding: 4px;
+  background: var(--card);
+  color: var(--crest-color);
+  flex-shrink: 0;
+}
+
+.choice strong {
+  font: 1.85rem "Iowan Old Style", "Apple Garamond", Baskerville, Georgia, serif;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.choice-dream {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--ink-light);
+  line-height: 1.45;
+  flex-grow: 1;
+}
+
+.choice-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.choice-badges .pill {
+  font-size: 0.74rem;
+  padding: 3px 9px;
+}
+
+.welcome-actions {
+  margin: 20px 0 10px;
+}
+
+.welcome-actions button {
+  min-height: 52px;
+  padding: 12px 24px;
+  font-size: 1.0rem;
+}
+
+/* ==========================================================================
+   STORY, JOURNAL & DIALOGS
+   ========================================================================== */
+
+.quote {
+  border-left: 3px solid var(--accent);
+  padding-left: 18px;
+  font-family: "Iowan Old Style", "Apple Garamond", Baskerville, Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.two-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.full { grid-column: 1/-1; }
+.source-note { font-size: 0.78rem; color: var(--muted); }
+
+dialog {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 28px;
+  background: var(--paper);
+  color: var(--ink);
+  width: min(650px, calc(100% - 24px));
+  max-height: 90dvh;
+  overflow-y: auto;
+  box-shadow: 0 20px 100px rgba(0, 0, 0, 0.25);
+}
+
+dialog::backdrop {
+  background: rgba(18, 32, 26, 0.65);
+  backdrop-filter: blur(2px);
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.dialog-error {
+  color: var(--red);
+  font-weight: 650;
+}
+
+.backup-text {
+  font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  min-height: 190px;
+  overflow-wrap: anywhere;
+}
+
+.compact { font-size: 0.85rem; }
+.divider {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 24px 0;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (iPad & Mobile)
+   ========================================================================== */
+
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .hero-select {
+    width: 100%;
+    max-width: none;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .tag { display: none; }
+  .status-strip {
+    flex-direction: column;
+    gap: 3px;
+  }
+  .abilities {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card { padding: 20px; }
+  main { padding: 20px 16px; }
+  .masthead { padding: 18px 16px; }
+  .utilities { padding: 0 16px; }
+  .two-fields { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  .choice { padding: 20px; }
+  .choice strong { font-size: 1.55rem; }
+}
+
+@media (max-width: 420px) {
+  .row button { flex-grow: 1; }
+  .card { padding: 16px; }
+  .masthead { gap: 10px; }
+  .brand p { font-size: 1.35rem; }
+  .hero-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-crest-container {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  button, .choice, .card {
+    transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+}
+
+@media print {
+  .masthead { background: none; color: #000; }
+  .utilities, .tabs, button, .status-strip, footer { display: none; }
+  body { background: #fff; color: #000; }
+  .grid { display: block; }
+  .card {
+    break-inside: avoid;
+    margin-bottom: 15px;
+    box-shadow: none;
+    border: 1px solid #aaa;
+  }
+  input, textarea { border-color: #aaa; }
+  main { padding: 0; }
+  dialog { display: none; }
+}
