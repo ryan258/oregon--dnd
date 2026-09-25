@@ -1,66 +1,52 @@
-# Character Sheet (Print 1 per character)
+# Character sheet — v0.9
 
-## Identity
+*Who you are, what you promised, and what it is costing you today.*
 
-- Name:
-- Player:
-- Role: (Guide / Doctor / Hunter / Teamster)
-- Background Hook:
-- Background Bump applied? [ ] Yes  [ ] No
-- Primary / Secondary Stat:
+Name: __________ Player: __________ Role: __________ Background: __________
 
-## Stats
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| Score / modifier: | | | | | |
 
-| Stat | Score | Mod |
-| ---- | ----- | --- |
-| STR  |       |     |
-| DEX  |       |     |
-| CON  |       |     |
-| INT  |       |     |
-| WIS  |       |     |
-| CHA  |       |     |
+Max HP (8 + CON): ____ Current: ____ Exhaustion: ____ Gained today? [ ]
 
-## Health
+Wound: [ ] Healthy [ ] Wounded [ ] Gravely Injured [ ] Dead
 
-- Max HP: (8 + CON mod)
-- Current HP:
+At 0 HP, one damage instance advances one step; a later hit at 0 also advances. Healing HP does not clear wound state. Ordinary stabilization uses an action, restores 1 HP. Fed Rest: 1d4+1 HP, −1 Exhaustion, CON DC 10 to improve one wound step.
 
-### Wound Track
+| Exhaustion | Effect |
+| --- | --- |
+| 1 | −1 checks |
+| 2 | Physical Disadvantage replaces −1 |
+| 3 | All checks Disadvantage, cannot cancel |
+| 4 | Max HP halved, round up |
+| 5 | Incapacitated |
+| 6 | Death |
 
-- [ ] Wounded (disadvantage on STR/DEX checks)
-- [ ] Gravely Ill / Injured (bedridden; cannot act)
-- [ ] Dead
+Condition: __________ DC: ____ Marks left: ____ Damage starts: ____
 
-Recovery (end of Rest Day): CON DC 10 to move 1 step up the track (medical help can grant Advantage).
+Today's treatment/effect: __________ Recovery rolls ignore condition/Exhaustion/Morale penalties.
 
-## Exhaustion (0–6)
+Inspiration held? [ ] Personal-stakes award used this session? [ ]
 
-- Current level:
+Dream — I am going to Oregon because: ____________________
 
-- [ ] 0
-- [ ] 1 — Disadvantage on all checks
-- [ ] 2 — Travel speed halved
-- [ ] 3 — Disadvantage on all checks; Advantage cannot cancel it
-- [ ] 4 — HP maximum halved
-- [ ] 5 — Cannot travel; bedridden
-- [ ] 6 — Death
+Promise — I promised this person this specific thing: ____________________
 
-## Illness / Conditions
+Boundary — I will not sacrifice: ____________________
 
-- Disease:
-- Remaining duration:
-- Daily effect notes:
+Bond — agreed connection with another PC: ____________________
 
-## Role Competence Floor (your “safety net”)
+Keepsake: __________ Personal cargo bundle: __________
 
-Write the exact wording of your role ability here (from `seed.md`):
+Reliable expertise (copy): ____________________
 
-- Ability:
-- Notes / limitations:
+Intervention and cost (copy): ____________________ Uses marked: __________
 
-## Personal Notes
+Technique after chapter 2: __________ After chapter 5: __________
 
-- Gear / keepsakes:
-- Bonds (who do you protect?):
-- Fears / breaking point:
-- Inherited Burden / promises:
+Reserve traveler and existing connection: ____________________
+
+What changed at chapter end? ____________________
+
+If incapacitated, immediately choose an active substitute/shared role. Maximum four active slots; no participation fee. Replacement receives no free supplies.

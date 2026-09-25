@@ -1,49 +1,30 @@
-# Trail Log (Print as many as you need)
+# Trail log — v0.9
 
-Use one block per in-game day.
+*One line per day. By Fort Hall it stops being bookkeeping and starts being the story.*
 
-Fort mile markers (approx.): 300 (Kearny), 500 (Laramie), 850 (Bridger), 1,100 (Hall), 1,600 (Boise).
+Use one row per day even when resolving three together; narration is optional. Record a leg's event on its first row, “same leg” on later rows. Weather and health still apply daily. Unspent days of an interrupted leg remain unspent.
 
----
+| Date | Marker start → end / extra detour miles | Action / stance | Weather / days left | Event or prepared scene | Food / water paid | HP / Exhaustion / condition changes | Decision / promise |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
 
-## Day #
+Daily order: reveal → choose → event if due → action → supplies/effects → condition recovery → Rest recovery → watch/conversation → advance date. Treat before condition damage if declared today. At most 1 new Exhaustion/person/day. Fresh batch expiry: acquisition date +3, after that evening.
 
-- Date:
-- Segment:
-- Mile marker (start → end):
-- Weather (prevailing):
-- Stance: (Cautious / Standard / Reckless)
-- Forced March attempted? (Y/N) Result:
+## Pause / resume
 
-### Event
+Current date/marker: ____ Weather/days left: ____ Already rolled today's event? ____
 
-- Universal roll (d20):
-- Result (universal or segment swap):
+Current decision and visible options: ____________________
 
-### Action
+Unpaid costs / remaining delay days: ____________________
 
-- Party action: (travel / rest / hunt / repair / trade)
-- Key checks + outcomes:
-- Miles gained today:
+Next condition damage and recovery marks: ____________________
 
-### Resources
+Wagon/food/water state recorded on wagon sheet? [ ] People promises updated? [ ]
 
-- Food (lbs): ____ → ____
-- Water (gal, if tracked): ____ → ____
-- Medicine (doses): ____ → ____
-- Ammo (rounds): ____ → ____
-- Spare parts (count): ____ → ____
-- Money ($): ____ → ____
-
-### Party State
-
-- Morale: ____ → ____
-- Wagon HP: ____ → ____
-- Ox team HP changes:
-- Injuries / disease changes:
-- Graves marked (name + mile marker):
-
-### Notes
-
-
----
+Who has not had a meaningful choice this session? ____________________

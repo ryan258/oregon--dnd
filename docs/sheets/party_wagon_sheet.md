@@ -1,58 +1,57 @@
-# Party + Wagon Sheet (Print 1 per group)
+# Party and wagon — v0.9
 
-## Campaign State
+*Everything the four of you own, and how much of it is left.*
 
-- Start date:
-- Current date:
-- Segment:
-- Mile marker:
-- Next landmark / fort:
-- Current weather (prevailing):
-- Warm bedding (blankets/robes)? [ ] Yes  [ ] No (helps vs. cold nights)
-- Today’s stance: (Cautious / Standard / Reckless)
+Date: ____ Marker: ____ Chapter: ____ Next fort/refuge: ____ Distance: ____
 
-## Morale (0–10)
+Weather: ____ Days remaining: ____ Stance: ____ Next scene: ____
 
-- Current Morale:
+Morale: ____ High-Morale group bonus used this session? [ ]
 
-| Morale | Effect |
-| ------ | ------ |
-| 8–10   | Advantage on group checks |
-| 5–7    | — |
-| 3–4    | Disadvantage on CHA and WIS checks |
-| 1–2    | Disadvantage on all checks; risk of desertion |
-| 0      | Party disbands |
+This chapter's threshold losses: food below 50 [ ] wagon below 5 [ ]
 
-## Party Resources
+Last two random events costly? ____ Next should be quiet? ____
 
 | Resource | Current | Notes |
-| -------- | ------- | ----- |
-| Food (lbs) | | |
-| Water (gal) | | Track only in arid/waterless stretches |
-| Medicine (doses) | | |
-| Ammunition (rounds) | | |
-| Spare parts (count) | | |
-| Money ($) | | |
+| --- | --- | --- |
+| Cured food lbs | | |
+| Fresh batch 1 lbs / expiry date | | Combined fresh max 100 |
+| Fresh batch 2 lbs / expiry date | | |
+| Water current / capacity gallons | | Only tracked in waterless stretches |
+| Medicine | | |
+| Ammunition | | |
+| Spare parts | | |
+| Money | | |
+| Warm Bedding | | 20 lbs if carried on foot |
+| Tools / rope / canvas | | Included unless specifically lost |
 
-## Ox Teams
+Capacity limits: food 800 lbs total / medicine 10 / ammo 200 / parts 5 / water capacity 80 gal / two personal bundles / one entrusted bundle.
 
-- Each team: 10 HP. Lost-team penalties are multiplicative: x0.75 miles once per lost team.
+Successful hunts at this campsite: ____ Miles moved since: ____
 
-| Team | HP | Status / notes |
-| ---- | -- | -------------- |
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
+Wagon ____ / 30 HP. At 0 unusable but repairable. One repair/day + free Teamster Rest upkeep. Stored maintenance protection: ____
 
-## Wagon
+| Ox team | HP / 10 | Lame / usable? |
+| --- | --- | --- |
+| A | | |
+| B | | |
+| C | | |
+| Other | | |
 
-- Wagon HP (max 30): Current ____ / Max ____
-- Max HP reductions from Jury-Rig (if any):
-- Notes (critical damage, cached supplies, etc.):
+Two usable teams = full speed; one = ×0.75; zero = stopped. Team at 0 dies; lame clears on a Rest Day. Each Rest Day each living team +1 HP, plus any named background benefit.
 
-## Load / Cached Supplies
+Active travelers / able to act: ____________________
 
-- Supplies cached or abandoned:
-- Forced drops:
-- Bedridden passengers / cargo notes:
+Travelers at Exhaustion 2+: ____ Two or more = speed ×0.5 once.
+
+Actual people being fed (including any patient/substitute): ____
+
+Hunter Stretch the stores: unused [ ] active through date ____
+
+Personal cargo bundles / owner / promise: ____________________
+
+Cached supplies / location / whether retrieval is feasible: ____________________
+
+Outstanding delay days and whether Rest is allowed: ____________________
+
+Morale: 8+ gives one group Advantage/session; 3–4 disagreement; 1–2 breaking-point scene; 0 requires safe-camp regroup or player-agreed ending. No automatic departure.

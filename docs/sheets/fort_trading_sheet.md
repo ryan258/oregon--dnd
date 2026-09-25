@@ -1,64 +1,33 @@
-# Fort / Trading Sheet (Print per fort visit)
+# Fort visit — v0.9
 
-## Arrival
+*A day behind walls: what it stocks, what it costs, and what the trader wants from you.*
 
-- Fort / post:
-- Price multiplier:
-- Date:
-- Party Morale on arrival:
+Fort: ____ Marker: ____ Date: ____ Multiplier: ____ Bargain DC: ____
 
-## Sutler Demand (set by GM)
+Trader / demand / guaranteed alternative: ____________________
 
-- What do they want or lack?
-- How can the party meet it? (item / info / roleplay)
+Demand met: [ ] subtract 4 DC. One CHA/INT bargain roll per visit: ____
 
-## Negotiation
+Discount: failure 0%; success 15%; exceed by 5 gives 25%. No insult penalty.
 
-- Negotiator:
-- Stat used: (CHA Persuasion / INT Appraisal)
-- Base DC (by fort):
-- Demand met? (Y/N) DC modifier:
-- Roll result:
-- Outcome / discount:
+| Item | Available stock | Buy quantity | Base price | Local price | Discount | Cost |
+| --- | --- | --- | --- | --- | --- | --- |
+| Food | 300 lbs | | $0.50/lb | | | |
+| Medicine | 8 | | $4 | | | |
+| Parts | 4 | | $6 | | | |
+| Ammo | 100 rounds | | $0.10 | | | |
+| Teams | 2 | | $32 | | | |
+| Barrels | 4 | | $3 | | | |
+| Bedding | 1 | | $30 | | | |
 
-## Inventory (Before)
+Sell credit: half local posted price, no bargain bonus. Fresh food: half cured base value before resale halving; max 50 lbs food bought back/visit.
 
-| Resource | Amount |
-| -------- | ------ |
-| Food (lbs) | |
-| Water (gal) | |
-| Medicine (doses) | |
-| Ammo (rounds) | |
-| Spare parts (count) | |
-| Money ($) | |
-| Ox teams (HP each) | |
-| Wagon HP | |
+Bill = base purchases × multiplier × (1 − discount), round cents: ____
 
-## Purchases / Trades
+Resale credit: ____ Cash due: ____ Remaining cash: ____
 
-| Item | Qty | Base price | Multiplier price | Discount | Total |
-| ---- | --- | ---------- | ---------------- | -------- | ----- |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+Update party supplies and fort stock: [ ]
 
-## Inventory (After)
+Trade Day costs 1 lb food/person. Rest is separate. Workers get $3 × multiplier/person/day (max two); working people get no Rest benefits, others can Rest individually. Record exact per-person food.
 
-| Resource | Amount |
-| -------- | ------ |
-| Food (lbs) | |
-| Water (gal) | |
-| Medicine (doses) | |
-| Ammo (rounds) | |
-| Spare parts (count) | |
-| Money ($) | |
-| Ox teams (HP each) | |
-| Wagon HP | |
-
-## Notes
-
-- Labor performed? (Y/N) Outcome:
-- Rumors gained:
+Rescue contract previously used? ____ New obligation / destination if taken: ____
