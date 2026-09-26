@@ -9,27 +9,32 @@
   const opt=(value,current,label=value)=>`<option value="${esc(value)}"${value===current?' selected':''}>${esc(label)}</option>`;
   const id=()=>crypto.randomUUID ? crypto.randomUUID() : 't'+Date.now().toString(36)+Math.random().toString(36).slice(2);
   let state=M.empty(), store, queue=Promise.resolve(), blocked=false, broken=false, memoryOnly=false, tab='play', pending=0, generation=0;
-  let importCandidate=null;
+  let importCandidate=null, editGroup=null, undoing=false;
+  function changeLabel(){
+    const title=$('#dialog-title');
+    if(dialog.open && title)return title.textContent;
+    return document.activeElement?.textContent?.trim().slice(0,120)||'sheet change';
+  }
   const current=()=>state.characters.find(c=>c.id===state.activeId);
   const say=s=>{$('#save-status').textContent=s;};
   const warn=s=>{$('#alert').textContent=s;$('#alert').hidden=!s;};
-  function updateLock(){app.inert=blocked;$('#load-saved').hidden=!blocked;$('#undo').disabled=blocked||memoryOnly;}
-  function save(snapshot=true) {
+  function updateLock(){app.inert=blocked||undoing;$('#load-saved').hidden=!blocked;$('#undo').disabled=blocked||memoryOnly||pending>0||!store?.undoCount;$('#undo').textContent=store?.undoLabel?'Undo: '+store.undoLabel:'Undo · no saved actions';}
+  function save({snapshot=true,label='sheet change',group=null}={}) {
     const captured=M.clone(state), own=++generation;
     if(memoryOnly){say('Not saved · changes are in this window only');return;}
-    pending++;say('Saving on this device…');
+    pending++;say('Saving on this device…');updateLock();
     queue=queue.then(async()=>{
       if(blocked)throw new Error('Saving paused. Export your visible work before reloading.');
-      const saved=await navigator.locks.request(S.KEY,()=>store.save(captured,{snapshot}));
+      const saved=await navigator.locks.request(S.KEY,()=>store.save(captured,{snapshot,label,group}));
       if(own===generation){state.revision=saved.revision;say('Saved on this device · '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}));}
     }).catch(error=>{
       blocked=true;warn(error.message+' Your visible changes are still available in Back up / restore.');say('Not saved · action needed');updateLock();
-    }).finally(()=>{pending--;});
+    }).finally(()=>{pending--;updateLock();});
   }
-  function change(fn,{redraw=true}={}) {
-    if(blocked)return;
+  function change(fn,{redraw=true,label=changeLabel(),group=null,snapshot=true}={}) {
+    if(blocked||undoing)return;
     try{
-      const next=M.clone(state);fn(next,next.characters.find(c=>c.id===next.activeId));state=M.validateState(next);save();if(redraw)render();
+      const next=M.clone(state);fn(next,next.characters.find(c=>c.id===next.activeId));state=M.validateState(next);save({snapshot,label,group});if(redraw)render();
     }catch(error){warn(error.message);}
   }
   const CRESTS={
@@ -39,6 +44,7 @@
     Teamster:`<svg class="character-crest" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="1.5"/><circle cx="50" cy="50" r="16" fill="currentColor" opacity="0.8"/><circle cx="50" cy="50" r="8" fill="var(--paper)"/><line x1="50" y1="10" x2="50" y2="34" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><line x1="50" y1="66" x2="50" y2="90" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><line x1="10" y1="50" x2="34" y2="50" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><line x1="66" y1="50" x2="90" y2="50" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><line x1="22" y1="22" x2="38" y2="38" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><line x1="62" y1="62" x2="78" y2="78" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><line x1="78" y1="22" x2="62" y2="38" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><line x1="38" y1="62" x2="22" y2="78" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="50" cy="6" r="2" fill="currentColor"/><circle cx="50" cy="94" r="2" fill="currentColor"/><circle cx="6" cy="50" r="2" fill="currentColor"/><circle cx="94" cy="50" r="2" fill="currentColor"/></svg>`
   };
   function render(){
+    const focused=document.activeElement, focusKey=app.contains(focused)?{id:focused.id,action:focused.dataset.action,tab:focused.dataset.tab}:null;
     const c=current();
     if(!c){
       document.body.dataset.role='none';delete document.body.dataset.traveler;
@@ -53,6 +59,7 @@
       <nav class="tabs" aria-label="Character sections">${[['play','At the table'],['story','Story & journal'],['abilities','Abilities & learning']].map(([key,label])=>`<button data-action="tab" data-tab="${key}" aria-pressed="${tab===key}">${label}</button>`).join('')}</nav>
       ${tab==='play'?play(c):tab==='story'?story(c):abilities(c)}`;
     updateLock();
+    if(focusKey){const replacement=focusKey.id?document.getElementById(focusKey.id):Array.from(app.querySelectorAll('button[data-action]')).find(b=>b.dataset.action===focusKey.action&&b.dataset.tab===focusKey.tab);replacement?.focus();}
   }
   const effects=[
     'No Exhaustion penalty.', '−1 on checks (recovery checks ignore this).',
@@ -91,11 +98,11 @@
   function conditionAdd(){show('Record a condition',`<label for="kind">Condition</label><select id="kind" name="kind">${Object.keys(R.conditions).filter(k=>!current().conditions.some(v=>v.kind===k)).map(k=>opt(k,'')).join('')}</select><p class="muted compact">Resolve exposure first. Record any immediate damage or Exhaustion separately; adding this tracker will not apply it. “Exhaustion illness” uses the Exhaustion control, not a recovery-mark tracker.</p>`,f=>{const kind=f.get('kind');if(!kind)throw new Error('All available conditions are already recorded.');change((s,c)=>c.conditions.push({kind,marks:R.conditions[kind].marks,starts:'Tomorrow, if the condition has ongoing damage',care:''}));dialog.close();},'Add tracker');}
   function techniques(){const c=current();show('Choose learned techniques',`<p>One choice after chapter 2; another after chapter 5. Replacements inherit the earned number. Select up to two different options agreed at your table.</p>${Object.entries(R.roles[c.role].techniques).map(([name,text])=>`<label class="check"><input type="checkbox" name="technique" value="${esc(name)}"${checked(c.techniques.includes(name))}> ${esc(name)}</label><p class="rule">${rich(text)}</p>`).join('')}`,f=>{const ts=f.getAll('technique');if(ts.length>2)throw new Error('Select at most two techniques.');change((s,c)=>{c.techniques=ts;});dialog.close();});}
   function backup(){
-    show('Keep a copy of the journey',`<p>Save a backup to Files before closing after a session. A download request does not confirm a saved file—check Files. You can also copy all the text below.</p><div class="row"><button type="button" id="download">Download backup</button><button type="button" id="copy">Copy backup text</button></div><label for="backup-text">Portable backup of the visible sheets</label><textarea id="backup-text" class="backup-text" readonly>${esc(M.exportSave(state))}</textarea><hr class="divider"><label for="import-file">Import a backup file (adds copies; keeps existing travelers)</label><input type="file" id="import-file" accept="application/json,.json"><label for="import-text">Or paste a backup</label><textarea id="import-text" class="backup-text" maxlength="500000"></textarea><button type="button" id="preview-import">Preview import</button><hr class="divider"><p class="compact">For iPad: open the HTTPS app in Safari, add it to the Home Screen, then choose/import your traveler in the Home Screen app. Wait for “Offline copy ready” and reopen once in Airplane Mode before play. Safari and the installed app may keep separate data.</p><button type="button" id="persist">Request persistent storage</button><p id="persist-status" class="compact"></p>${broken?'<hr class="divider"><p>The saved data was not replaced. Copy or download it before starting a recovered save.</p><button type="button" id="raw-save">Show unreadable saved data</button><button type="button" id="recover-empty">Preserve raw data & start empty</button>':''}`,null);
+    show('Keep a copy of the journey',`<p>Save a backup to Files before closing after a session. A download request does not confirm a saved file—check Files. You can also copy all the text below.</p><div class="row"><button type="button" id="download">Download backup</button><button type="button" id="copy">Copy backup text</button></div><label for="backup-text">Portable backup of the visible sheets</label><textarea id="backup-text" class="backup-text" readonly>${esc(M.exportSave(state))}</textarea><hr class="divider"><label for="import-file">Import a backup file (adds copies; keeps existing travelers)</label><input type="file" id="import-file" accept="application/json,.json"><label for="import-text">Or paste a backup</label><textarea id="import-text" class="backup-text" maxlength="${M.MAX_BACKUP_BYTES}"></textarea><button type="button" id="preview-import">Preview import</button><hr class="divider"><p class="compact">For iPad: open the HTTPS app in Safari, add it to the Home Screen, then choose/import your traveler in the Home Screen app. Wait for “Offline copy ready” and reopen once in Airplane Mode before play. Safari and the installed app may keep separate data.</p><button type="button" id="persist">Request persistent storage</button><p id="persist-status" class="compact"></p>${broken?'<hr class="divider"><p>The saved data was not replaced. Copy or download it before starting a recovered save.</p><button type="button" id="raw-save">Show unreadable saved data</button><button type="button" id="recover-empty">Preserve raw data & start empty</button>':''}`,null);
     $('#download').onclick=()=>download(M.exportSave(state),'oregon-trail-backup-'+new Date().toISOString().slice(0,10)+'.json');
     $('#copy').onclick=async()=>{try{await navigator.clipboard.writeText($('#backup-text').value);$('#dialog-error').textContent='Backup text copied. Paste it into a file or note you keep.';}catch{$('#backup-text').focus();$('#backup-text').select();$('#dialog-error').textContent='Use Copy on the selected text, then keep it outside the browser.';}};
     $('#preview-import').onclick=()=>previewImport($('#import-text').value);
-    $('#import-file').onchange=async e=>{const f=e.target.files[0];if(!f)return;if(f.size>500000){$('#dialog-error').textContent='Backup is larger than 500 KB.';return;}try{previewImport(await f.text());}catch(err){$('#dialog-error').textContent=err.message;}};
+    $('#import-file').onchange=async e=>{const f=e.target.files[0];if(!f)return;if(f.size>M.MAX_BACKUP_BYTES){$('#dialog-error').textContent='Backup is larger than 8 MiB.';return;}try{previewImport(await f.text());}catch(err){$('#dialog-error').textContent=err.message;}};
     $('#persist').onclick=async()=>{try{const supported=Boolean(navigator.storage?.persist);const granted=supported&&await navigator.storage.persist();$('#persist-status').textContent=granted?'Persistent storage granted. Keep an external backup anyway.':supported?'Persistent storage was not granted. Local saves still work; keep a backup.':'This browser does not offer persistent storage requests. Keep an external backup.';}catch{$('#persist-status').textContent='Storage request failed. Your existing save was not changed.';}};
     if(broken){$('#raw-save').onclick=()=>{try{$('#backup-text').value=store.raw()||'';$('#backup-text').focus();$('#backup-text').select();$('#download').onclick=()=>download($('#backup-text').value,'oregon-trail-unreadable-save.txt');}catch(err){$('#dialog-error').textContent=err.message;}};
       $('#recover-empty').onclick=()=>confirmAction('Preserve and recover','This will archive the unreadable bytes in local storage before creating an empty save. Copy them outside the browser first. If preservation fails, the current save will not be replaced.',async()=>{
@@ -110,7 +117,7 @@
     if(action==='choose')return start(R.pregens[Number(b.dataset.index)]);
     if(action==='custom')return custom();if(action==='add')return add();if(action==='edit')return edit();
     if(action==='tab'){tab=b.dataset.tab;render();return;}
-    if(action==='damage'||action==='heal'){const n=Number($('#hp-amount').value);if(action==='damage'&&c.hp-n<=0){confirmAction('Damage reaches zero',`Record ${n} damage as one separate hit? Wound state advances at most once. Undo is available afterward.`,()=>change((s,c)=>M.damage(c,n)),'Record damage');}else change((s,c)=>M[action](c,n));return;}
+    if(action==='damage'||action==='heal'){const n=Number($('#hp-amount').value);if(action==='damage'&&c.hp-n<=0){confirmAction('Damage reaches zero',`Record ${n} damage as one separate hit? Wound state advances at most once. Undo is available afterward.`,()=>change((s,c)=>M.damage(c,n),{label:'record '+n+' damage'}),'Record damage');}else change((s,c)=>M[action](c,n),{label:action==='damage'?'record '+n+' damage':'heal '+n+' HP'});return;}
     if(action==='exhaust')return change((s,c)=>M.exhaust(c));
     if(action==='recover')return confirmAction('Remove one Exhaustion','Confirm that this traveler received their full daily ration and a rule or table ruling permits this recovery. This does not reset today’s gain limit.',()=>change((s,c)=>M.recoverExhaustion(c,true)),'Record recovery');
     if(action==='stabilize')return confirmAction('Ordinary stabilization','An able companion must spend their action. This restores 1 HP at zero; it does not clear a wound or prevent condition damage.',()=>change((s,c)=>{if(c.hp!==0)throw new Error('Ordinary stabilization is for a patient at 0 HP.');M.heal(c,1);}),'Record stabilization');
@@ -123,10 +130,31 @@
     if(action==='condition-remove')return confirmAction('Remove condition tracker',`Remove ${esc(c.conditions[Number(b.dataset.index)].kind)}? This records a resolved condition or corrects an entry; it does not heal HP.`,()=>change((s,c)=>c.conditions.splice(Number(b.dataset.index),1)),'Remove tracker');
     if(action==='techniques')return techniques();
   });
-  app.addEventListener('input',e=>{const t=e.target;if(t.dataset.field)change((s,c)=>{c[t.dataset.field]=t.value;},{redraw:false});if(t.dataset.personal)change((s,c)=>{c.personal[t.dataset.personal]=t.value;},{redraw:false});if(t.dataset.condition!==undefined)change((s,c)=>{c.conditions[Number(t.dataset.condition)][t.dataset.key]=t.value;},{redraw:false});});
-  app.addEventListener('change',e=>{const t=e.target;if(t.id==='traveler')change(s=>{s.activeId=t.value;});if(t.dataset.flag)change((s,c)=>{c[t.dataset.flag]=t.checked;},{redraw:false});if(t.dataset.use)change((s,c)=>{c.uses[t.dataset.use]=t.checked;},{redraw:false});if(t.dataset.marks!==undefined)change((s,c)=>{c.conditions[Number(t.dataset.marks)].marks=Number(t.value);});});
+  app.addEventListener('focusin',e=>{const t=e.target;if(t.dataset.field||t.dataset.personal||t.dataset.condition!==undefined)editGroup=id();});
+  app.addEventListener('focusout',()=>{editGroup=null;});
+  app.addEventListener('input',e=>{
+    const t=e.target, field=t.dataset.field||t.dataset.personal||t.dataset.key;
+    if(!field)return;
+    if(!editGroup)editGroup=id();
+    const label='edit '+(field==='notes'?'journal':field==='today'?"today’s plan":field);
+    const options={redraw:false,label,group:editGroup};
+    if(t.dataset.field)change((s,c)=>{c[t.dataset.field]=t.value;},options);
+    if(t.dataset.personal)change((s,c)=>{c.personal[t.dataset.personal]=t.value;},options);
+    if(t.dataset.condition!==undefined)change((s,c)=>{c.conditions[Number(t.dataset.condition)][t.dataset.key]=t.value;},options);
+  });
+  app.addEventListener('change',e=>{const t=e.target;if(t.id==='traveler')change(s=>{s.activeId=t.value;},{label:'select traveler'});if(t.dataset.flag)change((s,c)=>{c[t.dataset.flag]=t.checked;},{redraw:false,label:'change '+t.dataset.flag});if(t.dataset.use)change((s,c)=>{c.uses[t.dataset.use]=t.checked;},{redraw:false,label:'change use reminder'});if(t.dataset.marks!==undefined)change((s,c)=>{c.conditions[Number(t.dataset.marks)].marks=Number(t.value);},{label:'change recovery marks'});});
   $('#backup').onclick=backup;
-  $('#undo').onclick=()=>confirmAction('Undo the previous saved change','This restores the previous local save, including text, character selection, and health. Repeated Undo toggles the two saved versions. Export first if you want to keep both.',async()=>{await queue;try{const previous=store.previous();change(s=>Object.assign(s,previous));}catch(err){warn(err.message);}},'Undo change');
+  $('#undo').onclick=async()=>{
+    await queue;
+    if(blocked||memoryOnly||!store?.undoCount)return;
+    const token=store.expected, label=store.undoLabel;
+    confirmAction('Undo: '+label,`Restore all sheets to immediately before “${esc(label)}”? Typing during one field visit is one edit. Undo steps backward through up to eight recent checkpoints; older ones may expire for space. There is no Redo. Export first to keep the current version.`,async()=>{
+      undoing=true;pending++;updateLock();
+      try{state=await navigator.locks.request(S.KEY,()=>store.undo(token));editGroup=null;say('Undone: '+label);render();}
+      catch(err){blocked=true;warn(err.message+' Your visible sheets remain exportable.');say('Undo stopped · action needed');}
+      finally{undoing=false;pending--;updateLock();}
+    },'Undo this change');
+  };
   $('#load-saved').onclick=()=>confirmAction('Load the saved version','Your visible unsaved changes will be replaced. Export them first from Back up / restore if you need to keep them.',async()=>{await queue;try{state=store.read();blocked=false;broken=false;warn('');say(memoryOnly?'Loaded · this window cannot save changes':'Loaded saved version');render();}catch(err){warn('Could not load: '+err.message);}},'Load saved version');
   window.addEventListener('storage',e=>{if(e.key!==S.KEY&&e.key!==null)return;if(e.newValue!==store?.expected){blocked=true;warn('Another window changed the saved data. Your visible work is preserved here. Export it, then load the saved version.');say('Saving paused · another window changed the save');updateLock();}});
   window.addEventListener('beforeunload',e=>{if(pending||blocked||memoryOnly&&state.characters.length){e.preventDefault();e.returnValue='';}});

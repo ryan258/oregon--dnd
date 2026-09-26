@@ -222,7 +222,7 @@ globalThis.TrailRules = {
   },
   "sources": {
     "seed.md": "09c5fda7978a3b06ac89b26fe1832726e4eeaa92c6a4cd2fa7040612733aceb4",
-    "02_character_backgrounds.md": "fa2f259bd3c54c33586090beb51e729a3c6aa2c3bc4a2b73675620e1362e156d",
+    "02_character_backgrounds.md": "d85b37cabffcc2497f6ad3d897b0f7540e4e06734ec980b8bac9980c4f1d8006",
     "docs/PREGENS.md": "fd069959ab224e3873d1c68e49bad3131ec2bd292f6f076c8e834261a077e443"
   }
 };

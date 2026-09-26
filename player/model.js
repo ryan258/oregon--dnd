@@ -5,6 +5,13 @@
   else root.TrailModel = api;
 })(globalThis, function (rules) {
   'use strict';
+  // Includes the worst-case escaped text allowed by the 12-traveler schema.
+  const MAX_BACKUP_BYTES = 8 * 1024 * 1024;
+  const backupBytes = raw => new TextEncoder().encode(raw).byteLength;
+  function checkBackupSize(raw) {
+    if(typeof raw!=='string'||raw.length>MAX_BACKUP_BYTES||backupBytes(raw)>MAX_BACKUP_BYTES)fail('Backup is too large (maximum 8 MiB of UTF-8 data).');
+    return raw;
+  }
   const ABILITIES = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
   const WOUNDS = ['Healthy', 'Wounded', 'Gravely Injured', 'Dead'];
   const PERSONAL = ['dream','promise','boundary','bond','keepsake','cargo','voice','reserve','opening question','on the road'];
@@ -101,9 +108,9 @@
     c.gainedToday=false;c.restedToday=false;resetUses(c,'day');
     for(const condition of c.conditions)condition.care='';
   }
-  function exportSave(state) { return JSON.stringify({format:'oregon-trail-player',version:1,rulesEdition:rules.edition,exportedAt:new Date().toISOString(),state:validateState(state)},null,2); }
+  function exportSave(state) { return checkBackupSize(JSON.stringify({format:'oregon-trail-player',version:1,rulesEdition:rules.edition,exportedAt:new Date().toISOString(),state:validateState(state)},null,2)); }
   function parseImport(raw) {
-    if(typeof raw!=='string'||raw.length>500000)fail('Backup is too large (maximum 500 KB).');
+    checkBackupSize(raw);
     let x;try{x=JSON.parse(raw);}catch{fail('This is not a readable JSON backup.');}
     record(x,'Backup');if(x.format!=='oregon-trail-player'||x.version!==1||x.rulesEdition!==rules.edition)fail('This backup is for a different app or rules edition.');
     const state=validateState(x.state); if(!state.characters.length)fail('The backup contains no travelers.');return state;
@@ -113,5 +120,5 @@
     if(next.characters.length+other.characters.length>12)fail('Import would exceed the 12-traveler limit. Export and remove an unused traveler first.');
     const copies=other.characters.map(c=>({...clone(c),id:id()}));next.characters.push(...copies);next.activeId=copies[0].id;return validateState(next);
   }
-  return {ABILITIES,WOUNDS,PERSONAL,clone,mod,maxHP,dead,empty,create,validateCharacter,validateState,damage,heal,exhaust,recoverExhaustion,rest,nextDay,resetUses,exportSave,parseImport,mergeImport};
+  return {MAX_BACKUP_BYTES,backupBytes,checkBackupSize,ABILITIES,WOUNDS,PERSONAL,clone,mod,maxHP,dead,empty,create,validateCharacter,validateState,damage,heal,exhaust,recoverExhaustion,rest,nextDay,resetUses,exportSave,parseImport,mergeImport};
 });

@@ -1,6 +1,6 @@
 'use strict';
 // Bump BUILD whenever any precached asset changes. An open session keeps its current worker.
-const BUILD='v1-20260925-b';
+const BUILD='v1-20260926-readiness';
 const PREFIX='oregon-trail-player:'+self.registration.scope+':';
 const CACHE=PREFIX+BUILD;
 const FILES=['./','index.html','styles.css','rules.js','model.js','storage.js','app.js','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png'];
