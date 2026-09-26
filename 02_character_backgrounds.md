@@ -74,4 +74,4 @@ Techniques:
 
 Nobody on this road levels up. You get better at the thing you already did, usually because it went badly once.
 
-At chapter end, choose whether a personal statement changed. At chapters 2 and 5 also select a technique, copy its exact wording onto the sheet, and describe who taught you or which failure taught you. Never require a particular NPC to survive to unlock advancement. For a standalone river session, characters begin with no techniques and earn one at its end.
+At chapter end, choose whether a personal statement changed. At chapters 2 and 5 also select a technique, copy its exact wording onto the sheet, and describe who taught you or which failure taught you. Never require a particular NPC to survive to unlock advancement. For the standalone river introduction, characters begin with no techniques. They earn their first technique upon reaching Laramie and completing chapter 2. Ending a session or the shorter introductory adventure at the far-bank camp does not grant advancement; resume the remaining road with the same sheets.

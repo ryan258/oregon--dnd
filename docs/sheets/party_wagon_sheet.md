@@ -16,6 +16,10 @@ Next deadline / what happens then: ____ Next water source / actual miles: ____
 
 Daily food ____ / water ____ / modified miles ____ . Reserves cover ____ ordinary days / ____ water days at this pace (not a guarantee).
 
+Checkpoint date / marker ____ Why we stop there ____
+
+Use the [travel procedure card](travel_procedure.md) to resolve through that point.
+
 Next checkpoint before advancing: [ ] scene/refuge [ ] weather [ ] food expiry [ ] shortage [ ] health [ ] other ____
 
 ## Running state — change only what changed

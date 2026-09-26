@@ -18,6 +18,8 @@ D20 + modifier vs DC 10 ordinary / 12 difficult / 14 dangerous. Advantage/Disadv
 
 ## Time and travel
 
+Keep the [travel procedure card](travel_procedure.md) beside the wagon sheet for checkpoints, daily order, and pause/resume.
+
 Default leg: 3 days, one event on first day. One log row per uninterrupted leg; inventory stays on wagon sheet. Resolve daily effects through the next weather/expiry/health/shortage/scene checkpoint; row splits add no events. Short leg to marker allowed, still one event. Daily weather/health/costs remain. Interrupt before spending unused days. Prepared scene replaces event; fort/delay days no extra events. Daily: reveal → choose → event → action → costs/effects → condition recovery → Rest recovery → watch/camp → date.
 
 Cautious 10 miles (players choose milder of two events); Standard 18; Reckless 26 (GM chooses riskier of two). Two usable teams full; one ×0.75; zero stopped. Two travelers at Exhaustion 2+ multiply ×0.5 once; fewer than two able travelers stops wagon. Apply weather, round once upward. Forced March Cautious/Standard: group CON DC 12, full +50%, partial +25%/failed rollers +1 Exhaustion, failure no bonus/all rollers +1. All attempts hard travel. Hard travel: 1 team loses 1 HP (2 in heatwave).

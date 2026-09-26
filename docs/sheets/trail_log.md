@@ -12,7 +12,7 @@ Use one row per uninterrupted leg, or per day when useful. Keep inventory totals
 
 Decision → immediate change → next appearance: ____________________
 
-Daily order: reveal → choose → event if due → action → supplies/effects → condition recovery → Rest recovery → watch/conversation → advance date. Treat before condition damage if declared. At most 1 new Exhaustion/person/day. Fresh batch expires after acquisition date +3 evening.
+Daily order: reveal → choose → event if due → action → supplies/effects → condition recovery → Rest recovery → watch/conversation → advance date. Treat before condition damage if declared. At most 1 new Exhaustion/person/day. Fresh batch expires after acquisition date +3 evening. Keep the [travel procedure card](travel_procedure.md) ready for order of resolution and pause/resume checkpoints.
 
 ## Pause / resume
 
