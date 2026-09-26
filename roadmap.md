@@ -4,9 +4,9 @@ The current artifact is **v0.10, a revised playtest edition**. Its content is im
 
 | Step | Concrete deliverable | Status / next evidence |
 | --- | --- | --- |
-| Playable revision | Revised river choice, seven varied chapters, personal opportunities and returns, independent NPC plans, four new technique options, simpler sheets, rebuilt handbook | Implemented; see verification |
-| Player companion | Static offline character sheet app, manuscript rules generator, local storage, undo, import/export, and packaging | Implemented locally; HTTPS hosting and iPad device acceptance pending |
-| First table | Run the river with current pregens and printed state; record decisions, participation, accounting, and recall | Awaiting human play |
+| Playable revision | Revised river choice, seven varied chapters, personal opportunities and returns, independent NPC plans, four new technique options, simpler sheets, rebuilt handbook with subsection navigation and "Play tonight" selection, travel procedure card, and quick observation sheet | Implemented; see verification |
+| Player companion | Static offline character sheet app, manuscript rules generator, local storage with bounded labeled undo, 8 MiB shared UTF-8 import/export limits, and packaging | Implemented locally; HTTPS hosting and iPad device acceptance pending |
+| First table | Run the river with current pregens, printed state, and the quick observation sheet; record decisions, participation, accounting, and recall | Awaiting human play |
 | Revise observed problems | Exact scene, observation, smallest change, retest | Depends on first table |
 | Independent GM | Run without designer coaching; capture missing rules and preparation burden | Pending |
 | Desert and finale | Stress snapshot, then an ending using real earlier agreements and resources | Pending |
@@ -22,4 +22,4 @@ Use the [playtest protocol](docs/PLAYTEST.md) one session at a time. Do not redu
 
 ## Production scope
 
-Use the [single-file handbook](docs/handbook.html), existing sheets, and [quickstart](docs/QUICKSTART.md) as the review surface. A bounded player companion is now implemented at Ryan's request: local character sheets, offline caching, and backup/import. HTTPS hosting and actual iPad acceptance remain pending. Shared-party synchronization, VTT integration, a procedural generator, and a larger campaign remain deferred. The next edition should answer evidence, not add features to hit a rating.
+Use the [single-file handbook](docs/handbook.html), existing sheets, and [quickstart](docs/QUICKSTART.md) as the review surface. A bounded player companion is now implemented at Ryan's request: local character sheets, offline caching, bounded labeled undo, and 8 MiB backup/import. HTTPS hosting and actual iPad acceptance remain pending. Shared-party synchronization, VTT integration, a procedural generator, and a larger campaign remain deferred. The next edition should answer evidence, not add features to hit a rating.

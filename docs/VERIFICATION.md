@@ -1,8 +1,17 @@
 # Local verification — v0.10
 
-September 25, 2026. This edition implements a manuscript critique. Human play, specialist review, campaign balance, and player rating remain unmeasured.
+Updated September 26, 2026. This edition implements a manuscript critique. Human play, specialist review, campaign balance, and player rating remain unmeasured.
 
-## Current revision checks
+## September 26 — readiness fixes
+
+- The focused player model/storage/offline suite passed 28 tests. New checks cover all 12 maximum-size supported records with escaped control characters and Unicode, a shared UTF-8 byte limit, grouped text undo followed by gameplay undo after reopening, bounded history, legacy previous-save migration, stale confirmations/writers, and atomic write/undo failure. Failures and storage limits are injected; this is not a Safari quota measurement.
+- Player rules were regenerated and their source check passed. The handbook was rebuilt with 36 source sections, unique heading anchors, an 11-section Play tonight selection, and the new travel/observation sheets. Bounded packet and whitespace checks passed; these do not prove every rules interaction.
+- In the Codex desktop browser, created a traveler, recorded 3 damage, typed a journal sentence, and reloaded. HP was 6/9 and the grouped edit remained recoverable. One Undo removed the whole journal edit; the next restored 9/9 HP and exposed the earlier creation checkpoint. The history no longer toggles between the final two keystrokes.
+- In the generated handbook, confirmed Play tonight shows its 11 intended sections, a core-rule reference reveals the full handbook, and the HP and wounds subsection link reaches its exact heading. At the checked 1280-pixel viewport the document also measured 1280 pixels wide. The handbook browser error log was empty. Print output and physical iPad behavior were not tested in this pass.
+- An existing root-scoped service worker on the development localhost origin intercepted a handbook navigation. Handbook checks used the separate 127.0.0.1 origin; existing browser storage was not cleared. This does not establish deployment behavior.
+- Starting resources, damage, base DCs, and technique counts remain the v0.10 baseline. River advancement now consistently requires reaching Laramie. No human test or player rating has been obtained. No commit, push, hosting, or publication was performed.
+
+## September 25 — earlier revision checks
 
 - Rebuilt the offline handbook from all 34 source sections, including the player-app guide. The bounded packet check passed for 34 Markdown files, 126 local links, 162 handbook anchor references, four printed pregen arrays/modifiers/HP, all 42 chapter event entries, and the $550 purchases / $250 remainder. These are file-level checks, not a claim of complete rules consistency.
 - Ten focused arithmetic/printed-table checks passed: four river approach food/timing cells; their combined food comparison; the ramp example's food, wagon, teams, and cash endpoint; the weather-change example; the desert forecast; ford no-success probabilities; and sledge progress. The calculations are reproducible from the operands in Sample Day and Playtest; no campaign simulator was run.
@@ -10,7 +19,7 @@ September 25, 2026. This edition implements a manuscript critique. Human play, s
 - Git whitespace checks passed. All revision edits remain unstaged; no commit, push, deployment, publication, or outside messages were performed.
 - The request to open the handbook as a Codex file panel was queued. The separate handbook browser visual-inspection attempt was blocked by the browser's local-file URL security policy. No workaround was attempted. The handbook's browser rendering and printed-page appearance are therefore not visually verified in this revision. The separate player-app preview was inspected as described below.
 
-## Player companion checks
+## September 25 — earlier player companion checks
 
 - Generated rules match the three current manuscript sources: four pregens, four roles, 16 backgrounds, 16 techniques, and nine conditions. JavaScript syntax checks passed.
 - All 20 targeted Node tests passed. They cover wound transitions, daily Exhaustion limits, maximum HP, rest ordering, date/reset behavior, complete backup round trips, rejected imports, independent imported copies, previous-save undo after reopening, stale writers, denied storage reads, quota/archive failures, corrupt-save recovery, and the service worker's offline cache and scope-limited cleanup. Storage failures and Cache API behavior in these tests are injected, not measurements of Safari storage limits.

@@ -10,7 +10,9 @@ This edition implements the accepted design critique. It is a revised playtest m
 | Growth enables plans | One additional bounded technique option per role; two total earned choices remain | Relative usefulness and interactions in play |
 | Independent recurring people | Announced NPC decisions, differing work ambitions, Mara's meeting, regionally grounded fictional Hall stock keeper | Specialist portrayal review and player response |
 | Dramatic and emotional variety | Coordinated rescue, competing reports, shared-work negotiation, provisioning opportunity, celebrations, finale reckonings | Pacing across actual sessions |
-| Faster table procedure | Next decision panel, checkpoint-based arithmetic, one log row per uninterrupted leg, updated examples | Actual time saved and readability at the table |
+| Faster table procedure | Next decision panel, travel procedure card, checkpoint-based arithmetic, one log row per uninterrupted leg, and subsection navigation | Actual time saved and readability at the table |
 | Earned ending | Specific relationship returns before route choice; safe carrier remains safe; recorded agreements shape Arrival | Finale satisfaction with carried-forward state |
+
+The September 26 readiness pass also reconciles river advancement, adds an 11-section Play tonight print selection and a short observation form, and repairs backup-size and Undo behavior. Those local improvements are not an observed player score.
 
 Next: one river table, revision from its observations, independent GM, desert stress test, finale, then full campaign. Specialist historical/Indigenous review remains pending; limited regional sourcing is documented in History. The separately requested [player companion](PLAYER_APP.md) is implemented locally; its hosting and device acceptance remain pending. Shared-party synchronization, an expanded campaign, and numerical rebalance are not required before those observations.

@@ -4,6 +4,10 @@
 
 ## First test: the river, as written
 
+Use the [quick observation sheet](sheets/playtest_observer.md) for the first table. During play track only time to first consequential choice, rules interruptions, and participation gaps. An observer can take those notes; without one, the GM uses brief ticks and marks missing data unknown. Capture route/deadline response and each player’s owned choice in the five-minute debrief. Final state stays on the existing wagon and character sheets.
+
+The detailed table below is a follow-up research form, not a requirement to monitor every measure live. Estimate accounting time afterward unless someone else can time it without interrupting play.
+
 Use one GM, four pregens, and the exact river starting snapshot. Target 2–3 hours including debrief; record actual time and ending. End at the far-bank camp if needed. Use the new Next decision panel on the wagon sheet. Explain the ferry/work/ford/rope options and Nessa's announced departure before commitment. Let players reject personal hooks; do not coach them toward the intended dilemma.
 
 Do not change supply amounts or damage mid-test to force tension. Record any necessary house ruling, including the reason and what changed. Table safety changes remain available at any time without a mechanical charge.
@@ -53,6 +57,10 @@ Do not average away an excluded player. Do not make players perform doubt, grati
 | NPCs remembered only as discounts | Did their own announced plans change anything? | Rewrite one return to show an actual agreement's effect. |
 
 Record observation, interpretation, proposed revision, and later retest separately. If comparing with v0.9, identify which packet was used and the players' prior familiarity; do not mix editions in one result.
+
+## Check the travel card before a longer campaign
+
+Give an independent GM the [travel procedure card](sheets/travel_procedure.md) and wagon sheet. Resolve one healthy Standard leg, then a leg from the desert stress snapshot below with illness and a weather change. Use actual rolled results; do not require a particular outcome. Record where the GM stopped, which rules they looked up, and which values they recalculated. Check that unused days stayed unspent and recovery was not applied backward. Separate rules mistakes from awkward presentation before proposing changes. These are usability exercises, not human results already obtained.
 
 ## Next tests, one at a time
 

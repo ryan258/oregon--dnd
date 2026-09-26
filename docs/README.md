@@ -4,7 +4,7 @@
 
 Everything needed to run the journey: one night of it, or all seven chapters.
 
-[Single-file reading and printing edition](handbook.html).
+[Single-file reading and printing edition](handbook.html). Choose **Play tonight** in its toolbar for the river packet, or **Complete handbook** for the full reference. Each has its own print selection.
 
 ## Play tonight
 
@@ -12,6 +12,7 @@ Everything needed to run the journey: one night of it, or all seven chapters.
 - [The River Between — introductory adventure](RIVER_CHAPTER.md) — a posted price, a stranger short of it, and three ways across
 - [Four pregenerated travelers](PREGENS.md) — filled in, ready, already carrying something
 - [Session zero and boundaries](SESSION_ZERO.md) — the five minutes before the wagon leaves
+- [Quick observation sheet](sheets/playtest_observer.md) — three live measures and a five-minute debrief
 - [GM reference](sheets/gm_reference.md) — the shared procedures within reach
 
 ## Continue the journey
@@ -32,6 +33,7 @@ Everything needed to run the journey: one night of it, or all seven chapters.
 - [Character sheet](sheets/character_sheet.md)
 - [Party and wagon sheet](sheets/party_wagon_sheet.md)
 - [People and promises ledger](sheets/people_ledger.md)
+- [Travel procedure card](sheets/travel_procedure.md)
 - [Trail log / pause-resume record](sheets/trail_log.md)
 - [Fort trading sheet](sheets/fort_trading_sheet.md)
 - [Worked procedures](SAMPLE_DAY.md)
@@ -44,3 +46,4 @@ Everything needed to run the journey: one night of it, or all seven chapters.
 - [Project roadmap](../roadmap.md)
 - [Revision status](UPDATE-IDEAS.md)
 - [Change record](../CHANGELOG.md)
+- [Local verification](VERIFICATION.md)

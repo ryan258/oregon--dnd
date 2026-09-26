@@ -1,5 +1,11 @@
 # Change record
 
+## Playtest readiness — September 26, 2026
+
+Kept the v0.10 resource and danger baseline. Fixed the river advancement contradiction: first technique at Laramie, not the far-bank session ending. Added a travel checkpoint card, a short observation sheet, handbook subsection navigation, and a focused Play tonight reading/print selection generated from the same manuscript.
+
+Player backups now share an 8 MiB UTF-8 limit across export and both import paths. Undo uses labeled, bounded history with grouped text edits and atomic state/history writes; legacy saves remain readable. Human table performance and physical-iPad acceptance remain pending. See the dated verification record for checks actually performed.
+
 ## Player companion 1 — September 25, 2026
 
 Added a static single-page player app for the unchanged v0.10 game: generated pregens and role references, local character saves, custom/reserve sheets, health/wounds/Exhaustion/rest, condition and use reminders, story/journal, portable backup/import, previous-save undo, stale-window protection, and install-time offline caching. Includes bounded model/storage/offline tests, packaging, and iPad setup/recovery instructions. No accounts, cloud sync, shared-wagon automation, publication, or device installation. Actual verification is recorded separately.

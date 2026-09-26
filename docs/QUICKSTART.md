@@ -12,7 +12,7 @@ Everything in this game is an answer to that question. The food barrel is an ans
 2. Agree [tone and boundaries](SESSION_ZERO.md); read Dream, Promise, Boundary, and Bond aloud. Revise with the other players' agreement.
 3. For tonight, open [The River Between](RIVER_CHAPTER.md) and use its exact starting state. For the full journey use the starter loadout below and [Seven Chapters](CAMPAIGN.md).
 4. Put the [route map](TRAIL_MAP.md), [wagon sheet](sheets/party_wagon_sheet.md), [GM reference](sheets/gm_reference.md), and [people ledger](sheets/people_ledger.md) within reach.
-5. State the visible problem and at least two options. Make the first decision before teaching every subsystem.
+5. Keep the [travel procedure card](sheets/travel_procedure.md) and [quick observation sheet](sheets/playtest_observer.md) ready; the latter asks for only three live observations. State the visible problem and at least two options. Make the first decision before teaching every subsystem.
 
 ## The four travelers
 

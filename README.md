@@ -8,7 +8,7 @@ This is a survival tabletop RPG about the 2,000 miles between wanting a life and
 
 **Version 0.10 — playtest edition.** One GM and 1–4 players controlling four travelers, or solo. Seven chapters, targeting 6–8 sessions; duration and balance await real-table evidence. Familiar d20 checks, no D&D books required.
 
-[Open the single-file handbook](docs/handbook.html) for the complete packet with navigation and print styling. Rebuild with `python3 tools/build_handbook.py` (dependency: `tools/requirements.txt`).
+[Open the single-file handbook](docs/handbook.html) for the complete packet with subsection navigation and print styling. Choose **Play tonight** to read or print the river packet, character sheets, table references, and short observation form without the development records. Rebuild with `python3 tools/build_handbook.py` (dependency: `tools/requirements.txt`).
 
 ## What changed in v0.10
 
@@ -16,11 +16,11 @@ The river now weighs a two-day labor agreement against a departing carrier and a
 
 ## Play tonight
 
-A wagon queue, a ferryman's posted price, and a schoolteacher counting coins she doesn't have enough of. Start with the [quickstart](docs/QUICKSTART.md), hand out the [four pregens](docs/PREGENS.md), and run [The River Between](docs/RIVER_CHAPTER.md) — a complete first chapter with starting supplies, three real ways across, honest consequences, and a way back from failure. The [GM reference](docs/sheets/gm_reference.md) and [map](docs/TRAIL_MAP.md) keep the table oriented.
+A wagon queue, a ferryman's posted price, and a schoolteacher counting coins she doesn't have enough of. Start with the [quickstart](docs/QUICKSTART.md), hand out the [four pregens](docs/PREGENS.md), and run [The River Between](docs/RIVER_CHAPTER.md) — a complete first chapter with starting supplies, three real ways across, honest consequences, and a way back from failure. The [GM reference](docs/sheets/gm_reference.md), [travel procedure card](docs/sheets/travel_procedure.md), [quick observation sheet](docs/sheets/playtest_observer.md), and [map](docs/TRAIL_MAP.md) keep the table oriented.
 
 ## Player companion for iPad
 
-The [player app](docs/PLAYER_APP.md) provides local character saves, pregens, health and condition tracking, personal notes, and backup/import. It can be installed from an HTTPS host for offline Home Screen use. Each device keeps its own sheets; shared wagon state stays with the table. Hosting and real-iPad acceptance remain separate steps. Rebuild the player rules from the manuscript with `python3 tools/build_player_rules.py` and package the static offline distribution with `python3 tools/package_player.py`.
+The [player app](docs/PLAYER_APP.md) provides local character saves, pregens, health and condition tracking, personal notes, bounded labeled undo, and 8 MiB backup/import. It can be installed from an HTTPS host for offline Home Screen use. Each device keeps its own sheets; shared wagon state stays with the table. Hosting and real-iPad acceptance remain separate steps. Rebuild the player rules from the manuscript with `python3 tools/build_player_rules.py` and package the static offline distribution with `python3 tools/package_player.py`.
 
 ## The full journey
 
