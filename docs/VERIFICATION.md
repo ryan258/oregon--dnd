@@ -1,6 +1,14 @@
 # Local verification — v0.10
 
-Updated September 26, 2026. This edition implements a manuscript critique. Human play, specialist review, campaign balance, and player rating remain unmeasured.
+Updated October 3, 2026. This edition implements a manuscript critique and local play aids. Human play, specialist review, campaign balance, and player rating remain unmeasured.
+
+## October 3, 2026 — local game website and Trailmaster ledger
+
+- The focused Trailmaster model and storage suite passed all 22 tests (`website/tests/trail-ledger.test.cjs`). Checks cover starter presets (river and full campaign), date progression, daily close calculations (earliest fresh food expiry, cured food consumption, miles and markers), Web Locks write concurrency protection, dirty-state preservation, quota and write failures, 2 MiB UTF-8 backup envelope export/import validation, corrupted save handling, and 10-step bounded undo across reloads.
+- The static site builder (`hugo`) generated 8 HTML pages into `dist/site/` with mounts for the complete character companion (`player/`), generated single-file handbook (`docs/handbook.html`), and custom assets.
+- The site integrity checker (`website/tests/check_site.py`) verified all local links, anchors, mounting integrity for player files and handbook, and the build-time extraction of all four pregenerated travelers from `docs/PREGENS.md`.
+- Local launch command `./trail` binds strictly to `127.0.0.1:1313`. No external theme, analytics, fonts, CDN, backend, or cloud sync are used.
+- Browser smoke testing confirmed responsive layout, daily preview modal, save/reload persistence, Web Locks concurrency lockout on competing tabs, and backup export/import. Completed browser download-event capture was not independently automated. Assistive-technology and iPad device acceptance remain unverified.
 
 ## September 26 — readiness fixes
 
@@ -37,6 +45,9 @@ python3 tools/build_handbook.py
 python3 tools/check_packet.py
 python3 tools/build_player_rules.py --check
 node --test tests/player.test.cjs tests/player-offline.test.cjs
+node --test website/tests/trail-ledger.test.cjs
+hugo
+python3 website/tests/check_site.py
 git diff --check
 ```
 

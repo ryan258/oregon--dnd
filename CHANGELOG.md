@@ -1,5 +1,15 @@
 # Change record
 
+## Local game website and Trailmaster ledger — October 3, 2026
+
+Added a local Hugo site (`./trail`) and browser-saved Trailmaster ledger to support table play and shared party management alongside the single-player companion:
+
+- Hugo site with zero external runtime dependencies, themes, web fonts, analytics, or CDNs, binding strictly to `127.0.0.1:1313`.
+- Pages for game overview, rules and table contracts, traveler pregen showcase (extracted at build time from `docs/PREGENS.md`), handbook links, and printable cover.
+- Two original illustrations: cover art and camp companion scene (`website/ARTWORK.md`).
+- Browser-based Trailmaster wagon ledger (`website/static/js/trailmaster.js` and `website/static/js/trail-model.js`) featuring preset configurations (River and Full Campaign), real-time arithmetic estimates, day-close calculations (earliest-expiring fresh food first, cured food, mileage, and date advance), Web Locks write concurrency protection across tabs, 10-step bounded undo, and 2 MiB validated JSON backup export/import.
+- Targeted tests covering data safety, storage failure injection, quota handling, Hugo static generation, mount integrity, and page reference verification (`website/tests/trail-ledger.test.cjs` and `website/tests/check_site.py`).
+
 ## Playtest readiness — September 26, 2026
 
 Kept the v0.10 resource and danger baseline. Fixed the river advancement contradiction: first technique at Laramie, not the far-bank session ending. Added a travel checkpoint card, a short observation sheet, handbook subsection navigation, and a focused Play tonight reading/print selection generated from the same manuscript.

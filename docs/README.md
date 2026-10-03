@@ -28,6 +28,10 @@ Everything needed to run the journey: one night of it, or all seven chapters.
 
 - [iPad player app and setup](PLAYER_APP.md) — local character sheets, offline cache, backups, and recovery
 
+## Game website and Trailmaster ledger
+
+- Local website and Trailmaster ledger (see `website/README.md`) — local Hugo site (`./trail`), illustrated cover and camp scene, traveler showcase, handbook links, and browser-saved wagon ledger with day-close calculations and Web Locks
+
 ## At the table
 
 - [Character sheet](sheets/character_sheet.md)

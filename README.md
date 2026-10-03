@@ -22,6 +22,10 @@ A wagon queue, a ferryman's posted price, and a schoolteacher counting coins she
 
 The [player app](docs/PLAYER_APP.md) provides local character saves, pregens, health and condition tracking, personal notes, bounded labeled undo, and 8 MiB backup/import. It can be installed from an HTTPS host for offline Home Screen use. Each device keeps its own sheets; shared wagon state stays with the table. Hosting and real-iPad acceptance remain separate steps. Rebuild the player rules from the manuscript with `python3 tools/build_player_rules.py` and package the static offline distribution with `python3 tools/package_player.py`.
 
+## Local game website
+
+Run `./trail` from this repository to open the Hugo site at `http://localhost:1313/`. It introduces the game and travelers, links the complete instructions and player sheets, and adds a browser-saved Trailmaster ledger for shared supplies, decisions, and daily records. The instructions have an illustrated cover and the site includes a companion camp scene. Setup, backup behavior, and source details are in `website/README.md`. Build locally with `hugo`; output goes to `dist/site/`. Nothing is published by starting or building the site.
+
 ## The full journey
 
 - [Core rules](seed.md) — how the road charges you, and what it cannot take
