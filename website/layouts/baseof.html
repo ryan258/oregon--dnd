@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ site.Title }}</title>
+  <meta name="description" content="{{ .Description | default site.Params.description }}">
+  {{ $css := resources.Get "site.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  {{ block "head" . }}{{ end }}
+</head>
+<body class="page-{{ .Layout | default .Kind }}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="{{ "" | relURL }}" aria-label="Oregon Trail RPG home"><span class="brand-mark" aria-hidden="true">↟</span><span>OREGON TRAIL<small>A ROLEPLAYING GAME</small></span></a>
+  <nav aria-label="Main navigation">
+    {{ range slice (dict "url" "game/" "label" "The game") (dict "url" "characters/" "label" "Travelers") (dict "url" "instructions/" "label" "Instructions") (dict "url" "trailmaster/" "label" "Trailmaster") }}
+    <a href="{{ .url | relURL }}" {{ if eq $.RelPermalink (.url | relURL) }}aria-current="page"{{ end }}>{{ .label }}</a>
+    {{ end }}
+  </nav>
+</header>
+<main id="main">{{ block "main" . }}{{ end }}</main>
+<footer class="site-footer"><div><strong>Oregon Trail RPG</strong><br>People. Promises. The road between.</div><p>v0.10 · Personal playtest edition<br>Fictionalized 1848 · <a href="{{ "docs/handbook.html#docs-HISTORY-md" | relURL }}">Setting &amp; sources</a></p><a href="{{ "player/" | relURL }}">Open player sheets ↗</a></footer>
+</body>
+</html>

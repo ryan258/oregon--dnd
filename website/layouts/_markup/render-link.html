@@ -1,0 +1,8 @@
+{{- $href := .Destination -}}
+{{- if and .Page.Params.source (strings.Contains $href ".md") (not (strings.Contains $href "://")) -}}
+  {{- $parts := split $href "#" -}}
+  {{- $source := path.Clean (path.Join (path.Dir .Page.Params.source) (index $parts 0)) -}}
+  {{- $id := replaceRE `[^a-zA-Z0-9_-]` "-" $source -}}
+  {{- $href = printf "%s#%s" ("docs/handbook.html" | relURL) $id -}}
+{{- end -}}
+<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text }}</a>

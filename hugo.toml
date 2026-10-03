@@ -1,0 +1,34 @@
+baseURL = 'http://localhost:1313/'
+locale = 'en-US'
+title = 'Oregon Trail RPG'
+disableKinds = ['taxonomy', 'term', 'RSS', 'sitemap']
+publishDir = 'dist/site'
+resourceDir = 'dist/hugo-resources'
+enableRobotsTXT = false
+
+[params]
+description = 'Four ordinary people. One wagon. Two thousand miles of promises. A survival tabletop roleplaying game and a companion for your table.'
+
+[markup.goldmark.renderer]
+unsafe = false
+
+[module]
+  [[module.mounts]]
+  source = 'website/content'
+  target = 'content'
+  [[module.mounts]]
+  source = 'website/layouts'
+  target = 'layouts'
+  [[module.mounts]]
+  source = 'website/assets'
+  target = 'assets'
+  [[module.mounts]]
+  source = 'website/static'
+  target = 'static'
+  [[module.mounts]]
+  source = 'player'
+  target = 'static/player'
+  files = ['**', '!README.md']
+  [[module.mounts]]
+  source = 'docs/handbook.html'
+  target = 'static/docs/handbook.html'
