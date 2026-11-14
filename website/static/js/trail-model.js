@@ -61,6 +61,13 @@
     if (bytes(JSON.stringify({format: 'oregon-trail-trailmaster', version: VERSION, state})) > MAX_BYTES) fail('This ledger exceeds the 2 MiB backup limit.');
     return state;
   }
+  function restore(input) {
+    const state = validate(input);
+    for (const n of [1, 2]) {
+      if (!state[`fresh${n}`]) state[`fresh${n}Expiry`] = '';
+    }
+    return state;
+  }
   function create(preset) {
     if (!['campaign', 'river'].includes(preset)) fail('Choose campaign or river.');
     const river = preset === 'river';
@@ -75,12 +82,17 @@
       ammo: river ? 40 : 160, parts: river ? 2 : 3, money: river ? 25 : 250, wagon: river ? 22 : 30,
       oxA: river ? 8 : 10, oxB: river ? 8 : 10, oxC: river ? 8 : 10, bedding: true, tools: true,
       peopleCount: 4, ableCount: 4, exhaustedCount: 0,
-      nextDecision: river ? 'Ferry tomorrow, ford today, or two labor days then cross? Disclose the costs before choosing.' : 'Name dreams and promises. Choose the first day’s action.',
+      nextDecision: river ? 'Ferry on day 2 ($10), risky ford today, two ramp labor days then cross, or prepare a rope line for a safe day-2 crossing (1 part)? Show each cost and Nessa’s deadline before choosing.' : 'Name dreams and promises. Choose the first day’s action.',
       checkpoint: river ? 'Far bank: marker 358. Stop after the crossing.' : 'Mercy’s crate and the book scene: marker 120.',
       deadline: river ? 'Nessa and Mara depart at dawn June 4, unless their own travel is weather-delayed.' : '',
       cargo: 'Eliza’s book crate · Mae’s tool chest · Warm Bedding · ordinary tools, rope, cooking gear, canvas.', log: []
     });
     return validate(state);
+  }
+  function setField(state, key, value) {
+    if ((key === 'fresh1' || key === 'fresh2') && state[key] > 0 && value === 0) state[`${key}Expiry`] = '';
+    state[key] = value;
+    return state;
   }
   function recordDay(input, draft) {
     const state = validate(input);
@@ -106,6 +118,7 @@
         row.spoiled += state[`fresh${n}`];
         state[`fresh${n}`] = 0;
       }
+      if (!state[`fresh${n}`]) state[`fresh${n}Expiry`] = '';
     }
     state.cured -= remaining;
     state.water -= water;
@@ -121,8 +134,8 @@
     let data;
     try { data = JSON.parse(raw); } catch { fail('The backup is not readable JSON.'); }
     if (data?.format !== 'oregon-trail-trailmaster' || data?.version !== VERSION) fail('Use a Trailmaster backup, not a player character backup.');
-    return validate(data.state);
+    return restore(data.state);
   }
-  function exportBackup(state) { return JSON.stringify({format: 'oregon-trail-trailmaster', version: VERSION, state: validate(state)}); }
-  return {VERSION, MAX_BYTES, numbers, texts, booleans, dates, clone, bytes, validate, create, recordDay, parseBackup, exportBackup, nextDate};
+  function exportBackup(state) { return JSON.stringify({format: 'oregon-trail-trailmaster', version: VERSION, state: restore(state)}); }
+  return {VERSION, MAX_BYTES, numbers, texts, booleans, dates, clone, bytes, validate, restore, create, setField, recordDay, parseBackup, exportBackup, nextDate};
 });

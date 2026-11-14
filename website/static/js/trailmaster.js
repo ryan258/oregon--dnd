@@ -3,6 +3,7 @@
   'use strict';
   const M = window.TrailLedger;
   const KEY = `oregon-trail-trailmaster-v1:${location.pathname.replace(/\/+$/, '')}`;
+  const DAY_KEY = `${KEY}:day-draft`;
   const $ = id => document.getElementById(id);
   let state = null;
   let history = [];
@@ -14,11 +15,16 @@
   let memoryOnly = !navigator.locks;
   let rawUnreadable = null;
   let pendingConfirm = null;
+  let confirming = false;
   let returnFocus = null;
   let pendingWrites = 0;
-  const dirtyFields = new Set();
+  const fieldDrafts = new Map();
+  const fields = new Map([...document.querySelectorAll('[data-field]')].map(input => [input.dataset.field, input]));
+  const dayFields = ['day-action', 'day-miles', 'day-to', 'day-food', 'day-water', 'day-note'];
   let dayDirty = false;
-  const fields = [...document.querySelectorAll('[data-field]')];
+  let dayCustomized = false;
+  let dayToManual = false;
+  let dayStartDate = '';
 
   function status(message, error = false) {
     $('save-status').textContent = message;
@@ -34,6 +40,7 @@
   }
   function announceSaved(label) {
     if (memoryOnly || unsaved) status(`${label}. Kept in this open page only — download a backup before leaving. Browser saving is unavailable.`, true);
+    else if (fieldDrafts.size) status(`${label}. Other unfinished field edits are still open in this page.`, true);
     else status(`${label}. Saved in this browser.`);
   }
   function load() {
@@ -50,7 +57,7 @@
       try {
         const save = JSON.parse(raw);
         if (save.format !== 'oregon-trail-trailmaster-storage' || save.version !== 1) throw new Error('Unsupported saved ledger format.');
-        state = M.validate(save.state);
+        state = M.restore(save.state);
         if (!Number.isSafeInteger(save.revision) || save.revision < 0) throw new Error('Invalid save revision.');
         revision = save.revision;
         // Bad optional history must not make a valid current campaign inaccessible.
@@ -58,7 +65,7 @@
           if (!Array.isArray(save.history) || save.history.length > 10) throw new Error('Bad history.');
           history = save.history.map(entry => {
             if (typeof entry.label !== 'string' || entry.label.length > 120) throw new Error('Bad undo label.');
-            return {label: entry.label, state: M.validate(entry.state)};
+            return {label: entry.label, state: M.restore(entry.state)};
           });
         } catch { history = []; repairedHistory = true; rawUnreadable = raw; }
       } catch (error) {
@@ -74,17 +81,18 @@
     else if (state) announceSaved('Ledger loaded');
     else if (rawUnreadable === null) status(memoryOnly ? 'Choose a starting snapshot. This browser supports an open-page ledger only; download backups to keep your work.' : 'Choose a starting snapshot, or import your Trailmaster backup.');
   }
+  function syncField(key) {
+    if (!state || fieldDrafts.has(key)) return;
+    const input = fields.get(key);
+    if (input.type === 'checkbox') input.checked = state[key];
+    else input.value = state[key];
+  }
   function hydrate() {
-    for (const input of fields) {
-      const key = input.dataset.field;
+    for (const [key, input] of fields) {
       if (M.numbers[key]) [input.min, input.max, input.step] = M.numbers[key];
       if (M.texts[key]) input.maxLength = M.texts[key];
-      if (state) {
-        if (input.type === 'checkbox') input.checked = state[key];
-        else input.value = state[key];
-      }
+      syncField(key);
     }
-    if (state) $('day-to').value = state.marker;
     render();
   }
   function render() {
@@ -95,6 +103,7 @@
     $('undo').disabled = !state || !history.length || blocked;
     $('undo').textContent = history.length ? `Undo: ${history[history.length - 1].label}` : 'Undo';
     if (!state) return;
+    syncDayMarker();
     const total = state.cured + state.fresh1 + state.fresh2;
     const teams = ['A', 'B', 'C'].filter(key => state[`ox${key}`] > 0 && !state[`ox${key}Lame`]).length;
     $('summary-date').textContent = new Date(`${state.date}T12:00:00Z`).toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC'});
@@ -138,19 +147,30 @@
           throw new Error('Another tab changed this ledger. Your visible record is preserved. Download a backup or load the latest saved ledger.');
         }
       }
-      const candidate = M.validate(change(state ? M.clone(state) : null));
+      const entry = options.undo ? history[history.length - 1] : null;
+      if (options.undo && !entry) return false;
+      const updated = options.undo ? entry.state : change(state ? M.clone(state) : null);
+      if (updated === undefined) {
+        options.finish?.();
+        announceSaved('No change');
+        return true;
+      }
+      const candidate = M.validate(updated);
       let nextHistory = options.undo ? history.slice(0, -1) : [...history, ...(state ? [{label, state: M.clone(state)}] : [])].slice(-10);
       // Bound optional history independently from the current campaign.
       while (nextHistory.length && M.bytes(JSON.stringify(nextHistory)) > M.MAX_BYTES) nextHistory.shift();
       if (!memoryOnly) {
-        const raw = JSON.stringify({format: 'oregon-trail-trailmaster-storage', version: 1, revision: revision + 1, state: candidate, history: nextHistory});
-        try { localStorage.setItem(KEY, raw); expected = raw; revision++; unsaved = false; rawUnreadable = null; $('raw-export').hidden = true; }
+        const nextRevision = revision === Number.MAX_SAFE_INTEGER ? 1 : revision + 1;
+        const raw = JSON.stringify({format: 'oregon-trail-trailmaster-storage', version: 1, revision: nextRevision, state: candidate, history: nextHistory});
+        try { localStorage.setItem(KEY, raw); expected = raw; revision = nextRevision; unsaved = false; rawUnreadable = null; $('raw-export').hidden = true; }
         catch { unsaved = true; }
       }
       state = candidate;
       history = nextHistory;
+      if (options.replace) fieldDrafts.clear();
+      options.finish?.();
       if (options.hydrate) hydrate(); else render();
-      announceSaved(label);
+      announceSaved(options.undo ? `Undid ${entry.label}` : label);
       return true;
     };
     const result = queue.then(() => navigator.locks ? navigator.locks.request(KEY, operation) : operation());
@@ -167,6 +187,7 @@
     $('confirm-no').focus();
   }
   function closeConfirm() {
+    if (confirming) return;
     pendingConfirm = null;
     $('confirm-dialog').close();
     if (returnFocus?.isConnected) returnFocus.focus();
@@ -175,44 +196,92 @@
   $('confirm-dialog').addEventListener('cancel', event => { event.preventDefault(); closeConfirm(); });
   $('confirm-yes').addEventListener('click', async () => {
     const callback = pendingConfirm;
+    if (!callback || confirming) return;
+    confirming = true;
     $('confirm-yes').disabled = true;
-    try { if (callback) await callback(); } catch (error) { status(error.message, true); }
-    finally { $('confirm-yes').disabled = false; closeConfirm(); }
+    $('confirm-no').disabled = true;
+    try { await callback(); } catch (error) { status(error.message, true); }
+    finally {
+      confirming = false;
+      $('confirm-yes').disabled = false;
+      $('confirm-no').disabled = false;
+      closeConfirm();
+    }
   });
-  for (const input of fields) input.addEventListener('input', () => { dirtyFields.add(input.dataset.field); });
-  for (const input of fields) input.addEventListener('change', async () => {
-    const key = input.dataset.field;
-    const value = input.type === 'checkbox' ? input.checked : input.type === 'number' ? (input.value === '' ? NaN : Number(input.value)) : input.value;
-    if (!state || value === state[key]) { dirtyFields.delete(key); return; }
-    const label = `Edit ${key.replace(/([A-Z])/g, ' $1').toLowerCase()}`;
-    const okay = await mutate(label, next => { next[key] = value; return next; });
-    if (state) { if (input.type === 'checkbox') input.checked = state[key]; else input.value = state[key]; }
-    dirtyFields.delete(key);
-    if (!okay) input.focus();
-  });
+  function fieldValue(input) {
+    if (input.type === 'checkbox') return input.checked;
+    if (input.type === 'number') return input.value === '' ? NaN : Number(input.value);
+    return input.value;
+  }
+  function rememberField(key, input) {
+    const draft = {value: fieldValue(input)};
+    if (!fieldDrafts.size && !blocked && !memoryOnly && !unsaved) status('Editing a field. Leave it to save the change.');
+    fieldDrafts.set(key, draft);
+    return draft;
+  }
+  function finishField(key, draft) {
+    if (fieldDrafts.get(key) === draft) fieldDrafts.delete(key);
+    syncField(key);
+    if (key === 'fresh1' || key === 'fresh2') syncField(`${key}Expiry`);
+  }
+  function fieldName(key) { return key.replace(/([A-Z])/g, ' $1').toLowerCase(); }
+  for (const [key, input] of fields) {
+    input.addEventListener('input', () => rememberField(key, input));
+    input.addEventListener('change', async () => {
+      if (!state) return;
+      const current = fieldDrafts.get(key);
+      const draft = current && Object.is(current.value, fieldValue(input)) ? current : rememberField(key, input);
+      await mutate(`Edit ${fieldName(key)}`, next => {
+        if (next[key] !== draft.value) return M.setField(next, key, draft.value);
+      }, {finish: () => finishField(key, draft)});
+    });
+  }
   for (const button of document.querySelectorAll('[data-step]')) button.addEventListener('click', async () => {
     const key = button.dataset.target;
+    const draft = fieldDrafts.get(key);
     const delta = Number(button.dataset.step) * (key === 'money' ? 1 : ['cured', 'fresh1', 'fresh2', 'water'].includes(key) ? 1 : M.numbers[key][2]);
-    await mutate(`Change ${key}`, next => { next[key] = Math.round((next[key] + delta) * 100) / 100; return next; });
-    if (state) document.querySelector(`[data-field="${key}"]`).value = state[key];
+    await mutate(`Change ${key}`, next => M.setField(next, key, Math.round((next[key] + delta) * 100) / 100), {finish: () => finishField(key, draft)});
   });
   for (const preset of ['river', 'campaign']) $(`new-${preset}`).addEventListener('click', async () => {
     await queue;
     if (blocked) { status('Load the latest saved ledger before starting another journey.', true); return; }
     const candidate = M.create(preset);
-    const begin = async () => { if (await mutate(`Start ${preset}`, () => candidate, {hydrate: true})) resetDayDraft(); };
-    if (state || rawUnreadable !== null) confirm('Start a new journey?', 'This replaces the current shared ledger in this browser. Download a backup first if you want a separate copy. Character sheets are separate. A readable previous ledger is available in Undo.', 'Start new journey', begin);
+    const base = JSON.stringify(state);
+    const begin = async () => { if (await mutate(`Start ${preset}`, () => candidate, {hydrate: true, base, replace: true})) resetDayDraft(); };
+    if (state || rawUnreadable !== null) {
+      const title = preset === 'river' ? 'Start the river session?' : 'Start a full campaign?';
+      confirm(title, 'This replaces the current shared ledger and discards unfinished edits. Download a backup first if you want a separate copy. A readable previous ledger is available in Undo.', 'Start new journey', begin);
+    }
     else await begin();
   });
   $('undo').addEventListener('click', async () => {
-    await queue;
-    if (!history.length) return;
-    const entry = history[history.length - 1];
-    await mutate(`Undid ${entry.label}`, () => entry.state, {undo: true, hydrate: true});
+    await mutate('Undo', null, {undo: true, hydrate: true});
   });
-  $('export').addEventListener('click', async () => { await queue; if (state) download(M.exportBackup(state), `oregon-trail-ledger-${state.date}.json`); });
+  $('export').addEventListener('click', async () => {
+    await queue;
+    if (!state) return;
+    const candidate = M.clone(state);
+    for (const [key, draft] of fieldDrafts) M.setField(candidate, key, draft.value);
+    let raw;
+    try { raw = M.exportBackup(candidate); }
+    catch {
+      let recovered = state;
+      let skipped = [...fieldDrafts];
+      let count;
+      do {
+        count = skipped.length;
+        skipped = skipped.filter(([key, draft]) => {
+          try { recovered = M.validate(M.setField(M.clone(recovered), key, draft.value)); return false; }
+          catch { return true; }
+        });
+      } while (skipped.length && skipped.length < count);
+      raw = M.exportBackup(recovered);
+      if (skipped.length) status(`Backup excludes edits that need correction: ${skipped.map(([key]) => fieldName(key)).join(', ')}. They are still visible in this page.`, true);
+    }
+    download(raw, `oregon-trail-ledger-${state.date}.json`);
+  });
   $('raw-export').addEventListener('click', () => { if (rawUnreadable !== null) download(rawUnreadable, 'oregon-trail-unreadable-ledger.json'); });
-  $('reload').addEventListener('click', () => confirm('Load the latest saved ledger?', 'This discards this page’s unsaved changes and unfinished day estimate. Download a backup first to keep this page’s campaign record.', 'Load latest', async () => { await queue; unsaved = false; load(); resetDayDraft(); }));
+  $('reload').addEventListener('click', () => confirm('Load the latest saved ledger?', 'This discards this page’s unsaved ledger changes and unfinished day entry. Download a backup first to keep this page’s campaign record.', 'Load latest', async () => { await queue; unsaved = false; fieldDrafts.clear(); load(); resetDayDraft(); }));
   $('import').addEventListener('click', () => $('import-file').click());
   $('import-file').addEventListener('change', async event => {
     const file = event.target.files[0]; event.target.value = '';
@@ -222,48 +291,125 @@
       const candidate = M.parseBackup(await file.text());
       await queue;
       const base = JSON.stringify(state);
-      confirm('Import this journey?', `${candidate.name}\n${candidate.date} · marker ${candidate.marker} · ${candidate.log.length} daily entries\n\nThis replaces the shared ledger. Your current readable journey will be kept in Undo.`, 'Import journey', async () => { if (await mutate('Import backup', () => candidate, {hydrate: true, base})) resetDayDraft(); });
+      confirm('Import this journey?', `${candidate.name}\n${candidate.date} · marker ${candidate.marker} · ${candidate.log.length} daily entries\n\nThis replaces the shared ledger and discards unfinished edits. Your current readable journey will be kept in Undo.`, 'Import journey', async () => { if (await mutate('Import backup', () => candidate, {hydrate: true, base, replace: true})) resetDayDraft(); });
     } catch (error) { status(error.message, true); }
   });
   for (const button of document.querySelectorAll('[data-person]')) button.addEventListener('click', async () => {
     if (await mutate(`Add ${button.dataset.person}`, next => { next.people += `${next.people ? '\n\n' : ''}${button.dataset.person} → Choice: … → Change: … → Next appearance / deadline: …`; return next; })) {
-      const input = document.querySelector('[data-field="people"]'); input.value = state.people; input.focus(); input.setSelectionRange(input.value.length, input.value.length);
+      if (fieldDrafts.has('people')) return;
+      syncField('people');
+      const input = fields.get('people'); input.focus(); input.setSelectionRange(input.value.length, input.value.length);
     }
   });
-  function resetDayDraft() {
-    $('day-action').value = 'Travel'; $('day-miles').value = 0; $('day-to').value = state?.marker ?? 0;
-    $('day-food').value = 4; $('day-water').value = 0; $('day-note').value = '';
-    dayDirty = false;
+  function syncDayMarker() {
+    if (!state || dayToManual) return;
+    const miles = Number($('day-miles').value);
+    $('day-to').value = state.marker + (Number.isFinite(miles) && miles > 0 ? Math.min(2000 - state.marker, miles) : 0);
   }
-  for (const id of ['day-action', 'day-miles', 'day-to', 'day-food', 'day-water', 'day-note']) $(id).addEventListener('input', () => { dayDirty = true; });
-  for (const button of document.querySelectorAll('[data-day]')) button.addEventListener('click', () => {
+  function dayValues() { return dayFields.map(id => String($(id).value)); }
+  function saveDayDraft() {
+    try {
+      if (!dayDirty) window.sessionStorage.removeItem(DAY_KEY);
+      else window.sessionStorage.setItem(DAY_KEY, JSON.stringify({date: dayStartDate, values: dayValues(), manual: dayToManual, customized: dayCustomized}));
+    } catch {
+      // Draft still stays in this page if this tab cannot save it across refresh.
+    }
+  }
+  function restoreDayDraft() {
+    if (!state) return;
+    try {
+      const raw = window.sessionStorage.getItem(DAY_KEY);
+      if (!raw || raw.length > 32000) return;
+      const draft = JSON.parse(raw);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(draft?.date) || typeof draft.manual !== 'boolean' || typeof draft.customized !== 'boolean' ||
+          !Array.isArray(draft.values) || draft.values.length !== dayFields.length || !draft.values.every(value => typeof value === 'string')) return;
+      dayStartDate = draft.date;
+      dayDirty = true;
+      dayCustomized = draft.customized;
+      dayToManual = draft.manual;
+      dayFields.forEach((id, index) => { $(id).value = draft.values[index]; });
+      syncDayMarker();
+    } catch {
+      // The saved ledger remains usable if the tab draft cannot be read.
+    }
+  }
+  function resetDayDraft() {
+    $('day-action').value = 'Travel'; $('day-miles').value = 0;
+    $('day-food').value = 4; $('day-water').value = 0; $('day-note').value = '';
+    dayDirty = dayCustomized = dayToManual = false;
+    dayStartDate = '';
+    syncDayMarker();
+    saveDayDraft();
+  }
+  for (const id of dayFields) $(id).addEventListener('input', () => {
+    if (!state) return;
+    if (!dayDirty) dayStartDate = state.date;
+    dayDirty = true;
+    if (id !== 'day-note') dayCustomized = true;
+    if (id === 'day-to') dayToManual = true;
+    if (id === 'day-miles') syncDayMarker();
+    saveDayDraft();
+  });
+  $('day-to').addEventListener('change', () => {
+    if ($('day-to').value !== '') return;
+    dayToManual = false;
+    syncDayMarker();
+    saveDayDraft();
+  });
+  function readyForDay() {
+    if (!state || blocked) return false;
+    if (!fieldDrafts.size) return true;
+    const names = [...fieldDrafts.keys()].map(fieldName).join(', ');
+    status(`Finish editing these shared ledger fields first: ${names}.`, true);
+    return false;
+  }
+  for (const button of document.querySelectorAll('[data-day]')) button.addEventListener('click', async () => {
+    await queue;
+    if (!readyForDay()) return;
     const presets = {standard: ['Standard travel', 18, 4], rest: ['Rest', 0, 2], labor: ['River ramp labor (two workers, two resting)', 0, 3], crossing: ['River crossing', 18, 4], other: ['Other action', 0, 4]};
     const [action, miles, food] = presets[button.dataset.day];
-    $('day-action').value = action; $('day-miles').value = miles; $('day-to').value = Math.min(2000, state.marker + miles); $('day-food').value = food; $('day-water').value = state.waterTracked ? 2 : 0;
-    dayDirty = true;
-    status('Estimate filled. Adjust for actual travelers, weather, stance, teams, scene rules, and any food-saving ability before previewing.');
+    const fill = () => {
+      if (!readyForDay()) return;
+      $('day-action').value = action; $('day-miles').value = miles; $('day-food').value = food; $('day-water').value = state.waterTracked ? 2 : 0;
+      dayDirty = true;
+      dayCustomized = dayToManual = false;
+      dayStartDate = state.date;
+      syncDayMarker();
+      saveDayDraft();
+      status('Estimate filled. Adjust for actual travelers, weather, stance, teams, scene rules, and any food-saving ability before previewing.');
+    };
+    if (dayCustomized) confirm('Replace your day estimate?', 'This replaces the action, distance, and costs you entered. Your day note stays in place.', 'Fill estimate', fill);
+    else fill();
   });
   $('preview-day').addEventListener('click', async () => {
     await queue;
+    if (!readyForDay()) return;
     try {
       const value = id => $(id).value === '' ? NaN : Number($(id).value);
       const draft = {action: $('day-action').value, miles: value('day-miles'), to: value('day-to'), food: value('day-food'), water: value('day-water'), note: $('day-note').value};
       const result = M.recordDay(state, draft);
       const base = JSON.stringify(state);
+      const inputs = dayValues();
       const row = result.row;
-      confirm(`Close ${state.date}?`, `${row.action}\n${row.miles} actual miles; route marker ${row.from} → ${row.to}.\nEat ${row.food} lbs food; use ${row.water} gallons water.\nDiscard ${row.spoiled} lbs fresh food after this evening.\nNext date: ${result.state.date}. Weather days left: ${result.state.weatherDays}.\n\nHealth, recovery, damage, money, Morale, chapter entry, and promises must already be resolved separately. No dice or character sheets will change.`, 'Record & advance one day', async () => {
-        if (await mutate('Close day', () => result.state, {hydrate: true, base})) resetDayDraft();
+      const dateWarning = dayDirty && dayStartDate !== state.date ? `You started this entry for ${dayStartDate}. Review the current date before recording.\n` : '';
+      const markerWarning = row.to < row.from ? 'This moves the route marker backward. Review that change before recording.\n' : '';
+      confirm(`Close ${state.date}?`, `${dateWarning}${markerWarning}${row.action}\n${row.miles} actual miles; route marker ${row.from} → ${row.to}.\nEat ${row.food} lbs food; use ${row.water} gallons water.\nDiscard ${row.spoiled} lbs fresh food after this evening.\nNext date: ${result.state.date}. Weather days left: ${result.state.weatherDays}.\n\nHealth, recovery, damage, money, Morale, chapter entry, and promises must already be resolved separately. No dice or character sheets will change.`, 'Record & advance one day', async () => {
+        if (await mutate('Close day', () => {
+          if (fieldDrafts.size || dayValues().some((value, index) => value !== inputs[index])) throw new Error('The inputs changed after this preview. Review the day again.');
+          return result.state;
+        }, {hydrate: true, base})) resetDayDraft();
       });
     } catch (error) { status(error.message, true); }
   });
   window.addEventListener('storage', event => {
-    if ((event.key === KEY || event.key === null) && !memoryOnly) {
+    if (!memoryOnly && (event.key === null || (event.key === KEY && event.newValue !== expected))) {
       blocked = true; $('reload').hidden = false; render(); status('This ledger changed in another tab. Your page is preserved; download it or load the latest saved ledger before editing.', true);
     }
   });
   window.addEventListener('beforeunload', event => {
-    if (unsaved || pendingWrites || dirtyFields.size || (memoryOnly && state) || dayDirty) { event.preventDefault(); event.returnValue = ''; }
+    if (unsaved || pendingWrites || fieldDrafts.size || (memoryOnly && state) || dayDirty) { event.preventDefault(); event.returnValue = ''; }
   });
   $('ledger-app').hidden = false;
   load();
+  restoreDayDraft();
 })();

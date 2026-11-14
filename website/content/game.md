@@ -21,7 +21,7 @@ Those personal stakes belong in the decisions. Saving a crate of books can matte
 
 ## Start at the river
 
-In **The River Between**, a ferryman posts his price while a schoolteacher counts money she does not have. You can pay for passage tomorrow, risk the ford today, or work two days to earn a crossing. A carrier leaves on a schedule, with someone one traveler hoped to meet.
+In **The River Between**, a ferryman posts his price while a schoolteacher counts money she does not have. Pay for the ferry, work on the ramp to earn passage for both wagons, risk the ford today, or spend a part and a day preparing a safe rope crossing. The river decision card shows what each offer costs and when the carrier leaves with someone one traveler hoped to meet.
 
 Use the four ready-to-play travelers and the standalone river supplies. The adventure targets a single 2–3 hour session; that duration still needs table testing.
 
