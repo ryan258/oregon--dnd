@@ -29,3 +29,51 @@ test('activation removes only older caches for this exact app scope',async()=>{
 test('offline readiness falls back to incomplete if a cached runtime file disappears',async()=>{
   const h=harness();await h.lifetime('install');const cache=[...h.stores.values()][0];cache.delete(h.scope+'model.js');let status;await h.lifetime('message',{data:{type:'CHECK_OFFLINE'},ports:[{postMessage:x=>status=x}]});assert.equal(status.complete,false);
 });
+
+function offlineBadge({controlled,waiting}){
+  const elements=new Map(),timers=new Map();
+  let nextTimer=0,reply;
+  const get=selector=>{
+    if(!elements.has(selector))elements.set(selector,{contains:()=>false,addEventListener(){}});
+    return elements.get(selector);
+  };
+  const registration={waiting,addEventListener(){}};
+  const controller=controlled?{postMessage(_message,[port]){reply=port.reply;}}:null;
+  const serviceWorker={controller,addEventListener(){},register:async()=>registration};
+  class Channel {
+    constructor(){
+      this.port1={close(){}};
+      this.port2={reply:data=>this.port1.onmessage({data})};
+    }
+  }
+  vm.runInNewContext(fs.readFileSync('player/app.js','utf8'),{
+    TrailRules:require('../player/rules.js'),
+    TrailModel:require('../player/model.js'),
+    TrailStorage:require('../player/storage.js'),
+    document:{activeElement:null,body:{dataset:{}},querySelector:get},
+    window:{addEventListener(){}},
+    localStorage:{getItem:()=>null},
+    navigator:{locks:{},serviceWorker},
+    isSecureContext:true,
+    MessageChannel:Channel,
+    setTimeout(fn){timers.set(++nextTimer,fn);return nextTimer;},
+    clearTimeout:id=>timers.delete(id),
+  });
+  return {
+    status:()=>get('#offline-status').textContent,
+    reply:data=>reply(data),
+    expire:()=>{for(const timer of timers.values())timer();},
+  };
+}
+test('a cache readiness reply keeps the waiting update notice',async()=>{
+  const badge=offlineBadge({controlled:true,waiting:true});
+  await new Promise(resolve=>setImmediate(resolve));
+  badge.reply({complete:true});
+  assert.match(badge.status(),/Offline copy ready.+update ready after all app windows close/);
+});
+test('a stalled initial installation gets an explicit unconfirmed status',async()=>{
+  const badge=offlineBadge({controlled:false,waiting:false});
+  await new Promise(resolve=>setImmediate(resolve));
+  badge.expire();
+  assert.match(badge.status(),/Offline copy not confirmed/);
+});

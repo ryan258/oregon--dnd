@@ -15,6 +15,7 @@
   const ABILITIES = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
   const WOUNDS = ['Healthy', 'Wounded', 'Gravely Injured', 'Dead'];
   const PERSONAL = ['dream','promise','boundary','bond','keepsake','cargo','voice','reserve','opening question','on the road'];
+  const MAX_REVISION = Number.MAX_SAFE_INTEGER;
   const clone = x => JSON.parse(JSON.stringify(x));
   const mod = n => Math.floor((n - 10) / 2);
   const maxHP = c => c.exhaustion >= 4 ? Math.ceil((8 + mod(c.scores.CON)) / 2) : 8 + mod(c.scores.CON);
@@ -35,8 +36,8 @@
     c.id=text(x.id,80,'Character ID'); if (!/^[a-zA-Z0-9_-]+$/.test(c.id)) fail('Invalid character ID.');
     c.name=text(x.name,100,'Name'); if (!c.name.trim()) fail('A traveler needs a name.');
     c.player=text(x.player,100,'Player');
-    if (!Object.hasOwn(rules.roles,x.role)) fail('Unknown role.'); c.role=x.role;
-    if (!Object.hasOwn(rules.roles[c.role].backgrounds,x.background)) fail('Choose a background for this role.'); c.background=x.background;
+    if (typeof x.role!=='string' || !Object.hasOwn(rules.roles,x.role)) fail('Unknown role.'); c.role=x.role;
+    if (typeof x.background!=='string' || !Object.hasOwn(rules.roles[c.role].backgrounds,x.background)) fail('Choose a background for this role.'); c.background=x.background;
     record(x.scores,'Scores'); c.scores={};
     for (const a of ABILITIES) c.scores[a]=int(x.scores[a],3,18,a);
     c.exhaustion=int(x.exhaustion,0,6,'Exhaustion');
@@ -49,11 +50,11 @@
     for (const key of PERSONAL) c.personal[key]=text(x.personal[key],3000,key);
     c.notes=text(x.notes,20000,'Journal'); c.today=text(x.today,3000,'Today’s plan');
     if (!Array.isArray(x.techniques) || x.techniques.length>2 || new Set(x.techniques).size!==x.techniques.length) fail('Choose at most two different techniques.');
-    c.techniques=x.techniques.map(t=> {if(!Object.hasOwn(rules.roles[c.role].techniques,t)) fail('Unknown role technique.');return t;});
+    c.techniques=x.techniques.map(t=> {if(typeof t!=='string'||!Object.hasOwn(rules.roles[c.role].techniques,t)) fail('Unknown role technique.');return t;});
     if (!Array.isArray(x.conditions) || x.conditions.length>9) fail('Invalid conditions.');
     const kinds=new Set();
     c.conditions=x.conditions.map(v=> {
-      record(v,'Condition'); if(!Object.hasOwn(rules.conditions,v.kind)||kinds.has(v.kind)) fail('Unknown or repeated condition.'); kinds.add(v.kind);
+      record(v,'Condition'); if(typeof v.kind!=='string'||!Object.hasOwn(rules.conditions,v.kind)||kinds.has(v.kind)) fail('Unknown or repeated condition.'); kinds.add(v.kind);
       return {kind:v.kind, marks:int(v.marks,0,rules.conditions[v.kind].marks,'Recovery marks'), starts:text(v.starts,100,'Damage start'), care:text(v.care,1000,'Treatment')};
     });
     record(x.uses,'Use reminders'); c.uses={};
@@ -71,7 +72,7 @@
     if(new Set(characters.map(c=>c.id)).size!==characters.length) fail('Repeated character IDs.');
     if(x.activeId!==null&&!characters.some(c=>c.id===x.activeId)) fail('The selected traveler is missing.');
     if(characters.length&&x.activeId===null) fail('Select a traveler.');
-    return {version:1,revision:int(x.revision,0,Number.MAX_SAFE_INTEGER,'Revision'),activeId:x.activeId,characters};
+    return {version:1,revision:int(x.revision,0,MAX_REVISION,'Revision'),activeId:x.activeId,characters};
   }
   const empty = () => ({version:1,revision:0,activeId:null,characters:[]});
   function create(template,id,when='1848-06-02') {
@@ -103,8 +104,23 @@
     c.restedToday=true;
   }
   function resetUses(c,period) {for(const k of Object.keys(c.uses))if(k.startsWith(period+':'))c.uses[k]=false;}
+  function followingDate(value) {
+    const day=new Date(value+'T12:00:00Z');
+    day.setUTCDate(day.getUTCDate()+1);
+    return date(day.toISOString().slice(0,10));
+  }
+  function recordCondition(c,kind) {
+    if (typeof kind!=='string' || !Object.hasOwn(rules.conditions,kind)) fail('Choose a condition.');
+    const previous=c.conditions.findIndex(condition=>condition.kind===kind);
+    if (previous!==-1 && c.conditions[previous].marks>0) fail('This condition is already active.');
+    const rule=rules.conditions[kind];
+    const starts=/\bHP\/day\b/.test(rule.effect) ? followingDate(c.date) : 'No ongoing HP damage';
+    const condition={kind,marks:rule.marks,starts,care:''};
+    if (previous===-1) c.conditions.push(condition);
+    else c.conditions[previous]=condition;
+  }
   function nextDay(c) {
-    const d=new Date(c.date+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+1);c.date=d.toISOString().slice(0,10);
+    c.date=followingDate(c.date);
     c.gainedToday=false;c.restedToday=false;resetUses(c,'day');
     for(const condition of c.conditions)condition.care='';
   }
@@ -120,5 +136,5 @@
     if(next.characters.length+other.characters.length>12)fail('Import would exceed the 12-traveler limit. Export and remove an unused traveler first.');
     const copies=other.characters.map(c=>({...clone(c),id:id()}));next.characters.push(...copies);next.activeId=copies[0].id;return validateState(next);
   }
-  return {MAX_BACKUP_BYTES,backupBytes,checkBackupSize,ABILITIES,WOUNDS,PERSONAL,clone,mod,maxHP,dead,empty,create,validateCharacter,validateState,damage,heal,exhaust,recoverExhaustion,rest,nextDay,resetUses,exportSave,parseImport,mergeImport};
+  return {MAX_BACKUP_BYTES,MAX_REVISION,backupBytes,checkBackupSize,ABILITIES,WOUNDS,PERSONAL,clone,mod,maxHP,dead,empty,create,validateCharacter,validateState,damage,heal,exhaust,recoverExhaustion,rest,recordCondition,nextDay,resetUses,exportSave,parseImport,mergeImport};
 });
