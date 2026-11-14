@@ -1,5 +1,11 @@
 # Change record
 
+## Save recovery and first river packet — November 12, 2026
+
+- Player recovery now distinguishes damaged storage from unavailable storage, preserves validated travelers when only Undo is damaged, and offers separate portable backups and raw recovery exports. An existing raw archive requires explicit removal before a different archive can replace it.
+- Trailmaster keeps field drafts through delayed and conflicting saves, serializes Undo, and protects unfinished day entries and their route-marker defaults. Empty fresh-food slots clear their used expiry dates.
+- The Play tonight packet now includes a river decision card with four crossings, optional scouting, the departure clock, and a Trailmaster reference. It includes a blank character sheet and keeps the print selection when an outside reference is open on screen. The starting supplies, crossing prices, and damage values follow v0.10.
+
 ## Local game website and Trailmaster ledger — October 3, 2026
 
 Added a local Hugo site (`./trail`) and browser-saved Trailmaster ledger to support table play and shared party management alongside the single-player companion:

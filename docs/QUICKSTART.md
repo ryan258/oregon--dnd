@@ -10,9 +10,9 @@ Everything in this game is an answer to that question. The food barrel is an ans
 
 1. Pick a GM and distribute the [four pregens](PREGENS.md) (or open them in the [player companion](PLAYER_APP.md)). With fewer than four players, share the extra travelers. No D&D book needed.
 2. Agree [tone and boundaries](SESSION_ZERO.md); read Dream, Promise, Boundary, and Bond aloud. Revise with the other players' agreement.
-3. For tonight, open [The River Between](RIVER_CHAPTER.md) and use its exact starting state. For the full journey use the starter loadout below and [Seven Chapters](CAMPAIGN.md).
+3. For tonight, open [The River Between](RIVER_CHAPTER.md) and use its exact starting state. Put the [river decision card](sheets/river_decision_card.md) where everyone can see it. For the full journey use the starter loadout below and [Seven Chapters](CAMPAIGN.md).
 4. Put the [route map](TRAIL_MAP.md), [wagon sheet](sheets/party_wagon_sheet.md), [GM reference](sheets/gm_reference.md), and [people ledger](sheets/people_ledger.md) within reach.
-5. Keep the [travel procedure card](sheets/travel_procedure.md) and [quick observation sheet](sheets/playtest_observer.md) ready; the latter asks for only three live observations. State the visible problem and at least two options. Make the first decision before teaching every subsystem.
+5. Keep the [travel procedure card](sheets/travel_procedure.md) and [quick observation sheet](sheets/playtest_observer.md) ready. State the visible problem and the available options. At the river, read all four offers and the scouting option before commitment. Make the first decision before teaching every subsystem.
 
 ## The four travelers
 

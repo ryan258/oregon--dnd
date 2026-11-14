@@ -37,7 +37,9 @@ WebKit documents storage quotas and possible eviction. Persistent storage is req
 - A context without Web Locks offers memory-only editing and export, with an explicit warning. It does not claim those edits are locally saved. HTTPS/current Safari is the supported path.
 - **Undo** names the latest saved action or text edit. Typing during one uninterrupted field visit is grouped into one edit while every input still autosaves. Repeated Undo walks backward through up to eight checkpoints, including after reopening; it does not toggle or provide Redo. Each checkpoint restores all sheets to that moment, so export first to keep the current version. Older checkpoints are trimmed when their combined UTF-8 JSON exceeds 1 MiB, retaining at least the newest checkpoint. Current state and history are written together; a failed write changes neither. Existing valid saves and their legacy previous-save slot remain readable. Local history is not an independent backup; exported backups contain current sheets only, not undo history.
 - Storage-read, archive, quota, and write failures are visible. A failed save leaves the visible sheet exportable and pauses further editing until resolved. Loading saved data replaces the visible unsaved version only after an explicit confirmation.
-- Invalid stored data is not silently reset. The recovery panel can show its raw bytes and can archive them locally before starting an empty save. If the archive fails, replacement stops. If another window has supplied a valid save meanwhile, recovery refuses to overwrite it.
+- A condition ends at zero recovery marks. If the same condition is contracted again, add it as a new exposure. For conditions with daily HP damage, the tracker starts with the calendar date after exposure. You can correct that date to match the ruling at your table.
+- When the app finds damaged data, **Back up / restore** offers separate exports for visible travelers, any recoverable travelers in the damaged save, and the original raw save. The two traveler exports use the portable backup format. The raw recovery file keeps the original local-storage text in its `raw` field for manual repair.
+- **Preserve raw data & recover** archives the original save before replacing it. If only undo history is damaged, recovery keeps the saved travelers and clears undo history. Otherwise it starts an empty save. Export any visible unsaved work first. Recovery stops if storage changed, archival fails, or the replacement write fails. You can copy or download the single local archive from **Back up / restore**. If a different archive is already present, save it externally and explicitly remove the local archive before recovering again.
 - Backup imports validate the app/edition/schema, field types, limits, condition names, technique names, and unique IDs before use. Imports add separate copies and preserve existing travelers. Maximum 12 stored travelers and 8 MiB of UTF-8 JSON per export/import. Files and pasted text use the same size rule, large enough for the schema’s maximum supported records; remove an unused traveler only after exporting anything worth keeping.
 - Journal text and imported strings render as text, never executable HTML. There is no automatic external transmission of character data.
 
@@ -58,11 +60,11 @@ Targeted checks:
 
 ```sh
 python3 tools/build_player_rules.py --check
-node --test tests/player.test.cjs tests/player-offline.test.cjs
+node --test tests/player.test.cjs tests/player-offline.test.cjs tests/storage-recovery.test.cjs
 ```
 
 A deployment ZIP can be rebuilt with `python3 tools/package_player.py`. It contains the static app and its instructions, with no character saves. Upload/extract only when hosting is explicitly authorized.
 
 ## Verification boundary
 
-See [local verification](VERIFICATION.md) for actual checks. Node tests exercise the real character model and storage adapter with injected storage failures, plus the service worker with an in-memory Cache API. They do not certify iPad Safari, Home Screen installation, Files download/import, real browser quotas, or a complete offline device session. Run the six iPad steps above before relying on it for a game night.
+See [local verification](VERIFICATION.md) for actual checks. Node tests exercise the character model, storage adapter, recovery controls with simulated DOM events, and the service worker with an in-memory Cache API. iPad Safari, Home Screen installation, Files download/import, actual storage quotas, and a complete offline session require the six preload steps above on the device you plan to use.

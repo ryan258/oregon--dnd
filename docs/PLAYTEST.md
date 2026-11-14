@@ -8,7 +8,7 @@ Use the [quick observation sheet](sheets/playtest_observer.md) for the first tab
 
 The detailed table below is a follow-up research form, not a requirement to monitor every measure live. Estimate accounting time afterward unless someone else can time it without interrupting play.
 
-Use one GM, four pregens, and the exact river starting snapshot. Target 2–3 hours including debrief; record actual time and ending. End at the far-bank camp if needed. Use the new Next decision panel on the wagon sheet. Explain the ferry/work/ford/rope options and Nessa's announced departure before commitment. Let players reject personal hooks; do not coach them toward the intended dilemma.
+Use one GM, four pregens, and the exact river starting snapshot. Target 2–3 hours including debrief and record actual time and ending. End at the far-bank camp if needed. Read the four offers, the optional scouting day, and Nessa's announced departure from the [river decision card](sheets/river_decision_card.md) before commitment. Use the wagon sheet's Next decision panel to record any new quote or change in conditions. Let players decline personal hooks and choose the crossing they prefer.
 
 Do not change supply amounts or damage mid-test to force tension. Record any necessary house ruling, including the reason and what changed. Table safety changes remain available at any time without a mechanical charge.
 
@@ -19,7 +19,7 @@ Do not change supply amounts or damage mid-test to force tension. Record any nec
 | Route first preferred / route chosen / reason it changed or stayed | |
 | Minutes until choice settled / was it genuine disagreement or rules confusion? | |
 | Did the departure matter? Was Mara's hook accepted, replaced, or declined? | |
-| Third approach proposed / quoted costs / result | |
+| Player-proposed approach / quoted costs / result | |
 | Guide's owned choice / effect on someone else | |
 | Doctor's owned choice / effect on someone else | |
 | Hunter's owned choice / effect on someone else | |
@@ -88,4 +88,30 @@ The core's 700 lbs = 175 ordinary four-person ration days; ceil(2,000/18) = 112 
 | River work had the ferry's arrival day at lower cash cost | Manuscript critique of v0.9; no human session | v0.10 uses two labor days and an announced meeting window | First river table pending |
 | Personal hooks relied heavily on GM invention | Manuscript critique of v0.9 | Prepared opportunity/conflict/return scenes; no new currency | Campaign and finale pending |
 | Survival and spotlight unmeasured | No human result provided | Retain baseline numbers and collect resource/role evidence | Desert and campaign pending |
+| Book-use timing, Ada's recovery modifier, and the resume date needed rulings | November 12 solo dry run | Move the short lesson before departure, print Ada's modifier, and name both dates on the log | Replay of the recorded rolls and a scripted failed-ford fallback |
 | | | | |
+
+## November 12, 2026 solo dry run
+
+**Edition:** v0.10 Play tonight packet, exact standalone snapshot. One simulated table controlled all four pregens. Hopeful hardship, June 2, marker 340. The ford and treatment dice below were rolled after choosing the plan. The quick observation sheet guided the run. Human timing, participation, preference, and ratings remain open.
+
+### During play
+
+| Observation | Record |
+| --- | --- |
+| First consequential decision | After reading the offers and dawn June 4 deadline, the four-voice council chose the immediate ford. It left cash and parts available and gave Mae a chance to meet Mara that night. The party agreed that on a partial crossing it would lose a part before volunteering anyone for harm. Human elapsed time unknown. |
+| Rules interruptions | The queue lesson was written for tonight, after a day-one crossing would take Eliza away. Ada's recovery modifier was absent. At the close, the observation sheet's final-date field could mean either the day played or the next date. |
+| Participation gaps | No traveler lost an active slot in the simulation. All four had a decision. Time without meaningful participation needs observation at a real table. |
+
+Thomas treated Ada with a roll of 16 + 2 = 18 against DC 10 and spent one medicine. Her ongoing damage still rounded up to 1 HP. Her recovery dice with Advantage were 1 and 3. Using CON +0, she ended at 5/9 HP with three marks, with her own caretaker. The ford rolls were Eliza WIS 12 + 2 = 14, Thomas WIS 14 + 1 = 15, Cal DEX 14 + 2 = 16, and Mae DEX 6 + 1 = 7 after spending Inspiration and taking the higher of 6 and 2. Three successes meant full passage.
+
+### At the stopping point
+
+**June 2 closed, June 3 next at marker 358.** Two days of Clear and Mild remain. The crossing used 4 lbs of cured food. The wagon has 136 lbs cured, no fresh food, 60/60 gallons with water untracked here, 3 medicine, 40 ammunition, 2 parts, $25, wagon 22/30, three teams at 8/10, both personal bundles, and Morale 6. All four travelers are at 9/9 HP with no wounds, Exhaustion, or techniques. Mae spent her Inspiration. Begin next time by choosing the first road leg or a far-bank Rest Day.
+
+### Debrief
+
+- **Owned choices.** Eliza let Mercy use a book briefly at the queue and packed it before leaving. Thomas spent medicine on Ada and handed care back to her party. Cal kept the food reserve and chose cargo over injury if the ford went partly wrong. Mae spent Inspiration to try for the early meeting and proposed workshop terms when she got there.
+- **Deadline and agreement.** Mae took the meeting. In the solo scene she offered to lead repairs while Mara handled scheduling and buying, with both approving new purchases. Record the proposed division for the Valley. Mercy still needs to sell books for passage. The party earned no river report on this run.
+- **Bookkeeping and memory.** The handoff from the crossing evening to the next playable morning was the only closeout ambiguity. At camp Cal tried to teach the others to whistle through a reed. Human reactions and willingness to continue remain open.
+- **Replay.** The revised text resolves the queue lesson and Ada's check with the same rolls and distinguishes the two dates on the log. An independent scripted branch failed the ford June 2, finished ramp work June 4, waited through June 5–7 thunderstorms, and took the ferry in showers June 8. It reached marker 358 with 110 lbs cured food, $24 after a letter, and two weather days remaining on June 9. It earned Mercy's report and missed the in-person meeting. The scripted branch checks the fallback procedure. It gives no frequency or balance evidence.

@@ -9,8 +9,10 @@ Everything needed to run the journey: one night of it, or all seven chapters.
 ## Play tonight
 
 - [Quickstart](QUICKSTART.md) — rules enough to start arguing about a river
-- [The River Between — introductory adventure](RIVER_CHAPTER.md) — a posted price, a stranger short of it, and three ways across
+- [The River Between — introductory adventure](RIVER_CHAPTER.md) — a posted price, a stranger short of it, and four crossing offers
+- [River decision card](sheets/river_decision_card.md) — the prices, risks, and departure for players, with rest and weather procedures for the GM
 - [Four pregenerated travelers](PREGENS.md) — filled in, ready, already carrying something
+- [Character sheet](sheets/character_sheet.md) — printable traveler sheet with ability boxes and condition log
 - [Session zero and boundaries](SESSION_ZERO.md) — the five minutes before the wagon leaves
 - [Quick observation sheet](sheets/playtest_observer.md) — three live measures and a five-minute debrief
 - [GM reference](sheets/gm_reference.md) — the shared procedures within reach

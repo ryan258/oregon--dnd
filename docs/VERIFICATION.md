@@ -1,10 +1,18 @@
 # Local verification — v0.10
 
-Updated October 3, 2026. This edition implements a manuscript critique and local play aids. Human play, specialist review, campaign balance, and player rating remain unmeasured.
+Updated November 12, 2026. Human play, specialist review, campaign balance, and player rating remain unmeasured.
+
+## November 12, 2026 — save recovery and first river packet
+
+- A [solo river dry run](PLAYTEST.md#november-12-2026-solo-dry-run) used Play tonight and the quick observation sheet. Replaying its recorded rolls and a scripted failed-ford, ramp, and storm branch checked day order, supplies, and the far-bank resume state. The table notes now settle the queue lesson, Ada's recovery roll, ferry fallbacks, and the two dates to record at the stop.
+- Focused Node checks passed for player backup validation, archive and replacement failures, recovery from a running session, condition dates, and offline status. Trailmaster checks passed for delayed and competing writes, draft export, sequential Undo, fresh-food expiry, and stale day previews. Storage, DOM, and offline behavior were exercised with test doubles.
+- The handbook builds 37 sections, with 13 in Play tonight. The short selection includes the river decision card, its Trailmaster reference, and the blank character sheet. A script check opens an outside reference and confirms that Play tonight remains selected for print. The card's four crossing quotes and scouting option were checked against the standalone start and ration rules.
+- Chromium print previews on A4 and US Letter were checked for the one-page player decision card, four separate pregens, blank character sheet, travel procedure, and observation sheet. A preview with a full-handbook reference open produced the same short-packet pages. Physical printer output, iPad behavior, and first-table observations remain open.
+- The packet build and check used locally cached `markdown-it-py` 4.0.0. The repository pins 3.0.0, which could not be fetched in this environment.
 
 ## October 3, 2026 — local game website and Trailmaster ledger
 
-- The focused Trailmaster model and storage suite passed all 22 tests (`website/tests/trail-ledger.test.cjs`). Checks cover starter presets (river and full campaign), date progression, daily close calculations (earliest fresh food expiry, cured food consumption, miles and markers), Web Locks write concurrency protection, dirty-state preservation, quota and write failures, 2 MiB UTF-8 backup envelope export/import validation, corrupted save handling, and 10-step bounded undo across reloads.
+- The October record describes a focused Trailmaster model and storage pass. The checked-in tests cover starter presets, day-close arithmetic, backup validation, competing writes, write failures, and undo across reloads (`website/tests/trail-ledger.test.cjs`).
 - The static site builder (`hugo`) generated 8 HTML pages into `dist/site/` with mounts for the complete character companion (`player/`), generated single-file handbook (`docs/handbook.html`), and custom assets.
 - The site integrity checker (`website/tests/check_site.py`) verified all local links, anchors, mounting integrity for player files and handbook, and the build-time extraction of all four pregenerated travelers from `docs/PREGENS.md`.
 - Local launch command `./trail` binds strictly to `127.0.0.1:1313`. No external theme, analytics, fonts, CDN, backend, or cloud sync are used.
@@ -44,7 +52,7 @@ Physical iPad Safari and Home Screen installation, Files download/import, and th
 python3 tools/build_handbook.py
 python3 tools/check_packet.py
 python3 tools/build_player_rules.py --check
-node --test tests/player.test.cjs tests/player-offline.test.cjs
+node --test tests/player.test.cjs tests/storage-recovery.test.cjs tests/player-offline.test.cjs
 node --test website/tests/trail-ledger.test.cjs
 hugo
 python3 website/tests/check_site.py
