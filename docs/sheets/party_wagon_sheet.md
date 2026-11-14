@@ -6,6 +6,8 @@
 
 Problem / person who owns the first response: ____________________
 
+At the river, show the [decision card](river_decision_card.md). Use this space for changed quotes and player proposals.
+
 | Approach | Days / cash / supplies | Risk or guaranteed result | Person / opportunity changed |
 | --- | --- | --- | --- |
 | | | | |

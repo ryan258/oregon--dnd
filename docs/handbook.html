@@ -10,16 +10,66 @@ header p{max-width:760px}header h1{font:700 clamp(2.2rem,5vw,4.3rem)/1.1 Georgia
 .layout{display:grid;grid-template-columns:270px minmax(0,1fr);max-width:1500px;margin:auto}
 nav{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:28px 20px;border-right:1px solid var(--line)}nav a{display:block;font-size:14px;line-height:1.35;padding:8px 4px}
 nav summary{cursor:pointer;padding:10px 0;font-weight:650}nav .subsection{padding-left:14px}h2,h3{scroll-margin-top:20px}
-body[data-mode="tonight"] [data-packet="full"]{display:none}
+body[data-mode="tonight"] [data-packet="full"]:not([data-reference]){display:none}
 .actions button[aria-pressed="true"]{outline:3px solid #e5b777;outline-offset:3px}
 main{min-width:0;padding:0 5vw 70px}article{padding:40px 0;border-bottom:2px solid var(--line);scroll-margin-top:12px}
 h1,h2,h3{font-family:Georgia,serif;line-height:1.2}article h1{font-size:2.2rem}h2{margin-top:2em;font-size:1.65rem}h3{margin-top:1.7em;font-size:1.25rem}.source{color:#645d50;font:12px ui-monospace,monospace}
 p,li{max-width:85ch}li{margin:.35em 0}table{border-collapse:collapse;width:100%;font-size:14px;margin:24px 0;overflow-wrap:anywhere}th{text-align:left;background:#e8dfce}td,th{padding:10px 12px;border:1px solid var(--line);vertical-align:top}tr:nth-child(even){background:#f1eadc}
 pre{overflow:auto;background:#eee6d7;padding:18px;font-size:13px;line-height:1.5}code{font-size:.9em}blockquote{border-left:4px solid var(--accent);padding-left:18px;margin-left:0}
 footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
+.pregen-record{display:none}
 @media(max-width:850px){.layout{display:block}nav{position:relative;max-height:270px;border-bottom:1px solid var(--line);border-right:0}main{padding:0 20px 40px}header{padding:30px 20px}table{font-size:12px}td,th{padding:6px}article h1{font-size:1.8rem}}
-@media print{@page{size:A4;margin:16mm}body{background:#fff;color:#000;font-size:10pt;line-height:1.45}header{background:#fff;color:#000;padding:0 0 16pt}.layout{display:block}nav,.actions,.skip,footer{display:none}main{padding:0}article{break-before:page;border:0;padding:0}article h1{font-size:23pt}h2{font-size:16pt}h3{font-size:12pt}h1,h2,h3{break-after:avoid}p,li{orphans:3;widows:3}table{font-size:8pt}tr{break-inside:avoid}thead{display:table-header-group}td,th{padding:5pt}a{color:#000}pre{white-space:pre-wrap;font-size:8pt}.source{font-size:8pt}}
-</style></head><body><a class="skip" href="#reading">Skip to handbook</a><header><p class="kicker">Oregon Trail RPG · v0.10 · Playtest edition</p><h1>Four people. One wagon.<br>Promises worth carrying.</h1><p>A complete local play packet. Start at the river, then follow the journey west. The design aims for memorable decisions; human playtesting is still pending.</p><div class="actions"><a href="#docs-RIVER_CHAPTER-md">Play the river chapter</a><a href="#docs-PREGENS-md">Meet the four travelers</a><button type="button" id="tonight" aria-pressed="false">Play tonight</button><button type="button" id="complete" aria-pressed="true">Complete handbook</button><button type="button" onclick="window.print()">Print selected packet / save PDF</button></div><p id="selection-status" role="status">Complete handbook selected. Print includes all sections. Play tonight selects the river adventure and table sheets.</p></header><div class="layout"><nav aria-label="Handbook sections"><details data-packet="tonight"><summary>Oregon Trail RPG — Start playing</summary><a href="#docs-QUICKSTART-md">Open section</a><a class="subsection" href="#docs-QUICKSTART-md--start-in-five-minutes">Start in five minutes</a><a class="subsection" href="#docs-QUICKSTART-md--the-four-travelers">The four travelers</a><a class="subsection" href="#docs-QUICKSTART-md--roll-only-for-an-uncertain-consequence">Roll only for an uncertain consequence</a><a class="subsection" href="#docs-QUICKSTART-md--character-decisions-matter">Character decisions matter</a><a class="subsection" href="#docs-QUICKSTART-md--travel">Travel</a><a class="subsection" href="#docs-QUICKSTART-md--a-days-order">A day&#x27;s order</a><a class="subsection" href="#docs-QUICKSTART-md--supplies-and-rest">Supplies and rest</a><a class="subsection" href="#docs-QUICKSTART-md--harm-without-excluding-a-player">Harm without excluding a player</a><a class="subsection" href="#docs-QUICKSTART-md--morale-and-people">Morale and people</a><a class="subsection" href="#docs-QUICKSTART-md--campaign-starter-purchases">Campaign starter purchases</a><a class="subsection" href="#docs-QUICKSTART-md--tonights-ending">Tonight&#x27;s ending</a></details><details data-packet="tonight"><summary>The River Between</summary><a href="#docs-RIVER_CHAPTER-md">Open section</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--five-minute-start">Five-minute start</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--three-locations">Three locations</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--scene-1--a-price-everyone-can-see">Scene 1 — A price everyone can see</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--the-departure-that-makes-tomorrow-matter">The departure that makes tomorrow matter</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--four-reasons-to-speak">Four reasons to speak</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--scene-2--the-crossing">Scene 2 — The crossing</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--scene-3--what-crosses-with-you">Scene 3 — What crosses with you</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--finishing-the-chapter">Finishing the chapter</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--six-optional-complications">Six optional complications</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--gm-answers-and-recovery">GM answers and recovery</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--debrief">Debrief</a></details><details data-packet="tonight"><summary>Four people, one wagon</summary><a href="#docs-PREGENS-md">Open section</a><a class="subsection" href="#docs-PREGENS-md--eliza-marsh--guide">Eliza Marsh — Guide</a><a class="subsection" href="#docs-PREGENS-md--thomas-pruitt--doctor">Thomas Pruitt — Doctor</a><a class="subsection" href="#docs-PREGENS-md--cal-marsh--hunter">Cal Marsh — Hunter</a><a class="subsection" href="#docs-PREGENS-md--mae-sorensen--teamster">Mae Sorensen — Teamster</a><a class="subsection" href="#docs-PREGENS-md--at-chapter-end">At chapter end</a></details><details data-packet="tonight"><summary>The journey at a glance</summary><a href="#docs-TRAIL_MAP-md">Open section</a><a class="subsection" href="#docs-TRAIL_MAP-md--visible-clocks">Visible clocks</a></details><details data-packet="tonight"><summary>GM reference — v0.10</summary><a href="#docs-sheets-gm_reference-md">Open section</a><a class="subsection" href="#docs-sheets-gm_reference-md--table-contract">Table contract</a><a class="subsection" href="#docs-sheets-gm_reference-md--keep-the-scene-moving">Keep the scene moving</a><a class="subsection" href="#docs-sheets-gm_reference-md--checks">Checks</a><a class="subsection" href="#docs-sheets-gm_reference-md--time-and-travel">Time and travel</a><a class="subsection" href="#docs-sheets-gm_reference-md--resources">Resources</a><a class="subsection" href="#docs-sheets-gm_reference-md--harm-and-recovery">Harm and recovery</a><a class="subsection" href="#docs-sheets-gm_reference-md--meaning-and-ending">Meaning and ending</a></details><details data-packet="full"><summary>Oregon Trail RPG — Core Rules</summary><a href="#seed-md">Open section</a><a class="subsection" href="#seed-md--start-and-authority">Start and authority</a><a class="subsection" href="#seed-md--1-people-before-purchases">1. People before purchases</a><a class="subsection" href="#seed-md--put-a-personal-stake-into-play">Put a personal stake into play</a><a class="subsection" href="#seed-md--expertise">Expertise</a><a class="subsection" href="#seed-md--inspiration-and-change">Inspiration and change</a><a class="subsection" href="#seed-md--2-checks-risks-and-permission-to-choose">2. Checks, risks, and permission to choose</a><a class="subsection" href="#seed-md--3-campaign-and-calendar">3. Campaign and calendar</a><a class="subsection" href="#seed-md--daily-procedure">Daily procedure</a><a class="subsection" href="#seed-md--travel-legs-skip-repeated-decisions">Travel legs: skip repeated decisions</a><a class="subsection" href="#seed-md--fast-accounting-at-the-table">Fast accounting at the table</a><a class="subsection" href="#seed-md--travel-and-oxen">Travel and oxen</a><a class="subsection" href="#seed-md--event-selection">Event selection</a><a class="subsection" href="#seed-md--4-supplies-and-the-wagon">4. Supplies and the wagon</a><a class="subsection" href="#seed-md--5-health-and-continuing-to-play">5. Health and continuing to play</a><a class="subsection" href="#seed-md--hp-and-wounds">HP and wounds</a><a class="subsection" href="#seed-md--exhaustion">Exhaustion</a><a class="subsection" href="#seed-md--conditions">Conditions</a><a class="subsection" href="#seed-md--death-incapacity-and-replacements">Death, incapacity, and replacements</a><a class="subsection" href="#seed-md--6-morale-rest-and-people">6. Morale, rest, and people</a><a class="subsection" href="#seed-md--7-endings-and-difficulty">7. Endings and difficulty</a></details><details data-packet="full"><summary>Seven chapters to Oregon</summary><a href="#docs-CAMPAIGN-md">Open section</a><a class="subsection" href="#docs-CAMPAIGN-md--running-a-chapter">Running a chapter</a><a class="subsection" href="#docs-CAMPAIGN-md--1-the-plains--0300">1. The Plains — 0–300</a><a class="subsection" href="#docs-CAMPAIGN-md--2-the-river-crossings--300500">2. The River Crossings — 300–500</a><a class="subsection" href="#docs-CAMPAIGN-md--3-the-rockies-approach--500700">3. The Rockies Approach — 500–700</a><a class="subsection" href="#docs-CAMPAIGN-md--4-south-pass--700900">4. South Pass — 700–900</a><a class="subsection" href="#docs-CAMPAIGN-md--5-desert-crossing--9001100">5. Desert Crossing — 900–1,100</a><a class="subsection" href="#docs-CAMPAIGN-md--6-the-snake-river--11001600">6. The Snake River — 1,100–1,600</a><a class="subsection" href="#docs-CAMPAIGN-md--7-the-last-mountains--16002000">7. The Last Mountains — 1,600–2,000</a><a class="subsection" href="#docs-CAMPAIGN-md--if-plans-fail">If plans fail</a></details><details data-packet="full"><summary>People who remember</summary><a href="#docs-PEOPLE-md">Open section</a><a class="subsection" href="#docs-PEOPLE-md--mercy-reed--a-schoolteacher-with-a-wagon-of-books">Mercy Reed — a schoolteacher with a wagon of books</a><a class="subsection" href="#docs-PEOPLE-md--tomas-fitch--a-wheelwright-protecting-a-heavy-tool-chest">Tomas Fitch — a wheelwright protecting a heavy tool chest</a><a class="subsection" href="#docs-PEOPLE-md--nessa-bell--a-carrier-trying-to-keep-a-delivery-promise">Nessa Bell — a carrier trying to keep a delivery promise</a><a class="subsection" href="#docs-PEOPLE-md--decisions-they-make-without-waiting-for-permission">Decisions they make without waiting for permission</a><a class="subsection" href="#docs-PEOPLE-md--the-hall-stock-keeper--work-that-will-continue-after-the-wagons-leave">The Hall stock keeper — work that will continue after the wagons leave</a><a class="subsection" href="#docs-PEOPLE-md--mara-vale--a-partnership-with-terms">Mara Vale — a partnership with terms</a><a class="subsection" href="#docs-PEOPLE-md--finale-returns">Finale returns</a><a class="subsection" href="#docs-PEOPLE-md--meeting-someone-again">Meeting someone again</a><a class="subsection" href="#docs-PEOPLE-md--reserve-travelers">Reserve travelers</a></details><details data-packet="full"><summary>1. Events: warning, choice, consequence</summary><a href="#01_events_and_hazards-md">Open section</a><a class="subsection" href="#01_events_and_hazards-md--1--the-plains">1 — The Plains</a><a class="subsection" href="#01_events_and_hazards-md--2--the-river-crossings">2 — The River Crossings</a><a class="subsection" href="#01_events_and_hazards-md--3--the-rockies-approach">3 — The Rockies Approach</a><a class="subsection" href="#01_events_and_hazards-md--4--south-pass">4 — South Pass</a><a class="subsection" href="#01_events_and_hazards-md--5--desert-crossing">5 — Desert Crossing</a><a class="subsection" href="#01_events_and_hazards-md--6--the-snake-river">6 — The Snake River</a><a class="subsection" href="#01_events_and_hazards-md--7--the-last-mountains">7 — The Last Mountains</a><a class="subsection" href="#01_events_and_hazards-md--change-the-kind-of-scene-not-the-number-of-rolls">Change the kind of scene, not the number of rolls</a><a class="subsection" href="#01_events_and_hazards-md--making-a-new-event">Making a new event</a></details><details data-packet="full"><summary>2. Backgrounds and learning</summary><a href="#02_character_backgrounds-md">Open section</a><a class="subsection" href="#02_character_backgrounds-md--guide">Guide</a><a class="subsection" href="#02_character_backgrounds-md--doctor">Doctor</a><a class="subsection" href="#02_character_backgrounds-md--hunter">Hunter</a><a class="subsection" href="#02_character_backgrounds-md--teamster">Teamster</a><a class="subsection" href="#02_character_backgrounds-md--advancing-between-sessions">Advancing between sessions</a></details><details data-packet="full"><summary>3. Forts, bargaining, and work</summary><a href="#03_settlements_and_trading-md">Open section</a><a class="subsection" href="#03_settlements_and_trading-md--stock-and-buying">Stock and buying</a><a class="subsection" href="#03_settlements_and_trading-md--work-and-rescue">Work and rescue</a><a class="subsection" href="#03_settlements_and_trading-md--worked-purchase">Worked purchase</a></details><details data-packet="full"><summary>4. Indigenous communities and encounters</summary><a href="#04_native_encounters-md">Open section</a><a class="subsection" href="#04_native_encounters-md--prepare-an-individual-not-a-hostility-score">Prepare an individual, not a hostility score</a><a class="subsection" href="#04_native_encounters-md--a-continuing-relationship-in-the-campaign">A continuing relationship in the campaign</a><a class="subsection" href="#04_native_encounters-md--six-encounter-frames">Six encounter frames</a><a class="subsection" href="#04_native_encounters-md--coercion-or-violence">Coercion or violence</a><a class="subsection" href="#04_native_encounters-md--review-boundary">Review boundary</a></details><details data-packet="full"><summary>5. Camp life and recovery</summary><a href="#05_camp_life-md">Open section</a><a class="subsection" href="#05_camp_life-md--rest-day-procedure">Rest Day procedure</a><a class="subsection" href="#05_camp_life-md--one-evening-activity-per-rest-day">One evening activity per Rest Day</a><a class="subsection" href="#05_camp_life-md--watch">Watch</a><a class="subsection" href="#05_camp_life-md--evenings-worth-remembering">Evenings worth remembering</a><a class="subsection" href="#05_camp_life-md--camp-prompts">Camp prompts</a></details><details data-packet="full"><summary>6. Weather and environment</summary><a href="#06_weather_and_environment-md">Open section</a><a class="subsection" href="#06_weather_and_environment-md--shelter">Shelter</a><a class="subsection" href="#06_weather_and_environment-md--apriljune">April–June</a><a class="subsection" href="#06_weather_and_environment-md--julyaugust">July–August</a><a class="subsection" href="#06_weather_and_environment-md--septemberoctober">September–October</a><a class="subsection" href="#06_weather_and_environment-md--november-onward">November onward</a></details><details data-packet="full"><summary>7. Routes and the final choice</summary><a href="#07_route_variants-md">Open section</a><a class="subsection" href="#07_route_variants-md--sublette-decision-marker-790">Sublette decision, marker 790</a><a class="subsection" href="#07_route_variants-md--the-false-cutoff-rumor">The false cutoff rumor</a><a class="subsection" href="#07_route_variants-md--finale-at-the-dalles-marker-1900">Finale at The Dalles, marker 1,900</a><a class="subsection" href="#07_route_variants-md--columbia-passage--7-travel-days">Columbia passage — 7 travel days</a><a class="subsection" href="#07_route_variants-md--barlow-road--14-travel-days">Barlow Road — 14 travel days</a><a class="subsection" href="#07_route_variants-md--arrival">Arrival</a></details><details data-packet="full"><summary>Arrival: what the journey made possible</summary><a href="#docs-ARRIVAL-md">Open section</a><a class="subsection" href="#docs-ARRIVAL-md--1-put-the-record-on-the-table">1. Put the record on the table</a><a class="subsection" href="#docs-ARRIVAL-md--2-give-each-player-the-future">2. Give each player the future</a><a class="subsection" href="#docs-ARRIVAL-md--bring-the-earlier-scenes-into-tomorrow">Bring the earlier scenes into tomorrow</a><a class="subsection" href="#docs-ARRIVAL-md--3-remember-the-dead">3. Remember the dead</a><a class="subsection" href="#docs-ARRIVAL-md--4-close-on-an-action">4. Close on an action</a></details><details data-packet="full"><summary>Worked procedures — v0.10</summary><a href="#docs-SAMPLE_DAY-md">Open section</a><a class="subsection" href="#docs-SAMPLE_DAY-md--1-a-river-decision-that-costs-something">1. A river decision that costs something</a><a class="subsection" href="#docs-SAMPLE_DAY-md--2-a-rest-day-with-treatment-and-preservation">2. A Rest Day with treatment and preservation</a><a class="subsection" href="#docs-SAMPLE_DAY-md--3-a-three-day-leg-without-three-narrated-scenes">3. A three-day leg, without three narrated scenes</a><a class="subsection" href="#docs-SAMPLE_DAY-md--4-damage-at-zero-and-immediate-participation">4. Damage at zero and immediate participation</a><a class="subsection" href="#docs-SAMPLE_DAY-md--5-late-travel-and-water-warning">5. Late travel and water warning</a><a class="subsection" href="#docs-SAMPLE_DAY-md--6-a-peaceful-disagreement">6. A peaceful disagreement</a><a class="subsection" href="#docs-SAMPLE_DAY-md--7-ramp-work-a-letter-and-the-departure">7. Ramp work, a letter, and the departure</a><a class="subsection" href="#docs-SAMPLE_DAY-md--8-a-checkpoint-inside-a-leg">8. A checkpoint inside a leg</a><a class="subsection" href="#docs-SAMPLE_DAY-md--9-a-new-technique-changes-the-route-plan">9. A new technique changes the route plan</a></details><details data-packet="tonight"><summary>Before the wagon leaves</summary><a href="#docs-SESSION_ZERO-md">Open section</a></details><details data-packet="full"><summary>Solo: four voices, one expedition</summary><a href="#docs-SOLO-md">Open section</a><a class="subsection" href="#docs-SOLO-md--council">Council</a><a class="subsection" href="#docs-SOLO-md--unknown-facts">Unknown facts</a><a class="subsection" href="#docs-SOLO-md--end-a-session">End a session</a></details><details data-packet="full"><summary>Player companion — local character sheets for iPad</summary><a href="#docs-PLAYER_APP-md">Open section</a><a class="subsection" href="#docs-PLAYER_APP-md--use-it-at-the-table">Use it at the table</a><a class="subsection" href="#docs-PLAYER_APP-md--preload-each-ipad">Preload each iPad</a><a class="subsection" href="#docs-PLAYER_APP-md--save-and-recovery-behavior">Save and recovery behavior</a><a class="subsection" href="#docs-PLAYER_APP-md--run-and-maintain-locally">Run and maintain locally</a><a class="subsection" href="#docs-PLAYER_APP-md--verification-boundary">Verification boundary</a></details><details data-packet="full"><summary>Character sheet — v0.10</summary><a href="#docs-sheets-character_sheet-md">Open section</a></details><details data-packet="tonight"><summary>Party and wagon — v0.10</summary><a href="#docs-sheets-party_wagon_sheet-md">Open section</a><a class="subsection" href="#docs-sheets-party_wagon_sheet-md--next-decision--keep-this-visible">Next decision — keep this visible</a><a class="subsection" href="#docs-sheets-party_wagon_sheet-md--running-state--change-only-what-changed">Running state — change only what changed</a></details><details data-packet="tonight"><summary>People and promises — v0.10</summary><a href="#docs-sheets-people_ledger-md">Open section</a></details><details data-packet="tonight"><summary>Trail log — v0.10</summary><a href="#docs-sheets-trail_log-md">Open section</a><a class="subsection" href="#docs-sheets-trail_log-md--pause--resume">Pause / resume</a></details><details data-packet="tonight"><summary>Travel procedure — v0.10</summary><a href="#docs-sheets-travel_procedure-md">Open section</a><a class="subsection" href="#docs-sheets-travel_procedure-md--before-advancing-time">Before advancing time</a><a class="subsection" href="#docs-sheets-travel_procedure-md--resolve-through-the-checkpoint">Resolve through the checkpoint</a><a class="subsection" href="#docs-sheets-travel_procedure-md--hand-the-table-a-decision">Hand the table a decision</a><a class="subsection" href="#docs-sheets-travel_procedure-md--pause-and-resume">Pause and resume</a></details><details data-packet="tonight"><summary>River playtest — quick observation sheet</summary><a href="#docs-sheets-playtest_observer-md">Open section</a><a class="subsection" href="#docs-sheets-playtest_observer-md--during-play--only-three-things-to-track">During play — only three things to track</a><a class="subsection" href="#docs-sheets-playtest_observer-md--at-the-stopping-point">At the stopping point</a><a class="subsection" href="#docs-sheets-playtest_observer-md--five-minute-debrief--answer-before-discussing-revisions">Five-minute debrief — answer before discussing revisions</a><a class="subsection" href="#docs-sheets-playtest_observer-md--one-useful-revision">One useful revision</a></details><details data-packet="full"><summary>Fort visit — v0.10</summary><a href="#docs-sheets-fort_trading_sheet-md">Open section</a></details><details data-packet="full"><summary>Plain-language glossary — v0.10</summary><a href="#docs-glossary-md">Open section</a></details><details data-packet="full"><summary>Playtest the experience — v0.10</summary><a href="#docs-PLAYTEST-md">Open section</a><a class="subsection" href="#docs-PLAYTEST-md--first-test-the-river-as-written">First test: the river, as written</a><a class="subsection" href="#docs-PLAYTEST-md--acceptance-targets-not-results">Acceptance targets, not results</a><a class="subsection" href="#docs-PLAYTEST-md--what-to-change-after-observing">What to change after observing</a><a class="subsection" href="#docs-PLAYTEST-md--check-the-travel-card-before-a-longer-campaign">Check the travel card before a longer campaign</a><a class="subsection" href="#docs-PLAYTEST-md--next-tests-one-at-a-time">Next tests, one at a time</a><a class="subsection" href="#docs-PLAYTEST-md--desert-stress-snapshot">Desert stress snapshot</a><a class="subsection" href="#docs-PLAYTEST-md--economy-observations-across-chapters">Economy observations across chapters</a><a class="subsection" href="#docs-PLAYTEST-md--revision-record">Revision record</a></details><details data-packet="full"><summary>Historical framing and sources</summary><a href="#docs-HISTORY-md">Open section</a><a class="subsection" href="#docs-HISTORY-md--what-is-researched-and-what-is-invented">What is researched, and what is invented</a><a class="subsection" href="#docs-HISTORY-md--v010-regional-basis-for-a-continuing-fictional-character">v0.10: regional basis for a continuing fictional character</a><a class="subsection" href="#docs-HISTORY-md--questions-still-requiring-specialist-review">Questions still requiring specialist review</a></details><details data-packet="full"><summary>Revision status and next evidence — v0.10</summary><a href="#docs-UPDATE-IDEAS-md">Open section</a></details><details data-packet="full"><summary>Oregon Trail RPG — Project Roadmap</summary><a href="#roadmap-md">Open section</a><a class="subsection" href="#roadmap-md--preserve-the-baseline-until-there-is-a-finding">Preserve the baseline until there is a finding</a><a class="subsection" href="#roadmap-md--production-scope">Production scope</a></details><details data-packet="full"><summary>Change record</summary><a href="#CHANGELOG-md">Open section</a><a class="subsection" href="#CHANGELOG-md--local-game-website-and-trailmaster-ledger--october-3-2026">Local game website and Trailmaster ledger — October 3, 2026</a><a class="subsection" href="#CHANGELOG-md--playtest-readiness--september-26-2026">Playtest readiness — September 26, 2026</a><a class="subsection" href="#CHANGELOG-md--player-companion-1--september-25-2026">Player companion 1 — September 25, 2026</a><a class="subsection" href="#CHANGELOG-md--010--september-25-2026--choices-and-consequences">0.10 — September 25, 2026 — choices and consequences</a><a class="subsection" href="#CHANGELOG-md--09--september-25-2026--local-playtest-redesign">0.9 — September 25, 2026 — local playtest redesign</a></details><details data-packet="full"><summary>Local verification — v0.10</summary><a href="#docs-VERIFICATION-md">Open section</a><a class="subsection" href="#docs-VERIFICATION-md--october-3-2026--local-game-website-and-trailmaster-ledger">October 3, 2026 — local game website and Trailmaster ledger</a><a class="subsection" href="#docs-VERIFICATION-md--september-26--readiness-fixes">September 26 — readiness fixes</a><a class="subsection" href="#docs-VERIFICATION-md--september-25--earlier-revision-checks">September 25 — earlier revision checks</a><a class="subsection" href="#docs-VERIFICATION-md--september-25--earlier-player-companion-checks">September 25 — earlier player companion checks</a><a class="subsection" href="#docs-VERIFICATION-md--reproduce-the-bounded-document-checks">Reproduce the bounded document checks</a><a class="subsection" href="#docs-VERIFICATION-md--earlier-evidence">Earlier evidence</a><a class="subsection" href="#docs-VERIFICATION-md--still-required">Still required</a></details><details data-packet="full"><summary>Oregon Trail RPG packet — v0.10</summary><a href="#docs-README-md">Open section</a><a class="subsection" href="#docs-README-md--play-tonight">Play tonight</a><a class="subsection" href="#docs-README-md--continue-the-journey">Continue the journey</a><a class="subsection" href="#docs-README-md--player-companion">Player companion</a><a class="subsection" href="#docs-README-md--game-website-and-trailmaster-ledger">Game website and Trailmaster ledger</a><a class="subsection" href="#docs-README-md--at-the-table">At the table</a><a class="subsection" href="#docs-README-md--review-and-development">Review and development</a></details><details data-packet="full"><summary>Oregon Trail RPG</summary><a href="#README-md">Open section</a><a class="subsection" href="#README-md--what-changed-in-v010">What changed in v0.10</a><a class="subsection" href="#README-md--play-tonight">Play tonight</a><a class="subsection" href="#README-md--player-companion-for-ipad">Player companion for iPad</a><a class="subsection" href="#README-md--local-game-website">Local game website</a><a class="subsection" href="#README-md--the-full-journey">The full journey</a><a class="subsection" href="#README-md--modules">Modules</a><a class="subsection" href="#README-md--license-and-provenance">License and provenance</a></details></nav><main id="reading"><article id="docs-QUICKSTART-md" data-packet="tonight"><p class="source">docs/QUICKSTART.md</p><h1 id="docs-QUICKSTART-md--oregon-trail-rpg--start-playing">Oregon Trail RPG — Start playing</h1>
+@media print{
+  @page{margin:14mm}
+  body{--line:#999;background:#fff;color:#000;font-size:10.5pt;line-height:1.32}
+  header{background:#fff;color:#000;padding:0 0 12pt}
+  .layout{display:block}
+  nav,.actions,.skip,footer{display:none}
+  main{padding:0}
+  article{break-before:page;border:0;padding:0}
+  article h1{font-size:21pt;margin:0 0 8pt}
+  h2{font-size:14pt;margin:11pt 0 5pt}
+  h3{font-size:11.5pt;margin:8pt 0 4pt}
+  h1,h2,h3{break-after:avoid}
+  p,li{max-width:none;orphans:2;widows:2}
+  p{margin:0 0 6pt}
+  ul,ol{margin:4pt 0 7pt;padding-left:17pt}
+  li{margin:2pt 0}
+  table{font-size:9.5pt;margin:6pt 0 8pt}
+  tr{break-inside:avoid}
+  thead{display:table-header-group}
+  td,th{padding:3pt 5pt}
+  a{color:#000}
+  pre{white-space:pre-wrap;font-size:9pt;line-height:1.3;margin:7pt 0;padding:7pt}
+  .source{font-size:8pt}
+
+  body[data-mode="tonight"] header,
+  body[data-mode="tonight"] [data-packet="full"],
+  body[data-mode="tonight"] .source,
+  body[data-mode="tonight"] #docs-QUICKSTART-md--campaign-starter-purchases,
+  body[data-mode="tonight"] #docs-QUICKSTART-md--campaign-starter-purchases + p{display:none}
+  body[data-mode="tonight"] article:first-child{break-before:auto}
+  body[data-mode="tonight"] #docs-sheets-river_decision_card-md > table:first-of-type{break-inside:avoid}
+  body[data-mode="tonight"] #docs-sheets-river_decision_card-md--trailmaster-reference,
+  body[data-mode="tonight"] .pregen-sheet + .pregen-sheet{
+    break-before:page;margin-top:0
+  }
+  body[data-mode="tonight"] .pregen-sheet > h2:first-child{margin-top:0}
+  body[data-mode="tonight"] .pregen-record{display:block;margin-top:12pt}
+  #docs-sheets-character_sheet-md table:first-of-type{table-layout:fixed}
+  .pregen-record td,
+  #docs-sheets-character_sheet-md td,
+  #docs-sheets-playtest_observer-md td{height:20pt}
+  #docs-sheets-playtest_observer-md td:last-child{width:64%}
+  #docs-sheets-travel_procedure-md th:first-child{width:14%}
+  #docs-sheets-river_decision_card-md > p{break-inside:avoid}
+  body[data-mode="tonight"] #docs-QUICKSTART-md{line-height:1.25}
+  :is(#docs-QUICKSTART-md,#docs-sheets-travel_procedure-md,#docs-sheets-playtest_observer-md) h2{margin-top:7pt}
+  :is(#docs-QUICKSTART-md,#docs-sheets-travel_procedure-md,#docs-sheets-playtest_observer-md) p{margin-bottom:4pt}
+  :is(#docs-QUICKSTART-md,#docs-sheets-travel_procedure-md,#docs-sheets-playtest_observer-md) table{margin:4pt 0 6pt}
+  :is(#docs-QUICKSTART-md,#docs-sheets-travel_procedure-md) :is(td,th){padding-block:2pt}
+}
+</style></head><body><a class="skip" href="#reading">Skip to handbook</a><header><p class="kicker">Oregon Trail RPG · v0.10 · Playtest edition</p><h1>Four people. One wagon.<br>Promises worth carrying.</h1><p>A complete local play packet. Start at the river, then follow the journey west. The design aims for memorable decisions; human playtesting is still pending.</p><div class="actions"><button type="button" id="tonight" aria-pressed="false">Play tonight</button><a href="#docs-sheets-river_decision_card-md">River decision card</a><a href="#docs-RIVER_CHAPTER-md">Play the river chapter</a><a href="#docs-PREGENS-md">Meet the four travelers</a><button type="button" id="complete" aria-pressed="true">Complete handbook</button><button type="button" onclick="window.print()">Print selected packet / save PDF</button></div><p id="selection-status" role="status">Complete handbook selected. Print includes all sections, including development records.</p></header><div class="layout"><nav aria-label="Handbook sections"><details data-packet="tonight"><summary>Oregon Trail RPG — Start playing</summary><a href="#docs-QUICKSTART-md">Open section</a><a class="subsection" href="#docs-QUICKSTART-md--start-in-five-minutes">Start in five minutes</a><a class="subsection" href="#docs-QUICKSTART-md--the-four-travelers">The four travelers</a><a class="subsection" href="#docs-QUICKSTART-md--roll-only-for-an-uncertain-consequence">Roll only for an uncertain consequence</a><a class="subsection" href="#docs-QUICKSTART-md--character-decisions-matter">Character decisions matter</a><a class="subsection" href="#docs-QUICKSTART-md--travel">Travel</a><a class="subsection" href="#docs-QUICKSTART-md--a-days-order">A day&#x27;s order</a><a class="subsection" href="#docs-QUICKSTART-md--supplies-and-rest">Supplies and rest</a><a class="subsection" href="#docs-QUICKSTART-md--harm-without-excluding-a-player">Harm without excluding a player</a><a class="subsection" href="#docs-QUICKSTART-md--morale-and-people">Morale and people</a><a class="subsection" href="#docs-QUICKSTART-md--campaign-starter-purchases">Campaign starter purchases</a><a class="subsection" href="#docs-QUICKSTART-md--tonights-ending">Tonight&#x27;s ending</a></details><details data-packet="tonight"><summary>River decision card</summary><a href="#docs-sheets-river_decision_card-md">Open section</a><a class="subsection" href="#docs-sheets-river_decision_card-md--crossing-offers">Crossing offers</a><a class="subsection" href="#docs-sheets-river_decision_card-md--what-changes-the-quote">What changes the quote</a><a class="subsection" href="#docs-sheets-river_decision_card-md--trailmaster-reference">Trailmaster reference</a><a class="subsection" href="#docs-sheets-river_decision_card-md--spend-one-day-at-a-time">Spend one day at a time</a><a class="subsection" href="#docs-sheets-river_decision_card-md--weather-and-the-next-session">Weather and the next session</a></details><details data-packet="tonight"><summary>The River Between</summary><a href="#docs-RIVER_CHAPTER-md">Open section</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--five-minute-start">Five-minute start</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--three-locations">Three locations</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--scene-1--a-price-everyone-can-see">Scene 1 — A price everyone can see</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--the-departure-that-makes-tomorrow-matter">The departure that makes tomorrow matter</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--four-reasons-to-speak">Four reasons to speak</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--scene-2--the-crossing">Scene 2 — The crossing</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--scene-3--what-crosses-with-you">Scene 3 — What crosses with you</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--finishing-the-chapter">Finishing the chapter</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--six-optional-complications">Six optional complications</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--gm-answers-and-recovery">GM answers and recovery</a><a class="subsection" href="#docs-RIVER_CHAPTER-md--debrief">Debrief</a></details><details data-packet="tonight"><summary>Four people, one wagon</summary><a href="#docs-PREGENS-md">Open section</a><a class="subsection" href="#docs-PREGENS-md--eliza-marsh--guide">Eliza Marsh — Guide</a><a class="subsection" href="#docs-PREGENS-md--thomas-pruitt--doctor">Thomas Pruitt — Doctor</a><a class="subsection" href="#docs-PREGENS-md--cal-marsh--hunter">Cal Marsh — Hunter</a><a class="subsection" href="#docs-PREGENS-md--mae-sorensen--teamster">Mae Sorensen — Teamster</a><a class="subsection" href="#docs-PREGENS-md--at-chapter-end">At chapter end</a></details><details data-packet="tonight"><summary>The journey at a glance</summary><a href="#docs-TRAIL_MAP-md">Open section</a><a class="subsection" href="#docs-TRAIL_MAP-md--visible-clocks">Visible clocks</a></details><details data-packet="tonight"><summary>GM reference — v0.10</summary><a href="#docs-sheets-gm_reference-md">Open section</a><a class="subsection" href="#docs-sheets-gm_reference-md--table-contract">Table contract</a><a class="subsection" href="#docs-sheets-gm_reference-md--keep-the-scene-moving">Keep the scene moving</a><a class="subsection" href="#docs-sheets-gm_reference-md--checks">Checks</a><a class="subsection" href="#docs-sheets-gm_reference-md--time-and-travel">Time and travel</a><a class="subsection" href="#docs-sheets-gm_reference-md--resources">Resources</a><a class="subsection" href="#docs-sheets-gm_reference-md--harm-and-recovery">Harm and recovery</a><a class="subsection" href="#docs-sheets-gm_reference-md--meaning-and-ending">Meaning and ending</a></details><details data-packet="full"><summary>Oregon Trail RPG — Core Rules</summary><a href="#seed-md">Open section</a><a class="subsection" href="#seed-md--start-and-authority">Start and authority</a><a class="subsection" href="#seed-md--1-people-before-purchases">1. People before purchases</a><a class="subsection" href="#seed-md--put-a-personal-stake-into-play">Put a personal stake into play</a><a class="subsection" href="#seed-md--expertise">Expertise</a><a class="subsection" href="#seed-md--inspiration-and-change">Inspiration and change</a><a class="subsection" href="#seed-md--2-checks-risks-and-permission-to-choose">2. Checks, risks, and permission to choose</a><a class="subsection" href="#seed-md--3-campaign-and-calendar">3. Campaign and calendar</a><a class="subsection" href="#seed-md--daily-procedure">Daily procedure</a><a class="subsection" href="#seed-md--travel-legs-skip-repeated-decisions">Travel legs: skip repeated decisions</a><a class="subsection" href="#seed-md--fast-accounting-at-the-table">Fast accounting at the table</a><a class="subsection" href="#seed-md--travel-and-oxen">Travel and oxen</a><a class="subsection" href="#seed-md--event-selection">Event selection</a><a class="subsection" href="#seed-md--4-supplies-and-the-wagon">4. Supplies and the wagon</a><a class="subsection" href="#seed-md--5-health-and-continuing-to-play">5. Health and continuing to play</a><a class="subsection" href="#seed-md--hp-and-wounds">HP and wounds</a><a class="subsection" href="#seed-md--exhaustion">Exhaustion</a><a class="subsection" href="#seed-md--conditions">Conditions</a><a class="subsection" href="#seed-md--death-incapacity-and-replacements">Death, incapacity, and replacements</a><a class="subsection" href="#seed-md--6-morale-rest-and-people">6. Morale, rest, and people</a><a class="subsection" href="#seed-md--7-endings-and-difficulty">7. Endings and difficulty</a></details><details data-packet="full"><summary>Seven chapters to Oregon</summary><a href="#docs-CAMPAIGN-md">Open section</a><a class="subsection" href="#docs-CAMPAIGN-md--running-a-chapter">Running a chapter</a><a class="subsection" href="#docs-CAMPAIGN-md--1-the-plains--0300">1. The Plains — 0–300</a><a class="subsection" href="#docs-CAMPAIGN-md--2-the-river-crossings--300500">2. The River Crossings — 300–500</a><a class="subsection" href="#docs-CAMPAIGN-md--3-the-rockies-approach--500700">3. The Rockies Approach — 500–700</a><a class="subsection" href="#docs-CAMPAIGN-md--4-south-pass--700900">4. South Pass — 700–900</a><a class="subsection" href="#docs-CAMPAIGN-md--5-desert-crossing--9001100">5. Desert Crossing — 900–1,100</a><a class="subsection" href="#docs-CAMPAIGN-md--6-the-snake-river--11001600">6. The Snake River — 1,100–1,600</a><a class="subsection" href="#docs-CAMPAIGN-md--7-the-last-mountains--16002000">7. The Last Mountains — 1,600–2,000</a><a class="subsection" href="#docs-CAMPAIGN-md--if-plans-fail">If plans fail</a></details><details data-packet="full"><summary>People who remember</summary><a href="#docs-PEOPLE-md">Open section</a><a class="subsection" href="#docs-PEOPLE-md--mercy-reed--a-schoolteacher-with-a-wagon-of-books">Mercy Reed — a schoolteacher with a wagon of books</a><a class="subsection" href="#docs-PEOPLE-md--tomas-fitch--a-wheelwright-protecting-a-heavy-tool-chest">Tomas Fitch — a wheelwright protecting a heavy tool chest</a><a class="subsection" href="#docs-PEOPLE-md--nessa-bell--a-carrier-trying-to-keep-a-delivery-promise">Nessa Bell — a carrier trying to keep a delivery promise</a><a class="subsection" href="#docs-PEOPLE-md--decisions-they-make-without-waiting-for-permission">Decisions they make without waiting for permission</a><a class="subsection" href="#docs-PEOPLE-md--the-hall-stock-keeper--work-that-will-continue-after-the-wagons-leave">The Hall stock keeper — work that will continue after the wagons leave</a><a class="subsection" href="#docs-PEOPLE-md--mara-vale--a-partnership-with-terms">Mara Vale — a partnership with terms</a><a class="subsection" href="#docs-PEOPLE-md--finale-returns">Finale returns</a><a class="subsection" href="#docs-PEOPLE-md--meeting-someone-again">Meeting someone again</a><a class="subsection" href="#docs-PEOPLE-md--reserve-travelers">Reserve travelers</a></details><details data-packet="full"><summary>1. Events: warning, choice, consequence</summary><a href="#01_events_and_hazards-md">Open section</a><a class="subsection" href="#01_events_and_hazards-md--1--the-plains">1 — The Plains</a><a class="subsection" href="#01_events_and_hazards-md--2--the-river-crossings">2 — The River Crossings</a><a class="subsection" href="#01_events_and_hazards-md--3--the-rockies-approach">3 — The Rockies Approach</a><a class="subsection" href="#01_events_and_hazards-md--4--south-pass">4 — South Pass</a><a class="subsection" href="#01_events_and_hazards-md--5--desert-crossing">5 — Desert Crossing</a><a class="subsection" href="#01_events_and_hazards-md--6--the-snake-river">6 — The Snake River</a><a class="subsection" href="#01_events_and_hazards-md--7--the-last-mountains">7 — The Last Mountains</a><a class="subsection" href="#01_events_and_hazards-md--change-the-kind-of-scene-not-the-number-of-rolls">Change the kind of scene, not the number of rolls</a><a class="subsection" href="#01_events_and_hazards-md--making-a-new-event">Making a new event</a></details><details data-packet="full"><summary>2. Backgrounds and learning</summary><a href="#02_character_backgrounds-md">Open section</a><a class="subsection" href="#02_character_backgrounds-md--guide">Guide</a><a class="subsection" href="#02_character_backgrounds-md--doctor">Doctor</a><a class="subsection" href="#02_character_backgrounds-md--hunter">Hunter</a><a class="subsection" href="#02_character_backgrounds-md--teamster">Teamster</a><a class="subsection" href="#02_character_backgrounds-md--advancing-between-sessions">Advancing between sessions</a></details><details data-packet="full"><summary>3. Forts, bargaining, and work</summary><a href="#03_settlements_and_trading-md">Open section</a><a class="subsection" href="#03_settlements_and_trading-md--stock-and-buying">Stock and buying</a><a class="subsection" href="#03_settlements_and_trading-md--work-and-rescue">Work and rescue</a><a class="subsection" href="#03_settlements_and_trading-md--worked-purchase">Worked purchase</a></details><details data-packet="full"><summary>4. Indigenous communities and encounters</summary><a href="#04_native_encounters-md">Open section</a><a class="subsection" href="#04_native_encounters-md--prepare-an-individual-not-a-hostility-score">Prepare an individual, not a hostility score</a><a class="subsection" href="#04_native_encounters-md--a-continuing-relationship-in-the-campaign">A continuing relationship in the campaign</a><a class="subsection" href="#04_native_encounters-md--six-encounter-frames">Six encounter frames</a><a class="subsection" href="#04_native_encounters-md--coercion-or-violence">Coercion or violence</a><a class="subsection" href="#04_native_encounters-md--review-boundary">Review boundary</a></details><details data-packet="full"><summary>5. Camp life and recovery</summary><a href="#05_camp_life-md">Open section</a><a class="subsection" href="#05_camp_life-md--rest-day-procedure">Rest Day procedure</a><a class="subsection" href="#05_camp_life-md--one-evening-activity-per-rest-day">One evening activity per Rest Day</a><a class="subsection" href="#05_camp_life-md--watch">Watch</a><a class="subsection" href="#05_camp_life-md--evenings-worth-remembering">Evenings worth remembering</a><a class="subsection" href="#05_camp_life-md--camp-prompts">Camp prompts</a></details><details data-packet="full"><summary>6. Weather and environment</summary><a href="#06_weather_and_environment-md">Open section</a><a class="subsection" href="#06_weather_and_environment-md--shelter">Shelter</a><a class="subsection" href="#06_weather_and_environment-md--apriljune">April–June</a><a class="subsection" href="#06_weather_and_environment-md--julyaugust">July–August</a><a class="subsection" href="#06_weather_and_environment-md--septemberoctober">September–October</a><a class="subsection" href="#06_weather_and_environment-md--november-onward">November onward</a></details><details data-packet="full"><summary>7. Routes and the final choice</summary><a href="#07_route_variants-md">Open section</a><a class="subsection" href="#07_route_variants-md--sublette-decision-marker-790">Sublette decision, marker 790</a><a class="subsection" href="#07_route_variants-md--the-false-cutoff-rumor">The false cutoff rumor</a><a class="subsection" href="#07_route_variants-md--finale-at-the-dalles-marker-1900">Finale at The Dalles, marker 1,900</a><a class="subsection" href="#07_route_variants-md--columbia-passage--7-travel-days">Columbia passage — 7 travel days</a><a class="subsection" href="#07_route_variants-md--barlow-road--14-travel-days">Barlow Road — 14 travel days</a><a class="subsection" href="#07_route_variants-md--arrival">Arrival</a></details><details data-packet="full"><summary>Arrival: what the journey made possible</summary><a href="#docs-ARRIVAL-md">Open section</a><a class="subsection" href="#docs-ARRIVAL-md--1-put-the-record-on-the-table">1. Put the record on the table</a><a class="subsection" href="#docs-ARRIVAL-md--2-give-each-player-the-future">2. Give each player the future</a><a class="subsection" href="#docs-ARRIVAL-md--bring-the-earlier-scenes-into-tomorrow">Bring the earlier scenes into tomorrow</a><a class="subsection" href="#docs-ARRIVAL-md--3-remember-the-dead">3. Remember the dead</a><a class="subsection" href="#docs-ARRIVAL-md--4-close-on-an-action">4. Close on an action</a></details><details data-packet="full"><summary>Worked procedures — v0.10</summary><a href="#docs-SAMPLE_DAY-md">Open section</a><a class="subsection" href="#docs-SAMPLE_DAY-md--1-a-river-decision-that-costs-something">1. A river decision that costs something</a><a class="subsection" href="#docs-SAMPLE_DAY-md--2-a-rest-day-with-treatment-and-preservation">2. A Rest Day with treatment and preservation</a><a class="subsection" href="#docs-SAMPLE_DAY-md--3-a-three-day-leg-without-three-narrated-scenes">3. A three-day leg, without three narrated scenes</a><a class="subsection" href="#docs-SAMPLE_DAY-md--4-damage-at-zero-and-immediate-participation">4. Damage at zero and immediate participation</a><a class="subsection" href="#docs-SAMPLE_DAY-md--5-late-travel-and-water-warning">5. Late travel and water warning</a><a class="subsection" href="#docs-SAMPLE_DAY-md--6-a-peaceful-disagreement">6. A peaceful disagreement</a><a class="subsection" href="#docs-SAMPLE_DAY-md--7-ramp-work-a-letter-and-the-departure">7. Ramp work, a letter, and the departure</a><a class="subsection" href="#docs-SAMPLE_DAY-md--8-a-checkpoint-inside-a-leg">8. A checkpoint inside a leg</a><a class="subsection" href="#docs-SAMPLE_DAY-md--9-a-new-technique-changes-the-route-plan">9. A new technique changes the route plan</a></details><details data-packet="tonight"><summary>Before the wagon leaves</summary><a href="#docs-SESSION_ZERO-md">Open section</a></details><details data-packet="full"><summary>Solo: four voices, one expedition</summary><a href="#docs-SOLO-md">Open section</a><a class="subsection" href="#docs-SOLO-md--council">Council</a><a class="subsection" href="#docs-SOLO-md--unknown-facts">Unknown facts</a><a class="subsection" href="#docs-SOLO-md--end-a-session">End a session</a></details><details data-packet="full"><summary>Player companion — local character sheets for iPad</summary><a href="#docs-PLAYER_APP-md">Open section</a><a class="subsection" href="#docs-PLAYER_APP-md--use-it-at-the-table">Use it at the table</a><a class="subsection" href="#docs-PLAYER_APP-md--preload-each-ipad">Preload each iPad</a><a class="subsection" href="#docs-PLAYER_APP-md--save-and-recovery-behavior">Save and recovery behavior</a><a class="subsection" href="#docs-PLAYER_APP-md--run-and-maintain-locally">Run and maintain locally</a><a class="subsection" href="#docs-PLAYER_APP-md--verification-boundary">Verification boundary</a></details><details data-packet="tonight"><summary>Character sheet — v0.10</summary><a href="#docs-sheets-character_sheet-md">Open section</a></details><details data-packet="tonight"><summary>Party and wagon — v0.10</summary><a href="#docs-sheets-party_wagon_sheet-md">Open section</a><a class="subsection" href="#docs-sheets-party_wagon_sheet-md--next-decision--keep-this-visible">Next decision — keep this visible</a><a class="subsection" href="#docs-sheets-party_wagon_sheet-md--running-state--change-only-what-changed">Running state — change only what changed</a></details><details data-packet="tonight"><summary>People and promises — v0.10</summary><a href="#docs-sheets-people_ledger-md">Open section</a></details><details data-packet="tonight"><summary>Trail log — v0.10</summary><a href="#docs-sheets-trail_log-md">Open section</a><a class="subsection" href="#docs-sheets-trail_log-md--pause--resume">Pause / resume</a></details><details data-packet="tonight"><summary>Travel procedure — v0.10</summary><a href="#docs-sheets-travel_procedure-md">Open section</a><a class="subsection" href="#docs-sheets-travel_procedure-md--before-advancing-time">Before advancing time</a><a class="subsection" href="#docs-sheets-travel_procedure-md--resolve-through-the-checkpoint">Resolve through the checkpoint</a><a class="subsection" href="#docs-sheets-travel_procedure-md--pause-and-resume">Pause and resume</a></details><details data-packet="tonight"><summary>River playtest — quick observation sheet</summary><a href="#docs-sheets-playtest_observer-md">Open section</a><a class="subsection" href="#docs-sheets-playtest_observer-md--during-play">During play</a><a class="subsection" href="#docs-sheets-playtest_observer-md--at-the-stopping-point">At the stopping point</a><a class="subsection" href="#docs-sheets-playtest_observer-md--five-minute-debrief">Five-minute debrief</a><a class="subsection" href="#docs-sheets-playtest_observer-md--one-useful-revision">One useful revision</a></details><details data-packet="full"><summary>Fort visit — v0.10</summary><a href="#docs-sheets-fort_trading_sheet-md">Open section</a></details><details data-packet="full"><summary>Plain-language glossary — v0.10</summary><a href="#docs-glossary-md">Open section</a></details><details data-packet="full"><summary>Playtest the experience — v0.10</summary><a href="#docs-PLAYTEST-md">Open section</a><a class="subsection" href="#docs-PLAYTEST-md--first-test-the-river-as-written">First test: the river, as written</a><a class="subsection" href="#docs-PLAYTEST-md--acceptance-targets-not-results">Acceptance targets, not results</a><a class="subsection" href="#docs-PLAYTEST-md--what-to-change-after-observing">What to change after observing</a><a class="subsection" href="#docs-PLAYTEST-md--check-the-travel-card-before-a-longer-campaign">Check the travel card before a longer campaign</a><a class="subsection" href="#docs-PLAYTEST-md--next-tests-one-at-a-time">Next tests, one at a time</a><a class="subsection" href="#docs-PLAYTEST-md--desert-stress-snapshot">Desert stress snapshot</a><a class="subsection" href="#docs-PLAYTEST-md--economy-observations-across-chapters">Economy observations across chapters</a><a class="subsection" href="#docs-PLAYTEST-md--revision-record">Revision record</a><a class="subsection" href="#docs-PLAYTEST-md--november-12-2026-solo-dry-run">November 12, 2026 solo dry run</a><a class="subsection" href="#docs-PLAYTEST-md--during-play">During play</a><a class="subsection" href="#docs-PLAYTEST-md--at-the-stopping-point">At the stopping point</a><a class="subsection" href="#docs-PLAYTEST-md--debrief">Debrief</a></details><details data-packet="full"><summary>Historical framing and sources</summary><a href="#docs-HISTORY-md">Open section</a><a class="subsection" href="#docs-HISTORY-md--what-is-researched-and-what-is-invented">What is researched, and what is invented</a><a class="subsection" href="#docs-HISTORY-md--v010-regional-basis-for-a-continuing-fictional-character">v0.10: regional basis for a continuing fictional character</a><a class="subsection" href="#docs-HISTORY-md--questions-still-requiring-specialist-review">Questions still requiring specialist review</a></details><details data-packet="full"><summary>Revision status and next evidence — v0.10</summary><a href="#docs-UPDATE-IDEAS-md">Open section</a></details><details data-packet="full"><summary>Oregon Trail RPG — Project Roadmap</summary><a href="#roadmap-md">Open section</a><a class="subsection" href="#roadmap-md--preserve-the-baseline-until-there-is-a-finding">Preserve the baseline until there is a finding</a><a class="subsection" href="#roadmap-md--production-scope">Production scope</a></details><details data-packet="full"><summary>Change record</summary><a href="#CHANGELOG-md">Open section</a><a class="subsection" href="#CHANGELOG-md--save-recovery-and-first-river-packet--november-12-2026">Save recovery and first river packet — November 12, 2026</a><a class="subsection" href="#CHANGELOG-md--local-game-website-and-trailmaster-ledger--october-3-2026">Local game website and Trailmaster ledger — October 3, 2026</a><a class="subsection" href="#CHANGELOG-md--playtest-readiness--september-26-2026">Playtest readiness — September 26, 2026</a><a class="subsection" href="#CHANGELOG-md--player-companion-1--september-25-2026">Player companion 1 — September 25, 2026</a><a class="subsection" href="#CHANGELOG-md--010--september-25-2026--choices-and-consequences">0.10 — September 25, 2026 — choices and consequences</a><a class="subsection" href="#CHANGELOG-md--09--september-25-2026--local-playtest-redesign">0.9 — September 25, 2026 — local playtest redesign</a></details><details data-packet="full"><summary>Local verification — v0.10</summary><a href="#docs-VERIFICATION-md">Open section</a><a class="subsection" href="#docs-VERIFICATION-md--november-12-2026--save-recovery-and-first-river-packet">November 12, 2026 — save recovery and first river packet</a><a class="subsection" href="#docs-VERIFICATION-md--october-3-2026--local-game-website-and-trailmaster-ledger">October 3, 2026 — local game website and Trailmaster ledger</a><a class="subsection" href="#docs-VERIFICATION-md--september-26--readiness-fixes">September 26 — readiness fixes</a><a class="subsection" href="#docs-VERIFICATION-md--september-25--earlier-revision-checks">September 25 — earlier revision checks</a><a class="subsection" href="#docs-VERIFICATION-md--september-25--earlier-player-companion-checks">September 25 — earlier player companion checks</a><a class="subsection" href="#docs-VERIFICATION-md--reproduce-the-bounded-document-checks">Reproduce the bounded document checks</a><a class="subsection" href="#docs-VERIFICATION-md--earlier-evidence">Earlier evidence</a><a class="subsection" href="#docs-VERIFICATION-md--still-required">Still required</a></details><details data-packet="full"><summary>Oregon Trail RPG packet — v0.10</summary><a href="#docs-README-md">Open section</a><a class="subsection" href="#docs-README-md--play-tonight">Play tonight</a><a class="subsection" href="#docs-README-md--continue-the-journey">Continue the journey</a><a class="subsection" href="#docs-README-md--player-companion">Player companion</a><a class="subsection" href="#docs-README-md--game-website-and-trailmaster-ledger">Game website and Trailmaster ledger</a><a class="subsection" href="#docs-README-md--at-the-table">At the table</a><a class="subsection" href="#docs-README-md--review-and-development">Review and development</a></details><details data-packet="full"><summary>Oregon Trail RPG</summary><a href="#README-md">Open section</a><a class="subsection" href="#README-md--what-changed-in-v010">What changed in v0.10</a><a class="subsection" href="#README-md--play-tonight">Play tonight</a><a class="subsection" href="#README-md--player-companion-for-ipad">Player companion for iPad</a><a class="subsection" href="#README-md--local-game-website">Local game website</a><a class="subsection" href="#README-md--the-full-journey">The full journey</a><a class="subsection" href="#README-md--modules">Modules</a><a class="subsection" href="#README-md--license-and-provenance">License and provenance</a></details></nav><main id="reading" tabindex="-1"><article id="docs-QUICKSTART-md" data-packet="tonight"><p class="source">docs/QUICKSTART.md</p><h1 id="docs-QUICKSTART-md--oregon-trail-rpg--start-playing">Oregon Trail RPG — Start playing</h1>
 <p><strong>Version 0.10 playtest edition.</strong> Four ordinary people, one wagon, and two thousand miles of decisions nobody gets to take back. This page gets you playing in five minutes; <a href="#seed-md">core rules</a> settle shared mechanics.</p>
 <blockquote>
 <p><strong>What are we willing to spend, and what do we refuse to lose, to get these people to Oregon?</strong></p>
@@ -29,9 +79,9 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 <ol>
 <li>Pick a GM and distribute the <a href="#docs-PREGENS-md">four pregens</a> (or open them in the <a href="#docs-PLAYER_APP-md">player companion</a>). With fewer than four players, share the extra travelers. No D&amp;D book needed.</li>
 <li>Agree <a href="#docs-SESSION_ZERO-md">tone and boundaries</a>; read Dream, Promise, Boundary, and Bond aloud. Revise with the other players' agreement.</li>
-<li>For tonight, open <a href="#docs-RIVER_CHAPTER-md">The River Between</a> and use its exact starting state. For the full journey use the starter loadout below and <a href="#docs-CAMPAIGN-md">Seven Chapters</a>.</li>
+<li>For tonight, open <a href="#docs-RIVER_CHAPTER-md">The River Between</a> and use its exact starting state. Put the <a href="#docs-sheets-river_decision_card-md">river decision card</a> where everyone can see it. For the full journey use the starter loadout below and <a href="#docs-CAMPAIGN-md">Seven Chapters</a>.</li>
 <li>Put the <a href="#docs-TRAIL_MAP-md">route map</a>, <a href="#docs-sheets-party_wagon_sheet-md">wagon sheet</a>, <a href="#docs-sheets-gm_reference-md">GM reference</a>, and <a href="#docs-sheets-people_ledger-md">people ledger</a> within reach.</li>
-<li>Keep the <a href="#docs-sheets-travel_procedure-md">travel procedure card</a> and <a href="#docs-sheets-playtest_observer-md">quick observation sheet</a> ready; the latter asks for only three live observations. State the visible problem and at least two options. Make the first decision before teaching every subsystem.</li>
+<li>Keep the <a href="#docs-sheets-travel_procedure-md">travel procedure card</a> and <a href="#docs-sheets-playtest_observer-md">quick observation sheet</a> ready. State the visible problem and the available options. At the river, read all four offers and the scouting option before commitment. Make the first decision before teaching every subsystem.</li>
 </ol>
 <h2 id="docs-QUICKSTART-md--the-four-travelers">The four travelers</h2>
 <p>Four jobs, four kinds of authority, four ways to be the one who says <em>wait</em>. Each has work that simply succeeds, and one intervention that costs real resources to buy certainty when it matters.</p>
@@ -138,17 +188,160 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 <h2 id="docs-QUICKSTART-md--tonights-ending">Tonight's ending</h2>
 <p>End on a question, not a cliff. The best stopping point is the moment before somebody has to choose.</p>
 <p>Stop at a real decision, record state in the <a href="#docs-sheets-trail_log-md">trail log</a>, and ask what each traveler has not yet said. If the expedition ends, use <a href="#docs-ARRIVAL-md">Arrival</a>. Read the <a href="#docs-SAMPLE_DAY-md">worked examples</a> only when helpful; play does not require memorizing them.</p>
+</article><article id="docs-sheets-river_decision_card-md" data-packet="tonight"><p class="source">docs/sheets/river_decision_card.md</p><h1 id="docs-sheets-river_decision_card-md--river-decision-card">River decision card</h1>
+<h2 id="docs-sheets-river_decision_card-md--crossing-offers">Crossing offers</h2>
+<p>Show or read the four offers. The standalone begins <strong>June 2 at marker 340</strong> with <strong>$25, 2 spare parts, and 140 lbs of cured food</strong>. Crossing takes one day and moves the wagon to <strong>358</strong>. See the <a href="#docs-RIVER_CHAPTER-md">river chapter</a> for the full starting state. In the campaign, use the actual dates, supplies, and weather.</p>
+<table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Earliest crossing</th>
+<th>Cost through crossing</th>
+<th>Meeting with Mara</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pay for the ferry</strong></td>
+<td>Day 2, June 3</td>
+<td>$10 at boarding and 6 lbs of food if everyone Rests today. Add $10 to pay Mercy's fare. Safe crossing with wagon, teams, and cargo.</td>
+<td>Evening of day 2</td>
+</tr>
+<tr>
+<td><strong>Work on the ramp</strong></td>
+<td>Day 3, June 4</td>
+<td>Two days with two able workers each day. 10 lbs of food if everyone else Rests. Earn safe ferry passage for the party and Mercy for $0.</td>
+<td>Missed on the posted schedule</td>
+</tr>
+<tr>
+<td><strong>Try the upper ford</strong></td>
+<td>Day 1, June 2</td>
+<td>$0 and 4 lbs of food. Group DEX/WIS DC 12. See the outcomes below.</td>
+<td>Evening of day 1 if you cross</td>
+</tr>
+<tr>
+<td><strong>Prepare a rope line at the ford</strong></td>
+<td>Day 2, June 3</td>
+<td>1 spare part for anchors and 8 lbs of food. One full party labor day, then a safe crossing.</td>
+<td>Evening of day 2</td>
+</tr>
+</tbody>
+</table>
+<p>Food assumes four travelers, the stated Rest choices, and ordinary rations before Stretch the stores. Mercy's party feeds itself. Waiting, scouting, and labor use days at marker 340.</p>
+<p><strong>Scout the ford first.</strong> Spend a day scouting for Advantage on the group check. The Guide does the scouting. Everyone uses ordinary rations that day and forgoes Rest benefits. Earliest crossing is day 2, with 8 lbs of food through crossing and no cash or parts spent. If you cross, you can meet Mara that evening. Advantage never stacks.</p>
+<p><strong>Ford outcomes.</strong> Each able participant rolls d20 + DEX or WIS modifier based on their contribution. A total at or above the DC succeeds.</p>
+<ul>
+<li><strong>Majority:</strong> everyone crosses with wagon, teams, and cargo intact.</li>
+<li><strong>One or more, short of a majority:</strong> cross and lose 2 Wagon HP. Choose one lost cargo bundle or a volunteer taking 1d4 HP damage to protect it.</li>
+<li><strong>Zero successes:</strong> stay at 340, lose 4 Wagon HP and 2 HP from one team, and pay the day's costs once. Other approaches remain available tomorrow.</li>
+</ul>
+<p>A cargo bundle can be 50 lbs of food, 1 part, 40 rounds, a filled extra barrel with its water and capacity, or a named personal bundle.</p>
+<h3 id="docs-sheets-river_decision_card-md--what-changes-the-quote">What changes the quote</h3>
+<ul>
+<li><strong>Departure.</strong> Nessa and Mara leave the far bank at dawn on day 3, June 4 in the standalone. Mae can discuss workshop terms on either of the first two evenings. Send a $1 letter with Nessa from today's queue to keep a later discussion open. Any partnership still needs agreement.</li>
+<li><strong>Weather.</strong> Spring showers leave the ferry safe and raise the unprepared ford DC to 13. Thunderstorms hold paid and labor-earned ferries for the weather span. Both ford options stay open in ordinary thunderstorms if the party can move the wagon. A blizzard closes all crossings. Any open crossing is one ordinary Travel Day to marker 358. Waiting can be Rest. Apply the current season's ford DC modifier in campaign play. If weather prevents Nessa's own travel, announce the revised departure before the next commitment.</li>
+</ul>
+<h2 id="docs-sheets-river_decision_card-md--trailmaster-reference">Trailmaster reference</h2>
+<h3 id="docs-sheets-river_decision_card-md--spend-one-day-at-a-time">Spend one day at a time</h3>
+<p>Reveal weather and the deadline. Resolve the action, pay rations and any tracked water, then apply condition damage after declared treatment. Roll each active condition's recovery or apply the Doctor's Stabilize to its target condition. Apply earned Rest recovery, hold camp and watch, and advance the date once. The prepared river scenes take the place of random events.</p>
+<ul>
+<li><strong>Rest:</strong> stay put. Each resting traveler eats 0.5 lb and gets one Camp Action if able. If fully fed, heal 1d4+1 HP, remove 1 Exhaustion, then roll CON DC 10 to improve one Wound step. If unfed, heal 1 HP only. Each living team heals 1 HP and recovers from lameness. If the Teamster rests, restore 1 Wagon HP alongside the day's one repair action. Observe HP maxima and the 1 Exhaustion gain per traveler per day cap.</li>
+<li><strong>Ramp labor:</strong> two able PCs work each day and can rotate. Workers eat 1 lb each and forgo Rest. Other travelers can Rest individually. The teams get their normal Rest recovery on labor days. If Mae Rests, add her wagon upkeep and Ox Whisperer bonus to one team. Finish both days to earn the ferry, or stop after the first and pay the normal price on a later day.</li>
+<li><strong>Ordinary treatment:</strong> one patient and condition daily alongside labor or a Camp Action. The Doctor rolls INT DC 10. Pay 1 medicine for disease before rolling. Injury treatment is free. Success halves that day's damage rounded up and gives Advantage on tonight's recovery. Stabilize uses the same daily treatment.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Camp Action</th>
+<th>Procedure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repair wagon</td>
+<td>STR DC 10. Restore 1d4+2 HP up to 15. On success, spend 1 part to restore 1d6+3 instead, up to 30. A Teamster can spend 1 part for a guaranteed 6 HP up to 30 instead of rolling.</td>
+</tr>
+<tr>
+<td>Preventative maintenance</td>
+<td>STR DC 10. Store one nonstacking reduction of 3 HP against the next wagon hit, minimum zero damage.</td>
+</tr>
+<tr>
+<td>Forage or fish</td>
+<td>WIS or DEX DC 10 where available. Each success adds 1d6 lbs fresh food. Up to two travelers try, with others able to help.</td>
+</tr>
+<tr>
+<td>Intensive care</td>
+<td>INT DC 10. Give one patient +2 HP or Advantage on tonight's Wound recovery check. This takes the full action.</td>
+</tr>
+<tr>
+<td>Stabilize a condition</td>
+<td>Doctor spends 1 medicine and their Camp Action. Prevent one patient's condition damage and worsening for today. Remove 2 marks from one condition instead of its recovery check.</td>
+</tr>
+<tr>
+<td>Stabilize at 0 HP</td>
+<td>An able traveler spends their action to restore 1 HP to a patient at zero. The patient's Wound state stays in effect.</td>
+</tr>
+<tr>
+<td>Scout from camp</td>
+<td>WIS DC 10. Learn the next obstacle's warning and gain Advantage on one navigation check there. The full-day ford scouting offer uses its own procedure above.</td>
+</tr>
+<tr>
+<td>Smoke &amp; Salt</td>
+<td>WIS DC 10 with fire and a usable site. Cure up to 100 lbs of chosen fresh food. On failure, cure half the amount chosen, rounded down, and lose the rest of that amount.</td>
+</tr>
+<tr>
+<td>Mend &amp; Wash</td>
+<td>Give one traveler Advantage on their next initial disease resistance check. Store one benefit per traveler.</td>
+</tr>
+<tr>
+<td>Keep a promise</td>
+<td>Do specific work toward the promise. Roll only when the result is uncertain. State any cost up front.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Evening.</strong> Invite a short conversation. On a Rest Day choose up to one activity. <strong>Tell the truth:</strong> if at least two characters respond, +1 Morale once per chapter. <strong>Proper meal:</strong> spend one extra Rest ration per traveler for +1 Morale. <strong>Write or remember:</strong> give Inspiration to one character who lacks it. Their personal-stakes award remains available.</p>
+<p><strong>Watch.</strong> Assign three shifts to able travelers. A double shift calls for CON DC 10 the next morning or +1 Exhaustion under the new day's cap. With no watch, skip the early warning of any night threat and present its immediate response choices.</p>
+<h3 id="docs-sheets-river_decision_card-md--weather-and-the-next-session">Weather and the next session</h3>
+<p>The standalone has Clear and Mild weather on June 2–4. Roll this d6 on June 5 and every three calendar days afterward. Reroll at chapter entry and restart the count. For later months in the campaign, use the <a href="#06_weather_and_environment-md">seasonal weather rules</a>.</p>
+<table>
+<thead>
+<tr>
+<th>d6</th>
+<th>April–June weather</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–3</td>
+<td>Clear and Mild. No modifier.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Spring Showers. Ford DC 13.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Thunderstorms. Ordinary travel ×0.75, the ferry waits, and exposed camps cannot cure meat.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Late Frost. Each unprotected traveler rolls CON DC 10 nightly or gains 1 Exhaustion. Warm Bedding or substantial shelter protects travelers from the cold.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shelter.</strong> The Guide gets one free search per day at WIS DC 10, or DC 12 in open plains. On failure the party can build shelter with tools and canvas as the day's action, using the day at camp without Rest. For a cold warning first revealed at night, search immediately. On failure emergency cover costs half the next day's mileage.</p>
+<p><strong>Pause at the far bank.</strong> Finish the crossing day's costs, camp, and watch, then advance the date once. On the <a href="#docs-sheets-trail_log-md">trail log</a>, record the day closed and the next date to play. For example, crossing on June 2 ends at marker 358 with June 3 next and two Clear and Mild days left. If you stop mid-day, mark which steps are already done. Update supplies, health, and agreements on the existing sheets. Earn the first technique at Fort Laramie, marker 500.</p>
 </article><article id="docs-RIVER_CHAPTER-md" data-packet="tonight"><p class="source">docs/RIVER_CHAPTER.md</p><h1 id="docs-RIVER_CHAPTER-md--the-river-between">The River Between</h1>
 <p><em>Ten dollars, chalked on a board. A ferryman who charges everyone the same. A schoolteacher counting coins on a crate of books, coming up short. And a ford upstream that will take you across today, for free, for a price.</em></p>
-<p>Nothing in this chapter is hidden. Every route is quoted openly in the first ten minutes: the safe one, the slow one, and the fast one. What the party is actually deciding is whether a stranger's problem is theirs — and what they are willing to stake on the answer. There is no wrong crossing here. There is only the one they choose and then have to live beside on the far bank.</p>
+<p>Put the four crossing offers in front of the party in the first ten minutes. A part buys a safe ford, labor buys passage for Mercy too, and a day's delay may cost a meeting. Let the travelers decide what they are willing to spend before anyone touches a die.</p>
 <p><strong>A complete introductory chapter for Oregon Trail RPG v0.10.</strong> One GM, 1–4 players controlling four travelers, target 2–3 hours. This duration is untested. Use the <a href="#docs-PREGENS-md">pregens</a>, <a href="#docs-sheets-gm_reference-md">reference</a>, <a href="#docs-sheets-party_wagon_sheet-md">wagon sheet</a>, and <a href="#docs-sheets-people_ledger-md">people ledger</a>. All people and local scene sites are fictional.</p>
 <h2 id="docs-RIVER_CHAPTER-md--five-minute-start">Five-minute start</h2>
-<p>Put the three options on paper before you teach a single rule. The party should be arguing about the river inside ten minutes.</p>
-<p>Give everyone a character. Read their Dreams and Promises aloud, ask agreement on Bonds, and allow changes. State the game promise: consequences are real; risks are disclosed; everyone keeps playing. Confirm boundaries using <a href="#docs-SESSION_ZERO-md">session zero</a>. Put three options on paper: <strong>ferry tomorrow, ford today, two labor days then cross</strong>.</p>
+<p>Set out the <a href="#docs-sheets-river_decision_card-md">river decision card</a>. It gives the four offers, the optional scouting day, and the prices, risks, and departure the party needs to hear before choosing.</p>
+<p>Give everyone a character. Read their Dreams and Promises aloud, ask agreement on Bonds, and allow changes. Confirm boundaries using <a href="#docs-SESSION_ZERO-md">session zero</a>. Tell the table that everyone keeps playing and that they will hear the stakes before choosing. Use the card's Trailmaster reference for Rest, mixed ramp work, and weather during the introduction.</p>
 <p>Standalone start: <strong>June 2, marker 340</strong>, Morale 6; 140 lbs cured food, no fresh food, 60 gallons capacity/full (water not tracked here), 4 medicine, 40 ammunition, 2 parts, <strong>$25</strong>, Warm Bedding, tools, wagon 22/30, three teams at 8/10 each. Use pregens' full HP, Exhaustion 0, one Inspiration. A crate of Eliza's books and Mae's tools are named personal cargo bundles; no other cargo inventory is needed. These replace the campaign's starting purchases, not additional goods.</p>
 <p>Campaign entry uses actual state and starts the scene when the party reaches 340. If the party arrives in a different month, use actual weather. For the standalone, first three days are Clear and Mild; roll weather beginning June 5. Subsequent weather follows the core rules.</p>
 <h2 id="docs-RIVER_CHAPTER-md--three-locations">Three locations</h2>
-<p>One bend of one river, and three ways to be on the other side of it. Scouting, waiting, and working are all real uses of a day here — none of them move the marker.</p>
+<p>The ferry and ford reach the same far-bank camp. Scouting, waiting, and working use days at marker 340.</p>
 <pre><code class="language-text">340 — QUEUE CAMP: names, needs, accurate prices, safe Rest possible
          | one local scouting day; no route-marker progress
          +—— UPPER FORD: inspect it before choosing; return to camp free
@@ -157,97 +350,26 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
                    |
                    +—— far-bank marker 358 — road onward to Laramie 500
 </code></pre>
-<p>These are alternative crossing approaches in the same local area. A completed crossing uses one Travel Day and advances <strong>18 miles to 358</strong>, regardless of stance; no extra random event, stock fee, or travel check. Scouting, queue days, Rest, and loading labor do not advance the route marker. Weather river DC modifiers apply to the ford. Ferry remains safe in ordinary showers; in a thunderstorm or blizzard the operator waits, disclosing one weather span's delay. Waiting days may be Rest Days.</p>
+<p>A completed crossing uses one Travel Day and advances <strong>18 miles to 358</strong> regardless of stance. Use the price and any check quoted for the chosen approach. The <a href="#docs-sheets-river_decision_card-md">decision card</a> gives the weather exceptions and the group check for an unprepared ford.</p>
 <h2 id="docs-RIVER_CHAPTER-md--scene-1--a-price-everyone-can-see">Scene 1 — A price everyone can see</h2>
 <p>Read or paraphrase: “The crossing rope hums in the current. On a board beside the landing, somebody has written TEN DOLLARS. Mercy Reed is counting coins beside an open crate of books. The operator points to the same price for everyone.”</p>
 <p><strong>Operator Ellis Ward:</strong> wants to clear the queue safely; refuses overloaded runs; no secret hostility. <strong>Mercy:</strong> $10 short, owns books she can sell, refuses to leave her brother behind. <strong>Tomas:</strong> can help build a loading ramp but needs another able worker. <strong>Nessa:</strong> her freight is already across. She visits this bank by passenger boat and returns tonight; passenger travel cannot carry the party wagon or shortcut its crossing. She leaves the far-bank camp at dawn on the third scene day (June 4 standalone), taking a faster contract to Laramie. She can carry a message for $1.</p>
-<p>The party hears all three routes for free:</p>
-<ul>
-<li><strong>Ferry:</strong> $10 party total; next departure tomorrow. Today can be a Rest Day. Guaranteed safe crossing, tools/cargo/teams included. Another $10 pays Mercy's passage. No social roll to pay.</li>
-<li><strong>Work:</strong> spend two labor days repairing the loading ramp; both the party and Mercy cross on day 3 for no cash. Two able PCs commit their actions on each labor day (workers may rotate); the other two may Rest individually. Workers eat 1 lb each and receive no Rest recovery; resting travelers eat 0.5 lb each and get their own normal recovery/actions. Wagon upkeep applies if the Teamster rests; oxen rest because the wagon does not move. This is the scene's explicit mixed-day exception. No random events on either labor day. After one completed labor day, the party can abandon the job and pay the normal ferry fee on a later day; work earns passage only when both days are complete.</li>
-<li><strong>Upper ford:</strong> can cross today, dangerous; exact outcomes below. Scouting first costs one day and gives Advantage to the crossing group check. It cannot be combined with ramp labor by the same person. Guide Read the ground guarantees the information already given plus Advantage here; do not charge twice for discovering visible stakes.</li>
-</ul>
+<p>Show <a href="#docs-sheets-river_decision_card-md--crossing-offers">all four crossing offers</a> before the party commits. Give the optional scouting quote with the ford. The Guide's Read the ground covers the same scouting day and grants the card's Advantage. A traveler who scouts uses their day on that action. Ellis takes payment at boarding, with no social roll or advance booking. The first sailing is day 2, June 3 in the standalone. After that, announce the next available sailing before the party spends another day.</p>
 <h3 id="docs-RIVER_CHAPTER-md--the-departure-that-makes-tomorrow-matter">The departure that makes tomorrow matter</h3>
 <p>Before choosing, show Nessa's departure date beside the crossing prices. Mae's former coworker <strong>Mara Vale</strong> travels with Nessa's freight and is offering to share a workshop in the Valley. Mae can discuss ownership and working terms face to face at the far-bank camp on either of the first two evenings. Mara wants to divide responsibility now because she will seek another partner on the road. The meeting grants no cash, technique, or guaranteed business success; Mae can accept, negotiate, or decline. Record the actual terms for arrival.</p>
-<p>Ramp work misses that meeting. Mae may instead send a written proposal with Nessa today for $1. Nessa delivers it; Mara's default response is a written invitation to find her at the Valley and discuss whatever work is then available, with no partnership reserved. No hidden persuasion check or permanently ruined dream. Mae can propose another arrangement now; Ellis can relay a message after departure, but cannot recall the carrier. In an ongoing campaign offer this connection to the player whose Dream fits, with their agreement; if no one wants it, use Nessa's openly stated departure as an optional opportunity and record that the deadline did not matter to this table.</p>
-<table>
-<thead>
-<tr>
-<th>Approach from scene day 1</th>
-<th>Earliest crossing</th>
-<th>Party cash / parts</th>
-<th>If all nonworkers Rest, food through crossing</th>
-<th>Nessa/Mara meeting</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ferry</td>
-<td>Day 2</td>
-<td>$10; +$10 to pay Mercy</td>
-<td>6 lbs</td>
-<td>Yes, evening day 2</td>
-</tr>
-<tr>
-<td>Ramp labor</td>
-<td>Day 3</td>
-<td>$0; includes Mercy</td>
-<td>10 lbs</td>
-<td>Missed; $1 letter available day 1</td>
-</tr>
-<tr>
-<td>Ford without preparation</td>
-<td>Day 1 if full/partial</td>
-<td>$0; risk printed below</td>
-<td>4 lbs</td>
-<td>Yes if across before departure</td>
-</tr>
-<tr>
-<td>Prepared rope line</td>
-<td>Day 2</td>
-<td>1 part</td>
-<td>8 lbs</td>
-<td>Yes, evening day 2</td>
-</tr>
-</tbody>
-</table>
-<p>Rope preparation is one full party labor day without Rest, then one crossing day. Ford scouting is one non-Rest scouting day followed by the risky crossing on day 2; it uses 8 lbs through crossing and no part. Only the Guide needs to perform the scouting, but this option uses ordinary party daily rations and grants no Rest benefits. Table amounts assume four travelers, no extras, no food-saving ability, and the standalone's clear weather. Mercy supplies her own party. Weather delays advance the departure clock too; Nessa waits only when weather prevents her own travel, under the same weather rules, not automatically because the party is delayed. Announce a changed departure before a new day's commitment.</p>
+<p>Ramp work misses that meeting on the posted schedule. If weather changes Nessa's departure, announce Mara's last available evening again before the next commitment. Mae may send a written proposal with Nessa from the queue on day 1 for $1. Nessa delivers it; Mara's default response is a written invitation to find her at the Valley and discuss whatever work is then available, with no partnership reserved. No hidden persuasion check or permanently ruined dream. Mae can propose another arrangement now; Ellis can relay a message after departure, but cannot recall the carrier. In an ongoing campaign offer this connection to the player whose Dream fits, with their agreement; if no one wants it, use Nessa's openly stated departure as an optional opportunity and record that the deadline did not matter to this table.</p>
 <h3 id="docs-RIVER_CHAPTER-md--four-reasons-to-speak">Four reasons to speak</h3>
 <p>Use these within the decision, not as four compulsory side quests. Players may reject the hook or substitute their own stake.</p>
 <ul>
-<li><strong>Guide:</strong> Mercy asks whether Eliza would let one of her mother's lesson books be used at the queue tonight. It stays with Eliza unless she explicitly lends or gifts it. Eliza can begin teaching now, keep it packed, or ask someone else to lead. No day cost, no automatic reward.</li>
-<li><strong>Doctor:</strong> adult traveler <strong>Ada Pike</strong> asks for ordinary treatment of dysentery (3 marks, 1 HP damage due today). She has her own provisions, caretaker, and 6/9 HP; no payment to offer. Thomas may use his once-daily treatment, spending 1 medicine and making INT DC 10 under core rules, alongside today's Rest or labor; Stabilize instead requires his Rest Day and Camp Action. Ada's own party handles subsequent care. Refusal creates no scripted death or penalty; record treatment and her response.</li>
+<li><strong>Guide:</strong> Mercy asks to use one of Eliza's mother's lesson books while the queue waits today, before any crossing. Eliza can lead a short lesson, invite someone else to lead, or keep the book packed. Pack it again before leaving unless Eliza explicitly lends it beyond the lesson or gives it away. This uses no separate day or action.</li>
+<li><strong>Doctor:</strong> adult traveler <strong>Ada Pike</strong> asks for ordinary treatment of dysentery. She has 6/9 HP, 3 marks, 1 HP of damage due today, and a caretaker with their own provisions. Thomas can spend 1 medicine and roll INT DC 10 before leaving the queue, alongside today's chosen action. On success Ada still takes 1 HP after rounding up, and her caretaker rolls Ada's evening recovery with Advantage (CON +0, DC 10, one mark removed on success). On failure, use the same damage and a single recovery die. If Thomas takes a Rest Day here, he can use his Camp Action for Stabilize instead. Ada's party handles later care. Refusal creates no scripted death or penalty.</li>
 <li><strong>Hunter:</strong> Mercy offers to trade one of her remaining books for 10 lbs cured food, with no cash value assigned to the book. Cal can give the food instead, trade, or keep the reserve. This neither pays her crossing nor earns river intelligence; it changes who keeps that book. Nearby game is available in the standalone if Cal chooses to hunt instead of labor or Rest.</li>
 <li><strong>Teamster:</strong> Mae owns the response to Mara's offer and can explain what the prepared rope line would buy. The rest of the table decides the shared wagon's approach together; her role never grants a veto over other PCs.</li>
 </ul>
 <p>No one forces a charitable choice. If refused, Mercy sells books to cross later. The consequences are her changed prospects and the absence of a favor, not a moral penalty imposed by the GM.</p>
 <h2 id="docs-RIVER_CHAPTER-md--scene-2--the-crossing">Scene 2 — The crossing</h2>
 <p>Whatever they chose, make the crossing itself a scene about hands and cargo, not about dice. Ask what each person carries across personally.</p>
-<p>For ferry/work, ask each traveler what they insist on unloading themselves. Then cross safely; no hidden roll after payment. Give every player a voice without manufacturing danger to punish the safe option.</p>
-<p>For upper ford, name the current before asking for commitment. Choose a dependable rope line: spend 1 part (represents anchors) and one extra preparation day, then cross safely. Or <strong>group DEX/WIS DC 12</strong> (each player chooses based on their described contribution):</p>
-<table>
-<thead>
-<tr>
-<th>Outcome</th>
-<th>Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Full: more than half succeed</td>
-<td>Everyone and all cargo cross. No damage.</td>
-</tr>
-<tr>
-<td>Partial: at least one succeeds, not a majority</td>
-<td>Cross, wagon loses 2 HP. Players choose either one lost cargo bundle or one volunteering traveler takes 1d4 HP damage protecting it.</td>
-</tr>
-<tr>
-<td>Failure: none succeed</td>
-<td>Retreat to this bank; no crossing progress. Wagon loses 4 HP and one team loses 2 HP. Tomorrow the ferry, ramp work, and rope-line plan remain available.</td>
-</tr>
-</tbody>
-</table>
-<p>Scouting gives Advantage; a helper cannot add more. A personal-stakes Inspiration can benefit its owner's check but not stack. One failed participant alone does not drown. Apply Wound rules if damage reaches 0 HP.</p>
+<p>For the ferry, completed ramp labor, or a prepared rope line, ask each traveler what they insist on unloading or securing themselves. Then cross safely. For a ford attempt without the rope line, describe the current and read all three group check outcomes from the <a href="#docs-sheets-river_decision_card-md--crossing-offers">decision card</a>. Scouting and a traveler's own Inspiration can each provide Advantage under the usual stacking rules. Apply Wound rules if damage reaches 0 HP.</p>
 <p><strong>Every role has a decision:</strong> Guide chooses information versus time; Teamster decides whether the part is worth a guaranteed crossing; Doctor reserves medicine for a patient or spends their day's effort helping; Hunter weighs waiting against a hunt. A Hunter who hunts on a waiting day cannot also repair the ramp or Rest. No game is guaranteed at the queue; nearby game is available in the standalone, so Take Aim is a valid alternative.</p>
 <h2 id="docs-RIVER_CHAPTER-md--scene-3--what-crosses-with-you">Scene 3 — What crosses with you</h2>
 <p>The far bank is quieter than anyone expects. Wet rope, a fire, and the first real chance to count what came over with them.</p>
@@ -257,27 +379,28 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 <h2 id="docs-RIVER_CHAPTER-md--finishing-the-chapter">Finishing the chapter</h2>
 <p>Eight ordinary days of road to Fort Laramie. This is the group's first taste of the campaign's real rhythm: batch the miles, spend the food, stop when something asks a question.</p>
 <p>From far-bank marker 358 to Laramie 500 is 142 miles: eight ordinary 18-mile travel days, stopping at 500 rather than overshooting. Use two three-day legs and one two-day leg, with one event per leg; short final legs still receive one event. On chapter 2 event-table results that would introduce another major crossing, reinterpret the site as a minor side-channel with the <strong>same disclosed mechanics</strong>, or replace it openly with a traveler message before rolling. Do not force an extra major set piece just to fill time.</p>
-<p>For a shorter first session, end at the far-bank camp and record state. That is a complete introductory adventure; continue the remaining road in the next session. Do not award Laramie arrival or chapter advancement before reaching it.</p>
+<p>The far-bank camp is a complete first-session ending. Follow the <a href="#docs-sheets-river_decision_card-md--weather-and-the-next-session">card's pause instructions</a> to resume with the same state. For the remaining road and Laramie trade, use the Complete handbook's campaign references. Award Laramie arrival and chapter advancement when the party reaches marker 500.</p>
 <p>At Laramie, endpoint Morale +1, trade/rest if desired, and one technique per PC. Owen Bell accepts an accurate crossing report for his demand. Use the <a href="#03_settlements_and_trading-md">worked trade</a> if needed. Finish by changing or affirming a personal statement and naming one person to see again.</p>
 <h2 id="docs-RIVER_CHAPTER-md--six-optional-complications">Six optional complications</h2>
 <p>Use the six chapter 2 events in <a href="#01_events_and_hazards-md">Events</a> for the onward road. During the three prepared scenes, use <strong>no random event</strong>. If the queue needs texture, describe a dropped cup, a repair argument, or another wagon's arrival without charging a second surprise hazard.</p>
 <h2 id="docs-RIVER_CHAPTER-md--gm-answers-and-recovery">GM answers and recovery</h2>
 <p>Every failure state here has a printed way onward. Nobody gets stranded at 340 because the dice were unkind or the purse was empty.</p>
 <ul>
-<li><strong>No cash or parts?</strong> Ramp labor still buys safe passage; willing labor is sufficient, no roll. If exactly one PC can work, Tomas supplies the second worker: three labor days, then crossing on day 4. Explain the missed meeting and letter option before accepting. If none can work, Mercy sells books to fund the next available ferry crossing, asking an explicit future favor; no inactive player is left waiting for a solvency check. Substitution remains available immediately. A missed meeting does not block passage or the adventure ending.</li>
+<li><strong>No cash or parts?</strong> Ramp labor still earns passage on the next running ferry. If exactly one PC can work, Tomas supplies the second worker for three labor days, with crossing on day 4 at the earliest. Quote the actual departure and letter option before accepting. If none can work, Mercy sells books to fund the next available ferry, asking for an explicit future favor. Use reserves or shared roles immediately so everyone can play.</li>
+<li><strong>Wagon stopped or too few able travelers?</strong> The ferry crew can load the party's wagon and surviving teams even if the party cannot pull it. This is a crossing exception. Ordinary wagon travel resumes after the party restores the wagon, usable teams, and able travelers as needed. Both ford options require the party to be able to move its own wagon.</li>
 <li><strong>Two injured PCs?</strong> Use reserve travelers immediately. Count active slots and food explicitly. Tomas can care for a patient with his party while the reserve occupies the active slot, if agreed.</li>
-<li><strong>Failed ford?</strong> The party stays at 340 and pays that failed day once. No endless downstream rescue maze. The other approaches remain.</li>
+<li><strong>Failed ford?</strong> Close the failed day at 340 and offer the remaining choices next morning. If the first ferry is running June 3, the party can pay and board that day after a June 2 failure. Charge the failed ford and the crossing as two separate days.</li>
 <li><strong>Party splits over payment?</strong> Give each player one statement of priorities, then agree the shared wagon's plan. No CHA roll overrides a player.</li>
 <li><strong>Players invent a winch, raft, or barter?</strong> Give the relevant person a credible reason to agree or decline, then state a time/material cost and DC before commitment. Equivalent preparation should buy equivalent safety.</li>
 </ul>
 <h2 id="docs-RIVER_CHAPTER-md--debrief">Debrief</h2>
-<p>Use <a href="#docs-PLAYTEST-md">Playtest</a>. Record when the choice stopped being obvious, whether the departure mattered, any third approach, each role's actual decision, and minutes spent on accounting. Ask which choice felt real, whether every role mattered, and which person they want to meet again. Record actual elapsed time and rules lookups; do not rate the game for the players.</p>
+<p>Use <a href="#docs-PLAYTEST-md">Playtest</a>. Record when the choice stopped being obvious, whether the departure mattered, any player-proposed approach, each role's actual decision, and minutes spent on accounting. Ask which choice felt real, whether every role mattered, and which person they want to meet again. Record actual elapsed time and rules lookups; do not rate the game for the players.</p>
 </article><article id="docs-PREGENS-md" data-packet="tonight"><p class="source">docs/PREGENS.md</p><h1 id="docs-PREGENS-md--four-people-one-wagon">Four people, one wagon</h1>
 <p><em>A guide carrying her dead mother's books. A doctor who keeps an unpaid bill in his pocket. A hunter who will not risk a person for property. A teamster with her father's tools and her name on a sign that does not exist yet.</em></p>
 <p>They have already agreed to share the wagon. They have not yet found out what that will cost. Hand these out as they are and play — everything is filled in, and the only question at the top of the first session is the one printed under each name.</p>
 <p>Version 0.10. Use these directly. Each uses scores 15, 13, 12, 10, 10, 8 exactly once; all modifiers and HP are filled. No techniques at campaign start. Each has one Inspiration, no wounds, Exhaustion 0. Rename or revise any identity/personal statement before play. The other player must agree to a Bond. All are fictional adults.</p>
 <p>Campaign supplies: core starter loadout, <strong>$250 remaining</strong>. Standalone river supplies: use that adventure's separate starting snapshot instead. Personal cargo has no sale price; it becomes a named bundle for choices. Each keepsake is small and carried personally.</p>
-<h2 id="docs-PREGENS-md--eliza-marsh--guide">Eliza Marsh — Guide</h2>
+<section class="pregen-sheet"><h2 id="docs-PREGENS-md--eliza-marsh--guide">Eliza Marsh — Guide</h2>
 <table>
 <thead>
 <tr>
@@ -308,7 +431,19 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 <p><strong>Opening question:</strong> Do you want people to trust your judgment, or to share your dream?</p>
 <p><strong>On the road:</strong> Mercy will ask to put a book to use before Oregon. Decide whether lending it changes your promise. No gift is presumed.</p>
 <p><strong>Reserve:</strong> Jonah Reed, willing to help after traveling with Mercy; takes the Guide role if needed, no free gear.</p>
-<h2 id="docs-PREGENS-md--thomas-pruitt--doctor">Thomas Pruitt — Doctor</h2>
+
+<div class="pregen-record">
+  <h3>During play</h3>
+  <p>Start Healthy, with Exhaustion 0 and one Inspiration. Use the starting HP above.</p>
+  <table aria-label="Traveler record">
+    <thead><tr><th>Player</th><th>Current HP</th><th>Wound</th><th>Exhaustion</th><th>Inspiration</th></tr></thead>
+    <tbody><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody>
+  </table>
+  <table aria-label="Traveler notes">
+    <thead><tr><th>Condition / marks / care</th><th>Decision / promise to carry forward</th></tr></thead>
+    <tbody><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody>
+  </table>
+</div></section><section class="pregen-sheet"><h2 id="docs-PREGENS-md--thomas-pruitt--doctor">Thomas Pruitt — Doctor</h2>
 <table>
 <thead>
 <tr>
@@ -339,7 +474,19 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 <p><strong>Opening question:</strong> When does saving supplies become refusing care?</p>
 <p><strong>On the road:</strong> Ada asks for care at the river; a freight caretaker later asks to learn from you. Decide what you can offer while keeping Cal in mind.</p>
 <p><strong>Reserve:</strong> Ellis Bell, a carrier with practical nursing experience; takes Doctor role if needed.</p>
-<h2 id="docs-PREGENS-md--cal-marsh--hunter">Cal Marsh — Hunter</h2>
+
+<div class="pregen-record">
+  <h3>During play</h3>
+  <p>Start Healthy, with Exhaustion 0 and one Inspiration. Use the starting HP above.</p>
+  <table aria-label="Traveler record">
+    <thead><tr><th>Player</th><th>Current HP</th><th>Wound</th><th>Exhaustion</th><th>Inspiration</th></tr></thead>
+    <tbody><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody>
+  </table>
+  <table aria-label="Traveler notes">
+    <thead><tr><th>Condition / marks / care</th><th>Decision / promise to carry forward</th></tr></thead>
+    <tbody><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody>
+  </table>
+</div></section><section class="pregen-sheet"><h2 id="docs-PREGENS-md--cal-marsh--hunter">Cal Marsh — Hunter</h2>
 <table>
 <thead>
 <tr>
@@ -370,7 +517,19 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 <p><strong>Opening question:</strong> Who gets the last portion when you are the one who found it?</p>
 <p><strong>On the road:</strong> Mercy may need food; Nessa later offers paid provisioning work. Decide what a fair reserve and independent livelihood mean to you.</p>
 <p><strong>Reserve:</strong> Rowan Hale, another wagon's hunter; player defines the existing connection.</p>
-<h2 id="docs-PREGENS-md--mae-sorensen--teamster">Mae Sorensen — Teamster</h2>
+
+<div class="pregen-record">
+  <h3>During play</h3>
+  <p>Start Healthy, with Exhaustion 0 and one Inspiration. Use the starting HP above.</p>
+  <table aria-label="Traveler record">
+    <thead><tr><th>Player</th><th>Current HP</th><th>Wound</th><th>Exhaustion</th><th>Inspiration</th></tr></thead>
+    <tbody><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody>
+  </table>
+  <table aria-label="Traveler notes">
+    <thead><tr><th>Condition / marks / care</th><th>Decision / promise to carry forward</th></tr></thead>
+    <tbody><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody>
+  </table>
+</div></section><section class="pregen-sheet"><h2 id="docs-PREGENS-md--mae-sorensen--teamster">Mae Sorensen — Teamster</h2>
 <table>
 <thead>
 <tr>
@@ -401,7 +560,19 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 <p><strong>Opening question:</strong> If the chest must go, does the dream go with it?</p>
 <p><strong>On the road:</strong> If you want this connection, former coworker Mara offers a shared workshop discussion across the river before she leaves with Nessa. Tomas later proposes a shared service at Hall. Neither opportunity obliges you to accept.</p>
 <p><strong>Reserve:</strong> Ruth Ames, Tomas's fellow mechanic; takes Teamster role if needed.</p>
-<h2 id="docs-PREGENS-md--at-chapter-end">At chapter end</h2>
+
+<div class="pregen-record">
+  <h3>During play</h3>
+  <p>Start Healthy, with Exhaustion 0 and one Inspiration. Use the starting HP above.</p>
+  <table aria-label="Traveler record">
+    <thead><tr><th>Player</th><th>Current HP</th><th>Wound</th><th>Exhaustion</th><th>Inspiration</th></tr></thead>
+    <tbody><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody>
+  </table>
+  <table aria-label="Traveler notes">
+    <thead><tr><th>Condition / marks / care</th><th>Decision / promise to carry forward</th></tr></thead>
+    <tbody><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody>
+  </table>
+</div></section><h2 id="docs-PREGENS-md--at-chapter-end">At chapter end</h2>
 <p>Nobody gains hit points on this road. What changes is what they believe.</p>
 <p>Ask each player whether a personal statement changes. At chapters 2 and 5 choose a different <a href="#02_character_backgrounds-md">technique</a>, copy it onto the sheet, and name who/what taught it. At incapacitation or death use core substitution rules immediately; no reserve character grants an extra active action or starting supply package.</p>
 </article><article id="docs-TRAIL_MAP-md" data-packet="tonight"><p class="source">docs/TRAIL_MAP.md</p><h1 id="docs-TRAIL_MAP-md--the-journey-at-a-glance">The journey at a glance</h1>
@@ -2171,7 +2342,9 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 <li>A context without Web Locks offers memory-only editing and export, with an explicit warning. It does not claim those edits are locally saved. HTTPS/current Safari is the supported path.</li>
 <li><strong>Undo</strong> names the latest saved action or text edit. Typing during one uninterrupted field visit is grouped into one edit while every input still autosaves. Repeated Undo walks backward through up to eight checkpoints, including after reopening; it does not toggle or provide Redo. Each checkpoint restores all sheets to that moment, so export first to keep the current version. Older checkpoints are trimmed when their combined UTF-8 JSON exceeds 1 MiB, retaining at least the newest checkpoint. Current state and history are written together; a failed write changes neither. Existing valid saves and their legacy previous-save slot remain readable. Local history is not an independent backup; exported backups contain current sheets only, not undo history.</li>
 <li>Storage-read, archive, quota, and write failures are visible. A failed save leaves the visible sheet exportable and pauses further editing until resolved. Loading saved data replaces the visible unsaved version only after an explicit confirmation.</li>
-<li>Invalid stored data is not silently reset. The recovery panel can show its raw bytes and can archive them locally before starting an empty save. If the archive fails, replacement stops. If another window has supplied a valid save meanwhile, recovery refuses to overwrite it.</li>
+<li>A condition ends at zero recovery marks. If the same condition is contracted again, add it as a new exposure. For conditions with daily HP damage, the tracker starts with the calendar date after exposure. You can correct that date to match the ruling at your table.</li>
+<li>When the app finds damaged data, <strong>Back up / restore</strong> offers separate exports for visible travelers, any recoverable travelers in the damaged save, and the original raw save. The two traveler exports use the portable backup format. The raw recovery file keeps the original local-storage text in its <code>raw</code> field for manual repair.</li>
+<li><strong>Preserve raw data &amp; recover</strong> archives the original save before replacing it. If only undo history is damaged, recovery keeps the saved travelers and clears undo history. Otherwise it starts an empty save. Export any visible unsaved work first. Recovery stops if storage changed, archival fails, or the replacement write fails. You can copy or download the single local archive from <strong>Back up / restore</strong>. If a different archive is already present, save it externally and explicitly remove the local archive before recovering again.</li>
 <li>Backup imports validate the app/edition/schema, field types, limits, condition names, technique names, and unique IDs before use. Imports add separate copies and preserve existing travelers. Maximum 12 stored travelers and 8 MiB of UTF-8 JSON per export/import. Files and pasted text use the same size rule, large enough for the schema’s maximum supported records; remove an unused traveler only after exporting anything worth keeping.</li>
 <li>Journal text and imported strings render as text, never executable HTML. There is no automatic external transmission of character data.</li>
 </ul>
@@ -2184,14 +2357,15 @@ python3 -m http.server 8765 --bind 127.0.0.1
 <p>The generated <code>player/rules.js</code> comes from <code>seed.md</code>, <code>02_character_backgrounds.md</code>, and <code>docs/PREGENS.md</code>; editing those sources requires rebuilding it. The game remains v0.10; the app's save format is version 1. For an app asset update, bump <code>BUILD</code> in <code>player/sw.js</code>; an already-open session keeps its existing worker until all its windows close. Saves use a separate key and are not erased by an app-cache update. Recheck offline loading after updating.</p>
 <p>Targeted checks:</p>
 <pre><code class="language-sh">python3 tools/build_player_rules.py --check
-node --test tests/player.test.cjs tests/player-offline.test.cjs
+node --test tests/player.test.cjs tests/player-offline.test.cjs tests/storage-recovery.test.cjs
 </code></pre>
 <p>A deployment ZIP can be rebuilt with <code>python3 tools/package_player.py</code>. It contains the static app and its instructions, with no character saves. Upload/extract only when hosting is explicitly authorized.</p>
 <h2 id="docs-PLAYER_APP-md--verification-boundary">Verification boundary</h2>
-<p>See <a href="#docs-VERIFICATION-md">local verification</a> for actual checks. Node tests exercise the real character model and storage adapter with injected storage failures, plus the service worker with an in-memory Cache API. They do not certify iPad Safari, Home Screen installation, Files download/import, real browser quotas, or a complete offline device session. Run the six iPad steps above before relying on it for a game night.</p>
-</article><article id="docs-sheets-character_sheet-md" data-packet="full"><p class="source">docs/sheets/character_sheet.md</p><h1 id="docs-sheets-character_sheet-md--character-sheet--v010">Character sheet — v0.10</h1>
+<p>See <a href="#docs-VERIFICATION-md">local verification</a> for actual checks. Node tests exercise the character model, storage adapter, recovery controls with simulated DOM events, and the service worker with an in-memory Cache API. iPad Safari, Home Screen installation, Files download/import, actual storage quotas, and a complete offline session require the six preload steps above on the device you plan to use.</p>
+</article><article id="docs-sheets-character_sheet-md" data-packet="tonight"><p class="source">docs/sheets/character_sheet.md</p><h1 id="docs-sheets-character_sheet-md--character-sheet--v010">Character sheet — v0.10</h1>
 <p><em>Who you are, what you promised, and what it is costing you today.</em></p>
 <p>Name: __________ Player: __________ Role: __________ Background: __________</p>
+<p>Write the score and modifier in each ability box.</p>
 <table>
 <thead>
 <tr>
@@ -2205,7 +2379,7 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 </thead>
 <tbody>
 <tr>
-<td>Score / modifier:</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2214,50 +2388,50 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 </tr>
 </tbody>
 </table>
-<p>Max HP (8 + CON): ____ Current: ____ Exhaustion: ____ Gained today? [ ]</p>
+<p>Max HP (8 + CON modifier): ____ Current: ____ Exhaustion: ____ Gained today? [ ]</p>
 <p>Wound: [ ] Healthy [ ] Wounded [ ] Gravely Injured [ ] Dead</p>
 <p>At 0 HP, one damage instance advances one step; a later hit at 0 also advances. Healing HP does not clear wound state. Ordinary stabilization uses an action, restores 1 HP. Fed Rest: 1d4+1 HP, −1 Exhaustion, CON DC 10 to improve one wound step.</p>
+<p><strong>Exhaustion</strong> · <strong>1</strong> −1 on checks. <strong>2</strong> Physical Disadvantage replaces −1. <strong>3</strong> Disadvantage on all checks, cannot cancel. <strong>4</strong> Max HP halved, round up. <strong>5</strong> Incapacitated. <strong>6</strong> Death.</p>
 <table>
 <thead>
 <tr>
-<th>Exhaustion</th>
-<th>Effect</th>
+<th>Active condition</th>
+<th>DC</th>
+<th>Marks left</th>
+<th>Damage starts</th>
+<th>Today's treatment/effect</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>−1 checks</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>Physical Disadvantage replaces −1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>3</td>
-<td>All checks Disadvantage, cannot cancel</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Max HP halved, round up</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Incapacitated</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Death</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p>Condition: __________ DC: ____ Marks left: ____ Damage starts: ____</p>
-<p>Today's treatment/effect: __________ Recovery rolls ignore condition/Exhaustion/Morale penalties.</p>
+<p>Condition recovery rolls ignore condition, Exhaustion, and Morale penalties.</p>
 <p>Inspiration held? [ ] Personal-stakes award used this session? [ ]</p>
-<p>Dream — I am going to Oregon because: ____________________</p>
-<p>Promise — I promised this person this specific thing: ____________________</p>
-<p>Boundary — I will not sacrifice: ____________________</p>
-<p>Bond — agreed connection with another PC: ____________________</p>
+<p>Dream — I am going to Oregon because: ____________________________________________</p>
+<p>Promise — I promised this person this specific thing: __________________________________</p>
+<p>Boundary — I will not sacrifice: ___________________________________________________</p>
+<p>Bond — agreed connection with another PC: __________________________________________</p>
 <p>Keepsake: __________ Personal cargo bundle: __________</p>
 <p>Reliable expertise (copy): ____________________</p>
 <p>Intervention and cost (copy): ____________________ Uses marked: __________</p>
@@ -2271,6 +2445,7 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <p><em>Everything the four of you own, and how much of it is left.</em></p>
 <h2 id="docs-sheets-party_wagon_sheet-md--next-decision--keep-this-visible">Next decision — keep this visible</h2>
 <p>Problem / person who owns the first response: ____________________</p>
+<p>At the river, show the <a href="#docs-sheets-river_decision_card-md">decision card</a>. Use this space for changed quotes and player proposals.</p>
 <table>
 <thead>
 <tr>
@@ -2570,7 +2745,8 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <p>Decision → immediate change → next appearance: ____________________</p>
 <p>Daily order: reveal → choose → event if due → action → supplies/effects → condition recovery → Rest recovery → watch/conversation → advance date. Treat before condition damage if declared. At most 1 new Exhaustion/person/day. Fresh batch expires after acquisition date +3 evening. Keep the <a href="#docs-sheets-travel_procedure-md">travel procedure card</a> ready for order of resolution and pause/resume checkpoints.</p>
 <h2 id="docs-sheets-trail_log-md--pause--resume">Pause / resume</h2>
-<p>Current date/marker: ____ Weather/days left: ____ Today's event already rolled? ____</p>
+<p>Last day fully closed ____ Next date to play / marker ____ Weather / days left ____</p>
+<p>If paused mid-day, mark steps already done: [ ] event or scene [ ] costs [ ] recovery [ ] camp and watch</p>
 <p>Leg days already resolved / still unspent: ____ Next scene/refuge: ____</p>
 <p>Current decision / visible options / person yet to speak: ____________________</p>
 <p>Unpaid costs / remaining delay days / can Rest?: ____________________</p>
@@ -2578,13 +2754,13 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <p>Next expiry / shortage / deadline: ____________________</p>
 <p>Wagon state current? [ ] People promises current? [ ] Next session's first question: ____</p>
 </article><article id="docs-sheets-travel_procedure-md" data-packet="tonight"><p class="source">docs/sheets/travel_procedure.md</p><h1 id="docs-sheets-travel_procedure-md--travel-procedure--v010">Travel procedure — v0.10</h1>
-<p>A table card for <a href="#seed-md">core rules</a>. Keep totals on the wagon sheet and decisions on the trail log. This card summarizes the core; scene-specific exceptions still apply.</p>
+<p>Keep totals on the wagon sheet and decisions on the trail log. Use the <a href="#seed-md">core rules</a> and any printed scene exception.</p>
 <h2 id="docs-sheets-travel_procedure-md--before-advancing-time">Before advancing time</h2>
 <ol>
-<li><strong>Show the next decision.</strong> Name the destination/scene marker, visible danger, next safe water source, and any deadline. Read the current date, weather and days remaining, usable teams, able travelers, and travelers at Exhaustion 2+.</li>
-<li><strong>Choose the action.</strong> Travel, Hunt, Repair, Trade, or Rest. For Travel choose a stance. Use a three-day leg only while no known obstacle requires a Focus Day. A short leg ending at a scene or marker is allowed.</li>
-<li><strong>Mark the earliest checkpoint.</strong> Scene/marker; weather change; fresh-food expiry; shortage; condition damage/recovery; changing ability effect; or a player's requested decision. Write its date or marker in the wagon panel. Never prepay beyond it.</li>
-<li><strong>Attach the event.</strong> One event on the first day of a leg, even a short leg. Prepared scene replaces it. Fort and existing-delay days add none. A checkpoint or extra log row does not add an event; an obstacle that ends the leg means a new leg afterward. Keep an already rolled event if the plan changes.</li>
+<li><strong>Show the decision.</strong> Name the destination, danger, next safe water, and deadline. Read date, weather and days left, usable teams, able travelers, and anyone at Exhaustion 2+.</li>
+<li><strong>Choose Travel, Hunt, Repair, Trade, or Rest.</strong> Choose a stance for Travel. Use a three-day leg unless an obstacle calls for a Focus Day. A leg can end early at a scene or marker.</li>
+<li><strong>Mark the earliest checkpoint.</strong> Note the first scene, weather change, food expiry, shortage, health or ability change, or requested decision. Write its date or marker on the wagon sheet.</li>
+<li><strong>Attach one event to the first day of the leg, even a short leg.</strong> A prepared scene replaces it. Forts and existing delays add none. Keep a rolled event through a plan change or split log row. Start a new leg after an obstacle ends the current one.</li>
 </ol>
 <h2 id="docs-sheets-travel_procedure-md--resolve-through-the-checkpoint">Resolve through the checkpoint</h2>
 <table>
@@ -2598,79 +2774,138 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <tbody>
 <tr>
 <td>Reveal</td>
-<td>Apply today's weather and disclosed danger. Reroll weather every three calendar days and on chapter entry; restart its count.</td>
-<td>New weather changes a plan, exposure, water cost, or speed.</td>
+<td>Apply weather and disclose danger. Reroll every three calendar days and on chapter entry. Restart the span.</td>
+<td>Recalculate water, speed, and exposure when weather changes.</td>
 </tr>
 <tr>
-<td>Choose / event / act</td>
-<td>Confirm action and stance; resolve the attached event, then the action if compatible. Hunt/forage yields can feed people today.</td>
-<td>An obstacle or event changes the action or causes a crisis. Resolve today, then leave unused leg days unspent.</td>
+<td>Choose / act</td>
+<td>Confirm action and stance. Resolve the event, then take the action if compatible. Hunt or forage can feed people today.</td>
+<td>If interrupted, finish today. Leave unused leg days unspent.</td>
 </tr>
 <tr>
 <td>Pay and apply</td>
-<td>Pay today's actual food/water. Apply travel strain, weather, and condition effects. Declare treatment before condition damage.</td>
-<td>A ration/source is insufficient, a team becomes unusable, or health changes. Apply the printed consequences; gain at most one Exhaustion per traveler/day.</td>
+<td>Pay food and tracked water. Apply strain, weather, and condition effects. Declare treatment before damage.</td>
+<td>Resolve shortages, unusable teams, or health changes. Gain at most one Exhaustion per traveler per day.</td>
 </tr>
 <tr>
 <td>Recover</td>
-<td>Make each active condition's recovery check. On Rest, then heal HP, remove Exhaustion, and check wound recovery for fed travelers.</td>
-<td>Recovery changes tomorrow's speed, care, or ability to act. Doctor Stabilize replaces that condition's check.</td>
+<td>Roll for each active condition. Doctor Stabilize replaces its target's check. On Rest, apply healing, Exhaustion recovery, and fed wound checks.</td>
+<td>Recalculate tomorrow's speed and care after recovery.</td>
 </tr>
 <tr>
 <td>Close</td>
-<td>Resolve expiry after the evening, watch/camp, and advance date once. Mark elapsed weather days.</td>
-<td>A marker, deadline, or requested decision has arrived. Carry no surplus miles past a scene or fort.</td>
+<td>Hold camp and watch, resolve evening expiry, and advance the date once. Mark weather days used.</td>
+<td>Stop at a marker, fort, deadline, or requested decision. Carry no surplus miles past a scene or fort.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Batch only identical arithmetic.</strong> A healthy Standard day with two usable teams, no modifying weather, and no party Exhaustion penalty is 18 miles and 4 lbs food. Three unchanged days are 54 miles and 12 lbs. Track water only when required. Roll the leg's event before assuming this uninterrupted result; an event can change the forecast.</p>
-<p><strong>Changing health stays daily.</strong> If a traveler has dysentery, apply that day's treatment/damage and recovery before deciding the next day's care and speed. If two travelers began at Exhaustion 2+, a fed Rest Day can change the next day's party speed. Never apply a later recovery backward to earlier miles or charge days the party has not taken.</p>
-<h2 id="docs-sheets-travel_procedure-md--hand-the-table-a-decision">Hand the table a decision</h2>
-<p>Say: “At our current pace, the next checkpoint is ____ on ____. Until then the expected cost is ____. We stop earlier if ____.” This is a forecast, not a guarantee against the disclosed event or changing health.</p>
-<p>At a stop, update only changed wagon totals. Log date range, actual miles, resource change, choice → consequence → next appearance. Recalculate the next checkpoint before continuing. Ordinary conversation does not require an extra day or event.</p>
+<p><strong>Batch only identical arithmetic.</strong> With two usable teams, healthy travelers, and unchanged clear weather, three Standard days are 54 miles and 12 lbs food. Roll the event first and track water where required. Resolve changing health daily. Apply new speed only to the days it affects.</p>
 <h2 id="docs-sheets-travel_procedure-md--pause-and-resume">Pause and resume</h2>
-<p>Before ending play record: current date/marker; whether today's costs/recovery are complete; weather days remaining; any unresolved event/delay; and the next decision. Resume from that point. Do not roll the same day's event or pay the same day's costs twice.</p>
+<p>Tell the table the next checkpoint, expected cost, and what could stop the leg sooner. Ordinary conversation uses the current day and event. Record actual dates, miles, resource changes, and choice → consequence → next appearance.</p>
+<p>Write the next playable date and marker, weather days left, unresolved events or delays, and next decision on the <a href="#docs-sheets-trail_log-md">trail log</a>. Mark completed steps if paused mid-day. Resume with the first unfinished step.</p>
 </article><article id="docs-sheets-playtest_observer-md" data-packet="tonight"><p class="source">docs/sheets/playtest_observer.md</p><h1 id="docs-sheets-playtest_observer-md--river-playtest--quick-observation-sheet">River playtest — quick observation sheet</h1>
-<p>Edition/build: ____ Date: ____ GM: ____ Players / prior RPG experience: ____</p>
-<p>Use the exact <a href="#docs-RIVER_CHAPTER-md">river starting snapshot</a>. Keep this sheet beside the GM; an optional observer can hold it. If the GM is alone, make brief ticks and fill gaps during the debrief. Mark unknowns rather than interrupting play to reconstruct them. Full follow-up questions: <a href="#docs-PLAYTEST-md">Playtest</a>.</p>
-<h2 id="docs-sheets-playtest_observer-md--during-play--only-three-things-to-track">During play — only three things to track</h2>
+<p>Edition/build __________ Date __________ GM __________________</p>
+<p>Players / RPG experience _______________________________________________</p>
+<p>Use the exact <a href="#docs-RIVER_CHAPTER-md">river starting snapshot</a>. The GM or an observer can make brief ticks. Leave unknowns for debrief. See <a href="#docs-PLAYTEST-md">Playtest</a> for follow-up questions.</p>
+<h2 id="docs-sheets-playtest_observer-md--during-play">During play</h2>
 <table>
 <thead>
 <tr>
 <th>Observation</th>
-<th>Record</th>
+<th>Ticks or notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>First consequential decision</td>
-<td>Explanation begins ____ First choice ____ (target: within 15 minutes)</td>
+<td>First consequential choice</td>
+<td>Start __________ Choice __________ (target 15 min)</td>
 </tr>
 <tr>
 <td>Rules interruptions</td>
-<td>Tick each lookup; note rule/page and rough duration only when easy: ____</td>
+<td></td>
 </tr>
 <tr>
-<td>Participation gaps</td>
-<td>Note a traveler waiting without a meaningful choice, and how/when they rejoined: ____</td>
+<td>Participation gaps / how they rejoined</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p>A quiet player can be participating. Passing a prompt is allowed. Count a choice that changes an outcome; merely rolling an assigned check is not the whole measure.</p>
+<p>Passing a prompt is fine. Record choices that change an outcome and any stretch where someone is waiting for a choice.</p>
 <h2 id="docs-sheets-playtest_observer-md--at-the-stopping-point">At the stopping point</h2>
-<p>Final date/marker ____ Crossing approach ____ Stopped at far bank / Laramie / other ____</p>
-<p>Use the wagon sheet and character sheets for final resources and health; do not copy them here. Write the resume point on the trail log. Techniques are earned at Laramie, not merely on crossing or ending the session.</p>
-<h2 id="docs-sheets-playtest_observer-md--five-minute-debrief--answer-before-discussing-revisions">Five-minute debrief — answer before discussing revisions</h2>
-<ul>
-<li>What price or consequence was unclear before you chose? ____</li>
-<li>Each traveler: what choice did you own, and what changed because of it? Eliza ____ Thomas ____ Cal ____ Mae ____ (use custom names if needed).</li>
-<li>Was Mara's meeting accepted, replaced, or declined? ____ Did the deadline affect the route? ____ If it did not, what made the crossing choice matter? ____</li>
-<li>Which stretch felt like bookkeeping or waiting? ____ Which person or moment do you remember without looking at the packet? ____</li>
-<li>Would you play the next chapter? Why? ____ Optional private 1–10 rating afterward; do not announce a target score.</li>
-</ul>
+<p>Last day fully closed __________ Next date to play / marker __________</p>
+<p>Crossing approach __________________ Stop: far bank / Laramie / other __________</p>
+<p>Keep totals on the wagon and character sheets and the resume point on the trail log. Award techniques at Laramie.</p>
+<h2 id="docs-sheets-playtest_observer-md--five-minute-debrief">Five-minute debrief</h2>
+<table>
+<thead>
+<tr>
+<th>Traveler or prompt</th>
+<th>What the player said</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guide / Eliza's choice and effect</td>
+<td></td>
+</tr>
+<tr>
+<td>Doctor / Thomas's choice and effect</td>
+<td></td>
+</tr>
+<tr>
+<td>Hunter / Cal's choice and effect</td>
+<td></td>
+</tr>
+<tr>
+<td>Teamster / Mae's choice and effect</td>
+<td></td>
+</tr>
+<tr>
+<td>Unclear price or consequence</td>
+<td></td>
+</tr>
+<tr>
+<td>Mara's meeting / what shaped the route</td>
+<td></td>
+</tr>
+<tr>
+<td>Waiting or bookkeeping / memorable moment</td>
+<td></td>
+</tr>
+<tr>
+<td>Play the next chapter? Why?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Use custom names. Keep disagreements visible. An optional private rating follows debrief.</p>
 <h2 id="docs-sheets-playtest_observer-md--one-useful-revision">One useful revision</h2>
-<p><strong>Observed:</strong> ____ <strong>Our interpretation:</strong> ____ <strong>Smallest candidate change:</strong> ____ <strong>Later retest/result:</strong> ____</p>
-<p>Keep disagreements and excluded-player experiences visible. A fast unanimous choice is not a failure. These notes are observations, not proof of overall balance or a required emotional response.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What happened</td>
+<td></td>
+</tr>
+<tr>
+<td>What it might mean</td>
+<td></td>
+</tr>
+<tr>
+<td>Smallest change to try</td>
+<td></td>
+</tr>
+<tr>
+<td>Later retest and result</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </article><article id="docs-sheets-fort_trading_sheet-md" data-packet="full"><p class="source">docs/sheets/fort_trading_sheet.md</p><h1 id="docs-sheets-fort_trading_sheet-md--fort-visit--v010">Fort visit — v0.10</h1>
 <p><em>A day behind walls: what it stocks, what it costs, and what the trader wants from you.</em></p>
 <p>Fort: ____ Marker: ____ Date: ____ Multiplier: ____ Bargain DC: ____</p>
@@ -2939,7 +3174,7 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <h2 id="docs-PLAYTEST-md--first-test-the-river-as-written">First test: the river, as written</h2>
 <p>Use the <a href="#docs-sheets-playtest_observer-md">quick observation sheet</a> for the first table. During play track only time to first consequential choice, rules interruptions, and participation gaps. An observer can take those notes; without one, the GM uses brief ticks and marks missing data unknown. Capture route/deadline response and each player’s owned choice in the five-minute debrief. Final state stays on the existing wagon and character sheets.</p>
 <p>The detailed table below is a follow-up research form, not a requirement to monitor every measure live. Estimate accounting time afterward unless someone else can time it without interrupting play.</p>
-<p>Use one GM, four pregens, and the exact river starting snapshot. Target 2–3 hours including debrief; record actual time and ending. End at the far-bank camp if needed. Use the new Next decision panel on the wagon sheet. Explain the ferry/work/ford/rope options and Nessa's announced departure before commitment. Let players reject personal hooks; do not coach them toward the intended dilemma.</p>
+<p>Use one GM, four pregens, and the exact river starting snapshot. Target 2–3 hours including debrief and record actual time and ending. End at the far-bank camp if needed. Read the four offers, the optional scouting day, and Nessa's announced departure from the <a href="#docs-sheets-river_decision_card-md">river decision card</a> before commitment. Use the wagon sheet's Next decision panel to record any new quote or change in conditions. Let players decline personal hooks and choose the crossing they prefer.</p>
 <p>Do not change supply amounts or damage mid-test to force tension. Record any necessary house ruling, including the reason and what changed. Table safety changes remain available at any time without a mechanical charge.</p>
 <table>
 <thead>
@@ -2970,7 +3205,7 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <td></td>
 </tr>
 <tr>
-<td>Third approach proposed / quoted costs / result</td>
+<td>Player-proposed approach / quoted costs / result</td>
 <td></td>
 </tr>
 <tr>
@@ -3115,6 +3350,12 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <td>Desert and campaign pending</td>
 </tr>
 <tr>
+<td>Book-use timing, Ada's recovery modifier, and the resume date needed rulings</td>
+<td>November 12 solo dry run</td>
+<td>Move the short lesson before departure, print Ada's modifier, and name both dates on the log</td>
+<td>Replay of the recorded rolls and a scripted failed-ford fallback</td>
+</tr>
+<tr>
 <td></td>
 <td></td>
 <td></td>
@@ -3122,6 +3363,41 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 </tr>
 </tbody>
 </table>
+<h2 id="docs-PLAYTEST-md--november-12-2026-solo-dry-run">November 12, 2026 solo dry run</h2>
+<p><strong>Edition:</strong> v0.10 Play tonight packet, exact standalone snapshot. One simulated table controlled all four pregens. Hopeful hardship, June 2, marker 340. The ford and treatment dice below were rolled after choosing the plan. The quick observation sheet guided the run. Human timing, participation, preference, and ratings remain open.</p>
+<h3 id="docs-PLAYTEST-md--during-play">During play</h3>
+<table>
+<thead>
+<tr>
+<th>Observation</th>
+<th>Record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First consequential decision</td>
+<td>After reading the offers and dawn June 4 deadline, the four-voice council chose the immediate ford. It left cash and parts available and gave Mae a chance to meet Mara that night. The party agreed that on a partial crossing it would lose a part before volunteering anyone for harm. Human elapsed time unknown.</td>
+</tr>
+<tr>
+<td>Rules interruptions</td>
+<td>The queue lesson was written for tonight, after a day-one crossing would take Eliza away. Ada's recovery modifier was absent. At the close, the observation sheet's final-date field could mean either the day played or the next date.</td>
+</tr>
+<tr>
+<td>Participation gaps</td>
+<td>No traveler lost an active slot in the simulation. All four had a decision. Time without meaningful participation needs observation at a real table.</td>
+</tr>
+</tbody>
+</table>
+<p>Thomas treated Ada with a roll of 16 + 2 = 18 against DC 10 and spent one medicine. Her ongoing damage still rounded up to 1 HP. Her recovery dice with Advantage were 1 and 3. Using CON +0, she ended at 5/9 HP with three marks, with her own caretaker. The ford rolls were Eliza WIS 12 + 2 = 14, Thomas WIS 14 + 1 = 15, Cal DEX 14 + 2 = 16, and Mae DEX 6 + 1 = 7 after spending Inspiration and taking the higher of 6 and 2. Three successes meant full passage.</p>
+<h3 id="docs-PLAYTEST-md--at-the-stopping-point">At the stopping point</h3>
+<p><strong>June 2 closed, June 3 next at marker 358.</strong> Two days of Clear and Mild remain. The crossing used 4 lbs of cured food. The wagon has 136 lbs cured, no fresh food, 60/60 gallons with water untracked here, 3 medicine, 40 ammunition, 2 parts, $25, wagon 22/30, three teams at 8/10, both personal bundles, and Morale 6. All four travelers are at 9/9 HP with no wounds, Exhaustion, or techniques. Mae spent her Inspiration. Begin next time by choosing the first road leg or a far-bank Rest Day.</p>
+<h3 id="docs-PLAYTEST-md--debrief">Debrief</h3>
+<ul>
+<li><strong>Owned choices.</strong> Eliza let Mercy use a book briefly at the queue and packed it before leaving. Thomas spent medicine on Ada and handed care back to her party. Cal kept the food reserve and chose cargo over injury if the ford went partly wrong. Mae spent Inspiration to try for the early meeting and proposed workshop terms when she got there.</li>
+<li><strong>Deadline and agreement.</strong> Mae took the meeting. In the solo scene she offered to lead repairs while Mara handled scheduling and buying, with both approving new purchases. Record the proposed division for the Valley. Mercy still needs to sell books for passage. The party earned no river report on this run.</li>
+<li><strong>Bookkeeping and memory.</strong> The handoff from the crossing evening to the next playable morning was the only closeout ambiguity. At camp Cal tried to teach the others to whistle through a reed. Human reactions and willingness to continue remain open.</li>
+<li><strong>Replay.</strong> The revised text resolves the queue lesson and Ada's check with the same rolls and distinguishes the two dates on the log. An independent scripted branch failed the ford June 2, finished ramp work June 4, waited through June 5–7 thunderstorms, and took the ferry in showers June 8. It reached marker 358 with 110 lbs cured food, $24 after a letter, and two weather days remaining on June 9. It earned Mercy's report and missed the in-person meeting. The scripted branch checks the fallback procedure. It gives no frequency or balance evidence.</li>
+</ul>
 </article><article id="docs-HISTORY-md" data-packet="full"><p class="source">docs/HISTORY.md</p><h1 id="docs-HISTORY-md--historical-framing-and-sources">Historical framing and sources</h1>
 <p>Version 0.10. Source check: September 25, 2026. This is a fictional survival game situated in 1848. It is not a reenactment, curriculum, medical guide, or claim of Indigenous consultation.</p>
 <h2 id="docs-HISTORY-md--what-is-researched-and-what-is-invented">What is researched, and what is invented</h2>
@@ -3194,7 +3470,7 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 </tr>
 </tbody>
 </table>
-<p>The September 26 readiness pass also reconciles river advancement, adds an 11-section Play tonight print selection and a short observation form, and repairs backup-size and Undo behavior. The October 3 pass adds the local Hugo game website (<code>./trail</code>) and the browser-saved Trailmaster wagon ledger with Web Locks concurrency control. Those local improvements are not an observed player score.</p>
+<p>The September 26 readiness pass also reconciles river advancement, adds an 11-section Play tonight print selection and a short observation form, and repairs backup-size and Undo behavior. The October 3 pass adds the local Hugo game website (<code>./trail</code>) and the browser-saved Trailmaster wagon ledger with Web Locks concurrency control. The November 12 pass introduces the dedicated river decision card with four crossing offers, optional scouting, and Trailmaster reference, expands Play tonight to 13 sections with a blank character sheet and reference display persistence, strengthens player storage recovery with raw exports and damaged-save preservation, and hardens the Trailmaster ledger with draft persistence across refresh and serialized undo. Those local improvements are not an observed player score.</p>
 <p>Next: one river table, revision from its observations, independent GM, desert stress test, finale, then full campaign. Specialist historical/Indigenous review remains pending; limited regional sourcing is documented in History. The separately requested <a href="#docs-PLAYER_APP-md">player companion</a> and game website &amp; ledger (<code>website/README.md</code>) are implemented locally; hosting and device acceptance remain pending. Shared-party synchronization, an expanded campaign, and numerical rebalance are not required before those observations.</p>
 </article><article id="roadmap-md" data-packet="full"><p class="source">roadmap.md</p><h1 id="roadmap-md--oregon-trail-rpg--project-roadmap">Oregon Trail RPG — Project Roadmap</h1>
 <p>The current artifact is <strong>v0.10, a revised playtest edition</strong>. Its content is implemented; table fun, duration, balance, and historical portrayal have not been certified. Local file checks establish only their recorded scope.</p>
@@ -3209,17 +3485,17 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <tbody>
 <tr>
 <td>Playable revision</td>
-<td>Revised river choice, seven varied chapters, personal opportunities and returns, independent NPC plans, four new technique options, simpler sheets, rebuilt handbook with subsection navigation and &quot;Play tonight&quot; selection, travel procedure card, and quick observation sheet</td>
+<td>Revised river choice, seven varied chapters, personal opportunities and returns, independent NPC plans, four new technique options, simpler sheets, river decision card with four crossing offers and Trailmaster reference, rebuilt handbook with subsection navigation and 13-section &quot;Play tonight&quot; selection, travel procedure card, and quick observation sheet</td>
 <td>Implemented; see verification</td>
 </tr>
 <tr>
 <td>Player companion</td>
-<td>Static offline character sheet app, manuscript rules generator, local storage with bounded labeled undo, 8 MiB shared UTF-8 import/export limits, and packaging</td>
+<td>Static offline character sheet app, manuscript rules generator, local storage with bounded labeled undo, raw recovery exports and damaged-save preservation, 8 MiB shared UTF-8 import/export limits, and packaging</td>
 <td>Implemented locally; HTTPS hosting and iPad device acceptance pending</td>
 </tr>
 <tr>
 <td>Local game website &amp; Trailmaster ledger</td>
-<td>Local Hugo site (<code>./trail</code>), illustrated cover and camp scene, traveler showcase from pregens, handbook links, and browser-saved Trailmaster ledger with day-close calculations and Web Locks concurrency control</td>
+<td>Local Hugo site (<code>./trail</code>), illustrated cover and camp scene, traveler showcase from pregens, handbook links, and browser-saved Trailmaster ledger with day-close calculations, draft persistence, and Web Locks concurrency control</td>
 <td>Implemented locally; see website/README.md and verification</td>
 </tr>
 <tr>
@@ -3263,8 +3539,14 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <p>The $800 budget, $550 starter purchases, $250 remaining cash, 700 lbs food, 60-gallon capacity, ability arrays, base DCs, and damage values remain the baseline. New scene prices and technique options are identified as v0.10 design changes. No “optimal loadout,” proven internal consistency, or player score is established by document checks.</p>
 <p>Use the <a href="#docs-PLAYTEST-md">playtest protocol</a> one session at a time. Do not reduce food because the premise sounds harsher than a calculation, or increase damage because a prepared group crossed safely. Identify which decisions were missing and which values caused that outcome first.</p>
 <h2 id="roadmap-md--production-scope">Production scope</h2>
-<p>Use the <a href="#reading">single-file handbook</a>, existing sheets, and <a href="#docs-QUICKSTART-md">quickstart</a> as the review surface. A bounded player companion is now implemented at Ryan's request: local character sheets, offline caching, bounded labeled undo, and 8 MiB backup/import. In addition, a local game website and Trailmaster ledger are implemented locally via <code>./trail</code>: local Hugo site, original cover and camp artwork, pregen showcase, and browser-saved wagon ledger with Web Locks storage protection and 2 MiB backup/import. HTTPS hosting and actual iPad acceptance remain pending. Shared-party synchronization, VTT integration, a procedural generator, and a larger campaign remain deferred. The next edition should answer evidence, not add features to hit a rating.</p>
+<p>Use the <a href="#reading">single-file handbook</a>, existing sheets, and <a href="#docs-QUICKSTART-md">quickstart</a> as the review surface. A bounded player companion is now implemented at Ryan's request: local character sheets, offline caching, bounded labeled undo, raw recovery exports, and 8 MiB backup/import. In addition, a local game website and Trailmaster ledger are implemented locally via <code>./trail</code>: local Hugo site, original cover and camp artwork, pregen showcase, and browser-saved wagon ledger with day draft preservation, Web Locks storage protection, and 2 MiB backup/import. The river packet includes a dedicated river decision card and 13-section Play tonight print selection. HTTPS hosting and actual iPad acceptance remain pending. Shared-party synchronization, VTT integration, a procedural generator, and a larger campaign remain deferred. The next edition should answer evidence, not add features to hit a rating.</p>
 </article><article id="CHANGELOG-md" data-packet="full"><p class="source">CHANGELOG.md</p><h1 id="CHANGELOG-md--change-record">Change record</h1>
+<h2 id="CHANGELOG-md--save-recovery-and-first-river-packet--november-12-2026">Save recovery and first river packet — November 12, 2026</h2>
+<ul>
+<li>Player recovery now distinguishes damaged storage from unavailable storage, preserves validated travelers when only Undo is damaged, and offers separate portable backups and raw recovery exports. An existing raw archive requires explicit removal before a different archive can replace it.</li>
+<li>Trailmaster keeps field drafts through delayed and conflicting saves, serializes Undo, and protects unfinished day entries and their route-marker defaults. Empty fresh-food slots clear their used expiry dates.</li>
+<li>The Play tonight packet now includes a river decision card with four crossings, optional scouting, the departure clock, and a Trailmaster reference. It includes a blank character sheet and keeps the print selection when an outside reference is open on screen. The starting supplies, crossing prices, and damage values follow v0.10.</li>
+</ul>
 <h2 id="CHANGELOG-md--local-game-website-and-trailmaster-ledger--october-3-2026">Local game website and Trailmaster ledger — October 3, 2026</h2>
 <p>Added a local Hugo site (<code>./trail</code>) and browser-saved Trailmaster ledger to support table play and shared party management alongside the single-player companion:</p>
 <ul>
@@ -3312,10 +3594,18 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <p>Existing uncommitted manuscript work was read before redesign. A pre-redesign local snapshot was retained outside the repository during this edit; no Git commit, push, or publication was performed.</p>
 <p><strong>Evidence:</strong> The playtest protocol lists what human testing still needs to establish. Local verification results are recorded in <a href="#docs-VERIFICATION-md">verification</a>.</p>
 </article><article id="docs-VERIFICATION-md" data-packet="full"><p class="source">docs/VERIFICATION.md</p><h1 id="docs-VERIFICATION-md--local-verification--v010">Local verification — v0.10</h1>
-<p>Updated October 3, 2026. This edition implements a manuscript critique and local play aids. Human play, specialist review, campaign balance, and player rating remain unmeasured.</p>
+<p>Updated November 12, 2026. Human play, specialist review, campaign balance, and player rating remain unmeasured.</p>
+<h2 id="docs-VERIFICATION-md--november-12-2026--save-recovery-and-first-river-packet">November 12, 2026 — save recovery and first river packet</h2>
+<ul>
+<li>A <a href="#docs-PLAYTEST-md--november-12-2026-solo-dry-run">solo river dry run</a> used Play tonight and the quick observation sheet. Replaying its recorded rolls and a scripted failed-ford, ramp, and storm branch checked day order, supplies, and the far-bank resume state. The table notes now settle the queue lesson, Ada's recovery roll, ferry fallbacks, and the two dates to record at the stop.</li>
+<li>Focused Node checks passed for player backup validation, archive and replacement failures, recovery from a running session, condition dates, and offline status. Trailmaster checks passed for delayed and competing writes, draft export, sequential Undo, fresh-food expiry, and stale day previews. Storage, DOM, and offline behavior were exercised with test doubles.</li>
+<li>The handbook builds 37 sections, with 13 in Play tonight. The short selection includes the river decision card, its Trailmaster reference, and the blank character sheet. A script check opens an outside reference and confirms that Play tonight remains selected for print. The card's four crossing quotes and scouting option were checked against the standalone start and ration rules.</li>
+<li>Chromium print previews on A4 and US Letter were checked for the one-page player decision card, four separate pregens, blank character sheet, travel procedure, and observation sheet. A preview with a full-handbook reference open produced the same short-packet pages. Physical printer output, iPad behavior, and first-table observations remain open.</li>
+<li>The packet build and check used locally cached <code>markdown-it-py</code> 4.0.0. The repository pins 3.0.0, which could not be fetched in this environment.</li>
+</ul>
 <h2 id="docs-VERIFICATION-md--october-3-2026--local-game-website-and-trailmaster-ledger">October 3, 2026 — local game website and Trailmaster ledger</h2>
 <ul>
-<li>The focused Trailmaster model and storage suite passed all 22 tests (<code>website/tests/trail-ledger.test.cjs</code>). Checks cover starter presets (river and full campaign), date progression, daily close calculations (earliest fresh food expiry, cured food consumption, miles and markers), Web Locks write concurrency protection, dirty-state preservation, quota and write failures, 2 MiB UTF-8 backup envelope export/import validation, corrupted save handling, and 10-step bounded undo across reloads.</li>
+<li>The October record describes a focused Trailmaster model and storage pass. The checked-in tests cover starter presets, day-close arithmetic, backup validation, competing writes, write failures, and undo across reloads (<code>website/tests/trail-ledger.test.cjs</code>).</li>
 <li>The static site builder (<code>hugo</code>) generated 8 HTML pages into <code>dist/site/</code> with mounts for the complete character companion (<code>player/</code>), generated single-file handbook (<code>docs/handbook.html</code>), and custom assets.</li>
 <li>The site integrity checker (<code>website/tests/check_site.py</code>) verified all local links, anchors, mounting integrity for player files and handbook, and the build-time extraction of all four pregenerated travelers from <code>docs/PREGENS.md</code>.</li>
 <li>Local launch command <code>./trail</code> binds strictly to <code>127.0.0.1:1313</code>. No external theme, analytics, fonts, CDN, backend, or cloud sync are used.</li>
@@ -3352,7 +3642,7 @@ node --test tests/player.test.cjs tests/player-offline.test.cjs
 <pre><code class="language-sh">python3 tools/build_handbook.py
 python3 tools/check_packet.py
 python3 tools/build_player_rules.py --check
-node --test tests/player.test.cjs tests/player-offline.test.cjs
+node --test tests/player.test.cjs tests/storage-recovery.test.cjs tests/player-offline.test.cjs
 node --test website/tests/trail-ledger.test.cjs
 hugo
 python3 website/tests/check_site.py
@@ -3372,8 +3662,10 @@ git diff --check
 <h2 id="docs-README-md--play-tonight">Play tonight</h2>
 <ul>
 <li><a href="#docs-QUICKSTART-md">Quickstart</a> — rules enough to start arguing about a river</li>
-<li><a href="#docs-RIVER_CHAPTER-md">The River Between — introductory adventure</a> — a posted price, a stranger short of it, and three ways across</li>
+<li><a href="#docs-RIVER_CHAPTER-md">The River Between — introductory adventure</a> — a posted price, a stranger short of it, and four crossing offers</li>
+<li><a href="#docs-sheets-river_decision_card-md">River decision card</a> — the prices, risks, and departure for players, with rest and weather procedures for the GM</li>
 <li><a href="#docs-PREGENS-md">Four pregenerated travelers</a> — filled in, ready, already carrying something</li>
+<li><a href="#docs-sheets-character_sheet-md">Character sheet</a> — printable traveler sheet with ability boxes and condition log</li>
 <li><a href="#docs-SESSION_ZERO-md">Session zero and boundaries</a> — the five minutes before the wagon leaves</li>
 <li><a href="#docs-sheets-playtest_observer-md">Quick observation sheet</a> — three live measures and a five-minute debrief</li>
 <li><a href="#docs-sheets-gm_reference-md">GM reference</a> — the shared procedures within reach</li>
@@ -3426,11 +3718,11 @@ git diff --check
 <h2 id="README-md--what-changed-in-v010">What changed in v0.10</h2>
 <p>The river now weighs a two-day labor agreement against a departing carrier and a personal meeting. Seven chapters carry individual opportunities into later consequences, vary their major scenes, and leave room for humor and pleasure. NPCs keep their own plans. Each role has a new technique option, while the table sheets reduce repeated transcription. Starter resources and basic danger values remain the baseline for testing. See <a href="#docs-UPDATE-IDEAS-md">revision status</a> for the full change-to-evidence map.</p>
 <h2 id="README-md--play-tonight">Play tonight</h2>
-<p>A wagon queue, a ferryman's posted price, and a schoolteacher counting coins she doesn't have enough of. Start with the <a href="#docs-QUICKSTART-md">quickstart</a>, hand out the <a href="#docs-PREGENS-md">four pregens</a>, and run <a href="#docs-RIVER_CHAPTER-md">The River Between</a> — a complete first chapter with starting supplies, three real ways across, honest consequences, and a way back from failure. The <a href="#docs-sheets-gm_reference-md">GM reference</a>, <a href="#docs-sheets-travel_procedure-md">travel procedure card</a>, <a href="#docs-sheets-playtest_observer-md">quick observation sheet</a>, and <a href="#docs-TRAIL_MAP-md">map</a> keep the table oriented.</p>
+<p>A wagon queue, a ferryman's posted price, and a schoolteacher counting coins she doesn't have enough of. Start with the <a href="#docs-QUICKSTART-md">quickstart</a>, hand out the <a href="#docs-PREGENS-md">four pregens</a>, and run <a href="#docs-RIVER_CHAPTER-md">The River Between</a>. Read all four crossing offers from the <a href="#docs-sheets-river_decision_card-md">river decision card</a>. It also gives the GM the procedures for rest, ramp labor, and weather. Use the <a href="#docs-sheets-playtest_observer-md">quick observation sheet</a> to record the first table's experience.</p>
 <h2 id="README-md--player-companion-for-ipad">Player companion for iPad</h2>
-<p>The <a href="#docs-PLAYER_APP-md">player app</a> provides local character saves, pregens, health and condition tracking, personal notes, bounded labeled undo, and 8 MiB backup/import. It can be installed from an HTTPS host for offline Home Screen use. Each device keeps its own sheets; shared wagon state stays with the table. Hosting and real-iPad acceptance remain separate steps. Rebuild the player rules from the manuscript with <code>python3 tools/build_player_rules.py</code> and package the static offline distribution with <code>python3 tools/package_player.py</code>.</p>
+<p>The <a href="#docs-PLAYER_APP-md">player app</a> provides local character saves, pregens, health and condition tracking, personal notes, bounded labeled undo, and 8 MiB backup/import. When stored data is damaged, recovery offers separate portable backups and raw exports while preserving valid travelers. It can be installed from an HTTPS host for offline Home Screen use. Each device keeps its own sheets; shared wagon state stays with the table. Hosting and real-iPad acceptance remain separate steps. Rebuild the player rules from the manuscript with <code>python3 tools/build_player_rules.py</code> and package the static offline distribution with <code>python3 tools/package_player.py</code>.</p>
 <h2 id="README-md--local-game-website">Local game website</h2>
-<p>Run <code>./trail</code> from this repository to open the Hugo site at <code>http://localhost:1313/</code>. It introduces the game and travelers, links the complete instructions and player sheets, and adds a browser-saved Trailmaster ledger for shared supplies, decisions, and daily records. The instructions have an illustrated cover and the site includes a companion camp scene. Setup, backup behavior, and source details are in <code>website/README.md</code>. Build locally with <code>hugo</code>; output goes to <code>dist/site/</code>. Nothing is published by starting or building the site.</p>
+<p>Run <code>./trail</code> from this repository to open the Hugo site at <code>http://localhost:1313/</code>. It introduces the game and travelers, links the complete instructions and player sheets, and adds a browser-saved Trailmaster ledger for shared supplies, decisions, and daily records with day draft preservation and Web Locks concurrency control. The instructions have an illustrated cover and the site includes a companion camp scene. Setup, backup behavior, and source details are in <code>website/README.md</code>. Build locally with <code>hugo</code>; output goes to <code>dist/site/</code>. Nothing is published by starting or building the site.</p>
 <h2 id="README-md--the-full-journey">The full journey</h2>
 <ul>
 <li><a href="#seed-md">Core rules</a> — how the road charges you, and what it cannot take</li>
@@ -3455,22 +3747,40 @@ git diff --check
 <h2 id="README-md--license-and-provenance">License and provenance</h2>
 <p>The repository's existing license declaration is retained: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Earlier drafts described their resolution mechanics as derived from the d20/5e SRD. This revision is not a legal provenance review; confirm any required third-party attribution before public distribution. No publication is part of this local playtest revision.</p>
 </article></main></div><footer>Generated from the Markdown packet. No network requests, accounts, or data collection. Rebuild with python3 tools/build_handbook.py.</footer><script>
+const tonight=document.getElementById('tonight');
+const complete=document.getElementById('complete');
+const selectionStatus=document.getElementById('selection-status');
+let screenReference=null;
 function setMode(mode){
   document.body.dataset.mode=mode;
-  document.getElementById('tonight').setAttribute('aria-pressed',String(mode==='tonight'));
-  document.getElementById('complete').setAttribute('aria-pressed',String(mode!=='tonight'));
-  document.getElementById('selection-status').textContent=mode==='tonight'
-    ?'Play tonight selected: river adventure, pregens, safety, map, references, sheets, and quick observations. Print uses this selection.'
-    :'Complete handbook selected. Print includes all sections, including development records.';
+  tonight.setAttribute('aria-pressed',String(mode==='tonight'));
+  complete.setAttribute('aria-pressed',String(mode==='full'));
+  revealHash();
 }
 function revealHash(){
-  const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));
-  if(target?.closest('article')?.dataset.packet==='full'&&document.body.dataset.mode==='tonight'){
-    setMode('full');target.scrollIntoView();
+  let fragment=location.hash.slice(1);
+  try{fragment=decodeURIComponent(fragment);}catch{}
+  const shortPacket=document.body.dataset.mode==='tonight';
+  const target=document.getElementById(fragment);
+  const article=target?.closest('article');
+  const reference=shortPacket&&article?.dataset.packet==='full'?article:null;
+  if(reference!==screenReference){
+    screenReference?.removeAttribute('data-reference');
+    screenReference=reference;
+    screenReference?.setAttribute('data-reference','');
   }
+  if(reference)target.scrollIntoView();
+  const message=shortPacket
+    ?(reference?'Reference open on screen. Printing still uses Play tonight.':'Play tonight selected. Print includes the river adventure, decision card, travelers, table sheets, and playtest notes.')
+    :'Complete handbook selected. Print includes all sections, including development records.';
+  if(selectionStatus.textContent!==message)selectionStatus.textContent=message;
 }
-document.getElementById('tonight').onclick=()=>{setMode('tonight');location.hash='reading';};
-document.getElementById('complete').onclick=()=>setMode('full');
-window.addEventListener('hashchange',revealHash);
-setMode('full');revealHash();
+tonight.onclick=()=>{location.hash='tonight';setMode('tonight');};
+complete.onclick=()=>{location.hash='complete';setMode('full');};
+window.addEventListener('hashchange',()=>{
+  if(location.hash==='#tonight')setMode('tonight');
+  else if(location.hash==='#complete')setMode('full');
+  else revealHash();
+});
+setMode(location.hash==='#tonight'?'tonight':'full');
 </script></body></html>

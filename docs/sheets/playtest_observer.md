@@ -1,35 +1,49 @@
 # River playtest — quick observation sheet
 
-Edition/build: ____ Date: ____ GM: ____ Players / prior RPG experience: ____
+Edition/build __________ Date __________ GM __________________
 
-Use the exact [river starting snapshot](../RIVER_CHAPTER.md). Keep this sheet beside the GM; an optional observer can hold it. If the GM is alone, make brief ticks and fill gaps during the debrief. Mark unknowns rather than interrupting play to reconstruct them. Full follow-up questions: [Playtest](../PLAYTEST.md).
+Players / RPG experience _______________________________________________
 
-## During play — only three things to track
+Use the exact [river starting snapshot](../RIVER_CHAPTER.md). The GM or an observer can make brief ticks. Leave unknowns for debrief. See [Playtest](../PLAYTEST.md) for follow-up questions.
 
-| Observation | Record |
+## During play
+
+| Observation | Ticks or notes |
 | --- | --- |
-| First consequential decision | Explanation begins ____ First choice ____ (target: within 15 minutes) |
-| Rules interruptions | Tick each lookup; note rule/page and rough duration only when easy: ____ |
-| Participation gaps | Note a traveler waiting without a meaningful choice, and how/when they rejoined: ____ |
+| First consequential choice | Start __________ Choice __________ (target 15 min) |
+| Rules interruptions | |
+| Participation gaps / how they rejoined | |
 
-A quiet player can be participating. Passing a prompt is allowed. Count a choice that changes an outcome; merely rolling an assigned check is not the whole measure.
+Passing a prompt is fine. Record choices that change an outcome and any stretch where someone is waiting for a choice.
 
 ## At the stopping point
 
-Final date/marker ____ Crossing approach ____ Stopped at far bank / Laramie / other ____
+Last day fully closed __________ Next date to play / marker __________
 
-Use the wagon sheet and character sheets for final resources and health; do not copy them here. Write the resume point on the trail log. Techniques are earned at Laramie, not merely on crossing or ending the session.
+Crossing approach __________________ Stop: far bank / Laramie / other __________
 
-## Five-minute debrief — answer before discussing revisions
+Keep totals on the wagon and character sheets and the resume point on the trail log. Award techniques at Laramie.
 
-- What price or consequence was unclear before you chose? ____
-- Each traveler: what choice did you own, and what changed because of it? Eliza ____ Thomas ____ Cal ____ Mae ____ (use custom names if needed).
-- Was Mara's meeting accepted, replaced, or declined? ____ Did the deadline affect the route? ____ If it did not, what made the crossing choice matter? ____
-- Which stretch felt like bookkeeping or waiting? ____ Which person or moment do you remember without looking at the packet? ____
-- Would you play the next chapter? Why? ____ Optional private 1–10 rating afterward; do not announce a target score.
+## Five-minute debrief
+
+| Traveler or prompt | What the player said |
+| --- | --- |
+| Guide / Eliza's choice and effect | |
+| Doctor / Thomas's choice and effect | |
+| Hunter / Cal's choice and effect | |
+| Teamster / Mae's choice and effect | |
+| Unclear price or consequence | |
+| Mara's meeting / what shaped the route | |
+| Waiting or bookkeeping / memorable moment | |
+| Play the next chapter? Why? | |
+
+Use custom names. Keep disagreements visible. An optional private rating follows debrief.
 
 ## One useful revision
 
-**Observed:** ____ **Our interpretation:** ____ **Smallest candidate change:** ____ **Later retest/result:** ____
-
-Keep disagreements and excluded-player experiences visible. A fast unanimous choice is not a failure. These notes are observations, not proof of overall balance or a required emotional response.
+| Step | Note |
+| --- | --- |
+| What happened | |
+| What it might mean | |
+| Smallest change to try | |
+| Later retest and result | |

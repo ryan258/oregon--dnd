@@ -35,17 +35,30 @@ for p in files:
             elif cells!=expected: errors.append(f'{p.name}: uneven table row')
 
 class Handbook(HTMLParser):
-    def __init__(self): super().__init__(); self.ids=[]; self.refs=[]; self.local=[]; self.articles=0
+    def __init__(self):
+        super().__init__()
+        self.ids=[]; self.refs=[]; self.local=[]; self.articles=0
+        self.short_sections=set()
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
         if 'id' in a: self.ids.append(a['id'])
-        if tag=='article': self.articles+=1
+        if tag=='article':
+            self.articles+=1
+            if a.get('data-packet')=='tonight':
+                self.short_sections.add(a['id'])
         if tag=='a':
             h=a.get('href','')
             if h.startswith('#'): self.refs.append(h[1:])
             elif h and not urlsplit(h).scheme: self.local.append(h)
 html=Handbook(); html.feed((ROOT/'docs/handbook.html').read_text())
 if len(html.ids)!=len(set(html.ids)): errors.append('handbook duplicate IDs')
+for section in ('docs-RIVER_CHAPTER-md', 'docs-PREGENS-md',
+                'docs-sheets-river_decision_card-md', 'docs-sheets-character_sheet-md',
+                'docs-sheets-playtest_observer-md'):
+    if section not in html.short_sections:
+        errors.append(f'Play tonight missing section: {section}')
+if 'docs-VERIFICATION-md' in html.short_sections:
+    errors.append('Play tonight includes development records')
 for h in html.refs:
     if h not in html.ids: errors.append(f'handbook missing anchor: {h}')
 for h in html.local:
@@ -74,7 +87,9 @@ if len(blocks)!=7: errors.append('expected7 chapter event blocks')
 for n,b in enumerate(blocks,1):
     rolls=re.findall(r'^\| ([1-6]) \|',b,re.M)
     if rolls!=list('123456'): errors.append(f'chapter{n} event roll coverage {rolls}')
-print(f'{len(files)} Markdown files; {links} local links; {html.articles} handbook sections; {len(html.refs)} handbook anchors; 4 pregens; 42 events; starter budget $550/$250.')
+print(f'{len(files)} Markdown files; {links} local links; {html.articles} handbook sections '
+      f'({len(html.short_sections)} in Play tonight); {len(html.refs)} handbook anchors; '
+      '4 pregens; 42 events; starter budget $550/$250.')
 if errors:
     print('\n'.join(errors)); sys.exit(1)
 print('PASS: bounded structure and printed arithmetic checks. No playtest/balance claim.')

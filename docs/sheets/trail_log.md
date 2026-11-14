@@ -16,7 +16,9 @@ Daily order: reveal → choose → event if due → action → supplies/effects 
 
 ## Pause / resume
 
-Current date/marker: ____ Weather/days left: ____ Today's event already rolled? ____
+Last day fully closed ____ Next date to play / marker ____ Weather / days left ____
+
+If paused mid-day, mark steps already done: [ ] event or scene [ ] costs [ ] recovery [ ] camp and watch
 
 Leg days already resolved / still unspent: ____ Next scene/refuge: ____
 
