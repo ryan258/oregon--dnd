@@ -121,7 +121,7 @@
     else if (state.morale <= 4) warnings.push('Morale 3–4: start the next camp conversation with a disagreement.');
     for (const n of [1, 2]) if (state[`fresh${n}`] && state[`fresh${n}Expiry`] <= state.date) warnings.push(`Fresh batch ${n}: ${state[`fresh${n}Expiry`] < state.date ? 'already expired; remove it before using supplies' : 'last edible day is today'}.`);
     if (state.waterTracked && state.water < 4) warnings.push('Less than 4 gallons remain. Check today’s actual weather, consumption, and next safe source.');
-    if (state.peopleCount !== 4) warnings.push('The day estimate buttons assume four travelers. Adjust food for everyone actually being fed.');
+    if (state.peopleCount !== 5) warnings.push('The day estimate buttons assume five travelers. Adjust food for everyone actually being fed.');
     $('warnings').replaceChildren(...warnings.map(message => { const li = document.createElement('li'); li.textContent = message; return li; }));
     $('team-summary').textContent = `${teams} usable tracked ox team${teams === 1 ? '' : 's'}. ${!teams || !state.wagon || state.ableCount < 2 ? 'Wagon travel is stopped.' : teams === 1 ? 'Ox speed modifier: ×0.75.' : 'Ox speed modifier: full speed.'} ${state.exhaustedCount >= 2 ? 'Two or more travelers at Exhaustion 2+: apply ×0.5 once.' : ''} Apply weather and scene effects, then round miles once, upward. Record additional teams in cargo notes and account for them manually.`;
     $('journal-count').textContent = `${state.log.length} daily entries. Showing the most recent 30; every entry stays in the backup.`;
@@ -366,7 +366,7 @@
   for (const button of document.querySelectorAll('[data-day]')) button.addEventListener('click', async () => {
     await queue;
     if (!readyForDay()) return;
-    const presets = {standard: ['Standard travel', 18, 4], rest: ['Rest', 0, 2], labor: ['River ramp labor (two workers, two resting)', 0, 3], crossing: ['River crossing', 18, 4], other: ['Other action', 0, 4]};
+    const presets = {standard: ['Standard travel', 18, 5], rest: ['Rest', 0, 2.5], labor: ['River ramp labor (two workers, three resting)', 0, 3.5], crossing: ['River crossing', 18, 5], other: ['Other action', 0, 5]};
     const [action, miles, food] = presets[button.dataset.day];
     const fill = () => {
       if (!readyForDay()) return;

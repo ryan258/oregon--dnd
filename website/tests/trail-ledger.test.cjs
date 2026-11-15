@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const M = require('../static/js/trail-model.js');
 
-const day = (overrides = {}) => ({action: 'Travel', miles: 18, to: 358, food: 4, water: 0, note: '', ...overrides});
+const day = (overrides = {}) => ({action: 'Travel', miles: 18, to: 358, food: 5, water: 0, note: '', ...overrides});
 test('starting snapshots match the campaign and standalone river loadouts', () => {
   const campaign = M.create('campaign'), river = M.create('river');
   assert.deepEqual([campaign.date, campaign.marker, campaign.morale, campaign.cured, campaign.money, campaign.wagon, campaign.medicine, campaign.ammo, campaign.parts], ['1848-04-20', 0, 7, 700, 250, 30, 7, 160, 3]);
@@ -15,20 +15,20 @@ test('daily close is a pure preview, advances once, and keeps actual miles separ
   const result = M.recordDay(original, day({miles: 40, to: 900}));
   assert.equal(original.marker, 790); assert.equal(original.cured, 700);
   assert.equal(result.state.date, '1848-04-21'); assert.equal(result.state.marker, 900);
-  assert.equal(result.row.miles, 40); assert.equal(result.state.cured, 696);
+  assert.equal(result.row.miles, 40); assert.equal(result.state.cured, 695);
 });
 test('fresh food is spent by expiry, then leftovers expire only after their last evening', () => {
   const state = M.create('river');
   Object.assign(state, {fresh1: 8, fresh1Expiry: '1848-06-05', fresh2: 10, fresh2Expiry: '1848-06-02'});
   const result = M.recordDay(state, day());
   assert.equal(result.state.cured, 140); assert.equal(result.state.fresh1, 8); assert.equal(result.state.fresh2, 0);
-  assert.equal(result.row.spoiled, 6);
+  assert.equal(result.row.spoiled, 5);
   assert.equal(result.state.fresh2Expiry, '');
   state.fresh2Expiry = '1848-06-01'; assert.throws(() => M.recordDay(state, day()), /already expired/);
 });
 test('an emptied batch requires a new expiry before accepting more fresh food', () => {
   const state = M.create('river');
-  Object.assign(state, {fresh1: 4, fresh1Expiry: '1848-06-03'});
+  Object.assign(state, {fresh1: 5, fresh1Expiry: '1848-06-03'});
   const next = M.recordDay(state, day()).state;
   assert.equal(next.fresh1, 0);
   assert.equal(next.fresh1Expiry, '');
@@ -83,7 +83,7 @@ function harness(initial = null, {quota = false, locks = true, session = new Map
     const button = get(`preset-${name}`); button.dataset.day = name; return button;
   });
   document.querySelectorAll = selector => ({'[data-field]': fields, '[data-day]': presets})[selector] || [];
-  get('day-action').value = 'Travel'; get('day-miles').value = '0'; get('day-food').value = '4'; get('day-water').value = '0';
+  get('day-action').value = 'Travel'; get('day-miles').value = '0'; get('day-food').value = '5'; get('day-water').value = '0';
   document.createElement = () => new Element();
   const window = {
     TrailLedger: M,

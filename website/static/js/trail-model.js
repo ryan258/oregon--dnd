@@ -12,7 +12,7 @@
     cured: [0, 800, .5], fresh1: [0, 100, .5], fresh2: [0, 100, .5], water: [0, 80, .5], capacity: [0, 80, 10],
     medicine: [0, 10, 1], ammo: [0, 200, 1], parts: [0, 5, 1], money: [0, 100000, .01],
     wagon: [0, 30, 1], oxA: [0, 10, 1], oxB: [0, 10, 1], oxC: [0, 10, 1],
-    peopleCount: [1, 20, 1], ableCount: [0, 4, 1], exhaustedCount: [0, 4, 1]
+    peopleCount: [1, 20, 1], ableCount: [0, 5, 1], exhaustedCount: [0, 5, 1]
   };
   const texts = {name: 120, weather: 120, nextDecision: 3000, checkpoint: 1000, nextWater: 1000, deadline: 1000, cargo: 6000, people: 16000, notes: 24000};
   const booleans = ['oxALame', 'oxBLame', 'oxCLame', 'bedding', 'tools', 'waterTracked', 'moraleBonus', 'foodThreshold', 'wagonThreshold', 'eventDone', 'costsDone', 'recoveryDone'];
@@ -81,7 +81,7 @@
       cured: river ? 140 : 700, fresh1Expiry: '', fresh2Expiry: '', water: 60, capacity: 60, medicine: river ? 4 : 7,
       ammo: river ? 40 : 160, parts: river ? 2 : 3, money: river ? 25 : 250, wagon: river ? 22 : 30,
       oxA: river ? 8 : 10, oxB: river ? 8 : 10, oxC: river ? 8 : 10, bedding: true, tools: true,
-      peopleCount: 4, ableCount: 4, exhaustedCount: 0,
+      peopleCount: 5, ableCount: 5, exhaustedCount: 0,
       nextDecision: river ? 'Ferry on day 2 ($10), risky ford today, two ramp labor days then cross, or prepare a rope line for a safe day-2 crossing (1 part)? Show each cost and Nessa’s deadline before choosing.' : 'Name dreams and promises. Choose the first day’s action.',
       checkpoint: river ? 'Far bank: marker 358. Stop after the crossing.' : 'Mercy’s crate and the book scene: marker 120.',
       deadline: river ? 'Nessa and Mara depart at dawn June 4, unless their own travel is weather-delayed.' : '',

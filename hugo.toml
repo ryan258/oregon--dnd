@@ -7,7 +7,7 @@ resourceDir = 'dist/hugo-resources'
 enableRobotsTXT = false
 
 [params]
-description = 'Four ordinary people. One wagon. Two thousand miles of promises. A survival tabletop roleplaying game and a companion for your table.'
+description = 'Five ordinary people. One wagon. Two thousand miles of promises. A survival tabletop roleplaying game and a companion for your table.'
 
 [markup.goldmark.renderer]
 unsafe = false

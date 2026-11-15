@@ -46,6 +46,6 @@ for name in ('index.html', 'app.js', 'model.js', 'storage.js', 'sw.js', 'rules.j
     assert (SITE / 'player' / name).read_bytes() == (ROOT / 'player' / name).read_bytes(), f'Player mount drift: {name}'
 assert (SITE / 'docs/handbook.html').read_bytes() == (ROOT / 'docs/handbook.html').read_bytes()
 characters = (SITE / 'characters/index.html').read_text()
-for name in ('Eliza Marsh', 'Thomas Pruitt', 'Cal Marsh', 'Mae Sorensen'):
+for name in ('Eliza Marsh', 'Thomas Pruitt', 'Cal Marsh', 'Mae Sorensen', 'Clara Vance'):
     assert name in characters, f'Missing traveler {name}'
-print(f'Site checked: {len(pages)} HTML pages, {checks} local references, matching player/handbook mounts, four travelers.')
+print(f'Site checked: {len(pages)} HTML pages, {checks} local references, matching player/handbook mounts, five travelers.')

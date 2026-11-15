@@ -16,7 +16,7 @@
 <header class="site-header">
   <a class="brand" href="{{ "" | relURL }}" aria-label="Oregon Trail RPG home"><span class="brand-mark" aria-hidden="true">↟</span><span>OREGON TRAIL<small>A ROLEPLAYING GAME</small></span></a>
   <nav aria-label="Main navigation">
-    {{ range slice (dict "url" "game/" "label" "The game") (dict "url" "characters/" "label" "Travelers") (dict "url" "instructions/" "label" "Instructions") (dict "url" "trailmaster/" "label" "Trailmaster") }}
+    {{ range slice (dict "url" "game/" "label" "The game") (dict "url" "characters/" "label" "Travelers") (dict "url" "instructions/" "label" "Instructions") (dict "url" "trailmaster/" "label" "Trailmaster") (dict "url" "dashboard/" "label" "GM Dashboard") }}
     <a href="{{ .url | relURL }}" {{ if eq $.RelPermalink (.url | relURL) }}aria-current="page"{{ end }}>{{ .label }}</a>
     {{ end }}
   </nav>

@@ -1,7 +1,7 @@
 +++
-title = 'Four people. One wagon.'
+title = 'Five people. One wagon.'
 eyebrow = 'Meet your travelers'
-description = 'Eliza, Thomas, Cal, and Mae: ready-to-play travelers with dreams, boundaries, and promises.'
+description = 'Eliza, Thomas, Cal, Mae, and Clara: ready-to-play travelers with dreams, boundaries, and promises.'
 layout = 'characters'
 source = 'docs/PREGENS.md'
 +++

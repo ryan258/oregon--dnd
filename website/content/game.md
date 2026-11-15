@@ -1,11 +1,11 @@
 +++
 title = 'A journey measured in choices.'
 eyebrow = 'The game'
-description = 'How to play Oregon Trail RPG: shared decisions, visible risks, and four people with something to lose.'
+description = 'How to play Oregon Trail RPG: shared decisions, visible risks, and five people with something to lose.'
 +++
 Everything you own is in one wagon. The destination is shared. Your reasons for going are not.
 
-Oregon Trail RPG is a standalone survival tabletop game for **one Trailmaster (the GM) and 1–4 players controlling four travelers**, or solo. It uses familiar d20 checks. You do not need D&D books or experience with this setting.
+Oregon Trail RPG is a standalone survival tabletop game for **one Trailmaster (the GM) and 1–5 players controlling five travelers** (6 people at the full table), or solo. It uses familiar d20 checks. You do not need D&D books or experience with this setting.
 
 ## What you actually do
 
@@ -13,9 +13,9 @@ The Trailmaster describes the road, the people on it, and the costs the party ca
 
 A day might mean traveling, hunting, repairing, trading, or resting. Each choice uses time. Supplies, weather, health, and promises make that time matter. At camp, people mend things, disagree, tell stories, and decide why they are still going together.
 
-## Four roles. Four reasons to keep going.
+## Five roles. Five reasons to keep going.
 
-The **Guide** reads the ground. The **Doctor** cares for people. The **Hunter** finds food and stretches stores. The **Teamster** keeps the wagon moving. Everyone also has a Dream, a Promise, a Boundary, a Bond, and a small keepsake.
+The **Guide** reads the ground. The **Doctor** cares for people. The **Hunter** finds food and stretches stores. The **Teamster** keeps the wagon moving. The **Steward** keeps the peace, makes fair bargains, and holds the wagon together. Everyone also has a Dream, a Promise, a Boundary, a Bond, and a small keepsake.
 
 Those personal stakes belong in the decisions. Saving a crate of books can matter as much as saving a barrel of flour. A partnership can be worth a day's delay. Nobody needs to agree on the price.
 
@@ -23,7 +23,7 @@ Those personal stakes belong in the decisions. Saving a crate of books can matte
 
 In **The River Between**, a ferryman posts his price while a schoolteacher counts money she does not have. Pay for the ferry, work on the ramp to earn passage for both wagons, risk the ford today, or spend a part and a day preparing a safe rope crossing. The river decision card shows what each offer costs and when the carrier leaves with someone one traveler hoped to meet.
 
-Use the four ready-to-play travelers and the standalone river supplies. The adventure targets a single 2–3 hour session; that duration still needs table testing.
+Use the five ready-to-play travelers and the standalone river supplies. The adventure targets a single 2–3 hour session; that duration still needs table testing.
 
 ## Or take the whole road
 

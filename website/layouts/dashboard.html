@@ -1,0 +1,174 @@
+{{ define "main" }}
+<!-- STICKY BAR: ONLY THE ESSENTIALS -->
+<nav class="gm-sticky-bar" aria-label="GM quick controls">
+  <div class="shell gm-sticky-inner">
+    <div class="gm-sticky-status" id="gm-sticky-status" aria-live="polite">June 2 · 28 days food · $25 · 2 parts · Morale 6/10</div>
+    <div class="gm-sticky-actions">
+      <button type="button" id="gm-quick-d20">🎲 Roll d20</button>
+      <button type="button" class="secondary" id="gm-undo" disabled>↶ Undo</button>
+      <button type="button" class="secondary" id="gm-comfort-toggle" aria-pressed="true">A+ Large Text</button>
+      <button type="button" class="secondary" id="gm-print-cards">🖨️ Print Handouts</button>
+    </div>
+  </div>
+</nav>
+
+<section class="shell section">
+  <!-- 1. STEP-BY-STEP STORY TELEPROMPTER -->
+  <section class="ledger-panel" id="gm-flow-guide">
+    <div class="gm-act-header">
+      <div>
+        <p class="eyebrow">1. Tonight’s Story · One Step at a Time</p>
+        <h1 id="gm-act-title" class="gm-main-title">Act I of 4 · Arrival at the River</h1>
+      </div>
+      <div class="gm-act-nav" role="group" aria-label="Scene navigation">
+        <button type="button" class="secondary" id="gm-act-prev">◀ Back</button>
+        <button type="button" class="secondary gm-act-tab" data-act="0" aria-pressed="true">1. Arrival</button>
+        <button type="button" class="secondary gm-act-tab" data-act="1" aria-pressed="false">2. Vote</button>
+        <button type="button" class="secondary gm-act-tab" data-act="2" aria-pressed="false">3. Crossing</button>
+        <button type="button" class="secondary gm-act-tab" data-act="3" aria-pressed="false">4. Campfire</button>
+        <button type="button" id="gm-act-next">Next ▶</button>
+      </div>
+    </div>
+
+    <!-- ACT 1 -->
+    <div class="gm-act-stage" data-stage="0">
+      <div class="gm-read-aloud">
+        <span class="eyebrow">Welcome &amp; Icebreaker (No dice · 5 min)</span>
+        <p>“Welcome to 1848! There are no rules to memorize—just tell me what your character says or does. When something is risky, roll the 20-sided die and add your skill number (<strong>10 or higher succeeds</strong>). First, go around the circle: tell us your character’s name, why you’re going to Oregon, and <em>one small comfort from home you miss most</em>.”</p>
+      </div>
+      <div class="gm-read-aloud">
+        <span class="eyebrow">Read Aloud · The River Queue</span>
+        <p>“June 2, 1848. The Platte River is wide, brown, and loud. Twenty wagons are stuck in the mud line. Ferryman Ellis Bell’s sign reads: <strong>$10 A WAGON — NEXT BOAT TOMORROW.</strong> Right in front of you, three things happen:”</p>
+      </div>
+      <div class="gm-sparks-grid">
+        <div class="gm-spark-box">
+          <h3>Clara &amp; Eliza</h3>
+          <p>Schoolteacher <strong>Mercy Reed</strong> is $4 short and about to be shoved out of line. She asks <strong>Eliza</strong> to borrow a schoolbook to calm the children. <strong>Clara</strong> can use her free power to cut our ferry price from $10 to <strong>$8</strong>.</p>
+        </div>
+        <div class="gm-spark-box">
+          <h3>Thomas &amp; Cal</h3>
+          <p>Neighbor <strong>Ada Pike</strong> has river fever and needs <strong>Thomas</strong> (1 Medicine, roll 10+). Meanwhile, Mercy offers <strong>Cal</strong> a book for 10 lbs of food (or he can hunt on the bluff).</p>
+        </div>
+        <div class="gm-spark-box">
+          <h3>Mae</h3>
+          <p>Across the river, <strong>Mara Vale</strong> holds up a painted workshop sign with <strong>Mae’s name</strong> on it—her wagon train leaves at dawn on Day 3!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACT 2 -->
+    <div class="gm-act-stage" data-stage="1" hidden>
+      <div class="gm-read-aloud">
+        <span class="eyebrow">Have Eliza &amp; Mae lead the vote</span>
+        <p>“We have <strong>28 days of food</strong>, <strong>$25 cash</strong>, and <strong>2 spare parts</strong>. Mara leaves the far bank at dawn on Day 3. How do we cross? Click the group’s choice:”</p>
+      </div>
+      <div class="gm-offer-buttons">
+        <button type="button" class="secondary" data-offer="ferry-clara">1A · Ferry w/ Clara’s Bargain ($8 cash + 7.5 lbs food · Safe cross Day 2 · Meet Mara)</button>
+        <button type="button" class="secondary" data-offer="ferry-full">1B · Ferry full price ($10 cash + 7.5 lbs food · Safe cross Day 2 · Meet Mara)</button>
+        <button type="button" class="secondary" data-offer="ramp">2 · Work on Ferry Ramp 2 Days ($0 cash + 12 lbs food · Mercy crosses free · Cross Day 3)</button>
+        <button type="button" class="secondary" data-offer="ford">3 · Risk the Upper Ford Today ($0 cash + 5 lbs food · Cross Day 1 · Everyone rolls 12+)</button>
+        <button type="button" class="secondary" data-offer="rope">4 · Rig a Rope Line at Ford (1 spare part + 10 lbs food · Safe cross Day 2 · Meet Mara)</button>
+      </div>
+      <p class="note"><strong>Break reminder:</strong> After they vote, take a <strong>10-minute stretch &amp; water break</strong> before Act 3.</p>
+    </div>
+
+    <!-- ACT 3 -->
+    <div class="gm-act-stage" data-stage="2" hidden>
+      <div class="gm-read-aloud">
+        <span class="eyebrow">Mid-River Action · Everyone Rolls Once! (Need 10+ with their +2 skill)</span>
+        <p>“Halfway across the swollen river, an uprooted cottonwood tree surges straight toward the wagon! Go around the table—each player rolls the 20-sided die and adds <strong>+2</strong>:”</p>
+      </div>
+      <div class="gm-sparks-grid">
+        <div class="gm-spark-box"><h3>1. Eliza (+2)</h3><p>Spot the hidden gravel bar before the current swings the wheels!</p></div>
+        <div class="gm-spark-box"><h3>2. Mae (+2)</h3><p>Hold the lead oxen steady as cold water hits their chests!</p></div>
+        <div class="gm-spark-box"><h3>3. Cal (+2)</h3><p>Catch the drifting rope and book crate before the river takes it!</p></div>
+        <div class="gm-spark-box"><h3>4. Thomas (+2)</h3><p>Keep feverish Ada and Mercy steady when the wagon lurches!</p></div>
+        <div class="gm-spark-box"><h3>5. Clara (+2)</h3><p>Call out “Heave on three!” so everyone pulls together!</p></div>
+      </div>
+      <div class="gm-check-toggles" id="gm-check-toggles"></div>
+      <div class="status" id="gm-check-result" aria-live="polite"></div>
+    </div>
+
+    <!-- ACT 4 -->
+    <div class="gm-act-stage" data-stage="3" hidden>
+      <div class="gm-read-aloud">
+        <span class="eyebrow">Far-Bank Campfire (Mile 358)</span>
+        <p>“You made it across. The fire is warm, and Clara’s kettle is steaming on the coals.”<br>
+        • <strong>Mae:</strong> Mara hands her the brass workshop key for Oregon City.<br>
+        • <strong>Eliza:</strong> Mercy’s students read aloud from her mother’s book.<br>
+        • <strong>Closing Question for Everyone:</strong> <em>“Now that the river is behind us, who in this wagon are you most glad is sitting next to you tonight?”</em></p>
+      </div>
+      <div class="day-presets">
+        <button type="button" id="gm-proper-meal">Serve Clara’s Proper Meal (−2.5 lbs food, +2 Morale)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ESSENTIAL WAGON SUPPLIES (4 KEY NUMBERS) -->
+  <section class="ledger-panel" id="gm-wagon-console">
+    <div class="ledger-heading">
+      <div>
+        <h2>2. Wagon Supplies</h2>
+        <p class="panel-intro" id="gm-plain-summary">Loading…</p>
+      </div>
+      <div class="day-presets">
+        <button type="button" class="secondary" data-advance="rest">+1 Rest Day (−2.5 lbs, heal all)</button>
+        <button type="button" class="secondary" data-advance="cross">+1 Travel Day (−5 lbs, +18 mi)</button>
+        <button type="button" class="secondary" id="gm-load-river">Reset River</button>
+      </div>
+    </div>
+    <div class="gm-supply-grid" id="gm-supply-grid"></div>
+    <div class="status" id="gm-action-banner" hidden aria-live="polite"></div>
+  </section>
+
+  <!-- 3. FIVE TRAVELERS (CLEAN, UNCLUTTERED CARDS) -->
+  <section class="ledger-panel" id="gm-roster-section">
+    <div class="ledger-heading">
+      <div>
+        <h2>3. Five Travelers</h2>
+        <p class="panel-intro">Each player starts at <strong>9 HP</strong> and adds <strong>+2</strong> to their specialty, <strong>+1</strong> to good skills, and <strong>+0</strong> to most others.</p>
+      </div>
+      <button type="button" class="secondary" id="gm-reset">Reset Travelers</button>
+    </div>
+    <div id="gm-roll-callout" class="status gm-callout-large" hidden aria-live="polite"></div>
+    <div class="gm-roster" id="gm-roster"></div>
+  </section>
+
+  <!-- 4. SIMPLE PLAYTEST NOTES -->
+  <section class="ledger-panel" id="gm-playtest-panel">
+    <h2>4. Quick Playtest Notes</h2>
+    <div class="gm-note-input-row">
+      <input id="gm-note-input" type="text" maxlength="500" placeholder="Type a quick note during play and press Enter…" aria-label="Quick playtest note">
+      <button type="button" id="gm-note-add">Save Note</button>
+    </div>
+    <div class="gm-notes-stream" id="gm-notes-stream" aria-live="polite"></div>
+
+    <details class="gm-debrief-details">
+      <summary>Optional Post-Game Debrief Questions</summary>
+      <div class="field-grid two" style="margin-top:14px">
+        <label for="pt-crossing">Which crossing option did they pick?
+          <input id="pt-crossing" type="text" data-pt="crossing">
+        </label>
+        <label for="pt-unclear">Anything confusing or worth changing?
+          <input id="pt-unclear" type="text" data-pt="unclear">
+        </label>
+        <label for="pt-summary" class="wide">Favorite moments or quotes from the table
+          <textarea id="pt-summary" data-pt="summary"></textarea>
+        </label>
+      </div>
+    </details>
+
+    <div class="toolbar">
+      <button type="button" id="gm-export-md">Download Notes (.md)</button>
+      <button type="button" class="secondary" id="gm-copy-md">Copy Notes</button>
+      <button type="button" class="secondary" id="gm-clear-notes">Clear</button>
+    </div>
+    <div class="status" id="gm-pt-status" hidden aria-live="polite"></div>
+  </section>
+
+  <!-- LARGE-TYPE PRINTABLE PLAYER CARDS + CENTER TABLE MENU -->
+  <section class="gm-print-sheet" id="gm-print-sheet" aria-label="Large-type player handouts"></section>
+</section>
+<script src="{{ "player/rules.js" | relURL }}"></script>
+<script src="{{ "js/gm-dashboard.js" | relURL }}"></script>
+{{ end }}
