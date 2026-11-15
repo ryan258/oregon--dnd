@@ -1,6 +1,12 @@
 # Local verification — v0.10
 
-Updated November 12, 2026. Human play, specialist review, campaign balance, and player rating remain unmeasured.
+Updated November 15, 2026. Human play, specialist review, campaign balance, and player rating remain unmeasured.
+
+## November 15, 2026 — five-traveler party and streamlined GM Dashboard
+
+- Expanded the core rules, backgrounds/techniques, pregenerated travelers, table sheets, player companion, and Hugo website to five travelers (`Guide`, `Doctor`, `Hunter`, `Teamster`, `Steward` / `Clara Vance`), 5-traveler daily rations (`5 / 10 / 2.5` lbs), and 5-roller group checks (`3–5 / 1–2 / 0`).
+- Added `/dashboard/` (`website/layouts/dashboard.html` and `website/static/js/gm-dashboard.js`): a streamlined, MS-accessible GM Dashboard for running *The River Between* with 5 first-time players, featuring a 4-Act Story Teleprompter, 5-traveler cards with plain-English `+2` / `+1` skill badges, one-tap river crossing actions, Large Text toggle, printable large-type player handouts + river menu, and Markdown playtest notes export.
+- Rebuilt `player/rules.js` and `docs/handbook.html`. Verified with `python3 tools/build_player_rules.py --check` (3 canonical sources, 5 pregens, 20 backgrounds, 20 techniques, 9 conditions), `python3 tools/check_packet.py` (39 Markdown files, 37 handbook sections, 5 pregens, 42 events, $550/$250 budget), `hugo`, `python3 website/tests/check_site.py` (9 HTML pages, matching mounts, five travelers), and all 62 Node tests across `tests/*.cjs` and `website/tests/*.cjs`.
 
 ## November 12, 2026 — save recovery and first river packet
 

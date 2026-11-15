@@ -1,5 +1,11 @@
 # Change record
 
+## Five-traveler table and streamlined GM Dashboard — November 15, 2026
+
+- Expanded the party from four to five travelers (1 GM and 1–5 players, 6 people at the full table). Added the fifth profession **Steward (CHA)** (`Fair Bargain` expertise, `Hold the Wagon Together` crisis intervention, four backgrounds, and four techniques) and fifth pregenerated traveler **Clara Vance** (with reserve **Martha Holt**).
+- Updated five-traveler rations (`5 lbs` ordinary travel, `10 lbs` hard travel, `2.5 lbs` Rest Day), five-roller group checks (`3–5` full, `1–2` partial, `0` failure), river decision card food costs (`7.5 / 12 / 5 / 10` lbs), and worked examples across the manuscript, handbook, player companion (`player/`), and Trailmaster ledger (`website/`).
+- Added a streamlined, accessible **GM Dashboard** (`/dashboard/`) in the local Hugo site for first-time GMs and 5 first-time players: 4-Act Story Teleprompter for *The River Between*, one-tap river crossing actions, 5-traveler cards with plain-English `+2` / `+1` skill badges, Large Text (`A+`) mode, one-click printable large-type handouts (5 character cards + 1 center-of-table River Crossing Menu), and auto-saving playtest notes with Markdown download/copy.
+
 ## Save recovery and first river packet — November 12, 2026
 
 - Player recovery now distinguishes damaged storage from unavailable storage, preserves validated travelers when only Undo is damaged, and offers separate portable backups and raw recovery exports. An existing raw archive requires explicit removal before a different archive can replace it.

@@ -1,6 +1,6 @@
 # Player companion — local character sheets for iPad
 
-The [player app](../player/index.html) is a single-page companion for Oregon Trail RPG v0.10. Each device keeps its own character records. It includes the four pregens, custom and reserve sheets, health and wound tracking, Exhaustion, conditions, Inspiration, personal statements, a journal, and the current role/background/technique reference. The app has no account, analytics, external font, CDN, or cloud synchronization.
+The [player app](../player/index.html) is a single-page companion for Oregon Trail RPG v0.10. Each device keeps its own character records. It includes the five pregens, custom and reserve sheets, health and wound tracking, Exhaustion, conditions, Inspiration, personal statements, a journal, and the current role/background/technique reference. The app has no account, analytics, external font, CDN, or cloud synchronization.
 
 ## Use it at the table
 
@@ -13,7 +13,7 @@ The [player app](../player/index.html) is a single-page companion for Oregon Tra
 
 **Correct sheet** records a ruling or custom creation. It permits explicit corrections to HP, ability scores, wound state, background, date, and daily flags. It rejects out-of-range values and HP above the applicable maximum. A new custom character uses the fixed array initially. For a replacement, record Exhaustion 1 and the earned techniques; no supplies are created.
 
-The party's calendar and shared wagon ledger remain the GM/table's responsibility. Changing one device does not update another. Only four travelers occupy active party slots; an extra saved sheet is not extra labor. Record any additional body's rations at the table.
+The party's calendar and shared wagon ledger remain the GM/table's responsibility. Changing one device does not update another. Only five travelers occupy active party slots; an extra saved sheet is not extra labor. Record any additional body's rations at the table.
 
 ## Preload each iPad
 

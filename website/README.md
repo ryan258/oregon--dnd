@@ -25,11 +25,12 @@ Output: `dist/site/`. Before hosting under a path, build with the intended base 
 ## Pages
 
 - `/` — the game introduction and original illustrated cover.
-- `/game/` — the premise, table procedures, roles, campaign, and participation promise.
-- `/characters/` — the four pregens rendered directly from `docs/PREGENS.md`, plus an introduction to recurring people.
+- `/game/` — the premise, table procedures, five roles, campaign, and participation promise.
+- `/characters/` — the five pregens rendered directly from `docs/PREGENS.md`, plus an introduction to recurring people.
 - `/instructions/` — entry points into the handbook and a printable cover.
 - `/cover/` — print just the illustrated cover as a front sheet; turn browser headers/footers off and fit to page.
-- `/trailmaster/` — the shared ledger.
+- `/dashboard/` — the streamlined GM Dashboard for running *The River Between* with 5 players (4-Act Story Teleprompter, 5-traveler cards with plain-English skills, one-tap river crossing actions, printable large-type handouts, Large Text toggle, and playtest notes export).
+- `/trailmaster/` — the full-campaign shared wagon ledger.
 - `/player/` — the existing character companion served unchanged.
 - `/docs/handbook.html` — the existing generated single-file handbook, served at its original relative path.
 
@@ -38,7 +39,7 @@ Output: `dist/site/`. Before hosting under a path, build with the intended base 
 1. Choose **Start river session** or **Start full campaign**. Both match their separate v0.10 supply snapshots. Import an existing backup to resume instead.
 2. Put the next decision, checkpoint, deadline, and water source where the table can see them. Use the section links to jump around.
 3. Adjust shared resources with large plus/minus controls or direct entry. Fields save when you leave them; checkbox and button actions save immediately. The save status reports whether changes reached browser storage. Individual conditions, wounds, and role abilities remain on the character sheets.
-4. Resolve a day at the table. Use an estimate button to fill the arithmetic, then correct it for actual travelers, weather, strain, delays, and scene exceptions. Estimates assume four travelers. The ending marker follows actual miles until you enter an override for a detour or shortcut. Clear the override to follow actual miles again. An unfinished day entry survives refresh in the same tab when session storage is available. Record it before moving your campaign to another tab or device.
+4. Resolve a day at the table. Use an estimate button to fill the arithmetic, then correct it for actual travelers, weather, strain, delays, and scene exceptions. Estimates assume five travelers. The ending marker follows actual miles until you enter an override for a detour or shortcut. Clear the override to follow actual miles again. An unfinished day entry survives refresh in the same tab when session storage is available. Record it before moving your campaign to another tab or device.
 5. **Preview & close this day** shows the exact expenditure, actual miles, route-marker change, fresh food expiring, and next date before applying it. This eats the earliest-expiring fresh batch first, then cured food, and discards expiring fresh food only after that evening. Empty slots clear their expiry on reload and in backups. Enter the new last edible date, then add the food in the same visit to the ledger. A past-expiry batch must be removed first. If you need cured food first or more than two different fresh batches, resolve those inventories manually and record the day in your notes.
 6. If today's costs are already recorded manually, the daily-close control refuses to charge them again. Manually finish the date, weather span, expiry, recovery markers, and log notes instead. Chapter entry, money, health, ox strain/recovery, care, Morale, and favors always remain explicit manual changes.
 7. Download a backup at the end of the session. Undo retains up to ten changes across reload, with a size cap. It has no redo. Downloaded backups contain the entire campaign and log, without undo history. The page displays the latest 30 daily entries; backups retain up to 1,000.
@@ -55,6 +56,7 @@ Imports validate a versioned Trailmaster JSON envelope, every recognized field, 
 
 - `hugo.toml` mounts website content/templates/assets, the original player directory, and the original handbook.
 - `website/layouts/characters.html` reads `docs/PREGENS.md` at build time; the Markdown link hook routes its references into the handbook.
+- `website/layouts/dashboard.html` and `website/static/js/gm-dashboard.js` own the streamlined GM Dashboard (`/dashboard/`), 4-Act Story Teleprompter, five-traveler tracker, printable large-type handouts, and Markdown playtest notes export.
 - `website/static/js/trail-model.js` owns the ledger schema, presets, validation, pure day preview, and backup format.
 - `website/static/js/trailmaster.js` owns the accessible controls, save queue, conflict handling, dialogs, and rendering using text nodes.
 - `website/assets/site.css` provides the responsive paper/forest-green design, focus treatment, large controls, reduced-motion behavior, and print styles.
@@ -70,4 +72,4 @@ hugo
 python3 website/tests/check_site.py
 ```
 
-The Node tests cover the new model and controller's data safety with injected storage failures; they are not a full browser or assistive-technology suite. The site checker validates generated local links and fragments, original asset mounts, and presence of all four travelers. A browser smoke pass covers the visible day preview, save/reload/undo, backup import, and responsive rendering. The automated browser download-event capture timed out, so a completed browser download was not independently confirmed; backup serialization and validation passed the targeted tests. Real-iPad and assistive-technology acceptance remain unverified.
+The Node tests cover the new model and controller's data safety with injected storage failures; they are not a full browser or assistive-technology suite. The site checker validates generated local links and fragments, original asset mounts, and presence of all five travelers. A browser smoke pass covers the visible day preview, save/reload/undo, backup import, and responsive rendering. The automated browser download-event capture timed out, so a completed browser download was not independently confirmed; backup serialization and validation passed the targeted tests. Real-iPad and assistive-technology acceptance remain unverified.

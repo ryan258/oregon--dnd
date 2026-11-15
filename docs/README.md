@@ -11,7 +11,7 @@ Everything needed to run the journey: one night of it, or all seven chapters.
 - [Quickstart](QUICKSTART.md) — rules enough to start arguing about a river
 - [The River Between — introductory adventure](RIVER_CHAPTER.md) — a posted price, a stranger short of it, and four crossing offers
 - [River decision card](sheets/river_decision_card.md) — the prices, risks, and departure for players, with rest and weather procedures for the GM
-- [Four pregenerated travelers](PREGENS.md) — filled in, ready, already carrying something
+- [Five pregenerated travelers](PREGENS.md) — filled in, ready, already carrying something
 - [Character sheet](sheets/character_sheet.md) — printable traveler sheet with ability boxes and condition log
 - [Session zero and boundaries](SESSION_ZERO.md) — the five minutes before the wagon leaves
 - [Quick observation sheet](sheets/playtest_observer.md) — three live measures and a five-minute debrief
@@ -24,15 +24,15 @@ Everything needed to run the journey: one night of it, or all seven chapters.
 - [Route map](TRAIL_MAP.md) — the line from Independence, and five clocks nobody hides
 - [Recurring people](PEOPLE.md) — people with their own plans who remember what you did
 - [Arrival and endings](ARRIVAL.md) — the date, the graves, and what each person does next morning
-- [Solo procedure](SOLO.md) — four voices, one expedition
+- [Solo procedure](SOLO.md) — five voices, one expedition
 
 ## Player companion
 
 - [iPad player app and setup](PLAYER_APP.md) — local character sheets, offline cache, backups, and recovery
 
-## Game website and Trailmaster ledger
+## Game website, GM Dashboard, and Trailmaster ledger
 
-- Local website and Trailmaster ledger (see `website/README.md`) — local Hugo site (`./trail`), illustrated cover and camp scene, traveler showcase, handbook links, and browser-saved wagon ledger with day-close calculations and Web Locks
+- Local website, GM Dashboard (`/dashboard/`), and Trailmaster ledger (see `website/README.md`) — local Hugo site (`./trail`), step-by-step river session GM Dashboard with five-traveler tracking, printable large-type handouts, and playtest notes export, plus illustrated cover and camp scene, traveler showcase, handbook links, and browser-saved wagon ledger with day-close calculations and Web Locks
 
 ## At the table
 

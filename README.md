@@ -2,11 +2,11 @@
 
 > **What are we willing to spend, and what do we refuse to lose, to get these people to Oregon?**
 
-Four ordinary people put everything they own into one wagon and point it west. Nobody in that wagon is a hero. One of them is going because of a promise made to a dying woman. One is going because there is nothing left behind them worth the return trip. They will not all agree about what to do at the river, and some may never arrive.
+Five ordinary people put everything they own into one wagon and point it west. Nobody in that wagon is a hero. One of them is going because of a promise made to a dying woman. One is going because there is nothing left behind them worth the return trip. They will not all agree about what to do at the river, and some may never arrive.
 
 This is a survival tabletop RPG about the 2,000 miles between wanting a life and having one — a fictionalized 1848 journey where the calendar is a countdown, the food barrel is an argument waiting to happen, and every mile is paid for in something. You choose what to risk, whom to help, and which promises survive contact with the road. Death is permanent. Every player keeps playing.
 
-**Version 0.10 — playtest edition.** One GM and 1–4 players controlling four travelers, or solo. Seven chapters, targeting 6–8 sessions; duration and balance await real-table evidence. Familiar d20 checks, no D&D books required.
+**Version 0.10 — playtest edition.** One GM and 1–5 players controlling five travelers (6 people at the full table), or solo. Seven chapters, targeting 6–8 sessions; duration and balance await real-table evidence. Familiar d20 checks, no D&D books required.
 
 [Open the single-file handbook](docs/handbook.html) for the complete packet with subsection navigation and print styling. Choose **Play tonight** to read or print the river packet, character sheets, table references, and short observation form without the development records. Rebuild with `python3 tools/build_handbook.py` (dependency: `tools/requirements.txt`).
 
@@ -16,15 +16,15 @@ The river now weighs a two-day labor agreement against a departing carrier and a
 
 ## Play tonight
 
-A wagon queue, a ferryman's posted price, and a schoolteacher counting coins she doesn't have enough of. Start with the [quickstart](docs/QUICKSTART.md), hand out the [four pregens](docs/PREGENS.md), and run [The River Between](docs/RIVER_CHAPTER.md). Read all four crossing offers from the [river decision card](docs/sheets/river_decision_card.md). It also gives the GM the procedures for rest, ramp labor, and weather. Use the [quick observation sheet](docs/sheets/playtest_observer.md) to record the first table's experience.
+A wagon queue, a ferryman's posted price, and a schoolteacher counting coins she doesn't have enough of. Start with the [quickstart](docs/QUICKSTART.md), hand out the [five pregens](docs/PREGENS.md), and run [The River Between](docs/RIVER_CHAPTER.md). Read all four crossing offers from the [river decision card](docs/sheets/river_decision_card.md). It also gives the GM the procedures for rest, ramp labor, and weather. Use the [quick observation sheet](docs/sheets/playtest_observer.md) to record the first table's experience.
 
 ## Player companion for iPad
 
 The [player app](docs/PLAYER_APP.md) provides local character saves, pregens, health and condition tracking, personal notes, bounded labeled undo, and 8 MiB backup/import. When stored data is damaged, recovery offers separate portable backups and raw exports while preserving valid travelers. It can be installed from an HTTPS host for offline Home Screen use. Each device keeps its own sheets; shared wagon state stays with the table. Hosting and real-iPad acceptance remain separate steps. Rebuild the player rules from the manuscript with `python3 tools/build_player_rules.py` and package the static offline distribution with `python3 tools/package_player.py`.
 
-## Local game website
+## Local game website and GM Dashboard
 
-Run `./trail` from this repository to open the Hugo site at `http://localhost:1313/`. It introduces the game and travelers, links the complete instructions and player sheets, and adds a browser-saved Trailmaster ledger for shared supplies, decisions, and daily records with day draft preservation and Web Locks concurrency control. The instructions have an illustrated cover and the site includes a companion camp scene. Setup, backup behavior, and source details are in `website/README.md`. Build locally with `hugo`; output goes to `dist/site/`. Nothing is published by starting or building the site.
+Run `./trail` from this repository to open the Hugo site at `http://localhost:1313/`. It introduces the game and five travelers, links the complete instructions and player sheets, includes a streamlined **GM Dashboard** (`/dashboard/`) built for running *The River Between* with 5 players (step-by-step story teleprompter, large-print player handouts, one-tap river crossing actions, 5-traveler tracker, and playtest notes export), and provides a browser-saved **Trailmaster ledger** (`/trailmaster/`) for full-campaign supplies, decisions, and daily records with day draft preservation and Web Locks concurrency control. The instructions have an illustrated cover and the site includes a companion camp scene. Setup, backup behavior, and source details are in `website/README.md`. Build locally with `hugo`; output goes to `dist/site/`. Nothing is published by starting or building the site.
 
 ## The full journey
 

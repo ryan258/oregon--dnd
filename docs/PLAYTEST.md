@@ -8,7 +8,7 @@ Use the [quick observation sheet](sheets/playtest_observer.md) for the first tab
 
 The detailed table below is a follow-up research form, not a requirement to monitor every measure live. Estimate accounting time afterward unless someone else can time it without interrupting play.
 
-Use one GM, four pregens, and the exact river starting snapshot. Target 2–3 hours including debrief and record actual time and ending. End at the far-bank camp if needed. Read the four offers, the optional scouting day, and Nessa's announced departure from the [river decision card](sheets/river_decision_card.md) before commitment. Use the wagon sheet's Next decision panel to record any new quote or change in conditions. Let players decline personal hooks and choose the crossing they prefer.
+Use one GM, five pregens, and the exact river starting snapshot. Target 2–3 hours including debrief and record actual time and ending. End at the far-bank camp if needed. Read the four offers, the optional scouting day, and Nessa's announced departure from the [river decision card](sheets/river_decision_card.md) before commitment. Use the wagon sheet's Next decision panel (or the local GM Dashboard at `/dashboard/`) to record any new quote or change in conditions. Let players decline personal hooks and choose the crossing they prefer.
 
 Do not change supply amounts or damage mid-test to force tension. Record any necessary house ruling, including the reason and what changed. Table safety changes remain available at any time without a mechanical charge.
 
@@ -24,6 +24,7 @@ Do not change supply amounts or damage mid-test to force tension. Record any nec
 | Doctor's owned choice / effect on someone else | |
 | Hunter's owned choice / effect on someone else | |
 | Teamster's owned choice / effect on someone else | |
+| Steward's owned choice / effect on someone else | |
 | Approximate minutes accounting / looking up rules / deciding / conversation | |
 | Most confusing rule and exact scene | |
 | Longest interval without meaningful participation / which role | |
@@ -71,7 +72,7 @@ Give an independent GM the [travel procedure card](sheets/travel_procedure.md) a
 
 ### Desert stress snapshot
 
-Constructed test setup, not an earlier campaign result: **July 10, marker 900**, at the full departure spring; Hot and Dry weather has three days remaining. Wagon 12/30; one living usable team 6/10, other teams absent; food 80 lbs cured, water **40/40 gallons**, medicine 2, parts 1, ammunition 15, cash $20, Warm Bedding and ordinary tools. Use pregens at 9/9 HP except Cal at 5/9. Eliza and Cal each have Exhaustion 2; Cal has dysentery, 3 recovery marks, 1 damage due today. Others are healthy. Morale 5; no threshold loss already used this chapter; one Inspiration each. All four can act. Each player chooses **one** technique earned after chapter 2; chapter 5's second technique is not yet earned.
+Constructed test setup, not an earlier campaign result: **July 10, marker 900**, at the full departure spring; Hot and Dry weather has three days remaining. Wagon 12/30; one living usable team 6/10, other teams absent; food 80 lbs cured, water **40/40 gallons**, medicine 2, parts 1, ammunition 15, cash $20, Warm Bedding and ordinary tools. Use pregens at 9/9 HP except Cal at 5/9. Eliza and Cal each have Exhaustion 2; Cal has dysentery, 3 recovery marks, 1 damage due today. Others are healthy. Morale 5; no threshold loss already used this chapter; one Inspiration each. All five can act. Each player chooses **one** technique earned after chapter 2; chapter 5's second technique is not yet earned.
 
 Record actual chosen techniques, no invented favors, no personal cargo loss. The departure spring can refill freely while here; do not pretend the initial supply cannot be replenished. Show the initial Standard speed: ceil(18 ×0.75 ×0.5) = **7 miles/day**. Forty gallons in heat cover 10 days at that speed, fewer than the 13 unchanged travel days needed to the 90-mile spring. This forecast assumes no recovery or further hazard; daily recovery or a Rest Day can change it. Let players propose the response. Use the chapter's sources and live weather/events, not a secretly dried-up confirmed spring.
 
@@ -79,7 +80,7 @@ Record actual chosen techniques, no invented favors, no personal cargo loss. The
 
 At each chapter entry/exit record food, cash, elapsed days, actual people fed, successful hunts, spoilage, donations, purchases, Rest Days, and chosen stance. Ask the Hunter which food decision mattered. Keep the v0.10 starter allowance unchanged for the first campaign; a later experiment should alter one parameter and identify its edition.
 
-The core's 700 lbs = 175 ordinary four-person ration days; ceil(2,000/18) = 112 is only a no-delay comparison, not a playable itinerary (fort stops, weather, final-route durations, and risks differ). At the standalone DC 12 ford, using each pregen's best eligible ability without penalties, chances of **no successes** are 5.0625%, or 0.2562890625% if everyone spends Inspiration. Those are not chances of harm: partial success still costs wagon HP and cargo or injury. Use these calculations as questions for play, never as proof of balance.
+The core's 700 lbs = 140 ordinary five-person ration days (175 four-person ration days); ceil(2,000/18) = 112 is only a no-delay comparison, not a playable itinerary (fort stops, weather, final-route durations, and risks differ). At the standalone DC 12 ford, using each pregen's best eligible ability without penalties, chances of **no successes** are 2.278125% across five rollers (5.0625% across four), or 0.05189853515625% if all five spend Inspiration. Those are not chances of harm: partial success still costs wagon HP and cargo or injury. Use these calculations as questions for play, never as proof of balance.
 
 ## Revision record
 
