@@ -80,5 +80,22 @@ body.gm-comfort-mode .gm-read-aloud{font-size:1.22rem;line-height:1.75}
 body.gm-comfort-mode .gm-plain-skill{font-size:.96rem}
 body.gm-comfort-mode .gm-spark-box p{font-size:1.05rem}
 .gm-print-sheet{display:none}
+.gm-coach{padding:16px 20px;border:2px dashed #6f8a5c;border-radius:var(--radius);background:#eef3e6;margin:0 0 18px;font-size:1rem;line-height:1.6}
+.gm-coach-title{font-weight:700;color:var(--green);margin:0 0 6px;font-size:1.05rem}
+.gm-coach ol{margin:0 0 10px;padding-left:24px}.gm-coach li{margin:4px 0}
+.gm-coach-tip{margin:0;padding-top:10px;border-top:1px solid #c9d5bb;font-size:.95rem}
+.gm-coach-inline{padding:12px 16px;border-left:4px solid #6f8a5c;background:#eef3e6;border-radius:4px;font-size:.95rem;line-height:1.55;margin:14px 0 4px}
+.gm-help-start,.gm-help-faq{border:2px solid #6f8a5c;background:#f5f8ef}
+.gm-help details>summary{list-style:none;display:flex;align-items:center;min-height:48px}
+.gm-help details>summary::-webkit-details-marker{display:none}
+.gm-help details>summary::after{content:"▸ Show";margin-left:auto;font-size:.9rem;color:var(--green);font-weight:700;padding-left:12px}
+.gm-help details[open]>summary::after{content:"▾ Hide"}
+.gm-help-heading{font-size:1.5rem!important;margin:0!important}
+.gm-help-steps{padding-left:26px;font-size:1.02rem;line-height:1.6}.gm-help-steps li{margin:8px 0}
+.gm-help-golden{margin-top:14px;padding:14px 18px;background:#fffdf9;border:1px solid var(--line);border-radius:4px}
+.gm-help-golden h3{font-size:1.2rem;margin:0 0 6px}.gm-help-golden ul{margin:0;padding-left:22px}
+.gm-faq{margin:12px 0 0}.gm-faq dt{font-weight:700;margin-top:14px;color:var(--green)}.gm-faq dd{margin:4px 0 0 0;line-height:1.6}
+body.gm-help-off .gm-help{display:none!important}
+body.gm-comfort-mode .gm-coach,body.gm-comfort-mode .gm-coach-inline{font-size:1.06rem}
 @media print{.page-dashboard .gm-sticky-bar,.page-dashboard .gm-golden-rule,.page-dashboard .ledger-panel,.page-dashboard .ledger-heading{display:none!important}.page-dashboard .gm-print-sheet{display:block!important}.gm-print-card{break-inside:avoid;page-break-after:always;border:2px solid #222;border-radius:8px;padding:24px;margin-bottom:18px;font-size:13.5pt;line-height:1.5}.gm-print-card h2{font-size:24pt;margin:6px 0 12px}.gm-print-how{background:#f2efe6;padding:10px 14px;border-left:4px solid #222;font-size:12.5pt}.gm-print-skill{font-size:13.5pt;font-weight:700;margin:10px 0}.gm-print-abs{font-family:ui-monospace,monospace;font-size:12pt;padding:8px 0;border-block:1px solid #888}.gm-print-stakes p{margin:8px 0}}
 @media(max-width:950px){.gm-tools-grid,.gm-advisor-grid{grid-template-columns:1fr}}

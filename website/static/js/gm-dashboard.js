@@ -94,7 +94,7 @@
   pt.fields = Object.assign(defaultNotes().fields, pt.fields || {});
   if (!Array.isArray(pt.entries)) pt.entries = [];
 
-  let ui = Object.assign({ act: 0, comfort: true }, loadJSON(UI_KEY, () => ({ act: 0, comfort: true })));
+  let ui = Object.assign({ act: 0, comfort: true, help: true, target: 10 }, loadJSON(UI_KEY, () => ({ act: 0, comfort: true, help: true, target: 10 })));
   const undoStack = [];
 
   function pushUndo(label) {
@@ -158,6 +158,12 @@
 
   function renderActAndComfort() {
     document.body.classList.toggle('gm-comfort-mode', !!ui.comfort);
+    document.body.classList.toggle('gm-help-off', ui.help === false);
+    const helpBtn = $('gm-help-toggle');
+    if (helpBtn) {
+      helpBtn.setAttribute('aria-pressed', ui.help === false ? 'false' : 'true');
+      helpBtn.textContent = ui.help === false ? '💡 Help: OFF' : '💡 Help: ON';
+    }
     const comfortBtn = $('gm-comfort-toggle');
     if (comfortBtn) {
       comfortBtn.setAttribute('aria-pressed', ui.comfort ? 'true' : 'false');
@@ -255,6 +261,7 @@
 
   function applyOffer(offer) {
     pushUndo(`Crossing choice`);
+    ui.target = offer === 'ford' ? 12 : 10;
     if (offer === 'ferry-clara') {
       wagon.money = Math.max(0, wagon.money - 8);
       wagon.food = Math.max(0, wagon.food - 7.5);
@@ -410,8 +417,9 @@
     const wrap = $('gm-check-toggles');
     if (!wrap) return;
     wrap.replaceChildren();
+    const target = Number(ui.target) === 12 ? 12 : 10;
     for (const t of party) {
-      const btn = el('button', `gm-check-btn${t.passedCheck ? ' passed' : ''}`, `${t.name.split(' ')[0]} ${t.passedCheck ? '✓ Succeeded' : '(Tap if 10+)'}`);
+      const btn = el('button', `gm-check-btn${t.passedCheck ? ' passed' : ''}`, `${t.name.split(' ')[0]} ${t.passedCheck ? '✓ Succeeded' : `(Tap if ${target}+)`}`);
       btn.type = 'button';
       btn.setAttribute('aria-pressed', t.passedCheck ? 'true' : 'false');
       btn.addEventListener('click', () => {
@@ -424,9 +432,9 @@
     const passed = party.filter(t => t.passedCheck).length;
     const out = $('gm-check-result');
     if (!out) return;
-    if (passed >= 3) out.textContent = `${passed}/5 succeeded — Full Success! Everyone crosses safely to cheers from the bank (+1 Morale).`;
-    else if (passed >= 1) out.textContent = `${passed}/5 succeeded — Partial Success! You make it across, but lose 1 cargo bundle or take a minor scrape (1–2 HP).`;
-    else out.textContent = `Tap each player who rolled 10+ (need 3 of 5 for Full Success).`;
+    if (passed >= 3) out.textContent = `${passed}/5 succeeded — Full Success! Everyone crosses safely to cheers from the bank (+1 Morale). 💡 Press + on Morale, then Next ▶.`;
+    else if (passed >= 1) out.textContent = `${passed}/5 succeeded — Partial Success! You make it across, but lose 1 cargo bundle or take a minor scrape (1–2 HP). 💡 Let the players choose which, then press − on that number.`;
+    else out.textContent = `Tap each player who rolled ${target}+ (need 3 of 5 for Full Success). 💡 If nobody succeeds, the wagon stays on this bank. Offer the ferry or the ramp work instead.`;
   }
 
   function renderPlaytest() {
@@ -569,6 +577,12 @@
       renderActAndComfort();
     });
 
+    $('gm-help-toggle').addEventListener('click', () => {
+      ui.help = ui.help === false;
+      saveAll();
+      renderActAndComfort();
+    });
+
     $('gm-act-prev').addEventListener('click', () => {
       ui.act = Math.max(0, (Number(ui.act) || 0) - 1);
       saveAll();
@@ -598,6 +612,7 @@
       pushUndo('Reset River');
       wagon = defaultWagon();
       ui.act = 0;
+      ui.target = 10;
       saveAll();
       announceAction('Reset to June 2 at the river (28 days food, $25, 2 parts).');
       render();

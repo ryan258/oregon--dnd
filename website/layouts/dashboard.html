@@ -6,6 +6,7 @@
     <div class="gm-sticky-actions">
       <button type="button" id="gm-quick-d20">🎲 Roll d20</button>
       <button type="button" class="secondary" id="gm-undo" disabled>↶ Undo</button>
+      <button type="button" class="secondary" id="gm-help-toggle" aria-pressed="true">💡 Help: ON</button>
       <button type="button" class="secondary" id="gm-comfort-toggle" aria-pressed="true">A+ Large Text</button>
       <button type="button" class="secondary" id="gm-print-cards">🖨️ Print Handouts</button>
     </div>
@@ -13,6 +14,53 @@
 </nav>
 
 <section class="shell section">
+  <!-- 0. FIRST-TIME GM HELP (hidden when Help is OFF) -->
+  <section class="ledger-panel gm-help gm-help-start" aria-labelledby="gm-start-title">
+    <details open>
+      <summary><h2 id="gm-start-title" class="gm-help-heading">💡 Before You Start (10 minutes)</h2></summary>
+      <ol class="gm-help-steps">
+        <li><strong>Print the handouts.</strong> Press <em>🖨️ Print Handouts</em> at the top. You get 5 large-print character cards and 1 River Crossing Menu.</li>
+        <li><strong>Hand out the cards.</strong> Give each player one card. Put the River Menu in the middle of the table. Keep a d20 (20-sided die) where everyone can reach it.</li>
+        <li><strong>Explain the only rule.</strong> Say: “When something is risky, roll the d20 and add the number on your card. 10 or higher works.”</li>
+        <li><strong>Agree on a break.</strong> Plan one 10-minute break after the vote in Step 2. Anyone can ask for a break at any time.</li>
+        <li><strong>Press Next ▶ when you're ready.</strong> Read the boxes with the brown edge out loud. The green 💡 boxes are just for you.</li>
+      </ol>
+      <div class="gm-help-golden">
+        <h3>Golden rules for your first game</h3>
+        <ul>
+          <li><strong>You can't do it wrong.</strong> If you forget a rule, decide what feels fair and keep going.</li>
+          <li><strong>Ask, don't tell.</strong> When it goes quiet, ask one player: “What does your character do?”</li>
+          <li><strong>Only roll when it's risky.</strong> Talking, helping, and buying things don't need dice.</li>
+          <li><strong>Mistakes are easy to fix.</strong> <em>↶ Undo</em> takes back the last button press.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <section class="ledger-panel gm-help gm-help-faq" aria-labelledby="gm-faq-title">
+    <details>
+      <summary><h2 id="gm-faq-title" class="gm-help-heading">❓ Quick Answers (open when something comes up)</h2></summary>
+      <dl class="gm-faq">
+        <dt>How do I handle a roll?</dt>
+        <dd>The player rolls the d20 and adds their skill number (+2, +1, or +0). <strong>10 or more succeeds.</strong> The risky Upper Ford needs <strong>12 or more</strong>. Say what happens if they fail <em>before</em> they roll.</dd>
+        <dt>Which number does a player add?</dt>
+        <dd>Look at their card. <strong>+2</strong> is what they're best at, <strong>+1</strong> is what they're good at, and anything else is <strong>+0</strong>. If you're not sure, use +0.</dd>
+        <dt>What does “Inspiration” do?</dt>
+        <dd>Each player can use it once: they roll twice and keep the higher number.</dd>
+        <dt>Someone wants to do something that isn't listed.</dt>
+        <dd>Say yes if it makes sense. If it's risky, ask for a roll (10+). If it costs something, say what it costs before they decide.</dd>
+        <dt>A traveler drops to 0 HP.</dt>
+        <dd>They are hurt, not dead. They can't act until another traveler spends their turn helping them back up to 1 HP. The player keeps talking for their character. Tonight, nobody dies from a single bad roll.</dd>
+        <dt>The table is arguing too long.</dt>
+        <dd>Say: “Let's vote. Point at the option you like.” Majority wins. Note the reasons in Playtest Notes.</dd>
+        <dt>I need a break, or my hands or eyes are tired.</dt>
+        <dd>Take one. Say “Let's pause for 10 minutes.” The dashboard saves everything automatically. Turn on <em>A+ Large Text</em> if the screen is hard to read.</dd>
+        <dt>I pressed the wrong button.</dt>
+        <dd>Press <em>↶ Undo</em> at the top. You can press it several times.</dd>
+      </dl>
+    </details>
+  </section>
+
   <!-- 1. STEP-BY-STEP STORY TELEPROMPTER -->
   <section class="ledger-panel" id="gm-flow-guide">
     <div class="gm-act-header">
@@ -32,6 +80,15 @@
 
     <!-- ACT 1 -->
     <div class="gm-act-stage" data-stage="0">
+      <aside class="gm-help gm-coach" aria-label="GM help for Act 1">
+        <p class="gm-coach-title">💡 Your job right now (about 20 minutes)</p>
+        <ol>
+          <li>Read the <strong>Welcome</strong> box out loud. Go around the circle so each player introduces their character. If someone gets stuck, help them read from their card.</li>
+          <li>Read <strong>The River Queue</strong> out loud.</li>
+          <li>Go through the three green boxes one at a time. Ask the named players: <em>“What do you do?”</em> Let each one answer before moving on.</li>
+        </ol>
+        <p class="gm-coach-tip"><strong>Rolls in this step:</strong> only Thomas treating Ada (d20 + his number, 10+ works, and it uses 1 Medicine). Press <em>−</em> on Medicine in Wagon Supplies.<br><strong>Move on when:</strong> every player has spoken at least once. Then press <em>Next ▶</em>.</p>
+      </aside>
       <div class="gm-read-aloud">
         <span class="eyebrow">Welcome &amp; Icebreaker (No dice · 5 min)</span>
         <p>“Welcome to 1848! There are no rules to memorize—just tell me what your character says or does. When something is risky, roll the 20-sided die and add your skill number (<strong>10 or higher succeeds</strong>). First, go around the circle: tell us your character’s name, why you’re going to Oregon, and <em>one small comfort from home you miss most</em>.”</p>
@@ -58,6 +115,15 @@
 
     <!-- ACT 2 -->
     <div class="gm-act-stage" data-stage="1" hidden>
+      <aside class="gm-help gm-coach" aria-label="GM help for Act 2">
+        <p class="gm-coach-title">💡 Your job right now (about 15 minutes)</p>
+        <ol>
+          <li>Point to the <strong>River Crossing Menu</strong> in the middle of the table. Read the box below out loud.</li>
+          <li>Let the players talk it over. You don't need to pick for them. Every option is fine.</li>
+          <li>When they agree, press their option below. The dashboard pays the costs and moves you to Step 3.</li>
+        </ol>
+        <p class="gm-coach-tip"><strong>If they can't decide:</strong> say “Let's vote: point at the option you like,” and go with the majority.<br><strong>Clara's bargain (1A):</strong> only pick this if Clara's player offered to haggle with the ferryman. It's free and always works.<br><strong>If they choose Option 3 (the Ford):</strong> in Step 3, everyone needs <strong>12+</strong> instead of 10+.</p>
+      </aside>
       <div class="gm-read-aloud">
         <span class="eyebrow">Have Eliza &amp; Mae lead the vote</span>
         <p>“We have <strong>28 days of food</strong>, <strong>$25 cash</strong>, and <strong>2 spare parts</strong>. Mara leaves the far bank at dawn on Day 3. How do we cross? Click the group’s choice:”</p>
@@ -74,6 +140,15 @@
 
     <!-- ACT 3 -->
     <div class="gm-act-stage" data-stage="2" hidden>
+      <aside class="gm-help gm-coach" aria-label="GM help for Act 3">
+        <p class="gm-coach-title">💡 Your job right now (about 20 minutes)</p>
+        <ol>
+          <li>Read the box below out loud. Before anyone rolls, tell them: <em>“If 3 or more of you succeed, we cross cleanly. If only 1 or 2 succeed, we lose something small.”</em></li>
+          <li>Go around the table in the order shown. Each player rolls the d20 and adds +2. Read their line in the green box for them, or let them describe what they do.</li>
+          <li>For each player who reaches <strong>10 or more</strong> (<strong>12+</strong> at the Ford), tap their name below. The dashboard counts the successes and tells you what happens.</li>
+        </ol>
+        <p class="gm-coach-tip"><strong>Partial success?</strong> Let the players choose what's lost: 1 cargo bundle (for example, 50 lbs of food or 1 spare part) <em>or</em> one volunteer loses 1–2 HP. Update the numbers with the <em>−</em> buttons.<br><strong>Celebrate the rolls.</strong> A high roll deserves a cheer and a low roll gets a sympathetic groan. Keep it fun.<br><strong>Move on when:</strong> the result is read out. Press <em>Next ▶</em>.</p>
+      </aside>
       <div class="gm-read-aloud">
         <span class="eyebrow">Mid-River Action · Everyone Rolls Once! (Need 10+ with their +2 skill)</span>
         <p>“Halfway across the swollen river, an uprooted cottonwood tree surges straight toward the wagon! Go around the table—each player rolls the 20-sided die and adds <strong>+2</strong>:”</p>
@@ -91,6 +166,15 @@
 
     <!-- ACT 4 -->
     <div class="gm-act-stage" data-stage="3" hidden>
+      <aside class="gm-help gm-coach" aria-label="GM help for Act 4">
+        <p class="gm-coach-title">💡 Your job right now (about 15 minutes, then wrap up)</p>
+        <ol>
+          <li>Read the campfire box out loud. Nobody needs to roll. This step is about the characters.</li>
+          <li>Ask the <strong>closing question</strong>. Go around the circle, and let anyone pass.</li>
+          <li>If the table wants a treat, press <em>Serve Clara's Proper Meal</em>.</li>
+        </ol>
+        <p class="gm-coach-tip"><strong>Wrapping up:</strong> thank everyone. Ask: “What was your favorite moment?” and “Would you play again?” Type the answers in <strong>Quick Playtest Notes</strong> (Step 4 below), then press <em>Download Notes</em>.<br><strong>If time is short:</strong> skip straight to the closing question. That's the part people remember.</p>
+      </aside>
       <div class="gm-read-aloud">
         <span class="eyebrow">Far-Bank Campfire (Mile 358)</span>
         <p>“You made it across. The fire is warm, and Clara’s kettle is steaming on the coals.”<br>
@@ -118,6 +202,7 @@
       </div>
     </div>
     <div class="gm-supply-grid" id="gm-supply-grid"></div>
+    <p class="gm-help gm-coach-inline">💡 <strong>When to use this:</strong> most costs come off automatically when you press a crossing option. Use <em>−</em> or <em>+</em> only when the story changes something, for example Thomas uses 1 Medicine or Cal brings back food. Read the sentence at the top of this panel out loud whenever players ask “How are we doing?” Ignore the day buttons tonight unless the players decide to rest or travel extra days.</p>
     <div class="status" id="gm-action-banner" hidden aria-live="polite"></div>
   </section>
 
@@ -132,11 +217,13 @@
     </div>
     <div id="gm-roll-callout" class="status gm-callout-large" hidden aria-live="polite"></div>
     <div class="gm-roster" id="gm-roster"></div>
+    <p class="gm-help gm-coach-inline">💡 <strong>How to read a card:</strong> the skill line tells you what number a player adds to a roll. <strong>HP</strong> is health: press <em>−</em> when someone gets hurt. <strong>Tired</strong> goes up only if the story says so, such as a skipped meal or a hard push. Tick <strong>Chapter power used</strong> once a player uses their special once-per-chapter power. Open <em>Story &amp; powers</em> to remind a player what their character wants.</p>
   </section>
 
   <!-- 4. SIMPLE PLAYTEST NOTES -->
   <section class="ledger-panel" id="gm-playtest-panel">
     <h2>4. Quick Playtest Notes</h2>
+    <p class="gm-help gm-coach-inline">💡 <strong>Keep notes short.</strong> A few words is enough: “Mae loved the sign,” “confused by +2,” “break at 8:10.” Crossing choices are logged for you automatically. At the end, press <em>Download Notes</em> so you keep a copy.</p>
     <div class="gm-note-input-row">
       <input id="gm-note-input" type="text" maxlength="500" placeholder="Type a quick note during play and press Enter…" aria-label="Quick playtest note">
       <button type="button" id="gm-note-add">Save Note</button>

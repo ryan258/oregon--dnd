@@ -3,3 +3,5 @@ logs/
 .DS_Store
 dist/
 .hugo_build.lock
+__pycache__/
+*.pyc
