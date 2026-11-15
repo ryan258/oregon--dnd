@@ -1,6 +1,6 @@
 # Party and wagon — v0.10
 
-*Everything the four of you own, and how much of it is left.*
+*Everything the five of you own, and how much of it is left.*
 
 ## Next decision — keep this visible
 

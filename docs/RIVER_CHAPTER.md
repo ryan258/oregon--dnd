@@ -4,7 +4,7 @@
 
 Put the four crossing offers in front of the party in the first ten minutes. A part buys a safe ford, labor buys passage for Mercy too, and a day's delay may cost a meeting. Let the travelers decide what they are willing to spend before anyone touches a die.
 
-**A complete introductory chapter for Oregon Trail RPG v0.10.** One GM, 1–4 players controlling four travelers, target 2–3 hours. This duration is untested. Use the [pregens](PREGENS.md), [reference](sheets/gm_reference.md), [wagon sheet](sheets/party_wagon_sheet.md), and [people ledger](sheets/people_ledger.md). All people and local scene sites are fictional.
+**A complete introductory chapter for Oregon Trail RPG v0.10.** One GM, 1–5 players controlling five travelers (6 people at the full table), target 2–3 hours. This duration is untested. Use the [pregens](PREGENS.md), [reference](sheets/gm_reference.md), [wagon sheet](sheets/party_wagon_sheet.md), and [people ledger](sheets/people_ledger.md). All people and local scene sites are fictional.
 
 ## Five-minute start
 
@@ -46,14 +46,15 @@ Before choosing, show Nessa's departure date beside the crossing prices. Mae's f
 
 Ramp work misses that meeting on the posted schedule. If weather changes Nessa's departure, announce Mara's last available evening again before the next commitment. Mae may send a written proposal with Nessa from the queue on day 1 for $1. Nessa delivers it; Mara's default response is a written invitation to find her at the Valley and discuss whatever work is then available, with no partnership reserved. No hidden persuasion check or permanently ruined dream. Mae can propose another arrangement now; Ellis can relay a message after departure, but cannot recall the carrier. In an ongoing campaign offer this connection to the player whose Dream fits, with their agreement; if no one wants it, use Nessa's openly stated departure as an optional opportunity and record that the deadline did not matter to this table.
 
-### Four reasons to speak
+### Five reasons to speak
 
-Use these within the decision, not as four compulsory side quests. Players may reject the hook or substitute their own stake.
+Use these within the decision, not as five compulsory side quests. Players may reject the hook or substitute their own stake.
 
 - **Guide:** Mercy asks to use one of Eliza's mother's lesson books while the queue waits today, before any crossing. Eliza can lead a short lesson, invite someone else to lead, or keep the book packed. Pack it again before leaving unless Eliza explicitly lends it beyond the lesson or gives it away. This uses no separate day or action.
 - **Doctor:** adult traveler **Ada Pike** asks for ordinary treatment of dysentery. She has 6/9 HP, 3 marks, 1 HP of damage due today, and a caretaker with their own provisions. Thomas can spend 1 medicine and roll INT DC 10 before leaving the queue, alongside today's chosen action. On success Ada still takes 1 HP after rounding up, and her caretaker rolls Ada's evening recovery with Advantage (CON +0, DC 10, one mark removed on success). On failure, use the same damage and a single recovery die. If Thomas takes a Rest Day here, he can use his Camp Action for Stabilize instead. Ada's party handles later care. Refusal creates no scripted death or penalty.
 - **Hunter:** Mercy offers to trade one of her remaining books for 10 lbs cured food, with no cash value assigned to the book. Cal can give the food instead, trade, or keep the reserve. This neither pays her crossing nor earns river intelligence; it changes who keeps that book. Nearby game is available in the standalone if Cal chooses to hunt instead of labor or Rest.
 - **Teamster:** Mae owns the response to Mara's offer and can explain what the prepared rope line would buy. The rest of the table decides the shared wagon's approach together; her role never grants a veto over other PCs.
+- **Steward:** Clara can use **Fair Bargain** once here to drop Ellis's $10 ferry price to **$8** (or Mercy's $10 fare to $8) without a roll, and **Church Choir & Supper** if the party takes a Rest Day and shares a Proper Meal. She also notices who in the wagon has not spoken yet and can draw them into the decision before anyone commits.
 
 No one forces a charitable choice. If refused, Mercy sells books to cross later. The consequences are her changed prospects and the absence of a favor, not a moral penalty imposed by the GM.
 

@@ -2,7 +2,7 @@
 
 *The land the party is crossing is somebody's Tuesday.*
 
-Every mile of this route runs through places where people already live and work — where the fishing site is maintained, the crossing is operated, the stock is counted, and the road is one more thing that happened this year. The travelers are the newcomers here, and usually the ones who need something. Play these scenes the way you would play any scene with a competent adult who has their own day to get through: they have work in progress, terms they will state plainly, and no obligation to explain themselves to four strangers with a wagon.
+Every mile of this route runs through places where people already live and work — where the fishing site is maintained, the crossing is operated, the stock is counted, and the road is one more thing that happened this year. The travelers are the newcomers here, and usually the ones who need something. Play these scenes the way you would play any scene with a competent adult who has their own day to get through: they have work in progress, terms they will state plainly, and no obligation to explain themselves to five strangers with a wagon.
 
 The design consequence is simple. There is no hostility score, no reaction roll, and no mechanism by which a bad die makes someone dangerous. What is uncertain in these scenes is never *what kind of person is this* — it is *what are the travelers willing to offer, and can they live with the answer.*
 

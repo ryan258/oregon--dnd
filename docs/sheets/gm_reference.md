@@ -34,7 +34,7 @@ Hunt full day or half-speed travel: 5 ammo, DEX DC 10/14, yield 60/30 fresh lbs.
 
 ## Harm and recovery
 
-At first 0 HP Wounded; separate hit at 0 or return to 0 advances Gravely then Dead. One step/hit. Ordinary stabilization action restores 1 HP. Wounded: physical tasks unavailable at 0, STR/DEX Disadvantage otherwise. Gravely: no actions/checks, can ride. Replacement: immediate, full normal HP, Exhaustion 1, earned techniques, no new supplies or fee. Temporary substitute uses one of four active slots; account for all bodies fed.
+At first 0 HP Wounded; separate hit at 0 or return to 0 advances Gravely then Dead. One step/hit. Ordinary stabilization action restores 1 HP. Wounded: physical tasks unavailable at 0, STR/DEX Disadvantage otherwise. Gravely: no actions/checks, can ride. Replacement: immediate, full normal HP, Exhaustion 1, earned techniques, no new supplies or fee. Temporary substitute uses one of five active slots; account for all bodies fed.
 
 Exhaustion 1 −1 checks; 2 physical Disadvantage replaces −1; 3 all Disadvantage uncancelable; 4 max HP half/up; 5 incapacitated; 6 death. **Gain max 1/day, all sources.** Recovery needs full ration. Condition recovery ignores condition/Exhaustion/Morale penalties.
 

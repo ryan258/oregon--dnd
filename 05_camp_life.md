@@ -8,7 +8,7 @@ Version 0.10. At every night's camp, invite one conversation. At a **Rest Day**,
 
 ## Rest Day procedure
 
-Name a safe or at least usable stopping place; disclose weather hazards. Pay 0.5 lb food per traveler (2 lbs for the four-person party) and ordinary water if tracked. No miles. Each able traveler takes one Camp Action. Only one repair action can target the wagon; Teamster upkeep is additional. At day's end resolve condition checks, heal each fed traveler 1d4+1 HP, remove 1 Exhaustion, and roll CON DC 10 to improve each fed wounded traveler's wound state by one step. Unfed travelers heal 1 HP only. Each living team heals 1 HP; Teamster restores 1 Wagon HP automatically. Effects cannot exceed maximums.
+Name a safe or at least usable stopping place; disclose weather hazards. Pay 0.5 lb food per traveler (2.5 lbs for the five-person party) and ordinary water if tracked. No miles. Each able traveler takes one Camp Action. Only one repair action can target the wagon; Teamster upkeep is additional. At day's end resolve condition checks, heal each fed traveler 1d4+1 HP, remove 1 Exhaustion, and roll CON DC 10 to improve each fed wounded traveler's wound state by one step. Unfed travelers heal 1 HP only. Each living team heals 1 HP; Teamster restores 1 Wagon HP automatically. Effects cannot exceed maximums.
 
 | Camp Action | Result |
 | --- | --- |
@@ -30,7 +30,7 @@ The Doctor can still perform their once-daily ordinary treatment alongside a Cam
 Choose one. These cannot stack on the same evening.
 
 - **Tell the truth:** share or summarize something another traveler did not know; if at least two characters respond, Morale +1. No acting test, no CHA check, maximum once per chapter for this activity.
-- **Proper meal:** spend an extra full Rest Day ration for everyone (2 additional lbs for four). Morale +1; no additional Exhaustion removal.
+- **Proper meal:** spend an extra full Rest Day ration for everyone (2.5 additional lbs for five). Morale +1; no additional Exhaustion removal.
 - **Write or remember:** name a person you hope hears the story; one character who lacks Inspiration gains it. This does not consume that character's once-per-session personal-stakes award.
 
 ## Watch

@@ -6,7 +6,7 @@ The road's vocabulary, in plain words. The [core rules](../seed.md) are authorit
 | --- | --- |
 | Ability / modifier | A character's STR, DEX, CON, INT, WIS, or CHA and its small bonus/penalty to a d20 check. |
 | Advantage / Disadvantage | Roll twice, take higher/lower. They do not stack; normally cancel if both apply. |
-| Active slot | One of four travelers who can act for the party. A substitute occupies a slot, never adds a fifth free action. |
+| Active slot | One of five travelers who can act for the party. A substitute occupies a slot, never adds a sixth free action. |
 | Background | One starting specialty chosen within the role. |
 | Bond | An agreed relationship with another PC. |
 | Boundary | Something the character says they will not sacrifice; it cannot control another player. Separate from real table safety boundaries. |
@@ -24,7 +24,7 @@ The road's vocabulary, in plain words. The [core rules](../seed.md) are authorit
 | Extended check | Three successes before two failures, varied contributors, stated stakes. Not needed for ordinary conversation. |
 | Favor | A specific person offering a specific future benefit. Record when earned and spent. |
 | Focus Day | Resolve one day separately because a decision or danger matters; it does not automatically add an event inside an existing leg. |
-| Full / partial / failed group check | More than half succeed / at least one but no majority / nobody succeeds. |
+| Full / partial / failed group check | Three or more succeed (among five rollers) / one or two succeed / nobody succeeds. |
 | Hard travel | Reckless travel or any Forced March attempt; increases food and stock strain. |
 | HP | Hit Points, a short-term injury buffer. Zero interacts with persistent wound state. |
 | Inspiration | One held opportunity to gain Advantage, earned through meaningful personal stakes or a specified evening activity. |

@@ -1,29 +1,38 @@
 # Oregon Trail RPG — Start playing
 
-**Version 0.10 playtest edition.** Four ordinary people, one wagon, and two thousand miles of decisions nobody gets to take back. This page gets you playing in five minutes; [core rules](../seed.md) settle shared mechanics.
+**Version 0.10 playtest edition.** Five ordinary people, one wagon, and two thousand miles of decisions nobody gets to take back. Built for **one GM and up to five players** (6 people at the table). This page gets you playing in five minutes; [core rules](../seed.md) settle shared mechanics.
 
 > **What are we willing to spend, and what do we refuse to lose, to get these people to Oregon?**
 
 Everything in this game is an answer to that question. The food barrel is an answer. The day you stop to help a stranger is an answer. So is the day you don't.
 
+## First time playing? (No experience needed)
+
+You do **not** need to know Dungeons & Dragons or memorize any rules.
+- **Say what you want to do in plain English.** ("I walk down to talk to the ferryman," or "I check if the wheels are tight.")
+- **Roll only when there's a risk.** The GM will tell you which single number on your sheet to add to a **20-sided die (d20)**. Usually **10 or higher** succeeds on ordinary tasks, and **12 or higher** on hard ones.
+- **Advantage / Disadvantage:** Roll **two** d20s and keep the higher one (Advantage) or lower one (Disadvantage).
+- **One shared wagon sheet:** Let the GM or one volunteer track the shared food, money, and miles on the wagon sheet. Everyone else only needs their own character card and one 20-sided die.
+
 ## Start in five minutes
 
-1. Pick a GM and distribute the [four pregens](PREGENS.md) (or open them in the [player companion](PLAYER_APP.md)). With fewer than four players, share the extra travelers. No D&D book needed.
+1. Pick a GM and distribute the [five pregens](PREGENS.md) (or open them in the [player companion](PLAYER_APP.md)). With fewer than five players, share the extra travelers. No D&D book needed.
 2. Agree [tone and boundaries](SESSION_ZERO.md); read Dream, Promise, Boundary, and Bond aloud. Revise with the other players' agreement.
 3. For tonight, open [The River Between](RIVER_CHAPTER.md) and use its exact starting state. Put the [river decision card](sheets/river_decision_card.md) where everyone can see it. For the full journey use the starter loadout below and [Seven Chapters](CAMPAIGN.md).
 4. Put the [route map](TRAIL_MAP.md), [wagon sheet](sheets/party_wagon_sheet.md), [GM reference](sheets/gm_reference.md), and [people ledger](sheets/people_ledger.md) within reach.
 5. Keep the [travel procedure card](sheets/travel_procedure.md) and [quick observation sheet](sheets/playtest_observer.md) ready. State the visible problem and the available options. At the river, read all four offers and the scouting option before commitment. Make the first decision before teaching every subsystem.
 
-## The four travelers
+## The five travelers
 
-Four jobs, four kinds of authority, four ways to be the one who says *wait*. Each has work that simply succeeds, and one intervention that costs real resources to buy certainty when it matters.
+Five jobs, five kinds of authority, five ways to be the one who says *wait*. Each has work that simply succeeds, and one intervention that costs real resources to buy certainty when it matters.
 
 | Role | Dependable contribution | Costly intervention |
 | --- | --- | --- |
 | Guide | Routine marked-route navigation DC 12 or lower succeeds unless obscured. | One scouting day reveals both routes' real immediate costs/hazards. |
 | Doctor | Identify a condition and its risks without rolling. | On Rest Day, 1 medicine + Camp Action/daily treatment prevents patient's condition damage today and removes 2 marks from one condition instead of its check. |
-| Hunter | A full Hunt Day + 5 ammunition gives 30 lbs fresh food where game exists. | Once/chapter, halve the four travelers' next three days of food; cannot feed from zero. |
+| Hunter | A full Hunt Day + 5 ammunition gives 30 lbs fresh food where game exists. | Once/chapter, halve the five travelers' next three days of food; cannot feed from zero. |
 | Teamster | +1 Wagon HP on Rest Days without action. | One part + Repair Day/Camp Action restores 6 Wagon HP guaranteed. |
+| Steward | Fair Bargain: once per settlement or major crossing, take 20% off one cash price, fee, or toll (min $1) without rolling. | Hold the Wagon Together: once/chapter, cancel 1 Morale loss from an event, shortage, or hard choice. |
 
 New characters use scores 15, 13, 12, 10, 10, 8 assigned freely and HP 8 + CON modifier. Choose one [background](../02_character_backgrounds.md). No Background Bump. Pregens have all this filled in.
 
@@ -69,7 +78,7 @@ Weather changes every three calendar days and at chapter entry. [Weather table](
 
 ## Supplies and rest
 
-- Ordinary four-person day: 4 lbs food. Hard travel: 8. Rest: 2. Missing a full ration gives that traveler 1 Exhaustion. No penalty merely for a low reserve while everyone is fed.
+- Ordinary five-person day: 5 lbs food. Hard travel: 10. Rest: 2.5. Missing a full ration gives that traveler 1 Exhaustion. No penalty merely for a low reserve while everyone is fed.
 - Track water only in waterless stretches: 2 gallons/day for party and teams, 4 in heat. Insufficient daily amount: each traveler loses 1 HP and gains 1 Exhaustion; one team loses 2 HP. Reaching zero after paying the full amount is not yet deprivation.
 - Fresh meat: 100-lb cap, expires after the third day following acquisition. Mark date; preserve on a Rest Day. Cured food keeps unless a warned event threatens it.
 - Hunt: 5 ammunition, DEX DC 10 good terrain / 14 poor; success 60 / 30 lbs fresh food. Take Aim is 30 guaranteed with full Hunt Day and 5 ammunition. Check availability first.
@@ -86,7 +95,7 @@ At first reaching 0 HP: Wounded. Later separate damage at 0 or returning to 0: G
 
 Exhaustion: 1 = −1 checks; 2 = physical Disadvantage replaces −1; 3 = all checks Disadvantage that Advantage cannot cancel; 4 = max HP halved; 5 = incapacitated; 6 = death. **At most one new Exhaustion per day, all sources.** Removal requires full ration. Use core for condition recovery; recovery rolls ignore condition/Exhaustion/Morale penalties.
 
-The player immediately controls a reserve or shares another active traveler while incapacitated. Four active slots maximum; extra bodies need explicit food accounting. After death introduce a replacement immediately, normal full HP, Exhaustion 1, current techniques, no free supplies, no fee/ability lockout. Mark the grave and a memory.
+The player immediately controls a reserve or shares another active traveler while incapacitated. Five active slots maximum; extra bodies need explicit food accounting. After death introduce a replacement immediately, normal full HP, Exhaustion 1, current techniques, no free supplies, no fee/ability lockout. Mark the grave and a memory.
 
 ## Morale and people
 

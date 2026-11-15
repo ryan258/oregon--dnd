@@ -70,6 +70,22 @@ Techniques:
 - **Build a Sledge:** Once per chapter, at a site with usable timber and ordinary tools, spend 1 part and today's action to build and haul a temporary sledge with one other able traveler. Move up to two cargo bundles past one local land obstacle without rolling or sacrificing them, then the whole party travels half Standard mileage with normal ox/weather/Exhaustion modifiers, rounded once. Ordinary food, no Rest benefits; this replaces that obstacle's bundle-carrying or clearing delay, not both. A usable wagon and at least one usable team are required for the onward travel. Cannot cross open water, bypass a whole finale, prevent unrelated damage, or add permanent wagon capacity. With no timber or viable local path, disclose unavailability before spending. At a fixed-day finale obstacle, the same preparation takes one additional labor day and preserves up to two threatened bundles; no mileage is credited and other finale days still apply.
 - **Loadmaster:** When the party must walk, each able traveler can carry 35 rather than 25 lbs of supplies. Personal keepsakes/clothes are still free.
 
+## Steward
+
+*Everyone else watches the road, the herd, or the fever. You watch the people — and notice who is about to stop talking.*
+
+- **Shopkeeper's Kin:** Once per fort or settlement, ask one fair price check and learn the seller's real floor or immediate need without a roll.
+- **Church Choir & Supper:** Once per chapter, when the party shares a Proper Meal or rests together on a Rest Day, restore 1 extra Morale (max 10).
+- **Peacemaker:** Advantage on checks to calm a dispute, reassure a frightened traveler, or ask for help without escalating tension.
+- **Careful Bookkeeper:** Once per chapter, spot a hidden cost, bad measure, or short weight before the party pays; you may cancel or renegotiate that transaction before money or goods change hands.
+
+Techniques:
+
+- **Trusted Word:** Once per chapter, offer a written promise or personal token instead of immediate cash (up to $15 value) at a settlement or camp; the GM notes who holds it and when it comes due.
+- **Warm Kettle:** On any Rest Day where the party has fire and water, one exhausted traveler of your choice removes 1 extra Exhaustion if they ate their full ration.
+- **Share the Load:** Once per chapter, during a hard-travel day or camp chore, take on another traveler's burden: that traveler ignores Exhaustion 1–2 penalties on one check today, or avoids 1 Exhaustion from a single non-starvation source (you take no extra Exhaustion yourself).
+- **Good Neighbor:** When meeting another wagon or community on the road, Advantage on the first check to trade, ask for directions, or arrange safe passage.
+
 ## Advancing between sessions
 
 Nobody on this road levels up. You get better at the thing you already did, usually because it went badly once.

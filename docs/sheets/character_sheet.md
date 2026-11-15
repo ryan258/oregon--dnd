@@ -2,6 +2,8 @@
 
 *Who you are, what you promised, and what it is costing you today.*
 
+**How to roll:** Say what you want to do. When there is a risk, roll one **20-sided die (d20)** and add the modifier (`+2`, `−1`, etc.) the GM names. Usually **10+** succeeds on ordinary tasks and **12+** on hard ones.
+
 Name: __________ Player: __________ Role: __________ Background: __________
 
 Write the score and modifier in each ability box.
@@ -52,4 +54,4 @@ Promise terms / other person's agreement / next appearance: ____________________
 
 What changed at chapter end? ____________________
 
-If incapacitated, immediately choose an active substitute/shared role. Maximum four active slots; no participation fee. Replacement receives no free supplies.
+If incapacitated, immediately choose an active substitute/shared role. Maximum five active slots; no participation fee. Replacement receives no free supplies.

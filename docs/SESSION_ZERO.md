@@ -8,7 +8,7 @@ Version 0.10. Read this aloud or summarize in five minutes; invite changes befor
 
 “We are playing ordinary adults sharing a wagon in a fictionalized 1848 journey. Supplies and time matter. Characters can die, but players always keep a meaningful role. We will hear catastrophic stakes before choosing them. The story includes other people's homes and livelihoods; the land is not empty.”
 
-Agree one tone: hopeful hardship (default), sober survival, or harsh survival. Use the corresponding core difficulty only by agreement; tone is not permission for surprise punishment. Default four travelers even with fewer players; share the extra roles.
+Agree one tone: hopeful hardship (default), sober survival, or harsh survival. Use the corresponding core difficulty only by agreement; tone is not permission for surprise punishment. Default five travelers even with fewer players; share the extra roles.
 
 **Default boundaries:** no depicted sexual violence; no child harm; no required slurs or reenactment of racist abuse; illness/injury described briefly rather than graphically; no PC-versus-PC violence or mind control. People can discuss the historical setting's injustice without performing abuse at the table. Change these boundaries only through explicit agreement; anyone can ask for stricter limits privately.
 

@@ -79,6 +79,7 @@ Choose an unresolved row from the actual record before the route purchase. If no
 | Thomas treated Ada or taught a caretaker | A carried note names what that person could do afterward; no retrospective guaranteed cure. | Seek a practice together, offer correspondence, or acknowledge help without a new commitment. |
 | Cal accepted, fulfilled, or declined provisioning work | Nessa's contact has the recorded terms and delivery, not a surprise bill. | Choose whether ongoing paid work fits his present dream. |
 | Mae negotiated with Mara or Tomas | A meeting/letter gives the agreed partnership or invitation to discuss work. | Accept those terms, renegotiate with consent, or explain a different choice. |
+| Clara helped Mercy's or another wagon's household hold together | A message or greeting at The Dalles names who stayed together because of her care and fair dealing. | Choose how to open her boarding table and who has a place at it. |
 | Hall work-area promise | The stock keeper's message identifies a returned tool, completed work, or actual outstanding obligation. | Reply, arrange restitution, or leave the promise openly unfinished. |
 
 ## Meeting someone again
@@ -89,4 +90,4 @@ On a recurring-person event choose one whose return is plausible. Ask: What chan
 
 ## Reserve travelers
 
-Jonah Reed, mechanic Ruth Ames traveling with Tomas, and carrier Ellis Bell traveling with Nessa can serve as temporary/replacement PCs with player permission. Their names, occupations, and connections are fictional. Use the chosen role's fixed-array sheet; no supplies materialize. A fourth reserve can be named by the players. NPC stat blocks are unnecessary until someone becomes an active traveler.
+Jonah Reed, mechanic Ruth Ames traveling with Tomas, carrier Ellis Bell traveling with Nessa, and parish cook Martha Holt can serve as temporary/replacement PCs with player permission. Their names, occupations, and connections are fictional. Use the chosen role's fixed-array sheet; no supplies materialize. A fifth reserve can be named by the players. NPC stat blocks are unnecessary until someone becomes an active traveler.

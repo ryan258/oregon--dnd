@@ -6,14 +6,14 @@ Show or read the four offers. The standalone begins **June 2 at marker 340** wit
 
 | Approach | Earliest crossing | Cost through crossing | Meeting with Mara |
 | --- | --- | --- | --- |
-| **Pay for the ferry** | Day 2, June 3 | $10 at boarding and 6 lbs of food if everyone Rests today. Add $10 to pay Mercy's fare. Safe crossing with wagon, teams, and cargo. | Evening of day 2 |
-| **Work on the ramp** | Day 3, June 4 | Two days with two able workers each day. 10 lbs of food if everyone else Rests. Earn safe ferry passage for the party and Mercy for $0. | Missed on the posted schedule |
-| **Try the upper ford** | Day 1, June 2 | $0 and 4 lbs of food. Group DEX/WIS DC 12. See the outcomes below. | Evening of day 1 if you cross |
-| **Prepare a rope line at the ford** | Day 2, June 3 | 1 spare part for anchors and 8 lbs of food. One full party labor day, then a safe crossing. | Evening of day 2 |
+| **Pay for the ferry** | Day 2, June 3 | $10 at boarding ($8 with Steward's Fair Bargain) and 7.5 lbs of food if everyone Rests today. Add $10 to pay Mercy's fare. Safe crossing with wagon, teams, and cargo. | Evening of day 2 |
+| **Work on the ramp** | Day 3, June 4 | Two days with two able workers each day. 12 lbs of food if everyone else Rests. Earn safe ferry passage for the party and Mercy for $0. | Missed on the posted schedule |
+| **Try the upper ford** | Day 1, June 2 | $0 and 5 lbs of food. Group DEX/WIS DC 12. See the outcomes below. | Evening of day 1 if you cross |
+| **Prepare a rope line at the ford** | Day 2, June 3 | 1 spare part for anchors and 10 lbs of food. One full party labor day, then a safe crossing. | Evening of day 2 |
 
-Food assumes four travelers, the stated Rest choices, and ordinary rations before Stretch the stores. Mercy's party feeds itself. Waiting, scouting, and labor use days at marker 340.
+Food assumes five travelers, the stated Rest choices, and ordinary rations before Stretch the stores. Mercy's party feeds itself. Waiting, scouting, and labor use days at marker 340.
 
-**Scout the ford first.** Spend a day scouting for Advantage on the group check. The Guide does the scouting. Everyone uses ordinary rations that day and forgoes Rest benefits. Earliest crossing is day 2, with 8 lbs of food through crossing and no cash or parts spent. If you cross, you can meet Mara that evening. Advantage never stacks.
+**Scout the ford first.** Spend a day scouting for Advantage on the group check. The Guide does the scouting. Everyone uses ordinary rations that day and forgoes Rest benefits. Earliest crossing is day 2, with 10 lbs of food through crossing and no cash or parts spent. If you cross, you can meet Mara that evening. Advantage never stacks.
 
 **Ford outcomes.** Each able participant rolls d20 + DEX or WIS modifier based on their contribution. A total at or above the DC succeeds.
 

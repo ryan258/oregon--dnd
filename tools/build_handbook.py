@@ -83,7 +83,7 @@ def render_source(source):
     for start, end in zip(boundaries, boundaries[1:] + [len(tokens)]):
         block = md.renderer.render(tokens[start:end], md.options, env)
         role = tokens[start + 1].content.rpartition(' — ')[2]
-        if role in ('Guide', 'Doctor', 'Hunter', 'Teamster'):
+        if role in ('Guide', 'Doctor', 'Hunter', 'Teamster', 'Steward'):
             block = f'<section class="pregen-sheet">{block}{PREGEN_RECORD}</section>'
         body += block
     return body
@@ -186,7 +186,7 @@ footer{padding:25px 5vw;font-size:14px;border-top:1px solid var(--line)}
 }
 '''
 out = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Oregon Trail RPG — Playtest Handbook v0.10</title><style>'+css+'</style></head><body>'
-out += '<a class="skip" href="#reading">Skip to handbook</a><header><p class="kicker">Oregon Trail RPG · v0.10 · Playtest edition</p><h1>Four people. One wagon.<br>Promises worth carrying.</h1><p>A complete local play packet. Start at the river, then follow the journey west. The design aims for memorable decisions; human playtesting is still pending.</p><div class="actions"><button type="button" id="tonight" aria-pressed="false">Play tonight</button><a href="#docs-sheets-river_decision_card-md">River decision card</a><a href="#docs-RIVER_CHAPTER-md">Play the river chapter</a><a href="#docs-PREGENS-md">Meet the four travelers</a><button type="button" id="complete" aria-pressed="true">Complete handbook</button><button type="button" onclick="window.print()">Print selected packet / save PDF</button></div><p id="selection-status" role="status">Complete handbook selected. Print includes all sections, including development records.</p></header>'
+out += '<a class="skip" href="#reading">Skip to handbook</a><header><p class="kicker">Oregon Trail RPG · v0.10 · Playtest edition</p><h1>Five people. One wagon.<br>Promises worth carrying.</h1><p>A complete local play packet. Start at the river, then follow the journey west. The design aims for memorable decisions; human playtesting is still pending.</p><div class="actions"><button type="button" id="tonight" aria-pressed="false">Play tonight</button><a href="#docs-sheets-river_decision_card-md">River decision card</a><a href="#docs-RIVER_CHAPTER-md">Play the river chapter</a><a href="#docs-PREGENS-md">Meet the five travelers</a><button type="button" id="complete" aria-pressed="true">Complete handbook</button><button type="button" onclick="window.print()">Print selected packet / save PDF</button></div><p id="selection-status" role="status">Complete handbook selected. Print includes all sections, including development records.</p></header>'
 out += '<div class="layout"><nav aria-label="Handbook sections">'+''.join(nav)+'</nav><main id="reading" tabindex="-1">'+''.join(sections)+'</main></div><footer>Generated from the Markdown packet. No network requests, accounts, or data collection. Rebuild with python3 tools/build_handbook.py.</footer></body></html>'
 # An out-of-packet reference is visible on screen while the short print selection stays active.
 script = """<script>

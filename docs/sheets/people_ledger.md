@@ -8,6 +8,7 @@
 | | | | |
 | | | | |
 | | | | |
+| | | | |
 
 No compulsory sacrifice or score. A changed aim is the player's choice; renegotiated terms require the other person's agreement.
 

@@ -19,7 +19,7 @@ Keep totals on the wagon sheet and decisions on the trail log. Use the [core rul
 | Recover | Roll for each active condition. Doctor Stabilize replaces its target's check. On Rest, apply healing, Exhaustion recovery, and fed wound checks. | Recalculate tomorrow's speed and care after recovery. |
 | Close | Hold camp and watch, resolve evening expiry, and advance the date once. Mark weather days used. | Stop at a marker, fort, deadline, or requested decision. Carry no surplus miles past a scene or fort. |
 
-**Batch only identical arithmetic.** With two usable teams, healthy travelers, and unchanged clear weather, three Standard days are 54 miles and 12 lbs food. Roll the event first and track water where required. Resolve changing health daily. Apply new speed only to the days it affects.
+**Batch only identical arithmetic.** With two usable teams, healthy travelers, and unchanged clear weather, three Standard days are 54 miles and 15 lbs food. Roll the event first and track water where required. Resolve changing health daily. Apply new speed only to the days it affects.
 
 ## Pause and resume
 

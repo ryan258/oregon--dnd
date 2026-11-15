@@ -75,7 +75,7 @@ for qty,unit,stated in rows:
 if total!=550 or 800-total!=250: errors.append('starter total / remainder mismatch')
 pre=(ROOT/'docs/PREGENS.md').read_text()
 arrays=re.findall(r'^\| (\d+) \(([+−-]\d+)\) \| (\d+) \(([+−-]\d+)\) \| (\d+) \(([+−-]\d+)\) \| (\d+) \(([+−-]\d+)\) \| (\d+) \(([+−-]\d+)\) \| (\d+) \(([+−-]\d+)\) \| (\d+)/(\d+) \|$',pre,re.M)
-if len(arrays)!=4: errors.append(f'expected4 pregen arrays, got {len(arrays)}')
+if len(arrays)!=5: errors.append(f'expected 5 pregen arrays, got {len(arrays)}')
 for row in arrays:
     scores=list(map(int,row[:12:2])); mods=[int(x.replace('−','-')) for x in row[1:12:2]]
     if sorted(scores)!=[8,10,10,12,13,15]: errors.append('pregen array mismatch')
@@ -89,7 +89,7 @@ for n,b in enumerate(blocks,1):
     if rolls!=list('123456'): errors.append(f'chapter{n} event roll coverage {rolls}')
 print(f'{len(files)} Markdown files; {links} local links; {html.articles} handbook sections '
       f'({len(html.short_sections)} in Play tonight); {len(html.refs)} handbook anchors; '
-      '4 pregens; 42 events; starter budget $550/$250.')
+      '5 pregens; 42 events; starter budget $550/$250.')
 if errors:
     print('\n'.join(errors)); sys.exit(1)
 print('PASS: bounded structure and printed arithmetic checks. No playtest/balance claim.')

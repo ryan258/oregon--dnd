@@ -32,6 +32,7 @@ Keep totals on the wagon and character sheets and the resume point on the trail 
 | Doctor / Thomas's choice and effect | |
 | Hunter / Cal's choice and effect | |
 | Teamster / Mae's choice and effect | |
+| Steward / Clara's choice and effect | |
 | Unclear price or consequence | |
 | Mara's meeting / what shaped the route | |
 | Waiting or bookkeeping / memorable moment | |

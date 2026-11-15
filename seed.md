@@ -1,6 +1,6 @@
 # Oregon Trail RPG — Core Rules
 
-**Version 0.10 — September 2026 playtest edition.** A complete campaign for one GM and 1–4 players controlling four travelers. Seven chapters, usually 6–8 sessions of 2–3 hours; that duration is a design target, not measured playtest evidence. For a single session use [The River Between](docs/RIVER_CHAPTER.md).
+**Version 0.10 — September 2026 playtest edition.** A complete campaign for one GM and 1–5 players controlling five travelers (6 people at the full table). Seven chapters, usually 6–8 sessions of 2–3 hours; that duration is a design target, not measured playtest evidence. For a single session use [The River Between](docs/RIVER_CHAPTER.md).
 
 > **What are we willing to spend, and what do we refuse to lose, to get these people to Oregon?**
 
@@ -22,7 +22,7 @@ This file is authoritative for shared mechanics. Numbered modules supply procedu
 
 *Before anyone asks how much flour to buy, ask what they would not sell it for.*
 
-The party always has four active travelers. With 2–3 players, share the extra sheets and rotate their decisions; with one player use [solo rules](docs/SOLO.md). The four roles are Guide, Doctor, Hunter, and Teamster. One player can delegate bookkeeping without delegating their character's decisions. Supporting people encountered along the way are separate parties with their own supplies unless explicitly taken aboard; the default game never silently adds dependents or their consumption.
+The party always has five active travelers. With 2–4 players, share the extra sheets and rotate their decisions; with one player use [solo rules](docs/SOLO.md). The five roles are Guide, Doctor, Hunter, Teamster, and Steward. One player can delegate bookkeeping without delegating their character's decisions. Supporting people encountered along the way are separate parties with their own supplies unless explicitly taken aboard; the default game never silently adds dependents or their consumption.
 
 Assign scores **15, 13, 12, 10, 10, 8** freely. Put 15 in your role's primary ability if you want dependable starting expertise. Modifiers: 8–9 = −1; 10–11 = +0; 12–13 = +1; 14–15 = +2; 16–17 = +3; 18 = +4. STR is labor; DEX precision; CON endurance; INT analysis; WIS observation; CHA negotiation. No scores grow automatically.
 
@@ -52,8 +52,9 @@ Routine professional work with time, tools, and suitable conditions succeeds wit
 | --- | --- | --- |
 | Guide (WIS) | On marked routes, navigation DC 12 or lower succeeds without rolling unless a stated hazard obscures the route. | **Read the ground:** spend 1 travel day scouting at a junction. GM reveals both routes' actual immediate costs and known hazards, including whether a rumor is false. Choose afterward; no navigation check for that junction. |
 | Doctor (INT) | Once daily, identify a patient's game condition and its current risks without a roll. Ordinary wound dressing stabilizes someone at 0 HP. | **Stabilize:** on a Rest Day, spend 1 medicine and your Camp Action on one patient. No treatment roll; prevent that patient's condition damage and worsening that day, and remove 2 remaining recovery successes from one condition at day's end. No recovery roll for that condition that day. Cannot undo death. |
-| Hunter (DEX) | **Take Aim:** one full Hunt Day in terrain with available game yields 30 lbs fresh food, no roll, 5 ammunition. Check availability before committing; scarcity events can make it unavailable. | **Stretch the stores:** once per chapter, make the party's next three days of food last on half the normal amount, rounding daily totals up to 0.5 lb. Applies to four travelers’ daily rations, not gifts, trade, or the additional Proper Meal cost; cannot create food at zero. |
+| Hunter (DEX) | **Take Aim:** one full Hunt Day in terrain with available game yields 30 lbs fresh food, no roll, 5 ammunition. Check availability before committing; scarcity events can make it unavailable. | **Stretch the stores:** once per chapter, make the party's next three days of food last on half the normal amount, rounding daily totals up to 0.5 lb. Applies to five travelers’ daily rations, not gifts, trade, or the additional Proper Meal cost; cannot create food at zero. |
 | Teamster (STR) | On every Rest Day, restore 1 Wagon HP automatically, without using a Camp Action. | **Jury-rig:** spend 1 spare part and your action on a Repair or Rest Day. Restore 6 Wagon HP without rolling, up to max. At 0 Wagon HP this makes it usable again. No permanent max-HP cost. |
+| Steward (CHA) | **Fair Bargain:** once per settlement or major crossing, reduce one cash purchase, service fee, or toll by 20% (minimum $1 off, rounded up) without a roll. In camp, any traveler may spend a quiet evening with you to speak honestly without a CHA check. | **Hold the Wagon Together:** once per chapter, cancel 1 point of Morale loss from an event, shortage, or hard choice (cannot cancel a voluntary breaking-point agreement). |
 
 Lost tools impose a stated obstacle, not an unannounced removal of expertise. The starter wagon includes ordinary tools, cooking gear, rope, and shelter canvas. A specific event can threaten them only after naming them and offering a response.
 
@@ -84,7 +85,7 @@ Do not roll when failure changes nothing. Do not call an impossible task a high 
 **Before a roll**, state the stakes, ability, DC, and failure cost. For major danger offer at least two approaches, including a dependable costly option where plausible. Players can propose another approach. Fix its stakes before rolling. Information plainly visible is free; scouting reveals hidden facts rather than permission to know the rules.
 
 - **Simple:** one character rolls. One helper with a relevant action can grant Advantage, but shares the named risk. No repeated rolls for the same approach without changing conditions or paying its stated retry cost.
-- **Group:** each able participant rolls; incapacitated travelers are passengers and do not roll. More than half succeeding is full success. At least one success without a majority is a partial success. No successes is failure. With four rollers, 3–4 / 1–2 / 0 are the three outcomes. Use the scene's printed results. If unspecified: partial means complete the immediate goal and take half listed numeric damage/loss, rounded up; apply listed delays in full. Failure means no immediate progress plus the listed consequence. No invented extra death or injury.
+- **Group:** each able participant rolls; incapacitated travelers are passengers and do not roll. More than half succeeding is full success. At least one success without a majority is a partial success. No successes is failure. With five rollers, 3–5 / 1–2 / 0 are the three outcomes. Use the scene's printed results. If unspecified: partial means complete the immediate goal and take half listed numeric damage/loss, rounded up; apply listed delays in full. Failure means no immediate progress plus the listed consequence. No invented extra death or injury.
 - **Extended:** 3 successes before 2 failures. Different approaches or contributors must be used where plausible; no character rolls twice consecutively if another can act. State all outcomes before starting. On success achieve the task. On failure use the printed setback; no automatic escalation to violence. Ordinary buying, conversation, or fair agreements do not require an extended check.
 
 **Conflicts between travelers:** roleplay or summarize, then players decide their own characters' responses. CHA never compels another PC to obey. Violence among PCs requires prior player agreement and can always be excluded.
@@ -173,7 +174,7 @@ The party pool is **$800**. Starter purchases below total **$550**, leaving **$2
 
 Extra barrels add 10 gallons capacity each, giving **60 gallons total**, filled free at known clean sources. At 4 gallons/day this is 15 days: enough for twelve uninterrupted 18-mile travel days over 200 miles, with three days' reserve. Delays can exhaust it. Forecast the actual route before leaving a source; no loadout guarantees survival.
 
-**Food:** four travelers consume 4 lbs on ordinary Travel/Hunt/Repair/Trade days, 8 on hard travel, 2 on Rest Days. Mixed personal feeding is allowed: identify who ate their required ration. Fresh food is eaten first unless players specify otherwise. Purchases are cured. Fresh meat has a 100-lb party cap and expires at the end of the third day after acquisition (caught May 1: edible through May 4, discard after that evening). Record each batch date. Preserve with Smoke & Salt. Cured stores do not spoil without a warned, avoidable threat.
+**Food:** five travelers consume 5 lbs on ordinary Travel/Hunt/Repair/Trade days, 10 on hard travel, 2.5 on Rest Days. Mixed personal feeding is allowed: identify who ate their required ration. Fresh food is eaten first unless players specify otherwise. Purchases are cured. Fresh meat has a 100-lb party cap and expires at the end of the third day after acquisition (caught May 1: edible through May 4, discard after that evening). Record each batch date. Preserve with Smoke & Salt. Cured stores do not spoil without a warned, avoidable threat.
 
 **Short rations:** a traveler who does not receive their day's full ration gains 1 Exhaustion at day's end. Half rations are a deliberate cost, not a second roll. Having fewer than 50 lbs is a warning, not damage while people are still fed. No extra starvation check. Someone already at Exhaustion 3+ who goes an entire day with no food also takes 1 HP damage. Forage and hunt before consumption; feed people with the yield that day.
 
@@ -213,7 +214,7 @@ Effects are cumulative. A traveler gains at most **1 Exhaustion per calendar day
 | 5 | Incapacitated; passenger, no actions or checks |
 | 6 | Death |
 
-Party travel is halved once when **at least two of the four travelers** have Exhaustion 2+. If fewer than two travelers are able to act, wagon travel stops. Wounds alone do not halve speed; unavailable ox teams have their own modifier. Removing Exhaustion 4 restores normal max HP but not lost current HP.
+Party travel is halved once when **at least two of the five travelers** have Exhaustion 2+. If fewer than two travelers are able to act, wagon travel stops. Wounds alone do not halve speed; unavailable ox teams have their own modifier. Removing Exhaustion 4 restores normal max HP but not lost current HP.
 
 ### Conditions
 
@@ -234,7 +235,7 @@ A scene can specify **deep wound** (DC 10, 3 marks, 1 HP/day starting tomorrow),
 
 ### Death, incapacity, and replacements
 
-The player always keeps playing. On incapacity, immediately offer control of their previously named reserve traveler, another willing NPC, or a co-controlled active traveler until recovery. Only **four active traveler slots** take actions or contribute expertise; a temporary substitute occupies the incapacitated character's slot. Both physical bodies consume rations if aboard, but only the active substitute acts; explicitly update food needs. A substitute's own wagon can instead care for the patient, so the active party remains four bodies; agree this in fiction. Never hide an extra food cost.
+The player always keeps playing. On incapacity, immediately offer control of their previously named reserve traveler, another willing NPC, or a co-controlled active traveler until recovery. Only **five active traveler slots** take actions or contribute expertise; a temporary substitute occupies the incapacitated character's slot. Both physical bodies consume rations if aboard, but only the active substitute acts; explicitly update food needs. A substitute's own wagon can instead care for the patient, so the active party remains five bodies; agree this in fiction. Never hide an extra food cost.
 
 On death, mark date and mile, name one thing the survivors carry forward, lose 1 Morale, and introduce a replacement **in the same scene or immediately afterward**. Use the fixed array, full normal HP, Exhaustion 1, the party's earned techniques, and immediate role abilities. No new money, goods, or wagon supplies appear. The player chooses a link to the dead or another traveler. Death has consequences without a participation fee or role lockout. No additional Ghost Tax. Retiring a character voluntarily uses this same no-new-supplies rule and requires a plausible meeting; it cannot erase the party's debts or threats.
 

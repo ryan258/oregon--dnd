@@ -1,6 +1,6 @@
-# Four people, one wagon
+# Five people, one wagon
 
-*A guide carrying her dead mother's books. A doctor who keeps an unpaid bill in his pocket. A hunter who will not risk a person for property. A teamster with her father's tools and her name on a sign that does not exist yet.*
+*A guide carrying her dead mother's books. A doctor who keeps an unpaid bill in his pocket. A hunter who will not risk a person for property. A teamster with her father's tools and her name on a sign that does not exist yet. A steward who keeps a kettle warm so no one goes quiet at the fire.*
 
 They have already agreed to share the wagon. They have not yet found out what that will cost. Hand these out as they are and play — everything is filled in, and the only question at the top of the first session is the one printed under each name.
 
@@ -52,7 +52,7 @@ Campaign supplies: core starter loadout, **$250 remaining**. Standalone river su
 
 **Background:** Sharpshooter. Ordinary hunts cost 3 ammunition instead of 5. Take Aim still costs 5.
 
-**Expertise:** Take Aim uses a full Hunt Day and 5 ammunition for 30 lbs fresh food where game is available. Stretch the stores once per chapter halves four travelers' next three days of food, rounded daily to 0.5 lb; cannot create food at zero.
+**Expertise:** Take Aim uses a full Hunt Day and 5 ammunition for 30 lbs fresh food where game is available. Stretch the stores once per chapter halves five travelers' next three days of food, rounded daily to 0.5 lb; cannot create food at zero.
 
 **Dream:** earn a living without hunting for someone else's profit. **Promise:** help Eliza's school survive its first winter. **Boundary:** I will not risk a person merely to save property. **Bond:** Thomas has seen me frightened and did not use it against me. **Keepsake:** a carved wooden bird. **Voice:** makes jokes while doing practical work.
 
@@ -79,6 +79,24 @@ Campaign supplies: core starter loadout, **$250 remaining**. Standalone river su
 **On the road:** If you want this connection, former coworker Mara offers a shared workshop discussion across the river before she leaves with Nessa. Tomas later proposes a shared service at Hall. Neither opportunity obliges you to accept.
 
 **Reserve:** Ruth Ames, Tomas's fellow mechanic; takes Teamster role if needed.
+
+## Clara Vance — Steward
+
+| STR | DEX | CON | INT | WIS | CHA | HP |
+| --- | --- | --- | --- | --- | --- | --- |
+| 8 (−1) | 10 (+0) | 12 (+1) | 10 (+0) | 13 (+1) | 15 (+2) | 9/9 |
+
+**Background:** Church Choir & Supper. Once per chapter, when the party shares a Proper Meal or rests together on a Rest Day, restore 1 extra Morale (max 10).
+
+**Expertise:** Fair Bargain once per settlement or major crossing reduces one cash purchase, service fee, or toll by 20% (minimum $1 off, rounded up) without a roll; in camp, any traveler may spend a quiet evening with you to speak honestly without a CHA check. Hold the Wagon Together once per chapter cancels 1 point of Morale loss from an event, shortage, or hard choice.
+
+**Dream:** open a boarding house in Oregon City where travelers can sit down to a hot meal and a quiet room. **Promise:** bring my late husband's cast-iron kettle and keep this wagon talking to each other until we arrive. **Boundary:** I will not let someone be left out of a decision just because they are quiet or tired. **Bond:** Thomas knows I am still grieving, and he lets me help without making me explain. **Keepsake:** husband's brass pocket watch that no longer ticks. **Voice:** pours tea or water before anyone starts arguing.
+
+**Opening question:** Who in this wagon do you worry about most when everyone goes quiet?
+
+**On the road:** At the river, Ada's schoolteacher friend and the ferryman are both watching how your wagon treats people who are short on coin. Decide what fairness looks like when your own purse is thin.
+
+**Reserve:** Martha Holt, a widowed seamstress traveling two wagons back; takes the Steward role if needed, no free gear.
 
 ## At chapter end
 

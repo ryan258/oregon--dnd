@@ -40,4 +40,4 @@ A stranded party can accept **one rescue contract per campaign**: a local carrie
 
 ## Worked purchase
 
-At Laramie, Owen accepts the crossing report, reducing DC 12 to 8. Mae rolls INT total 10: 15% discount. Buying 40 lbs food ($20 base), 2 medicine ($8), and 1 part ($6) costs $34 × 2 × 0.85 = **$57.80**. Selling 20 rounds first provides $2 × 2 × 0.5 = **$2 credit**, so cash due is **$55.80**. Deduct the sold ammo, mark the fort's reduced stock, and pay the Trade Day's four-person food ration separately.
+At Laramie, Owen accepts the crossing report, reducing DC 12 to 8. Mae rolls INT total 10: 15% discount. Buying 40 lbs food ($20 base), 2 medicine ($8), and 1 part ($6) costs $34 × 2 × 0.85 = **$57.80**. Selling 20 rounds first provides $2 × 2 × 0.5 = **$2 credit**, so cash due is **$55.80**. Deduct the sold ammo, mark the fort's reduced stock, and pay the Trade Day's five-person food ration separately.

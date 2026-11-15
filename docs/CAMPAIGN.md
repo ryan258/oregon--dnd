@@ -2,7 +2,7 @@
 
 *Grass, water, stone, sand. The landscape changes; so should the decisions.*
 
-Version 0.10. Seven chapter situations for four travelers. Keep the actual date, resources, and relationships. The [map](TRAIL_MAP.md) supplies progress, the [people](PEOPLE.md) supply independent plans, and the [events](../01_events_and_hazards.md) fill the road between scenes. The party may invent another viable approach; quote its costs before commitment.
+Version 0.10. Seven chapter situations for five travelers. Keep the actual date, resources, and relationships. The [map](TRAIL_MAP.md) supplies progress, the [people](PEOPLE.md) supply independent plans, and the [events](../01_events_and_hazards.md) fill the road between scenes. The party may invent another viable approach; quote its costs before commitment.
 
 ## Running a chapter
 
@@ -22,7 +22,7 @@ After two consecutive costly random events, replace the next random event with a
 
 **Opportunity at the same camp:** Mercy is starting lessons for adults traveling with her. Eliza can lend one volume of her mother's books until Kearny, give it permanently, or keep the collection intact and teach from it herself this evening. A loan is returned at Kearny by Mercy or the clerk she names; gifting revises what “deliver the books intact” means only if Eliza chooses. One removed volume does not free an entire cargo slot. No extra day or automatic reward for teaching; lending/gifting establishes a specific shared undertaking, not a favor coupon. An unknown letter copied by someone learning to write becomes a later message from Mercy.
 
-**Everyone has work:** Guide names the camp, Teamster states repair needs, Hunter decides whether to offer food without taking somebody's last book, Doctor offers a practical lesson if wanted. These are opportunities for decisions, not compulsory checks.
+**Everyone has work:** Guide names the camp, Teamster states repair needs, Hunter decides whether to offer food without taking somebody's last book, Doctor offers a practical lesson if wanted, Steward keeps the camp table welcoming and helps settle terms. These are opportunities for decisions, not compulsory checks.
 
 **Joy:** Jonah cannot pronounce a word from the lesson. Invite someone to choose the word and someone else to admit a word they also cannot pronounce. They may pass; nobody is mocked for literacy.
 
@@ -34,7 +34,7 @@ After two consecutive costly random events, replace the next random event with a
 
 At 340 run [The River Between](RIVER_CHAPTER.md) with actual campaign state. Nessa leaves the far bank at dawn on scene day 3; paid ferry crosses on day 2, two days' ramp work on day 3. Mara's workshop discussion gives the delay a personal meaning if the player accepts that connection. The letter alternative preserves a future conversation without reserving the partnership. No second generic crossing event during these scenes.
 
-**Personal conflict:** Thomas can spend medicine treating Ada while intending to reserve it for Cal. Cal decides whether feeding Mercy should require her to sell a book. Mae decides what working with Mara would mean for a workshop carrying her own name. Give each owner the first response; promises never force their decisions.
+**Personal conflict:** Thomas can spend medicine treating Ada while intending to reserve it for Cal. Cal decides whether feeding Mercy should require her to sell a book. Mae decides what working with Mara would mean for a workshop carrying her own name. Clara decides whether to spend cash or time helping Mercy's party cross while preserving her aunt's linen chest. Give each owner the first response; promises never force their decisions.
 
 **Joy:** use the far-bank useless-skill lesson. If the crossing went badly, ask whether the table wants quiet instead.
 
