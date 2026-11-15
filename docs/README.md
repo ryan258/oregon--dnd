@@ -32,7 +32,7 @@ Everything needed to run the journey: one night of it, or all seven chapters.
 
 ## Game website, GM Dashboard, and Trailmaster ledger
 
-- Local website, GM Dashboard (`/dashboard/`), and Trailmaster ledger (see `website/README.md`) — local Hugo site (`./trail`), step-by-step river session GM Dashboard with five-traveler tracking, printable large-type handouts, and playtest notes export, plus illustrated cover and camp scene, traveler showcase, handbook links, and browser-saved wagon ledger with day-close calculations and Web Locks
+- Local website, GM Dashboard (`/dashboard/`), and Trailmaster ledger (see `website/README.md`) — local Hugo site (`./trail`), step-by-step river session GM Dashboard with five-traveler tracking, first-time GM coaching and quick FAQ, printable large-type handouts, and playtest notes export, plus illustrated cover and camp scene, traveler showcase, handbook links, and browser-saved wagon ledger with day-close calculations and Web Locks
 
 ## At the table
 

@@ -29,7 +29,7 @@ Output: `dist/site/`. Before hosting under a path, build with the intended base 
 - `/characters/` — the five pregens rendered directly from `docs/PREGENS.md`, plus an introduction to recurring people.
 - `/instructions/` — entry points into the handbook and a printable cover.
 - `/cover/` — print just the illustrated cover as a front sheet; turn browser headers/footers off and fit to page.
-- `/dashboard/` — the streamlined GM Dashboard for running *The River Between* with 5 players (4-Act Story Teleprompter, 5-traveler cards with plain-English skills, one-tap river crossing actions, printable large-type handouts, Large Text toggle, and playtest notes export).
+- `/dashboard/` — the streamlined GM Dashboard for running *The River Between* with 5 players (4-Act Story Teleprompter, first-time GM coaching steps, quick FAQ, toggleable help mode, 5-traveler cards with plain-English skills, one-tap river crossing actions, printable large-type handouts, Large Text toggle, and playtest notes export).
 - `/trailmaster/` — the full-campaign shared wagon ledger.
 - `/player/` — the existing character companion served unchanged.
 - `/docs/handbook.html` — the existing generated single-file handbook, served at its original relative path.
