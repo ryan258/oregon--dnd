@@ -123,6 +123,29 @@ body[data-role="teamster"],
   --card-top-accent: #bc5824;
 }
 
+/* --- 5. STEWARD (Clara Vance) · Hearthkeeper & Peacemaker --- */
+body[data-role="steward"],
+.choice-steward {
+  --paper: #f6f2ea;
+  --card: #fdfbf7;
+  --card-alt: #ece5d8;
+  --ink: #27221d;
+  --ink-light: #443b33;
+  --muted: #6c6156;
+  --line: #d6ccbe;
+  --line-strong: #b4a591;
+  --accent: #7a4b7b;
+  --accent-hover: #5e375f;
+  --accent-subtle: #f4ecf4;
+  --sage: #e4ded4;
+  --red: #9c3127;
+  --shadow: 0 12px 34px rgba(39, 34, 29, 0.10), 0 2px 8px rgba(39, 34, 29, 0.04);
+  --hero-bg: radial-gradient(circle at 90% 15%, rgba(122, 75, 123, 0.14) 0%, transparent 50%), linear-gradient(135deg, #ebe3d6 0%, #fcfaf6 100%);
+  --meter-fill: linear-gradient(90deg, #7a4b7b 0%, #443b33 100%);
+  --crest-color: #7a4b7b;
+  --card-top-accent: #7a4b7b;
+}
+
 /* ==========================================================================
    BASE & RESET
    ========================================================================== */

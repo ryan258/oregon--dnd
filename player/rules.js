@@ -51,7 +51,7 @@ globalThis.TrailRules = {
       },
       "primary": "DEX",
       "service": "**Take Aim:** one full Hunt Day in terrain with available game yields 30 lbs fresh food, no roll, 5 ammunition. Check availability before committing; scarcity events can make it unavailable.",
-      "intervention": "**Stretch the stores:** once per chapter, make the party's next three days of food last on half the normal amount, rounding daily totals up to 0.5 lb. Applies to four travelers’ daily rations, not gifts, trade, or the additional Proper Meal cost; cannot create food at zero."
+      "intervention": "**Stretch the stores:** once per chapter, make the party's next three days of food last on half the normal amount, rounding daily totals up to 0.5 lb. Applies to five travelers’ daily rations, not gifts, trade, or the additional Proper Meal cost; cannot create food at zero."
     },
     "Teamster": {
       "backgrounds": {
@@ -69,6 +69,23 @@ globalThis.TrailRules = {
       "primary": "STR",
       "service": "On every Rest Day, restore 1 Wagon HP automatically, without using a Camp Action.",
       "intervention": "**Jury-rig:** spend 1 spare part and your action on a Repair or Rest Day. Restore 6 Wagon HP without rolling, up to max. At 0 Wagon HP this makes it usable again. No permanent max-HP cost."
+    },
+    "Steward": {
+      "backgrounds": {
+        "Shopkeeper's Kin": "Once per fort or settlement, ask one fair price check and learn the seller's real floor or immediate need without a roll.",
+        "Church Choir & Supper": "Once per chapter, when the party shares a Proper Meal or rests together on a Rest Day, restore 1 extra Morale (max 10).",
+        "Peacemaker": "Advantage on checks to calm a dispute, reassure a frightened traveler, or ask for help without escalating tension.",
+        "Careful Bookkeeper": "Once per chapter, spot a hidden cost, bad measure, or short weight before the party pays; you may cancel or renegotiate that transaction before money or goods change hands."
+      },
+      "techniques": {
+        "Trusted Word": "Once per chapter, offer a written promise or personal token instead of immediate cash (up to $15 value) at a settlement or camp; the GM notes who holds it and when it comes due.",
+        "Warm Kettle": "On any Rest Day where the party has fire and water, one exhausted traveler of your choice removes 1 extra Exhaustion if they ate their full ration.",
+        "Share the Load": "Once per chapter, during a hard-travel day or camp chore, take on another traveler's burden: that traveler ignores Exhaustion 1–2 penalties on one check today, or avoids 1 Exhaustion from a single non-starvation source (you take no extra Exhaustion yourself).",
+        "Good Neighbor": "When meeting another wagon or community on the road, Advantage on the first check to trade, ask for directions, or arrange safe passage."
+      },
+      "primary": "CHA",
+      "service": "**Fair Bargain:** once per settlement or major crossing, reduce one cash purchase, service fee, or toll by 20% (minimum $1 off, rounded up) without a roll. In camp, any traveler may spend a quiet evening with you to speak honestly without a CHA check.",
+      "intervention": "**Hold the Wagon Together:** once per chapter, cancel 1 point of Morale loss from an event, shortage, or hard choice (cannot cancel a voluntary breaking-point agreement)."
     }
   },
   "pregens": [
@@ -171,6 +188,31 @@ globalThis.TrailRules = {
         "opening question": "If the chest must go, does the dream go with it?",
         "on the road": "If you want this connection, former coworker Mara offers a shared workshop discussion across the river before she leaves with Nessa. Tomas later proposes a shared service at Hall. Neither opportunity obliges you to accept."
       }
+    },
+    {
+      "name": "Clara Vance",
+      "role": "Steward",
+      "background": "Church Choir & Supper",
+      "scores": {
+        "STR": 8,
+        "DEX": 10,
+        "CON": 12,
+        "INT": 10,
+        "WIS": 13,
+        "CHA": 15
+      },
+      "personal": {
+        "dream": "open a boarding house in Oregon City where travelers can sit down to a hot meal and a quiet room.",
+        "promise": "bring my late husband's cast-iron kettle and keep this wagon talking to each other until we arrive.",
+        "boundary": "I will not let someone be left out of a decision just because they are quiet or tired.",
+        "bond": "Thomas knows I am still grieving, and he lets me help without making me explain.",
+        "keepsake": "husband's brass pocket watch that no longer ticks.",
+        "cargo": "",
+        "voice": "pours tea or water before anyone starts arguing.",
+        "reserve": "Martha Holt, a widowed seamstress traveling two wagons back; takes the Steward role if needed, no free gear.",
+        "opening question": "Who in this wagon do you worry about most when everyone goes quiet?",
+        "on the road": "At the river, Ada's schoolteacher friend and the ferryman are both watching how your wagon treats people who are short on coin. Decide what fairness looks like when your own purse is thin."
+      }
     }
   ],
   "conditions": {
@@ -221,9 +263,9 @@ globalThis.TrailRules = {
     }
   },
   "sources": {
-    "seed.md": "09c5fda7978a3b06ac89b26fe1832726e4eeaa92c6a4cd2fa7040612733aceb4",
-    "02_character_backgrounds.md": "d85b37cabffcc2497f6ad3d897b0f7540e4e06734ec980b8bac9980c4f1d8006",
-    "docs/PREGENS.md": "fd069959ab224e3873d1c68e49bad3131ec2bd292f6f076c8e834261a077e443"
+    "seed.md": "4063f67417e0d4e7a1d18757e428423da6dd2d7e7a0ddefa5b22f4e2704ed5d3",
+    "02_character_backgrounds.md": "7359596ee82a41fae1203fea5a8e6ba2a9c6242ac50a8d2c6bf14d30cb968259",
+    "docs/PREGENS.md": "d16da0c5c6762b476467d351b4fbcee185372e9c2c2304abafe3d5c785d4732b"
   }
 };
 if (typeof module !== 'undefined') module.exports = globalThis.TrailRules;

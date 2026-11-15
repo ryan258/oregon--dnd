@@ -11,20 +11,20 @@ source = {name: (ROOT / name).read_text() for name in SOURCES}
 roles = {}
 for block in re.split(r'^## ', source[SOURCES[1]], flags=re.M)[1:]:
     role = block.splitlines()[0]
-    if role not in ['Guide', 'Doctor', 'Hunter', 'Teamster']:
+    if role not in ['Guide', 'Doctor', 'Hunter', 'Teamster', 'Steward']:
         continue
     entries = re.findall(r'^- \*\*(.+?):\*\* (.+)$', block, re.M)
     assert len(entries) == 8, f'{role}: expected 4 backgrounds and 4 techniques'
     roles[role] = {'backgrounds': dict(entries[:4]), 'techniques': dict(entries[4:])}
 for row in source['seed.md'].splitlines():
     cells = [x.strip() for x in row.strip('|').split('|')]
-    match = re.fullmatch(r'(Guide|Doctor|Hunter|Teamster) \((\w+)\)', cells[0])
+    match = re.fullmatch(r'(Guide|Doctor|Hunter|Teamster|Steward) \((\w+)\)', cells[0])
     if match:
         role, primary = match.groups()
         roles[role].update(primary=primary, service=cells[1], intervention=cells[2])
 pregens = []
 for block in re.split(r'^## ', source['docs/PREGENS.md'], flags=re.M)[1:]:
-    match = re.match(r'(.+) — (Guide|Doctor|Hunter|Teamster)\n', block)
+    match = re.match(r'(.+) — (Guide|Doctor|Hunter|Teamster|Steward)\n', block)
     if not match:
         continue
     name, role = match.groups()
@@ -38,7 +38,7 @@ for block in re.split(r'^## ', source['docs/PREGENS.md'], flags=re.M)[1:]:
                     'scores': dict(zip(['STR','DEX','CON','INT','WIS','CHA'], scores)),
                     'personal': {key.lower(): labels.get(key, '') for key in
                                  ['Dream','Promise','Boundary','Bond','Keepsake','Cargo','Voice','Reserve','Opening question','On the road']}})
-assert len(pregens) == 4
+assert len(pregens) == 5
 conditions = {}
 for row in source['seed.md'].splitlines():
     cells = [x.strip() for x in row.strip('|').split('|')]
@@ -62,7 +62,7 @@ target = ROOT/'player/rules.js'
 if '--check' in sys.argv:
     if not target.exists() or target.read_text() != output:
         sys.exit('Player reference is out of date. Run python3 tools/build_player_rules.py')
-    print('PASS: player reference matches 3 canonical sources, 4 pregens, 16 backgrounds, 16 techniques, 9 conditions.')
+    print('PASS: player reference matches 3 canonical sources, 5 pregens, 20 backgrounds, 20 techniques, 9 conditions.')
 else:
     target.write_text(output)
     print('Built player/rules.js from the current manuscript.')
